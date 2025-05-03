@@ -1,0 +1,22 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Matsch Web'
+theme = "risotto"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "coding"
+    name = "Coding"
+    url = "/coding/"
+    weight = 20
+  [[menu.main]]
+    identifier = "travel"
+    name = "Travel"
+    url = "/travel/"
+    weight = 30
+
