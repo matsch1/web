@@ -38,8 +38,9 @@ Das Ziel ist es mit möglichst wenig Gepäck zu reisen. Ob das klappt wird en Pa
 
 ##### Gabletasche rechts:
 - Electronics
-  - Powerbank
-  - Ladekabel
+  - Powerbank inkl. Ladekabel
+  - Ladekabel Handy
+  - Ladekabel Schaltung
   - Stirnlampe
 
 
