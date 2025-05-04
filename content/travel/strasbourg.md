@@ -7,8 +7,11 @@ description: "Some information about my city trip to Strasbourg"
 ## Unterkunft
  In Lingolsheim 2 Nächte 2 Personen 180€ mit Whirlpool (kostet extra 15€ pro Tag)
 
-![tes](/images/strauss.jpg)
- 
+![screenshot local](images/screenshot.png)
+
+![alt text](images/strauss.jpg)
+
+![Screenshot of the risotto theme](https://raw.githubusercontent.com/joeroe/risotto/master/images/screenshot.png)
 ```embed
 title: "Airbnb: Ferienwohnungen, Blockhütten, Strandhäuser, besondere Unterkünfte & Entdeckungen"
 image: "https://a0.muscache.com/im/pictures/fe7217ff-0b24-438d-880d-b94722c75bf5.jpg"
