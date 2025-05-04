@@ -1,7 +1,7 @@
 ---
 title: "My awesome Obsidian workflow"
 description: "My awesome setup using obsidian with server centric Syncthing on multiple devices"
-draft: false
+draft: true
 ---
 
 I felt in love about note taking with obsidian and want to have this on every
