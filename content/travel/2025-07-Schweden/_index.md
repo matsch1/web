@@ -42,6 +42,9 @@ Das Ziel ist es mit möglichst wenig Gepäck zu reisen. Ob das klappt wird en Pa
   - Ladekabel Handy
   - Ladekabel Schaltung
   - Stirnlampe
+- Hygiene
+  - Zanbuerste
+- Medipack
 
 
 ### Fahrrad
