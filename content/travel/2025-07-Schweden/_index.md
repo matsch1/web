@@ -9,6 +9,12 @@ draft: false
 Start in Flensburg am Bahnhof
 {{< open-street-map map_title="Flensburg Bahnhof" geo_link="geo:54.774603,9.436800?z=18" >}}
 
+test
+{{< galleries >}}
+{{< gallery src="test.jpg" title="Elden Ring" >}}
+{{< gallery src="01-route.png" title="Best Soulsborne Game" >}}
+{{< /galleries >}}
+
 ## Vorbereitung
 ### Der Plan
 Einen Monat lang mit dem Fahrrad durch Dänemark, Schwenden und Norwegen zu fahren.
