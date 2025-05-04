@@ -1,7 +1,7 @@
 baseURL = 'https://matsch1.github.io/web/'
 languageCode = 'en-us'
 title = 'Matsch Web'
-theme = "risotto"
+theme = 'risotto'
 
 [menu]
   [[menu.main]]
