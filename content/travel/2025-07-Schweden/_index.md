@@ -5,10 +5,9 @@ description: "Dokumentation meiner Bikepacking Reise durch Schweden"
 draft: false
 ---
 
-## Koordinaten
-[Koordinaten Schlafplatz](https://maps.app.goo.gl/45Lye1zk98TeY7RX9)
-## Koordinaten2
-{{< open-street-map id="guggenheim-bilbao" mapTitle="Map of Guggenheim Bilbao" mapLocation="Guggenheim Museum Bilbao Abandoibarra Etorb., 2, Abando, 48009 Bilbo, Bizkaia, Spain" mapImg="guggenhein-bilbao-capture.webp" mapLink="https://www.openstreetmap.org/export/embed.html?bbox=10.715403556823732%2C55.06829344279667%2C10.787072181701662%2C55.091385689038106&amp;layer=mapnik&amp;marker=55.07984123232659%2C10.751237869262695" iframeSrc="https://www.openstreetmap.org/export/embed.html?bbox=10.715403556823732%2C55.06829344279667%2C10.787072181701662%2C55.091385689038106&amp;layer=mapnik&amp;marker=55.07984123232659%2C10.751237869262695" >}}
+## Reise
+Start in Flensburg am Bahnhof
+{{< open-street-map map_title="Flensburg Bahnhof" geo_link="geo:54.774603,9.436800?z=18" >}}
 
 ## Vorbereitung
 ### Der Plan

@@ -1,18 +1,49 @@
-<!-- Open Street Map Static Map Shortcode -->
-<!-- Bootatrap 5.3 -->
-            <div class="container" id="map-container-{{ .Get "id" }}" style="cursor: pointer;">
-                <figure>
-                    <img class="img-fluid" loading="lazy" id="static-map-{{ .Get "id" }}" src="{{ .Get "mapImg" }}" alt="{{ .Get "mapLocation" }}" title="{{ .Get "mapTitle" }} Click to view the interactive map" width="1280" height="450">
-                    <figcaption>Click to view the interactive map<a href="https://www.openstreetmap.org/copyright" rel="noreferrer noopener" target="_blank"><small><span class="float-end">©OpenStreetMap</span></small></a>                    
-                    </figcaption>
-                </figure>
-            </div>
-<script>
-document.getElementById('static-map-{{ .Get "id" }}').addEventListener('click', function() {
-    var container = document.getElementById('map-container-{{ .Get "id" }}');
-    var iframeCode = '<div class="container"><iframe src="{{ .Get "iframeSrc" }}" width="100%" height="450" frameborder="0" style="border:0" title="{{ .Get "mapTitle" }}" style="border: 1px solid black"></iframe><br/><div class="text-center"><a href="{{ .Get "mapLink" }}" rel="noreferrer noopener" target="_blank">View Larger Map</a></div></div>';
+{{/* layouts/shortcodes/open-street-map.html */}}
+{{ $title := .Get "map_title" }}
+{{ $geoLink := .Get "geo_link" }}
 
-    // Replace the static image with the Open Street Map iframe
-    container.innerHTML = iframeCode;
-});
-</script>
+{{/* Ensure geoLink is a string by explicitly converting it */}}
+{{ $geoLink := string $geoLink }}
+
+{{/* Remove the 'geo:' prefix from geoLink and split based on commas */}}
+{{ $geoLink := replace $geoLink "geo:" "" }}
+{{ $geoParts := split $geoLink "," }}
+
+{{/* Extract latitude and longitude */}}
+{{ $lat := index $geoParts 0 }}
+{{ $lonAndZoom := index $geoParts 1 }}
+
+{{/* Extract longitude and zoom level */}}
+{{ $lonParts := split $lonAndZoom "?" }}
+{{ $lon := index $lonParts 0 }}
+{{ $zoom := default "15" (index $lonParts 1) }}
+
+{{/* Calculate bounding box for better map visibility */}}
+{{ $bboxDelta := 0.005 }}
+{{ $minLat := sub (float $lat) $bboxDelta }}
+{{ $maxLat := add (float $lat) $bboxDelta }}
+{{ $minLon := sub (float $lon) $bboxDelta }}
+{{ $maxLon := add (float $lon) $bboxDelta }}
+
+{{/* Prepare the embed URL for the OpenStreetMap iframe */}}
+{{ $embedUrl := printf "https://www.openstreetmap.org/export/embed.html?bbox=%.5f,%.5f,%.5f,%.5f&marker=%.5f,%.5f" $minLon $minLat $maxLon $maxLat (float $lat) (float $lon) }}
+{{ $fullUrl := printf "https://www.openstreetmap.org/?mlat=%.5f&mlon=%.5f#map=%s/%.5f/%.5f" (float $lat) (float $lon) $zoom (float $lat) (float $lon) }}
+
+<div class="container my-4" id="map-container-{{ .Get "id" }}">
+  <iframe 
+    src="{{ $embedUrl }}" 
+    width="100%" 
+    height="450" 
+    frameborder="0" 
+    style="border: 1px solid #ccc;" 
+    allowfullscreen 
+    loading="lazy" 
+    title="{{ $title }}">
+  </iframe>
+  <div class="text-center mt-2">
+    <a href="{{ $fullUrl }}" target="_blank" rel="noopener noreferrer">
+      View Larger Map
+    </a>
+  </div>
+</div>
+
