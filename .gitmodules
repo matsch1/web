@@ -2,7 +2,3 @@
 	path = themes/risotto
 	url = https://github.com/joeroe/risotto.git
 	branch = main
-[submodule "themes/congo"]
-	path = themes/congo
-	url = https://github.com/jpanther/congo.git
-	branch = stable
