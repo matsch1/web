@@ -5,7 +5,7 @@
 {{/* Ensure geoLink is a string by explicitly converting it */}}
 {{ $geoLink := string $geoLink }}
 
-{{/* Remove the 'geo:' prefix from geoLink and split based on commas */}}
+{{/* Remove the 'geo:' prefix from geoLink and split based on commas (https://www.openstreetmap.org/#map=9/55.014/9.303&layers=N)*/}}
 {{ $geoLink := replace $geoLink "geo:" "" }}
 {{ $geoParts := split $geoLink "," }}
 
