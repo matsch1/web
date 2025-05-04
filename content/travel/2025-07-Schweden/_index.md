@@ -29,6 +29,12 @@ Das Ziel ist es mit möglichst wenig Gepäck zu reisen. Ob das klappt wird en Pa
 - Schlafsack
 
 ##### Gabeltasche links:
+- Koch-Set
+  - Kocher
+  - Gas
+  - Feuerzeug
+  - Löffel
+  - Becher
 
 ##### Gabletasche rechts:
 
