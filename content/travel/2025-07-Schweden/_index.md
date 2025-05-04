@@ -26,6 +26,7 @@ Das Ziel ist es mit möglichst wenig Gepäck zu reisen. Ob das klappt wird en Pa
 - Kissen
 
 ##### Arschrakete:
+- Schlafsack
 
 ##### Gabeltasche links:
 
