@@ -20,6 +20,7 @@ Die Route ist nur grob geplant. Das Feintuning findet unterwegs statt.
 Das Ziel ist es mit möglichst wenig Gepäck zu reisen. Ob das klappt wird en Packtest zeigen.
 
 ### Packliste
+![test gepaeck foto](test.jpg)
 ##### Lenkertasche:
 - Zelt
 - Luftmatratze
