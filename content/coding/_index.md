@@ -1,5 +1,6 @@
 ---
 title: "Coding"
+date: 2025-05-04
 description: "Collection of coding related stuff I want to share."
 draft: false
 ---

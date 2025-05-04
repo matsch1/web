@@ -5,6 +5,10 @@ description: "Dokumentation meiner Bikepacking Reise durch Schweden"
 draft: false
 ---
 
+## Reise
+Start in Flensburg am Bahnhof
+{{< open-street-map map_title="Flensburg Bahnhof" geo_link="geo:54.774603,9.436800?z=18" >}}
+
 ## Vorbereitung
 ### Der Plan
 Einen Monat lang mit dem Fahrrad durch Dänemark, Schwenden und Norwegen zu fahren.
