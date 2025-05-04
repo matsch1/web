@@ -1,14 +1,8 @@
-[submodule "themes/congo"]
-	path = themes/congo
-	url = https://github.com/jpanther/congo.git
-[submodule "themes/hugo-theme-monochrome"]
-	path = themes/hugo-theme-monochrome
-	url = https://github.com/kaiiiz/hugo-theme-monochrome.git
-[submodule "themes/kayal"]
-	path = themes/kayal
-	url = https://github.com/mnjm/kayal.git
-	branch = main
 [submodule "themes/risotto"]
 	path = themes/risotto
 	url = https://github.com/joeroe/risotto.git
 	branch = main
+[submodule "themes/congo"]
+	path = themes/congo
+	url = https://github.com/jpanther/congo.git
+	branch = stable

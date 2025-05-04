@@ -1,6 +1,7 @@
 ---
 title: "Travel"
 description: "A collection of my travel adventures and discoveries."
+draft: false
 ---
 
 Welcome to my Travel section!

@@ -1,12 +1,13 @@
 ---
-title: "Strasbourg test Urlaubadsf"
-description: "A collection of my travel adventures and discoveries."
+title: "Strasbourg "
+date: 2025-05-01
+description: "Some information about my city trip to Strasbourg"
 ---
 
-# Test Strasbourg Urlaub
 ## Unterkunft
-Test asdfjas;dkfj ajdjadfsjj
  In Lingolsheim 2 Nächte 2 Personen 180€ mit Whirlpool (kostet extra 15€ pro Tag)
+
+![tes](/images/strauss.jpg)
  
 ```embed
 title: "Airbnb: Ferienwohnungen, Blockhütten, Strandhäuser, besondere Unterkünfte & Entdeckungen"

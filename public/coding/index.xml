@@ -8,11 +8,11 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/web/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to Sync notes</title>
-      <link>http://localhost:1313/web/coding/test/</link>
+      <title>My awesome Obsidian workflow</title>
+      <link>http://localhost:1313/web/coding/obsidian_sync/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/web/coding/test/</guid>
-      <description>&lt;p&gt;asdfkjaja adjaa;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/web/coding/obsidian_sync/</guid>
+      <description>&lt;p&gt;I felt in love about note taking with obsidian and want to have this on every&#xA;machine I am currently working on.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
