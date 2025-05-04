@@ -6,21 +6,29 @@ on:
       - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout source
+        uses: actions/checkout@v3
         with:
           submodules: true  # needed for themes
           fetch-depth: 0
+
+      - name: Checkout destination
+        uses: actions/checkout@v3
+        if: github.ref == ´refs/head/main´
+        with:
+          ref: gh-pages
+          path: built-site
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
 
-      - name: Build
+        - name: Build
         run: hugo --minify
 
       - name: Deploy
