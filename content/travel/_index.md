@@ -1,5 +1,6 @@
 ---
 title: "Travel"
+date: 2025-05-04
 description: "A collection of my travel adventures and discoveries."
 draft: false
 ---
