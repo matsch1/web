@@ -1,0 +1,18 @@
+<!-- Open Street Map Static Map Shortcode -->
+<!-- Bootatrap 5.3 -->
+            <div class="container" id="map-container-{{ .Get "id" }}" style="cursor: pointer;">
+                <figure>
+                    <img class="img-fluid" loading="lazy" id="static-map-{{ .Get "id" }}" src="{{ .Get "mapImg" }}" alt="{{ .Get "mapLocation" }}" title="{{ .Get "mapTitle" }} Click to view the interactive map" width="1280" height="450">
+                    <figcaption>Click to view the interactive map<a href="https://www.openstreetmap.org/copyright" rel="noreferrer noopener" target="_blank"><small><span class="float-end">©OpenStreetMap</span></small></a>                    
+                    </figcaption>
+                </figure>
+            </div>
+<script>
+document.getElementById('static-map-{{ .Get "id" }}').addEventListener('click', function() {
+    var container = document.getElementById('map-container-{{ .Get "id" }}');
+    var iframeCode = '<div class="container"><iframe src="{{ .Get "iframeSrc" }}" width="100%" height="450" frameborder="0" style="border:0" title="{{ .Get "mapTitle" }}" style="border: 1px solid black"></iframe><br/><div class="text-center"><a href="{{ .Get "mapLink" }}" rel="noreferrer noopener" target="_blank">View Larger Map</a></div></div>';
+
+    // Replace the static image with the Open Street Map iframe
+    container.innerHTML = iframeCode;
+});
+</script>
