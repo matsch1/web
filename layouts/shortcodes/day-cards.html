@@ -1,0 +1,27 @@
+<div class="cards">
+  {{ range .Page.Pages.ByDate.Reverse }}
+    <div class="card" style="
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 600px;
+      margin: 1em auto;
+      border: 1px solid #ccc;
+      padding: 1em;
+      border-radius: 8px;
+      gap: 1em;
+    ">
+      <div class="card-text" style="flex: 1;">
+        <h2 style="margin-top: 0;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p style="margin-bottom: 0.5em;"> </p>
+        <p style="margin-bottom: 0.5em;">{{ .Params.description }}</p>
+      </div>
+      {{ with .Resources.GetMatch .Params.img }}
+        <img src="{{ .RelPermalink }}" alt="Preview image" style="width: 150px; height: auto; border-radius: 4px;" />
+      {{ else }}
+        <img src="/fallback.jpg" alt="No image" style="width: 150px; height: auto; border-radius: 4px;" />
+      {{ end }}
+    </div>
+  {{ end }}
+</div>
