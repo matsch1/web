@@ -18,6 +18,10 @@ test2
 {{< gallery src="01-route.png" title="route4" >}}
 {{< /galleries >}}
 
+
+test strava
+{{< strava-activity id="14571434794" title="Evening Run in the Park" distance="12.3 km" elevation="85 m" time="1h 05m" >}}
+
 ## Vorbereitung
 ### Der Plan
 Einen Monat lang mit dem Fahrrad durch Dänemark, Schwenden und Norwegen zu fahren.

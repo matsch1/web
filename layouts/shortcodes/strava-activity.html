@@ -1,0 +1,28 @@
+{{ if .IsNamedParams }}
+<div class="strava-card" style="border:1px solid #eee; border-radius:8px; padding:1rem; max-width:600px; font-family:sans-serif; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+  <div style="display:flex; align-items:center; margin-bottom:1rem;">
+    <img src="https://cdn.worldvectorlogo.com/logos/strava-2.svg" alt="Strava" style="height:32px; margin-right:0.5rem;">
+    <strong style="font-size:1.2rem;">
+      {{ with .Get "title" }}
+        {{ . }}
+      {{ else }}
+        My Strava Activity
+      {{ end }}
+    </strong>
+  </div>
+  <ul style="list-style:none; padding:0; margin:0 0 1rem;">
+    {{ with .Get "distance" }}
+    <li><strong>Distance:</strong> {{ . }}</li>
+    {{ end }}
+    {{ with .Get "elevation" }}
+    <li><strong>Elevation Gain:</strong> {{ . }}</li>
+    {{ end }}
+    {{ with .Get "time" }}
+    <li><strong>Time:</strong> {{ . }}</li>
+    {{ end }}
+  </ul>
+  {{ with .Get "id" }}
+  <a href="https://www.strava.com/activities/{{ . }}" target="_blank" style="display:inline-block; padding:0.5rem 1rem; background:#fc5200; color:white; text-decoration:none; border-radius:4px;">View on Strava</a>
+  {{ end }}
+</div>
+{{ end }}
