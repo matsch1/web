@@ -10,7 +10,7 @@ draft: false
 Hier dokumentiere ich meine Fahrradreise von Flensburg, über Kophenhagen, durch
 Schweden, nach Oslo und über Dänemark zurück nach Flensburg.
 
-Die Vorbereitungen dazu, sowie die meine einzelnen Tage findest du in separaten
-Beiträgen weiter unten.
+Die Vorbereitungen dazu, sowie die einzelnen Tage findest du in separaten
+Beiträgen hier.
 
-{{< day-cards >}}
+{{< post-cards >}}

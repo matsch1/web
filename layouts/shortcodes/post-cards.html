@@ -20,7 +20,20 @@
       {{ with .Resources.GetMatch .Params.img }}
         <img src="{{ .RelPermalink }}" alt="Preview image" style="width: 150px; height: auto; border-radius: 4px;" />
       {{ else }}
-        <img src="/fallback.jpg" alt="No image" style="width: 150px; height: auto; border-radius: 4px;" />
+        <div style="
+              width: 150px;
+              height: 100px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #f0f0f0;
+              color: #999;
+              border-radius: 4px;
+              font-style: italic;
+              font-size: 0.9em;
+            ">
+              No Image
+        </div>
       {{ end }}
     </div>
   {{ end }}

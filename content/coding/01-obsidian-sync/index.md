@@ -1,5 +1,6 @@
 ---
 title: "My awesome Obsidian workflow"
+date: 2025-05-25
 description: "My awesome setup using obsidian with server centric Syncthing on multiple devices"
 draft: true
 ---
