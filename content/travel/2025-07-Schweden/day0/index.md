@@ -1,7 +1,7 @@
 ---
 title: "Tag 0 - Ankunft in Dänemark"
 date: 2025-06-30
-img: img1.png
+img: img1.jpg
 description: "Anreise mit dem Zug und erste Kilometer über die dänische Grenze"
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Planung und Vorbereitungen"
 date: 2025-05-24
-img: img1.png
+img: img1.jpg
 description: "Grobe Routenplanung und Gepäck"
 draft: false
 ---
@@ -132,4 +132,4 @@ zu haben.
 Mein Rad ist ein Cube Nuroad C:62SL. Das ist mit Carbon Rahmen und Gabel, sowie elektronische Schaltung nur bedingt für so eine Tour geeignet. Aber ich hoffe einfach, dass das Carbon nichts gegen so viel Gepäck einzuwenden hat.
 
 Zur Bequemlichkeit lasse ich den Triathlon Lenkeraufsatz dran und rüste auf breite Tubeless Stollenreifen um.
-![Bike](bike.jpg)
+![Bike](img1.jpg)

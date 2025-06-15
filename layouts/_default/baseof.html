@@ -1,42 +1,30 @@
+{{- if lt hugo.Version "0.146.0" }}
+{{- errorf "=> hugo v0.146.0 or greater is required for hugo-PaperMod to build " }}
+{{- end -}}
+
 <!DOCTYPE html>
-<html lang="{{- site.Language.Lang -}}">
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
 
-    <head>
-        {{- partial "head.html" . -}}
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nanogallery2@3.0.5/dist/css/nanogallery2.min.css">
-    </head>
+<head>
+    {{- partial "head.html" . }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nanogallery2@3.0.5/dist/css/nanogallery2.min.css">
+</head>
 
-    <body>
-        <div class="page">
-
-            <header class="page__header">
-                {{- partial "header.html" . -}}
-            </header>
-
-            <section class="page__body">
-                {{- block "main" . }}{{- end }}
-            </section>
-
-            <section class="page__aside">
-                <div class="aside__about">
-                    {{- partial "about.html" . -}}
-                </div>
-                <hr>
-                <div class="aside__content">
-                    {{- block "aside" . }}{{- end }}
-                </div>
-            </section>
-
-            <footer class="page__footer">
-                {{- partial "footer.html" . -}}
-            </footer>
-
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/nanogallery2@3.0.5/dist/jquery.nanogallery2.min.js"></script>
-    </body>
-</html>
-
-    </body>
+<body class="
+{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
+{{- print "list" -}}
+{{- end -}}
+{{- if eq site.Params.defaultTheme `dark` -}}
+{{- print " dark" }}
+{{- end -}}
+" id="top">
+    {{- partialCached "header.html" . .Page -}}
+    <main class="main">
+        {{- block "main" . }}{{ end }}
+    </main>
+    {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nanogallery2@3.0.5/dist/jquery.nanogallery2.min.js"></script>
+</body>
 
 </html>
