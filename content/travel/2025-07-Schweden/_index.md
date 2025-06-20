@@ -1,6 +1,6 @@
 ---
 title: "Bikepacking Schweden 2025"
-date: 2025-06-30
+date: 2025-06-20
 img: img1.jpg
 description: "Dokumentation meiner Bikepacking Reise durch Schweden"
 draft: false

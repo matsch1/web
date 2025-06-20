@@ -1,6 +1,6 @@
 ---
 title: "Bikepacking Test in Biffotaine"
-date: 2025-06-20
+date: 2025-06-19
 img: img1.jpg
 description: "Mit dem ganzen Gepaeck fuer die Schwedenreise die Familie in Biffontaine besuchen."
 draft: false
