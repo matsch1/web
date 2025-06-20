@@ -8,13 +8,16 @@ draft: false
 ## Eckdaten
 Tageskilometer: 104 km
 
-Wetter: >30 Grad und Sonne
+Wetter: >30 Grad und Sonne (sehr heiss)
 
 Standort: 
 {{< open-street-map map_title="Flensburg Bahnhof" geo_link="geo:48.1395,6.8174?z=12" >}}
 
 ## Eindrücke
-Schoen durch die Pampa in Frankfreich fahren bei ueber 30 Grad.
+Schoen durch die Pampa in Frankfreich fahren bei ueber 30 Grad. Extreme Temperaturen mit ca. 14kg Gepaeck. Aber lief trotz der Hoehenmeter erstaunlich gut. 
+Absolut ruhige Gegend und schoene Landschaft.
+
+Montage von Zelt und Schloss muss ich fuer Schweden noch optimieren.
 
 ## Bilder
 {{< galleries >}}
