@@ -1,3 +1,4 @@
+{{ $dateformat := "2 Jan 2006" }}
 <div class="cards">
   {{ range .Page.Pages.ByDate.Reverse }}
     <div class="card" style="
@@ -14,6 +15,8 @@
     ">
       <div class="card-text" style="flex: 1;">
         <h2 style="margin-top: 0;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p style="margin-bottom: 0.5em;"> </p>
+        <p style="margin-bottom: 0.5em;">{{ .Date.Format $dateformat }}</p>
         <p style="margin-bottom: 0.5em;"> </p>
         <p style="margin-bottom: 0.5em;">{{ .Params.description }}</p>
       </div>
