@@ -2,7 +2,8 @@
 title: "Bikepacking Schweden 2025"
 date: 2025-06-20
 img: img1.jpg
-description: "Dokumentation meiner Bikepacking Reise durch Schweden"
+description: "Dokumentation meiner Bikepacking Reise durch Dänemark, Schweden
+und Norwegen"
 draft: false
 ---
 
@@ -13,7 +14,7 @@ Schweden, nach Oslo und über Dänemark zurück nach Flensburg.
 
 Start: 01.07.2025
 
-Die Vorbereitungen dazu, sowie die einzelnen Tage findest du in separaten
-Beiträgen hier.
+Die Vorbereitungen dazu, sowie Berichte zu einzelnen Tagen findest du in separaten
+Beiträgen hier:
 
 {{< post-cards >}}
