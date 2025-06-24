@@ -1,7 +1,10 @@
 ---
 title: "About me"
-description: "This page contains information about me."
-draft: true
+description: "This is me"
+draft: false
 ---
 
-Maybe some time I will write something about me.
+Contact:
+{{< strava-icon url="https://www.strava.com/athletes/18430548" >}}
+{{< reddit-icon url="https://www.reddit.com/user/New_Salt1964/" >}}
+
