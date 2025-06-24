@@ -3,42 +3,43 @@ title: "Planung und Vorbereitungen"
 date: 2025-05-24
 img: img1.jpg
 description: "Grobe Routenplanung und Gepäck"
+ShowToc: true
+TocOpen: true
 draft: false
 ---
 
-## Route
-### Der Plan
+## Der Plan
 Ich werden einen Monat mit dem Fahrrad durch Dänemark, Schweden und Norwegen fahren.
 Dabei möchte ich wildcampen und die vielen schönen Shelterplätze der
 skandinavischen Länder nutzen. 
 Mein Gepäck soll dabei möglichst leicht sein, jedoch ein alles nötige für einen
 Monat Reise bieten.
 
-### Route
+## Route
 Die grobe Routenplanung geht, mit Start und Ende in Flensburg, durch folgende Städte: 
 Kopenhagen, Göteborg, Oslo, Larvik, Hirtshals, Esbjerg
 Dabei möchte ich täglich ca. 100 km radeln.
 {{< komoot src="https://www.komoot.com/de-de/tour/2034498871/embed?share_token=aISPLoFO3KX0E0hxm10fPL7w0dY36uWN4zp8HN4CC7btLetpw7&profile=1" >}}
 
-#### Abschnitt 1: Flensburg bis Helsingborg (Schweden)
+### Abschnitt 1: Flensburg bis Helsingborg (Schweden)
 Der erste Abschnitt durch Dänemark sieht in der Detailplanung so aus:
 {{< komoot src="https://www.komoot.com/de-de/tour/2307166457/embed?share_token=aQnymAKsMOlxpwS71nFIKouaHoxZYQvpJC6IoyrL7MZERrNPtB&profile=1" >}}
 
-#### Abschnitt 2: Helsingborg bis Göteborg (Schweden)
+### Abschnitt 2: Helsingborg bis Göteborg (Schweden)
 Die Reise in Schweden beginnt mit dem Westküstenradweg (Kattegattleden) bis Göteborg.
 {{< komoot src="https://www.komoot.com/de-de/tour/2326365668/embed?share_token=adJEEoXegyhrYhcXAljTmIGpNhE15yd7r8sUpsGnkMEmxXy2Y9&profile=1" >}}
 
-#### Abschnitt 3: Göteborg bis Oslo (Schweden)
+### Abschnitt 3: Göteborg bis Oslo (Schweden)
 Dies Abschnitt ist bis jetzt noch unklar. Wahrscheinlich an der Küste entlang radeln, da dieser Abschnitt
 besonders schön sein soll.
 
-#### Abschnitt 4: Oslo bis Hirtshals (Dänemark)
+### Abschnitt 4: Oslo bis Hirtshals (Dänemark)
 Dies Abschnitt ist bis jetzt noch unklar. Das hängt auch davon ab wie viel Zeit
 mir noch bleibt. Der kurze Weg wäre über Larvik nach Dänemark überzusetzen. Der
 etwas längere Weg geht noch an der norwegischen Küste entlag und dann von
 Christiansand nach Hirtshals in Dänemark.
 
-#### Abschnitt 5: Westküstenradweg (Dänemark)
+### Abschnitt 5: Westküstenradweg (Dänemark)
 Wenn es der Wind zulässt, werde ich den letzten Abschnitt bis Flensburg, auf dem
 Westküstenradweg Dänemarks, rollen.
 {{< komoot src="https://www.komoot.com/de-de/tour/2328568896/embed?share_token=a2jdRClFve8Ke3VnS9so3fLnElTb7kVT12ZltQ2zJi82T1QU7d&profile=1" >}}
@@ -66,7 +67,7 @@ Das Gewicht ist dabei wie folgt aufgeteilt:
 - Schlafsack
 - Kissen
 
-## Elektronik 1000g
+### Elektronik 1000g
 - Navi
 - Handy
 - Kopflampe
@@ -83,7 +84,7 @@ Das Gewicht ist dabei wie folgt aufgeteilt:
 - Ladekabel Shockz Kopfhörer
 - Ladegerät Schaltung
 
-## Hygiene
+### Hygiene
 - Medipack
 - Reiseapotheke
 - Sonnencreme
@@ -105,7 +106,7 @@ Das Gewicht ist dabei wie folgt aufgeteilt:
 - Tempos
 - Oropax
 
-## Essen
+### Essen
 - Gaskartusche
 - Kocher
 - Feuerzeug
@@ -118,7 +119,7 @@ Das Gewicht ist dabei wie folgt aufgeteilt:
 - Tee
 - Datteln
 
-## Klamotten
+### Klamotten
 - Ersatz Radklamotten
 	- Hose 
 	- Unterhemd 
@@ -135,7 +136,7 @@ Das Gewicht ist dabei wie folgt aufgeteilt:
 - Helm
 - Flip-Flops
 
-## Fahrrad
+### Fahrrad
 - Schloss
 - Reifenheber
 - Dichtmilch
@@ -151,7 +152,7 @@ Das Gewicht ist dabei wie folgt aufgeteilt:
 	- Panzerband
 	- Schaltauge
 
-## Sonstiges
+### Sonstiges
 - Minirucksack
 - Buch
 - Schwimmbrille

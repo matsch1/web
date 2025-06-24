@@ -3,6 +3,8 @@ title: "Bikepacking Test in Biffotaine"
 date: 2025-06-19
 img: img1.jpg
 description: "Mit dem ganzen Gepaeck fuer die Schwedenreise die Familie in Biffontaine besuchen."
+ShowToc: true
+TocOpen: true
 draft: false
 ---
 ## Eckdaten
@@ -19,7 +21,6 @@ Absolut ruhige Gegend und schoene Landschaft.
 
 Montage von Zelt und Schloss muss ich fuer Schweden noch optimieren.
 
-## Bilder
 {{< galleries >}}
 {{< gallery src="img1.png" title="Fahrrad voll beladen" >}}
 {{< gallery src="img2.jpg" title="Am Strassbourger Kanal" >}}
