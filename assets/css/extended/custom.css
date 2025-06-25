@@ -4,6 +4,11 @@
   margin-top: 3rem;
 }
 
+.paginav .prev,
+.paginav .next {
+    flex-grow: 1;
+}
+
 .paginav .prev {
   text-align: right;
 }
