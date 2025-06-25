@@ -6,6 +6,7 @@ theme = 'PaperMod'
 [params]
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
+  ShowReadingTime = true
   ShowShareButtons = true
 
 [params.assets]
