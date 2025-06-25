@@ -1,5 +1,5 @@
 ---
-title: "Bikepacking Test in Biffotaine"
+title: "Bikepacking Test in Biffontaine"
 date: 2025-06-19
 img: img1.jpg
 description: "Mit dem ganzen Gepaeck fuer die Schwedenreise die Familie in Biffontaine besuchen."
@@ -8,18 +8,30 @@ TocOpen: true
 draft: false
 ---
 ## Eckdaten
-Tageskilometer: 104 km
+### Strecke
+Hinweg: 104 km
++
+Rückweg: 131 km
 
-Wetter: >30 Grad und Sonne (sehr heiss)
+**Gesamt: 235 km**
 
-Standort: 
+### Wetter
+über 30 Grad und Sonne (sehr heiss)
+
+### Schlafplatz
 {{< open-street-map map_title="Flensburg Bahnhof" geo_link="geo:48.1395,6.8174?z=12" >}}
 
 ## Eindrücke
-Schoen durch die Pampa in Frankfreich fahren bei ueber 30 Grad. Extreme Temperaturen mit ca. 14kg Gepaeck. Aber lief trotz der Hoehenmeter erstaunlich gut. 
-Absolut ruhige Gegend und schoene Landschaft.
+Schön durch die Pampa in Frankfreich fahren, um das Setup für die anstehende Schwedenreise zu testen. 
+Bei extremen Temperaturen über 30 Grad, mit ca. 14 kg Gepäck 1000 hm schrubben.  
 
-Montage von Zelt und Schloss muss ich fuer Schweden noch optimieren.
+Die Landschaft ist sehr idyllisch. Es ist kaum was los. Das ist gut zum
+Fahrradfahren und schlecht, um unterwegs was zu essen.
+Dennoch lief alles gut und das Setup funktioniert.
+
+Einzig an der Montage von Zelt und Schloss muss ich für Schweden noch ein
+bisschen optimieren, um kein nerviges Klappern ertragen zu müseen und den Rahmen
+nicht zu vermacken.
 
 {{< galleries >}}
 {{< gallery src="img1.jpg" title="Fahrrad voll beladen" >}}
@@ -29,5 +41,6 @@ Montage von Zelt und Schloss muss ich fuer Schweden noch optimieren.
 {{< /galleries >}}
 
 ## Tourdaten
-{{< strava-activity id="14849684801" title="Packtest fuer Juli" distance="104.39 km" elevation="959 hm" time="5h 02m" >}}
+{{< strava-activity id="14849684801" title="Packtest für Juli (Hinweg)" distance="104.39 km" elevation="959 hm" time="5h 02m" >}}
+{{< strava-activity id="14871288148" title="Packtest für Juli (Rückweg)" distance="131.46" elevation="681 hm" time="5h 50m" >}}
 
