@@ -13,8 +13,8 @@ Heute war Anreisetag nach Flensburg mit ICE und RE.
 
 ### Bilder:
 {{< galleries >}}
-{{< gallery src="img1.png" title="Route" >}}
-{{< gallery src="img2.jpg" title="keyboard" >}}
+{{< gallery src="img1.jpg" title="Bike" >}}
+{{< gallery src="img2.png" title="Route" >}}
 {{< /galleries >}}
 
 ### Schlafplatz: 
