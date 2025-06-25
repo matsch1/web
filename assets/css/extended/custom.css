@@ -1,0 +1,14 @@
+.paginav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.paginav .prev {
+  text-align: right;
+}
+
+.paginav .next {
+  text-align: left;
+}
+

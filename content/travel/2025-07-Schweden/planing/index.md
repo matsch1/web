@@ -1,6 +1,6 @@
 ---
 title: "Planung und Vorbereitungen"
-date: 2025-05-24
+date: 2025-06-24
 img: img1.jpg
 description: "Grobe Routenplanung und Gepäck"
 ShowToc: true

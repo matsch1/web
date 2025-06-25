@@ -3,6 +3,12 @@ languageCode = 'en-us'
 title = 'Matsch Web'
 theme = 'PaperMod'
 
+[params]
+  ShowPostNavLinks = true
+
+[params.assets]
+  css = ["css/extended/custom.css"]
+
 [menu]
   [[menu.main]]
     identifier = "about"
