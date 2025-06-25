@@ -29,7 +29,7 @@ Der erste Abschnitt durch Dänemark sieht in der Detailplanung so aus:
 Die Reise in Schweden beginnt mit dem Westküstenradweg (Kattegattleden) bis Göteborg.
 {{< komoot src="https://www.komoot.com/de-de/tour/2326365668/embed?share_token=adJEEoXegyhrYhcXAljTmIGpNhE15yd7r8sUpsGnkMEmxXy2Y9&profile=1" >}}
 
-### Abschnitt 3: Göteborg bis Oslo (Schweden)
+### Abschnitt 3: Göteborg bis Oslo (Norwegen)
 Dies Abschnitt ist bis jetzt noch unklar. Wahrscheinlich an der Küste entlang radeln, da dieser Abschnitt
 besonders schön sein soll.
 
