@@ -5,6 +5,7 @@ theme = 'PaperMod'
 
 [params]
   ShowPostNavLinks = true
+  ShowBreadCrumbs = true
 
 [params.assets]
   css = ["css/extended/custom.css"]
