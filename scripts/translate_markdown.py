@@ -29,46 +29,25 @@ def mask_placeholders(text):
     placeholders = {}
     placeholder_id = 0
 
-    # Mask code blocks (```...```)
-    def repl_code_block(m):
+    def add_placeholder(match):
         nonlocal placeholder_id
-        placeholder = f"__CODEBLOCK_{placeholder_id}__"
-        placeholders[placeholder] = m.group(0)
+        ph = f"[[000001100000{placeholder_id}]]"
+        placeholders[ph] = match.group(0)
         placeholder_id += 1
-        return placeholder
+        return ph
 
-    text = re.sub(r"```.*?```", repl_code_block, text, flags=re.DOTALL)
+    # Mask code blocks
+    text = re.sub(r"```.*?```", add_placeholder, text, flags=re.DOTALL)
 
-    # Mask inline code (`...`)
-    def repl_inline_code(m):
-        nonlocal placeholder_id
-        placeholder = f"__INLINECODE_{placeholder_id}__"
-        placeholders[placeholder] = m.group(0)
-        placeholder_id += 1
-        return placeholder
+    # Mask inline code
+    text = re.sub(r"`[^`]+`", add_placeholder, text)
 
-    text = re.sub(r"`[^`]+`", repl_inline_code, text)
+    # Mask full markdown links and images
+    text = re.sub(r"!\[[^\]]*\]\([^)]+\)", add_placeholder, text)  # images
+    text = re.sub(r"\[[^\]]+\]\([^)]+\)", add_placeholder, text)  # links
 
-    # Mask markdown links [text](url)
-    def repl_url(m):
-        nonlocal placeholder_id
-        url = m.group(2)
-        placeholder_url = f"__URL_{placeholder_id}__"
-        placeholders[placeholder_url] = url
-        placeholder_id += 1
-        return f"[{m.group(1)}]({placeholder_url})"
-
-    text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", repl_url, text)
-
-    # Mask Hugo shortcodes {{< ... >}} or {{% ... %}}
-    def repl_shortcode(m):
-        nonlocal placeholder_id
-        placeholder = f"__SHORTCODE_{placeholder_id}__"
-        placeholders[placeholder] = m.group(0)
-        placeholder_id += 1
-        return placeholder
-
-    text = re.sub(r"\{\{\s*[<%].*?[>%]\s*\}\}", repl_shortcode, text, flags=re.DOTALL)
+    # Mask Hugo shortcodes
+    text = re.sub(r"\{\{\s*[<%].*?[>%]\s*\}\}", add_placeholder, text, flags=re.DOTALL)
 
     return text, placeholders
 

@@ -1,7 +1,21 @@
 baseURL = 'https://matsch1.github.io/web/'
-languageCode = 'en-us'
 title = 'Matsch Web'
 theme = 'PaperMod'
+defaultContentLanguage = "de"
+defaultContentLanguageInSubdir = true
+enableMissingTranslationPlaceholders = true
+
+[languages]
+
+[languages.de]
+languageName = "Deutsch"
+weight = 1
+contentDir = "content"
+
+[languages.en]
+languageName = "English"
+weight = 2
+contentDir = "content"
 
 [params]
   ShowPostNavLinks = true
