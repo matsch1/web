@@ -1,4 +1,3 @@
-baseURL = 'https://matsch1.github.io/'
 title = 'Matsch Web'
 theme = 'PaperMod'
 defaultContentLanguage = "de"
@@ -8,11 +7,13 @@ enableMissingTranslationPlaceholders = true
 [languages]
 
 [languages.de]
+baseURL = 'https://matsch1.github.io/de/web'
 languageName = "Deutsch"
 weight = 1
 contentDir = "content"
 
 [languages.en]
+baseURL = 'https://matsch1.github.io/en/web'
 languageName = "English"
 weight = 2
 contentDir = "content"
