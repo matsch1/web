@@ -5,7 +5,7 @@ img: img1.png
 description: "Automatically translate your Hugo website and deploy it to Github Pages"
 ShowToc: true
 TocOpen: true
-draft: true
+draft: false
 ---
 ![header-image](img1.png)
 
