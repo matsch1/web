@@ -103,9 +103,8 @@ for md_file in BASE_PATH.rglob("*.md"):
         print(f"🌍 Translating {md_file} → {target_file}")
 
     # Copy base file to language-specific name if missing
-    if not source_file.exists():
-        shutil.copy(md_file, source_file)
-        print(f"📄 Copied {md_file} → {source_file}")
+    shutil.copy(md_file, source_file)
+    print(f"📄 Copied {md_file} → {source_file}")
 
     # Mask placeholders before translation
     masked_content, placeholders = mask_placeholders(content)
