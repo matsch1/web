@@ -49,6 +49,9 @@ def mask_placeholders(text):
     # Mask Hugo shortcodes
     text = re.sub(r"\{\{\s*[<%].*?[>%]\s*\}\}", add_placeholder, text, flags=re.DOTALL)
 
+    # Mask **_**
+    text = re.sub("\*\*.*?\*\*", add_placeholder, text, flags=re.DOTALL)
+
     return text, placeholders
 
 
