@@ -1,15 +1,16 @@
 ---
 title: "Travel"
 date: 2025-05-04
-description: "A collection of my travel adventures and discoveries."
+description: "Eine Sammlung verschiedener Reiseerlebnisse"
 draft: false
 ---
 
-Welcome to my Travel section!
-This is where I share all the places I’ve wandered to, the adventures I’ve had, and the unexpected gems I’ve found along the way.
+Willkommen auf meiner Reise-Seite!
+Hier findest du Beiträge zu Reisen, welche ich als teilenswert erachte.
 
-The posts on this page are originally written in german, other languages are
-translated automatically using google translator.
+Hier wurde alles ursprünglich in deutscher Sprache verfasst. Andere Sprachen wurden
+automatisch mit Google Translator übersetzt.
 
+Weiter unten gehts los. Viel Spass!
 
 {{< post-cards >}}
