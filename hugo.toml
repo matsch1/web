@@ -1,4 +1,4 @@
-baseURL = 'https://matsch1.github.io/web/'
+baseURL = 'https://matsch1.github.io/'
 title = 'Matsch Web'
 theme = 'PaperMod'
 defaultContentLanguage = "de"
