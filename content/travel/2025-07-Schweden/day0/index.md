@@ -5,7 +5,7 @@ img: img1.jpg
 description: "Anreise mit dem Zug nach Flensburg"
 ShowToc: true
 TocOpen: true
-draft: false
+draft: true
 ---
 
 ## Eindrücke
