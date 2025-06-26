@@ -1,10 +1,10 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: fa81f441a3d81d393d8e1635fa349a05efc40836bdff5228e0bda06855d86d5f
+base_hash: 63d97c8c1ee866531b9b4a49f8bdbfabddb0132ef1b39ec4a96fcc28404053ba
 date: 2025-06-26
 description: Automatically translate your Hugo website and deploy it to Github Pages
-draft: true
+draft: false
 img: img1.png
 title: Kostenloser Hugo -Autotranslator für Github -Seiten
 ---
@@ -17,7 +17,7 @@ jedes Mal manuell.Dies ist viel einfacher zu pflegen und offensichtlich viel wen
 nervig.
 
 Die Idee ist also, diesen Übersetzungsprozess zu automatisieren.Deshalb sollte es
-Erkennen Sie automatisch, ob der Beitrag in Deutsch oder Englisch geschrieben ist und übersetzen
+automatisch erkannt werden, ob der Beitrag in Deutsch oder Englisch geschrieben ist und übersetzen
 es zur anderen Sprache.
 
 Ich mag es, Github -Aktionen vor der Bereitstellung zu übersetzen.
