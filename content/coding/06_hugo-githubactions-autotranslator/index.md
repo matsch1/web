@@ -1,5 +1,5 @@
 ---
-title: "Free Hugo Autotranslator for Github Pages"
+title: "Free Hugo autotranslator for Github Pages"
 date: 2025-06-26
 img: img1.png
 description: "Automatically translate your Hugo website and deploy it to Github Pages"
@@ -15,7 +15,7 @@ manually every time. This is much easier to maintain and obviously much less
 annoying. 
 
 So the idea is to automate this translation process. Therefore it should
-automatically detect if the post is written in german or english and translate
+automatically be detected if the post is written in german or english and translate
 it to the other language.
 
 I like to use Github Actions to translate before deployment.
