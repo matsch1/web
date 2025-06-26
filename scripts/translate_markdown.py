@@ -50,7 +50,7 @@ def mask_placeholders(text):
     text = re.sub(r"\{\{\s*[<%].*?[>%]\s*\}\}", add_placeholder, text, flags=re.DOTALL)
 
     # Mask **_**
-    text = re.sub("\*\*.*?\*\*", add_placeholder, text, flags=re.DOTALL)
+    text = re.sub(r"\*\*(.*?)\*\*", add_placeholder, text, flags=re.DOTALL)
 
     return text, placeholders
 
@@ -62,11 +62,12 @@ def unmask_placeholders(text, placeholders):
 
 
 for md_file in BASE_PATH.rglob("*.md"):
-    print(f"file: {md_file}")
     if md_file.suffix != ".md":
         continue
-    if md_file.name.endswith((".de.md", ".en.md")):
+    elif md_file.name.endswith((".de.md", ".en.md")):
         continue  # skip already translated files
+    else:
+        print(f"file: {md_file}")
 
     # Load base file
     post = frontmatter.load(md_file)
