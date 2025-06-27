@@ -1,12 +1,12 @@
 ---
-base_hash: 9a249edf42ef4f7dee55d747e85647ae2aa02a3419dcf9d583d95d1a8114a849
+base_hash: 7027d2c3222e20c60ba7db23defeb1a37128a5fbe36c0de3de00d9049503641f
 description: Collection of stuff
 draft: false
-image: /web/Favicon.png
+image: /web/de/Favicon.png
 title: Matssch Web
 ---
 
-![Matsch web](/web/Favicon.png)
+![Matsch web](/web/de/Favicon.png)
 Ich benutze diese Website als ungezwungene Sammlung von Gedanken, Ideen und Dingen, die ich als nützlich oder interessant empfunden habe.Teilen Sie nur, was ich unterwegs gelernt habe - vielleicht finden Sie auch etwas Hilfreiches.
 
 
