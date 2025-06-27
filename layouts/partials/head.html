@@ -101,11 +101,19 @@
 <!-- Open Graph image -->
 {{ $defaultOGImage := "https://matsch1.github.io/web/de/Favicon.png" }}
 
-{{ with .Resources.GetMatch "img1.jpg" }}
-  <meta property="og:image" content="{{ .Permalink }}">
-  <meta property="og:image:type" content="{{ .MediaType.Type }}/{{ .MediaType.SubType }}">
-  <meta property="og:image:width" content="{{ .Width }}">
-  <meta property="og:image:height" content="{{ .Height }}">
+{{ $img := .Resources.GetMatch "img1.jpg" }}
+{{ if not $img }}
+  {{ $img = .Resources.GetMatch "img1.png" }}
+{{ end }}
+{{ if not $img }}
+  {{ $img = .Resources.GetMatch "img1.webp" }}
+{{ end }}
+
+{{ if $img }}
+  <meta property="og:image" content="{{ $img.Permalink }}">
+  <meta property="og:image:type" content="{{ $img.MediaType.Type }}/{{ $img.MediaType.SubType }}">
+  <meta property="og:image:width" content="{{ $img.Width }}">
+  <meta property="og:image:height" content="{{ $img.Height }}">
 {{ else }}
   <meta property="og:image" content="{{ $defaultOGImage }}">
   <meta property="og:image:type" content="image/jpeg">
