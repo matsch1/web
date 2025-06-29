@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: f303932b82038133fc017fd067572a918d981d86ac3bab15a371b19d956178de
+base_hash: 1d4ed8e384299a05500f676f283220ca0aeb8c5a06dd672dd8f5cabca2dd6ba5
 date: 2025-06-24
 description: Grobe Routenplanung und Gepäck
 draft: false
@@ -61,21 +61,23 @@ The weight is divided as follows:
 - fork pocket on the left: 2.5 kg
 - Water: 2 kg
 
-### Camping 2500g
-- Tent
+# Equipment
+## Camping 2500g
+-  Tent
 - Groundsheet
 - air mattress
 - sleeping bag
-- Pillow
+- liner
+-  Pillow
 
-### Elektronik 1000G
+## electronics 1000g
 - Navi
 - cell phone
 - head lamp
 - rear light
 - Headphones Shockz
 - Headphones Inear
-- Keyboard
+-  Keyboard
 - chest strap
 - power bank
 - power supply
@@ -85,11 +87,12 @@ The weight is divided as follows:
 - charging cable Shockz headphones
 - Charter circuit
 
-### hygiene
+## hygiene
 - Medipack
 - travel pharmacy
 - sunscreen
-- cream face
+- [-] cream face
+- Bepanthen
 - Labello
 - Nobyte
 - ass cream
@@ -99,34 +102,40 @@ The weight is divided as follows:
 - tooth rail
 - nail clips
 - razor
-- Hand towel
-- shower gel + detergent
-- clothes pegs
+-  Hand towel
+- shower gel 4in1 (shower gel+detergent+detergent)
+- clothes peg
 - Disinfection towels
 - toilet paper
-- Tempos
-- Oropax
+- Tempo
+- Ohropax
 
-### Eat
+## Eat
 - gas cartridge
 - - stove
 - lighter
-- Pot
+-  Pot
 - folding cup
 - pocket knife
-- Spoon
+-  Spoon
 - water bottles
 - Instant coffee
 - tea
 - dates
 
-### Clothes
+## Clothes
+- bike clothes
+- pants
+- undershirt
+- jersey short
+- socks
 - Replacement bike clothes
 - pants
 - undershirt
 - jersey short
 - Buff 2x
 - bouldering pants
+-  short pants
 - sweater
 - Tshirt 2x
 - Underpants 2x
@@ -135,10 +144,12 @@ The weight is divided as follows:
 - rain jacket
 - overshoes
 - helmet
+- windbreaker
 - flip-flops
+- Bicycle gloves
 
-### Bicycle
-- Lock
+## Bicycle
+-  Lock
 - tire lifter
 - sealing milk
 - Tubeless salami
@@ -153,11 +164,15 @@ The weight is divided as follows:
 - tank band
 - switching barrel
 
-### Miscellaneous
+## Miscellaneous
 - mini backpack
-- Book
+-  Book
 - swimming goggles
 - Terraband
+- sunglasses with case
+- reading glasses
+- wallet
+-  ID
 
 ### Bicycle
 My bike is a Cube Nuroad C: 62SL.This is only suitable for such a tour with carbon frame and fork, as well as electronic circuit.But I just hope that the carbon has no objection to so much luggage.

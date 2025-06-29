@@ -60,103 +60,118 @@ Das Gewicht ist dabei wie folgt aufgeteilt:
 - Gabeltasche links: 2,5 kg
 - Wasser: 2 kg
 
-### Camping 2500g
-- Zelt
-- Groundsheet
-- Luftmatratze
-- Schlafsack
-- Kissen
+# Ausrüstung
+## Camping 2500g
+-  Zelt
+-  Groundsheet
+-  Luftmatratze 
+-  Schlafsack 
+-  Liner 
+-  Kissen
 
-### Elektronik 1000g
-- Navi
-- Handy
-- Kopflampe
-- Rücklicht
-- Kopfhörer Shockz 
-- Kopfhörer InEar
-- Tastatur
-- Brustgurt
-- Powerbank
-- Netzteil
-- Ladekabel Micro-USB
-- Ladekabel USB-C
-- Ladekabel Uhr
-- Ladekabel Shockz Kopfhörer
-- Ladegerät Schaltung
+## Elektronik 1000g
+-  Navi
+-  Handy
+-  Kopflampe 
+-  Rücklicht
+-  Kopfhörer Shockz 
+-  Kopfhörer InEar 
+-  Tastatur 
+-  Brustgurt 
+-  Powerbank 
+-  Netzteil 
+-  Ladekabel Micro-USB
+-  Ladekabel USB-C 
+-  Ladekabel Uhr 
+-  Ladekabel Shockz Kopfhörer 
+-  Ladegerät Schaltung 
 
-### Hygiene
-- Medipack
-- Reiseapotheke
-- Sonnencreme
-- Creme Gesicht
-- Labello
-- Nobyte
-- Arschcreme
-- Zahnbürste
-- Zahnpasta
-- Zahnseide + Zwischenraumbürste
-- Zahnschiene
-- Nagelclips
-- Rasierer
-- Handtuch
-- Duschgel + Waschmittel
-- Wäscheklammern
-- Desinfektionstücher
-- Klopapier
-- Tempos
-- Oropax
+## Hygiene
+-  Medipack 
+-  Reiseapotheke 
+-  Sonnencreme 
+- [-] Creme Gesicht 
+-  Bepanthen 
+-  Labello 
+-  Nobyte 
+-  Arschcreme 
+-  Zahnbürste 
+-  Zahnpasta 
+-  Zahnseide + Zwischenraumbürste 
+-  Zahnschiene 
+-  Nagelclips 
+-  Rasierer 
+-  Handtuch 
+-  Duschgel 4in1 (Duschgel+Spülmittel+Waschmittel)
+-  Wäscheklammer 
+-  Desinfektionstücher 
+-  Klopapier 
+-  Tempo 
+-  Ohropax 
 
-### Essen
-- Gaskartusche
-- Kocher
-- Feuerzeug
-- Topf
-- Falttasse
-- Taschenmesser
-- Löffel
-- Wasserflaschen
-- Instant-Kaffee
-- Tee
-- Datteln
+## Essen
+-  Gaskartusche 
+-  Kocher 
+-  Feuerzeug 
+-  Topf 
+-  Falttasse 
+-  Taschenmesser 
+-  Löffel 
+-  Wasserflaschen 
+-  Instant-Kaffee
+-  Tee 
+-  Datteln 
 
-### Klamotten
-- Ersatz Radklamotten
+## Klamotten
+-  Radklamotten 
 	- Hose 
 	- Unterhemd 
 	- Trikot kurz 
-- Buff 2x
-- Boulderhose
-- Pullover
-- TShirt 2x
-- Unterhose 2x
-- Socken 2x
-- Badehose
-- Regenjacke
-- Überschuhe
-- Helm
-- Flip-Flops
+	- Socken
+-  Ersatz Radklamotten 
+	- Hose 
+	- Unterhemd 
+	- Trikot kurz 
+-  Buff 2x 
+-  Boulderhose 
+-  kurze Hose 
+-  Pullover 
+-  TShirt 2x 
+-  Unterhose 2x 
+-  Socken 2x 
+-  Badehose 
+-  Regenjacke 
+-  Überschuhe 
+-  Helm 
+-  Windbreaker 
+-  Flip-Flops 
+-  Fahrradhandschuhe 
 
-### Fahrrad
-- Schloss
-- Reifenheber
-- Dichtmilch
-- Tubeless-Salami
-- Multitool
-- Kettenwachs
-- Lappen
-- Pumpe
-- Ersatzteile
+## Fahrrad
+-  Schloss 
+-  Reifenheber 
+-  Dichtmilch 
+-  Tubeless-Salami 
+-  Multitool 
+-  Kettenwachs 
+-  Lappen 
+-  Pumpe 
+-  Ersatzteile 
 	- Schlauch
 	- Kabelbinder
 	- Kettenschloss
 	- Panzerband
 	- Schaltauge
 
-### Sonstiges
-- Minirucksack
-- Buch
-- Schwimmbrille
-- Terraband
+## Sonstiges
+-  Minirucksack 
+-  Buch 
+-  Schwimmbrille 
+-  Terraband 
+-  Sonnenbrille mit Etui 
+-  Lesebrille 
+-  Geldbeutel 
+-  Ausweis 
 
 ### Fahrrad
 Mein Rad ist ein Cube Nuroad C:62SL. Das ist mit Carbon Rahmen und Gabel, sowie elektronische Schaltung nur bedingt für so eine Tour geeignet. Aber ich hoffe einfach, dass das Carbon nichts gegen so viel Gepäck einzuwenden hat.
