@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "travel/2025-07-Schweden/planing/index.md",
+                "file": "travel/2025-07-Schweden/day0/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -154,5 +154,9 @@
     }
   },
   "active": "af6d9682c8860751",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "travel/2025-07-Schweden/day0/img1.jpg",
+    "travel/2025-07-Schweden/day0/image_20250630085827~2.jpg",
+    "travel/2025-07-Schweden/planing/index.md"
+  ]
 }

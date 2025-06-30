@@ -1,34 +1,33 @@
 ---
-title: "Tag 0 - Anreise"
+title: Tag 0 - Anreise Flensburg
 date: 2025-06-30
 img: img1.jpg
-description: "Anreise mit dem Zug nach Flensburg"
+description: Erstmal nach Norden
 ShowToc: true
 TocOpen: true
 draft: true
 ---
 
 ## Eindrücke
-Heute war Anreisetag nach Flensburg mit ICE und RE.
+Heute den ganzen Tag im Zug verbracht. 
+Dann noch gemütlich zu Steffen rollen, um da einen schönen Abend zu verbringen. 
+Morgen geht's dann los!
 
 ### Bilder
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Bike" >}}
-{{< gallery src="img2.png" title="Route" >}}
+{{< gallery src="img1.jpg" title="Noch in Karlsruhe" >}}
 {{< /galleries >}}
 
 ### Schlafplatz 
-Bei Steffen zuhause in der Nähe von Flensburg.
-{{< open-street-map map_title="Flensburg Bahnhof" geo_link="geo:54.774603,9.436800?z=18" >}}
-
+Bei Steffen 
 
 ## Tourdaten
 Tagesstrecke: 8 km 
 
-**Gesamtkilometer: 8 km**
+**Gesamtstrecke: 8 km**
 
 ### Wetter
+Entspannte 23 Grad und Sonne
 
 ### Tour
-{{< strava-activity id="14571434794" title="Evening Run in the Park" distance="12.3 km" elevation="85 m" time="1h 05m" >}}
-
+{{< strava-activity id="14963791197" title="Zum Grillen" distance="8.4 km" elevation="75 m" time="0h 28m" >}}
