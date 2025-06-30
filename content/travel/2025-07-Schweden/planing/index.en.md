@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: f035d3e63f143078704ed783fd0cc2250390f3596c9a2f67f68b197d6fccc488
+base_hash: 328e5d0ceed401c73aff1de84e3251ee9b2709cb2207c37dcfae6fe01eed78eb
 date: 2025-06-24
 description: Grobe Routenplanung und Gepäck
 draft: false
@@ -172,7 +172,6 @@ Luggage including pockets and 1.8 l water weighs approx. 14 kg.
 - reading glasses
 - wallet
 -  ID
-
 ## Bicycle
 My bike is a Cube Nuroad C: 62SL.This is only suitable for such a tour with carbon frame and fork, as well as electronic circuit.But I just hope that the carbon has no objection to so much luggage.
 

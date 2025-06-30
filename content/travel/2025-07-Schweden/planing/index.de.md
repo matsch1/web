@@ -171,7 +171,6 @@ Gepäck inkl. Taschen und 1,8 l Wasser ca. 14 kg wiegt.
 -  Lesebrille 
 -  Geldbeutel 
 -  Ausweis 
-
 ## Fahrrad
 Mein Rad ist ein Cube Nuroad C:62SL. Das ist mit Carbon Rahmen und Gabel, sowie elektronische Schaltung nur bedingt für so eine Tour geeignet. Aber ich hoffe einfach, dass das Carbon nichts gegen so viel Gepäck einzuwenden hat.
 
