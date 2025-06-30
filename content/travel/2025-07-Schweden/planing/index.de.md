@@ -52,16 +52,15 @@ Die folgenden Kapitel beinhalten eine Auflistung der Gegenstände welche ich
 mitnehme.
 Ich habe leider nicht alles im Detail gewogen, kann aber sagen, dass das ganze
 Gepäck inkl. Taschen und 1,8 l Wasser ca. 14 kg wiegt. 
-Das Gewicht ist dabei wie folgt aufgeteilt:
+
+### Gewicht
 - Arschrakete: 3,5 kg
 - Oberrohrtasche: 0,8 kg
 - Lenkertasche mit Schloss: 3,2 kg
 - Gabeltasche rechts: 2,5 kg
 - Gabeltasche links: 2,5 kg
 - Wasser: 2 kg
-
-# Ausrüstung
-## Camping 2500g
+### Camping 2500g
 -  Zelt
 -  Groundsheet
 -  Luftmatratze 
@@ -69,7 +68,7 @@ Das Gewicht ist dabei wie folgt aufgeteilt:
 -  Liner 
 -  Kissen
 
-## Elektronik 1000g
+### Elektronik 1000g
 -  Navi
 -  Handy
 -  Kopflampe 
@@ -86,11 +85,11 @@ Das Gewicht ist dabei wie folgt aufgeteilt:
 -  Ladekabel Shockz Kopfhörer 
 -  Ladegerät Schaltung 
 
-## Hygiene
+### Hygiene
 -  Medipack 
 -  Reiseapotheke 
 -  Sonnencreme 
-- [-] Creme Gesicht 
+- Creme Gesicht 
 -  Bepanthen 
 -  Labello 
 -  Nobyte 
@@ -109,7 +108,7 @@ Das Gewicht ist dabei wie folgt aufgeteilt:
 -  Tempo 
 -  Ohropax 
 
-## Essen
+### Essen
 -  Gaskartusche 
 -  Kocher 
 -  Feuerzeug 
@@ -122,7 +121,7 @@ Das Gewicht ist dabei wie folgt aufgeteilt:
 -  Tee 
 -  Datteln 
 
-## Klamotten
+### Klamotten
 -  Radklamotten 
 	- Hose 
 	- Unterhemd 
@@ -147,7 +146,7 @@ Das Gewicht ist dabei wie folgt aufgeteilt:
 -  Flip-Flops 
 -  Fahrradhandschuhe 
 
-## Fahrrad
+### Fahrrad
 -  Schloss 
 -  Reifenheber 
 -  Dichtmilch 
@@ -163,7 +162,7 @@ Das Gewicht ist dabei wie folgt aufgeteilt:
 	- Panzerband
 	- Schaltauge
 
-## Sonstiges
+### Sonstiges
 -  Minirucksack 
 -  Buch 
 -  Schwimmbrille 
@@ -173,7 +172,7 @@ Das Gewicht ist dabei wie folgt aufgeteilt:
 -  Geldbeutel 
 -  Ausweis 
 
-### Fahrrad
+## Fahrrad
 Mein Rad ist ein Cube Nuroad C:62SL. Das ist mit Carbon Rahmen und Gabel, sowie elektronische Schaltung nur bedingt für so eine Tour geeignet. Aber ich hoffe einfach, dass das Carbon nichts gegen so viel Gepäck einzuwenden hat.
 
 Zur Bequemlichkeit lasse ich den Triathlon Lenkeraufsatz dran und rüste auf breite Tubeless Stollenreifen um.

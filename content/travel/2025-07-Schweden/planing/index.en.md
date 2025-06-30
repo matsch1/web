@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 1d4ed8e384299a05500f676f283220ca0aeb8c5a06dd672dd8f5cabca2dd6ba5
+base_hash: f035d3e63f143078704ed783fd0cc2250390f3596c9a2f67f68b197d6fccc488
 date: 2025-06-24
 description: Grobe Routenplanung und Gepäck
 draft: false
@@ -53,16 +53,15 @@ The following chapters contain a list of the objects which I
 take with me.
 Unfortunately I didn't weigh everything in detail, but I can say that the whole thing
 Luggage including pockets and 1.8 l water weighs approx. 14 kg.
-The weight is divided as follows:
+
+### Weight
 - Afer cheek: 3.5 kg
 - Ober tube bag: 0.8 kg
 - Lower pocket with lock: 3.2 kg
 - fork pocket on the right: 2.5 kg
 - fork pocket on the left: 2.5 kg
 - Water: 2 kg
-
-# Equipment
-## Camping 2500g
+### Camping 2500g
 -  Tent
 - Groundsheet
 - air mattress
@@ -70,7 +69,7 @@ The weight is divided as follows:
 - liner
 -  Pillow
 
-## electronics 1000g
+### Elektronik 1000G
 - Navi
 - cell phone
 - head lamp
@@ -87,11 +86,11 @@ The weight is divided as follows:
 - charging cable Shockz headphones
 - Charter circuit
 
-## hygiene
+### hygiene
 - Medipack
 - travel pharmacy
 - sunscreen
-- [-] cream face
+- cream face
 - Bepanthen
 - Labello
 - Nobyte
@@ -110,7 +109,7 @@ The weight is divided as follows:
 - Tempo
 - Ohropax
 
-## Eat
+### Eat
 - gas cartridge
 - - stove
 - lighter
@@ -123,7 +122,7 @@ The weight is divided as follows:
 - tea
 - dates
 
-## Clothes
+### Clothes
 - bike clothes
 - pants
 - undershirt
@@ -148,7 +147,7 @@ The weight is divided as follows:
 - flip-flops
 - Bicycle gloves
 
-## Bicycle
+### Bicycle
 -  Lock
 - tire lifter
 - sealing milk
@@ -164,7 +163,7 @@ The weight is divided as follows:
 - tank band
 - switching barrel
 
-## Miscellaneous
+### Miscellaneous
 - mini backpack
 -  Book
 - swimming goggles
@@ -174,7 +173,7 @@ The weight is divided as follows:
 - wallet
 -  ID
 
-### Bicycle
+## Bicycle
 My bike is a Cube Nuroad C: 62SL.This is only suitable for such a tour with carbon frame and fork, as well as electronic circuit.But I just hope that the carbon has no objection to so much luggage.
 
 For convenience, I leave the triathlon handlebar on the handlebars and arms on wide tubeless tunnel tires.
