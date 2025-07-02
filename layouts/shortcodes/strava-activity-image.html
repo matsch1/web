@@ -1,0 +1,7 @@
+{{ if .IsNamedParams }}
+  {{ $id := .Get "id" }}
+  {{ $image := .Get "image" }}
+  <a href="https://www.strava.com/activities/{{ $id }}" target="_blank" rel="noopener">
+    <img src="{{ $image }}" alt="Strava activity" style="max-width:100%; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+  </a>
+{{ end }}
