@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 4288d99a70b339a19da53e657db5305fe427dafdf300c607759cb9b3bea1923a
+base_hash: fe776071acbab68548395b8778691b4418895bc061319e3a40a09331759f10a5
 date: 2025-07-01
 description: Zum Reinkommen an Tag 1 erstmal die Route umgeplant
 draft: false
@@ -10,7 +10,7 @@ title: Day 1 - on the island of Fyn/Odense
 ---
 
 ## impressions
-Getting started pretty early today.If it is bright shortly after 4, you don't feel that way.Just drive off with just one coffee for the Fruehnueck.On the way then the remains of yesterday and then I was somehow jerked at the faehre.The first 70 km went away like nothing.
+Get started pretty early today.If it is bright shortly after 4, you don't feel that way.Just drive off with just one coffee for breakfast.On the way then the remains of yesterday and then I was somehow jerked on the ferry.The first 70 km went away like nothing.
 
 Just many new, new drues.
 
@@ -26,15 +26,15 @@ So I ended the bicycle day relatively early and went swimming in the Baltic Sea 
 {{< /galleries >}}
 
 ### Cost
-- 14 euros Faehre
+- 14 euros ferry
 - 18 euros lunch
-- 12 euros shopping dinner/fruehtueck
-- 5 euros overnight stay costs
+- 12 euros shopping dinner/breakfast
+- 5 euros overnight stay
 
 **49 Euro Tageskosten**
 
 ### sleeping place
-On a shelterplatz with a nice old -age paerchen in the garden.
+On a shelterplatz with a nice, antery couple in the garden.
 Water, toilet and 300 m to the beach
 
 {{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:55.04715,10.40324?z=16" >}}
@@ -48,6 +48,6 @@ Daily route: 101 km
 Relaxed 18-30 degrees and sun
 
 ### tour
-Spontaneously ways to be faithful to Fyn dangers instead of to Aero.I don't risen anything.
+Spontaneous ways of availability of the ferry to Fyn instead of Aero.I do not do anything.
 
 {{< strava-activity id="14973427243" title="Auf die Insel Fyn" distance="101 km" elevation="750 m" time="5h 15m" >}}
