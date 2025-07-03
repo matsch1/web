@@ -13,7 +13,7 @@ Heute morgen, nach einer Nacht ohne Gewitter, bin ich nur schwer aus dem Zelt ge
 
 Eine Stunde später als gestern lief es dann doch wieder ganz gut. Es war extrem windig. Der Wind kam von hauptsächlich von der Seite, und manchmal sogar von hinten, aber Hauptsache nicht von vorne. 
 
-Kurz nachdem ich die riesige und alte Brücke Storstrømsbroen überquert hatte bin ich au Joana und Christian gestoßen. Beim quatschen ist uns aufgefallen, dass wir fast das gleiche Tagesziel anpeilen, woraufhin wir beschlossen zusammen die restlichen 70 km zu fahren. 
+Kurz nachdem ich die riesige und alte Brücke Storstrømsbroen überquert hatte bin ich auf Joana und Christian gestoßen. Beim quatschen ist uns aufgefallen, dass wir fast das gleiche Tagesziel anpeilen, woraufhin wir beschlossen zusammen die restlichen 70 km zu fahren. 
 
 Die Strecke ging heute viel über Hügel durchs Inland. Da sich die Tour da so durchs Gelände geschlängelt hat, kam der Wind gefühlt von allen Seiten. Dafür haben wir uns in der Pause ein leckeres Mittagessen gegönnt. 
 

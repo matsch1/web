@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 0cf048a48470d37bf3381c6566481c9957bccfa07d7bf022292306d5dba0bd38
+base_hash: b062406580707cbc6deeffc4733e7aa96cf09fc7615ebae46eaba5ea9106325c
 date: 2025-07-03
 description: Sonne, Wind und Panne mit neuen Freunden
 draft: false
@@ -14,7 +14,7 @@ This morning, after a night without a thunderstorm, it was difficult to get out 
 
 An hour later than yesterday, things went quite well again.It was extremely windy.The wind came from mainly from the side, and sometimes even from behind, but the main thing is not from the front.
 
-Shortly after crossing the huge and old bridge Storstrømsbroen, I came across au Joana and Christian.When chatting, we noticed that we are aimed at almost the same daily goal, whereupon we decided to drive the remaining 70 km together.
+Shortly after crossing the huge and old bridge Storstrømsbroen, I came across Joana and Christian.When chatting, we noticed that we are aimed at almost the same daily goal, whereupon we decided to drive the remaining 70 km together.
 
 The route went a lot through hill through the domestic hill today.Since the tour snapped through the terrain, the wind felt felt like it was from all sides.For this we treated ourselves to a delicious lunch during the break.
 
