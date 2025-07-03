@@ -1,5 +1,5 @@
 ---
-title: Tag 2 -
+title: Tag 2 - Vorm Unwetter schützen
 date: 2025-07-02
 img: img1.jpg
 description: Bei über 30 Grad an der Küste entlang
@@ -55,4 +55,4 @@ Heute hat die Sonne richtig gebruzzelt und dabei ekelhafter Südwind
 ### Tour
 Tourverlauf voll nach Plan. Wegen aufziehendem Unwetter lag der Fokus heute auf einem trockenen Schlafplatz.
 
-{{< strava-activity-image id="14984524152" image="strava.png" >}}
+{{< strava-activity-image id="14984524152" image="strava.jpg" >}}

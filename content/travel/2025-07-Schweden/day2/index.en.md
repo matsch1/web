@@ -1,12 +1,12 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 96221586b89f7e9d09cab27ecd3fe7ab9e27961723a7d8c52ee7e824dbce885a
+base_hash: a4c01ad13fd3b745a831970fca32f881416fb7e5b471c308271acec2edcd8f8b
 date: 2025-07-02
 description: Bei über 30 Grad an der Küste entlang
 draft: false
 img: img1.jpg
-title: Day 2 -
+title: Day 2 - Protect from storm
 ---
 
 ## impressions
@@ -56,4 +56,4 @@ Today the sun was really tent and disgusting south wind
 ### tour
 Tour course fully according to plan.Due to the upset storm, the focus was now on a dry sleeping place.
 
-{{< strava-activity-image id="14984524152" image="strava.png" >}}
+{{< strava-activity-image id="14984524152" image="strava.jpg" >}}
