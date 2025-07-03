@@ -55,4 +55,4 @@ Heute hat die Sonne richtig gebruzzelt und dabei ekelhafter Südwind
 ### Tour
 Tourverlauf voll nach Plan. Wegen aufziehendem Unwetter lag der Fokus heute auf einem trockenen Schlafplatz.
 
-{{< strava-activity-image id="14984524152" image="strava.png" >}}
+{{< strava-activity-image id="14984524152" image="strava.jpg" >}}
