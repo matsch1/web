@@ -39,7 +39,7 @@ Naja, vom Regen geschützt lasse ich nun den Abend in meiner Schutzhütte auskli
 ### Schlafplatz 
 
 
-{{< open-street-map map_title="Schlafplatz Fyn" geo:55.94802,12.49485?z=15" >}}
+{{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:55.94802,12.49485?z=15" >}}
 
 ## Tourdaten
 Tagesstrecke: 86 km

@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 1e9750e19b813d93109355794c669fb762e77f1112a287acb8187bf9cd6723bc
+base_hash: 541595bcb3dde98bbd41ffa6fa2b19494e621ba35dcd7132a6c6ab76d5b75bc8
 date: 2025-07-04
 description: Kopenhagen anschauen und Pläne für die nächsten Tage machen
 draft: false
@@ -40,7 +40,7 @@ Well, protected by the rain, I now let the evening end in my shelter.Unfortunate
 ### sleeping place
 
 
-{{< open-street-map map_title="Schlafplatz Fyn" geo:55.94802,12.49485?z=15" >}}
+{{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:55.94802,12.49485?z=15" >}}
 
 ## tour dates
 Daily route: 86 km
