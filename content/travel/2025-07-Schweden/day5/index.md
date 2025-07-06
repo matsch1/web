@@ -37,9 +37,10 @@ Ich hoffe auf eine trockene Nacht (mit sauberen Rad Klamotten und voller Powerba
 - 8 Euro Fähre
 - 12 Mittagessen 
 - 0 Euro Einkauf Abendessen/Frühstück 
-- ? Euro Übernachtung (Erfahre ich erst morgen)
+- 32 Euro Übernachtung (Campingplatz)
+- 1 Euro Wäsche waschen 
 
-**20+? Euro Tageskosten**
+**53 Euro Tageskosten**
 
 ### Schlafplatz 
 {{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:56.252095,12.835089?z=17" >}}
