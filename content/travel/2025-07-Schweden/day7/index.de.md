@@ -26,8 +26,9 @@ Morgen geht es dann mit etwas Glück bei bestem Wetter weiter.
 - 0 Euro Fähre
 - 20 Euro Frühstücksbuffet
 - 60 Euro Übernachtung (Hostel nur heute)
+- 12 Euro Abendessen
 
-** 80 Euro Tageskosten**
+** 92 Euro Tageskosten**
 
 ### Schlafplatz 
 {{< open-street-map map_title="Schlafplatz" geo_link="geo:56.48610,12.94284?z=14" >}}

@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 15c737e5f92fc94015d03172efce722bd4f82bbe3d187b3e3bf7424e05424f6b
+base_hash: 7ec13b43a8b291ce1514113dc7decd272ba822f33c2cd58265cb8c5ec6dc6e95
 date: 2025-07-07
 description: Heftige Regenschauer am Vormittag und Strandspaziergang am Nachmittag
 draft: false
@@ -27,8 +27,9 @@ Tomorrow it will continue with a little luck in the best weather.
 - 0 euro ferry
 - 20 euros breakfast buffet
 - 60 euros overnight (hostel only today)
+- 12 euros dinner
 
-** 80 Euro Tageskosten**
+** 92 Euro Tageskosten**
 
 ### sleeping place
 {{< open-street-map map_title="Schlafplatz" geo_link="geo:56.48610,12.94284?z=14" >}}
