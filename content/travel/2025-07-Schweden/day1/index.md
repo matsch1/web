@@ -1,5 +1,5 @@
 ---
-title: Tag 1 - Auf die Insel Fyn/Odense
+title: 🇩🇰 Tag 1 - Auf die Insel Fyn/Odense
 date: 2025-07-01
 img: img1.jpg
 description: Zum Reinkommen an Tag 1 erstmal die Route umgeplant
