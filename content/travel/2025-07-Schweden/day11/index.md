@@ -39,7 +39,7 @@ Im Anschluss an diese tolle Passage habe ich den Nachmittag in und um Blockhus m
 
 ### Schlafplatz 
 Schlafplatz direkt am Radweg
-{{< open-street-map map_title="Schlafplatz" geo_link="15079345606" >}}
+{{< open-street-map map_title="Schlafplatz" geo_link="geo:57.16213,9.52497?z=13" >}}
 
 ## Tourdaten
 Tagesstrecke: 94 km
