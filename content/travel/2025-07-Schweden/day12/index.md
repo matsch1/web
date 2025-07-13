@@ -32,9 +32,9 @@ Hier konnte ich heiß duschen, Wäsche waschen und Akkus aufladen. Zusätzlich h
 - 8 Euro Fähre
 - 12 Euro Frühstück/Mittagessen 
 - 12 Euro Abendessen/Frühstück 
-- ? Euro Übernachtung (Erfahre ich erst morgen)
+- 28 Euro Übernachtung (Campingplatz)
 
-** ? Euro Tageskosten**
+** 60 Euro Tageskosten**
 
 ### Schlafplatz 
 Schlafplatz auf dem Campingplatz 
