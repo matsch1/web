@@ -23,7 +23,7 @@ Von Flensburg aus geht es für mich mit der Bahn nach Köln, wo ich nach 2 Ruhet
 
 ### Bilder
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Tachen immer besser gepackt>}}
+{{< gallery src="img1.jpg" title="Taschen immer besser gepackt">}}
 {{< gallery src="img2.jpg" title="Durch den Nebel" >}}
 {{< gallery src="img3.jpg" title="Ribe" >}}
 {{< gallery src="img4.jpg" title="Auf dem Weg zum Fischbrötchen" >}}
