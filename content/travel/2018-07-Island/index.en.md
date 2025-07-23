@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 99256ec41e3b53d772f0a2a096b08f6140f3f073f2d21da66c4b07f92fb884c8
+base_hash: 05142afeb8b6f113cf1f85b27f5f8700bd21d509531db6e4ff755fbf28f6def8
 date: 2018-07-01
 description: Zu 5. mit dem Rad und 30 kg Gepäck durch das Hochland von Island
 draft: true
@@ -44,13 +44,6 @@ To be able to transport all this, I bought 2 large panniers and a large, waterpr
 
 ## Impressions
 
-
 {{< galleries >}}
 {{< gallery src="img1.jpg" title="Route" >}}
-{{< gallery src="img2.jpg" title="Shelter Westküste" >}}
-{{< gallery src="img3.jpg" title="Dünenlandschaft" >}}
-{{< gallery src="img4.jpg" title="Erdbeeren am Strand" >}}
-{{< gallery src="img5.jpg" title="bester Radweg" >}}
-{{< gallery src="img6.jpg" title="Standardessen" >}}
-{{< gallery src="img7.jpg" title="Osteeecamping" >}}
 {{< /galleries >}}
