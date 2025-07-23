@@ -10,15 +10,22 @@ Main source of stuff I post to [dev.to](https://dev.to).
 Mainly for sharing impressions of my solo travels with friends and family.
 
 # Setup / Background
-## Auto Translation
-Google Translator is used for translation with python. It is deprecated but
-does work with python 3.12.3
+## Auto Translation 
+### Usage
+Follow the steps from github actions workflow.
+
+Local Debugging:
+- Run script ''' ./scripts/translate_markdown.py '''
+
+### DEEPL API
+At the moment the free version of DEEPL api is used for auto translation.
+
+### Google Translator
+At the beginning I used Google Translator for automatic translation. 
+It is deprecated but does work with python 3.12.3
 For this usecase it is important to use the following python dependencies: requests python-frontmatter langdetect googletrans==4.0.0-rc1.
 Python 3.12.3 is included in Ubuntu 24.04 (see workflow).
 
-- Local debugging with Python 3.12.3 installed via pyenv
-- Install required packages
-- Run script ''' ./scripts/translate_markdown.py '''
 
 ## Shortcodes
 ### Open-Street-Map

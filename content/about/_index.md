@@ -18,4 +18,4 @@ Reddit {{< reddit-icon url="https://www.reddit.com/user/New_Salt1964/" >}}
 
 
 This page is originally written in english. Other languages are
-translated automatically using google translator.
+translated automatically using DEEPL api.

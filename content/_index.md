@@ -14,5 +14,5 @@ This is a website build with hugo and written in markdown.
 ![Hugo](https://kinsta.com/wp-content/uploads/2021/10/hugo.png)
 
 This page is originally written in english. Other languages are
-translated automatically using google translator.
+translated automatically using DEEPL api.
 

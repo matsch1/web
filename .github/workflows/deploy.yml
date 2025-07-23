@@ -17,7 +17,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install requests python-frontmatter langdetect googletrans==4.0.0-rc1
+        run: pip install requests python-frontmatter langdetect deepl python-dotenv
 
       - name: Translate Markdown files
         run: python scripts/translate_markdown.py

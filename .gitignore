@@ -2,3 +2,4 @@
 /public/
 /resources/
 /.env/
+.env.secrets

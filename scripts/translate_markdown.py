@@ -4,12 +4,17 @@ import re
 from langdetect import detect
 from pathlib import Path
 import shutil
-from googletrans import Translator
+import deepl
+import os
+from dotenv import load_dotenv
 
 LANGS = {"de", "en"}
 BASE_PATH = Path("content")
 
-translator = Translator()
+load_dotenv(".env.secrets")
+
+auth_key = os.getenv("DEEPL_API_KEY")
+deepl_client = deepl.DeepLClient(auth_key)
 
 
 def hash_text(text: str) -> str:
@@ -18,7 +23,13 @@ def hash_text(text: str) -> str:
 
 def translate(text: str, source: str, target: str) -> str:
     try:
-        result = translator.translate(text, src=source, dest=target)
+        result = deepl_client.translate_text(
+            text,
+            source_lang=source,
+            target_lang=target,
+            formality="less",
+            context="Der Text ist ein Artikel auf meine Blog. Er hat entweder Reisebezug, oder handelt von Dingen, die ich beim programmieren gelernt habe",
+        )
         return result.text
     except Exception as e:
         print(f"Translation failed: {e}")
