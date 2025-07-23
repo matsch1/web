@@ -1,17 +1,17 @@
 ---
-base_hash: 8cd44ff936f5945c940d1383f2c4bb69399069b56ac151dbaaf57f5c35e0c252
+base_hash: 777777264646b82475d07b7c3d5d5c83b925ab8c56ea0b27a046c878b78b19a1
 date: 2025-05-04
 description: Collection of coding related stuff I want to share.
 draft: false
-title: Codierung
+title: Coding
 ---
 
-Willkommen in meinem Abschnitt **Coding**!
-Hier werfen ich all die Dinge ab, die ich schmerzlich herausgefunden habe, also müssen Sie nicht.
+Willkommen in meiner **Coding**-Sektion!  
+Hier lade ich all die Dinge ab, die ich mühsam herausgefunden habe, damit du es nicht tun musst.
 
-Diese Seite und die Beiträge sind ursprünglich in englischer Sprache geschrieben.Andere Sprachen sind
-automatisch mit Google Translator übersetzt.
+Diese Seite und die Beiträge sind ursprünglich auf Englisch geschrieben. Andere Sprachen werden
+automatisch mit der DEEPL api übersetzt.
 
-Klicken Sie auf einen Beitrag unten, um eintauchen zu können.
+Klicke auf einen Beitrag unten, um einzutauchen.
 
 {{< post-cards >}}

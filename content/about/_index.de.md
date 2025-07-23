@@ -1,5 +1,5 @@
 ---
-base_hash: 2a20a6ef6b1ad50d71ab2916bf154973b7b78a7d3434f32a08d707495ee3f0bc
+base_hash: 5aac1f28a4e24291cf558e8aa5e0c0e28ed68f336c649f87d1781f6a6119924d
 description: This is me
 draft: false
 title: Über mich
@@ -8,7 +8,7 @@ title: Über mich
 ![Me](me.jpg)
 
 ### Kontakt
-Kontaktieren Sie mich gerne über die Kanäle unten:
+Du kannst mich gerne über die unten stehenden Kanäle kontaktieren:
 
 
 E-Mail {{< email-icon email="matsch1@gmx.net" >}}
@@ -18,5 +18,5 @@ Strava {{< strava-icon url="https://www.strava.com/athletes/18430548" >}}
 Reddit {{< reddit-icon url="https://www.reddit.com/user/New_Salt1964/" >}}
 
 
-Diese Seite ist ursprünglich in englischer Sprache geschrieben.Andere Sprachen sind
-automatisch mit Google Translator übersetzt.
+Diese Seite ist ursprünglich auf Englisch verfasst. Andere Sprachen werden
+automatisch mit DEEPL api übersetzt.
