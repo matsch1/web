@@ -11,9 +11,14 @@ from dotenv import load_dotenv
 LANGS = {"de", "en"}
 BASE_PATH = Path("content")
 
-load_dotenv(".env.secrets")
+# Load from .env.secrets only if it exists (for local dev)
+if os.path.exists(".env.secrets"):
+    load_dotenv(".env.secrets")
 
 auth_key = os.getenv("DEEPL_API_KEY")
+if not auth_key:
+    raise RuntimeError("DEEPL_API_KEY not set in environment or .env.secrets")
+
 deepl_client = deepl.DeepLClient(auth_key)
 
 
