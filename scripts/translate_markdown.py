@@ -8,7 +8,7 @@ import deepl
 import os
 from dotenv import load_dotenv
 
-LANGS = {"DE", "EN-US"}
+LANGS = {"de", "en"}
 BASE_PATH = Path("content")
 
 # Load from .env.secrets only if it exists (for local dev)
@@ -27,12 +27,13 @@ def hash_text(text: str) -> str:
 
 
 def translate(text: str, source: str, target: str) -> str:
+    if target == "en":
+        target = "EN-US"
     try:
         result = deepl_client.translate_text(
             text,
             source_lang=source,
             target_lang=target,
-            formality="less",
             context="Der Text ist ein Artikel auf meine Blog. Er hat entweder Reisebezug, oder handelt von Dingen, die ich beim programmieren gelernt habe",
         )
         return result.text
@@ -98,7 +99,7 @@ for md_file in BASE_PATH.rglob("*.md"):
         print(f"Skipping {md_file}: unsupported language ({detected_lang})")
         continue
 
-    other_lang = "EN-US" if detected_lang.upper() == "DE" else "DE"
+    other_lang = "en" if detected_lang == "de" else "de"
     base_name = md_file.stem
     parent_dir = md_file.parent
 
