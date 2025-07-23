@@ -43,10 +43,10 @@ dann schnell gemacht.
 
 ### Bilder
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Taschen immer besser gepackt">}}
-{{< gallery src="img2.jpg" title="Durch den Nebel" >}}
-{{< gallery src="img3.jpg" title="Ribe" >}}
-{{< gallery src="img4.jpg" title="Auf dem Weg zum Fischbrötchen" >}}
+{{< gallery src="img1.jpg" title="Niederwalddenkmal">}}
+{{< gallery src="img2.jpg" title="Durch die alten Dörfer" >}}
+{{< gallery src="img3.jpg" title="Abend in Boppard" >}}
+{{< gallery src="img4.jpg" title="Abschluss am Rhein" >}}
 {{< /galleries >}}
 
 ### Kosten
