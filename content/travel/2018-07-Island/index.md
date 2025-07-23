@@ -42,15 +42,8 @@ Um das alles transportieren zu können, habe ich mir 2 große Gepäckträgertasc
 
 ## Eindrücke
 
-
 {{< galleries >}}
 {{< gallery src="img1.jpg" title="Route" >}}
-{{< gallery src="img2.jpg" title="Shelter Westküste" >}}
-{{< gallery src="img3.jpg" title="Dünenlandschaft" >}}
-{{< gallery src="img4.jpg" title="Erdbeeren am Strand" >}}
-{{< gallery src="img5.jpg" title="bester Radweg" >}}
-{{< gallery src="img6.jpg" title="Standardessen" >}}
-{{< gallery src="img7.jpg" title="Osteeecamping" >}}
 {{< /galleries >}}
 
 
