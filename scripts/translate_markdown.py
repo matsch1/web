@@ -8,7 +8,7 @@ import deepl
 import os
 from dotenv import load_dotenv
 
-LANGS = {"de", "en"}
+LANGS = {"DE", "EN-US"}
 BASE_PATH = Path("content")
 
 # Load from .env.secrets only if it exists (for local dev)
@@ -98,7 +98,7 @@ for md_file in BASE_PATH.rglob("*.md"):
         print(f"Skipping {md_file}: unsupported language ({detected_lang})")
         continue
 
-    other_lang = "en" if detected_lang == "de" else "de"
+    other_lang = "EN-US" if detected_lang.upper() == "DE" else "DE"
     base_name = md_file.stem
     parent_dir = md_file.parent
 
