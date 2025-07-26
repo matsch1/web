@@ -36,6 +36,7 @@ Um dann bei einer evtl. Zollkontrolle den Beamten und dir das Leben zu erleichte
 
 ### Gepäck
 ...
+...
 
 Summa Summarum wog unser Gepäck für die 10 Tage ca. 30 kg – pro Person!
 Um das alles transportieren zu können, habe ich mir 2 große Gepäckträgertaschen und einen großen, wasserdichten Seesack gekauft. Voll bepackt konnte waren wir bereit für unser Abenteuer.

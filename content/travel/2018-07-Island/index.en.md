@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 05142afeb8b6f113cf1f85b27f5f8700bd21d509531db6e4ff755fbf28f6def8
+base_hash: d1f75303b80056bc2bf98ab19b46266bcc149f4d0611c1fc850b20c7990789ab
 date: 2018-07-01
 description: Zu 5. mit dem Rad und 30 kg Gepäck durch das Hochland von Island
 draft: true
@@ -37,6 +37,7 @@ The food alone, without water, weighed almost 8 kg for the 10 days.
 To make life easier for the officials and yourself in the event of a customs check, you should carry a list with all the food and its weight/price. Fortunately, we didn't need this.
 
 ### Luggage
+...
 ...
 
 All in all, our luggage for the 10 days weighed about 30 kg - per person!
