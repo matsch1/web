@@ -34,7 +34,7 @@ Hier konnte ich heiß duschen, Wäsche waschen und Akkus aufladen. Zusätzlich h
 - 12 Euro Abendessen/Frühstück 
 - 28 Euro Übernachtung (Campingplatz)
 
-** 60 Euro Tageskosten**
+**60 Euro Tageskosten**
 
 ### Schlafplatz 
 Schlafplatz auf dem Campingplatz 

@@ -24,6 +24,7 @@ Ach ja, ich hatte meine erste richtige Dusche seit Juni 😀.
 Für morgen war ursprünglich eine kurze Etappe geplant, um 2 Nächte im Hostel zu schlafen. Da sich der Wetterbericht aber nochmal verschlechtert hat, entscheide ich morgen früh wie es weiter geht. 
 
 Ich hoffe auf eine trockene Nacht (mit sauberen Rad Klamotten und voller Powerbank).
+
 ### Bilder
 {{< galleries >}}
 {{< gallery src="img1.jpg" title="Kattegattleden" >}}

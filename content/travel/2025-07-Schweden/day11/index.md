@@ -35,7 +35,7 @@ Im Anschluss an diese tolle Passage habe ich den Nachmittag in und um Blockhus m
 - 8 Euro Abendessen/Frühstück 
 - 0 Euro Übernachtung
 
-** 14 Euro Tageskosten**
+**14 Euro Tageskosten**
 
 ### Schlafplatz 
 Schlafplatz direkt am Radweg

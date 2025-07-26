@@ -31,7 +31,7 @@ Wieder in Dänemark angekommen, habe ich mich alleine auf den Weg zu einem naheg
 - 15 Euro Abendessen/Frühstück 
 - 0 Euro Übernachtung
 
-** 78 Euro Tageskosten**
+**78 Euro Tageskosten**
 
 ### Schlafplatz 
 Schlafplatz mit Bademöglichkeiten 

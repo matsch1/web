@@ -21,7 +21,6 @@ Das hat sich allerdings auch als gute Entscheidung herausgestellt, da ich am She
 
 Ich habe mich entschieden übermorgen schon wieder die Fähre zurück nach Dänemark zu nehmen. Für mich passt das Konzept mit den Shelterplätzen einfach besser, als die Wildnis Schwedens alleine zu durchqueren. mehr dazu die nächsten Tage. 
 
-
 ### Bilder
 {{< galleries >}}
 {{< gallery src="img1.jpg" title="Halmstadt" >}}
@@ -37,7 +36,7 @@ Ich habe mich entschieden übermorgen schon wieder die Fähre zurück nach Däne
 - 15 Euro Abendessen/Frühstück 
 - 0 Euro Übernachtung
 
-** 27 Euro Tageskosten**
+**27 Euro Tageskosten**
 
 ### Schlafplatz 
 Wunderschöner Schlafplatz direkt am See

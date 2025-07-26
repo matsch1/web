@@ -38,7 +38,7 @@ Am Schlafplatz angekommen, scheint jetzt wieder die Sonne als wäre nichts gewes
 - 22 Euro Abendessen/Frühstück 
 - 0 Euro Übernachtung
 
-** 44 Euro Tageskosten**
+**44 Euro Tageskosten**
 
 ### Schlafplatz 
 Schlafplatz auf einem simplen Zeltplatz 

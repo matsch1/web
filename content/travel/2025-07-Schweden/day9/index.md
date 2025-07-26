@@ -18,7 +18,6 @@ Wir haben uns Varberg angeschaut und einfach nur die Zeit auf dem Rad genossen. 
 
 Die Nacht verbringe ich heute in einem kleinen Airbnb in der Nähe von Göteburg. So sollte ich morgen relativ schnell in die Stadt kommen, um meine Fähre um 12:15 Uhr zu bekommen. Das heißt ab 15:45 Uhr betrete ich wieder dänischen Boden in Frederikshavn unter den Füßen. 
 
-
 ### Bilder
 {{< galleries >}}
 {{< gallery src="img1.jpg" title="Auf dem Fort in Varberg" >}}
@@ -34,7 +33,7 @@ Die Nacht verbringe ich heute in einem kleinen Airbnb in der Nähe von Göteburg
 - 12 Euro Abendessen/Frühstück 
 - 75 Euro Übernachtung
 
-** 97 Euro Tageskosten**
+**97 Euro Tageskosten**
 
 ### Schlafplatz 
 Schlafplatz im Airbnb Gartenhäuschen

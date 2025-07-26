@@ -35,7 +35,7 @@ Von Flensburg aus geht es für mich mit der Bahn nach Köln, wo ich nach 2 Ruhet
 - 50 Euro Abendessen/Frühstück 
 - 0 Euro Übernachtung
 
-** 55 Euro Tageskosten**
+**55 Euro Tageskosten**
 
 ### Schlafplatz 
 Bei Steffen und Angelina

@@ -34,7 +34,7 @@ Für morgen steht die letzte Etappe in Dänemark an. Es gilt nochmal ca. 100 km 
 - 26 Euro Abendessen/Frühstück 
 - 0 Euro Übernachtung
 
-** 36 Euro Tageskosten**
+**36 Euro Tageskosten**
 
 ### Schlafplatz 
 Schlafplatz mit Bademöglichkeit 

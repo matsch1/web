@@ -35,7 +35,7 @@ Mit dem heutigen Tag habe ich übrigens das erste Viertel meiner Reisestrecke gu
 - 25 Euro Einkauf Essen und Snacks für heute und morgen
 - 60 Euro Übernachtung (Hostel nur heute)
 
-** 91 Euro Tageskosten**
+**91 Euro Tageskosten**
 
 ### Schlafplatz 
 {{< open-street-map map_title="Schlafplatz" geo_link="geo:56.48610,12.94284?z=14" >}}

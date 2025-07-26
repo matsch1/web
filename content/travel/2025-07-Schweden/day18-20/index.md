@@ -33,7 +33,7 @@ Tag 3 startete erneut durch die Weinberge. Dass meine Schaltung plötzlich verrt
 - Essen und Trinken: 145
 
 
-** 227 Euro Gesamt**
+**227 Euro Gesamt**
 
 ### Schlafplatz 
 Airbnb in Boppard an Tag 1.
