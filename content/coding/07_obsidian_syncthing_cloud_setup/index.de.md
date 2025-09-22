@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 9e4dbc6eb8b11b606b01ee7ada73deec68c0cb4c18b88d47fba2ac51c8061b39
+base_hash: 23d9ae3955356c28db8e967ecae244dcd5d1f3c96d20a236f020a40787fc22e4
 date: 2025-09-22
 description: Use syncthing on a server to create a cross-plattform file exchange for
   Obsidian notes and more
@@ -17,7 +17,7 @@ title: 'Mein Obsidian + Syncthing Setup: Eine selbstgehostete Cloud für Notizen
 Es gibt zwei Arten von Notizenmachern: diejenigen, die ihre wertvollen Gedanken der Cloud anvertrauen (hallo Notion/Google Drive/OneNote-Leute), und diejenigen, die in den Abgrund starren und denken: *"Was wäre, wenn ich meine eigene Infrastruktur dafür aufbauen würde? "*.
 
 Ich gehöre zur zweiten Gruppe.  
-Hier ist, wie ich **Syncthing + Obsidian + a VPS** in ein notizsynchronisierendes, backupfreudiges, Cloud-ersetzendes Monster verwandelt habe.  
+Hier ist, wie ich **Syncthing + Obsidian + a webserver** in ein notizsynchronisierendes, backupfreudiges, Cloud-ersetzendes Monster verwandelt habe.  
 
 ---
 

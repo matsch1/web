@@ -13,7 +13,7 @@ draft: false
 There are two kinds of note-takers: those who trust their precious thoughts to the cloud (hello Notion/Google Drive/OneNote people), and those who stare into the abyss and think: *“what if I built my own infrastructure for this?”*  
 
 I belong to the second group.  
-Here’s how I turned **Syncthing + Obsidian + a VPS** into a note-syncing, backup-happy, cloud-replacing monster.  
+Here’s how I turned **Syncthing + Obsidian + a webserver** into a note-syncing, backup-happy, cloud-replacing monster.  
 
 ---
 
