@@ -39,14 +39,14 @@ It is build with [Hugo](https://gohugo.io/) and deployed to [GitHub Pages](https
 
 The website can be found here: [matschweb](https://matsch1.github.io/web/en)
 
-# Coding 
+### Coding 
 A documentation of stuff I learned during coding.
 The topics I am currently working on are:
   - Worfklow optimizations: Syncthing, Obsidian, AI
   - Linux stuff: dotfiles, Shellmaster
   - App development: Flutter
 
-# Travel
+### Travel
 Mainly for sharing impressions of my solo travels with friends and family.
 
 
