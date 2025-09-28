@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 520f8a68aaf2950f9bd6067e0c7311b6594405e05917e058ba79928b57adfcbf
+base_hash: ef4a0a6e46c5955a85d9c5baab7e3f1efafb91bf2cb68a362e6b3a02fd1b4c83
 date: 2025-09-28
 description: Chat with your remote Obsidian vault using http mcp server.
 draft: false
@@ -12,17 +12,8 @@ title: 'Chatten Sie mit Ihren Obsidian Notes: Einführung von HTTP MCP Server'
 ![header-image](img1.png)
   
 
-## Inhaltsverzeichnis
-1. [Introduction](#introduction)
-2. [Why Obsidian HTTP MCP?](#why-obsidian-http-mcp)
-3. [How It Works](#how-it-works)
-4. [What Makes It Nerdy-Perks-Worthy](#what-makes-it-nerdy-perks-worthy)
-5. [Examples of Cool AI Interactions](#examples-of-cool-ai-interactions)
-6. [Setup](#setup)
-7. [TL;DR](#tldr)
-
 ## Einleitung
-Wenn Sie meine Obsidian-Einrichtung verfolgt haben, wissen Sie, dass ich meine Notizen gerne mit Syncthing ([My Obsidian + Syncthing Setup: A Self-Hosted Cloud for Notes, Backups, and More](https://matsch1.github.io/web/en/coding/07_obsidian_syncthing_cloud_setup/)) geräteübergreifend synchronisiere. Aber ich wollte mehr als nur synchronisieren - ich wollte **interact with my notes intelligently, anywhere, anytime**.
+Wenn Sie mein Obsidian-Setup verfolgt haben, wissen Sie, dass ich meine Notizen gerne mit Syncthing ([My Obsidian + Syncthing Setup: A Self-Hosted Cloud for Notes, Backups, and More](https://matsch1.github.io/web/en/coding/07_obsidian_syncthing_cloud_setup/)) zwischen den Geräten synchronisiere. Aber ich wollte mehr als nur synchronisieren - ich wollte **interact with my notes intelligently, anywhere, anytime**.
 
 ## Warum Obsidian HTTP MCP?
 Deshalb habe ich **Obsidian HTTP MCP** entwickelt, einen leichtgewichtigen Server, der auf [FastMCP](https://gofastmcp.com/getting-started/welcome) aufbaut und Ihren Obsidian-Tresor über HTTP mit dem MCP-Protokoll zugänglich macht.

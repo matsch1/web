@@ -10,15 +10,6 @@ draft: false
 ![header-image](img1.png)
   
 
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Why Obsidian HTTP MCP?](#why-obsidian-http-mcp)
-3. [How It Works](#how-it-works)
-4. [What Makes It Nerdy-Perks-Worthy](#what-makes-it-nerdy-perks-worthy)
-5. [Examples of Cool AI Interactions](#examples-of-cool-ai-interactions)
-6. [Setup](#setup)
-7. [TL;DR](#tldr)
-
 ## Introduction
 If you’ve been following my Obsidian setup, you know I love keeping my notes synchronized across devices with Syncthing ([My Obsidian + Syncthing Setup: A Self-Hosted Cloud for Notes, Backups, and More](https://matsch1.github.io/web/en/coding/07_obsidian_syncthing_cloud_setup/)). But I wanted more than just syncing—I wanted to **interact with my notes intelligently, anywhere, anytime**.
 
