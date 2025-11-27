@@ -5,14 +5,29 @@ image: "/web/de/Favicon.png"
 draft: false
 ---
 
-![Matsch web](/web/de/Favicon.png)
-I use this website as a casual collection of thoughts, ideas, and things I’ve found useful or interesting. 
+![](/web/de/Favicon.png)
 
+## Welcome to My Blog
 
-This is a website build with hugo and written in markdown. 
+Thanks for taking the time to visit my corner of the web.
 
-![Hugo|400](https://kinsta.com/wp-content/uploads/2021/10/hugo.png)
+This page functions primarily as a blog where I document a mix of personal interests, focusing on two main areas: 
+software development and travel.
 
-This page is originally written in english. 
-Other languages are translated automatically using DEEPL api.
+Here's what you can expect to find:
+
+**💻 Code Notes:** Articles covering observations, solutions, and key takeaways from my personal coding process. I aim to share the practical things I've learned while building projects related to DevOps, app development and homelabbing.
+
+**🌍 Travel Logs:** Posts detailing my experiences, sharing travel tips, and documenting the places I've been.
+
+It's a straightforward space designed to share information. Feel free to browse the topics that interest you most.
+
+--- 
+
+This is a website build with *HUGO*, the markdown based web framework. 
+
+![Hugo|300](https://kinsta.com/wp-content/uploads/2021/10/hugo.png)
+
+    This page is originally written in english. 
+    Other languages are translated automatically using DEEPL api.
 
