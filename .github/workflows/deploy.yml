@@ -65,6 +65,26 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      - name: Add redirect index.html
+        run: |
+          cat > ./public/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta http-equiv="refresh" content="0; url=/web/de/" />
+          </head>
+          <body>
+            <p>Redirecting…</p>
+          </body>
+          </html>
+          EOF
+
+      - name: Add CNAME
+        run: |
+          cat > ./public/CNAME << 'EOF'
+          blog.matschcode.de
+          EOF
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
