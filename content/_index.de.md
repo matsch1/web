@@ -1,12 +1,12 @@
 ---
-base_hash: 98380a87cdd57279ebcd6b5e328d926c0cad50b18bf9685cde7d0804e94e6785
+base_hash: 69257a036a62c0124746e19a0cab1e84588c186119c71ea75c2074130f6cb413
 description: Collection of stuff
 draft: false
-image: Favicon.png
+image: http://blog.matschcode.de/en/Favicon.png
 title: matsch web
 ---
 
-<img src="https://blog.matschcode.de/en/Favicon.png" alt="blog.matschcode.de" />
+![web](http://blog.matschcode.de/en/Favicon.png)
 
 ## Willkommen in meinem Blog
 
@@ -27,7 +27,7 @@ Es ist ein unkomplizierter Raum, um Informationen zu teilen. Stöbern Sie ruhig 
 
 Dies ist eine Website, die mit *HUGO*, dem Markdown-basierten Web-Framework, erstellt wurde.
 
-<img src="https://kinsta.com/wp-content/uploads/2021/10/hugo.png" alt="Hugo" width="200" />
+![hugo](https://kinsta.com/wp-content/uploads/2021/10/hugo.png)
 
 
     Diese Seite ist ursprünglich in Englisch geschrieben.

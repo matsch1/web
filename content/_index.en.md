@@ -1,11 +1,11 @@
 ---
 title: "matsch web"
 description: "Collection of stuff"
-image: "Favicon.png"
+image: "http://blog.matschcode.de/en/Favicon.png"
 draft: false
 ---
 
-<img src="https://blog.matschcode.de/en/Favicon.png" alt="blog.matschcode.de" />
+![web](http://blog.matschcode.de/en/Favicon.png)
 
 ## Welcome to My Blog
 
@@ -26,7 +26,7 @@ It's a straightforward space designed to share information. Feel free to browse 
 
 This is a website build with *HUGO*, the markdown based web framework. 
 
-<img src="https://kinsta.com/wp-content/uploads/2021/10/hugo.png" alt="Hugo" width="200" />
+![hugo](https://kinsta.com/wp-content/uploads/2021/10/hugo.png)
 
 
     This page is originally written in english. 
