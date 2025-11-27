@@ -71,7 +71,7 @@ jobs:
           <!DOCTYPE html>
           <html>
           <head>
-            <meta http-equiv="refresh" content="0; url=/web/de/" />
+            <meta http-equiv="refresh" content="0; url=en/" />
           </head>
           <body>
             <p>Redirecting…</p>
