@@ -5,7 +5,7 @@ image: "/web/de/Favicon.png"
 draft: false
 ---
 
-![](/web/de/Favicon.png)
+![web](/web/de/Favicon.png)
 
 ## Welcome to My Blog
 
@@ -26,7 +26,7 @@ It's a straightforward space designed to share information. Feel free to browse 
 
 This is a website build with *HUGO*, the markdown based web framework. 
 
-![Hugo|300](https://kinsta.com/wp-content/uploads/2021/10/hugo.png)
+![Hugo](https://kinsta.com/wp-content/uploads/2021/10/hugo.png)
 
     This page is originally written in english. 
     Other languages are translated automatically using DEEPL api.
