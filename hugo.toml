@@ -7,13 +7,13 @@ enableMissingTranslationPlaceholders = true
 [languages]
 
 [languages.de]
-baseURL = 'https://matsch1.github.io/web/de'
+baseURL = 'https://blog.matschcode.de/de'
 languageName = "Deutsch"
 weight = 1
 contentDir = "content"
 
 [languages.en]
-baseURL = 'https://matsch1.github.io/web/en'
+baseURL = 'https://blog.matschcode.de/en'
 languageName = "English"
 weight = 2
 contentDir = "content"
