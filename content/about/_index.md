@@ -4,7 +4,7 @@ description: ""
 draft: false
 ---
 
-{{< figure src="./me.jpg" width="400" alt="" class="center" >}}
+{{< figure src="./me.jpg" width="400" alt="" class="right" >}}
 
 # Contact
 
