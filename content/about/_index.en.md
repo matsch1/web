@@ -1,10 +1,10 @@
 ---
 title: "About me"
-description: "This is me"
+description: ""
 draft: false
 ---
 
-<img src="me.jpg" width="315" alt="This is me" />
+{{< figure src="./me.jpg" width="400" alt="" class="center" >}}
 
 # Contact
 
