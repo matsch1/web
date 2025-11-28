@@ -1,4 +1,4 @@
-title = 'Matsch Web'
+title = 'MatSch Web'
 theme = 'PaperMod'
 defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = true
@@ -25,7 +25,11 @@ contentDir = "content"
   ShowShareButtons = true
 
 [params.assets]
-  css = ["css/extended/custom.css"]
+  css = [
+    "css/extended/custom.css",
+    "css/extended/sidetoc.css",
+    "css/extended/thumbnail.css"
+  ]
 
 [menu]
   [[menu.main]]
