@@ -13,5 +13,3 @@ This is where I dump all the things I’ve painfully figured out, so you don’t
 
 Click on a post below to dive in.
 
-{{< post-cards >}}
-

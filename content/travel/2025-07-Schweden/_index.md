@@ -16,4 +16,3 @@ Start: 01.07.2025
 Die Vorbereitungen dazu, sowie Berichte zu einzelnen Tagen findest du in separaten
 Beiträgen hier:
 
-{{< post-cards >}}

@@ -24,6 +24,8 @@ contentDir = "content"
   ShowReadingTime = true
   ShowShareButtons = true
 
+  mainSections = []
+
 [params.assets]
   css = [
     "css/extended/custom.css",

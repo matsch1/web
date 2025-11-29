@@ -6,6 +6,11 @@ description: "Chat with your remote Obsidian vault using http mcp server."
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.png"
+  alt: "obsidian-http-mcp"
+  caption: ""
+  relative: true
 ---
 ![header-image](img1.png)
   

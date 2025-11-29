@@ -12,5 +12,3 @@ Hier findest du Beiträge zu Reisen, welche ich als teilenswert erachte.
     Andere Sprachen wurden automatisch mit DEEPL api übersetzt.
 
 Weiter unten gehts los. Viel Spass!
-
-{{< post-cards >}}
