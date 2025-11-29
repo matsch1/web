@@ -10,6 +10,8 @@ cover:
   alt: "shellmaster"
   caption: ""
   relative: true
+params:
+  ShowPostNavLinks: true
 ---
 ![header-image](img1.webp)
 Learning Linux shell commands can be daunting, but what if it could be fun? That’s the idea behind **Shellmaster**, a quiz game app that helps users master shell and bash commands through engaging quizzes. 

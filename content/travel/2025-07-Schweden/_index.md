@@ -8,6 +8,8 @@ cover:
   alt: "bikepacking-sweden-denmark"
   caption: ""
   relative: true
+params:
+  ShowPostNavLinks: true
 ---
 
 ## Blog

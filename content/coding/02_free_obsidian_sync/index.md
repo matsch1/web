@@ -11,6 +11,8 @@ cover:
   alt: "obsidian-sync"
   caption: ""
   relative: true
+params:
+  ShowPostNavLinks: true
 ---
 ![header-image](img1.webp)
 Obsidian is a great tool for collecting ideas.

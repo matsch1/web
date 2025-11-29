@@ -10,6 +10,8 @@ cover:
   alt: "goalpacer"
   caption: ""
   relative: true
+params:
+  ShowPostNavLinks: true
 ---
 ![header-image](img1.webp)
 I am proud to say that I was able to build my first flutter app in 4 days more or less ready for production.

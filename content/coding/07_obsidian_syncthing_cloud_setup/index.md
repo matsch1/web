@@ -10,6 +10,8 @@ cover:
   alt: "obsidian-syncthing"
   caption: ""
   relative: true
+params:
+  ShowPostNavLinks: true
 ---
 ![header-image](img1.png)
   

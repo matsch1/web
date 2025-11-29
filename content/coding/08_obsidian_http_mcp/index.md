@@ -10,6 +10,8 @@ cover:
   alt: "obsidian-http-mcp"
   caption: ""
   relative: true
+params:
+  ShowPostNavLinks: true
 ---
 ![header-image](img1.png)
   

@@ -10,6 +10,8 @@ cover:
   alt: ""
   caption: ""
   relative: true
+params:
+  ShowPostNavLinks: true
 ---
 
 ## Der Plan

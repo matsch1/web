@@ -10,6 +10,8 @@ cover:
   alt: "hugo-autotranslator"
   caption: ""
   relative: true
+params:
+  ShowPostNavLinks: true
 ---
 ![header-image](img1.png)
 

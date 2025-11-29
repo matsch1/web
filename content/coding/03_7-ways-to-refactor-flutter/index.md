@@ -10,6 +10,8 @@ cover:
   alt: "flutter-refactoring"
   caption: ""
   relative: true
+params:
+  ShowPostNavLinks: true
 ---
 ![header-image](img1.webp)
 Refactoring is a vital part of maintaining and improving your Flutter application. 

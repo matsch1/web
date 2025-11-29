@@ -11,6 +11,8 @@ cover:
   alt: "bikepacking-iceland"
   caption: ""
   relative: true
+params:
+  ShowPostNavLinks: true
 ---
 Das ist eine nachträgliche Sammlung meiner Eindrücke zur Jütlandumrundung.
 
