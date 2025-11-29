@@ -5,8 +5,12 @@ base_hash: 35974ea88c45f4863f863cee2e7ca263ca5498eb9d68728d1b279c08b14db7cd
 date: 2025-01-02
 description: Explanation of how I use Syncthing as a free Obsidian Sync
 draft: false
-img: img1.webp
 title: Kostenlose Obsidian PC Android-Synchronisation
+cover:
+  image: "img1.webp"
+  alt: "obsidian-sync"
+  caption: ""
+  relative: true
 ---
 
 ![header-image](img1.webp)

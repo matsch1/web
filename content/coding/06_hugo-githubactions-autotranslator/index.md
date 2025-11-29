@@ -1,11 +1,15 @@
 ---
 title: "Free Hugo autotranslator for Github Pages"
 date: 2025-06-26
-img: img1.png
 description: "Automatically translate your Hugo website and deploy it to Github Pages"
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.png"
+  alt: "hugo-autotranslator"
+  caption: ""
+  relative: true
 ---
 ![header-image](img1.png)
 

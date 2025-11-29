@@ -1,11 +1,15 @@
 ---
 title: "My Obsidian + Syncthing Setup: A Self-Hosted Cloud for Notes, Backups, and More"
 date: 2025-09-22
-img: img1.png
 description: "Use syncthing on a server to create a cross-plattform file exchange for Obsidian notes and more"
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.png"
+  alt: "obsidian-syncthing"
+  caption: ""
+  relative: true
 ---
 ![header-image](img1.png)
   

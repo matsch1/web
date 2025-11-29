@@ -1,11 +1,15 @@
 ---
 title: "7 Ways to Refactor Your Flutter Application"
 date: 2025-01-07
-img: img1.webp
 description: "My learnings during flutter refactoring"
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.webp"
+  alt: "flutter-refactoring"
+  caption: ""
+  relative: true
 ---
 ![header-image](img1.webp)
 Refactoring is a vital part of maintaining and improving your Flutter application. 

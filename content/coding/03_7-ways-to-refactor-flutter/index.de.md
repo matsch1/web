@@ -5,8 +5,12 @@ base_hash: e4d8d9a1cc6b34cbba80f279da0ac7c69a2c8335daaf30581c842fbfc36894f9
 date: 2025-01-07
 description: My learnings during flutter refactoring
 draft: false
-img: img1.webp
 title: 7 Wege zur Refaktorierung Ihrer Flutter-Anwendung
+cover:
+  image: "img1.webp"
+  alt: "flutter-refactoring"
+  caption: ""
+  relative: true
 ---
 
 ![header-image](img1.webp)

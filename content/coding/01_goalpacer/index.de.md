@@ -6,8 +6,12 @@ date: 2024-11-16
 description: Explanation of how I build my first app for martathon training using
   Flutter
 draft: false
-img: img1.webp
 title: Erste Flutter-App für das Marathontraining
+cover:
+  image: "img1.webp"
+  alt: "goalpacer"
+  caption: ""
+  relative: true
 ---
 
 ![header-image](img1.webp)

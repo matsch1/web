@@ -1,11 +1,15 @@
 ---
 title: "Free Obsidian PC Android sync"
 date: 2025-01-02
-img: img1.webp
 description: "Explanation of how I use Syncthing as a free Obsidian Sync"
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.webp"
+  alt: "obsidian-sync"
+  caption: ""
+  relative: true
 ---
 ![header-image](img1.webp)
 Obsidian is a great tool for collecting ideas.

@@ -5,8 +5,12 @@ base_hash: 555c0c80d560c1c8fd7703c2c49a03387d6ca9dd03b99e41131e242bdd4a0f64
 date: 2025-04-06
 description: My path of building a quiz app using flutter, pocketbase and unleash
 draft: false
-img: img1.webp
 title: ' Shellmaster bauen: Linux-Shell-Befehle spielerisch lernen'
+cover:
+  image: "img1.webp"
+  alt: "shellmaster"
+  caption: ""
+  relative: true
 ---
 
 ![header-image](img1.webp)

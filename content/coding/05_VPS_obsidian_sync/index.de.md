@@ -5,6 +5,11 @@ description: My awesome setup using obsidian with server centric Syncthing on mu
   devices
 draft: true
 title: Mein genialer Obsidian-Workflow
+cover:
+  image: "img1.png"
+  alt: "obsidian-workflow"
+  caption: ""
+  relative: true
 ---
 
 Ich habe mich in die Notizfunktion von Obsidian verliebt und möchte diese auf jedem

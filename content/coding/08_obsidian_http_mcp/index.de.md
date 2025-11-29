@@ -5,8 +5,12 @@ base_hash: ef4a0a6e46c5955a85d9c5baab7e3f1efafb91bf2cb68a362e6b3a02fd1b4c83
 date: 2025-09-28
 description: Chat with your remote Obsidian vault using http mcp server.
 draft: false
-img: img1.png
 title: 'Chatten Sie mit Ihren Obsidian Notes: Einführung von HTTP MCP Server'
+cover:
+  image: "img1.png"
+  alt: "obsidian-http-mcp"
+  caption: ""
+  relative: true
 ---
 
 ![header-image](img1.png)

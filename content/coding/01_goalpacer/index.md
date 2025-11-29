@@ -1,11 +1,15 @@
 ---
 title: "First Flutter app for marathon training"
 date: 2024-11-16
-img: img1.webp
 description: "Explanation of how I build my first app for martathon training using Flutter"
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.webp"
+  alt: "goalpacer"
+  caption: ""
+  relative: true
 ---
 ![header-image](img1.webp)
 I am proud to say that I was able to build my first flutter app in 4 days more or less ready for production.

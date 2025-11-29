@@ -5,8 +5,12 @@ base_hash: 63d97c8c1ee866531b9b4a49f8bdbfabddb0132ef1b39ec4a96fcc28404053ba
 date: 2025-06-26
 description: Automatically translate your Hugo website and deploy it to Github Pages
 draft: false
-img: img1.png
 title: Kostenloser Hugo-Autotranslator für Github-Seiten
+cover:
+  image: "img1.png"
+  alt: "hugo-autotranslator"
+  caption: ""
+  relative: true
 ---
 
 ![header-image](img1.png)
