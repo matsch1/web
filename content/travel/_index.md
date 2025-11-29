@@ -1,14 +1,15 @@
 ---
 title: "Travel"
 date: 2025-05-04
-description: "Eine Sammlung verschiedener Reiseerlebnisse"
+description: ""
 draft: false
 ---
 
-Willkommen auf meiner Reise-Seite!
-Hier findest du Beiträge zu Reisen, welche ich als teilenswert erachte.
+Willkommen in meinem Reisetagebuch!
+
+Hier halte ich fest, wohin mich die Wege führen – die kleinen Momente, die Eindrücke unterwegs und die Gedanken, die sich auf Reisen sammeln. Meine kleine Abenteuer auf anderen Straßen und in fremden Städten.
+
 
     Hier wurde alles ursprünglich in deutscher Sprache verfasst. 
-    Andere Sprachen wurden automatisch mit DEEPL api übersetzt.
+    Andere Sprachen wurden automatisiert mit der DEEPL api übersetzt.
 
-Weiter unten gehts los. Viel Spass!

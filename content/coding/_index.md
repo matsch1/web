@@ -1,15 +1,14 @@
 ---
 title: "Coding"
 date: 2025-05-04
-description: "Collection of coding related stuff I want to share."
+description: ""
 draft: false
 ---
 
 Welcome to my **Coding** section!  
-This is where I dump all the things I’ve painfully figured out, so you don’t have to.
+This is where I share everything that made me laugh, cry, or think—lessons I’ve painfully learned so you don’t have to
+
 
     This page and the posts are originally written in english. 
     Other languages are translated automatically using DEEPL api.
-
-Click on a post below to dive in.
 
