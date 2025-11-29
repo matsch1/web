@@ -2,11 +2,23 @@
 title: "About me"
 description: ""
 draft: false
+params:
+  homeInfoParams:
+    Title: Matthias Schäfer
+    Content: ""
+
+  socialIcons: # optional
+    - name: "github"
+      url: "https://github.com/matsch1"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/schaefer-matthias"
+    - name: "email"
+      url: "mailto:matsch1@gmx.net"
+    - name: "instagram"
+      url: "https://www.instagram.com/matsch_n"
 ---
 
 {{< figure src="./me.jpg" width="400" alt="" class="right" >}}
-
-# Matthias Schäfer
 
 Ich bin Elektroingenieur und habe viel Zeit damit verbracht, mich in verschiedenste regelungstechnische Themen zu vertiefen. Dieses Know-how konnte ich bei Projekten für elektrische Fahrzeuge unterschiedlicher Hersteller einsetzen – von der Arbeit an Hochvoltkomponenten bis hin zur Mitgestaltung der Software für Elektroantriebe.
 
@@ -27,11 +39,6 @@ Dabei habe ich etwas anderes entdeckt: meine Leidenschaft für gute Software. Ic
 
 # Contact
 
-<div style="display:flex; align-items:center; gap:5em;">
-  {{< social-icon type="email" email="matsch1@gmx.net" >}}
-  {{< social-icon type="strava" url="https://www.strava.com/athletes/18430548" >}}
-  {{< social-icon type="reddit" url="https://www.reddit.com/user/New_Salt1964/" >}}
-</div>
 
 
     Diese Seite ist im Original auf deutsch geschrieben.
