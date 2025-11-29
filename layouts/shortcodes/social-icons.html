@@ -1,0 +1,28 @@
+{{/* layouts/shortcodes/social-icon.html */}}
+
+{{ $type := .Get "type" | lower }}
+{{ $url := .Get "url" }}
+{{ $email := .Get "email" }}
+
+{{ $icon := "" }}
+{{ $href := "" }}
+{{ $alt := "" }}
+
+{{ if eq $type "email" }}
+  {{ $icon = "https://cdn-icons-png.freepik.com/256/16076/16076082.png?semt=ais_hybrid" }}
+  {{ $href = print "mailto:" $email }}
+  {{ $alt = "Email" }}
+{{ else if eq $type "strava" }}
+  {{ $icon = "https://cdn.worldvectorlogo.com/logos/strava-2.svg" }}
+  {{ $href = $url }}
+  {{ $alt = "Strava" }}
+{{ else if eq $type "reddit" }}
+  {{ $icon = "https://images.seeklogo.com/logo-png/40/1/reddit-logo-png_seeklogo-409489.png" }}
+  {{ $href = $url }}
+  {{ $alt = "Reddit" }}
+{{ end }}
+
+<a href="{{ $href }}" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="{{ $alt }}" style="display:inline-block; vertical-align:middle; margin-right:0.5em; text-decoration:none;">
+  <img src="{{ $icon }}" alt="{{ $alt }}" width="24" height="24" style="vertical-align:middle;">
+</a>
+

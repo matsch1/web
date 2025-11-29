@@ -27,7 +27,11 @@ Dabei habe ich etwas anderes entdeckt: meine Leidenschaft für gute Software. Ic
 
 # Contact
 
-E-mail {{< email-icon email="matsch1@gmx.net" >}} - Strava {{< strava-icon url="https://www.strava.com/athletes/18430548" >}} - Reddit {{< reddit-icon url="https://www.reddit.com/user/New_Salt1964/" >}}
+<div style="display:flex; align-items:center; gap:5em;">
+  {{< social-icon type="email" email="matsch1@gmx.net" >}}
+  {{< social-icon type="strava" url="https://www.strava.com/athletes/18430548" >}}
+  {{< social-icon type="reddit" url="https://www.reddit.com/user/New_Salt1964/" >}}
+</div>
 
 
     Diese Seite ist im Original auf deutsch geschrieben.
