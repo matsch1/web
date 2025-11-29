@@ -33,6 +33,12 @@ contentDir = "content"
     "css/extended/thumbnail.css"
   ]
 
+[params.social]
+  github = "https://github.com/matsch1"
+  linkedin = "https://www.linkedin.com/in/schaefer-matthias/"
+  email = "mailto:matsch1@gmx.net"
+  instagram = "https://www.instagram.com/matsch_n/"
+
 [menu]
   [[menu.main]]
     identifier = "about"
