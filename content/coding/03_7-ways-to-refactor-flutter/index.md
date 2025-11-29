@@ -13,7 +13,6 @@ cover:
 params:
   ShowPostNavLinks: true
 ---
-![header-image](img1.webp)
 Refactoring is a vital part of maintaining and improving your Flutter application. 
 It ensures your codebase remains clean, consistent, and efficient as your app grows. 
 In this article, we’ll explore seven practical ways to refactor your Flutter application.

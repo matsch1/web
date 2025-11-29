@@ -8,14 +8,14 @@ params:
     Content: ""
 
   socialIcons: # optional
-    - name: "github"
-      url: "https://github.com/matsch1"
-    - name: "linkedin"
-      url: "https://www.linkedin.com/in/schaefer-matthias"
-    - name: "email"
-      url: "mailto:matsch1@gmx.net"
-    - name: "instagram"
-      url: "https://www.instagram.com/matsch_n"
+    - name: github
+      url: https://github.com/matsch1
+    - name: linkedin
+      url: https://www.linkedin.com/in/schaefer-matthias
+    - name: email
+      url: mailto:matsch1@gmx.net
+    - name: instagram
+      url: https://www.instagram.com/matsch_n
 ---
 
 {{< figure src="./me.jpg" width="400" alt="" class="right" >}}

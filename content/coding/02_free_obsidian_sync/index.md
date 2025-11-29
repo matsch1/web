@@ -14,7 +14,6 @@ cover:
 params:
   ShowPostNavLinks: true
 ---
-![header-image](img1.webp)
 Obsidian is a great tool for collecting ideas.
 
 I use it mainly for the following reasons:

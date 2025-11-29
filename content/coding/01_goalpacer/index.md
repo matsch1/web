@@ -13,7 +13,6 @@ cover:
 params:
   ShowPostNavLinks: true
 ---
-![header-image](img1.webp)
 I am proud to say that I was able to build my first flutter app in 4 days more or less ready for production.
 
 Before these days I hadn't any experience about flutter. But I always like the idea to easily build apps for personal use. 

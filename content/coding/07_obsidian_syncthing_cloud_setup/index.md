@@ -13,9 +13,6 @@ cover:
 params:
   ShowPostNavLinks: true
 ---
-![header-image](img1.png)
-  
-
 There are two kinds of note-takers: those who trust their precious thoughts to the cloud (hello Notion/Google Drive/OneNote people), and those who stare into the abyss and think: *“what if I built my own infrastructure for this?”*  
 
 I belong to the second group.  
