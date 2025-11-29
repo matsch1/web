@@ -71,3 +71,25 @@ the browser support for :has is not widespread yet.
 .post-content figcaption {
   text-align: center;
 }
+
+/* Image positioning classes from Tracknut Option 2 */
+/* https://tracknut.ca/tech/markdown-image-handling/ */
+
+.right {
+  float: right;
+  max-width: 40%;
+  margin-left: 5px;
+}
+
+.left {
+  float: left;
+  max-width: 40%;
+  margin-right: 20px;
+}
+
+.center {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
