@@ -5,8 +5,12 @@ base_hash: 7661f121e63140eadbce4fde47272df75e54fbfa40baf479e84ad87138ff98f5
 date: 2025-07-18
 description: In 3 Tagen von Köln nach Karlsruhe
 draft: false
-img: img1.jpg
 title: "\U0001F1E9\U0001F1EA Day 18 - 20 - Back home"
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Impressions

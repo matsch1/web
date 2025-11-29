@@ -5,8 +5,12 @@ base_hash: d2951852a2e8efb66150c819dc54ae6474b226f8f37168cb6bca6c93a7836dcb
 date: 2025-07-15
 description: im Regen
 draft: false
-img: img1.jpg
 title: "\U0001F1E9\U0001F1F0 Day 15 - To Flensburg"
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Impressions

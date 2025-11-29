@@ -5,8 +5,12 @@ base_hash: 0c7580cde41d611b8af73ca617e32d14714d0c68abecf490e2ddc8d2effb2439
 date: 2025-07-02
 description: Bei über 30 Grad an der Küste entlang
 draft: false
-img: img1.jpg
 title: "\U0001F1E9\U0001F1F0 Day 2 - Protect from the storm"
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Impressions

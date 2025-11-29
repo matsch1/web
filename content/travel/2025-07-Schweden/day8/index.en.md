@@ -5,8 +5,12 @@ base_hash: d34de8bb2412fa074e12d292685734c2bc78ba7db89c3507c2f22d9329d9e8d0
 date: 2025-07-08
 description: null
 draft: false
-img: img1.jpg
 title: "\U0001F1F8\U0001F1EA Day 8 - Everything turns out differently than you think"
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Impressions

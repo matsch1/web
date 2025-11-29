@@ -1,11 +1,15 @@
 ---
 title: "Bikepacking Test in Biffontaine"
 date: 2025-06-19
-img: img1.jpg
 description: "Mit dem ganzen Gepaeck fuer die Schwedenreise die Familie in Biffontaine besuchen."
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.jpg"
+  alt: "bikepacking-test-vogese"
+  caption: ""
+  relative: true
 ---
 ## Eckdaten
 ### Strecke

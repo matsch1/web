@@ -1,11 +1,15 @@
 ---
 title: 🇩🇰 Tag 12 - Der Tag mit 2 Gesichtern
 date: 2025-07-12
-img: img1.jpg
 description: Genussradeln am Morgen, Ballern am Nachmittag 
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Eindrücke

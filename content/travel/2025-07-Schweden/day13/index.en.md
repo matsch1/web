@@ -5,8 +5,12 @@ base_hash: 70538fb763d8885e869428ffeecc8b41dae38fea4dd779c48aef1ef578b93914
 date: 2025-07-13
 description: Mit Wind, Sonne und Regen
 draft: false
-img: img1.jpg
 title: "\U0001F1E9\U0001F1F0 Day 13 - Indecisively heading south"
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Impressions

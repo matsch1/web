@@ -1,11 +1,15 @@
 ---
 title: 🇩🇰 Tag 15 - Nach Flensburg 
 date: 2025-07-15
-img: img1.jpg
 description: im Regen
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Eindrücke

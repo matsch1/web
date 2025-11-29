@@ -5,8 +5,12 @@ base_hash: fe776071acbab68548395b8778691b4418895bc061319e3a40a09331759f10a5
 date: 2025-07-01
 description: Zum Reinkommen an Tag 1 erstmal die Route umgeplant
 draft: false
-img: img1.jpg
 title: "\U0001F1E9\U0001F1F0 Day 1 - To the island of Fyn/Odense"
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Impressions

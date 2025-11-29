@@ -5,8 +5,12 @@ base_hash: 328e5d0ceed401c73aff1de84e3251ee9b2709cb2207c37dcfae6fe01eed78eb
 date: 2025-06-24
 description: Grobe Routenplanung und Gepäck
 draft: false
-img: img1.jpg
 title: Planning and preparations
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## The plan

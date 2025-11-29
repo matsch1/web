@@ -5,8 +5,12 @@ base_hash: a9395e984944cef527689116c8ae10a38b071dbead61a4fa3c9f1c199f9b1851
 date: 2025-07-06
 description: Bei Regenschauern und Sonenschein ins Hostel
 draft: false
-img: img1.jpg
 title: "\U0001F1F8\U0001F1EA Day 6 - April weather"
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Impressions

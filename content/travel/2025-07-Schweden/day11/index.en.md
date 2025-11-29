@@ -5,8 +5,12 @@ base_hash: 74f38cc85b488498039ac9cf74b6d2b29740716f4fef941d82713f3d89373326
 date: 2025-07-11
 description: Absolutes Highlight am Strand entlang zu radeln
 draft: false
-img: img1.jpg
 title: "\U0001F1E9\U0001F1F0 Day 11 - West coast of Denmark"
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Impressions

@@ -1,11 +1,15 @@
 ---
 title: Fazit
 date: 2025-07-25
-img: img1.jpg
 description: Fazit Tour und Kostenaufstellung
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Eindrücke

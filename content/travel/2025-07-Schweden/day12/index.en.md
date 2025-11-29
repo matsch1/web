@@ -5,8 +5,12 @@ base_hash: 004cfa75319b16abe8363b4e0cb6cc103171fcf3c903551f074c33f6d0a6fcc6
 date: 2025-07-12
 description: Genussradeln am Morgen, Ballern am Nachmittag
 draft: false
-img: img1.jpg
 title: "\U0001F1E9\U0001F1F0 Day 12 - The day with 2 faces"
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Impressions

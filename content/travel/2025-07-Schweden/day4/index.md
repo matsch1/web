@@ -1,11 +1,15 @@
 ---
 title: 🇩🇰 Tag 4 - Kopenhagen
 date: 2025-07-04
-img: img1.jpg
 description: Kopenhagen anschauen und Pläne für die nächsten Tage machen
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 

@@ -6,6 +6,11 @@ description: "Zu 5. mit dem Rad und 30 kg Gepäck durch das Hochland von Island"
 ShowToc: true
 TocOpen: true
 draft: true
+cover:
+  image: "img1.jpg"
+  alt: "bikepacking-iceland"
+  caption: ""
+  relative: true
 ---
 Das ist eine nachträgliche Sammlung meiner Eindrücke zur Jütlandumrundung.
 

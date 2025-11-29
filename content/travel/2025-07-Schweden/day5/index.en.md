@@ -5,8 +5,12 @@ base_hash: c16d80e2eca30d71f184452b598a1a1a2908e81b9185eb4e750d47a77d0126ae
 date: 2025-07-05
 description: Anstrengende Ankunft in Schweden mit vielen Regenschauern
 draft: false
-img: img1.jpg
 title: "\U0001F1F8\U0001F1EA Day 5 - Off to Sweden"
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Impressions

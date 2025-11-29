@@ -1,11 +1,15 @@
 ---
 title: 🇸🇪 Tag 7 - Ruhetag 
 date: 2025-07-07
-img: img1.jpg
 description: Heftige Regenschauer am Vormittag und Strandspaziergang am Nachmittag
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Eindrücke

@@ -5,8 +5,12 @@ base_hash: e26352adbfe22fc2cfda68845cc1c873419af15e469b55ceab30bba3d111a4f5
 date: 2023-07-01
 description: Mit Jonas einmal im Uhrzeigersinn um Jütland
 draft: false
-img: img1.jpg
 title: Bikepacking Denmark - Jutland Tour
+cover:
+  image: "img1.jpg"
+  alt: "bikepacking-denmark"
+  caption: ""
+  relative: true
 ---
 
 This is a retrospective collection of my impressions of the trip around Jutland.

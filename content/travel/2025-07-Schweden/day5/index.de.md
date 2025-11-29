@@ -1,11 +1,15 @@
 ---
 title: 🇸🇪 Tag 5 - Auf nach Schweden
 date: 2025-07-05
-img: img1.jpg
 description: Anstrengende Ankunft in Schweden mit vielen Regenschauern
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Eindrücke

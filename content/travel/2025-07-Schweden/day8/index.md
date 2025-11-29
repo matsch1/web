@@ -1,11 +1,15 @@
 ---
 title: 🇸🇪 Tag 8 - Alles kommt anders als man denkt
 date: 2025-07-08
-img: img1.jpg
 description: 
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Eindrücke

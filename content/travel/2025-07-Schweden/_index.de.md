@@ -1,9 +1,13 @@
 ---
 title: "Bikepacking Schweden + Dänemark 2025"
 date: 2025-06-20
-img: img1.jpg
 description: "Dokumentation meiner Bikepacking Reise durch Dänemark und Schweden"
 draft: false
+cover:
+  image: "img1.jpg"
+  alt: "bikepacking-sweden-denmark"
+  caption: ""
+  relative: true
 ---
 
 ## Blog

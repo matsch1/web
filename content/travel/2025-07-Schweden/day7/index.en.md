@@ -5,8 +5,12 @@ base_hash: a17d8a8bf7c0bb9607c223a389aeca6d209a453c0a66fb49513173353298f8fe
 date: 2025-07-07
 description: Heftige Regenschauer am Vormittag und Strandspaziergang am Nachmittag
 draft: false
-img: img1.jpg
 title: "\U0001F1F8\U0001F1EA Day 7 - Rest day"
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Impressions

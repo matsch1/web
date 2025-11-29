@@ -1,11 +1,15 @@
 ---
 title: 🇩🇰 Tag 2 - Vorm Unwetter schützen
 date: 2025-07-02
-img: img1.jpg
 description: Bei über 30 Grad an der Küste entlang
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Eindrücke

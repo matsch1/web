@@ -1,11 +1,15 @@
 ---
 title: 🇩🇰 Tag 3 - Erste Panne
 date: 2025-07-03
-img: img1.jpg
 description: Sonne, Wind und Panne mit neuen Freunden
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Eindrücke

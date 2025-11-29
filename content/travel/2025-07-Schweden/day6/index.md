@@ -1,11 +1,15 @@
 ---
 title: 🇸🇪 Tag 6 - Aprilwetter 
 date: 2025-07-06
-img: img1.jpg
 description: Bei Regenschauern und Sonenschein ins Hostel
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Eindrücke

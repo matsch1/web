@@ -5,8 +5,12 @@ base_hash: d1f75303b80056bc2bf98ab19b46266bcc149f4d0611c1fc850b20c7990789ab
 date: 2018-07-01
 description: Zu 5. mit dem Rad und 30 kg Gepäck durch das Hochland von Island
 draft: true
-img: img1.jpg
 title: Bikepacking Iceland - With the hardtail through the highlands
+cover:
+  image: "img1.jpg"
+  alt: "bikepacking-iceland"
+  caption: ""
+  relative: true
 ---
 
 This is a retrospective collection of my impressions of the trip around Jutland.

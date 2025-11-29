@@ -5,8 +5,12 @@ base_hash: 5431a9c2d1c0425868198fbc78174cb235f8d4b8dd76141a912c4165bf80a2c6
 date: 2025-07-14
 description: Hauptsach gut gess
 draft: false
-img: img1.jpg
 title: "\U0001F1E9\U0001F1F0 Day 14 - Heavy legs"
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Impressions

@@ -6,8 +6,12 @@ date: 2025-06-19
 description: Mit dem ganzen Gepaeck fuer die Schwedenreise die Familie in Biffontaine
   besuchen.
 draft: false
-img: img1.jpg
 title: Bikepacking test in Biffontaine
+cover:
+  image: "img1.jpg"
+  alt: "bikepacking-test-vogese"
+  caption: ""
+  relative: true
 ---
 
 ## Key data

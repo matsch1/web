@@ -5,8 +5,12 @@ base_hash: b616305ebff099dc4576c64d7ab16065ca5a5825ac9ead27135ca38d480cbc0b
 date: 2025-07-25
 description: Fazit Tour und Kostenaufstellung
 draft: false
-img: img1.jpg
 title: Conclusion
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Impressions

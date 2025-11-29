@@ -5,8 +5,12 @@ base_hash: b062406580707cbc6deeffc4733e7aa96cf09fc7615ebae46eaba5ea9106325c
 date: 2025-07-03
 description: Sonne, Wind und Panne mit neuen Freunden
 draft: false
-img: img1.jpg
 title: "\U0001F1E9\U0001F1F0 Day 3 - First breakdown"
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Impressions

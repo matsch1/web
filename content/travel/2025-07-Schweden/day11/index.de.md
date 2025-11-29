@@ -1,11 +1,15 @@
 ---
 title: 🇩🇰 Tag 11 - Westküste Dänemarks 
 date: 2025-07-11
-img: img1.jpg
 description: Absolutes Highlight am Strand entlang zu radeln
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Eindrücke

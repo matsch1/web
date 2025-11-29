@@ -1,11 +1,15 @@
 ---
 title: 🇸🇪 Tag 9 - Zu zweit Richtung Göteborg 
 date: 2025-07-09
-img: img1.jpg
 description: Bei Kaiserwetter quatschen 
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 ## Eindrücke

@@ -1,11 +1,15 @@
 ---
 title: 🇩🇪 Tag 0 - Anreise Flensburg
 date: 2025-06-30
-img: img1.jpg
 description: Erstmal nach Norden
 ShowToc: true
 TocOpen: true
 draft: false
+cover:
+  image: "img1.jpg"
+  alt: ""
+  caption: ""
+  relative: true
 ---
 
 
