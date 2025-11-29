@@ -22,7 +22,7 @@ contentDir = "content"
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowReadingTime = true
-  ShowShareButtons = true
+  ShowShareButtons = false
 
   mainSections = []
 
