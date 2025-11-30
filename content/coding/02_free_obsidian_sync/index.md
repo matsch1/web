@@ -12,8 +12,6 @@ cover:
   alt: "obsidian-sync"
   caption: ""
   relative: true
-params:
-  ShowPostNavLinks: true
 ---
 Obsidian is a great tool for collecting ideas.
 

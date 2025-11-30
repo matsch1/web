@@ -11,8 +11,6 @@ cover:
   alt: "goalpacer"
   caption: ""
   relative: true
-params:
-  ShowPostNavLinks: true
 ---
 I am proud to say that I was able to build my first flutter app in 4 days more or less ready for production.
 
