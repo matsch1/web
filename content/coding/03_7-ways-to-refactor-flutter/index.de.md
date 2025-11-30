@@ -1,4 +1,5 @@
 ---
+slug: "flutter-refactoring"
 ShowToc: true
 TocOpen: true
 base_hash: 2b990d8ecba343e6814e8034ef7d382335e955c0658abac1880771720e3809a3

@@ -1,4 +1,5 @@
 ---
+slug: "obsidian-workflow"
 base_hash: bd95cf0ac8648a04043fd754ef22782efbfa2b27c50b1aeb7ed68cbdcb53352d
 cover:
   alt: obsidian-workflow

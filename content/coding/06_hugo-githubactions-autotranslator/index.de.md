@@ -1,4 +1,5 @@
 ---
+slug: "hugo-autotranslator"
 ShowToc: true
 TocOpen: true
 base_hash: 5a1cb1962f71d8a0a82c58649e8694bf95e1899cc2e106131a6d99da8dd03802

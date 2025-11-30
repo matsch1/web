@@ -8,8 +8,8 @@ cover:
   image: img1.webp
   relative: true
 date: 2024-11-16
-description: Explanation of how I build my first app for martathon training using
-  Flutter
+description: Explanation of how I build my first app for martathon training using Flutter
+slug: "goalpacer-pace-estimator"
 draft: false
 params:
   ShowPostNavLinks: true

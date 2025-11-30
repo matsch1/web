@@ -1,5 +1,6 @@
 ---
 title: " Building Shellmaster: A Fun Way to Learn Linux Shell Commands "
+slug: "building-shellmaster"
 date: 2025-04-06
 description: "My path of building a quiz app using flutter, pocketbase and unleash"
 ShowToc: true

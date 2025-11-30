@@ -1,5 +1,6 @@
 ---
 title: "7 Ways to Refactor Your Flutter Application"
+slug: "flutter-refactoring"
 date: 2025-01-07
 description: "My learnings during flutter refactoring"
 ShowToc: true

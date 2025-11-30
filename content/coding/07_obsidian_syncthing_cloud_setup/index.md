@@ -1,5 +1,6 @@
 ---
 title: "My Obsidian + Syncthing Setup: A Self-Hosted Cloud for Notes, Backups, and More"
+slug: "obsidian-cloud-sync-setup"
 date: 2025-09-22
 description: "Use syncthing on a server to create a cross-plattform file exchange for Obsidian notes and more"
 ShowToc: true

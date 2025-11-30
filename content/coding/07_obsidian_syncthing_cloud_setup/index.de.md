@@ -1,4 +1,5 @@
 ---
+slug: "obsidian-cloud-sync-setup"
 ShowToc: true
 TocOpen: true
 base_hash: aabbd9cc74f69b40aafa93a714cb5d1092c23af88471a90529243b559bfd3910

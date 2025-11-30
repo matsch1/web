@@ -1,5 +1,6 @@
 ---
 title: "First Flutter app for marathon training"
+slug: "goalpacer-pace-estimator"
 date: 2024-11-16
 description: "Explanation of how I build my first app for martathon training using Flutter"
 ShowToc: true

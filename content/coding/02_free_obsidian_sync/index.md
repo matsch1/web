@@ -1,5 +1,6 @@
 ---
 title: "Free Obsidian PC Android sync"
+slug: "free-obsidian-sync-solution"
 date: 2025-01-02
 img: img1.webp
 description: "Explanation of how I use Syncthing as a free Obsidian Sync"

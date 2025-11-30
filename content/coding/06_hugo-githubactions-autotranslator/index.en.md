@@ -1,5 +1,6 @@
 ---
 title: "Free Hugo autotranslator for Github Pages"
+slug: "hugo-autotranslator"
 date: 2025-06-26
 description: "Automatically translate your Hugo website and deploy it to Github Pages"
 ShowToc: true

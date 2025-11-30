@@ -1,4 +1,5 @@
 ---
+slug: "obsidian-http-mcp"
 ShowToc: true
 TocOpen: true
 base_hash: 2a2fff609143c7d99ed791049e4646eb78e6ef1c9598cab6dbd1f850e9a6d4ff

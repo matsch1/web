@@ -1,5 +1,6 @@
 ---
 title: "Chat With Your Obsidian Notes: Introducing HTTP MCP Server"
+slug: "obsidian-http-mcp"
 date: 2025-09-28
 description: "Chat with your remote Obsidian vault using http mcp server."
 ShowToc: true

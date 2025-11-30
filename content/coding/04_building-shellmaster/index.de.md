@@ -1,4 +1,5 @@
 ---
+slug: "building-shellmaster"
 ShowToc: true
 TocOpen: true
 base_hash: bed2e9b631f6fc31d378ec9f84924770c3214ccd44b87ddac9d5612f1fbc936d

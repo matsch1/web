@@ -1,4 +1,5 @@
 ---
+slug: "free-obsidian-sync-solution"
 ShowToc: true
 TocOpen: true
 base_hash: ae103845a1a6ccdd19702b010d1fb9234d4e96905e2a4c416bed88c017935e28
