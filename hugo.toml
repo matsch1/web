@@ -3,6 +3,7 @@ theme = 'PaperMod'
 defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = true
 enableMissingTranslationPlaceholders = true
+enableRobotsTXT = true
 
 [languages]
 
