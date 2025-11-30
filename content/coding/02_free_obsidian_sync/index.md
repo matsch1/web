@@ -12,6 +12,9 @@ cover:
   alt: "obsidian-sync"
   caption: ""
   relative: true
+tags:
+  - obsidian
+  - syncthing
 ---
 Obsidian is a great tool for collecting ideas.
 

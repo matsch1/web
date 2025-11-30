@@ -11,6 +11,9 @@ cover:
   alt: "hugo-autotranslator"
   caption: ""
   relative: true
+tags:
+  - hugo
+  - github-actions
 ---
 ## The problem and the idea
 I want to write a blog post in english or german, and I don't want translate it

@@ -11,6 +11,8 @@ cover:
   alt: "flutter-refactoring"
   caption: ""
   relative: true
+tags:
+  - flutter
 ---
 Refactoring is a vital part of maintaining and improving your Flutter application. 
 It ensures your codebase remains clean, consistent, and efficient as your app grows. 

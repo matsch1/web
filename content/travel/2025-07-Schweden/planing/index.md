@@ -10,6 +10,8 @@ cover:
   alt: ""
   caption: ""
   relative: true
+tags:
+  - bikepacking
 ---
 
 ## Der Plan

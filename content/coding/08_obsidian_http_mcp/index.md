@@ -11,6 +11,9 @@ cover:
   alt: "obsidian-http-mcp"
   caption: ""
   relative: true
+tags:
+  - obsidian
+  - mcp
 ---
 ## Introduction
 If you’ve been following my Obsidian setup, you know I love keeping my notes synchronized across devices with Syncthing ([My Obsidian + Syncthing Setup: A Self-Hosted Cloud for Notes, Backups, and More](https://matsch1.github.io/web/en/coding/07_obsidian_syncthing_cloud_setup/)). But I wanted more than just syncing—I wanted to **interact with my notes intelligently, anywhere, anytime**.

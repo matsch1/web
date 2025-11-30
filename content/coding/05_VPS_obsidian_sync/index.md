@@ -9,6 +9,8 @@ cover:
   alt: "obsidian-workflow"
   caption: ""
   relative: true
+tags:
+  - obsidian
 ---
 
 I felt in love about note taking with obsidian and want to have this on every
