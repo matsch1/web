@@ -2,15 +2,17 @@
 ShowToc: true
 TocOpen: true
 base_hash: 096cd707e57bd529e990b884e048df74b1344e94c40af2b426f342c482216bc3
+cover:
+  alt: ''
+  caption: ''
+  image: img1.jpg
+  relative: true
 date: 2025-07-10
 description: Gefühlt den ganzen Tag auf dem Schiff
 draft: false
+tags:
+- bikepacking
 title: "\U0001F1E9\U0001F1F0 Day 10 - Exploring Gothenburg and taking the ferry"
-cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
-  relative: true
 ---
 
 ## Impressions

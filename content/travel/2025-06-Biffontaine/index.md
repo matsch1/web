@@ -10,8 +10,8 @@ cover:
   alt: "bikepacking-test-vogese"
   caption: ""
   relative: true
-params:
-  ShowPostNavLinks: true
+tags:
+  - bikepacking
 ---
 ## Eckdaten
 ### Strecke

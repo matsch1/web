@@ -2,15 +2,17 @@
 ShowToc: true
 TocOpen: true
 base_hash: 541595bcb3dde98bbd41ffa6fa2b19494e621ba35dcd7132a6c6ab76d5b75bc8
+cover:
+  alt: ''
+  caption: ''
+  image: img1.jpg
+  relative: true
 date: 2025-07-04
 description: Kopenhagen anschauen und Pläne für die nächsten Tage machen
 draft: false
+tags:
+- bikepacking
 title: "\U0001F1E9\U0001F1F0 Day 4 - Copenhagen"
-cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
-  relative: true
 ---
 
 ## Impressions

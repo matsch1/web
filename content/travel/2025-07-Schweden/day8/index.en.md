@@ -2,15 +2,17 @@
 ShowToc: true
 TocOpen: true
 base_hash: d34de8bb2412fa074e12d292685734c2bc78ba7db89c3507c2f22d9329d9e8d0
+cover:
+  alt: ''
+  caption: ''
+  image: img1.jpg
+  relative: true
 date: 2025-07-08
 description: null
 draft: false
+tags:
+- bikepacking
 title: "\U0001F1F8\U0001F1EA Day 8 - Everything turns out differently than you think"
-cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
-  relative: true
 ---
 
 ## Impressions
@@ -24,7 +26,7 @@ As soon as you move away from the coast, the landscape feels much more like Swed
 
 However, this turned out to be a good decision, as I once again met other cyclists at the shelter. Having dinner with like-minded people makes it even more fun.
 
-I've decided to take the ferry back to Denmark the day after tomorrow. For me, the concept of the shelter sites is simply better than crossing the Swedish wilderness on my own.
+I've decided to take the ferry back to Denmark the day after tomorrow. For me, the concept of the shelter sites simply suits me better than crossing the Swedish wilderness on my own.
 
 ### Pictures
 {{< galleries >}}
@@ -58,6 +60,6 @@ Cold 17-25 degrees, cloudy
 north wind
 
 ### Tour
-Take a route along the coast and test inland
+Do a route along the coast and test inland
 
 {{< strava-activity-image id="15046344170" image="strava.jpg" >}}

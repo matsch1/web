@@ -19,6 +19,9 @@ languageName = "English"
 weight = 2
 contentDir = "content"
 
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
 [params]
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
@@ -35,19 +38,29 @@ contentDir = "content"
   ]
 
 [menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
-  [[menu.main]]
-    identifier = "coding"
-    name = "Coding"
-    url = "/coding/"
-    weight = 20
-  [[menu.main]]
-    identifier = "travel"
-    name = "Travel"
-    url = "/travel/"
-    weight = 30
+[[menu.main]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/projects/"
+  weight = 10
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/blog/"
+  weight = 20
+[[menu.main]]
+  identifier = "travel"
+  name = "Travel"
+  url = "/travel/"
+  weight = 30
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 40
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 50
 

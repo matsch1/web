@@ -2,15 +2,17 @@
 ShowToc: true
 TocOpen: true
 base_hash: 328e5d0ceed401c73aff1de84e3251ee9b2709cb2207c37dcfae6fe01eed78eb
+cover:
+  alt: ''
+  caption: ''
+  image: img1.jpg
+  relative: true
 date: 2025-06-24
 description: Grobe Routenplanung und Gepäck
 draft: false
+tags:
+- bikepacking
 title: Planning and preparations
-cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
-  relative: true
 ---
 
 ## The plan
@@ -21,7 +23,7 @@ My luggage should be as light as possible, but have everything I need for a mont
 month trip.
 
 ## Route
-The rough route is planned to start and end in Flensburg and pass through the following cities:
+The rough route plan, starting and ending in Flensburg, goes through the following cities:
 Copenhagen, Gothenburg, Oslo, Larvik, Hirtshals, Esbjerg
 I would like to cycle approx. 100 km a day.
 {{< komoot src="https://www.komoot.com/de-de/tour/2034498871/embed?share_token=aISPLoFO3KX0E0hxm10fPL7w0dY36uWN4zp8HN4CC7btLetpw7&profile=1" >}}
@@ -56,7 +58,7 @@ on the bike.
 The following chapters contain a list of the items I take with me.
 take with me.
 Unfortunately, I haven't weighed everything in detail, but I can say that all the
-luggage including bags and 1.8 liters of water weighs approx. 14 kg.
+luggage including bags and 1.8 liters of water weighs about 14 kg.
 
 ### Weight
 - Ass rocket: 3.5 kg

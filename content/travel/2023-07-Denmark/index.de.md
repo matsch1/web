@@ -10,6 +10,8 @@ cover:
   alt: "bikepacking-denmark"
   caption: ""
   relative: true
+tags:
+  - bikepacking
 ---
 Das ist eine nachträgliche Sammlung meiner Eindrücke zur Jütlandumrundung.
 

@@ -2,15 +2,17 @@
 ShowToc: true
 TocOpen: true
 base_hash: b062406580707cbc6deeffc4733e7aa96cf09fc7615ebae46eaba5ea9106325c
+cover:
+  alt: ''
+  caption: ''
+  image: img1.jpg
+  relative: true
 date: 2025-07-03
 description: Sonne, Wind und Panne mit neuen Freunden
 draft: false
+tags:
+- bikepacking
 title: "\U0001F1E9\U0001F1F0 Day 3 - First breakdown"
-cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
-  relative: true
 ---
 
 ## Impressions
@@ -59,6 +61,6 @@ Warm 16-23 degrees and sunny.
 Strong westerly wind. Sometimes it even pushed a bit, but mostly it was just annoying.
 
 ### Tour
-Tour according to plan. Unfortunately I had to skip the coast at Køge, otherwise it would have been too late for me. I'll go there tomorrow.
+Tour according to plan. Unfortunately I had to skip the coast at Køge, otherwise it would have been too late. I'll go there tomorrow.
 
 {{< strava-activity-image id="14995555876" image="strava.jpg" >}}

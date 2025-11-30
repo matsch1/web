@@ -2,19 +2,21 @@
 ShowToc: true
 TocOpen: true
 base_hash: fe776071acbab68548395b8778691b4418895bc061319e3a40a09331759f10a5
+cover:
+  alt: ''
+  caption: ''
+  image: img1.jpg
+  relative: true
 date: 2025-07-01
 description: Zum Reinkommen an Tag 1 erstmal die Route umgeplant
 draft: false
+tags:
+- bikepacking
 title: "\U0001F1E9\U0001F1F0 Day 1 - To the island of Fyn/Odense"
-cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
-  relative: true
 ---
 
 ## Impressions
-Got off quite early today. When it's light from just after 4, it doesn't seem like it. With just a coffee for breakfast, I just set off. On the way I ate the leftovers from yesterday and then somehow I was at the ferry in no time. The first 70 km went by like nothing.
+Got off quite early today. When it's light from just after 4, it doesn't seem like it. With just a coffee for breakfast, I simply set off. On the way I ate the leftovers from yesterday and then somehow I was at the ferry in no time. The first 70 km went by like nothing.
 
 Just lots of new, beautiful impressions.
 

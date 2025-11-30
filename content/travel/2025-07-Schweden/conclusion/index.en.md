@@ -2,15 +2,17 @@
 ShowToc: true
 TocOpen: true
 base_hash: b616305ebff099dc4576c64d7ab16065ca5a5825ac9ead27135ca38d480cbc0b
+cover:
+  alt: ''
+  caption: ''
+  image: img1.jpg
+  relative: true
 date: 2025-07-25
 description: Fazit Tour und Kostenaufstellung
 draft: false
+tags:
+- bikepacking
 title: Conclusion
-cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
-  relative: true
 ---
 
 ## Impressions
@@ -32,7 +34,7 @@ So Denmark was once again a dream. Not only because the country is so beautiful,
 
 The finish with Jan on the Rhine Cycle Route felt like civilization again.
 The section we cycled is also really beautiful, but doesn't really have much to do with nature.
-Maybe it was because I was no longer alone, but the day trips also felt more like such.
+Maybe it was because I was no longer alone, but the day trips also felt more like day trips.
 I was no longer a traveler, but simply on a nice day trip as usual.
 
 ### Pictures
@@ -49,7 +51,7 @@ I was no longer a traveler, but simply on a nice day trip as usual.
 
 ### Costs
 #### Transportation
-The transportation costs are made up of the rail travel for arrival and departure, as well as a total of 7 ferry trips.
+The transportation costs are made up of the train journeys for arrival and departure, as well as a total of 7 ferry trips.
 
 Arrival and departure ICE with bicycle: 91 Euro + 68 Euro = 159 Euro
 

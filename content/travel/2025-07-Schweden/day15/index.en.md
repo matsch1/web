@@ -2,19 +2,21 @@
 ShowToc: true
 TocOpen: true
 base_hash: d2951852a2e8efb66150c819dc54ae6474b226f8f37168cb6bca6c93a7836dcb
+cover:
+  alt: ''
+  caption: ''
+  image: img1.jpg
+  relative: true
 date: 2025-07-15
 description: im Regen
 draft: false
+tags:
+- bikepacking
 title: "\U0001F1E9\U0001F1F0 Day 15 - To Flensburg"
-cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
-  relative: true
 ---
 
 ## Impressions
-The day started today in thick fog. Without sunshine, it was impossible to even think about getting the tent any kind of sign. So I had to pack everything soaking wet.
+The day started today in thick fog. Without the sun, it was impossible to even think about getting the tent any kind of sign. So I had to pack everything soaking wet.
 
 After 10 km on the bike I reached Ribe, the former capital of Denmark. At 9 a.m., the beautiful old town was still pretty sleepy and unfortunately I couldn't see the inside of the Viking cathedral.
 
@@ -24,7 +26,7 @@ So on the last day in Denmark I struggled through the rain on the road. Unfortun
 
 So I cycled the route relatively quickly to spend the evening with friends in Flensburg. We ended the evening together with 3 delicious fish sandwiches in good company.
 
-From Flensburg, I will take the train to Cologne, where I will start my journey home on the Rhine Cycle Route after 2 rest days.
+From Flensburg, I'm taking the train to Cologne, where I'll start my journey home on the Rhine Cycle Route after 2 rest days.
 
 ### Pictures
 {{< galleries >}}

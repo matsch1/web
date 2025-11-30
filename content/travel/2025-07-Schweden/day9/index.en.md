@@ -2,15 +2,17 @@
 ShowToc: true
 TocOpen: true
 base_hash: be0af07b8e325a6ca33235e90f791373b653565c4c5e1df6517a4a7acb9f3cbb
+cover:
+  alt: ''
+  caption: ''
+  image: img1.jpg
+  relative: true
 date: 2025-07-09
 description: Bei Kaiserwetter quatschen
 draft: false
+tags:
+- bikepacking
 title: "\U0001F1F8\U0001F1EA Day 9 - Heading for Gothenburg in pairs"
-cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
-  relative: true
 ---
 
 ## Impressions

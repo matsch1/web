@@ -2,21 +2,23 @@
 ShowToc: true
 TocOpen: true
 base_hash: 004cfa75319b16abe8363b4e0cb6cc103171fcf3c903551f074c33f6d0a6fcc6
+cover:
+  alt: ''
+  caption: ''
+  image: img1.jpg
+  relative: true
 date: 2025-07-12
 description: Genussradeln am Morgen, Ballern am Nachmittag
 draft: false
+tags:
+- bikepacking
 title: "\U0001F1E9\U0001F1F0 Day 12 - The day with 2 faces"
-cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
-  relative: true
 ---
 
 ## Impressions
 After ending yesterday evening around a campfire with Danish hikers, I set off this morning in bright sunshine.
 
-At first I took the wrong route on the sat nav and drove 15 km inland. Fortunately, this didn't send me in the completely wrong direction, but only cost me a few kilometers of the West Coast Cycle Route.
+At first I took the wrong route on the satnav and drove 15 km inland. Fortunately, this didn't send me in the completely wrong direction, but only cost me a few kilometers of the West Coast Cycle Route.
 
 So until the lunch break, the route was mainly on gravel roads through beautiful dunes and forests.
 

@@ -10,8 +10,8 @@ cover:
   alt: ""
   caption: ""
   relative: true
-params:
-  ShowPostNavLinks: true
+tags:
+  - bikepacking
 ---
 
 

@@ -2,16 +2,18 @@
 ShowToc: true
 TocOpen: true
 base_hash: d4136ea7850f8a619f421f2f4305da1557951dd768731f28afc306f0b6983e72
+cover:
+  alt: bikepacking-test-vogese
+  caption: ''
+  image: img1.jpg
+  relative: true
 date: 2025-06-19
 description: Mit dem ganzen Gepaeck fuer die Schwedenreise die Familie in Biffontaine
   besuchen.
 draft: false
+tags:
+- bikepacking
 title: Bikepacking test in Biffontaine
-cover:
-  image: "img1.jpg"
-  alt: "bikepacking-test-vogese"
-  caption: ""
-  relative: true
 ---
 
 ## Key data

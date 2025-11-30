@@ -2,15 +2,17 @@
 ShowToc: true
 TocOpen: true
 base_hash: c16d80e2eca30d71f184452b598a1a1a2908e81b9185eb4e750d47a77d0126ae
+cover:
+  alt: ''
+  caption: ''
+  image: img1.jpg
+  relative: true
 date: 2025-07-05
 description: Anstrengende Ankunft in Schweden mit vielen Regenschauern
 draft: false
+tags:
+- bikepacking
 title: "\U0001F1F8\U0001F1EA Day 5 - Off to Sweden"
-cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
-  relative: true
 ---
 
 ## Impressions
@@ -23,10 +25,10 @@ The weather was still moderate, but I didn't spend much time there and set off s
 For lunch, I went to Höganäs and got a typically Swedish pizza at the kebab shop.
 
 The day's destination was to be a campsite in Ängelholm to do some laundry and charge my devices.
-I'm writing this in a large tent at the campsite while it's pouring with rain outside. I hope my tent stays waterproof. This is definitely a trial by fire.
+I'm now writing this text in a large tent at the campsite while it's pouring with rain outside. I hope my tent stays waterproof. This is definitely a trial by fire.
 Oh yes, I had my first proper shower since June 😀.
 
-A short stage was originally planned for tomorrow to sleep in the hostel for 2 nights. However, as the weather forecast has deteriorated again, I'll decide tomorrow morning how to continue.
+A short stage was originally planned for tomorrow to sleep in the hostel for 2 nights. But as the weather forecast has deteriorated again, I'll decide tomorrow morning how to continue.
 
 I'm hoping for a dry night (with clean cycling clothes and a full power bank).
 

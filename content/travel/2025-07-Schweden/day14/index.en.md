@@ -2,15 +2,17 @@
 ShowToc: true
 TocOpen: true
 base_hash: 5431a9c2d1c0425868198fbc78174cb235f8d4b8dd76141a912c4165bf80a2c6
+cover:
+  alt: ''
+  caption: ''
+  image: img1.jpg
+  relative: true
 date: 2025-07-14
 description: Hauptsach gut gess
 draft: false
+tags:
+- bikepacking
 title: "\U0001F1E9\U0001F1F0 Day 14 - Heavy legs"
-cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
-  relative: true
 ---
 
 ## Impressions
@@ -20,7 +22,7 @@ So I set off late at half past ten, after spending the morning having a nice cha
 
 My first destination for today was the town of Esbjerg, which I reached after a long breakfast break at around 13:30. Once there, I treated myself to a delicious cappuccino.
 
-From Esbjerg it was still about 25 km to the targeted shelter site. Here I was able to take a dip in a small river in the sunshine and relax after work.
+From Esbjerg it was still about 25 km to the shelter I was aiming for. Here I was able to swim in a small river in the sunshine and relax after work.
 
 Tomorrow is the last stage in Denmark. I have to cross another 100 km inland to Flensburg.
 

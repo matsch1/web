@@ -33,6 +33,12 @@ jobs:
           git config user.email "github-actions@users.noreply.github.com"
           git add content/
           git diff --cached --quiet || git commit -m "Auto-translated markdown files"
-          git push origin HEAD:staging --force
+          git push origin HEAD:main
         continue-on-error: true
+      - name: Merge main into staging
+        run: |
+          # Fetch latest staging branch
+          git fetch origin staging
+          git checkout staging
+          git merge origin/main --no-ff -m "Merge main into staging"
 

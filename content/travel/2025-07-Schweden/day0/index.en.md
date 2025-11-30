@@ -2,15 +2,17 @@
 ShowToc: true
 TocOpen: true
 base_hash: 4ce54cee5d56c10bdf6ecbaa8b56b91af915c3053bcd5d408006866ffb3caa27
+cover:
+  alt: ''
+  caption: ''
+  image: img1.jpg
+  relative: true
 date: 2025-06-30
 description: Erstmal nach Norden
 draft: false
+tags:
+- bikepacking
 title: "\U0001F1E9\U0001F1EA Day 0 - Arrival Flensburg"
-cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
-  relative: true
 ---
 
 ## Impressions
