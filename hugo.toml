@@ -58,21 +58,15 @@ home = ["HTML", "RSS", "JSON"]
   name = "Topics"
   url = "#"
   weight = 40
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 1
-  [[menu.main]]
-    parent = "topics"
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 2
-  [[menu.main]]
-    parent = "topics"
-    identifier = "search"
-    name = "Search"
-    url = "/search/"
-    weight = 3
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 50
+[[menu.main]]
+  parent = "topics"
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 60
 
