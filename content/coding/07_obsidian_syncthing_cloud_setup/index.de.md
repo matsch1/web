@@ -12,10 +12,11 @@ date: 2025-09-22
 description: Use syncthing on a server to create a cross-plattform file exchange for
   Obsidian notes and more
 draft: false
-params:
-  ShowPostNavLinks: true
 title: 'Mein Obsidian + Syncthing Setup: Eine selbstgehostete Cloud für Notizen, Backups
   und mehr'
+tags:
+  - obsdian
+  - syncthing
 ---
 
 Es gibt zwei Arten von Notizenmachern: diejenigen, die ihre wertvollen Gedanken der Cloud anvertrauen (hallo Notion/Google Drive/OneNote-Leute), und diejenigen, die in den Abgrund starren und denken: *"Was wäre, wenn ich meine eigene Infrastruktur dafür aufbauen würde? "*.

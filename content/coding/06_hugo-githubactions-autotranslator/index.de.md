@@ -11,9 +11,10 @@ cover:
 date: 2025-06-26
 description: Automatically translate your Hugo website and deploy it to Github Pages
 draft: false
-params:
-  ShowPostNavLinks: true
 title: Kostenloser Hugo-Autotranslator für Github-Seiten
+tags:
+  - hugo
+  - github-actions
 ---
 
 ## Das Problem und die Idee

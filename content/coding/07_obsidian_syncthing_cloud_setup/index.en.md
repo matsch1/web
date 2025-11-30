@@ -11,8 +11,9 @@ cover:
   alt: "obsidian-syncthing"
   caption: ""
   relative: true
-params:
-  ShowPostNavLinks: true
+tags:
+  - obsdian
+  - syncthing
 ---
 There are two kinds of note-takers: those who trust their precious thoughts to the cloud (hello Notion/Google Drive/OneNote people), and those who stare into the abyss and think: *“what if I built my own infrastructure for this?”*  
 

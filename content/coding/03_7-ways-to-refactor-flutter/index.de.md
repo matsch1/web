@@ -12,6 +12,8 @@ description: My learnings during flutter refactoring
 draft: false
 slug: flutter-refactoring
 title: 7 Wege zur Refaktorierung Ihrer Flutter-Anwendung
+tags:
+  - flutter
 ---
 
 Refactoring ist ein wichtiger Teil der Wartung und Verbesserung Ihrer Flutter-Anwendung.

@@ -11,8 +11,10 @@ cover:
   alt: "shellmaster"
   caption: ""
   relative: true
-params:
-  ShowPostNavLinks: true
+tags:
+  - flutter
+  - application
+  - linux
 ---
 Learning Linux shell commands can be daunting, but what if it could be fun? That’s the idea behind **Shellmaster**, a quiz game app that helps users master shell and bash commands through engaging quizzes. 
 Check it out on Google Play Store: [Shellmaster - Apps on Google Play](https://play.google.com/store/apps/details?id=com.matschcode.shellmaster)

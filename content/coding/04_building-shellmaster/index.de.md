@@ -14,6 +14,10 @@ draft: false
 params:
   ShowPostNavLinks: true
 title: ' Shellmaster bauen: Linux-Shell-Befehle spielerisch lernen'
+tags:
+  - flutter
+  - application
+  - linux
 ---
 
 Linux-Shell-Befehle zu lernen kann entmutigend sein, aber was wäre, wenn es Spaß machen würde? Das ist die Idee hinter **Shellmaster**, einer Quiz-App, die Nutzern hilft, Shell- und Bash-Befehle mit Hilfe von spannenden Quizspielen zu meistern.

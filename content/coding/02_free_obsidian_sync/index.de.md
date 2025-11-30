@@ -13,6 +13,9 @@ draft: false
 img: img1.webp
 slug: free-obsidian-sync-solution
 title: Kostenlose Obsidian PC Android-Synchronisation
+tags:
+  - obsidian
+  - syncthing
 ---
 
 Obsidian ist ein großartiges Werkzeug zum Sammeln von Ideen.

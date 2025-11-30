@@ -13,6 +13,8 @@ draft: true
 params:
   ShowPostNavLinks: true
 title: Mein genialer Obsidian-Workflow
+tags:
+  - obsidian
 ---
 
 Ich habe mich in die Notizfunktion von Obsidian verliebt und möchte diese auf jedem
