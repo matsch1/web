@@ -4,7 +4,7 @@ Disallow: /de/
 
 Disallow: /de/projects/
 
-Disallow: /de/blog/obsidian-http-mcp/
+Disallow: /de/projects/obsidian-http-mcp/
 
 Disallow: /de/tags/mcp/
 
