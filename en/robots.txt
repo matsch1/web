@@ -2,8 +2,6 @@ User-agent: *
 
 Disallow: /en/coding/obsidian-http-mcp/
 
-Disallow: /en/coding/
-
 Disallow: /en/
 
 Disallow: /en/coding/obsidian-cloud-sync-setup/
@@ -51,6 +49,8 @@ Disallow: /en/travel/2025-07-schweden/planing/
 Disallow: /en/travel/2025-07-schweden/
 
 Disallow: /en/travel/2025-06-biffontaine/
+
+Disallow: /en/coding/
 
 Disallow: /en/travel/
 
