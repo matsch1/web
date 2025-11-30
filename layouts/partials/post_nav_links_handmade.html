@@ -1,4 +1,13 @@
 <nav class="post-nav">
-  {{ with .Prev }}<a class="prev" href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}
-  {{ with .Next }}<a class="next" href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}
+  {{ with .Prev }}
+    {{ if eq .Section $.Section }}
+      <a class="prev" href="{{ .RelPermalink }}">← {{ .Title }}</a>
+    {{ end }}
+  {{ end }}
+
+  {{ with .Next }}
+    {{ if eq .Section $.Section }}
+      <a class="next" href="{{ .RelPermalink }}">{{ .Title }} →</a>
+    {{ end }}
+  {{ end }}
 </nav>
