@@ -1,0 +1,4 @@
+<nav class="post-nav">
+  {{ with .Prev }}<a class="prev" href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}
+  {{ with .Next }}<a class="next" href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}
+</nav>
