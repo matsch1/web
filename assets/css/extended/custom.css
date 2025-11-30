@@ -1,24 +1,3 @@
-/* ========= modification of navigation buttons =============*/
-.paginav {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 3rem;
-}
-
-.paginav .prev,
-.paginav .next {
-    flex-grow: 1;
-}
-
-.paginav .prev {
-  text-align: right;
-}
-
-.paginav .next {
-  text-align: left;
-}
-
-
 /* ========= papermod mods =============*/
 /* Increase the default width of the page. */
 .main {
