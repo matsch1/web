@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Hugo build and push to gh-pages branch
 
 on:
   push:
