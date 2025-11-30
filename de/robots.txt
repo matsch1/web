@@ -1,0 +1,72 @@
+User-agent: *
+
+Disallow: /de/coding/obsidian-http-mcp/
+
+Disallow: /de/
+
+Disallow: /de/coding/obsidian-cloud-sync-setup/
+
+Disallow: /de/travel/2025-07-schweden/conclusion/
+
+Disallow: /de/travel/2025-07-schweden/day18-20/
+
+Disallow: /de/travel/2025-07-schweden/day15/
+
+Disallow: /de/travel/2025-07-schweden/day14/
+
+Disallow: /de/travel/2025-07-schweden/day13/
+
+Disallow: /de/travel/2025-07-schweden/day12/
+
+Disallow: /de/travel/2025-07-schweden/day11/
+
+Disallow: /de/travel/2025-07-schweden/day10/
+
+Disallow: /de/travel/2025-07-schweden/day9/
+
+Disallow: /de/travel/2025-07-schweden/day8/
+
+Disallow: /de/travel/2025-07-schweden/day7/
+
+Disallow: /de/travel/2025-07-schweden/day6/
+
+Disallow: /de/travel/2025-07-schweden/day5/
+
+Disallow: /de/travel/2025-07-schweden/day4/
+
+Disallow: /de/travel/2025-07-schweden/day3/
+
+Disallow: /de/travel/2025-07-schweden/day2/
+
+Disallow: /de/travel/2025-07-schweden/day1/
+
+Disallow: /de/travel/2025-07-schweden/day0/
+
+Disallow: /de/coding/hugo-autotranslator/
+
+Disallow: /de/travel/2025-07-schweden/planing/
+
+Disallow: /de/travel/2025-07-schweden/
+
+Disallow: /de/travel/2025-06-biffontaine/
+
+Disallow: /de/coding/
+
+Disallow: /de/travel/
+
+Disallow: /de/coding/building-shellmaster/
+
+Disallow: /de/coding/flutter-refactoring/
+
+Disallow: /de/coding/free-obsidian-sync-solution/
+
+Disallow: /de/coding/goalpacer-pace-estimator/
+
+Disallow: /de/travel/2023-07-denmark/
+
+Disallow: /de/about/
+
+Disallow: /de/categories/
+
+Disallow: /de/tags/
+
