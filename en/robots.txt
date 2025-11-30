@@ -4,7 +4,19 @@ Disallow: /en/coding/obsidian-http-mcp/
 
 Disallow: /en/
 
+Disallow: /en/tags/mcp/
+
+Disallow: /en/tags/obsidian/
+
+Disallow: /en/tags/
+
 Disallow: /en/coding/obsidian-cloud-sync-setup/
+
+Disallow: /en/tags/obsdian/
+
+Disallow: /en/tags/syncthing/
+
+Disallow: /en/tags/bikepacking/
 
 Disallow: /en/travel/2025-07-schweden/conclusion/
 
@@ -44,6 +56,10 @@ Disallow: /en/travel/2025-07-schweden/day0/
 
 Disallow: /en/coding/hugo-autotranslator/
 
+Disallow: /en/tags/github-actions/
+
+Disallow: /en/tags/hugo/
+
 Disallow: /en/travel/2025-07-schweden/planing/
 
 Disallow: /en/travel/2025-07-schweden/
@@ -56,17 +72,19 @@ Disallow: /en/travel/
 
 Disallow: /en/coding/building-shellmaster/
 
+Disallow: /en/tags/application/
+
+Disallow: /en/tags/flutter/
+
+Disallow: /en/tags/linux/
+
 Disallow: /en/coding/flutter-refactoring/
 
 Disallow: /en/coding/free-obsidian-sync-solution/
 
 Disallow: /en/coding/goalpacer-pace-estimator/
 
-Disallow: /en/tags/flutter/
-
 Disallow: /en/tags/sports/
-
-Disallow: /en/tags/
 
 Disallow: /en/travel/2023-07-denmark/
 
