@@ -38,29 +38,41 @@ home = ["HTML", "RSS", "JSON"]
   ]
 
 [menu]
+# [[menu.main]]
+#   identifier = "project"
+#   name = "Project"
+#   url = "/projects/"
+#   weight = 10
+[[menu.main]]
+  identifier = "coding"
+  name = "Coding"
+  url = "/coding/"
+  weight = 20
+[[menu.main]]
+  identifier = "travel"
+  name = "Travel"
+  url = "/travel/"
+  weight = 30
+[[menu.main]]
+  identifier = "topics"
+  name = "Topics"
+  url = "#"
+  weight = 40
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 10
+    weight = 1
   [[menu.main]]
-    identifier = "coding"
-    name = "Coding"
-    url = "/coding/"
-    weight = 20
-  [[menu.main]]
-    identifier = "travel"
-    name = "Travel"
-    url = "/travel/"
-    weight = 30
-  [[menu.main]]
+    parent = "topics"
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
-    weight = 40
+    weight = 2
   [[menu.main]]
+    parent = "topics"
     identifier = "search"
     name = "Search"
     url = "/search/"
-    weight = 50
+    weight = 3
 
