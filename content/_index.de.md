@@ -1,5 +1,5 @@
 ---
-base_hash: 63d741d78f561cd0333dddfab8714355451bf235aa8f5739d9e408dbd2ebe18a
+base_hash: 3f68eea2355786663480cef83d0ca2f81aab72cc06c9816da6473298324407d6
 description: Collection of stuff
 draft: false
 image: http://blog.matschcode.de/en/Favicon.png
@@ -12,12 +12,13 @@ title: MatSch Web
 
 Danke, dass Sie sich die Zeit genommen haben, meine Ecke des Webs zu besuchen.
 
-Diese Seite dient in erster Linie als Blog, in dem ich eine Mischung aus persönlichen Interessen dokumentiere, wobei ich mich auf zwei Hauptbereiche konzentriere:
-Software-Entwicklung und Reisen.
+Diese Seite dient in erster Linie als eine Sammlung persönlicher Interessen.
 
 Hier ist, was Sie erwarten können zu finden:
 
-**💻 Code Notes:** Artikel mit Beobachtungen, Lösungen und wichtigen Erkenntnissen aus meinem persönlichen Entwicklungsprozess. Ich möchte die praktischen Dinge teilen, die ich bei der Entwicklung von Projekten in den Bereichen DevOps, App-Entwicklung und Homelabbing gelernt habe.
+**🔧 Projects:** Eine wachsende Liste von Lösungen, Experimenten und Builds, die meinen bisherigen technischen Weg geprägt haben.
+
+**💻 Code Notes:** Artikel mit Beobachtungen, Lösungen und wichtigen Erkenntnissen aus meinem persönlichen Programmierprozess. Mein Ziel ist es, die praktischen Dinge zu teilen, die ich beim Aufbau von Projekten im Zusammenhang mit DevOps, App-Entwicklung und Homelabbing gelernt habe.
 
 **🌍 Travel Logs:** Beiträge, in denen ich meine Erfahrungen beschreibe, Reisetipps mitteile und die Orte dokumentiere, an denen ich war.
 
