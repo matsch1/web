@@ -68,5 +68,7 @@ Disallow: /en/about/
 
 Disallow: /en/categories/
 
+Disallow: /en/search/
+
 Disallow: /en/tags/
 
