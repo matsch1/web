@@ -62,6 +62,12 @@ Disallow: /en/coding/free-obsidian-sync-solution/
 
 Disallow: /en/coding/goalpacer-pace-estimator/
 
+Disallow: /en/tags/flutter/
+
+Disallow: /en/tags/sports/
+
+Disallow: /en/tags/
+
 Disallow: /en/travel/2023-07-denmark/
 
 Disallow: /en/about/
@@ -69,6 +75,4 @@ Disallow: /en/about/
 Disallow: /en/categories/
 
 Disallow: /en/search/
-
-Disallow: /en/tags/
 
