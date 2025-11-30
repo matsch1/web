@@ -11,10 +11,11 @@ draft: false
 
 Thanks for taking the time to visit my corner of the web.
 
-This page functions primarily as a blog where I document a mix of personal interests, focusing on two main areas: 
-software development and travel.
+This page functions primarily as a collection of personal interests.
 
 Here's what you can expect to find:
+
+**🔧 Projects:** A growing list of the solutions, experiments, and builds that have shaped my technical journey so far.
 
 **💻 Code Notes:** Articles covering observations, solutions, and key takeaways from my personal coding process. I aim to share the practical things I've learned while building projects related to DevOps, app development and homelabbing.
 

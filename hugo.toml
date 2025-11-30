@@ -38,15 +38,15 @@ home = ["HTML", "RSS", "JSON"]
   ]
 
 [menu]
-# [[menu.main]]
-#   identifier = "project"
-#   name = "Project"
-#   url = "/projects/"
-#   weight = 10
 [[menu.main]]
-  identifier = "coding"
-  name = "Coding"
-  url = "/coding/"
+  identifier = "projects"
+  name = "Projects"
+  url = "/projects/"
+  weight = 10
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/blog/"
   weight = 20
 [[menu.main]]
   identifier = "travel"
