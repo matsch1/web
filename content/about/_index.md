@@ -2,20 +2,6 @@
 title: "About me"
 description: ""
 draft: false
-params:
-  homeInfoParams:
-    Title: Matthias Schäfer
-    Content: ""
-
-  socialIcons: # optional
-    - name: github
-      url: https://github.com/matsch1
-    - name: linkedin
-      url: https://www.linkedin.com/in/schaefer-matthias
-    - name: email
-      url: mailto:matsch1@gmx.net
-    - name: instagram
-      url: https://www.instagram.com/matsch_n
 ---
 
 {{< figure src="./me.jpg" width="400" alt="" class="right" >}}
@@ -37,9 +23,9 @@ Dabei habe ich etwas anderes entdeckt: meine Leidenschaft für gute Software. Ic
 
 ---
 
-# Contact
+# Kontakt
 
-
+&nbsp;&nbsp;[![linkedin](/en/share_linkedin.png)](https://www.linkedin.com/in/schaefer-matthias) &nbsp;&nbsp;&nbsp;&nbsp;[![github](/en/share_github.png)](https://github.com/matsch1) &nbsp;&nbsp;&nbsp;&nbsp;[![email](/en/share_instagram.png)](https://www.instagram.com/matsch_n) &nbsp;&nbsp;&nbsp;&nbsp;[![email](/en/share_email.png)](mailto:matsch1@gmx.net)
 
     Diese Seite ist im Original auf deutsch geschrieben.
     Andere Sprachen wurden mit Hilfe der DEEPL api übersetzt.
