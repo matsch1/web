@@ -6,7 +6,7 @@ draft: false
 ---
 
 Welcome to my **Coding** section!  
-This is where I share everything that made me laugh, cry, or think—lessons I’ve painfully learned so you don’t have to
+This is where I share everything that made me laugh, cry, or think—lessons I’ve painfully learned so you don’t have to.
 
 
     This page and the posts are originally written in english. 
