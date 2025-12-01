@@ -172,11 +172,49 @@ The next step is to install our platform [Coolify](https://coolify.io/) using th
 curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
 ```
 
-Before going on we have to allow coolfiy network communication to the firewall.
-- inspect
-- allow
+Before going on we have to allow Coolfiy network communication to the firewall.
+To do so we have to inspect the networks of the docker bridge and Coolify running these commands:
+```
+sudo docker network inspect bridge
+sudo docker network inspect coolify
+```
 
-Finish the installation by accessing the coolify web UI on `http://<tailscale-ip>:8000` and follow the instructions.
+The output should result in something like this:
+```
+[
+    {
+        "Name": "coolify",
+        "Id": "6103a5aa95d01b69bba2d662f8b1d66645a8ab909ff45499e905e5b36302cf57",
+        "Created": "2025-02-01T18:09:18.815150113+01:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "10.0.1.0/24",
+                    "Gateway": "10.0.1.1"
+                }
+            ]
+        },
+.
+.
+.
+```
+Note the `Subnet` of the IPAM -> Config of the bridge and coolify.
+Note the `Gateway` of the IPAM -> Config of the bridge.
+With these three values the new firewall rules can be addes:
+``` shell
+sudo ufw allow from <subnet-bridge> to <gateway-bridge>
+sudo ufw allow from <subnet-coolify> to <gateway-bridge>
+sudo ufw reload
+sudo service ssh restart
+```
+
+Finish the installation by accessing the coolify web UI on `http://<tailscale-ip>:8000` from inside the Tailnet and follow the instructions.
 
 
 ---

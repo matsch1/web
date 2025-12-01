@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 452e4f4da49695cf4f9d4a7bb789eb83b7cdb97fb390850053a7752647d7c107
+base_hash: 569f8195f1c3192d5c6d864c3755cfc0ae02daa833ac1c9378af8291441c0d98
 cover:
   alt: coolify-vps-setup
   caption: ''
@@ -107,7 +107,7 @@ Deaktivieren Sie den Root-Login (editieren Sie `/etc/ssh/sshd_config`):
 
 
 #### Firewall
-Für mehr Sicherheit wollen wir alle Ports blockieren, die wir nicht benötigen.
+Für eine bessere Sicherheit wollen wir alle Ports blockieren, die wir nicht benötigen.
 Zu diesem Zweck verwenden wir die unkomplizierte Firewall ([UFW](https://wiki.ubuntu.com/UncomplicatedFirewall)).
 
 ==Bevor Sie die Firewall aktivieren, überprüfen Sie, ob der SSH-Login funktioniert!
@@ -174,10 +174,48 @@ curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
 ```
 
 Bevor wir weitermachen, müssen wir die Netzwerkkommunikation von Coolify mit der Firewall erlauben.
-- inspizieren
-- zulassen
+Dazu müssen wir die Netzwerke der Docker Bridge und von Coolify überprüfen, indem wir diese Befehle ausführen:
+```
+sudo docker network inspect bridge
+sudo docker network inspect coolify
+```
 
-Schließe die Installation ab, indem du die coolify Web UI auf `http://<tailscale-ip>:8000` aufrufst und den Anweisungen folgst.
+Die Ausgabe sollte in etwa so aussehen:
+```
+[
+    {
+        "Name": "coolify",
+        "Id": "6103a5aa95d01b69bba2d662f8b1d66645a8ab909ff45499e905e5b36302cf57",
+        "Created": "2025-02-01T18:09:18.815150113+01:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "10.0.1.0/24",
+                    "Gateway": "10.0.1.1"
+                }
+            ]
+        },
+.
+.
+.
+```
+Beachten Sie die `Subnet` der IPAM -> Config der Bridge und Coolify.
+Beachten Sie die `Gateway` der IPAM -> Config der Bridge.
+Mit diesen drei Werten können die neuen Firewall-Regeln hinzugefügt werden:
+``` shell
+sudo ufw allow from <subnet-bridge> to <gateway-bridge>
+sudo ufw allow from <subnet-coolify> to <gateway-bridge>
+sudo ufw reload
+sudo service ssh restart
+```
+
+Schließen Sie die Installation ab, indem Sie die coolify Web UI auf `http://<tailscale-ip>:8000` vom Tailnet aus aufrufen und den Anweisungen folgen.
 
 
 ---
