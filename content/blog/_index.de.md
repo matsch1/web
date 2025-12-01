@@ -1,12 +1,12 @@
 ---
-base_hash: c4e0fb8859494c398d956e1926d4fe9115a7ccf4b78173bfe6e3806a8ae2cedf
+base_hash: f44d691fa3ebc49b85e82875267b957c9de55f53a17d66cadef600beb477a1c0
 date: 2025-05-04
 description: ''
 draft: false
-title: Kodierung
+title: Blog
 ---
 
-Willkommen in meiner **Coding**-Sektion!  
+Willkommen in meinem Blog!
 Hier teile ich alles, was mich zum Lachen, Weinen oder Nachdenken gebracht hat - Lektionen, die ich auf schmerzhafte Weise gelernt habe, damit Sie es nicht tun müssen.
 
 
