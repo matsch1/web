@@ -39,8 +39,8 @@ home = ["HTML", "RSS", "JSON"]
 [params.fuseOpts]
    isCaseSensitive = false
     shouldSort = true
-    threshold: 0.25
-    minMatchCharLength: 2
+    threshold = 0.25
+    minMatchCharLength = 2
 
 [menu]
 [[menu.main]]
