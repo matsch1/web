@@ -18,6 +18,12 @@ Disallow: /de/tags/obsdian/
 
 Disallow: /de/tags/syncthing/
 
+Disallow: /de/tags/3d-printing/
+
+Disallow: /de/tags/keyboard/
+
+Disallow: /de/projects/split-keyboard-ianmaclarty/
+
 Disallow: /de/tags/bikepacking/
 
 Disallow: /de/travel/2025-07-schweden/conclusion/
