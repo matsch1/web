@@ -20,7 +20,7 @@ weight = 2
 contentDir = "content"
 
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON"] # for search
 
 [params]
   ShowPostNavLinks = true
@@ -28,7 +28,9 @@ home = ["HTML", "RSS", "JSON"]
   ShowReadingTime = true
   ShowShareButtons = true
 
-  mainSections = []
+  mainSections = [] # to hide blog posts from main page
+
+  comments = true
 
 [params.assets]
   css = [
@@ -36,7 +38,7 @@ home = ["HTML", "RSS", "JSON"]
     "css/extended/sidetoc.css",
     "css/extended/thumbnail.css"
   ]
-[params.fuseOpts]
+[params.fuseOpts] # for search
    isCaseSensitive = false
     shouldSort = true
     threshold = 0.25
