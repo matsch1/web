@@ -234,9 +234,9 @@ Finish the installation by accessing the Coolify web UI on `http://<tailscale-ip
 
 1. In Coolify, create a new project (e.g. `VPS production`).
 2. Add resources (e.g. `Syncthing`) 
-{{< figure src="./coolify_new_resource.png" width="700" alt="Add Coolify resource" >}}
+{{< figure src="./coolify_new_resource.png" width="900" alt="Add Coolify resource" >}}
 3. Configuration > General > define service name and service url.
-{{< figure src="./coolify_syncthing_configuration.png" width="700" alt="Syncthing configuration" >}}
+{{< figure src="./coolify_syncthing_configuration.png" width="900" alt="Syncthing configuration" >}}
 4. Deploy the container.  
 5. Access Syncthing via service url.
 
