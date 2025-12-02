@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: dbb37fc40f902aad5407b3a4ce1c75d1882155abe8b394e226e5c833dee558e4
+base_hash: e6aade8529b6ff2ad89511cb046472700476bf5d42f86ee2a8b6113a017309f6
 cover:
   alt: coolify-vps-setup
   caption: ''
@@ -219,7 +219,7 @@ Die Ausgabe sollte in etwa so aussehen:
 .
 ```
 Beachten Sie die `Subnet` der `IPAM -> Config` der Bridge und von Coolify.
-Beachten Sie den `Gateway` des `IPAM -> Config` der Brücke.
+Beachten Sie die `Gateway` der `IPAM -> Config` der Brücke.
 Mit diesen drei Werten können die neuen Firewall-Regeln hinzugefügt werden:
 ``` shell
 sudo ufw allow from <subnet-bridge> to <gateway-bridge>
@@ -235,8 +235,8 @@ Schließen Sie die Installation ab, indem Sie vom Tailnet aus auf die Coolify-We
 
 1. Erstellen Sie in Coolify ein neues Projekt (z. B. `VPS production`).
 2. Fügen Sie Ressourcen hinzu (z. B. `Syncthing`).
-{{< figure src="./coolify_new_resource.png" width="700" alt="Add Coolify resource" >}}
+{{< figure src="./coolify_new_resource.png" width="900" alt="Add Coolify resource" >}}
 3. Konfiguration > Allgemein > Dienstname und Dienst-URL festlegen.
-{{< figure src="./coolify_syncthing_configuration.png" width="700" alt="Syncthing configuration" >}}
+{{< figure src="./coolify_syncthing_configuration.png" width="900" alt="Syncthing configuration" >}}
 4. Stellen Sie den Container bereit.  
 5. Zugriff auf Syncthing über den Dienst url.
