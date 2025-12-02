@@ -68,6 +68,14 @@ Disallow: /de/travel/2025-07-schweden/
 
 Disallow: /de/travel/2025-06-biffontaine/
 
+Disallow: /de/tags/coolify/
+
+Disallow: /de/projects/coolify-vps-setup/
+
+Disallow: /de/tags/server/
+
+Disallow: /de/tags/tailscale/
+
 Disallow: /de/blog/
 
 Disallow: /de/travel/
