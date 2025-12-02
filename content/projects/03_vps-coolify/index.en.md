@@ -36,11 +36,11 @@ Choosing the right hosting provider depends on budget, proximity, bandwidth, and
 - Basic credentials provided by the host  
 - Public IP address  
 
+{{< figure src="./netcup_vps.png" width="700" alt="" class="right" >}}
+
 In my case I decided to go with a VPS hosted by [netcup](https://www.netcup.com/de/server/vps).
 I started the project using the smallest VPS option `VPS 250 G11s` but later on upgrade to the second option `VPS 500 G11s`.
 This costs me about 5€ per month (including private domain) and provides enough ressources for everything I need.
-
-{{< figure src="./netcup_vps.png" width="700" alt="" class="right" >}}
 
 ## Server access
 ### SCP
@@ -90,18 +90,24 @@ ssh <server-user>@<server-ip>
 To ensure that in the future only you can login to the server we harden the server using two things.
 
 #### Login restrictions
-==Pay attention! The following settings can break you server access!==
+{{< alert color="warning" >}}
+Pay attention! The following settings can break you server access!
+{{< /alert >}}
 
 ##### SSH only access
 Login with password will be forbidden 
-==Pay attention that the ssh login works fine!==
+{{< alert color="warning" >}}
+Pay attention that the ssh login works fine!
+{{< /alert >}}
 Disable password authentication (edit `/etc/ssh/sshd_config`):
 
     PasswordAuthentication no
 
 ##### No root login
 No login as root user possible.
-==Pay attention that the login with your server-user works fine!==
+{{< alert color="warning" >}}
+Pay attention that the login with your server-user works fine!
+{{< /alert >}}
 Disable root login (edit `/etc/ssh/sshd_config`):
 
     PermitRootLogin no
@@ -111,7 +117,9 @@ Disable root login (edit `/etc/ssh/sshd_config`):
 For better security we want to block all ports we do not need.
 For this purpose we use the uncomplicated firewall ([UFW](https://wiki.ubuntu.com/UncomplicatedFirewall)).
 
-==Before enabling the firewall, check ssh login works fine!==
+{{< alert color="warning" >}}
+Before enabling the firewall, check ssh login works fine!
+{{< /alert >}}
 
 ```
 # Installation
@@ -131,7 +139,7 @@ The next step on our way to a bulletproof VPS server is setting up a virtual pri
 
 A very easy to setup, and easy to use VPN is [Tailscale](https://tailscale.com/). It uses WireGuard under the hood to create encrypted point-to-point connections between your devices.
 
-{{< figure src="https://cdn.sanity.io/images/w77i7m8x/production/fab2bfd901de3d58f7f62d35fe9a5107fedc43c1-1360x725.svg?w=3840&q=75&fit=clip&auto=format" width="700" alt="" class="right" >}}
+{{< figure src="https://cdn.sanity.io/images/w77i7m8x/production/fab2bfd901de3d58f7f62d35fe9a5107fedc43c1-1360x725.svg?w=3840&q=75&fit=clip&auto=format" width="700" alt="Tailscale">}}
 
 
 #### Setup
@@ -226,9 +234,9 @@ Finish the installation by accessing the Coolify web UI on `http://<tailscale-ip
 
 1. In Coolify, create a new project (e.g. `VPS production`).
 2. Add resources (e.g. `Syncthing`) 
-{{< figure src="./coolify_new_resource.png" width="700" alt="" class="right" >}}
+{{< figure src="./coolify_new_resource.png" width="700" alt="Add Coolify resource" >}}
 3. Configuration > General > define service name and service url.
-{{< figure src="./coolify_syncthing_configuration.png" width="700" alt="" class="right" >}}
+{{< figure src="./coolify_syncthing_configuration.png" width="700" alt="Syncthing configuration" >}}
 4. Deploy the container.  
 5. Access Syncthing via service url.
 
