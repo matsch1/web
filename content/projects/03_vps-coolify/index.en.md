@@ -5,9 +5,9 @@ date: 2025-05-10
 description: "Server hardening and deploy first app with Coolify."
 ShowToc: true
 TocOpen: true
-draft: true
+draft: false
 cover:
-  image: "img1.png"
+  image: "header.png"
   alt: "coolify-vps-setup"
   caption: ""
   relative: true
@@ -37,8 +37,10 @@ Choosing the right hosting provider depends on budget, proximity, bandwidth, and
 - Public IP address  
 
 In my case I decided to go with a VPS hosted by [netcup](https://www.netcup.com/de/server/vps).
-I started the project using the smallest VPS option VPS 250 G11s but later on upgrade to the second option VPS 500 G11s.
+I started the project using the smallest VPS option `VPS 250 G11s` but later on upgrade to the second option `VPS 500 G11s`.
 This costs me about 5€ per month (including private domain) and provides enough ressources for everything I need.
+
+{{< figure src="./netcup_vps.png" width="700" alt="" class="right" >}}
 
 ## Server access
 ### SCP
@@ -129,6 +131,9 @@ The next step on our way to a bulletproof VPS server is setting up a virtual pri
 
 A very easy to setup, and easy to use VPN is [Tailscale](https://tailscale.com/). It uses WireGuard under the hood to create encrypted point-to-point connections between your devices.
 
+{{< figure src="https://cdn.sanity.io/images/w77i7m8x/production/fab2bfd901de3d58f7f62d35fe9a5107fedc43c1-1360x725.svg?w=3840&q=75&fit=clip&auto=format" width="700" alt="" class="right" >}}
+
+
 #### Setup
 Before setting up Tailscale it is recommended to disable firewall to not get locked out of the VPS.
 ```
@@ -153,7 +158,7 @@ Now the Tailscale ports have to be added to the UFW:
 sudo ufw allow in on tailscale0
 ```
 
-Before reanabling the firewall try to login to your VPS using:
+Before reenabling the firewall try to login to your VPS using:
 ```
 ssh <server-user>@<tailscale-ip>
 ```
@@ -204,9 +209,9 @@ The output should result in something like this:
 .
 .
 ```
-Note the `Subnet` of the IPAM -> Config of the bridge and coolify.
-Note the `Gateway` of the IPAM -> Config of the bridge.
-With these three values the new firewall rules can be addes:
+Note the `Subnet` of the `IPAM -> Config` of the bridge and Coolify.
+Note the `Gateway` of the `IPAM -> Config` of the bridge.
+With these three values the new firewall rules can be added:
 ``` shell
 sudo ufw allow from <subnet-bridge> to <gateway-bridge>
 sudo ufw allow from <subnet-coolify> to <gateway-bridge>
@@ -214,17 +219,16 @@ sudo ufw reload
 sudo service ssh restart
 ```
 
-Finish the installation by accessing the coolify web UI on `http://<tailscale-ip>:8000` from inside the Tailnet and follow the instructions.
+Finish the installation by accessing the Coolify web UI on `http://<tailscale-ip>:8000` from inside the Tailnet and follow the instructions.
 
-
----
 
 ## Syncthing Deployment in Coolify
 
-1. In Coolify, create a new project (e.g. VPS production).
-2. Add ressources (e.g. Syncthing) 
+1. In Coolify, create a new project (e.g. `VPS production`).
+2. Add resources (e.g. `Syncthing`) 
+{{< figure src="./coolify_new_resource.png" width="700" alt="" class="right" >}}
 3. Configuration > General > define service name and service url.
+{{< figure src="./coolify_syncthing_configuration.png" width="700" alt="" class="right" >}}
 4. Deploy the container.  
 5. Access Syncthing via service url.
----
 

@@ -1,15 +1,15 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 569f8195f1c3192d5c6d864c3755cfc0ae02daa833ac1c9378af8291441c0d98
+base_hash: f56a4a47e4716f33df998ee803be0631935ade6b2aca2d77a49cfb943ce0c60f
 cover:
   alt: coolify-vps-setup
   caption: ''
-  image: img1.png
+  image: header.png
   relative: true
 date: 2025-05-10
 description: Server hardening and deploy first app with Coolify.
-draft: true
+draft: false
 slug: coolify-vps-setup
 tags:
 - server
@@ -38,13 +38,15 @@ Die Wahl des richtigen Hosting-Anbieters hängt vom Budget, der Nähe, der Bandb
 - Öffentliche IP-Adresse
 
 In meinem Fall habe ich mich für einen VPS entschieden, der von [netcup](https://www.netcup.com/de/server/vps) gehostet wird.
-Ich habe das Projekt mit der kleinsten VPS-Option VPS 250 G11s begonnen und später auf die zweite Option VPS 500 G11s aufgerüstet.
+Ich habe das Projekt mit der kleinsten VPS-Option `VPS 250 G11s` begonnen und später auf die zweite Option `VPS 500 G11s` aufgerüstet.
 Das kostet mich etwa 5€ pro Monat (inklusive privater Domain) und bietet genug Ressourcen für alles, was ich brauche.
 
+{{< figure src="./netcup_vps.png" width="700" alt="" class="right" >}}
+
 ## Server-Zugang
-### SCP
-Für den ersten Zugang ist es möglich, sich über das Server Control Panel von netcup mit dem Server zu verbinden.
-Beim ersten Mal ist man auf dem VPS als Root-Benutzer eingeloggt, also muss man als erstes einen anderen Benutzer einrichten.
+## SCP
+Für den ersten Zugriff ist es möglich, sich über das von netcup bereitgestellte Server Control Panel mit dem Server zu verbinden.
+Beim ersten Mal sind Sie auf dem VPS als Root-Benutzer eingeloggt, also müssen Sie als erstes einen anderen Benutzer einrichten.
 
 ### Benutzer einrichten
 ``` shell
@@ -130,6 +132,9 @@ Der nächste Schritt auf unserem Weg zu einem kugelsicheren VPS-Server ist die E
 
 Ein sehr einfach einzurichtendes und einfach zu benutzendes VPN ist [Tailscale](https://tailscale.com/). Es verwendet WireGuard unter der Haube, um verschlüsselte Punkt-zu-Punkt-Verbindungen zwischen Ihren Geräten herzustellen.
 
+{{< figure src="https://cdn.sanity.io/images/w77i7m8x/production/fab2bfd901de3d58f7f62d35fe9a5107fedc43c1-1360x725.svg?w=3840&q=75&fit=clip&auto=format" width="700" alt="" class="right" >}}
+
+
 #### Einrichtung
 Vor der Einrichtung von Tailscale ist es empfehlenswert, die Firewall zu deaktivieren, um nicht vom VPS ausgesperrt zu werden.
 ```
@@ -205,8 +210,8 @@ Die Ausgabe sollte in etwa so aussehen:
 .
 .
 ```
-Beachten Sie die `Subnet` der IPAM -> Config der Bridge und Coolify.
-Beachten Sie die `Gateway` der IPAM -> Config der Bridge.
+Beachten Sie die `Subnet` der `IPAM -> Config` der Bridge und von Coolify.
+Beachten Sie den `Gateway` des `IPAM -> Config` der Brücke.
 Mit diesen drei Werten können die neuen Firewall-Regeln hinzugefügt werden:
 ``` shell
 sudo ufw allow from <subnet-bridge> to <gateway-bridge>
@@ -215,16 +220,15 @@ sudo ufw reload
 sudo service ssh restart
 ```
 
-Schließen Sie die Installation ab, indem Sie die coolify Web UI auf `http://<tailscale-ip>:8000` vom Tailnet aus aufrufen und den Anweisungen folgen.
+Schließen Sie die Installation ab, indem Sie vom Tailnet aus auf die Coolify-Web-UI auf `http://<tailscale-ip>:8000` zugreifen und den Anweisungen folgen.
 
-
----
 
 ## Syncthing-Bereitstellung in Coolify
 
-1. Erstellen Sie in Coolify ein neues Projekt (z. B. VPS-Produktion).
-2. Ressourcen hinzufügen (z.B. Syncthing)
+1. Erstellen Sie in Coolify ein neues Projekt (z. B. `VPS production`).
+2. Fügen Sie Ressourcen hinzu (z. B. `Syncthing`).
+{{< figure src="./coolify_new_resource.png" width="700" alt="" class="right" >}}
 3. Konfiguration > Allgemein > Dienstname und Dienst-URL festlegen.
+{{< figure src="./coolify_syncthing_configuration.png" width="700" alt="" class="right" >}}
 4. Stellen Sie den Container bereit.  
-5. Zugriff auf Syncthing über die Dienst-URL.
----
+5. Zugriff auf Syncthing über den Dienst url.
