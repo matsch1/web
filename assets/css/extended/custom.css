@@ -108,12 +108,13 @@ the browser support for :has is not widespread yet.
 }
 
 /* styling of alert shortcode */
+/* Base alert layout */
 .alert {
   border-radius: 8px;
   padding: 12px 16px;
   margin: 16px 0;
   border-left: 4px solid;
-  background: var(--theme);
+  background: var(--entry); /* PaperMod card background */
   color: var(--fg);
 }
 
@@ -127,24 +128,48 @@ the browser support for :has is not widespread yet.
   margin-bottom: 0;
 }
 
-/* Types */
-.alert-info {
-  border-color: #3b82f6;
-  background-color: #e8f0ff;
+/* Light mode color helpers */
+@media (prefers-color-scheme: light) {
+  .alert-info {
+    border-color: #3b82f6;
+    background-color: rgba(59, 130, 246, 0.10);
+  }
+
+  .alert-success {
+    border-color: #16a34a;
+    background-color: rgba(22, 163, 74, 0.10);
+  }
+
+  .alert-warning {
+    border-color: #d97706;
+    background-color: rgba(217, 119, 6, 0.15);
+  }
+
+  .alert-error {
+    border-color: #dc2626;
+    background-color: rgba(220, 38, 38, 0.12);
+  }
 }
 
-.alert-success {
-  border-color: #16a34a;
-  background-color: #e7f8ec;
-}
+/* Dark mode color helpers */
+@media (prefers-color-scheme: dark) {
+  .alert-info {
+    border-color: #60a5fa;
+    background-color: rgba(96, 165, 250, 0.18);
+  }
 
-.alert-warning {
-  border-color: #d97706;
-  background-color: #fff4db;
-}
+  .alert-success {
+    border-color: #4ade80;
+    background-color: rgba(74, 222, 128, 0.18);
+  }
 
-.alert-error {
-  border-color: #dc2626;
-  background-color: #ffe7e7;
-}
+  .alert-warning {
+    border-color: #fbbf24;
+    background-color: rgba(251, 191, 36, 0.20);
+  }
 
+  .alert-error {
+    border-color: #f87171;
+    background-color: rgba(248, 113, 113, 0.20);
+  }
+}
