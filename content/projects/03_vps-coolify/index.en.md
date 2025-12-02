@@ -90,13 +90,13 @@ ssh <server-user>@<server-ip>
 To ensure that in the future only you can login to the server we harden the server using two things.
 
 #### Login restrictions
-{{< alert color="warning" >}}
+{{< alert type="warning" title="Danger" >}}
 Pay attention! The following settings can break you server access!
 {{< /alert >}}
 
 ##### SSH only access
 Login with password will be forbidden 
-{{< alert color="warning" >}}
+{{< alert type="warning" title="Danger" >}}
 Pay attention that the ssh login works fine!
 {{< /alert >}}
 Disable password authentication (edit `/etc/ssh/sshd_config`):
@@ -105,7 +105,7 @@ Disable password authentication (edit `/etc/ssh/sshd_config`):
 
 ##### No root login
 No login as root user possible.
-{{< alert color="warning" >}}
+{{< alert type="warning" title="Danger" >}}
 Pay attention that the login with your server-user works fine!
 {{< /alert >}}
 Disable root login (edit `/etc/ssh/sshd_config`):
@@ -117,7 +117,7 @@ Disable root login (edit `/etc/ssh/sshd_config`):
 For better security we want to block all ports we do not need.
 For this purpose we use the uncomplicated firewall ([UFW](https://wiki.ubuntu.com/UncomplicatedFirewall)).
 
-{{< alert color="warning" >}}
+{{< alert type="warning" title="Danger" >}}
 Before enabling the firewall, check ssh login works fine!
 {{< /alert >}}
 

@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 210b1e665a41f88c5e40052eab6fa79e6917bd39722ec2faf5f5421fe092f55a
+base_hash: dbb37fc40f902aad5407b3a4ce1c75d1882155abe8b394e226e5c833dee558e4
 cover:
   alt: coolify-vps-setup
   caption: ''
@@ -25,7 +25,7 @@ Der VPS funktioniert hervorragend, aber das Projekt ist noch nicht abgeschlossen
 ## Einleitung
 Self-Hosting hat sich zu einer hervorragenden Möglichkeit entwickelt, praktische Erfahrungen mit Serveradministration, DevOps-Tools und modernen Bereitstellungsplattformen zu sammeln. Mein Ziel war es, einen Virtual Private Server (VPS) einzurichten, ihn richtig abzusichern und ihn als kleine, aber flexible Plattform für die Bereitstellung von Backend-Komponenten zu nutzen, die meinen Workflow bei der Anwendungsentwicklung unterstützen.
 
-Zu den typischen Workloads gehören leichtgewichtige Dienste wie PocketBase für Backend-Speicher, Unleash für Feature-Flags und Automatisierungstools wie n8n. Im Laufe der Zeit wollte ich den Server auch für die Dateisynchronisierung über Syncthing und andere Experimente nutzen.
+Zu den typischen Arbeitslasten gehören leichtgewichtige Dienste wie PocketBase für Backend-Storage, Unleash für Feature-Flags und Automatisierungstools wie n8n. Im Laufe der Zeit wollte ich den Server auch für die Dateisynchronisierung über Syncthing und andere Experimente nutzen.
 
 Um die Bereitstellung und die Verwaltung des Lebenszyklus von Anwendungen zu optimieren, entschied ich mich für Coolify, eine Open-Source-PaaS, die die Container-Orchestrierung in einem benutzerfreundlichen Dashboard zusammenfasst. Dieser Beitrag dokumentiert die anfängliche VPS-Einrichtung, grundlegende Härtungsschritte, die Tailscale-Integration und die Bereitstellung der ersten Anwendung.
 
@@ -91,13 +91,13 @@ ssh <server-user>@<server-ip>
 Um sicherzustellen, dass sich in Zukunft nur Sie auf dem Server einloggen können, härten wir den Server mit zwei Dingen.
 
 #### Login-Beschränkungen
-{{< alert color="warning" >}}
+{{< alert type="warning" title="Danger" >}}
 Bitte beachten Sie! Die folgenden Einstellungen können Ihren Serverzugang unterbrechen!
 {{< /alert >}}
 
 ##### Nur SSH-Zugang
 Login mit Passwort wird verboten
-{{< alert color="warning" >}}
+{{< alert type="warning" title="Danger" >}}
 Achten Sie darauf, dass der ssh-Login funktioniert!
 {{< /alert >}}
 Deaktivieren Sie die Passwort-Authentifizierung (bearbeiten Sie `/etc/ssh/sshd_config`):
@@ -106,7 +106,7 @@ Deaktivieren Sie die Passwort-Authentifizierung (bearbeiten Sie `/etc/ssh/sshd_c
 
 ##### Kein Root-Login
 Keine Anmeldung als root-Benutzer möglich.
-{{< alert color="warning" >}}
+{{< alert type="warning" title="Danger" >}}
 Achten Sie darauf, dass die Anmeldung mit Ihrem Server-Benutzer funktioniert!
 {{< /alert >}}
 Deaktivieren Sie den Root-Login (bearbeiten Sie `/etc/ssh/sshd_config`):
@@ -115,10 +115,10 @@ Deaktivieren Sie den Root-Login (bearbeiten Sie `/etc/ssh/sshd_config`):
 
 
 #### Firewall
-Für mehr Sicherheit wollen wir alle Ports blockieren, die wir nicht benötigen.
+Für eine bessere Sicherheit wollen wir alle Ports blockieren, die wir nicht benötigen.
 Zu diesem Zweck verwenden wir die unkomplizierte Firewall ([UFW](https://wiki.ubuntu.com/UncomplicatedFirewall)).
 
-{{< alert color="warning" >}}
+{{< alert type="warning" title="Danger" >}}
 Bevor Sie die Firewall aktivieren, überprüfen Sie, ob der ssh-Login funktioniert!
 {{< /alert >}}
 
@@ -219,7 +219,7 @@ Die Ausgabe sollte in etwa so aussehen:
 .
 ```
 Beachten Sie die `Subnet` der `IPAM -> Config` der Bridge und von Coolify.
-Beachten Sie die `Gateway` der `IPAM -> Config` der Brücke.
+Beachten Sie den `Gateway` des `IPAM -> Config` der Brücke.
 Mit diesen drei Werten können die neuen Firewall-Regeln hinzugefügt werden:
 ``` shell
 sudo ufw allow from <subnet-bridge> to <gateway-bridge>
