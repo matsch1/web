@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: f56a4a47e4716f33df998ee803be0631935ade6b2aca2d77a49cfb943ce0c60f
+base_hash: 210b1e665a41f88c5e40052eab6fa79e6917bd39722ec2faf5f5421fe092f55a
 cover:
   alt: coolify-vps-setup
   caption: ''
@@ -25,7 +25,7 @@ Der VPS funktioniert hervorragend, aber das Projekt ist noch nicht abgeschlossen
 ## Einleitung
 Self-Hosting hat sich zu einer hervorragenden Möglichkeit entwickelt, praktische Erfahrungen mit Serveradministration, DevOps-Tools und modernen Bereitstellungsplattformen zu sammeln. Mein Ziel war es, einen Virtual Private Server (VPS) einzurichten, ihn richtig abzusichern und ihn als kleine, aber flexible Plattform für die Bereitstellung von Backend-Komponenten zu nutzen, die meinen Workflow bei der Anwendungsentwicklung unterstützen.
 
-Zu den typischen Arbeitslasten gehören leichtgewichtige Dienste wie PocketBase für Backend-Storage, Unleash für Feature-Flags und Automatisierungstools wie n8n. Im Laufe der Zeit wollte ich den Server auch für die Dateisynchronisierung über Syncthing und andere Experimente nutzen.
+Zu den typischen Workloads gehören leichtgewichtige Dienste wie PocketBase für Backend-Speicher, Unleash für Feature-Flags und Automatisierungstools wie n8n. Im Laufe der Zeit wollte ich den Server auch für die Dateisynchronisierung über Syncthing und andere Experimente nutzen.
 
 Um die Bereitstellung und die Verwaltung des Lebenszyklus von Anwendungen zu optimieren, entschied ich mich für Coolify, eine Open-Source-PaaS, die die Container-Orchestrierung in einem benutzerfreundlichen Dashboard zusammenfasst. Dieser Beitrag dokumentiert die anfängliche VPS-Einrichtung, grundlegende Härtungsschritte, die Tailscale-Integration und die Bereitstellung der ersten Anwendung.
 
@@ -37,16 +37,16 @@ Die Wahl des richtigen Hosting-Anbieters hängt vom Budget, der Nähe, der Bandb
 - Grundlegende Anmeldeinformationen des Hosts
 - Öffentliche IP-Adresse
 
-In meinem Fall habe ich mich für einen VPS entschieden, der von [netcup](https://www.netcup.com/de/server/vps) gehostet wird.
-Ich habe das Projekt mit der kleinsten VPS-Option `VPS 250 G11s` begonnen und später auf die zweite Option `VPS 500 G11s` aufgerüstet.
-Das kostet mich etwa 5€ pro Monat (inklusive privater Domain) und bietet genug Ressourcen für alles, was ich brauche.
-
 {{< figure src="./netcup_vps.png" width="700" alt="" class="right" >}}
+
+In meinem Fall habe ich mich für einen VPS entschieden, der von [netcup](https://www.netcup.com/de/server/vps) gehostet wird.
+Ich habe das Projekt mit der kleinsten VPS-Option `VPS 250 G11s` begonnen, bin aber später auf die zweite Option `VPS 500 G11s` aufgestiegen.
+Das kostet mich etwa 5€ pro Monat (inklusive privater Domain) und bietet genug Ressourcen für alles, was ich brauche.
 
 ## Server-Zugang
 ## SCP
-Für den ersten Zugriff ist es möglich, sich über das von netcup bereitgestellte Server Control Panel mit dem Server zu verbinden.
-Beim ersten Mal sind Sie auf dem VPS als Root-Benutzer eingeloggt, also müssen Sie als erstes einen anderen Benutzer einrichten.
+Für den ersten Zugang ist es möglich, sich über das Server Control Panel von netcup mit dem Server zu verbinden.
+Beim ersten Mal ist man auf dem VPS als Root-Benutzer eingeloggt, also muss man als erstes einen anderen Benutzer einrichten.
 
 ### Benutzer einrichten
 ``` shell
@@ -91,28 +91,36 @@ ssh <server-user>@<server-ip>
 Um sicherzustellen, dass sich in Zukunft nur Sie auf dem Server einloggen können, härten wir den Server mit zwei Dingen.
 
 #### Login-Beschränkungen
-==Achtung! Die folgenden Einstellungen können Ihnen den Zugang zum Server verwehren!==
+{{< alert color="warning" >}}
+Bitte beachten Sie! Die folgenden Einstellungen können Ihren Serverzugang unterbrechen!
+{{< /alert >}}
 
 ##### Nur SSH-Zugang
-Login mit Passwort ist nicht erlaubt
-==Achten Sie darauf, dass der ssh-Zugang funktioniert!==
+Login mit Passwort wird verboten
+{{< alert color="warning" >}}
+Achten Sie darauf, dass der ssh-Login funktioniert!
+{{< /alert >}}
 Deaktivieren Sie die Passwort-Authentifizierung (bearbeiten Sie `/etc/ssh/sshd_config`):
 
     PasswordAuthentication no
 
 ##### Kein Root-Login
-Kein Login als root-Benutzer möglich.
-==Achten Sie darauf, dass der Login mit Ihrem Server-Benutzer funktioniert!==
-Deaktivieren Sie den Root-Login (editieren Sie `/etc/ssh/sshd_config`):
+Keine Anmeldung als root-Benutzer möglich.
+{{< alert color="warning" >}}
+Achten Sie darauf, dass die Anmeldung mit Ihrem Server-Benutzer funktioniert!
+{{< /alert >}}
+Deaktivieren Sie den Root-Login (bearbeiten Sie `/etc/ssh/sshd_config`):
 
     PermitRootLogin no
 
 
 #### Firewall
-Für eine bessere Sicherheit wollen wir alle Ports blockieren, die wir nicht benötigen.
+Für mehr Sicherheit wollen wir alle Ports blockieren, die wir nicht benötigen.
 Zu diesem Zweck verwenden wir die unkomplizierte Firewall ([UFW](https://wiki.ubuntu.com/UncomplicatedFirewall)).
 
-==Bevor Sie die Firewall aktivieren, überprüfen Sie, ob der SSH-Login funktioniert!
+{{< alert color="warning" >}}
+Bevor Sie die Firewall aktivieren, überprüfen Sie, ob der ssh-Login funktioniert!
+{{< /alert >}}
 
 ```
 # Installation
@@ -132,7 +140,7 @@ Der nächste Schritt auf unserem Weg zu einem kugelsicheren VPS-Server ist die E
 
 Ein sehr einfach einzurichtendes und einfach zu benutzendes VPN ist [Tailscale](https://tailscale.com/). Es verwendet WireGuard unter der Haube, um verschlüsselte Punkt-zu-Punkt-Verbindungen zwischen Ihren Geräten herzustellen.
 
-{{< figure src="https://cdn.sanity.io/images/w77i7m8x/production/fab2bfd901de3d58f7f62d35fe9a5107fedc43c1-1360x725.svg?w=3840&q=75&fit=clip&auto=format" width="700" alt="" class="right" >}}
+{{< figure src="https://cdn.sanity.io/images/w77i7m8x/production/fab2bfd901de3d58f7f62d35fe9a5107fedc43c1-1360x725.svg?w=3840&q=75&fit=clip&auto=format" width="700" alt="Tailscale">}}
 
 
 #### Einrichtung
@@ -211,7 +219,7 @@ Die Ausgabe sollte in etwa so aussehen:
 .
 ```
 Beachten Sie die `Subnet` der `IPAM -> Config` der Bridge und von Coolify.
-Beachten Sie den `Gateway` des `IPAM -> Config` der Brücke.
+Beachten Sie die `Gateway` der `IPAM -> Config` der Brücke.
 Mit diesen drei Werten können die neuen Firewall-Regeln hinzugefügt werden:
 ``` shell
 sudo ufw allow from <subnet-bridge> to <gateway-bridge>
@@ -227,8 +235,8 @@ Schließen Sie die Installation ab, indem Sie vom Tailnet aus auf die Coolify-We
 
 1. Erstellen Sie in Coolify ein neues Projekt (z. B. `VPS production`).
 2. Fügen Sie Ressourcen hinzu (z. B. `Syncthing`).
-{{< figure src="./coolify_new_resource.png" width="700" alt="" class="right" >}}
+{{< figure src="./coolify_new_resource.png" width="700" alt="Add Coolify resource" >}}
 3. Konfiguration > Allgemein > Dienstname und Dienst-URL festlegen.
-{{< figure src="./coolify_syncthing_configuration.png" width="700" alt="" class="right" >}}
+{{< figure src="./coolify_syncthing_configuration.png" width="700" alt="Syncthing configuration" >}}
 4. Stellen Sie den Container bereit.  
 5. Zugriff auf Syncthing über den Dienst url.
