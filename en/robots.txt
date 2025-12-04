@@ -4,13 +4,19 @@ Disallow: /en/
 
 Disallow: /en/projects/
 
+Disallow: /en/tags/ai/
+
+Disallow: /en/projects/n8n-ai-assistant/
+
+Disallow: /en/tags/n8n/
+
+Disallow: /en/tags/
+
 Disallow: /en/projects/obsidian-http-mcp/
 
 Disallow: /en/tags/mcp/
 
 Disallow: /en/tags/obsidian/
-
-Disallow: /en/tags/
 
 Disallow: /en/blog/obsidian-cloud-sync-setup/
 
