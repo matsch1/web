@@ -1,6 +1,12 @@
 User-agent: *
 
+Disallow: /de/blog/giscus-hugo-comments/
+
+Disallow: /de/tags/hugo/
+
 Disallow: /de/
+
+Disallow: /de/tags/
 
 Disallow: /de/projects/
 
@@ -9,8 +15,6 @@ Disallow: /de/tags/ai/
 Disallow: /de/projects/n8n-ai-assistant/
 
 Disallow: /de/tags/n8n/
-
-Disallow: /de/tags/
 
 Disallow: /de/projects/obsidian-http-mcp/
 
@@ -69,8 +73,6 @@ Disallow: /de/travel/2025-07-schweden/day1/
 Disallow: /de/travel/2025-07-schweden/day0/
 
 Disallow: /de/tags/github-actions/
-
-Disallow: /de/tags/hugo/
 
 Disallow: /de/blog/hugo-autotranslator/
 
