@@ -101,12 +101,21 @@
 <!-- Open Graph image -->
 {{ $defaultOGImage := "https://blog.matschcode.de/de/Favicon.png" }}
 
-{{ $img := .Resources.GetMatch "img1.jpg" }}
-{{ if not $img }}
-  {{ $img = .Resources.GetMatch "img1.png" }}
-{{ end }}
-{{ if not $img }}
-  {{ $img = .Resources.GetMatch "img1.webp" }}
+{{ $img := "" }}   {{/* will hold a Resource object when found */}}
+{{ $og := "" }}    {{/* will hold a string URL for external URL or fallback */}}
+
+{{ with .Params.cover.image }}
+  {{/* inside this block, `.` is the cover.image string */}}
+  {{ if strings.HasPrefix . "http" }}
+    {{/* external URL — treat as final og image URL */}}
+    {{ $og = . }}
+  {{ else }}
+    {{/* try to resolve inside page bundle resources */}}
+    {{ $res := $.Resources.GetMatch . }}
+    {{ if $res }}
+      {{ $img = $res }}
+    {{ end }}
+  {{ end }}
 {{ end }}
 
 {{ if $img }}
@@ -114,6 +123,11 @@
   <meta property="og:image:type" content="{{ $img.MediaType.Type }}/{{ $img.MediaType.SubType }}">
   <meta property="og:image:width" content="{{ $img.Width }}">
   <meta property="og:image:height" content="{{ $img.Height }}">
+{{ else if $og }}
+  <meta property="og:image" content="{{ $og }}">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 {{ else }}
   <meta property="og:image" content="{{ $defaultOGImage }}">
   <meta property="og:image:type" content="image/jpeg">
