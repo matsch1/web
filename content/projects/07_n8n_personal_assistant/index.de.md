@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 373d284b4fc5f2c6b8599bfec2b5d89ac325ba58d5f5b22d0ce9faa02880a5d0
+base_hash: 799c34a77fb8033942c8077f5b0464a2306ce1a7d057c3d643bbe7c260664d35
 cover:
   alt: n8n-ai-assistant
   caption: Personal AI assistant build with n8n
@@ -27,9 +27,11 @@ Wer wünscht sich nicht einen persönlichen Assistenten - jemanden, der Termine,
 In diesem Beitrag zeige ich, wie man mit n8n einen persönlichen KI-Assistenten erstellen kann, der auf Telegram-Nachrichten (einschließlich Sprachnotizen) antwortet und Ihnen bei der Verwaltung von Terminen und Aufgaben hilft.
 
 ## n8n einrichten
-{{< figure src="https://www.webmaster-vitaliy.de/wp-content/uploads/2025/05/n8n.png" width="400" alt="n8n" class="right" link="https://n8n.io/" target="_blank">}}
 Bevor wir den Assistenten erstellen, müssen wir n8n einrichten. n8n ist eine No-Code-Workflow-Automatisierungsplattform, die eine breite Palette von Integrationen und Automatisierungen orchestrieren kann (ich werde in zukünftigen Beiträgen einige zusätzliche Beispiele behandeln).
-n8n muss selbst auf einem Server gehostet werden. Ich empfehle, den Ansatz aus meinem [Coolify VPS setup](https://blog.matschcode.de/en/projects/coolify-vps-setup/) zu verfolgen. Wenn Sie bereits eine Coolify-Instanz betreiben, können Sie einfach mit ein paar Klicks eine neue n8n-Ressource hinzufügen.
+
+{{< figure src="https://www.webmaster-vitaliy.de/wp-content/uploads/2025/05/n8n.png" width="300" alt="n8n" link="https://n8n.io/" target="_blank">}}
+
+n8n muss selbst auf einem Server gehostet werden. Ich empfehle, dem Ansatz aus meinem [Coolify VPS setup](https://blog.matschcode.de/en/projects/coolify-vps-setup/) zu folgen. Wenn Sie bereits eine Coolify-Instanz betreiben, können Sie einfach mit ein paar Klicks eine neue n8n-Ressource hinzufügen.
 
 ## Workflow erstellen
 Mein persönlicher Assistent-Workflow ist nicht komplett selbst erstellt. Ich habe eine der vielen vorhandenen Vorlagen aus der n8n-Bibliothek als Grundlage verwendet:
@@ -46,11 +48,11 @@ Für die Einrichtung des Bots können Sie diesem Tutorial folgen:
 
 Sobald Sie das API-Token haben, erstellen Sie Telegram-Anmeldedaten in n8n, und die Verbindung zu Ihrem Bot wird hergestellt.
 
-Wenn Sie den Zugriff einschränken möchten, können Sie die vorhandene Kontoprüfung beibehalten, mit der überprüft wird, ob die eingehende Nachricht von der richtigen Chat-ID stammt. Dies ist optional, kann aber eine zusätzliche Kontrollebene darstellen.
+Wenn Sie den Zugriff einschränken möchten, können Sie die bestehende Kontoprüfung beibehalten, die überprüft, ob die eingehende Nachricht von der richtigen Chat-ID stammt. Dies ist optional, kann aber eine zusätzliche Kontrollebene darstellen.
 
 #### Kategorisierung von Text, Sprache oder Bild
 Ich habe den ursprünglichen Schalterblock ersetzt und eine Logik zur Unterscheidung zwischen Text-, Audio- und Bildnachrichten eingeführt.  
-Dadurch kann mein Assistent nicht nur Text, sondern auch Sprachnotizen und Bilder verarbeiten.
+So kann mein Assistent nicht nur Text, sondern auch Sprachnotizen und Bilder verarbeiten.
 
 Die folgenden Bildschirmfotos zeigen, wie die verschiedenen Nachrichtentypen behandelt werden:
 {{< galleries >}}
@@ -141,7 +143,7 @@ Beispiele:
 
 Diese Feedbackschleife verbessert die Benutzerfreundlichkeit und vermeidet Verwirrung, insbesondere bei sprachgesteuerten Interaktionen, bei denen der Benutzer die Eingabe nicht sehen kann.
 
-## Beispiele für die Verwendung
+## Anwendungsbeispiele
 Im Folgenden finden Sie einige praktische Beispiele, die zeigen, was der Assistent alles kann.
 
 ### Termin zum Kalender hinzufügen

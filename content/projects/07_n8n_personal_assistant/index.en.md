@@ -26,8 +26,10 @@ Who would not want a personal assistant—someone who handles appointments, task
 In this post, I will show how to use n8n to build a personal AI assistant that responds to Telegram messages (including voice notes) and helps you manage appointments and tasks.
 
 ## Setup n8n
-{{< figure src="https://www.webmaster-vitaliy.de/wp-content/uploads/2025/05/n8n.png" width="400" alt="n8n" class="right" link="https://n8n.io/" target="_blank">}}
 Before building the assistant, we need to set up n8n. n8n is a no-code workflow automation platform that can orchestrate a wide range of integrations and automations (I may cover some additional examples in future posts).
+
+{{< figure src="https://www.webmaster-vitaliy.de/wp-content/uploads/2025/05/n8n.png" width="300" alt="n8n" link="https://n8n.io/" target="_blank">}}
+
 n8n must be self-hosted on a server. I recommend following the approach from my [Coolify VPS setup](https://blog.matschcode.de/en/projects/coolify-vps-setup/). If you already have a Coolify instance running, you can simply add a new n8n resource with a few clicks.
 
 ## Create Workflow
