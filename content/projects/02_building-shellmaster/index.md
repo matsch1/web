@@ -16,6 +16,11 @@ tags:
   - application
   - linux
 ---
+
+{{< alert type="error" title="Deprecated" >}}
+The app has been removed from the Play Store again because I am no longer able to maintain the project.
+{{< /alert >}}
+
 Learning Linux shell commands can be daunting, but what if it could be fun? That’s the idea behind **Shellmaster**, a quiz game app that helps users master shell and bash commands through engaging quizzes. 
 Check it out on Google Play Store: [Shellmaster - Apps on Google Play](https://play.google.com/store/apps/details?id=com.matschcode.shellmaster)
 While building Shellmaster, I encountered several interesting technical challenges and learned a lot about **Flutter**, **PocketBase**, **Unleash feature flags**, and **Google Play Console deployment**. In this article, I’ll share some key takeaways from the development journey.

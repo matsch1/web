@@ -18,8 +18,10 @@ tags:
   - tailscale
 ---
 
-    The VPS is working great, but the project is still ongoing.
-    The applications running on that server change over time.
+{{< alert type="info" title="" >}}
+The VPS is working great, but the project is still ongoing.
+The applications running on that server change over time.
+{{< /alert >}}
 
 ## Introduction
 Self-hosting has become an excellent way to gain hands-on experience with server administration, DevOps tooling, and modern deployment platforms. My goal was to provision a virtual private server (VPS), secure it properly, and use it as a small but flexible platform for deploying backend components that support my app development workflow.

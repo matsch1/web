@@ -16,7 +16,7 @@ tags:
   - AI
 ---
 
-{{< alert type="info" title="Ongoing" >}}
+{{< alert type="info" title="" >}}
 The assistant does a good job and is still in daily usage.
 {{< /alert >}}
 

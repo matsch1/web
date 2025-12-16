@@ -15,6 +15,11 @@ tags:
   - obsidian
   - mcp
 ---
+
+{{< alert type="info" title="" >}}
+The MCP server is working great and in daily use in my n8n workflow.
+{{< /alert >}}
+
 ## Introduction
 If you’ve been following my Obsidian setup, you know I love keeping my notes synchronized across devices with Syncthing ([My Obsidian + Syncthing Setup: A Self-Hosted Cloud for Notes, Backups, and More](https://matsch1.github.io/web/en/coding/07_obsidian_syncthing_cloud_setup/)). But I wanted more than just syncing—I wanted to **interact with my notes intelligently, anywhere, anytime**.
 

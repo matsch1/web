@@ -16,7 +16,7 @@ tags:
   - keyboard
 ---
 
-{{< alert type="info" title="Ongoing" >}}
+{{< alert type="info" title="" >}}
 The keyboard is working great and still in daily usage.
 The QMK software is growing over time.
 {{< /alert >}}
