@@ -1,8 +1,7 @@
 ---
-slug: "obsidian-http-mcp"
 ShowToc: true
 TocOpen: true
-base_hash: 2a2fff609143c7d99ed791049e4646eb78e6ef1c9598cab6dbd1f850e9a6d4ff
+base_hash: 7626fa3d4dfe7ff11124e2d61be6a6968050a1d27d32e597a03410dae96b5a48
 cover:
   alt: obsidian-http-mcp
   caption: ''
@@ -11,11 +10,16 @@ cover:
 date: 2025-09-28
 description: Chat with your remote Obsidian vault using http mcp server.
 draft: false
-title: 'Chatten Sie mit Ihren Obsidian Notes: Einführung von HTTP MCP Server'
+slug: obsidian-http-mcp
 tags:
-  - obsidian
-  - mcp
+- obsidian
+- mcp
+title: 'Chatten Sie mit Ihren Obsidian Notes: Einführung von HTTP MCP Server'
 ---
+
+{{< alert type="info" title="" >}}
+Der MCP-Server funktioniert hervorragend und ist in meinem n8n-Workflow täglich im Einsatz.
+{{< /alert >}}
 
 ## Einleitung
 Wenn Sie mein Obsidian-Setup verfolgt haben, wissen Sie, dass ich meine Notizen gerne mit Syncthing ([My Obsidian + Syncthing Setup: A Self-Hosted Cloud for Notes, Backups, and More](https://matsch1.github.io/web/en/coding/07_obsidian_syncthing_cloud_setup/)) geräteübergreifend synchronisiere. Aber ich wollte mehr als nur synchronisieren - ich wollte **interact with my notes intelligently, anywhere, anytime**.

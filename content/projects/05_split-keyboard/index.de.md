@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 906e3469857a7fbc1120eb3828622668c5b751234699146fede410690a438f6d
+base_hash: dc726962890305bc4a7d330e6784baa9041d76f65dce92171d29d21a48882343
 cover:
   alt: split-keyboard-ianmaclarty
   caption: ''
@@ -17,7 +17,7 @@ tags:
 title: Meine erste geteilte Tastatur - Ian's Keyboard
 ---
 
-{{< alert type="info" title="Ongoing" >}}
+{{< alert type="info" title="" >}}
 Die Tastatur funktioniert hervorragend und ist immer noch im täglichen Einsatz.
 Die QMK-Software wächst mit der Zeit.
 {{< /alert >}}

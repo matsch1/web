@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 493bf4a837f2c4ff15fd8e74524f2682116fde7e67287cda0e598e41cf5e4899
+base_hash: a6c5dfab7870a04711d8feb04cc7e24d2c7daf9458ebc865258113836f454e0c
 cover:
   alt: goalpacer
   caption: ''
@@ -19,9 +19,14 @@ tags:
 title: Erste Flutter-App für das Marathontraining
 ---
 
-Ich bin stolz zu sagen, dass ich meine erste Flutter-App in 4 Tagen mehr oder weniger produktionsreif bauen konnte.
+{{< alert type="warning" title="" >}}
+Die App ist nach wie vor im Google Play Store erhältlich.
+Im Moment mache ich nur Wartungsarbeiten und arbeite nicht an neuen Funktionen.
+{{< /alert >}}
 
-Vor dieser Zeit hatte ich noch keine Erfahrung mit Flutter. Aber ich mochte schon immer die Idee, einfach Apps für den persönlichen Gebrauch zu erstellen.
+Ich bin stolz darauf, dass ich meine erste Flutter-App in 4 Tagen mehr oder weniger produktionsreif bauen konnte.
+
+Vor diesen Tagen hatte ich noch keine Erfahrung mit Flutter. Aber ich mochte schon immer die Idee, einfach Apps für den persönlichen Gebrauch zu erstellen.
 Nach einigen fehlgeschlagenen Versuchen, in den letzten zwei Jahren einige nützliche persönliche Apps mit Python zu erstellen, hörte ich von Flutter.
 Diesen Monat hatte ich also etwas freie Zeit und stellte mich der Herausforderung, Flutter zu lernen, eine Android-App zu erstellen und sie innerhalb von 4 Tagen im Google Play Store zu veröffentlichen.
 

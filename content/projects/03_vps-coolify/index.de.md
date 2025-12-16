@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: e6aade8529b6ff2ad89511cb046472700476bf5d42f86ee2a8b6113a017309f6
+base_hash: 56fefa2f47310f7cf362e75c68dfa42e1d58ba4e11da1d7ac845b3374e43ab74
 cover:
   alt: coolify-vps-setup
   caption: ''
@@ -19,10 +19,12 @@ tags:
 title: Coolify Plattform auf deinem VPS einrichten
 ---
 
+{{< alert type="info" title="" >}}
 Der VPS funktioniert hervorragend, aber das Projekt ist noch nicht abgeschlossen.
-    Die Anwendungen, die auf diesem Server laufen, ändern sich mit der Zeit.
+Die Anwendungen, die auf diesem Server laufen, ändern sich mit der Zeit.
+{{< /alert >}}
 
-## Einleitung
+## Einführung
 Self-Hosting hat sich zu einer hervorragenden Möglichkeit entwickelt, praktische Erfahrungen mit Serveradministration, DevOps-Tools und modernen Bereitstellungsplattformen zu sammeln. Mein Ziel war es, einen Virtual Private Server (VPS) einzurichten, ihn richtig abzusichern und ihn als kleine, aber flexible Plattform für die Bereitstellung von Backend-Komponenten zu nutzen, die meinen Workflow bei der Anwendungsentwicklung unterstützen.
 
 Zu den typischen Arbeitslasten gehören leichtgewichtige Dienste wie PocketBase für Backend-Storage, Unleash für Feature-Flags und Automatisierungstools wie n8n. Im Laufe der Zeit wollte ich den Server auch für die Dateisynchronisierung über Syncthing und andere Experimente nutzen.
@@ -219,7 +221,7 @@ Die Ausgabe sollte in etwa so aussehen:
 .
 ```
 Beachten Sie die `Subnet` der `IPAM -> Config` der Bridge und von Coolify.
-Beachten Sie die `Gateway` der `IPAM -> Config` der Brücke.
+Beachten Sie den `Gateway` des `IPAM -> Config` der Brücke.
 Mit diesen drei Werten können die neuen Firewall-Regeln hinzugefügt werden:
 ``` shell
 sudo ufw allow from <subnet-bridge> to <gateway-bridge>

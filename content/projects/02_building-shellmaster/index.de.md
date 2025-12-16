@@ -1,8 +1,7 @@
 ---
-slug: "building-shellmaster"
 ShowToc: true
 TocOpen: true
-base_hash: bed2e9b631f6fc31d378ec9f84924770c3214ccd44b87ddac9d5612f1fbc936d
+base_hash: 856663fe55284ccd8b6b607278f0957c6117f41438851f89e7c1237bf0f2c5bb
 cover:
   alt: shellmaster
   caption: ''
@@ -11,16 +10,19 @@ cover:
 date: 2025-04-06
 description: My path of building a quiz app using flutter, pocketbase and unleash
 draft: false
-params:
-  ShowPostNavLinks: true
-title: ' Shellmaster bauen: Linux-Shell-Befehle spielerisch lernen'
+slug: building-shellmaster
 tags:
-  - flutter
-  - application
-  - linux
+- flutter
+- application
+- linux
+title: ' Shellmaster bauen: Linux-Shell-Befehle spielerisch lernen'
 ---
 
-Linux-Shell-Befehle zu lernen kann entmutigend sein, aber was wäre, wenn es Spaß machen würde? Das ist die Idee hinter **Shellmaster**, einer Quiz-App, die Nutzern hilft, Shell- und Bash-Befehle mit Hilfe von spannenden Quizspielen zu meistern.
+{{< alert type="error" title="Deprecated" >}}
+Die App wurde wieder aus dem Play Store entfernt, da ich nicht mehr in der Lage bin, das Projekt zu pflegen.
+{{< /alert >}}
+
+Linux-Shell-Befehle zu lernen kann entmutigend sein, aber was wäre, wenn es auch Spaß machen würde? Das ist die Idee hinter **Shellmaster**, einer Quizspiel-App, die Benutzern hilft, Shell- und Bash-Befehle durch spannende Quizspiele zu meistern.
 Probieren Sie es im Google Play Store aus: [Shellmaster - Apps on Google Play](https://play.google.com/store/apps/details?id=com.matschcode.shellmaster)
 Während der Entwicklung von Shellmaster stieß ich auf einige interessante technische Herausforderungen und lernte viel über **Flutter**, **PocketBase**, **Unleash feature flags** und **Google Play Console deployment**. In diesem Artikel werde ich einige der wichtigsten Erkenntnisse aus der Entwicklungszeit mit Ihnen teilen.
 ## Inhaltsverzeichnis
@@ -91,7 +93,7 @@ Um **progressive feature rollouts and A/B testing** zu ermöglichen, habe ich **
 
 - **Experiment with new features** (z. B. ein "Hardcore-Modus" für erfahrene Benutzer)
 - **Enable/disable features remotely**, ohne dass ein App-Update erforderlich ist
-- **Gradual rollouts** für Tests mit einer Teilmenge von Benutzern
+- **Gradual rollouts** für Tests mit einer Untergruppe von Benutzern
 
 #### Implementierung von Feature-Flags in Flutter
 

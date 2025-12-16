@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 799c34a77fb8033942c8077f5b0464a2306ce1a7d057c3d643bbe7c260664d35
+base_hash: 7a153008d54da8e80e75711a59fd7bf6fd77d7305e000dc3304bf075b7f0ea2a
 cover:
   alt: n8n-ai-assistant
   caption: Personal AI assistant build with n8n
@@ -17,7 +17,7 @@ tags:
 title: Mein persönlicher n8n AI-Assistent
 ---
 
-{{< alert type="info" title="Ongoing" >}}
+{{< alert type="info" title="" >}}
 Der Assistent macht einen guten Job und ist immer noch im täglichen Einsatz.
 {{< /alert >}}
 
@@ -143,7 +143,7 @@ Beispiele:
 
 Diese Feedbackschleife verbessert die Benutzerfreundlichkeit und vermeidet Verwirrung, insbesondere bei sprachgesteuerten Interaktionen, bei denen der Benutzer die Eingabe nicht sehen kann.
 
-## Anwendungsbeispiele
+## Beispiele für die Verwendung
 Im Folgenden finden Sie einige praktische Beispiele, die zeigen, was der Assistent alles kann.
 
 ### Termin zum Kalender hinzufügen
