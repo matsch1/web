@@ -1,12 +1,20 @@
 User-agent: *
 
-Disallow: /en/tags/hugo/
+Disallow: /en/tags/k3s/
+
+Disallow: /en/tags/kubernetes/
 
 Disallow: /en/
 
-Disallow: /en/blog/giscus-hugo-comments/
+Disallow: /en/tags/nextcloud/
+
+Disallow: /en/blog/nextcloud-k3s-helm-deployment/
 
 Disallow: /en/tags/
+
+Disallow: /en/tags/hugo/
+
+Disallow: /en/blog/giscus-hugo-comments/
 
 Disallow: /en/projects/
 
