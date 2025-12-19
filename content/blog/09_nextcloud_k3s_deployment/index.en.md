@@ -125,7 +125,7 @@ I followed the guide by Robin to migrate my Google Contacts and Calendar to Next
 [Moving Google Contacts and Calendar to NextCloud](https://selfhostedheaven.com/posts/20220116-moving-google-contacts-and-calendar-to-nextcloud/)
 During DAVx⁵ setup process I got stuck on `Grant Access` step.
 
-{{< figure src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZPWsy7ripvR1b7OIfdfyon23ykeLuhSVHA&s" width="400" alt="Nextcloud DAV Grant Access issue" link="https://itcamefromtheinternet.com/blog/nextcloud-android-sync/" >}}
+{{< figure src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZPWsy7ripvR1b7OIfdfyon23ykeLuhSVHA&s" width="300" alt="Nextcloud DAV Grant Access issue" link="https://itcamefromtheinternet.com/blog/nextcloud-android-sync/" >}}
 
 To support DAV clients such as DAVx⁵, additional configuration is required. This is solved by injecting a custom configuration file via Helm values and enabling the HTTPS client fix.
 
@@ -144,10 +144,10 @@ nextcloud:
           '/Nextcloud-iOS/',
       ),
     );
-  
-│ phpClientHttpsFix:
-│   enabled: true
-│   protocol: https
+
+phpClientHttpsFix:
+  enabled: true
+  protocol: https
 ```
 
 After applying this configuration, the `Grant Access` step on my Android device worked without issues.
@@ -159,24 +159,24 @@ These manifests live alongside the Helm deployment and are applied as part of th
 
 In my case, I defined an external `LoadBalancer`` service:
 ``` yaml
-│ extraManifests:
-│   externalService:
-│     apiVersion: v1
-│     kind: Service
-│     metadata:
-│       name: nextcloud-external-service
-│       namespace: nextcloud
-│     spec:
-│       type: LoadBalancer
-│       selector:
-│         app.kubernetes.io/component: app
-│         app.kubernetes.io/instance: nextcloud
-│         app.kubernetes.io/name: nextcloud
-│       ports:
-│         - protocol: TCP
-│           port: 8080
-│           targetPort: 80
-│           nodePort: <nodePort>
+extraManifests:
+  externalService:
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: nextcloud-external-service
+      namespace: nextcloud
+    spec:
+      type: LoadBalancer
+      selector:
+        app.kubernetes.io/component: app
+        app.kubernetes.io/instance: nextcloud
+        app.kubernetes.io/name: nextcloud
+      ports:
+        - protocol: TCP
+          port: 8080
+          targetPort: 80
+          nodePort: <nodePort>
 ```
 
 

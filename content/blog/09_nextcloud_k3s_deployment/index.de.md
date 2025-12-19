@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 7954a9d0eb2cf981ac1a64055f5b0dddd93feebbf4628a8eedbfbb3e6d42b376
+base_hash: 3448d27d810c2fa51cb48b906313205fef34c3f88b7f1472694488d23672b88b
 cover:
   alt: nextcloud-k3s-helm-deployment
   caption: The way I deployed nextcloud on my k3s cluster using helm chart
@@ -32,7 +32,7 @@ Dieser Artikel dokumentiert meinen Ansatz, die Probleme, auf die ich gestoßen b
 
 ## Helm Chart Setup
 ### Herunterladen des Helm-Charts
-Der erste Schritt bestand darin, das offizielle Nextcloud Helm Chart zu beschaffen. Anstatt es bei jedem Einsatz direkt aus dem Repository zu installieren, ziehe ich es vor, das Diagramm lokal herunterzuladen und anzubieten. Auf diese Weise habe ich vollen Einblick in die Standardeinstellungen, kann Änderungen im Laufe der Zeit verfolgen und vermeide Überraschungen, wenn sich die Upstream-Standards ändern.
+Der erste Schritt bestand darin, das offizielle Nextcloud Helm Chart zu beschaffen. Anstatt es bei jedem Einsatz direkt aus dem Repository zu installieren, ziehe ich es vor, das Diagramm lokal herunterzuladen und anzubieten. Auf diese Weise habe ich vollen Einblick in die Standardeinstellungen, kann Änderungen im Laufe der Zeit verfolgen und vermeide Überraschungen, wenn sich die Upstream-Standardeinstellungen ändern.
 
 ``` sh
 helm repo add nextcloud https://nextcloud.github.io/helm/
@@ -126,7 +126,7 @@ Ich habe die Anleitung von Robin befolgt, um meine Google-Kontakte und den Kalen
 [Moving Google Contacts and Calendar to NextCloud](https://selfhostedheaven.com/posts/20220116-moving-google-contacts-and-calendar-to-nextcloud/)
 Während des DAVx⁵-Einrichtungsprozesses blieb ich beim Schritt `Grant Access` hängen.
 
-{{< figure src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZPWsy7ripvR1b7OIfdfyon23ykeLuhSVHA&s" width="400" alt="Nextcloud DAV Grant Access issue" link="https://itcamefromtheinternet.com/blog/nextcloud-android-sync/" >}}
+{{< figure src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZPWsy7ripvR1b7OIfdfyon23ykeLuhSVHA&s" width="300" alt="Nextcloud DAV Grant Access issue" link="https://itcamefromtheinternet.com/blog/nextcloud-android-sync/" >}}
 
 Um DAV-Clients wie DAVx⁵ zu unterstützen, ist eine zusätzliche Konfiguration erforderlich. Dies wird gelöst, indem eine benutzerdefinierte Konfigurationsdatei über Helm-Werte injiziert und der HTTPS-Client-Fix aktiviert wird.
 
@@ -145,10 +145,10 @@ nextcloud:
           '/Nextcloud-iOS/',
       ),
     );
-  
-│ phpClientHttpsFix:
-│   enabled: true
-│   protocol: https
+
+phpClientHttpsFix:
+  enabled: true
+  protocol: https
 ```
 
 Nach Anwendung dieser Konfiguration funktionierte der Schritt `Grant Access` auf meinem Android-Gerät ohne Probleme.
@@ -160,24 +160,24 @@ Diese Manifeste laufen neben dem Helm-Einsatz und werden im Rahmen desselben Wor
 
 In meinem Fall habe ich einen externen `LoadBalancer``-Dienst definiert:
 ``` yaml
-│ extraManifests:
-│   externalService:
-│     apiVersion: v1
-│     kind: Service
-│     metadata:
-│       name: nextcloud-external-service
-│       namespace: nextcloud
-│     spec:
-│       type: LoadBalancer
-│       selector:
-│         app.kubernetes.io/component: app
-│         app.kubernetes.io/instance: nextcloud
-│         app.kubernetes.io/name: nextcloud
-│       ports:
-│         - protocol: TCP
-│           port: 8080
-│           targetPort: 80
-│           nodePort: <nodePort>
+extraManifests:
+  externalService:
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: nextcloud-external-service
+      namespace: nextcloud
+    spec:
+      type: LoadBalancer
+      selector:
+        app.kubernetes.io/component: app
+        app.kubernetes.io/instance: nextcloud
+        app.kubernetes.io/name: nextcloud
+      ports:
+        - protocol: TCP
+          port: 8080
+          targetPort: 80
+          nodePort: <nodePort>
 ```
 
 

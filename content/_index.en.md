@@ -5,7 +5,7 @@ image: "http://blog.matschcode.de/en/Favicon.png"
 draft: false
 ---
 
-{{< figure src="http://blog.matschcode.de/en/Favicon.png" width="400" alt="matsch web logo" >}}
+{{< figure src="http://blog.matschcode.de/en/Favicon.png" width="300" alt="matsch web logo" >}}
 
 ## Welcome to My Blog
 
@@ -22,12 +22,6 @@ Here's what you can expect to find:
 **🌍 Travel Logs:** Posts detailing my experiences, sharing travel tips, and documenting the places I've been.
 
 It's a straightforward space designed to share information. Feel free to browse the topics that interest you most.
-
---- 
-
-This is a website build with *HUGO*, the markdown based web framework. 
-
-{{< figure src="https://kinsta.com/wp-content/uploads/2021/10/hugo.png" width="400" alt="Hugo Logo" >}}
 
 
     This page is originally written in english. 

@@ -1,12 +1,12 @@
 ---
-base_hash: 3f68eea2355786663480cef83d0ca2f81aab72cc06c9816da6473298324407d6
+base_hash: 0479b9cd8054e0418eb2ec9e21c35d65516a431cd93dcc57855a76f02d63cea7
 description: Collection of stuff
 draft: false
 image: http://blog.matschcode.de/en/Favicon.png
 title: MatSch Web
 ---
 
-{{< figure src="http://blog.matschcode.de/en/Favicon.png" width="400" alt="matsch web logo" >}}
+{{< figure src="http://blog.matschcode.de/en/Favicon.png" width="300" alt="matsch web logo" >}}
 
 ## Willkommen in meinem Blog
 
@@ -23,12 +23,6 @@ Hier ist, was Sie erwarten können zu finden:
 **🌍 Travel Logs:** Beiträge, in denen ich meine Erfahrungen beschreibe, Reisetipps mitteile und die Orte dokumentiere, an denen ich war.
 
 Es ist ein unkomplizierter Raum, um Informationen zu teilen. Stöbern Sie ruhig in den Themen, die Sie am meisten interessieren.
-
----
-
-Dies ist eine Website, die mit *HUGO*, dem Markdown-basierten Web-Framework, erstellt wurde.
-
-{{< figure src="https://kinsta.com/wp-content/uploads/2021/10/hugo.png" width="400" alt="Hugo Logo" >}}
 
 
     Diese Seite ist ursprünglich in Englisch geschrieben.
