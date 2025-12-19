@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 256154078431f47b0ee08842528bc3575a732995d64e9185d294be3d8305496e
+base_hash: 7954a9d0eb2cf981ac1a64055f5b0dddd93feebbf4628a8eedbfbb3e6d42b376
 cover:
   alt: nextcloud-k3s-helm-deployment
   caption: The way I deployed nextcloud on my k3s cluster using helm chart
@@ -32,7 +32,7 @@ Dieser Artikel dokumentiert meinen Ansatz, die Probleme, auf die ich gestoßen b
 
 ## Helm Chart Setup
 ### Herunterladen des Helm-Charts
-Der erste Schritt bestand darin, das offizielle Nextcloud Helm Chart zu beschaffen. Anstatt es bei jedem Einsatz direkt aus dem Repository zu installieren, ziehe ich es vor, das Diagramm lokal herunterzuladen und anzubieten. Auf diese Weise habe ich vollen Einblick in die Standardeinstellungen, kann Änderungen im Laufe der Zeit verfolgen und vermeide Überraschungen, wenn sich die Upstream-Standardeinstellungen ändern.
+Der erste Schritt bestand darin, das offizielle Nextcloud Helm Chart zu beschaffen. Anstatt es bei jedem Einsatz direkt aus dem Repository zu installieren, ziehe ich es vor, das Diagramm lokal herunterzuladen und anzubieten. Auf diese Weise habe ich vollen Einblick in die Standardeinstellungen, kann Änderungen im Laufe der Zeit verfolgen und vermeide Überraschungen, wenn sich die Upstream-Standards ändern.
 
 ``` sh
 helm repo add nextcloud https://nextcloud.github.io/helm/
@@ -75,8 +75,7 @@ Dieser schrittweise Ansatz ermöglichte es mir, mich zunächst auf Kubernetes-sp
 
 ## Erforderliche Modifikationen
 ### Vertrauenswürdige Domänen für benutzerdefinierten Domänenzugriff
-{{< figure src="https://help.nextcloud.com/uploads/default/original/3X/d/b/dbdf5a0e3ed2d78800f42f3612ef88c623e9ad8d.png
-" width="600" alt="Nextcloud untrusted domain error" >}}
+{{< figure src="https://help.nextcloud.com/uploads/default/original/3X/d/b/dbdf5a0e3ed2d78800f42f3612ef88c623e9ad8d.png" width="600" alt="Nextcloud untrusted domain error" >}}
 
 Nextcloud achtet streng darauf, von welchen Hostnamen es Anfragen annimmt. Dies ist besonders wichtig, wenn es hinter einem Ingress Controller oder einem LoadBalancer läuft.
 
@@ -97,9 +96,7 @@ nextcloud:
 ### Reparieren der NextCloud App Store-Verbindung
 Um die Apps Kontakte und Kalender zu installieren, muss Nextcloud eine Verbindung mit dem Nextcloud App Store herstellen. In meinem Fall war die App Store-Ansicht leer und konnte den Inhalt nicht laden.
 
-{{< figure src="https://forum.yunohost.org/uploads/default/original/2X/6/6c1ca5c9b3e6c1f5c36a7d64e700b0f8078f208e.png
-" width="600" alt="Nextcloud App Store connection error" link="https://forum.yunohost.org/t/nextcloud-appstore-does-not-work/30804
-" >}}
+{{< figure src="https://forum.yunohost.org/uploads/default/original/2X/6/6c1ca5c9b3e6c1f5c36a7d64e700b0f8078f208e.png" width="600" alt="Nextcloud App Store connection error" link="https://forum.yunohost.org/t/nextcloud-appstore-does-not-work/30804" >}}
 
 Um das Problem zu identifizieren, habe ich die Konnektivität zum App Store sowohl vom k3s-Knoten als auch vom Nextcloud-Container aus getestet:
 ``` sh
@@ -129,9 +126,7 @@ Ich habe die Anleitung von Robin befolgt, um meine Google-Kontakte und den Kalen
 [Moving Google Contacts and Calendar to NextCloud](https://selfhostedheaven.com/posts/20220116-moving-google-contacts-and-calendar-to-nextcloud/)
 Während des DAVx⁵-Einrichtungsprozesses blieb ich beim Schritt `Grant Access` hängen.
 
-{{< figure src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZPWsy7ripvR1b7OIfdfyon23ykeLuhSVHA&s
-" width="400" alt="Nextcloud DAV Grant Access issue" link="https://itcamefromtheinternet.com/blog/nextcloud-android-sync/
-" >}}
+{{< figure src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZPWsy7ripvR1b7OIfdfyon23ykeLuhSVHA&s" width="400" alt="Nextcloud DAV Grant Access issue" link="https://itcamefromtheinternet.com/blog/nextcloud-android-sync/" >}}
 
 Um DAV-Clients wie DAVx⁵ zu unterstützen, ist eine zusätzliche Konfiguration erforderlich. Dies wird gelöst, indem eine benutzerdefinierte Konfigurationsdatei über Helm-Werte injiziert und der HTTPS-Client-Fix aktiviert wird.
 

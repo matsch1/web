@@ -74,8 +74,7 @@ This staged approach allowed me to focus first on Kubernetes-specific concerns, 
 
 ## Required Modifications
 ### Trusted Domains for Custom Domain Access
-{{< figure src="https://help.nextcloud.com/uploads/default/original/3X/d/b/dbdf5a0e3ed2d78800f42f3612ef88c623e9ad8d.png
-" width="600" alt="Nextcloud untrusted domain error" >}}
+{{< figure src="https://help.nextcloud.com/uploads/default/original/3X/d/b/dbdf5a0e3ed2d78800f42f3612ef88c623e9ad8d.png" width="600" alt="Nextcloud untrusted domain error" >}}
 
 Nextcloud is strict about which hostnames it accepts requests from. When running behind an ingress controller or a LoadBalancer, this becomes especially important.
 
@@ -96,9 +95,7 @@ nextcloud:
 ### Fixing the NextCloud App Store Connection
 To install the Contacts and Calendar apps, Nextcloud needs to connect to the Nextcloud App Store. In my case, the App Store view was empty and failed to load content.
 
-{{< figure src="https://forum.yunohost.org/uploads/default/original/2X/6/6c1ca5c9b3e6c1f5c36a7d64e700b0f8078f208e.png
-" width="600" alt="Nextcloud App Store connection error" link="https://forum.yunohost.org/t/nextcloud-appstore-does-not-work/30804
-" >}}
+{{< figure src="https://forum.yunohost.org/uploads/default/original/2X/6/6c1ca5c9b3e6c1f5c36a7d64e700b0f8078f208e.png" width="600" alt="Nextcloud App Store connection error" link="https://forum.yunohost.org/t/nextcloud-appstore-does-not-work/30804" >}}
 
 To identify the issue, I tested connectivity to the App Store both from the k3s node and from inside the Nextcloud container:
 ``` sh
@@ -128,9 +125,7 @@ I followed the guide by Robin to migrate my Google Contacts and Calendar to Next
 [Moving Google Contacts and Calendar to NextCloud](https://selfhostedheaven.com/posts/20220116-moving-google-contacts-and-calendar-to-nextcloud/)
 During DAVx⁵ setup process I got stuck on `Grant Access` step.
 
-{{< figure src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZPWsy7ripvR1b7OIfdfyon23ykeLuhSVHA&s
-" width="400" alt="Nextcloud DAV Grant Access issue" link="https://itcamefromtheinternet.com/blog/nextcloud-android-sync/
-" >}}
+{{< figure src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZPWsy7ripvR1b7OIfdfyon23ykeLuhSVHA&s" width="400" alt="Nextcloud DAV Grant Access issue" link="https://itcamefromtheinternet.com/blog/nextcloud-android-sync/" >}}
 
 To support DAV clients such as DAVx⁵, additional configuration is required. This is solved by injecting a custom configuration file via Helm values and enabling the HTTPS client fix.
 
