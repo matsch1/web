@@ -1,16 +1,22 @@
 User-agent: *
 
+Disallow: /en/blog/expose-k3s-services-via-vps/
+
 Disallow: /en/tags/k3s/
 
 Disallow: /en/tags/kubernetes/
 
 Disallow: /en/
 
+Disallow: /en/tags/
+
+Disallow: /en/tags/tailscale/
+
+Disallow: /en/tags/vps/
+
 Disallow: /en/tags/nextcloud/
 
 Disallow: /en/blog/nextcloud-k3s-helm-deployment/
-
-Disallow: /en/tags/
 
 Disallow: /en/tags/hugo/
 
@@ -95,8 +101,6 @@ Disallow: /en/tags/coolify/
 Disallow: /en/tags/server/
 
 Disallow: /en/projects/coolify-vps-setup/
-
-Disallow: /en/tags/tailscale/
 
 Disallow: /en/blog/
 
