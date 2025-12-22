@@ -1,5 +1,5 @@
 ---
-base_hash: c2863bc21354add2ccc902641c2c179ac67bae3cf1b4079865b8804dd352402b
+base_hash: a19f8b207cd033f6c231d9a25f486956d1ec8f0477a726abb1c87fa2130a361f
 description: ''
 draft: false
 title: About me
@@ -16,11 +16,10 @@ In the process, I discovered something else: my passion for good software. I lov
 
 ## Skills
 
-- **Programmiersprachen & Frameworks**: Python, Go, Bash, MATLAB
-- **DevOps & Infrastruktur**: Linux, Docker, Kubernetes, Jenkins, GitOps, Ansible, Grafana
-- **Tools & Versionierung**: Git, Neovim
-- **Modellbasiertes Entwickeln**: MATLAB Simulink, ASCET
-- **Methoden & Soft Skills**: Agile/Scrum/Kanban, Code Review
+- **Languages**: Bash, Go, Python, MATLAB
+- **Coding Stack**: WezTerm, Zsh, Zellij, Neovim, Yazi, Lazygit, Lazydocker, K9S
+- **DevOps**: Linux, Docker, Kubernetes, Jenkins, ArgoCD, Ansible, Grafana
+- **Modelbased Development**: MATLAB Simulink, ASCET
 
 ---
 

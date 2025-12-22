@@ -55,10 +55,10 @@ The final architecture is simple, secure, and surprisingly robust.
 
 At this point, the VPS and my homelab were already part of the same tailnet, meaning they could communicate securely as if they were on the same local network.
 
-## What Was Missing
+### What Was Missing
 To make this work end-to-end, I needed two adjustments:
 
-### 1. Reverse proxy routing on the VPS
+#### 1. Reverse proxy routing on the VPS
 [Traefik](https://traefik.io/traefik) (managed by [Coolify](https://coolify.io/)) needed to forward requests for a specific domain to a service running inside my private K3S cluster over [Tailscale](https://tailscale.com/).
 For this the file `/data/coolify/proxy/dynamic/coolify.yaml` has to be modified:
 ``` yaml
@@ -86,7 +86,7 @@ For this the file `/data/coolify/proxy/dynamic/coolify.yaml` has to be modified:
             url: "http://<tailscale-ip>:<nodePort>" # node Port of LoadBalancer service (see step 2)
 ```
 
-### 2. Service exposure inside Kubernetes
+#### 2. Service exposure inside Kubernetes
 Instead of using a standard Ingress for Nextcloud, I switched to a LoadBalancer service. This allowed Traefik on the VPS to forward traffic directly to the Nextcloud pod via its Tailscale IP.
 
 ```yaml
@@ -111,14 +111,14 @@ extraManifests:
 ```
 
 
-**With these changes in place, traffic flow looks like this:**
-
+### The result
+With these changes in place, traffic flow looks like this:**
 {{< figure src="./routing.png" width="700" alt="VPS K3S routing" >}}
+The phone can access nextcloud on my private domain from the internet but can not access paperless-ngx.
+From inside the tailnet, paperless-ngx is still available.
 
 {{< alert type="info" title="" >}}
-No port forwarding.
-No DynDNS.
-No public exposure of my home IP.
+No port forwarding - No DynDNS - No public exposure of my home IP.
 {{< /alert >}}
 
 ## Summary

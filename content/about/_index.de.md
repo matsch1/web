@@ -15,11 +15,10 @@ Dabei habe ich etwas anderes entdeckt: meine Leidenschaft für gute Software. Ic
 
 ## Skills
 
-- **Programmiersprachen & Frameworks**: Python, Go, Bash, MATLAB
-- **DevOps & Infrastruktur**: Linux, Docker, Kubernetes, Jenkins, GitOps, Ansible, Grafana
-- **Tools & Versionierung**: Git, Neovim
-- **Modellbasiertes Entwickeln**: MATLAB Simulink, ASCET
-- **Methoden & Soft Skills**: Agile/Scrum/Kanban, Code Review
+- **Languages**: Bash, Go, Python, MATLAB
+- **Coding Stack**: WezTerm, Zsh, Zellij, Neovim, Yazi, Lazygit, Lazydocker, K9S
+- **DevOps**: Linux, Docker, Kubernetes, Jenkins, ArgoCD, Ansible, Grafana
+- **Modelbased Development**: MATLAB Simulink, ASCET
 
 ---
 

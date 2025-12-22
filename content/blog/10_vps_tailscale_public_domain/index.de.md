@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 1bd74db1fcd4763bfe84f32101c5a9bc641480c4a126dd7cafc796a5d4edbc4f
+base_hash: ccae30d3fe1dcb1aa18ae3037c39691d1a7b51aa7c1ac6eb9965681498ebece2
 cover:
   alt: Traffic flow from VPS to Tailscale-protected K3s cluster
   caption: Public traffic routed through a VPS into a private K3s homelab via Tailscale
@@ -58,10 +58,10 @@ Die endgültige Architektur ist einfach, sicher und erstaunlich robust.
 
 Zu diesem Zeitpunkt waren der VPS und mein Homelab bereits Teil desselben Tailnets, d.h. sie konnten sicher kommunizieren, als ob sie sich im selben lokalen Netzwerk befänden.
 
-## Was noch fehlte
+### Was noch fehlte
 Damit dies durchgängig funktioniert, musste ich zwei Anpassungen vornehmen:
 
-### 1. Reverse-Proxy-Routing auf dem VPS
+#### 1. Reverse-Proxy-Routing auf dem VPS
 [Traefik](https://traefik.io/traefik) (verwaltet von [Coolify](https://coolify.io/)) musste Anfragen für eine bestimmte Domain an einen Dienst weiterleiten, der innerhalb meines privaten K3S-Clusters über [Tailscale](https://tailscale.com/) läuft.
 Hierfür muss die Datei `/data/coolify/proxy/dynamic/coolify.yaml` modifiziert werden:
 ``` yaml
@@ -89,7 +89,7 @@ Hierfür muss die Datei `/data/coolify/proxy/dynamic/coolify.yaml` modifiziert w
             url: "http://<tailscale-ip>:<nodePort>" # node Port of LoadBalancer service (see step 2)
 ```
 
-### 2. Dienst-Exposition innerhalb von Kubernetes
+#### 2. Dienst-Exposition innerhalb von Kubernetes
 Anstatt einen Standard-Ingress für Nextcloud zu verwenden, habe ich auf einen LoadBalancer-Dienst umgestellt. Dies ermöglichte es Traefik auf dem VPS, den Datenverkehr über seine Tailscale-IP direkt an den Nextcloud-Pod weiterzuleiten.
 
 ```yaml
@@ -114,21 +114,21 @@ extraManifests:
 ```
 
 
-**With these changes in place, traffic flow looks like this:**
+### Das Ergebnis
+Mit diesen Änderungen sieht der Verkehrsfluss wie folgt aus: **
+[[00000110000013]]
+The phone can access nextcloud on my private domain from the internet but can not access paperless-ngx.
+From inside the tailnet, paperless-ngx is still available.
 
-{{< figure src="./routing.png" width="700" alt="VPS K3S routing" >}}
+[[00000110000014]]
+No port forwarding - No DynDNS - No public exposure of my home IP.
+[[00000110000015]]
 
-{{< alert type="info" title="" >}}
-Keine Portweiterleitung.
-Kein DynDNS.
-Keine öffentliche Bekanntgabe meiner Heimat-IP.
-{{< /alert >}}
+## Summary
+By using a VPS as a public ingress point and combining it with Tailscale, I was able to expose a single service from my private homelab without compromising security or architecture cleanliness.
 
-## Zusammenfassung
-Durch die Verwendung eines VPS als öffentlichen Zugangspunkt und die Kombination mit Tailscale war ich in der Lage, einen einzigen Dienst von meinem privaten Heimlabor aus zu veröffentlichen, ohne die Sicherheit oder die Sauberkeit der Architektur zu beeinträchtigen.
-
-**This setup provides:**
+**Diese Konfiguration bietet:**
 - Eine stabile öffentliche IP
 - Sicheres privates Netzwerk über Tailscale
 - Volle Kontrolle darüber, welche Dienste offengelegt werden
-- Keine eingehenden Verbindungen zu meinem Heimnetzwerk
+- Null eingehende Verbindungen zu meinem Heimnetzwerk
