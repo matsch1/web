@@ -1,4 +1,7 @@
+import importlib.util
 from pathlib import Path
+import struct
+import tempfile
 import unittest
 
 
@@ -6,6 +9,15 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class PublishContractTests(unittest.TestCase):
+    @staticmethod
+    def verifier_module():
+        path = ROOT / "scripts" / "verify_site.py"
+        spec = importlib.util.spec_from_file_location("verify_site", path)
+        assert spec and spec.loader
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module
+
     def test_root_sitemap_index_and_robots_are_consistent(self):
         robots = (ROOT / "layouts" / "robots.txt").read_text()
         sitemap = (ROOT / "static" / "sitemap.xml").read_text()
@@ -54,8 +66,142 @@ class PublishContractTests(unittest.TestCase):
         gallery = (ROOT / "layouts" / "shortcodes" / "galleries.html").read_text()
         self.assertNotIn("nanogallery2", base)
         self.assertNotIn("jquery@3.7.1", base)
-        self.assertIn("nanogallery2", gallery)
-        self.assertIn("defer", gallery)
+        self.assertNotIn("nanogallery2", gallery)
+        self.assertNotIn("jquery@3.7.1", gallery)
+
+    def test_default_social_cards_exist_with_declared_png_dimensions(self):
+        for filename in ("social-de.png", "social-en.png"):
+            card = ROOT / "static" / filename
+            self.assertTrue(card.is_file(), f"missing social card: {filename}")
+            header = card.read_bytes()[:24]
+            self.assertEqual(header[:8], b"\x89PNG\r\n\x1a\n")
+            self.assertEqual(struct.unpack(">II", header[16:24]), (1200, 630))
+
+    def test_default_social_card_metadata_is_png(self):
+        head = (ROOT / "layouts" / "partials" / "head.html").read_text()
+        self.assertIn(
+            '{{ else }}\n  <meta property="og:image" content="{{ $defaultOGImage }}">\n'
+            '  <meta property="og:image:type" content="image/png">',
+            head,
+        )
+
+    def test_default_social_cards_use_the_active_language_base_url(self):
+        head = (ROOT / "layouts" / "partials" / "head.html").read_text()
+        self.assertIn('"social-de.png" "social-en.png"', head)
+        self.assertIn("| absURL", head)
+
+    def test_safari_pinned_tab_icon_exists(self):
+        icon = ROOT / "static" / "safari-pinned-tab.svg"
+        self.assertTrue(icon.is_file())
+        self.assertIn("<svg", icon.read_text())
+
+    def test_artifact_validator_checks_p0_assets(self):
+        verifier = (ROOT / "scripts" / "verify_site.py").read_text()
+        self.assertIn('"de/social-de.png"', verifier)
+        self.assertIn('"en/social-en.png"', verifier)
+        self.assertIn("safari-pinned-tab.svg", verifier)
+
+    def test_artifact_validator_rejects_wrong_social_card_dimensions(self):
+        verifier = self.verifier_module()
+        with tempfile.TemporaryDirectory() as directory:
+            card = Path(directory) / "social.png"
+            card.write_bytes(b"\x89PNG\r\n\x1a\n" + b"\x00\x00\x00\x0dIHDR" + struct.pack(">II", 1, 1))
+            with self.assertRaises(SystemExit):
+                verifier.validate_social_card(card)
+
+    def test_artifact_validator_rejects_truncated_social_card(self):
+        verifier = self.verifier_module()
+        with tempfile.TemporaryDirectory() as directory:
+            card = Path(directory) / "social.png"
+            card.write_bytes(
+                b"\x89PNG\r\n\x1a\n" + b"\x00\x00\x00\x0dIHDR" + struct.pack(">II", 1200, 630)
+            )
+            with self.assertRaises(SystemExit):
+                verifier.validate_social_card(card)
+
+    def test_artifact_validator_rejects_wrong_social_metadata(self):
+        verifier = self.verifier_module()
+        with tempfile.TemporaryDirectory() as directory:
+            page = Path(directory) / "index.html"
+            page.write_text('<meta property="og:image" content="https://blog.matschcode.de/en/social-en.png">')
+            with self.assertRaises(SystemExit):
+                verifier.validate_default_social_metadata(
+                    page, "https://blog.matschcode.de/de/social-de.png"
+                )
+
+    def test_artifact_validator_rejects_empty_gallery_markup(self):
+        verifier = self.verifier_module()
+        with tempfile.TemporaryDirectory() as directory:
+            page = Path(directory) / "index.html"
+            page.write_text('<div class="image-gallery"></div>')
+            with self.assertRaises(SystemExit):
+                verifier.validate_gallery(page)
+
+    def test_artifact_validator_rejects_unpaired_social_metadata(self):
+        verifier = self.verifier_module()
+        with tempfile.TemporaryDirectory() as directory:
+            page = Path(directory) / "index.html"
+            page.write_text(
+                '<meta property="og:image" content="https://blog.matschcode.de/de/social-de.png">'
+                '<meta property="og:image:type" content="image/jpeg">'
+                '<meta property="og:image" content="https://example.test/other.png">'
+                '<meta property="og:image:type" content="image/png">'
+            )
+            with self.assertRaises(SystemExit):
+                verifier.validate_default_social_metadata(
+                    page, "https://blog.matschcode.de/de/social-de.png"
+                )
+
+    def test_artifact_validator_rejects_empty_gallery_with_unrelated_item(self):
+        verifier = self.verifier_module()
+        with tempfile.TemporaryDirectory() as directory:
+            page = Path(directory) / "index.html"
+            page.write_text(
+                '<div class=image-gallery></div>'
+                '<a class=image-gallery__item href=x><img src=x></a>'
+            )
+            with self.assertRaises(SystemExit):
+                verifier.validate_gallery(page)
+
+    def test_artifact_validator_rejects_gallery_item_without_own_image(self):
+        verifier = self.verifier_module()
+        with tempfile.TemporaryDirectory() as directory:
+            page = Path(directory) / "index.html"
+            page.write_text(
+                '<div class=image-gallery><a class=image-gallery__item href=x></a><span><img src=x></span></div>'
+            )
+            with self.assertRaises(SystemExit):
+                verifier.validate_gallery(page)
+
+    def test_artifact_validator_rejects_non_svg_xml_root(self):
+        verifier = self.verifier_module()
+        with tempfile.TemporaryDirectory() as directory:
+            icon = Path(directory) / "safari-pinned-tab.svg"
+            icon.write_text("<notsvg />")
+            with self.assertRaises(SystemExit):
+                verifier.validate_svg(icon)
+
+    def test_artifact_validator_accepts_hugo_minified_gallery_markup(self):
+        verifier = self.verifier_module()
+        with tempfile.TemporaryDirectory() as directory:
+            page = Path(directory) / "index.html"
+            page.write_text('<div class=image-gallery><a class=image-gallery__item href=x><img src=x></a></div>')
+            verifier.validate_gallery(page)
+
+    def test_artifact_validator_rejects_invalid_pinned_tab_svg(self):
+        verifier = self.verifier_module()
+        with tempfile.TemporaryDirectory() as directory:
+            icon = Path(directory) / "safari-pinned-tab.svg"
+            icon.write_text("not an svg")
+            with self.assertRaises(SystemExit):
+                verifier.validate_svg(icon)
+
+    def test_gallery_shortcodes_render_images_without_javascript(self):
+        galleries = (ROOT / "layouts" / "shortcodes" / "galleries.html").read_text()
+        gallery = (ROOT / "layouts" / "shortcodes" / "gallery.html").read_text()
+        self.assertIn('class="image-gallery"', galleries)
+        self.assertIn('<img', gallery)
+        self.assertNotIn("data-ngthumb", gallery)
 
 
 if __name__ == "__main__":
