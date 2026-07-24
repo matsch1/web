@@ -1,153 +1,150 @@
-import frontmatter
+"""Atomically generate localized Hugo content from canonical Markdown sources."""
+import argparse
 import hashlib
-import re
-from langdetect import detect
-from pathlib import Path
-import shutil
-import deepl
 import os
+import re
+import shutil
+import tempfile
+from pathlib import Path
+
+import frontmatter
 from dotenv import load_dotenv
+from langdetect import detect
 
 LANGS = {"de", "en"}
-BASE_PATH = Path("content")
-
-# Load from .env.secrets only if it exists (for local dev)
-if os.path.exists(".env.secrets"):
-    load_dotenv(".env.secrets")
-
-auth_key = os.getenv("DEEPL_API_KEY")
-if not auth_key:
-    raise RuntimeError("DEEPL_API_KEY not set in environment or .env.secrets")
-
-deepl_client = deepl.DeepLClient(auth_key)
+TRANSLATABLE_METADATA = ("title", "description", "summary")
+PLACEHOLDER_RE = re.compile(r"\[\[000001100000\d+\]\]")
 
 
-def hash_text(text: str) -> str:
-    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+class TranslationError(RuntimeError):
+    pass
 
 
-def translate(text: str, source: str, target: str) -> str:
-    if target == "en":
-        target = "EN-US"
-    try:
-        result = deepl_client.translate_text(
-            text,
-            source_lang=source,
-            target_lang=target,
-            context="Der Text ist ein Artikel auf meine Blog. Er hat entweder Reisebezug, oder handelt von Dingen, die ich beim programmieren gelernt habe",
-        )
-        return result.text
-    except Exception as e:
-        print(f"Translation failed: {e}")
-        return ""
+def hash_post(post):
+    payload = frontmatter.dumps(post).encode("utf-8")
+    return hashlib.sha256(payload).hexdigest()
 
 
 def mask_placeholders(text):
     placeholders = {}
-    placeholder_id = 0
 
-    def add_placeholder(match):
-        nonlocal placeholder_id
-        ph = f"[[000001100000{placeholder_id}]]"
-        placeholders[ph] = match.group(0)
-        placeholder_id += 1
-        return ph
+    def replace(match):
+        token = f"[[000001100000{len(placeholders)}]]"
+        placeholders[token] = match.group(0)
+        return token
 
-    # Mask code blocks
-    text = re.sub(r"```.*?```", add_placeholder, text, flags=re.DOTALL)
-
-    # Mask inline code
-    text = re.sub(r"`[^`]+`", add_placeholder, text)
-
-    # Mask full markdown links and images
-    text = re.sub(r"!\[[^\]]*\]\([^)]+\)", add_placeholder, text)  # images
-    text = re.sub(r"\[[^\]]+\]\([^)]+\)", add_placeholder, text)  # links
-
-    # Mask Hugo shortcodes
-    text = re.sub(r"\{\{\s*[<%].*?[>%]\s*\}\}", add_placeholder, text, flags=re.DOTALL)
-
-    # Mask **_**
-    text = re.sub(r"\*\*(.*?)\*\*", add_placeholder, text, flags=re.DOTALL)
-
+    patterns = [
+        (r"```.*?```", re.DOTALL),
+        (r"`[^`]+`", 0),
+        (r"!\[[^\]]*\]\([^)]+\)", 0),
+        (r"\[[^\]]+\]\([^)]+\)", 0),
+        (r"\{\{\s*[<%].*?[>%]\s*\}\}", re.DOTALL),
+    ]
+    for pattern, flags in patterns:
+        text = re.sub(pattern, replace, text, flags=flags)
     return text, placeholders
 
 
-def unmask_placeholders(text, placeholders):
-    for ph, original in placeholders.items():
-        text = text.replace(ph, original)
-    return text
-
-
-for md_file in BASE_PATH.rglob("*.md"):
-    if md_file.suffix != ".md":
-        continue
-    elif md_file.name.endswith((".de.md", ".en.md")):
-        continue  # skip already translated files
-    else:
-        print(f"file: {md_file}")
-
-    # Load base file
-    post = frontmatter.load(md_file)
-    content = post.content
+def translate_text(client, text, source, target):
+    if not text:
+        return text
     try:
-        detected_lang = detect(content)
-    except Exception as e:
-        print(f"Could not detect language for {md_file}: {e}")
-        continue
-
-    if detected_lang not in LANGS:
-        print(f"Skipping {md_file}: unsupported language ({detected_lang})")
-        continue
-
-    other_lang = "en" if detected_lang == "de" else "de"
-    base_name = md_file.stem
-    parent_dir = md_file.parent
-
-    source_file = parent_dir / f"{base_name}.{detected_lang}.md"
-    target_file = parent_dir / f"{base_name}.{other_lang}.md"
-
-    post_hash = hash_text(content)
-
-    # Skip if translated file exists AND content hash hasn't changed
-    if target_file.exists():
-        existing_translated = frontmatter.load(target_file)
-        if existing_translated.get("base_hash") == post_hash:
-            print(f"✅ Skipping {md_file}: translation up-to-date")
-            continue
-        else:
-            print(f"🔁 Updating translation for {md_file} → {target_file}")
-    else:
-        print(f"🌍 Translating {md_file} → {target_file}")
-
-    # Copy base file to language-specific name if missing
-    shutil.copy(md_file, source_file)
-    print(f"📄 Copied {md_file} → {source_file}")
-
-    # Mask placeholders before translation
-    masked_content, placeholders = mask_placeholders(content)
-
-    # Translate masked content
-    translated_masked_content = translate(masked_content, detected_lang, other_lang)
-    if not translated_masked_content:
-        print(
-            f"⚠️ Translation failed for {md_file} from {detected_lang} to {other_lang}, skipping."
+        result = client.translate_text(
+            text,
+            source_lang=source.upper(),
+            target_lang="EN-US" if target == "en" else target.upper(),
+            context="Personal blog about software engineering, homelab, travel and cycling.",
         )
-        continue
+    except Exception as exc:
+        raise TranslationError(f"{source}->{target} translation failed: {exc}") from exc
+    return result.text
 
-    # Unmask placeholders in translated content
-    translated_content = unmask_placeholders(translated_masked_content, placeholders)
 
-    # Prepare translated post with metadata and base_hash
-    translated_post = frontmatter.Post(translated_content, **post.metadata)
-    translated_post["base_hash"] = post_hash
+def translate_value(client, value, source, target):
+    masked, placeholders = mask_placeholders(str(value))
+    translated = translate_text(client, masked, source, target)
+    for token, original in placeholders.items():
+        translated = translated.replace(token, original)
+    if PLACEHOLDER_RE.search(translated):
+        raise TranslationError("translation left protected placeholders behind")
+    return translated
 
-    # Translate title if exists
-    if "title" in post.metadata:
-        translated_title = translate(post.metadata["title"], detected_lang, other_lang)
-        if translated_title:
-            translated_post["title"] = translated_title
 
-    # Save translated file
-    with open(target_file, "w", encoding="utf-8") as f:
-        f.write(frontmatter.dumps(translated_post))
-        print(f"✅ Translated and saved {target_file}")
+def source_language(post):
+    explicit = post.get("source_lang")
+    if explicit:
+        if explicit not in LANGS:
+            raise TranslationError(f"unsupported source_lang: {explicit}")
+        return explicit
+    try:
+        language = detect(post.content)
+    except Exception as exc:
+        raise TranslationError(f"could not detect source language: {exc}") from exc
+    if language not in LANGS:
+        raise TranslationError(f"unsupported detected language: {language}")
+    return language
+
+
+def translated_post(client, post, source, target):
+    content = translate_value(client, post.content, source, target)
+    metadata = dict(post.metadata)
+    metadata.pop("source_lang", None)
+    for key in TRANSLATABLE_METADATA:
+        if metadata.get(key):
+            metadata[key] = translate_value(client, metadata[key], source, target)
+    metadata["base_hash"] = hash_post(post)
+    return frontmatter.Post(content, **metadata)
+
+
+def translate_tree(content_root, client):
+    content_root = Path(content_root)
+    staged = []
+    for source_file in sorted(content_root.rglob("*.md")):
+        if source_file.name.endswith((".de.md", ".en.md")):
+            continue
+        post = frontmatter.load(source_file)
+        source = source_language(post)
+        target = "en" if source == "de" else "de"
+        source_variant = source_file.with_name(f"{source_file.stem}.{source}.md")
+        target_variant = source_file.with_name(f"{source_file.stem}.{target}.md")
+        expected_hash = hash_post(post)
+        current = frontmatter.load(target_variant) if target_variant.exists() else None
+        if current and current.get("base_hash") == expected_hash:
+            if not source_variant.exists():
+                staged.append((source_variant, frontmatter.dumps(post)))
+            continue
+        staged.append((source_variant, frontmatter.dumps(post)))
+        staged.append((target_variant, frontmatter.dumps(translated_post(client, post, source, target))))
+
+    with tempfile.TemporaryDirectory(prefix="translations-") as tmp:
+        temp = Path(tmp)
+        prepared = []
+        for destination, payload in staged:
+            candidate = temp / destination.relative_to(content_root)
+            candidate.parent.mkdir(parents=True, exist_ok=True)
+            candidate.write_text(payload, encoding="utf-8")
+            frontmatter.load(candidate)
+            prepared.append((candidate, destination))
+        for candidate, destination in prepared:
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(candidate, destination)
+    return len(staged)
+
+
+def main():
+    import deepl
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--content", default="content")
+    args = parser.parse_args()
+    if os.path.exists(".env.secrets"):
+        load_dotenv(".env.secrets")
+    key = os.getenv("DEEPL_API_KEY")
+    if not key:
+        raise TranslationError("DEEPL_API_KEY is not set")
+    changed = translate_tree(args.content, deepl.DeepLClient(key))
+    print(f"Prepared {changed} localized file(s).")
+
+
+if __name__ == "__main__":
+    main()
