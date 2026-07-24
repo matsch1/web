@@ -1,24 +1,24 @@
 ---
-base_hash: 05e4e189da3ad038cdbd163be35182b8dbf81851f22ae5a0e93c76085452594b
+base_hash: a032c84af5c27925030b8f6fbcc02eda6d18fefbf52c35591b6a767b21031a7b
 description: Sammlung verschiedener Dinge
 draft: false
 image: home-logo-600.webp
-title: Zwischen Terminal und Trampelpfad
+title: Zwischen Terminals und Wanderwegen
 ---
 
-{{< home-logo alt="MatSch Web-Logo" >}}
+{{< home-logo alt="MatSch Web logo" >}}
 
-# Eigene Projekte, Touren und Erkenntnisse ohne Hochglanzfilter
+# Projekte, Radtouren und gewonnene Erkenntnisse – ganz ohne Schnickschnack
 
 Vielen Dank, dass du dir die Zeit genommen hast, meine kleine Ecke im Internet zu besuchen.
 
 Diese Seite dient in erster Linie als Sammlung meiner persönlichen Interessen.
 
-Das erwartet dich hier:
+Das kannst du hier erwarten:
 
-**🔧 Projekte:** Eine ständig wachsende Liste von Lösungen, Experimenten und Eigenentwicklungen, die meinen bisherigen technischen Werdegang geprägt haben.
+**🔧 Projekte:** Eine wachsende Liste von Lösungen, Experimenten und Eigenentwicklungen, die meinen bisherigen technischen Werdegang geprägt haben.
 
-**💻 Code-Notizen:** Artikel über Beobachtungen, Lösungen und wichtige Erkenntnisse aus meinem persönlichen Programmierprozess. Mein Ziel ist es, die praktischen Erkenntnisse weiterzugeben, die ich beim Aufbau von Projekten in den Bereichen DevOps, App-Entwicklung und Homelabbing gewonnen habe.
+**💻 Code-Notizen:** Artikel über Beobachtungen, Lösungen und wichtige Erkenntnisse aus meinem persönlichen Programmierprozess. Mein Ziel ist es, die praktischen Erkenntnisse zu teilen, die ich beim Aufbau von Projekten in den Bereichen DevOps, App-Entwicklung und Homelabbing gewonnen habe.
 
 **🌍 Reiseberichte:** Beiträge, in denen ich meine Erfahrungen schildere, Reisetipps teile und die Orte dokumentiere, die ich besucht habe.
 

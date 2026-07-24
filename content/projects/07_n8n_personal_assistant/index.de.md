@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 31c1196081a7e652c63d86e3e63ebe017493de668c182733d379e14876349be6
+base_hash: 4c886654c280e78dc58927b63814c33ce0b0776799c4537bb5d2e6babc2ab7f5
 cover:
   alt: n8n-ai-assistant
   caption: Personal AI assistant build with n8n
@@ -18,7 +18,7 @@ title: Mein persönlicher n8n-KI-Assistent
 ---
 
 {{< alert type="info" title="" >}}
-Der Assistent leistet gute Arbeit und wird nach wie vor täglich genutzt.
+Der Assistent leistet gute Arbeit und ist nach wie vor im täglichen Einsatz.
 {{< /alert >}}
 
 ## Einleitung
@@ -27,7 +27,7 @@ Wer würde sich nicht einen persönlichen Assistenten wünschen – jemanden, de
 In diesem Beitrag zeige ich euch, wie ihr mit n8n einen persönlichen KI-Assistenten erstellen könnt, der auf Telegram-Nachrichten (einschließlich Sprachnotizen) reagiert und euch bei der Verwaltung von Terminen und Aufgaben unterstützt.
 
 ## n8n einrichten
-Bevor wir den Assistenten erstellen, müssen wir n8n einrichten. n8n ist eine No-Code-Plattform zur Workflow-Automatisierung, die eine Vielzahl von Integrationen und Automatisierungen koordinieren kann (auf weitere Beispiele werde ich möglicherweise in zukünftigen Beiträgen eingehen).
+Bevor wir den Assistenten erstellen, müssen wir n8n einrichten. n8n ist eine No-Code-Plattform zur Workflow-Automatisierung, die eine Vielzahl von Integrationen und Automatisierungen koordinieren kann (vielleicht werde ich in zukünftigen Beiträgen noch weitere Beispiele vorstellen).
 
 {{< figure src="https://www.webmaster-vitaliy.de/wp-content/uploads/2025/05/n8n.png" width="300" alt="n8n" link="https://n8n.io/" target="_blank">}}
 
@@ -48,7 +48,7 @@ Für die Einrichtung des Bots kannst du dieser Anleitung folgen:
 
 Sobald du den API-Token hast, erstelle in n8n die Telegram-Anmeldedaten, und die Verbindung zu deinem Bot wird hergestellt.
 
-Wenn du den Zugriff einschränken möchtest, kannst du die vorhandene Kontoüberprüfung beibehalten, die prüft, ob die eingehende Nachricht von der richtigen Chat-ID stammt. Dies ist optional, kann aber eine zusätzliche Kontrollebene bieten.
+Wenn du den Zugriff einschränken möchtest, kannst du die vorhandene Kontoüberprüfung beibehalten, die prüft, ob die eingehende Nachricht von der richtigen Chat-ID stammt. Dies ist optional, kann aber eine zusätzliche Kontrollstufe bieten.
 
 #### Kategorisierung von Text, Sprache oder Bild
 Ich habe den ursprünglichen Switch-Block ersetzt und eine Logik eingeführt, um zwischen Text-, Audio- und Bildnachrichten zu unterscheiden.  
@@ -68,7 +68,7 @@ Um den Inhalt der Nachricht zu extrahieren, verwende ich `Get File`-Knoten mit d
 | Sprache | {{ $json.message.voice.file_id }} |
 | Text | — |
 
-Nach dem Extrahieren des Inhalts übergebe ich ihn an Prompts, die dem unten stehenden ähneln:
+Nach dem Extrahieren des Inhalts übergebe ich ihn an Prompts, die dem folgenden ähneln:
 
 ```
 The user provided the following text as an audio prompt
@@ -81,8 +81,8 @@ Mit dieser Konfiguration kann der KI-Agent den bereitgestellten Inhalt zuverläs
 
 ### KI-Agent
 Das Herzstück des Assistenten ist der KI-Agent, der die eingehende Nachricht interpretiert und entscheidet, wie zu handeln ist.  
-Der ursprüngliche Workflow nutzt Google Gemini als Modell-Backend, aber Sie können dieses durch jedes von n8n unterstützte LLM ersetzen (OpenAI, Anthropic, lokale Modelle über Ollama usw.).
-Ich empfehle ein OpenAI-Chat-Modell wie `gpt-5-mini`. Damit habe ich die besten Ergebnisse erzielt, und es kostet nur etwa 1 $ pro Monat (abhängig von Ihrer Nutzung).
+Der ursprüngliche Workflow verwendet Google Gemini als Modell-Backend, aber Sie können dieses durch jedes von n8n unterstützte LLM ersetzen (OpenAI, Anthropic, lokale Modelle über Ollama usw.).
+Ich empfehle ein OpenAI-Chat-Modell wie `gpt-5-mini`. Damit habe ich die besten Ergebnisse erzielt, und es kostet nur etwa 1 $ pro Monat (je nach Nutzung).
 
 Mein Assistent folgt einer einfachen Abfolge:
 
@@ -130,10 +130,10 @@ Ich verwende einen strukturierten Prompt, der der KI klare Anweisungen zu folgen
 - erforderliches Ausgabeformat (JSON-Befehlsobjekte)
 
 Dies erfolgt im Feld `System Message` des KI-Agenten.
-Je mehr Mühe Sie in die Eingabeanweisungen investieren, desto besser verhält sich der Agent gemäß Ihren Erwartungen.
+Je mehr Aufwand Sie in die Eingabeanweisungen stecken, desto besser verhält sich der Agent gemäß Ihren Erwartungen.
 
 ### Feedback
-Nachdem der Agent eine Aktion abgeschlossen hat, generiert der Workflow eine kurze Bestätigungsmeldung und sendet diese zurück an Telegram.  
+Nachdem der Agent eine Aktion abgeschlossen hat, generiert der Workflow eine kurze Bestätigungsnachricht und sendet diese zurück an Telegram.  
 Dadurch wird sichergestellt, dass der Nutzer stets weiß, was der Assistent getan hat.
 
 Beispiele:
@@ -141,7 +141,7 @@ Beispiele:
 - „Dein Termin wurde für Dienstag um 14:00 Uhr hinzugefügt.“
 - „Ich habe eine neue Aufgabe für morgen angelegt.“
 
-Diese Rückkopplungsschleife verbessert die Benutzerfreundlichkeit und vermeidet Verwirrung, insbesondere bei sprachgesteuerten Interaktionen, bei denen der Nutzer die Eingabe nicht sehen kann.
+Diese Rückmeldeschleife verbessert die Benutzerfreundlichkeit und vermeidet Verwirrung, insbesondere bei sprachgesteuerten Interaktionen, bei denen der Nutzer die Eingabe nicht sehen kann.
 
 ## Anwendungsbeispiele
 Im Folgenden finden Sie einige praktische Beispiele, die veranschaulichen, was der Assistent leisten kann.

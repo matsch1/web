@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: e1c12a2aed1b94eee70f999164b36514d08a1e49e13aeab06467ba3dd93b7021
+base_hash: 302bc9037a04e4a63749d3024fb2a2251f70e9a894b77827b045307c232c2eda
 cover:
   alt: ''
   caption: ''
@@ -43,7 +43,7 @@ Here, I was able to take a hot shower, do my laundry, and recharge my batteries.
 
 **60 euros per day**
 
-### Place to sleep 
+### Place to Sleep 
 Place to sleep at the campground 
 {{< open-street-map map_title="Schlafplatz" geo_link="geo:56.68311,8.21520?z=13" >}}
 
