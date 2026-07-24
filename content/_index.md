@@ -1,5 +1,5 @@
 ---
-title: "MatSch Web"
+title: Between terminals and trails
 description: "Collection of stuff"
 image: "http://blog.matschcode.de/en/Favicon.png"
 draft: false
@@ -7,7 +7,7 @@ draft: false
 
 {{< figure src="http://blog.matschcode.de/en/Favicon.png" width="300" alt="matsch web logo" >}}
 
-## Welcome to My Blog
+# Projects, rides and lessons learned without the polish
 
 Thanks for taking the time to visit my corner of the web.
 
