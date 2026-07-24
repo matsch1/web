@@ -92,6 +92,21 @@ class PublishContractTests(unittest.TestCase):
         self.assertNotIn("nanogallery2", gallery)
         self.assertNotIn("jquery@3.7.1", gallery)
 
+    def test_gallery_lightbox_uses_native_dialog_navigation_with_link_fallback(self):
+        base = (ROOT / "layouts" / "_default" / "baseof.html").read_text()
+        gallery = (ROOT / "layouts" / "shortcodes" / "gallery.html").read_text()
+        lightbox = (ROOT / "assets" / "js" / "gallery-lightbox.js").read_text()
+
+        self.assertIn('resources.Get "js/gallery-lightbox.js"', base)
+        self.assertIn("defer", base)
+        self.assertIn('href="{{ .Get "src" }}"', gallery)
+        self.assertIn("window.HTMLDialogElement", lightbox)
+        self.assertIn("dialog.showModal()", lightbox)
+        self.assertIn("gallery-lightbox__previous", lightbox)
+        self.assertIn("gallery-lightbox__next", lightbox)
+        self.assertIn('event.key === "ArrowLeft"', lightbox)
+        self.assertIn('event.key === "ArrowRight"', lightbox)
+
     def test_default_social_cards_exist_with_declared_png_dimensions(self):
         for filename in ("social-de.png", "social-en.png"):
             card = ROOT / "static" / filename

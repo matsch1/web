@@ -38,3 +38,104 @@
     outline: 2px solid var(--primary);
     outline-offset: 3px;
 }
+
+.gallery-lightbox {
+    box-sizing: border-box;
+    width: min(96vw, 1200px);
+    max-width: none;
+    max-height: 96vh;
+    padding: 0;
+    border: 0;
+    border-radius: var(--radius);
+    background: var(--theme);
+    color: var(--primary);
+}
+
+.gallery-lightbox::backdrop {
+    background: rgb(0 0 0 / 0.82);
+}
+
+.gallery-lightbox__content {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-rows: minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+}
+
+.gallery-lightbox__image {
+    grid-column: 2;
+    grid-row: 1;
+    max-width: 100%;
+    max-height: calc(96vh - 8rem);
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.gallery-lightbox__close,
+.gallery-lightbox__previous,
+.gallery-lightbox__next {
+    border: 0;
+    border-radius: var(--radius);
+    background: var(--code-bg);
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.gallery-lightbox__close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1.75rem;
+    line-height: 1;
+}
+
+.gallery-lightbox__previous,
+.gallery-lightbox__next {
+    width: 2.75rem;
+    height: 3.5rem;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.gallery-lightbox__previous { grid-column: 1; grid-row: 1; }
+.gallery-lightbox__next { grid-column: 3; grid-row: 1; }
+
+.gallery-lightbox__caption,
+.gallery-lightbox__position {
+    grid-column: 1 / -1;
+    margin: 0;
+    text-align: center;
+}
+
+.gallery-lightbox__position {
+    color: var(--secondary);
+    font-size: 0.9rem;
+}
+
+.gallery-lightbox button:hover:not(:disabled),
+.gallery-lightbox button:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+.gallery-lightbox button:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+@media (max-width: 600px) {
+    .gallery-lightbox__content {
+        gap: 0.35rem;
+        padding: 0.5rem;
+    }
+
+    .gallery-lightbox__previous,
+    .gallery-lightbox__next {
+        width: 2.25rem;
+        height: 3rem;
+    }
+}
