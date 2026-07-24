@@ -216,8 +216,16 @@ class PublishContractTests(unittest.TestCase):
         verifier = self.verifier_module()
         with tempfile.TemporaryDirectory() as directory:
             page = Path(directory) / "index.html"
-            page.write_text('<div class=image-gallery><a class=image-gallery__item href=x><img src=x></a></div>')
+            page.write_text('<div class=image-gallery><a class=image-gallery__item href=x><img src=x alt="A loaded touring bike beside a canal"></a></div>')
             verifier.validate_gallery(page)
+
+    def test_artifact_validator_rejects_gallery_image_without_alt_text(self):
+        verifier = self.verifier_module()
+        with tempfile.TemporaryDirectory() as directory:
+            page = Path(directory) / "index.html"
+            page.write_text('<div class=image-gallery><a class=image-gallery__item href=x><img src=x></a></div>')
+            with self.assertRaises(SystemExit):
+                verifier.validate_gallery(page)
 
     def test_artifact_validator_rejects_invalid_pinned_tab_svg(self):
         verifier = self.verifier_module()
@@ -231,8 +239,25 @@ class PublishContractTests(unittest.TestCase):
         galleries = (ROOT / "layouts" / "shortcodes" / "galleries.html").read_text()
         gallery = (ROOT / "layouts" / "shortcodes" / "gallery.html").read_text()
         self.assertIn('class="image-gallery"', galleries)
+        self.assertIn('<figure', gallery)
+        self.assertIn('<figcaption>', gallery)
+        self.assertIn('Get "alt"', gallery)
         self.assertIn('<img', gallery)
         self.assertNotIn("data-ngthumb", gallery)
+
+    def test_n8n_gallery_uses_localized_descriptive_alt_text(self):
+        de = (ROOT / "content" / "projects" / "07_n8n_personal_assistant" / "index.de.md").read_text()
+        en = (ROOT / "content" / "projects" / "07_n8n_personal_assistant" / "index.en.md").read_text()
+        self.assertIn(
+            'alt="n8n-Switch im Rules-Modus mit Regeln für voice.file_id, photo[3].file_id und message.text; die Ausgänge heißen Audio, Image und Text"',
+            de,
+        )
+        self.assertIn(
+            'alt="n8n Switch node in Rules mode with checks for voice.file_id, photo[3].file_id, and message.text; its outputs are named Audio, Image, and Text"',
+            en,
+        )
+        self.assertNotIn('title="telegram_switch_settings"', de)
+        self.assertNotIn('title="telegram_switch_settings"', en)
 
 
 if __name__ == "__main__":

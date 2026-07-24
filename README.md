@@ -92,12 +92,12 @@ I use images located in the same directory as the markdown file the shortcode is
 used.
 The the gallery can be generated like this:
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Fahrrad voll beladen" >}}
-{{< gallery src="img2.jpg" title="Am Strassbourger Kanal" >}}
-{{< gallery src="img3.jpg" title="Vogesen" >}}
-{{< gallery src="img4.jpg" title="Bester Schlafplatz mit Aussicht" >}}
+{{< gallery src="img1.jpg" title="Fahrrad voll beladen" alt="Voll beladenes Reiserad am Straßburger Kanal" >}}
+{{< gallery src="img2.jpg" title="Am Straßburger Kanal" alt="Radfahrer am Straßburger Kanal zwischen Bäumen und Wasser" >}}
+{{< gallery src="img3.jpg" title="Vogesen" alt="Reiserad vor bewaldeten Hügeln in den Vogesen" >}}
+{{< gallery src="img4.jpg" title="Bester Schlafplatz mit Aussicht" alt="Zeltplatz mit Blick über die Landschaft" >}}
 {{< /galleries >}}
-Add image name and title manually.
+Add the image name, a short visible caption (`title`), and a descriptive `alt` text that explains the image context rather than repeating the filename.
 
 ---
 

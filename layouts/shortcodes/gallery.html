@@ -1,4 +1,7 @@
-<a class="image-gallery__item" href="{{ .Get "src" }}">
-  <img loading="lazy" src="{{ .Get "src" }}" alt="{{ .Get "title" }}">
-  <span>{{ .Get "title" }}</span>
-</a>
+{{- $alt := .Get "alt" | default (.Get "title") -}}
+<figure class="image-gallery__item">
+  <a class="image-gallery__link" href="{{ .Get "src" }}">
+    <img loading="lazy" src="{{ .Get "src" }}" alt="{{ $alt }}">
+  </a>
+  <figcaption>{{ .Get "title" }}</figcaption>
+</figure>

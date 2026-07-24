@@ -39,19 +39,29 @@ class GalleryParser(HTMLParser):
             gallery = {"depth": len(self.tags), "items": []}
             self.galleries.append(gallery)
             self.active_galleries.append(gallery)
-        if tag == "a" and "image-gallery__item" in classes and self.active_galleries:
-            item = {"depth": len(self.tags), "has_image": False}
+        if tag in {"a", "figure"} and "image-gallery__item" in classes and self.active_galleries:
+            item = {
+                "tag": tag,
+                "depth": len(self.tags),
+                "has_image": False,
+                "has_descriptive_alt": False,
+            }
             self.active_galleries[-1]["items"].append(item)
             self.active_items.append(item)
         if tag == "img" and self.active_items:
             self.active_items[-1]["has_image"] = True
+            self.active_items[-1]["has_descriptive_alt"] = bool((attributes.get("alt") or "").strip())
         if tag not in VOID_ELEMENTS:
             self.tags.append(tag)
 
     def handle_endtag(self, tag):
         if tag in VOID_ELEMENTS:
             return
-        if tag == "a" and self.active_items and self.active_items[-1]["depth"] == len(self.tags) - 1:
+        if (
+            self.active_items
+            and tag == self.active_items[-1]["tag"]
+            and self.active_items[-1]["depth"] == len(self.tags) - 1
+        ):
             self.active_items.pop()
         if self.tags:
             self.tags.pop()
@@ -179,8 +189,10 @@ def validate_gallery(path):
     if not parser.galleries:
         fail(f"missing gallery container in {path}")
     for gallery in parser.galleries:
-        if not gallery["items"] or any(not item["has_image"] for item in gallery["items"]):
-            fail(f"gallery contains no static images in {path}")
+        if not gallery["items"] or any(
+            not item["has_image"] or not item["has_descriptive_alt"] for item in gallery["items"]
+        ):
+            fail(f"gallery contains an image without descriptive alt text in {path}")
     html = path.read_text()
     if "nanogallery2" in html or "jquery@3.7.1" in html:
         fail(f"gallery still depends on third-party JavaScript in {path}")
