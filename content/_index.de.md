@@ -2,11 +2,11 @@
 base_hash: f2276a662bd2078da6f8f78e68ef291599b6daecb8722bbcf9168e2f7b5a242d
 description: Sammlung verschiedener Dinge
 draft: false
-image: https://blog.matschcode.de/en/Favicon.png
+image: home-logo-600.webp
 title: Zwischen Terminal und Trampelpfad
 ---
 
-{{< figure src="https://blog.matschcode.de/en/Favicon.png" width="300" alt="matsch web logo" >}}
+{{< home-logo alt="MatSch Web-Logo" >}}
 
 # Eigene Projekte, Touren und Erkenntnisse ohne Hochglanzfilter
 

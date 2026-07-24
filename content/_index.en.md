@@ -1,11 +1,11 @@
 ---
 description: Collection of stuff
 draft: false
-image: https://blog.matschcode.de/en/Favicon.png
+image: home-logo-600.webp
 title: Between terminals and trails
 ---
 
-{{< figure src="https://blog.matschcode.de/en/Favicon.png" width="300" alt="matsch web logo" >}}
+{{< home-logo alt="MatSch Web logo" >}}
 
 # Projects, rides and lessons learned without the polish
 
