@@ -28,11 +28,11 @@ Seltsamerweise sind alle Shelterplätze in diesem Teil von Dänemark kostenpflic
 Naja, vom Regen geschützt lasse ich nun den Abend in meiner Schutzhütte ausklingen. Leider versprechen die nächsten Tage auch kein besseres Wetter. Aber ich muss für morgen sowieso eine Unterkunft zum Aufladen meiner elektronischen Geräte und zum Wäsche waschen, suchen. Mal schauen wie die nächsten Tage so verlaufen. 
 ### Bilder
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="kurz vor Kopenhagen" >}}
-{{< gallery src="img2.jpg" title="Kopenhagen" >}}
-{{< gallery src="img3.jpg" title="Kopenhagen " >}}
-{{< gallery src="img4.jpg" title="Flat White" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Steg am Wasser" alt="Langer Holzsteg führt über ruhiges Wasser unter einem wolkigen blauen Himmel." >}}
+{{< gallery src="img2.jpg" title="Fahrräder in Kopenhagen" alt="Viele abgestellte Fahrräder vor der Skyline einer Stadt mit hohen Gebäuden." >}}
+{{< gallery src="img3.jpg" title="Kreuzung in Kopenhagen" alt="Radfahrer und Fußgänger warten an einer Kreuzung vor roten Backsteingebäuden mit Türmen." >}}
+{{< gallery src="img4.jpg" title="Kaffee und Gebäck" alt="Milchkaffee mit Schaumherz und Gebäck auf einem Tisch." >}}
+{{< gallery src="img5.jpg" title="Schutzhütten im Wald" alt="Hölzerne Picknickbank und zwei offene Schutzhütten in einem Birkenwald." >}}
 {{< /galleries >}}
 
 ### Kosten

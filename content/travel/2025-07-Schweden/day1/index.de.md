@@ -24,11 +24,11 @@ Somit habe ich den Fahrrad-Tag schon relativ zeitig beendet und bin bei top Wett
 
 ### Bilder
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Immer wieder Trails direkt am Meer" >}}
-{{< gallery src="img2.jpg" title="Sonderborg" >}}
-{{< gallery src="img3.jpg" title="Viel Faehre fuer wenig Fahrrad" >}}
-{{< gallery src="img4.jpg" title="Feierabendbier am Strand" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Küstenweg am Meer" alt="Geschwungener Kiesweg durch Bäume neben einem schmalen Strand am blauen Meer." >}}
+{{< gallery src="img2.jpg" title="Blick auf Sønderborg" alt="Blick über das Wasser auf die Gebäude, Boote und Kirchturmspitze von Sønderborg." >}}
+{{< gallery src="img3.jpg" title="Fahrzeugdeck der Fähre" alt="Beleuchtetes Fahrzeugdeck einer Fähre mit Fahrspuren, Rohren und mehreren Personen." >}}
+{{< gallery src="img4.jpg" title="Bier am Strand" alt="Geöffnete Bierdose in einer Hand vor steinigem Strand und ruhigem Meer." >}}
+{{< gallery src="img5.jpg" title="Zeltplatz im Garten" alt="Kleines Zelt und beladenes Fahrrad neben einem Picknicktisch auf einer sonnigen Wiese." >}}
 {{< /galleries >}}
 
 ### Kosten

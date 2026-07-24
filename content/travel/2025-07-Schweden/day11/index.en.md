@@ -29,11 +29,11 @@ After this fantastic stretch, I spent the afternoon in and around Blokhus, enjoy
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Auf dem Strand radeln" >}}
-{{< gallery src="img2.jpg" title="Komoot Routenplaner" >}}
-{{< gallery src="img3.jpg" title="Drive-In Museum" >}}
-{{< gallery src="img4.jpg" title="Aero durch den Wind" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Cycling on the beach" alt="View over bicycle handlebars on a wide sandy beach, with the sea on the right and distant people on the left." >}}
+{{< gallery src="img2.jpg" title="Grassy path through a meadow" alt="Narrow grassy path between trees, a meadow, and a simple post-and-wire fence." >}}
+{{< gallery src="img3.jpg" title="Sletteningen Naturbase" alt="White brick building with an open entrance and signs for Sletteningen Naturbase and a diving exhibition." >}}
+{{< gallery src="img4.jpg" title="Riding along the country road" alt="Cyclist wearing a helmet and sunglasses rides along a paved road through grassy terrain." >}}
+{{< gallery src="img5.jpg" title="Rest area in the greenery" alt="Grassy area with a wooden table, small wooden buildings, and trees under a blue sky." >}}
 {{< /galleries >}}
 
 ### Costs

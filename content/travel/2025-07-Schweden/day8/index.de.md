@@ -30,11 +30,11 @@ Ich habe mich entschieden übermorgen schon wieder die Fähre zurück nach Däne
 
 ### Bilder
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Halmstadt" >}}
-{{< gallery src="img2.jpg" title="Küstenradweg vor Halmstad" >}}
-{{< gallery src="img3.jpg" title="Hafen Halmstad" >}}
-{{< gallery src="img4.jpg" title="Mittagessen" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Ankunft in Halmstad" alt="Blaue Halmstad-Flaggen über einem baumbestandenen Platz mit Wegweisern, Steinstufen und einem beladenen Reiserad." >}}
+{{< gallery src="img2.jpg" title="Straße durch den Wald" alt="Schmale asphaltierte Straße, die durch einen dichten Wald aus Nadel- und Laubbäumen führt." >}}
+{{< gallery src="img3.jpg" title="Hafenansicht in Halmstad" alt="Rotes Gebäude mit grün gedecktem Turm und ein zweimastiges Segelboot am gegenüberliegenden Ufer von ruhigem Wasser." >}}
+{{< gallery src="img4.jpg" title="Burger mit Pommes" alt="Burger mit Sesambrötchen, Salat, Zwiebeln und Tomate, serviert mit Pommes und Dip auf einem Teller." >}}
+{{< gallery src="img5.jpg" title="Zelt am See" alt="Dunkles Kuppelzelt im hohen Gras am baumbestandenen See; kleine Boote liegen nahe dem Ufer, dahinter bewaldete Hügel." >}}
 {{< /galleries >}}
 
 ### Kosten

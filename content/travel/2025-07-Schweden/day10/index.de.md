@@ -25,11 +25,11 @@ Wieder in Dänemark angekommen, habe ich mich alleine auf den Weg zu einem naheg
 
 ### Bilder
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Göteborg" >}}
-{{< gallery src="img2.jpg" title="Schwedische Küste" >}}
-{{< gallery src="img3.jpg" title="Genussradeln" >}}
-{{< gallery src="img4.jpg" title="Zimtschnecke Nr. 712" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Fahrräder am Kanal in Göteborg" alt="Zwei beladene Fahrräder an einem blumengeschmückten Brückengeländer über einem Kanal; dahinter historische Gebäude und ein Uhrturm." >}}
+{{< gallery src="img2.jpg" title="Küstenbucht mit Booten" alt="Küsteneinschnitt mit ruhigem Wasser, Stegen, kleinen Booten und weißen Ufergebäuden; im Vordergrund hohes Gras und eine Straße." >}}
+{{< gallery src="img3.jpg" title="Unterwegs an der Küste" alt="Lächelnder Mann mit Fahrradhelm und Sonnenbrille an einem Weg neben ruhigem Wasser und niedrigem Land am Horizont." >}}
+{{< gallery src="img4.jpg" title="Zuckergebäck" alt="Hand hält ein rundes, goldbraunes Gebäck mit groben Zuckerkristallen vor unscharfem Hintergrund." >}}
+{{< gallery src="img5.jpg" title="Shelter am Waldrand" alt="Sonnige Wiese am Waldrand mit roten Holzhütten, einem Fahrrad und einer moosbewachsenen offenen Schutzhütte." >}}
 {{< /galleries >}}
 
 ### Kosten

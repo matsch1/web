@@ -28,11 +28,11 @@ Für morgen steht die letzte Etappe in Dänemark an. Es gilt nochmal ca. 100 km 
 
 ### Bilder
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Børn to Bike" >}}
-{{< gallery src="img2.jpg" title="Frühstück mit Aussicht" >}}
-{{< gallery src="img3.jpg" title="Innenstadt von Esbjerg" >}}
-{{< gallery src="img4.jpg" title="Bärccino" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Fahrradwarnung mit „Børn“" alt="Rote dreieckige Fahrradwarnung mit dem Zusatzschild „Børn“ an einer Landstraße zwischen trockenem Gras und Bäumen." >}}
+{{< gallery src="img2.jpg" title="Fahrrad mit Weitblick" alt="Fahrrad lehnt an einer Holzbank in einem schattigen Bereich; dahinter liegen grüne Felder und ein ferner Horizont." >}}
+{{< gallery src="img3.jpg" title="Straße in Esbjerg" alt="Gepflasterte, von Bäumen gesäumte Fußgängerstraße mit niedrigen Gebäuden, Geschäften, Außensitzplätzen und einem Radfahrer." >}}
+{{< gallery src="img4.jpg" title="Kaffee und Kuchen" alt="Schaumiger Kaffee in einer rot-orangen Tasse steht neben einem Stück weiß bedecktem Kuchen mit Nüssen auf einem dunklen Tisch." >}}
+{{< gallery src="img5.jpg" title="Zelt unter Gewitterwolken" alt="Kleines graues Zelt auf einer offenen Grasfläche unter dichten dunklen Wolken." >}}
 {{< /galleries >}}
 
 ### Kosten

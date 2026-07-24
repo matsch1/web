@@ -30,11 +30,11 @@ Kurz vor Køge haben sich dann unsere Wege wieder getrennt. Die beiden sind im e
 
 ### Bilder
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Auf der Brücke Storstrømsbroen" >}}
-{{< gallery src="img2.jpg" title="Vordingborg" >}}
-{{< gallery src="img3.jpg" title="Fish n Chips " >}}
-{{< gallery src="img4.jpg" title="Tubeless Salami rettet" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Radfahrer auf der Brücke" alt="Zwei Radfahrer mit Helmen und Sonnenbrillen auf einer Brücke über dem Wasser." >}}
+{{< gallery src="img2.jpg" title="Hafen bei Vordingborg" alt="Schilfbewachsenes Ufer, Straße und Segelbootmasten vor einem Hafen unter blauem Himmel." >}}
+{{< gallery src="img3.jpg" title="Fisch mit Pommes" alt="Teller mit paniertem Fisch, Pommes, Zitronenscheiben und Sauce auf einem Restauranttisch." >}}
+{{< gallery src="img4.jpg" title="Reifenpanne" alt="Nahaufnahme eines grobstolligen Fahrradreifens mit einem braunen Fremdkörper im Profil." >}}
+{{< gallery src="img5.jpg" title="Rastplatz im Wald" alt="Beladenes Fahrrad an einer Holzbrücke in einer bewaldeten Raststelle mit Picknicktischen." >}}
 {{< /galleries >}}
 
 ### Kosten

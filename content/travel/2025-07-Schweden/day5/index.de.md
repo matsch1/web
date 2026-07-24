@@ -34,11 +34,11 @@ Ich hoffe auf eine trockene Nacht (mit sauberen Rad Klamotten und voller Powerba
 
 ### Bilder
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Kattegattleden" >}}
-{{< gallery src="img2.jpg" title="Auf der Fähre nach Helsingborg" >}}
-{{< gallery src="img3.jpg" title="Helsingborg" >}}
-{{< gallery src="img4.jpg" title="An der Küste entlang" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Kattegattleden am Meer" alt="Wellen am steinigen Ufer neben einem Wegweiser für den Kattegattleden unter grauem Himmel." >}}
+{{< gallery src="img2.jpg" title="Auf der Fähre" alt="Person in Regenjacke auf dem Fahrzeugdeck einer Fähre vor Autos und Bussen." >}}
+{{< gallery src="img3.jpg" title="Helsingborg im Regen" alt="Hafenstadt mit Booten, historischen Gebäuden und einem hohen Backsteinturm am Wasser bei Regen." >}}
+{{< gallery src="img4.jpg" title="Weg an der Küste" alt="Kiesweg entlang eines steinigen Ufers mit hohem Gras und ruhigem Wasser unter grauem Himmel." >}}
+{{< gallery src="img5.jpg" title="Campingplatz im Regen" alt="Zelt auf einer nassen Campingwiese vor Wohnwagen, Wohnmobilen und einem Sanitärgebäude." >}}
 {{< /galleries >}}
 
 ### Kosten

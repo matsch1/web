@@ -34,11 +34,11 @@ I’m hoping for a dry night (with clean cycling clothes and a fully charged pow
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Kattegattleden" >}}
-{{< gallery src="img2.jpg" title="Auf der Fähre nach Helsingborg" >}}
-{{< gallery src="img3.jpg" title="Helsingborg" >}}
-{{< gallery src="img4.jpg" title="An der Küste entlang" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Kattegattleden by the sea" alt="Waves at a rocky shore beside a Kattegattleden route sign under a grey sky." >}}
+{{< gallery src="img2.jpg" title="On the ferry" alt="Person in a rain jacket on a ferry vehicle deck in front of cars and buses." >}}
+{{< gallery src="img3.jpg" title="Helsingborg in the rain" alt="Harbour city with boats, historic buildings, and a tall brick tower by the water in rain." >}}
+{{< gallery src="img4.jpg" title="Path along the coast" alt="Gravel path along a rocky shore with tall grass and calm water beneath a grey sky." >}}
+{{< gallery src="img5.jpg" title="Campsite in the rain" alt="Tent on a wet campsite lawn in front of caravans, motorhomes, and a utility building." >}}
 {{< /galleries >}}
 
 ### Costs

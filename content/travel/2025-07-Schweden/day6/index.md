@@ -29,11 +29,11 @@ Mit dem heutigen Tag habe ich übrigens das erste Viertel meiner Reisestrecke gu
 
 ### Bilder
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Doch noch Sonne" >}}
-{{< gallery src="img2.jpg" title="Nur süßes zum Frühstück" >}}
-{{< gallery src="img3.jpg" title="Am Strand entlang" >}}
-{{< gallery src="img4.jpg" title="Strandspaziergang" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Reiserad an der Felsküste" alt="Beladenes schwarzes Reiserad mit gelbem Lenkerband an einer felsigen Küste; dahinter blaues Wasser, kleine Inseln und Wolken." >}}
+{{< gallery src="img2.jpg" title="Süßes aus der Bäckerei" alt="Auslage einer Bäckerei mit Muffins, glasierten Donuts, Gebäck und Brötchen; davor schwedische Preis- und Aktionsschilder." >}}
+{{< gallery src="img3.jpg" title="Uferweg am Meer" alt="Weg mit schwarzem Geländer an einer steinigen, von Algen bedeckten Uferlinie; im Hintergrund ruhiges Wasser und ein Steg." >}}
+{{< gallery src="img4.jpg" title="Am Strand" alt="Lächelnder Mann mit Sonnenbrille und pink-violetter Jacke bei einem Selfie am Sandstrand; dahinter Wellen und Wolken." >}}
+{{< gallery src="img5.jpg" title="Zimmer mit Reiseausrüstung" alt="Helles Zimmer mit Bett, einem karierten Tisch voller Taschen und Outdoor-Ausrüstung, Klappstuhl und Fenster mit Blick auf Bäume." >}}
 {{< /galleries >}}
 
 ### Kosten

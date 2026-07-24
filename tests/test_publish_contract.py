@@ -259,6 +259,19 @@ class PublishContractTests(unittest.TestCase):
         self.assertNotIn('title="telegram_switch_settings"', de)
         self.assertNotIn('title="telegram_switch_settings"', en)
 
+    def test_swedish_day_one_gallery_has_localized_explicit_alt_text(self):
+        directory = ROOT / "content" / "travel" / "2025-07-Schweden" / "day1"
+        expected = {
+            "index.de.md": 'alt="Geschwungener Kiesweg durch Bäume neben einem schmalen Strand am blauen Meer."',
+            "index.en.md": 'alt="Curving gravel path through trees beside a narrow beach and blue sea."',
+            "index.md": 'alt="Geschwungener Kiesweg durch Bäume neben einem schmalen Strand am blauen Meer."',
+        }
+        for filename, first_alt in expected.items():
+            gallery_lines = [line for line in (directory / filename).read_text().splitlines() if "{{< gallery" in line]
+            self.assertEqual(len(gallery_lines), 5)
+            self.assertTrue(all(' alt="' in line for line in gallery_lines))
+            self.assertIn(first_alt, gallery_lines[0])
+
 
 if __name__ == "__main__":
     unittest.main()
