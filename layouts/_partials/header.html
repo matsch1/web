@@ -1,5 +1,12 @@
-<header class="header">
-    <nav class="nav">
+<header class="header site-masthead">
+    {{- with site.Params.masthead.image }}
+        {{- with resources.Get . }}
+        {{- $masthead := .Resize "2400x webp q78" }}
+        <img class="site-masthead__image" src="{{ $masthead.RelPermalink }}" alt="" aria-hidden="true">
+        {{- end }}
+    {{- end }}
+    <div class="site-masthead__overlay" aria-hidden="true"></div>
+    <nav class="header-nav site-masthead__nav">
         <div class="logo">
             {{- $label_text := (site.Params.label.text | default site.Title) }}
             {{- if site.Title }}
@@ -33,13 +40,13 @@
             {{- end }}
             <div class="logo-switches">
                 {{- if (not site.Params.disableThemeToggle) }}
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -59,12 +66,12 @@
                     {{- $lang := .Lang}}
                     {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
                     {{- with .Translations }}
-                    <ul class="lang-switch">
-                        {{- if $separator }}<li>|</li>{{ end }}
+                    {{- if $separator }}<span class="nav-sep">|</span>{{ end }}
+                    <ul class="lang-menu">
                         {{- range . -}}
                         {{- if ne $lang .Lang }}
                         <li>
-                            <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.Label | emojify) | default (.Lang | title) }}"
+                            <a href="{{- .Permalink -}}" title="{{ .Language.Label | default (.Lang | title) }}"
                                 aria-label="{{ .Language.Label | default (.Lang | title) }}">
                                 {{- if (and site.Params.displayFullLangName (.Language.Label)) }}
                                 {{- .Language.Label | emojify -}}
@@ -80,8 +87,11 @@
                 {{- end }}
             </div>
         </div>
+        {{- with site.Home.Title }}
+        <p class="site-masthead__tagline">{{ . }}</p>
+        {{- end }}
         {{- $currentPage := . }}
-        <ul id="menu">
+        <ul id="menu" class="menu">
             {{- range site.Menus.main }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
             {{- $page_url:= $currentPage.Permalink | absLangURL }}
