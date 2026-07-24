@@ -17,8 +17,8 @@ tags:
 source_lang: en
 ---
 
-{{< alert type="info" title="" >}}
-The MCP server is working great and in daily use in my n8n workflow.
+{{< alert type="warning" title="" >}}
+Unfortunately, the MCP server is no longer required, as the entire n8n agent has been replaced by the hermes agent. 
 {{< /alert >}}
 
 ## Introduction

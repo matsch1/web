@@ -19,8 +19,8 @@ source_lang: en
 ---
 
 {{< alert type="warning" title="" >}}
-The app is still available in Google Play Store. 
-At the moment, I'm only doing maintenance work and not working on new features.
+Unfortunately, the app is no longer available. 
+Maintenance was too time-consuming, and I don’t want to put any more effort into this project.
 {{< /alert >}}
 
 I am proud to say that I was able to build my first flutter app in 4 days more or less ready for production.

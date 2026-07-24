@@ -19,7 +19,8 @@ translation_lock: true
 ---
 
 {{< alert type="info" title="" >}}
-The assistant does a good job and is still in daily usage.
+The n8n AI agent is now obsolete and is no longer in use.
+I have replaced it with the hermes agent, as it offers a much smoother user experience.
 {{< /alert >}}
 
 ## Introduction

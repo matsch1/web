@@ -18,8 +18,9 @@ tags:
 source_lang: en
 ---
 
-{{< alert type="error" title="Deprecated" >}}
-The app has been removed from the Play Store again because I am no longer able to maintain the project.
+{{< alert type="warning" title="" >}}
+Unfortunately, the app is no longer available. 
+Maintenance was too time-consuming, and I don’t want to put any more effort into this project.
 {{< /alert >}}
 
 Learning Linux shell commands can be daunting, but what if it could be fun? That’s the idea behind **Shellmaster**, a quiz game app that helps users master shell and bash commands through engaging quizzes. 
