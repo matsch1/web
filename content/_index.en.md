@@ -12,15 +12,15 @@ Take whatever you find useful or interesting, and feel free to look around.
 
 ## What you can expect here
 
-**Projects**
+### Projects
 
 All kinds of software and hardware projects—from homelab setups and automation to hardware that I simply find exciting and wanted to try out.
 
-**Code notes**
+### Code notes
 
 Practical insights from my projects that are worth recording. Not finished truths, but experiences, solutions, and things that will work better next time.
 
-**Travel reports**
+### Travel reports
 
 Travelling takes me away from everyday life. Here I record places, routes, and small observations that make a trip special for me.
 

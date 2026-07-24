@@ -13,15 +13,15 @@ Nimm dir mit, was für dich nützlich oder interessant ist, und schau dich gern 
 
 ## Was dich hier erwartet
 
-**Projekte**
+### Projekte
 
 Alle möglichen Software und Hardwareprojeke - von Homelab-Setups über Automatisierung bis zu Hardware, die ich einfach gerade spannend finde und ausprobieren wollte.
 
-**Code-Notizen**
+### Code-Notizen
 
 Praktische Erkenntnisse aus meinen Projekten die es Wert sind festzuhalten. Keine fertigen Wahrheiten, sondern Erfahrungen, Lösungen und Dinge, die beim nächsten Mal besser funktionieren.
 
-**Reiseberichte**
+### Reiseberichte
 
 Unterwegs zieht es mich raus aus dem Alltag. Hier halte ich Orte, Routen und kleine Beobachtungen fest, die eine Reise für mich besonders machen.
 
