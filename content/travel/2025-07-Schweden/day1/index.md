@@ -13,6 +13,7 @@ cover:
 tags:
   - bikepacking
 source_lang: de
+translation_lock: true
 ---
 
 ## Eindrücke
