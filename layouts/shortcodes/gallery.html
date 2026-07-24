@@ -1,1 +1,4 @@
-<a href="{{ .Get "src" }}" data-ngthumb="{{ .Get "src" }}" data-ngdesc="{{ .Get "title" }}">{{ .Get "title" }}</a>
+<a class="image-gallery__item" href="{{ .Get "src" }}">
+  <img loading="lazy" src="{{ .Get "src" }}" alt="{{ .Get "title" }}">
+  <span>{{ .Get "title" }}</span>
+</a>
