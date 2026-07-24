@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: c0e6423011c30bb123b3ed56fde09fec03bfe68b8d7df0a9c1567461eb084822
+base_hash: b444eb8fa9470dfaada8da1380b388f2bc49ece5e76dea48a8f2fd051cf03254
 cover:
   alt: ''
   caption: ''
@@ -28,11 +28,11 @@ Tomorrow marks the final leg of my journey in Denmark. I’ll be covering about 
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Bicycle warning with “Børn”" alt="Red triangular bicycle warning sign with a supplementary “Børn” plaque beside a rural road between dry grass and trees." >}}
-{{< gallery src="img2.jpg" title="Bicycle with a view" alt="Bicycle leans against a wooden bench in a shaded area, with green fields and a distant horizon behind it." >}}
-{{< gallery src="img3.jpg" title="Street in Esbjerg" alt="Paved tree-lined pedestrian street with low-rise buildings, shops, outdoor seating, and a cyclist." >}}
-{{< gallery src="img4.jpg" title="Coffee and cake" alt="Foamy coffee in a red-orange cup sits beside a slice of white-topped cake with nuts on a dark table." >}}
-{{< gallery src="img5.jpg" title="Tent beneath storm clouds" alt="Small gray tent on an open grassy area beneath dense dark clouds." >}}
+{{< gallery src="img1.jpg" title="Fahrradwarnung mit „Børn“" alt="Rote dreieckige Fahrradwarnung mit dem Zusatzschild „Børn“ an einer Landstraße zwischen trockenem Gras und Bäumen." >}}
+{{< gallery src="img2.jpg" title="Fahrrad mit Weitblick" alt="Fahrrad lehnt an einer Holzbank in einem schattigen Bereich; dahinter liegen grüne Felder und ein ferner Horizont." >}}
+{{< gallery src="img3.jpg" title="Straße in Esbjerg" alt="Gepflasterte, von Bäumen gesäumte Fußgängerstraße mit niedrigen Gebäuden, Geschäften, Außensitzplätzen und einem Radfahrer." >}}
+{{< gallery src="img4.jpg" title="Kaffee und Kuchen" alt="Schaumiger Kaffee in einer rot-orangen Tasse steht neben einem Stück weiß bedecktem Kuchen mit Nüssen auf einem dunklen Tisch." >}}
+{{< gallery src="img5.jpg" title="Zelt unter Gewitterwolken" alt="Kleines graues Zelt auf einer offenen Grasfläche unter dichten dunklen Wolken." >}}
 {{< /galleries >}}
 
 ### Costs

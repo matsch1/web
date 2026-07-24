@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 6438e98e302ceef962798cc4d99f81e5037e56d93f177147314c6b1fa565b679
+base_hash: c7593f75da04a31978fb0a1a041456829035d10c7da469ba3e73dfbd8b88563a
 cover:
   alt: ''
   caption: ''
@@ -26,15 +26,15 @@ As soon as you move away from the coast, the landscape immediately feels much mo
 
 That turned out to be a good decision, though, since I ran into other bike travelers again at the shelter site. Dinner among like-minded people is just more fun that way. 
 
-I’ve decided to take the ferry back to Denmark the day after tomorrow. For me, the shelter concept just works better than crossing the Swedish wilderness on my own. More on that in the next few days. 
+I’ve decided to take the ferry back to Denmark the day after tomorrow. For me, the shelter concept just works better than crossing the Swedish wilderness alone. More on that in the next few days. 
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Arrival in Halmstad" alt="Blue Halmstad flags above a tree-lined plaza with directional signs, stone steps, and a loaded touring bicycle." >}}
-{{< gallery src="img2.jpg" title="Road through the forest" alt="Narrow paved road running through a dense forest of evergreen and deciduous trees." >}}
-{{< gallery src="img3.jpg" title="Halmstad waterfront" alt="Red building with a green-roofed tower and a two-masted sailboat on the far shore of calm water." >}}
-{{< gallery src="img4.jpg" title="Burger and fries" alt="Burger with a sesame bun, greens, onion, and tomato, served with fries and dipping sauce on a plate." >}}
-{{< gallery src="img5.jpg" title="Tent by the lake" alt="Dark dome tent in tall grass beside a tree-lined lake, with small boats near the shore and wooded hills beyond." >}}
+{{< gallery src="img1.jpg" title="Ankunft in Halmstad" alt="Blaue Halmstad-Flaggen über einem baumbestandenen Platz mit Wegweisern, Steinstufen und einem beladenen Reiserad." >}}
+{{< gallery src="img2.jpg" title="Straße durch den Wald" alt="Schmale asphaltierte Straße, die durch einen dichten Wald aus Nadel- und Laubbäumen führt." >}}
+{{< gallery src="img3.jpg" title="Hafenansicht in Halmstad" alt="Rotes Gebäude mit grün gedecktem Turm und ein zweimastiges Segelboot am gegenüberliegenden Ufer von ruhigem Wasser." >}}
+{{< gallery src="img4.jpg" title="Burger mit Pommes" alt="Burger mit Sesambrötchen, Salat, Zwiebeln und Tomate, serviert mit Pommes und Dip auf einem Teller." >}}
+{{< gallery src="img5.jpg" title="Zelt am See" alt="Dunkles Kuppelzelt im hohen Gras am baumbestandenen See; kleine Boote liegen nahe dem Ufer, dahinter bewaldete Hügel." >}}
 {{< /galleries >}}
 
 ### Costs

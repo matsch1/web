@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: a1b6ba1e62d0eb97bcc79a5ffcaf4a3d835c374c950826caeae9d340363be61f
+base_hash: cb5f9987eeb42d5061febebb281d24dcad20fa0172cd748e8e81c566d42e9855
 cover:
   alt: ''
   caption: ''
@@ -29,11 +29,11 @@ After this fantastic stretch, I spent the afternoon in and around Blokhus, enjoy
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Cycling on the beach" alt="View over bicycle handlebars on a wide sandy beach, with the sea on the right and distant people on the left." >}}
-{{< gallery src="img2.jpg" title="Grassy path through a meadow" alt="Narrow grassy path between trees, a meadow, and a simple post-and-wire fence." >}}
-{{< gallery src="img3.jpg" title="Sletteningen Naturbase" alt="White brick building with an open entrance and signs for Sletteningen Naturbase and a diving exhibition." >}}
-{{< gallery src="img4.jpg" title="Riding along the country road" alt="Cyclist wearing a helmet and sunglasses rides along a paved road through grassy terrain." >}}
-{{< gallery src="img5.jpg" title="Rest area in the greenery" alt="Grassy area with a wooden table, small wooden buildings, and trees under a blue sky." >}}
+{{< gallery src="img1.jpg" title="Mit dem Rad am Strand" alt="Blick über Fahrradlenker auf einen breiten Sandstrand; rechts liegt das Meer, links sind weit entfernte Menschen zu sehen." >}}
+{{< gallery src="img2.jpg" title="Grasweg durch die Wiese" alt="Schmaler grasbewachsener Weg zwischen Bäumen, Wiese und einem einfachen Pfosten-Draht-Zaun." >}}
+{{< gallery src="img3.jpg" title="Sletteningen Naturbase" alt="Weißes Backsteingebäude mit offenem Eingang sowie Schildern für die Sletteningen Naturbase und eine Tauchausstellung." >}}
+{{< gallery src="img4.jpg" title="Unterwegs auf der Landstraße" alt="Radfahrer mit Helm und Sonnenbrille fährt auf einer asphaltierten Straße durch grasbewachsenes Gelände." >}}
+{{< gallery src="img5.jpg" title="Rastplatz im Grünen" alt="Grasfläche mit Holztisch, kleinen Holzgebäuden und Bäumen unter blauem Himmel." >}}
 {{< /galleries >}}
 
 ### Costs

@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 485961dd151b507b2b122ba57d21dd7a8b4a2ccc8867e602f81d888407f5c066
+base_hash: fbbf50f77d81edf9b6de9e56049e57d638e39617cb95cdb61b8ab9559e6173f4
 cover:
   alt: ''
   caption: ''
@@ -26,15 +26,15 @@ Today’s route took us over many hills through the countryside. Since the route
 
 In the afternoon, a hissing sound from my rear tire brought me back to reality. There was a large hole visible in the tire. However, with Tubeless Salami, I was able to patch it up very quickly, and we were able to continue the ride. 
 
-Shortly before Køge, our paths parted ways again. The two of them found a place to stay, and I looked for a spot to set up my shelter.
+Shortly before Køge, our paths parted ways again. The two of them found a place to stay, and I looked for a spot at a shelter.
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Cyclists on the bridge" alt="Two cyclists wearing helmets and sunglasses on a bridge above the water." >}}
-{{< gallery src="img2.jpg" title="Harbour near Vordingborg" alt="Reed-lined shore, road, and sailboat masts in front of a harbour under a blue sky." >}}
-{{< gallery src="img3.jpg" title="Fish and chips" alt="Plate of breaded fish, fries, lemon slices, and sauce on a restaurant table." >}}
-{{< gallery src="img4.jpg" title="Tyre puncture" alt="Close-up of a knobbly bicycle tyre with a brown foreign object in its tread." >}}
-{{< gallery src="img5.jpg" title="Rest area in the woods" alt="Loaded bicycle by a wooden bridge in a wooded rest area with picnic tables." >}}
+{{< gallery src="img1.jpg" title="Radfahrer auf der Brücke" alt="Zwei Radfahrer mit Helmen und Sonnenbrillen auf einer Brücke über dem Wasser." >}}
+{{< gallery src="img2.jpg" title="Hafen bei Vordingborg" alt="Schilfbewachsenes Ufer, Straße und Segelbootmasten vor einem Hafen unter blauem Himmel." >}}
+{{< gallery src="img3.jpg" title="Fisch mit Pommes" alt="Teller mit paniertem Fisch, Pommes, Zitronenscheiben und Sauce auf einem Restauranttisch." >}}
+{{< gallery src="img4.jpg" title="Reifenpanne" alt="Nahaufnahme eines grobstolligen Fahrradreifens mit einem braunen Fremdkörper im Profil." >}}
+{{< gallery src="img5.jpg" title="Rastplatz im Wald" alt="Beladenes Fahrrad an einer Holzbrücke in einer bewaldeten Raststelle mit Picknicktischen." >}}
 {{< /galleries >}}
 
 ### Costs

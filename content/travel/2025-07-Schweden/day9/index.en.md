@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 7c6af32e1c635c36947782394d70b04383f574f4f806c1d376346fe65c0636c8
+base_hash: 19a45f3f4ce42adc34aa2d6cd77fc53ec37e8395dfc0ba4ed83374f6dc293526
 cover:
   alt: ''
   caption: ''
@@ -19,19 +19,19 @@ title: "\U0001F1F8\U0001F1EA Day 9 – Heading to Gothenburg as a pair"
 The day started with sunshine as I enjoyed a cup of coffee on a dock by the lake near where I’d spent the night. 
 The night was relaxed and restful.
 
-At the shelter site, I met Alex, who’s also heading north. So we decided to cycle together today. It was a welcome change in many ways. Not only were there just the two of us, but we also had sunshine and sometimes even a bit of a tailwind. 
+At the shelter site, I met Alex, who is also heading north. So we decided to cycle together today. It was a welcome change in many ways. Not only were there just the two of us, but we also had sunshine and sometimes even a bit of a tailwind. 
 
-We checked out Varberg and just enjoyed our time on the bike. So the day went by relatively quickly. 
+We checked out Varberg and just enjoyed our time on the bikes. So the day went by relatively quickly. 
 
-Tonight I’m staying in a small Airbnb near Gothenburg. That way, I should be able to get into the city relatively quickly tomorrow to catch my 12:15 p.m. ferry. That means starting at 3:45 p.m., I’ll be back on Danish soil in Frederikshavn. 
+Tonight I’m spending the night in a small Airbnb near Gothenburg. That way, I should be able to get into the city relatively quickly tomorrow to catch my 12:15 p.m. ferry. That means starting at 3:45 p.m., I’ll be back on Danish soil in Frederikshavn. 
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Touring bike on the coast" alt="Loaded black touring bicycle beside a weathered bench on a grassy overlook above a rocky coastline." >}}
-{{< gallery src="img2.jpg" title="Waterfront path near Varberg" alt="Cyclist on a railed waterfront path beside blue water, with a low stone structure, buildings, and clouds in the distance." >}}
-{{< gallery src="img3.jpg" title="Market in Varberg" alt="Busy market on a cobblestone square with white vendor tents, flowering potted plants, and a historic brick building." >}}
-{{< gallery src="img4.jpg" title="Rocky coast" alt="Rocky coast with calm water, small houses, a dock, distant boats, and low islands under an overcast sky." >}}
-{{< gallery src="img5.jpg" title="Small garden cabin" alt="White wooden cabin on a deck, with an open door showing a bed, a window with raised shutter, an outdoor sink, and a hanging bell." >}}
+{{< gallery src="img1.jpg" title="Reiserad an der Küste" alt="Beladenes schwarzes Reiserad neben einer verwitterten Bank auf einer grasigen Anhöhe über einer felsigen Küste." >}}
+{{< gallery src="img2.jpg" title="Uferweg bei Varberg" alt="Radfahrer auf einem Uferweg mit Geländer neben blauem Wasser; im Hintergrund eine flache Steinanlage, Gebäude und Wolken." >}}
+{{< gallery src="img3.jpg" title="Markt in Varberg" alt="Belebter Markt auf einem Kopfsteinpflasterplatz mit weißen Verkaufszelten, blühenden Topfpflanzen und historischem Backsteingebäude." >}}
+{{< gallery src="img4.jpg" title="Felsige Küste" alt="Felsige Küste mit ruhigem Wasser, kleinen Häusern, einem Steg, entfernten Booten und flachen Inseln unter bedecktem Himmel." >}}
+{{< gallery src="img5.jpg" title="Kleine Gartenhütte" alt="Weiße Holzhütte auf einer Terrasse mit offener Tür zum Bett, Fenster mit hochgeklapptem Laden, Außenspüle und hängender Glocke." >}}
 {{< /galleries >}}
 
 ### Costs

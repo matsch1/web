@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 8a027ee7874cfc76397f4228763568c0d1a1a60a49e45d526a998429b854b88f
+base_hash: afeca2293945216e606a92b1fee4ab12433230a0f88bb59450a34f642a60bf74
 cover:
   alt: ''
   caption: ''
@@ -16,7 +16,7 @@ title: "\U0001F1E9\U0001F1F0 Day 1 – Off to the island of Fyn/Odense"
 ---
 
 ## Impressions
-I got an early start today. When it’s already light out shortly after 4 a.m., it doesn’t really feel that way. With just a cup of coffee for breakfast, I just hopped on my bike and took off. On the way, I ate the leftovers from yesterday, and before I knew it, I was at the ferry. The first 70 km flew by in no time. 
+I got an early start today. When it’s already light just after 4 a.m., it doesn’t really feel that way. With just a cup of coffee for breakfast, I just hopped on my bike and went. On the way, I ate the leftovers from yesterday, and before I knew it, I was at the ferry. The first 70 km flew by in no time. 
 
 Just lots of new, beautiful sights.
 
@@ -24,11 +24,11 @@ So I wrapped up my day of cycling relatively early and went for a swim in the Ba
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Coastal path by the sea" alt="Curving gravel path through trees beside a narrow beach and blue sea." >}}
-{{< gallery src="img2.jpg" title="View of Sønderborg" alt="View across the water toward Sønderborg's buildings, boats, and church spire." >}}
-{{< gallery src="img3.jpg" title="Ferry vehicle deck" alt="Lit ferry vehicle deck with marked lanes, pipes, and several people." >}}
-{{< gallery src="img4.jpg" title="Beer by the beach" alt="Open beer can held in a hand in front of a rocky beach and calm sea." >}}
-{{< gallery src="img5.jpg" title="Tent in the garden" alt="Small tent and loaded bicycle beside a picnic table on a sunny lawn." >}}
+{{< gallery src="img1.jpg" title="Küstenweg am Meer" alt="Geschwungener Kiesweg durch Bäume neben einem schmalen Strand am blauen Meer." >}}
+{{< gallery src="img2.jpg" title="Blick auf Sønderborg" alt="Blick über das Wasser auf die Gebäude, Boote und Kirchturmspitze von Sønderborg." >}}
+{{< gallery src="img3.jpg" title="Fahrzeugdeck der Fähre" alt="Beleuchtetes Fahrzeugdeck einer Fähre mit Fahrspuren, Rohren und mehreren Personen." >}}
+{{< gallery src="img4.jpg" title="Bier am Strand" alt="Geöffnete Bierdose in einer Hand vor steinigem Strand und ruhigem Meer." >}}
+{{< gallery src="img5.jpg" title="Zeltplatz im Garten" alt="Kleines Zelt und beladenes Fahrrad neben einem Picknicktisch auf einer sonnigen Wiese." >}}
 {{< /galleries >}}
 
 ### Costs
@@ -39,7 +39,7 @@ So I wrapped up my day of cycling relatively early and went for a swim in the Ba
 
 **49 euros in daily expenses**
 
-### Place to sleep 
+### Place to Sleep 
 At a shelter spot in the garden of a nice older couple.
 Water, restroom, and 300 m to the beach
 

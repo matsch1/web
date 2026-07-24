@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 4c886654c280e78dc58927b63814c33ce0b0776799c4537bb5d2e6babc2ab7f5
+base_hash: be42d23e906da803939775ed35666f37a1c87280e2dcc22c5f827e8decaed235
 cover:
   alt: n8n-ai-assistant
   caption: Personal AI assistant build with n8n
@@ -18,7 +18,7 @@ title: Mein persönlicher n8n-KI-Assistent
 ---
 
 {{< alert type="info" title="" >}}
-Der Assistent leistet gute Arbeit und ist nach wie vor im täglichen Einsatz.
+Der Assistent leistet gute Arbeit und wird nach wie vor täglich genutzt.
 {{< /alert >}}
 
 ## Einleitung
@@ -31,10 +31,10 @@ Bevor wir den Assistenten erstellen, müssen wir n8n einrichten. n8n ist eine No
 
 {{< figure src="https://www.webmaster-vitaliy.de/wp-content/uploads/2025/05/n8n.png" width="300" alt="n8n" link="https://n8n.io/" target="_blank">}}
 
-n8n muss auf einem Server selbst gehostet werden. Ich empfehle, den Ansatz aus meinem [Coolify VPS setup](https://blog.matschcode.de/en/projects/coolify-vps-setup/) zu befolgen. Wenn bei dir bereits eine Coolify-Instanz läuft, kannst du mit wenigen Klicks einfach eine neue n8n-Ressource hinzufügen.
+n8n muss auf einem eigenen Server gehostet werden. Ich empfehle, den Ansatz aus meinem [Coolify VPS setup](https://blog.matschcode.de/en/projects/coolify-vps-setup/) zu befolgen. Wenn bei dir bereits eine Coolify-Instanz läuft, kannst du mit wenigen Klicks einfach eine neue n8n-Ressource hinzufügen.
 
 ## Workflow erstellen
-Der Workflow meines persönlichen Assistenten ist nicht vollständig selbst erstellt. Ich habe eine der vielen vorhandenen Vorlagen aus der n8n-Bibliothek als Grundlage verwendet:  
+Der Workflow für meinen persönlichen Assistenten ist nicht vollständig selbst erstellt. Ich habe eine der vielen vorhandenen Vorlagen aus der n8n-Bibliothek als Grundlage verwendet:  
 [Voice & Text Assistant with Telegram, Gemini AI, Calendar, Gmail & Notion](https://n8n.io/workflows/8648-voice-and-text-assistant-with-telegram-gemini-ai-calendar-gmail-and-notion/).
 
 In den folgenden Kapiteln werde ich die wichtigsten Komponenten dieses Workflows beschreiben und die von mir vorgenommenen Änderungen hervorheben.
@@ -56,8 +56,8 @@ Dadurch kann mein Assistent nicht nur Text, sondern auch Sprachnotizen und Bilde
 
 Die folgenden Screenshots zeigen, wie die Nachrichtentypen verarbeitet werden:
 {{< galleries >}}
-{{< gallery src="./settings_telegram_switch.png" title="Nachrichtentypen im n8n-Switch" alt="n8n-Switch im Rules-Modus mit Regeln für voice.file_id, photo[3].file_id und message.text; die Ausgänge heißen Audio, Image und Text" >}}
-{{< gallery src="telegram_message_voice_image.png" title="n8n-Workflow für Text, Sprache und Bilder" alt="n8n-Workflow: Telegram Trigger, Account Check und Switch verzweigen Nachrichten in Audio-, Bild- und Textverarbeitung mit Transkription, Bildanalyse und Prompts" >}}
+{{< gallery src="./settings_telegram_switch.png" title="Message types in the n8n switch" alt="n8n Switch node in Rules mode with checks for voice.file_id, photo[3].file_id, and message.text; its outputs are named Audio, Image, and Text" >}}
+{{< gallery src="telegram_message_voice_image.png" title="n8n workflow for text, voice, and images" alt="n8n workflow where Telegram Trigger, Account Check, and Switch route messages to audio, image, and text handling with transcription, image analysis, and prompts" >}}
 {{< /galleries >}}
 
 Um den Inhalt der Nachricht zu extrahieren, verwende ich `Get File`-Knoten mit den folgenden Datei-IDs:
@@ -68,7 +68,7 @@ Um den Inhalt der Nachricht zu extrahieren, verwende ich `Get File`-Knoten mit d
 | Sprache | {{ $json.message.voice.file_id }} |
 | Text | — |
 
-Nach dem Extrahieren des Inhalts übergebe ich ihn an Prompts, die dem folgenden ähneln:
+Nach dem Extrahieren des Inhalts übergebe ich ihn an Prompts, die dem unten stehenden ähneln:
 
 ```
 The user provided the following text as an audio prompt
@@ -81,8 +81,8 @@ Mit dieser Konfiguration kann der KI-Agent den bereitgestellten Inhalt zuverläs
 
 ### KI-Agent
 Das Herzstück des Assistenten ist der KI-Agent, der die eingehende Nachricht interpretiert und entscheidet, wie zu handeln ist.  
-Der ursprüngliche Workflow verwendet Google Gemini als Modell-Backend, aber Sie können dieses durch jedes von n8n unterstützte LLM ersetzen (OpenAI, Anthropic, lokale Modelle über Ollama usw.).
-Ich empfehle ein OpenAI-Chat-Modell wie `gpt-5-mini`. Damit habe ich die besten Ergebnisse erzielt, und es kostet nur etwa 1 $ pro Monat (je nach Nutzung).
+Der ursprüngliche Workflow nutzt Google Gemini als Modell-Backend, aber Sie können dieses durch jedes von n8n unterstützte LLM ersetzen (OpenAI, Anthropic, lokale Modelle über Ollama usw.).
+Ich empfehle ein OpenAI-Chat-Modell wie `gpt-5-mini`. Damit habe ich die besten Ergebnisse erzielt, und es kostet nur etwa 1 $ pro Monat (abhängig von Ihrer Nutzung).
 
 Mein Assistent folgt einer einfachen Abfolge:
 
@@ -90,7 +90,7 @@ Mein Assistent folgt einer einfachen Abfolge:
 2. Absicht des Nutzers interpretieren
 3. Entscheiden, welches Tool aufgerufen werden soll (Aufgabe erstellen, Termin hinzufügen, Notiz schreiben usw.)
 4. Das Tool über n8n-Knoten ausführen
-5. Eine für Menschen verständliche Zusammenfassung an Telegram zurücksenden
+5. Eine für Menschen verständliche Zusammenfassung zurück an Telegram senden
 
 Dadurch ist das System vorhersehbar, modular und leicht zu erweitern.
 
@@ -133,7 +133,7 @@ Dies erfolgt im Feld `System Message` des KI-Agenten.
 Je mehr Aufwand Sie in die Eingabeanweisungen stecken, desto besser verhält sich der Agent gemäß Ihren Erwartungen.
 
 ### Feedback
-Nachdem der Agent eine Aktion abgeschlossen hat, generiert der Workflow eine kurze Bestätigungsnachricht und sendet diese zurück an Telegram.  
+Nachdem der Agent eine Aktion abgeschlossen hat, generiert der Workflow eine kurze Bestätigungsmeldung und sendet diese zurück an Telegram.  
 Dadurch wird sichergestellt, dass der Nutzer stets weiß, was der Assistent getan hat.
 
 Beispiele:
@@ -141,7 +141,7 @@ Beispiele:
 - „Dein Termin wurde für Dienstag um 14:00 Uhr hinzugefügt.“
 - „Ich habe eine neue Aufgabe für morgen angelegt.“
 
-Diese Rückmeldeschleife verbessert die Benutzerfreundlichkeit und vermeidet Verwirrung, insbesondere bei sprachgesteuerten Interaktionen, bei denen der Nutzer die Eingabe nicht sehen kann.
+Diese Rückkopplungsschleife verbessert die Benutzerfreundlichkeit und vermeidet Verwirrung, insbesondere bei sprachgesteuerten Interaktionen, bei denen der Nutzer die Eingabe nicht sehen kann.
 
 ## Anwendungsbeispiele
 Im Folgenden finden Sie einige praktische Beispiele, die veranschaulichen, was der Assistent leisten kann.
@@ -170,5 +170,5 @@ Ich kann meinen Assistenten beispielsweise fragen:
 - „Ich möchte eine fettarme Version von Chicken Masala kochen. Bitte gib mir ein Rezept für vier Personen.“
 - „Dieses Rezept sieht perfekt aus. Passe es für sechs Personen an und speichere es in meinem Obsidian-Vault.“
 
-In der Systemanweisung habe ich genau definiert, wie meine Rezepte formatiert sein sollen und dass der Agent vorhandene Rezepte als Vorlagen verwenden darf.  
-Das Ergebnis ist ein übersichtlich strukturiertes Rezept, das direkt in meinen Notizen gespeichert wird – komplett mit Zutatenliste – ideal für die Essensplanung und den Einkauf.
+In der Systemaufforderung habe ich genau definiert, wie meine Rezepte formatiert sein sollen und dass der Agent vorhandene Rezepte als Vorlagen verwenden darf.  
+Das Ergebnis ist ein übersichtlich strukturiertes Rezept, das direkt in meinen Notizen gespeichert wird – komplett mit Zutatenliste – ideal für die Mahlzeitenplanung und den Einkauf.

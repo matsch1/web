@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: da218c303b95f52eeb89032858e248d081d96dd71335419f9b7b5aaa91f74b82
+base_hash: b767abfcd5f76c2cf3a5ea461066aff2f5f56af2fdd9d5dced5d6c7ee9ade0de
 cover:
   alt: ''
   caption: ''
@@ -22,18 +22,18 @@ On the sun deck, I enjoyed the best view while eating the leftovers from yesterd
 
 Once off the ferry, my good mood was dampened by a 30-km stretch with a nasty headwind. After I’d conquered that, I rewarded myself with a huge pizza and a swim in the Baltic Sea. 
 
-A major storm is forecast for tonight, with 15 l/m². For this reason, I set out early again to find a sheltered place to sleep. Once again, I found one right away. 
+A major storm is forecast for tonight, with 15 l/m². For this reason, I set out early again to find a sheltered place to sleep. Today, too, I found one right away. 
 When the storm hits, a significant drop in temperature is expected.
 
 I’m now going to wind down the evening comfortably, enjoying the lingering warmth of the day. 
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Flower meadow by the water" alt="Flower-filled meadow with red poppies, trees, and a view of the water." >}}
-{{< gallery src="img2.jpg" title="View across the bay" alt="View across a green waterfront park toward water, a sailboat, houses, and wooded shores." >}}
-{{< gallery src="img3.jpg" title="Building by the cycle route" alt="A bright path leads to a historic building with an arched gateway and tower." >}}
-{{< gallery src="img4.jpg" title="Coastal cycle path" alt="Light gravel path between coastal vegetation and calm water beneath a cloudy sky." >}}
-{{< gallery src="img5.jpg" title="Shelter at the campsite" alt="Open wooden shelter with red picnic benches beside a small green building." >}}
+{{< gallery src="img1.jpg" title="Blumenwiese am Wasser" alt="Blumenreiche Wiese mit rotem Mohn vor Bäumen und einem Blick auf das Wasser." >}}
+{{< gallery src="img2.jpg" title="Blick über die Bucht" alt="Blick über einen grünen Uferpark auf Wasser, Segelboot, Häuser und bewaldete Ufer." >}}
+{{< gallery src="img3.jpg" title="Gebäude am Radweg" alt="Heller Weg führt zu einem historischen Gebäude mit Torbogen und Turm." >}}
+{{< gallery src="img4.jpg" title="Küstenradweg" alt="Heller Schotterweg zwischen Küstenvegetation und ruhigem Wasser unter wolkigem Himmel." >}}
+{{< gallery src="img5.jpg" title="Unterstand am Schlafplatz" alt="Offener Holzunterstand mit roten Picknickbänken neben einem kleinen grünen Gebäude." >}}
 {{< /galleries >}}
 
 ### Costs

@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 905d319a224468859fb4bea6e2b9e07ae946bf9f9680b6cecc901d5546f3c076
+base_hash: 91b1d2947e833c77e65e82e73b1962d6b338539043814b0addcf27af16299b55
 cover:
   alt: ''
   caption: ''
@@ -28,11 +28,11 @@ Strangely enough, all shelter spots in this part of Denmark either cost money or
 Well, sheltered from the rain, I’m now winding down the evening in my shelter. Unfortunately, the forecast for the next few days doesn’t look any better. But I have to find a place to stay for tomorrow anyway so I can charge my electronic devices and do my laundry. We’ll see how the next few days go. 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Pier by the water" alt="Long wooden pier stretching over calm water beneath a cloudy blue sky." >}}
-{{< gallery src="img2.jpg" title="Bicycles in Copenhagen" alt="Many parked bicycles in front of a city skyline with tall buildings." >}}
-{{< gallery src="img3.jpg" title="Intersection in Copenhagen" alt="Cyclists and pedestrians wait at an intersection in front of red-brick buildings with towers." >}}
-{{< gallery src="img4.jpg" title="Coffee and pastry" alt="Milk coffee with foam art and a pastry on a table." >}}
-{{< gallery src="img5.jpg" title="Forest shelters" alt="Wooden picnic table and two open shelters in a birch forest." >}}
+{{< gallery src="img1.jpg" title="Steg am Wasser" alt="Langer Holzsteg führt über ruhiges Wasser unter einem wolkigen blauen Himmel." >}}
+{{< gallery src="img2.jpg" title="Fahrräder in Kopenhagen" alt="Viele abgestellte Fahrräder vor der Skyline einer Stadt mit hohen Gebäuden." >}}
+{{< gallery src="img3.jpg" title="Kreuzung in Kopenhagen" alt="Radfahrer und Fußgänger warten an einer Kreuzung vor roten Backsteingebäuden mit Türmen." >}}
+{{< gallery src="img4.jpg" title="Kaffee und Gebäck" alt="Milchkaffee mit Schaumherz und Gebäck auf einem Tisch." >}}
+{{< gallery src="img5.jpg" title="Schutzhütten im Wald" alt="Hölzerne Picknickbank und zwei offene Schutzhütten in einem Birkenwald." >}}
 {{< /galleries >}}
 
 ### Costs

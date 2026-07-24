@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: cfaedd72c1d19038bbd8967ba39d7f0b5c4b589892578f8248fe0e2637c6d9df
+base_hash: b3041b77beff91714c31074565d189d2466823aaa9e44d45de481e87c5f42040
 cover:
   alt: ''
   caption: ''
@@ -32,11 +32,11 @@ Now that I’ve arrived at my campsite, the sun is shining again as if nothing h
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Sandy path through the dunes" alt="Bicycle handlebars and a small display in the foreground of a sandy path through low coastal vegetation." >}}
-{{< gallery src="img2.jpg" title="Lighthouse and horses" alt="Tall red lighthouse and red buildings behind a fenced pasture with white and gray horses." >}}
-{{< gallery src="img3.jpg" title="Break on the beach" alt="Bare legs stretch across a sandy beach toward the sea, with black sandals on the sand to the right." >}}
-{{< gallery src="img4.jpg" title="Roadside selfie" alt="Smiling cyclist wearing a helmet, dark sunglasses, and a tan jacket beside a paved road." >}}
-{{< gallery src="img5.jpg" title="Tent in the meadow" alt="Small dark tent on a mown grassy clearing at the edge of trees in low sunlight." >}}
+{{< gallery src="img1.jpg" title="Sandweg durch die Dünen" alt="Fahrradlenker und kleines Display im Vordergrund eines sandigen Wegs durch niedrige Küstenvegetation." >}}
+{{< gallery src="img2.jpg" title="Leuchtturm und Pferde" alt="Hoher roter Leuchtturm und rote Gebäude hinter einer eingezäunten Weide mit weißen und grauen Pferden." >}}
+{{< gallery src="img3.jpg" title="Pause am Strand" alt="Bloße Beine liegen auf einem Sandstrand in Richtung Meer; rechts liegen schwarze Sandalen im Sand." >}}
+{{< gallery src="img4.jpg" title="Selfie an der Straße" alt="Lächelnder Radfahrer mit Helm, dunkler Sonnenbrille und hellbrauner Jacke neben einer asphaltierten Straße." >}}
+{{< gallery src="img5.jpg" title="Zelt auf der Wiese" alt="Kleines dunkles Zelt auf einer gemähten Wiese am Rand von Bäumen bei tiefem Sonnenstand." >}}
 {{< /galleries >}}
 
 ### Costs

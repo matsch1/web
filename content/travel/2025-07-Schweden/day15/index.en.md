@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 92d4f5233b897df473690b24ac0591ba5bdf1b3206b16f834bb95092b91fed56
+base_hash: 2f9323f35aae6384e1e6f833e602133e502f1c2e99f9ac3278561779a0bcc023
 cover:
   alt: ''
   caption: ''
@@ -30,10 +30,10 @@ From Flensburg, I’ll take the train to Cologne, where, after two days of rest,
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Loaded bicycle by the bench" alt="Loaded black bicycle with bags and a light-colored bundle stands beside a long wooden bench in tall grass." >}}
-{{< gallery src="img2.jpg" title="Road through the flatlands" alt="Straight narrow asphalt road through a flat landscape with ditches, reeds, fields, and pasture fences under an overcast sky." >}}
-{{< gallery src="img3.jpg" title="Street in Ribe" alt="Cobblestone street between closely spaced houses, with a church spire, other towers, and outdoor tables in the background." >}}
-{{< gallery src="img4.jpg" title="Cyclist cartoon" alt="Four-panel cartoon with a helmeted cyclist, a glass of beer, a hamburger, and the words “HALT!” and “HUFF HUFF.”" >}}
+{{< gallery src="img1.jpg" title="Beladenes Fahrrad an der Bank" alt="Beladenes schwarzes Fahrrad mit Taschen und hellem Bündel steht neben einer langen Holzbank in hohem Gras." >}}
+{{< gallery src="img2.jpg" title="Straße durch die Ebene" alt="Gerade schmale Asphaltstraße durch eine flache Landschaft mit Gräben, Schilf, Feldern und Weidezäunen unter bedecktem Himmel." >}}
+{{< gallery src="img3.jpg" title="Gasse in Ribe" alt="Kopfsteinpflasterstraße zwischen dicht stehenden Häusern; im Hintergrund sind ein Kirchturm, weitere Türme und Außentische zu sehen." >}}
+{{< gallery src="img4.jpg" title="Comic mit Radfahrer" alt="Vierteiliger Comic mit einem behelmten Radfahrer, einem Bierglas, einem Hamburger sowie den Texten „HALT!“ und „HUFF HUFF“." >}}
 {{< /galleries >}}
 
 ### Costs

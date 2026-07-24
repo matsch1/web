@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 6fffc7cc807c8a02c8d43713f35efd0f88472bc53d6b3eb3304ac891fc8ab0f3
+base_hash: b0e8f5c11ba7e1789e006d17e03f11e921523ba05c971882a337b8949212f2cc
 cover:
   alt: ''
   caption: ''
@@ -25,8 +25,8 @@ With a little luck, I’ll continue tomorrow in perfect weather.
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Cola at the beach" alt="A hand holds a Coca-Cola bottle in front of foamy waves on a sandy beach under a gray sky." >}}
-{{< gallery src="img2.jpg" title="Coffee in the rain" alt="View through rain-speckled glass doors onto a wet deck with patio furniture and trees; a hand holds a black mug in the foreground." >}}
+{{< gallery src="img1.jpg" title="Cola am Strand" alt="Hand hält eine Coca-Cola-Flasche vor schäumenden Wellen an einem Sandstrand unter grauem Himmel." >}}
+{{< gallery src="img2.jpg" title="Kaffee bei Regen" alt="Blick durch regentropfenbesetzte Glastüren auf eine nasse Terrasse mit Gartenmöbeln und Bäumen; im Vordergrund eine Hand mit schwarzem Becher." >}}
 {{< /galleries >}}
 
 ### Expenses

@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 302bc9037a04e4a63749d3024fb2a2251f70e9a894b77827b045307c232c2eda
+base_hash: 3cfd58a1ab337d269826faec7177881623cf8b8d16e33ccedb82bee3ca27699e
 cover:
   alt: ''
   caption: ''
@@ -29,10 +29,10 @@ Here, I was able to take a hot shower, do my laundry, and recharge my batteries.
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Bicycle by the signs" alt="Dark bicycle with yellow accents leans beside directional signs by a road, with a meadow and dark cattle behind it." >}}
-{{< gallery src="img2.jpg" title="On the dune path" alt="Cyclist wearing a black helmet and sunglasses stands beside a sandy path through grassy dunes." >}}
-{{< gallery src="img3.webp" title="Sandy path to the sea" alt="Pale sandy path runs through dune grass toward the sea, with low dunes on the left and the coast on the right." >}}
-{{< gallery src="img4.jpg" title="At the beach" alt="Man wearing sunglasses and a rust-orange T-shirt stands on a sandy beach with the sea and low sun behind him." >}}
+{{< gallery src="img1.jpg" title="Fahrrad an den Wegweisern" alt="Dunkles Fahrrad mit gelben Akzenten lehnt neben Wegweisern an einer Straße; dahinter liegen Wiese und dunkle Rinder." >}}
+{{< gallery src="img2.jpg" title="Auf dem Dünenweg" alt="Radfahrer mit schwarzem Helm und Sonnenbrille steht neben einem sandigen Weg durch grasbewachsene Dünen." >}}
+{{< gallery src="img3.webp" title="Sandweg zum Meer" alt="Heller Sandweg führt durch Dünengras zum Meer; links liegen niedrige Dünen, rechts ist die Küste zu sehen." >}}
+{{< gallery src="img4.jpg" title="Am Strand" alt="Mann mit Sonnenbrille und rostorangefarbenem T-Shirt steht an einem Sandstrand vor Meer und tief stehender Sonne." >}}
 {{< /galleries >}}
 
 ### Costs
@@ -43,7 +43,7 @@ Here, I was able to take a hot shower, do my laundry, and recharge my batteries.
 
 **60 euros per day**
 
-### Place to Sleep 
+### Place to sleep 
 Place to sleep at the campground 
 {{< open-street-map map_title="Schlafplatz" geo_link="geo:56.68311,8.21520?z=13" >}}
 

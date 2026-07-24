@@ -1,14 +1,14 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 2b862c92a9aaee740b5418f431f6bd00de44baafe9cbc00f87e4f06d19fc8f2f
+base_hash: dc4a80ce9823dd4c15aa67d9ed303b86d522fffbddc819cabd0fe339b7e1f189
 cover:
   alt: ''
   caption: ''
   image: img1.jpg
   relative: true
 date: 2025-07-05
-description: A challenging arrival in Sweden with lots of rain showers
+description: A grueling arrival in Sweden with lots of rain showers
 draft: false
 tags:
 - bikepacking
@@ -34,11 +34,11 @@ I’m hoping for a dry night (with clean cycling clothes and a fully charged pow
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Kattegattleden by the sea" alt="Waves at a rocky shore beside a Kattegattleden route sign under a grey sky." >}}
-{{< gallery src="img2.jpg" title="On the ferry" alt="Person in a rain jacket on a ferry vehicle deck in front of cars and buses." >}}
-{{< gallery src="img3.jpg" title="Helsingborg in the rain" alt="Harbour city with boats, historic buildings, and a tall brick tower by the water in rain." >}}
-{{< gallery src="img4.jpg" title="Path along the coast" alt="Gravel path along a rocky shore with tall grass and calm water beneath a grey sky." >}}
-{{< gallery src="img5.jpg" title="Campsite in the rain" alt="Tent on a wet campsite lawn in front of caravans, motorhomes, and a utility building." >}}
+{{< gallery src="img1.jpg" title="Kattegattleden am Meer" alt="Wellen am steinigen Ufer neben einem Wegweiser für den Kattegattleden unter grauem Himmel." >}}
+{{< gallery src="img2.jpg" title="Auf der Fähre" alt="Person in Regenjacke auf dem Fahrzeugdeck einer Fähre vor Autos und Bussen." >}}
+{{< gallery src="img3.jpg" title="Helsingborg im Regen" alt="Hafenstadt mit Booten, historischen Gebäuden und einem hohen Backsteinturm am Wasser bei Regen." >}}
+{{< gallery src="img4.jpg" title="Weg an der Küste" alt="Kiesweg entlang eines steinigen Ufers mit hohem Gras und ruhigem Wasser unter grauem Himmel." >}}
+{{< gallery src="img5.jpg" title="Campingplatz im Regen" alt="Zelt auf einer nassen Campingwiese vor Wohnwagen, Wohnmobilen und einem Sanitärgebäude." >}}
 {{< /galleries >}}
 
 ### Costs
