@@ -14,6 +14,7 @@ cover:
 tags:
   - obsidian
   - mcp
+source_lang: en
 ---
 
 {{< alert type="info" title="" >}}

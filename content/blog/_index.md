@@ -3,6 +3,7 @@ title: "Blog"
 date: 2025-05-04
 description: ""
 draft: false
+source_lang: en
 ---
 
 Welcome to my blog!

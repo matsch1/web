@@ -24,6 +24,6 @@ jobs:
         with:
           hugo-version: '0.146.0'
           extended: true
-      - run: hugo --gc --minify
+      - run: hugo --gc --minify --environment production
       - run: python scripts/prepare_root_artifacts.py public
       - run: python scripts/verify_site.py public

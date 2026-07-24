@@ -14,6 +14,7 @@ cover:
 tags:
   - hugo
   - github-actions
+source_lang: en
 ---
 ## The problem and the idea
 I want to write a blog post in english or german, and I don't want translate it

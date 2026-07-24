@@ -63,6 +63,52 @@ def fail(message):
     raise SystemExit(message)
 
 
+class SeoParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.meta = {}
+        self.links = []
+        self.assets = []
+
+    def handle_starttag(self, tag, attrs):
+        attributes = dict(attrs)
+        if tag == "meta":
+            key = attributes.get("property") or attributes.get("name")
+            if key:
+                self.meta.setdefault(key, attributes.get("content", ""))
+        if tag == "link":
+            self.links.append(attributes)
+        if tag in {"img", "script", "source"}:
+            self.assets.append(attributes.get("src", ""))
+        if tag == "link":
+            self.assets.append(attributes.get("href", ""))
+
+
+def validate_html_page(path, public, sitemap_locations):
+    html = path.read_text()
+    if "http-equiv=refresh" in html:
+        return
+    parser = SeoParser()
+    parser.feed(html)
+    if path in {public / "index.html", public / "de" / "404.html", public / "en" / "404.html"}:
+        return
+    canonical = [link.get("href", "") for link in parser.links if link.get("rel") == "canonical"]
+    if len(canonical) != 1 or not canonical[0].startswith("https://blog.matschcode.de/"):
+        fail(f"missing or invalid canonical in {path}")
+    for key in ("description", "og:title", "og:description", "og:url", "twitter:card", "twitter:title", "twitter:description"):
+        if not parser.meta.get(key):
+            fail(f"missing {key} metadata in {path}")
+    alternates = {link.get("hreflang") for link in parser.links if link.get("rel") == "alternate" and link.get("hreflang")}
+    if path != public / "index.html" and not {"de", "en"}.issubset(alternates):
+        fail(f"missing hreflang pair in {path}")
+    robots = parser.meta.get("robots", "")
+    if "noindex" in robots and canonical[0] in sitemap_locations:
+        fail(f"noindex page is listed in a sitemap: {path}")
+    for asset in parser.assets:
+        if asset.startswith("/") and not (public / asset.lstrip("/")).is_file():
+            fail(f"missing local asset {asset} in {path}")
+
+
 def validate_social_card(path):
     data = path.read_bytes()
     if data[:8] != PNG_SIGNATURE:
@@ -166,9 +212,12 @@ def main(output):
     expected = {"https://blog.matschcode.de/de/sitemap.xml", "https://blog.matschcode.de/en/sitemap.xml"}
     if locations != expected:
         fail("root sitemap does not list both locale sitemaps")
+    sitemap_locations = set()
     for language in ("de", "en"):
-        if not (public / language / "sitemap.xml").is_file():
+        sitemap = public / language / "sitemap.xml"
+        if not sitemap.is_file():
             fail(f"missing {language} sitemap")
+        sitemap_locations.update(node.text for node in ElementTree.parse(sitemap).getroot().iter() if node.tag.endswith("loc"))
         validate_social_card(public / language / f"social-{language}.png")
         validate_svg(public / language / "safari-pinned-tab.svg")
         validate_default_social_metadata(
@@ -176,6 +225,7 @@ def main(output):
             f"https://blog.matschcode.de/{language}/social-{language}.png",
         )
     for page in public.rglob("*.html"):
+        validate_html_page(page, public, sitemap_locations)
         if "image-gallery" in page.read_text():
             validate_gallery(page)
 

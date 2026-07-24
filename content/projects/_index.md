@@ -3,6 +3,7 @@ title: "Projects"
 date: 2025-11-30
 description: ""
 draft: false
+source_lang: en
 ---
 
 Welcome to my projects page!

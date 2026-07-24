@@ -2,6 +2,7 @@
 title: "About me"
 description: ""
 draft: false
+source_lang: de
 ---
 
 {{< figure src="./me.jpg" width="400" alt="" class="right" >}}
