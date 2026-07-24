@@ -51,7 +51,7 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn("python scripts/verify_site.py public", workflow)
 
     def test_homepage_identity_is_visible_in_title_and_heading(self):
-        head = (ROOT / "layouts" / "partials" / "head.html").read_text()
+        head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
         de_home = (ROOT / "content" / "_index.de.md").read_text()
         self.assertIn('<title>{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}</title>', head)
         self.assertIn('title: Zwischen Terminal und Trampelpfad', de_home)
@@ -59,14 +59,14 @@ class PublishContractTests(unittest.TestCase):
         self.assertNotIn('ohne Schnickschnack', de_home)
 
     def test_social_metadata_uses_correct_mime_types_and_localized_cards(self):
-        head = (ROOT / "layouts" / "partials" / "head.html").read_text()
+        head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
         self.assertIn('{{ $img.MediaType.Type }}', head)
         self.assertNotIn('{{ $img.MediaType.Type }}/{{ $img.MediaType.SubType }}', head)
         self.assertIn('social-de.png', head)
         self.assertIn('social-en.png', head)
 
     def test_search_pages_are_not_indexable(self):
-        head = (ROOT / "layouts" / "partials" / "head.html").read_text()
+        head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
         self.assertIn('or (eq .Layout "search")', head)
 
     def test_search_pages_are_excluded_from_language_sitemaps(self):
@@ -85,16 +85,16 @@ class PublishContractTests(unittest.TestCase):
             self.assertIn(expected, (ROOT / relative_path).read_text())
 
     def test_third_party_gallery_assets_are_not_global(self):
-        base = (ROOT / "layouts" / "_default" / "baseof.html").read_text()
-        gallery = (ROOT / "layouts" / "shortcodes" / "galleries.html").read_text()
+        base = (ROOT / "layouts" / "baseof.html").read_text()
+        gallery = (ROOT / "layouts" / "_shortcodes" / "galleries.html").read_text()
         self.assertNotIn("nanogallery2", base)
         self.assertNotIn("jquery@3.7.1", base)
         self.assertNotIn("nanogallery2", gallery)
         self.assertNotIn("jquery@3.7.1", gallery)
 
     def test_gallery_lightbox_uses_native_dialog_navigation_with_link_fallback(self):
-        base = (ROOT / "layouts" / "_default" / "baseof.html").read_text()
-        gallery = (ROOT / "layouts" / "shortcodes" / "gallery.html").read_text()
+        base = (ROOT / "layouts" / "baseof.html").read_text()
+        gallery = (ROOT / "layouts" / "_shortcodes" / "gallery.html").read_text()
         lightbox = (ROOT / "assets" / "js" / "gallery-lightbox.js").read_text()
 
         self.assertIn('resources.Get "js/gallery-lightbox.js"', base)
@@ -116,7 +116,7 @@ class PublishContractTests(unittest.TestCase):
             self.assertEqual(struct.unpack(">II", header[16:24]), (1200, 630))
 
     def test_default_social_card_metadata_is_png(self):
-        head = (ROOT / "layouts" / "partials" / "head.html").read_text()
+        head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
         self.assertIn(
             '{{ else }}\n  <meta property="og:image" content="{{ $defaultOGImage }}">\n'
             '  <meta property="og:image:type" content="image/png">',
@@ -124,7 +124,7 @@ class PublishContractTests(unittest.TestCase):
         )
 
     def test_default_social_cards_use_the_active_language_base_url(self):
-        head = (ROOT / "layouts" / "partials" / "head.html").read_text()
+        head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
         self.assertIn('"social-de.png" "social-en.png"', head)
         self.assertIn("| absURL", head)
 
@@ -251,8 +251,8 @@ class PublishContractTests(unittest.TestCase):
                 verifier.validate_svg(icon)
 
     def test_gallery_shortcodes_render_images_without_javascript(self):
-        galleries = (ROOT / "layouts" / "shortcodes" / "galleries.html").read_text()
-        gallery = (ROOT / "layouts" / "shortcodes" / "gallery.html").read_text()
+        galleries = (ROOT / "layouts" / "_shortcodes" / "galleries.html").read_text()
+        gallery = (ROOT / "layouts" / "_shortcodes" / "gallery.html").read_text()
         self.assertIn('class="image-gallery"', galleries)
         self.assertIn('<figure', gallery)
         self.assertIn('<figcaption>', gallery)

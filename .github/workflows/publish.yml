@@ -40,7 +40,7 @@ jobs:
           git push origin HEAD:main
       - uses: peaceiris/actions-hugo@6b1ee2dcc06c9b6629a5317fa0146473914d05e1 # v3.0.0
         with:
-          hugo-version: '0.146.7'
+          hugo-version: '0.164.0'
           extended: true
       - name: Build
         run: hugo --gc --minify --environment production
