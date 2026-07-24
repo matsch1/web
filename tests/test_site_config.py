@@ -16,7 +16,7 @@ class SiteConfigurationTests(unittest.TestCase):
     def test_publish_runs_translation_then_build_then_deploy(self):
         workflow = (ROOT / ".github" / "workflows" / "publish.yml").read_text()
         self.assertIn("python scripts/translate_markdown.py", workflow)
-        self.assertIn("hugo-version: '0.146.0'", workflow)
+        self.assertIn("hugo-version: '0.146.7'", workflow)
         self.assertIn("python scripts/prepare_root_artifacts.py public", workflow)
         self.assertIn("python scripts/verify_site.py public", workflow)
         self.assertIn("contents: write", workflow)

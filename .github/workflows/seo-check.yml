@@ -22,7 +22,7 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - uses: peaceiris/actions-hugo@6b1ee2dcc06c9b6629a5317fa0146473914d05e1 # v3.0.0
         with:
-          hugo-version: '0.146.0'
+          hugo-version: '0.146.7'
           extended: true
       - run: hugo --gc --minify --environment production
       - run: python scripts/prepare_root_artifacts.py public
