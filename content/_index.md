@@ -1,31 +1,29 @@
 ---
-title: Between terminals and trails
-description: "Collection of stuff"
+title: Zwischen Terminal und Trampelpfad
+description: "Persönliche Projekte, Notizen aus der Tech-Welt und Reiseberichte"
 image: "home-logo-600.webp"
 draft: false
-source_lang: en
+source_lang: de
 translation_lock: true
 ---
 
-{{< home-logo alt="MatSch Web logo" >}}
+Schön, dass du hier bist. Diese Seite ist mein persönlicher Ort für Dinge, die mich beschäftigen - vom Tüfteln am Terminal bis zu Momenten unterwegs.
 
-# Between terminals and trails
+Nimm dir mit, was für dich nützlich oder interessant ist, und schau dich gern um.
 
-Thanks for taking the time to visit my corner of the web.
+## Was dich hier erwartet
 
-This page functions primarily as a collection of personal interests.
+**Projekte**
 
-Here's what you can expect to find:
+Alle möglichen Software und Hardwareprojeke - von Homelab-Setups über Automatisierung bis zu Hardware, die ich einfach gerade spannend finde und ausprobieren wollte.
 
-**🔧 Projects:** A growing list of the solutions, experiments, and builds that have shaped my technical journey so far.
+**Code-Notizen**
 
-**💻 Code Notes:** Articles covering observations, solutions, and key takeaways from my personal coding process. I aim to share the practical things I've learned while building projects related to DevOps, app development and homelabbing.
+Praktische Erkenntnisse aus meinen Projekten die es Wert sind festzuhalten. Keine fertigen Wahrheiten, sondern Erfahrungen, Lösungen und Dinge, die beim nächsten Mal besser funktionieren.
 
-**🌍 Travel Logs:** Posts detailing my experiences, sharing travel tips, and documenting the places I've been.
+**Reiseberichte**
 
-It's a straightforward space designed to share information. Feel free to browse the topics that interest you most.
+Unterwegs zieht es mich raus aus dem Alltag. Hier halte ich Orte, Routen und kleine Beobachtungen fest, die eine Reise für mich besonders machen.
 
 
-    This page is originally written in english. 
-    Other languages are translated automatically using DEEPL api.
-
+> Diese Seite ist im Original auf Deutsch geschrieben. Weitere Sprachen werden automatisch mit der DeepL-API übersetzt.
