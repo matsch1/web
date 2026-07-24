@@ -45,6 +45,21 @@ class SiteConfigurationTests(unittest.TestCase):
         self.assertIn('$zoom := "15"', shortcode)
         self.assertIn('{{ $geoLink := replace $geoLink "geo:" "" }}', shortcode)
 
+    def test_masthead_preserves_the_current_papermod_navigation_contract(self):
+        header = (ROOT / "layouts" / "_partials" / "header.html").read_text()
+        css = (ROOT / "assets" / "css" / "extended" / "custom.css").read_text()
+        config = (ROOT / "hugo.toml").read_text()
+
+        self.assertIn('class="header-nav site-masthead__nav"', header)
+        self.assertIn('id="menu" class="menu"', header)
+        self.assertIn('class="site-masthead__image"', header)
+        self.assertIn('site.Params.masthead.image', header)
+        self.assertIn('Resize "2400x webp q78"', header)
+        self.assertIn('image = "images/masthead.webp"', config)
+        self.assertTrue((ROOT / "assets" / "images" / "masthead.webp").is_file())
+        self.assertIn(".site-masthead .site-masthead__nav", css)
+        self.assertIn(".site-masthead .menu .active::after", css)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -32,6 +32,9 @@ home = ["HTML", "RSS", "JSON"] # for search
 
   comments = true
 
+[params.masthead]
+  image = "images/masthead.webp"
+
 [params.assets]
   css = [
     "css/extended/custom.css",
