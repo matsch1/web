@@ -9,13 +9,13 @@ enableRobotsTXT = true
 
 [languages.de]
 baseURL = 'https://blog.matschcode.de/de'
-languageName = "Deutsch"
+label = "Deutsch"
 weight = 1
 contentDir = "content"
 
 [languages.en]
 baseURL = 'https://blog.matschcode.de/en'
-languageName = "English"
+label = "English"
 weight = 2
 contentDir = "content"
 
