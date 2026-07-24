@@ -109,8 +109,9 @@ def validate_html_page(path, public, sitemap_locations):
         if not parser.meta.get(key):
             fail(f"missing {key} metadata in {path}")
     alternates = {link.get("hreflang") for link in parser.links if link.get("rel") == "alternate" and link.get("hreflang")}
-    if path != public / "index.html" and not {"de", "en"}.issubset(alternates):
-        fail(f"missing hreflang pair in {path}")
+    page_language = path.relative_to(public).parts[0] if path.relative_to(public).parts else None
+    if page_language in {"de", "en"} and page_language not in alternates:
+        fail(f"missing self-referential hreflang in {path}")
     robots = parser.meta.get("robots", "")
     if "noindex" in robots and canonical[0] in sitemap_locations:
         fail(f"noindex page is listed in a sitemap: {path}")

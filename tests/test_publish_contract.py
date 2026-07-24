@@ -52,10 +52,11 @@ class PublishContractTests(unittest.TestCase):
 
     def test_homepage_identity_is_visible_in_title_and_heading(self):
         head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
-        de_home = (ROOT / "content" / "_index.de.md").read_text()
+        de_home = (ROOT / "content" / "_index.md").read_text()
         self.assertIn('<title>{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}</title>', head)
         self.assertIn('title: Zwischen Terminal und Trampelpfad', de_home)
-        self.assertIn('# Zwischen Terminal und Trampelpfad', de_home)
+        self.assertIn('source_lang: de', de_home)
+        self.assertIn('translation_lock: true', de_home)
         self.assertNotIn('ohne Schnickschnack', de_home)
 
     def test_social_metadata_uses_correct_mime_types_and_localized_cards(self):
@@ -146,6 +147,27 @@ class PublishContractTests(unittest.TestCase):
             page.write_text("<html><head></head><body></body></html>")
             with self.assertRaises(SystemExit):
                 verifier.validate_html_page(page, Path(directory), set())
+
+    def test_artifact_validator_accepts_a_locale_only_page(self):
+        verifier = self.verifier_module()
+        with tempfile.TemporaryDirectory() as directory:
+            public = Path(directory)
+            page = public / "de" / "tags" / "n8n" / "index.html"
+            page.parent.mkdir(parents=True)
+            page.write_text(
+                '<html><head>'
+                '<link rel="canonical" href="https://blog.matschcode.de/de/tags/n8n/">'
+                '<link rel="alternate" hreflang="de" href="https://blog.matschcode.de/de/tags/n8n/">'
+                '<meta name="description" content="n8n posts">'
+                '<meta property="og:title" content="n8n">'
+                '<meta property="og:description" content="n8n posts">'
+                '<meta property="og:url" content="https://blog.matschcode.de/de/tags/n8n/">'
+                '<meta name="twitter:card" content="summary">'
+                '<meta name="twitter:title" content="n8n">'
+                '<meta name="twitter:description" content="n8n posts">'
+                '</head><body></body></html>'
+            )
+            verifier.validate_html_page(page, public, set())
 
     def test_artifact_validator_rejects_wrong_social_card_dimensions(self):
         verifier = self.verifier_module()
@@ -260,20 +282,13 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn('<img', gallery)
         self.assertNotIn("data-ngthumb", gallery)
 
-    def test_n8n_gallery_uses_localized_descriptive_alt_text(self):
-        de = (ROOT / "content" / "projects" / "07_n8n_personal_assistant" / "index.de.md").read_text()
-        en = (ROOT / "content" / "projects" / "07_n8n_personal_assistant" / "index.en.md").read_text()
-        self.assertIn(
-            'alt="n8n-Switch im Rules-Modus mit Regeln für voice.file_id, photo[3].file_id und message.text; die Ausgänge heißen Audio, Image und Text"',
-            de,
-        )
+    def test_n8n_gallery_uses_explicit_descriptive_alt_text(self):
+        source = (ROOT / "content" / "projects" / "07_n8n_personal_assistant" / "index.md").read_text()
         self.assertIn(
             'alt="n8n Switch node in Rules mode with checks for voice.file_id, photo[3].file_id, and message.text; its outputs are named Audio, Image, and Text"',
-            en,
+            source,
         )
-        self.assertNotIn('title="telegram_switch_settings"', de)
-        self.assertNotIn('title="telegram_switch_settings"', en)
-        source = (ROOT / "content" / "projects" / "07_n8n_personal_assistant" / "index.md").read_text()
+        self.assertNotIn('title="telegram_switch_settings"', source)
         self.assertIn("translation_lock: true", source)
 
     def test_swedish_day_one_gallery_has_localized_explicit_alt_text(self):
