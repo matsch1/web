@@ -31,7 +31,7 @@ Here, I was able to take a hot shower, do my laundry, and recharge my batteries.
 {{< galleries >}}
 {{< gallery src="img1.jpg" title="Durch die Dünen" >}}
 {{< gallery src="img2.jpg" title="Beste Laune" >}}
-{{< gallery src="img3.jpg" title="Vor Hamstholm" >}}
+{{< gallery src="img3.webp" title="Vor Hamstholm" >}}
 {{< gallery src="img4.jpg" title="Strand vom Thyborøn" >}}
 {{< /galleries >}}
 

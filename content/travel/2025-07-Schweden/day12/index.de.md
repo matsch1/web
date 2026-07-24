@@ -30,7 +30,7 @@ Hier konnte ich heiß duschen, Wäsche waschen und Akkus aufladen. Zusätzlich h
 {{< galleries >}}
 {{< gallery src="img1.jpg" title="Durch die Dünen" >}}
 {{< gallery src="img2.jpg" title="Beste Laune" >}}
-{{< gallery src="img3.jpg" title="Vor Hamstholm" >}}
+{{< gallery src="img3.webp" title="Vor Hamstholm" >}}
 {{< gallery src="img4.jpg" title="Strand vom Thyborøn" >}}
 {{< /galleries >}}
 

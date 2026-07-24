@@ -7,7 +7,7 @@ ShowToc: true
 TocOpen: true
 draft: false
 cover:
-  image: "nextcloud-k3s-helm-deployment.png"
+  image: "nextcloud-k3s-helm-deployment.webp"
   alt: "nextcloud-k3s-helm-deployment"
   caption: "The way I deployed nextcloud on my k3s cluster using helm chart"
   relative: true
