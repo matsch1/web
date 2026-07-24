@@ -258,6 +258,8 @@ class PublishContractTests(unittest.TestCase):
         )
         self.assertNotIn('title="telegram_switch_settings"', de)
         self.assertNotIn('title="telegram_switch_settings"', en)
+        source = (ROOT / "content" / "projects" / "07_n8n_personal_assistant" / "index.md").read_text()
+        self.assertIn("translation_lock: true", source)
 
     def test_swedish_day_one_gallery_has_localized_explicit_alt_text(self):
         directory = ROOT / "content" / "travel" / "2025-07-Schweden" / "day1"
@@ -271,6 +273,8 @@ class PublishContractTests(unittest.TestCase):
             self.assertEqual(len(gallery_lines), 5)
             self.assertTrue(all(' alt="' in line for line in gallery_lines))
             self.assertIn(first_alt, gallery_lines[0])
+        source = (directory / "index.md").read_text()
+        self.assertIn("translation_lock: true", source)
 
 
 if __name__ == "__main__":

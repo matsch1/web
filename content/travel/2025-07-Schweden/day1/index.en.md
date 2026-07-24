@@ -24,11 +24,11 @@ So I wrapped up my day of cycling relatively early and went for a swim in the Ba
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Küstenweg am Meer" alt="Geschwungener Kiesweg durch Bäume neben einem schmalen Strand am blauen Meer." >}}
-{{< gallery src="img2.jpg" title="Blick auf Sønderborg" alt="Blick über das Wasser auf die Gebäude, Boote und Kirchturmspitze von Sønderborg." >}}
-{{< gallery src="img3.jpg" title="Fahrzeugdeck der Fähre" alt="Beleuchtetes Fahrzeugdeck einer Fähre mit Fahrspuren, Rohren und mehreren Personen." >}}
-{{< gallery src="img4.jpg" title="Bier am Strand" alt="Geöffnete Bierdose in einer Hand vor steinigem Strand und ruhigem Meer." >}}
-{{< gallery src="img5.jpg" title="Zeltplatz im Garten" alt="Kleines Zelt und beladenes Fahrrad neben einem Picknicktisch auf einer sonnigen Wiese." >}}
+{{< gallery src="img1.jpg" title="Coastal path by the sea" alt="Curving gravel path through trees beside a narrow beach and blue sea." >}}
+{{< gallery src="img2.jpg" title="View of Sønderborg" alt="View across the water toward Sønderborg's buildings, boats, and church spire." >}}
+{{< gallery src="img3.jpg" title="Ferry vehicle deck" alt="Lit ferry vehicle deck with marked lanes, pipes, and several people." >}}
+{{< gallery src="img4.jpg" title="Beer by the beach" alt="Open beer can held in a hand in front of a rocky beach and calm sea." >}}
+{{< gallery src="img5.jpg" title="Tent in the garden" alt="Small tent and loaded bicycle beside a picnic table on a sunny lawn." >}}
 {{< /galleries >}}
 
 ### Costs

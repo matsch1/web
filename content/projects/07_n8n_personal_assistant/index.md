@@ -15,6 +15,7 @@ tags:
   - n8n
   - AI
 source_lang: en
+translation_lock: true
 ---
 
 {{< alert type="info" title="" >}}
