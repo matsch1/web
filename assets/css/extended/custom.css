@@ -210,7 +210,7 @@ the browser support for :has is not widespread yet.
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto 1fr auto;
-  min-height: 220px;
+  min-height: 286px;
   padding-top: 1.1rem;
   padding-bottom: 1.25rem;
   line-height: 1.25;
@@ -302,7 +302,7 @@ the browser support for :has is not widespread yet.
 
 @media screen and (max-width: 768px) {
   .site-masthead .site-masthead__nav {
-    min-height: 188px;
+    min-height: 244px;
     padding-top: 0.8rem;
     padding-bottom: 0.9rem;
   }

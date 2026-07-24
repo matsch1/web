@@ -58,6 +58,8 @@ class SiteConfigurationTests(unittest.TestCase):
         self.assertIn('image = "images/masthead.webp"', config)
         self.assertTrue((ROOT / "assets" / "images" / "masthead.webp").is_file())
         self.assertIn(".site-masthead .site-masthead__nav", css)
+        self.assertIn("min-height: 286px;", css)
+        self.assertIn("min-height: 244px;", css)
         self.assertIn(".site-masthead .menu .active::after", css)
 
 
