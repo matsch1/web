@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 2df7ed331d5aeca095c2e8bbedb13a2484fa0ea1571431bec2f229bfec6acb4b
+base_hash: 68c92dfcdc3bf658f38cd233b69ea215fada4ba57fcc5b64224dabae68edeca7
 cover:
   alt: nextcloud-k3s-helm-deployment
   caption: The way I deployed nextcloud on my k3s cluster using helm chart
@@ -51,7 +51,7 @@ Um dies zu beheben, habe ich die Konfiguration in zwei Dateien aufgeteilt:
   Dies ist die ursprüngliche `values.yaml`. Sie wird nicht manuell bearbeitet und dient als Referenz für Änderungen im Upstream.
 
 - `values.yaml`  
-  Diese Datei enthält ausschließlich meine Überschreibungen und umgebungsspezifische Konfigurationen.
+  Diese Datei enthält ausschließlich meine Überschreibungen und umgebungsspezifischen Konfigurationen.
 
 Dieser Ansatz hat mehrere Vorteile:
 
@@ -86,7 +86,7 @@ Die über Ingress exponierte externe Domäne
 
 Alle internen Dienstnamen, die zum Testen oder Debuggen verwendet werden
 
-Ohne diese Konfiguration kann Nextcloud Verbindungen ablehnen oder Nutzer unerwartet umleiten. Die Verwaltung vertrauenswürdiger Domänen über Helm-Werte stellt sicher, dass die Konfiguration auch nach Neustarts und Upgrades der Pods erhalten bleibt.
+Ohne diese Konfiguration kann Nextcloud Verbindungen ablehnen oder Nutzer unerwartet umleiten. Die Verwaltung vertrauenswürdiger Domänen über Helm-Werte stellt sicher, dass die Konfiguration auch bei Pod-Neustarts und Upgrades erhalten bleibt.
 
 Fügen Sie den folgenden Abschnitt zu Ihrer `values.yaml`-Datei hinzu:
 ``` yaml
@@ -106,7 +106,7 @@ curl https://apps.nextcloud.com
 
 Die Anfrage funktionierte auf dem Knoten, schlug jedoch innerhalb des Containers fehl. Nach einigen Debugging-Schritten konnte ich das Problem auf CoreDNS im Namespace „kube-system“ zurückführen.
 
-Dies lässt sich durch Bearbeiten der CoreDNS-ConfigMap beheben:
+Dies lässt sich beheben, indem man die CoreDNS-ConfigMap bearbeitet:
 ``` sh
 kubectl edit configMap coredns -nkube-system
 ```
@@ -155,7 +155,7 @@ phpClientHttpsFix:
 Nach dem Anwenden dieser Konfiguration funktionierte der Schritt `Grant Access` auf meinem Android-Gerät ohne Probleme.
 
 ### Zusätzliche Manifeste
-Nicht alles lässt sich nahtlos in Helm-Werte integrieren. Für Komponenten, die zwar mit dem Nextcloud-Chart in Zusammenhang stehen, aber nicht streng genommen Teil davon sind, habe ich auf zusätzliche Manifeste zurückgegriffen.
+Nicht alles lässt sich nahtlos in Helm-Werte integrieren. Für Komponenten, die mit dem Nextcloud-Chart in Zusammenhang stehen, aber nicht streng genommen Teil davon sind, habe ich auf zusätzliche Manifeste zurückgegriffen.
 
 Diese Manifeste befinden sich neben dem Helm-Deployment und werden im Rahmen desselben Workflows angewendet. Dadurch bleibt das gesamte Deployment zusammenhängend, während gleichzeitig die Grenzen des Upstream-Charts gewahrt bleiben.
 
@@ -193,6 +193,6 @@ helm install nextcloud ./nextcloud \
 ```
 
 ## Zusammenfassung
-Die Bereitstellung von Nextcloud auf einem k3s-Cluster mit Helm funktionierte gut, erforderte jedoch mehr Überlegung als eine einfache „helm install“-Anweisung. Durch eine übersichtliche Strukturierung der Konfiguration, bewusste Designentscheidungen und die Nutzung von Helm-Funktionen wie benutzerdefinierten Konfigurationsdateien und zusätzlichen Manifesten gelangte ich schließlich zu einer Konfiguration, die sowohl flexibel als auch wartbar ist.
+Die Bereitstellung von Nextcloud auf einem k3s-Cluster mit Helm funktionierte gut, erforderte jedoch mehr Überlegung als eine einfache „helm install“-Anweisung. Durch eine übersichtliche Strukturierung der Konfiguration, bewusste Designentscheidungen und die Nutzung von Helm-Funktionen wie benutzerdefinierten Konfigurationsdateien und zusätzlichen Manifesten habe ich letztendlich eine Konfiguration erhalten, die sowohl flexibel als auch wartbar ist.
 
 Die nächsten Schritte für diese Bereitstellung umfassen die Migration zu MariaDB, die Verschärfung der Sicherheitseinstellungen sowie die Einrichtung geeigneter Backup- und Überwachungsworkflows. Doch selbst in seiner aktuellen Form bietet dieser Ansatz eine solide Grundlage für den zuverlässigen Betrieb von Nextcloud in einer Kubernetes-Umgebung im Heimlabor.

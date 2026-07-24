@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 24ba557d0fe77b0eaf5c2ca1c16d4d86aee3eb6de4731439c92b1fb092b882a4
+base_hash: e1c12a2aed1b94eee70f999164b36514d08a1e49e13aeab06467ba3dd93b7021
 cover:
   alt: ''
   caption: ''
@@ -22,7 +22,7 @@ At first, I followed the wrong route on my GPS and ended up riding 15 km inland.
 
 So, until my lunch break, the route mainly followed gravel roads through beautiful dunes and forests. 
 
-After lunch, a tailwind and some Limp Bizkit somehow caused me to lose all restraint. From then on, with music blasting in my ears, I continued full throttle toward the south. It felt like I rode the last 70 km at a speed of over 30 km/h until I reached the ferry terminal. If there hadn’t been a ferry, I’d probably still be flying through the dunes. 
+After lunch, a tailwind and some Limp Bizkit somehow caused me to lose all inhibitions. From there on, with music blasting in my ears, I continued full throttle toward the south. It felt like I rode the last 70 km at a speed of over 30 km/h until I reached the ferry terminal. If there hadn’t been a ferry, I’d probably still be flying through the dunes. 
 
 As a result of this long day’s ride, I ended up at a campground where I’d been with Jonas two years ago.
 Here, I was able to take a hot shower, do my laundry, and recharge my batteries. I also met Dirk, with whom I spent a nice evening on the beach. 

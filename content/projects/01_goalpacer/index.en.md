@@ -11,6 +11,7 @@ description: Explanation of how I build my first app for martathon training usin
   Flutter
 draft: false
 slug: goalpacer-pace-estimator
+source_lang: en
 tags:
 - flutter
 - sports

@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 0f03aed834b1e686c766141d0bed72052cc0c5b9a885170e3b9d4cbb6909c61e
+base_hash: 90afdda87112a11080c2218783e316bd0e4d50460826d79e0e08dd49ba3e4c15
 cover:
   alt: obsidian-sync
   caption: ''
@@ -42,8 +42,8 @@ Um unabhängig vom verwendeten Gerät immer Zugriff auf meine „Vaults“ zu ha
 ## Einrichtung:
 - Installiere Syncthing auf den Geräten, auf denen du Obsidian nutzen möchtest
 - Erstelle auf jedem Gerät Ordner, um die Obsidian-Dateien lokal zu speichern
-- Verbinde die Geräte mithilfe des QR-Codes
-- Teile die Ordner (ebenfalls mithilfe des QR-Codes)
+- Verbinde die Geräte über den QR-Code
+- Teile die Ordner (ebenfalls über den QR-Code)
 - Kopiere deinen „Vault“ in das neue Verzeichnis und öffne ihn in Obsidian
 - *optional:*
   - Erstellen Sie ein Git-Repository in Ihrem Obsidian-Verzeichnis und sichern Sie die Dateien auf Ihrem GitHub-Konto

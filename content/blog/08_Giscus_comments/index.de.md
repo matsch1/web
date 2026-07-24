@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 7e52a47254aae7a0042433ecc4be833a22baa6f2ebbb35287064d4d46fb19320
+base_hash: 017d85a989e316c54baa577c1e3d02ff1055b057f4a13abefad17cf48ac1650c
 cover:
   alt: giscus-hugo-comments
   caption: Giscus the Git Discussion based commenting system for Hugo blogs
@@ -18,7 +18,7 @@ title: Einrichtung von Giscus-Kommentaren für einen Hugo-Blog
 
 ## Einleitung: Warum Kommentare hinzufügen?
 
-Ich wollte meinen Lesern die Möglichkeit geben, meine Hugo-Blogbeiträge einfach zu kommentieren, und suchte nach einer Lösung, die sowohl **für die Nutzer einfach** als auch **unauffällig und leicht zu warten** für mich ist.
+Ich wollte meinen Lesern die Möglichkeit geben, meine Hugo-Blogbeiträge einfach zu kommentieren, und suchte nach einer Lösung, die sowohl **für die Nutzer einfach** als auch **schlank und leicht zu warten** für mich ist.
 
 Hugo bietet offizielle Unterstützung für die Integration verschiedener kommerzieller und Open-Source-Kommentarsysteme.
 
@@ -59,7 +59,7 @@ Die Integration von Giscus in Ihren Hugo-Blog erfolgt in drei einfachen Schritte
 
 ### 1. Vorbereitung des Repositorys
 
-Giscus verbindet sich direkt mit dem Quellcode-Repository Ihres Blogs auf GitHub. Stellen Sie sicher, dass die folgenden Bedingungen erfüllt sind:
+Giscus stellt eine direkte Verbindung zum Quellcode-Repository Ihres Blogs auf GitHub her. Stellen Sie sicher, dass die folgenden Bedingungen erfüllt sind:
 
 - Das Repository muss öffentlich sein.
 - Das [Giscus app](https://github.com/apps/giscus) muss installiert sein.
@@ -67,11 +67,11 @@ Giscus verbindet sich direkt mit dem Quellcode-Repository Ihres Blogs auf GitHub
 
 ### 2. Giscus-Einbettungscode generieren
 
-Rufen Sie die offizielle [Giscus app website](https://giscus.app/) auf, um Ihren Einbettungscode zu konfigurieren und zu generieren. Sie müssen einige Parameter angeben:
+Rufen Sie die offizielle [Giscus app website](https://giscus.app/) auf, um Ihren Einbettungscode zu konfigurieren und zu generieren. Sie müssen dabei einige Parameter angeben:
 
 * **Repository:** Der Name Ihres öffentlichen Repositorys (z. B. `username/blog-repo`).
 * **Diskussionskategorie:** Die Kategorie in Ihren GitHub-Diskussionen, in der neue Beitrags-Kommentare erstellt werden (z. B. „Blog-Kommentare“).
-* **Zuordnungsstrategie:** Wie Giscus einen Blogbeitrag mit einer bestimmten Diskussion verknüpft. Die Verwendung von `pathname` ist die Standardwahl.
+* **Zuordnungsstrategie:** Wie Giscus einen Blogbeitrag mit einer bestimmten Diskussion verknüpft. Die Verwendung von `pathname` ist die Standardoption.
 * **Design:** Das visuelle Design (hell/dunkel/benutzerdefiniert) für den Kommentarbereich.
 
 Die Website generiert automatisch einen HTML-Schnipsel (`<script>...</script>`) basierend auf Ihren Auswahlmöglichkeiten. **Kopieren Sie diesen Code.**
@@ -90,11 +90,11 @@ Füge den folgenden Parameter zu deiner Hauptkonfigurationsdatei hinzu, um deine
 
 #### B. Den Giscus-Shortcode erstellen
 
-Erstellen Sie eine neue Datei unter `layouts/partials/comments.html` und fügen Sie den generierten Giscus-Tag `<script>` darin ein.
+Erstellen Sie eine neue Datei unter `layouts/partials/comments.html`` und fügen Sie den generierten Giscus-Tag <script> darin ein.
 Das war’s schon! Giscus übernimmt automatisch die Zuordnung der Diskussionen, speichert alle Daten auf GitHub und erfordert keinerlei Server-Einrichtung Ihrerseits.
 
 
-## Überlegung: Optionen für den Eigenbetrieb
+## Überlegung: Optionen für Selbsthosting
 
 Wenn die Notwendigkeit eines GitHub-Kontos für Sie ein Ausschlusskriterium ist, ziehen Sie vielleicht eine vollständig selbst gehostete Lösung vor, die Ihnen die vollständige Kontrolle über Daten und Datenschutz gewährt.
 

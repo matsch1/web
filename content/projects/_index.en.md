@@ -2,6 +2,7 @@
 date: 2025-11-30
 description: ''
 draft: false
+source_lang: en
 title: Projects
 ---
 

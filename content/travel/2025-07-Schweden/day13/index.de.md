@@ -9,6 +9,7 @@ cover:
 date: 2025-07-13
 description: Mit Wind, Sonne und Regen
 draft: false
+source_lang: de
 tags:
 - bikepacking
 title: "\U0001F1E9\U0001F1F0 Tag 13 - Unentschlossen Richtung Süden"

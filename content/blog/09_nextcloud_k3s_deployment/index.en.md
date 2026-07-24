@@ -10,6 +10,7 @@ date: 2025-12-19
 description: The way I deployed nextcloud on my k3s cluster using helm chart
 draft: false
 slug: nextcloud-k3s-helm-deployment
+source_lang: en
 tags:
 - kubernetes
 - k3s

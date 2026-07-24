@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 134546a9a2aa7e7f7d373debad0711b9a4666a67899f71f583596e29728f5428
+base_hash: f8866d5cd460b439964159fd4ca7d38fbf94a47dd68ba7cda7fbcb0ea4900a15
 cover:
   alt: obsidian-http-mcp
   caption: ''
@@ -28,9 +28,9 @@ Wenn ihr mein Obsidian-Setup verfolgt habt, wisst ihr, dass ich es liebe, meine 
 Deshalb habe ich **Obsidian HTTP MCP** entwickelt, einen auf [FastMCP](https://gofastmcp.com/getting-started/welcome) basierenden, ressourcenschonenden Server, der deinen Obsidian-Vault über HTTP mithilfe des MCP-Protokolls bereitstellt.
 
 Mit diesem Server kannst du:
-- **KI-Clients** wie Cursor direkt mit deinem Vault verbinden und so die Suche in natürlicher Sprache, Analysen und sogar automatisierte Notizänderungen ermöglichen.
+- **KI-Clients** wie Cursor direkt mit deinem Vault verbinden und so die Suche in natürlicher Sprache, Analysen und sogar automatisierte Notizbearbeitungen ermöglichen.
 - **Ihre Notizen bei Bedarf abfragen** – über Skripte, Dashboards oder jedes Gerät, das HTTP unterstützt.
-- **Den Server schlank und schnell halten** dank der FastMCP-Basis.
+- **Den Server schlank und schnell halten** – dank der FastMCP-Basis.
 
 Im Grunde ist Ihr Vault nicht mehr nur ein Speicherort – er wird zu einer interaktiven Wissensmaschine.
 
@@ -48,7 +48,7 @@ Der eigentliche Spaß beginnt mit der **KI-Integration**. Du kannst deinen Deskt
 
 ### Beispiele für coole KI-Interaktionen
 - **Suche und Zusammenfassungen in natürlicher Sprache:** Bitten Sie Ihre KI, Notizen in einfachem Englisch zu finden oder zusammenzufassen.
-- **Automatisierte Aktualisierung und Erstellung von Notizen:** Lassen Sie die KI Notizen erstellen oder bearbeiten, Sitzungsprotokolle entwerfen oder Lernkarten generieren.
+- **Automatisierte Aktualisierung und Erstellung von Notizen:** Lassen Sie die KI Notizen erstellen oder bearbeiten, Besprechungsprotokolle entwerfen oder Lernkarten generieren.
 - **Vault-Analysen & Erkenntnisse:** Verfolgen Sie Trends, Lücken und wiederkehrende Themen in Ihren Notizen.
 - **Persönlicher Wissensassistent:** Chatten Sie mit Ihrem Vault, um Fragen zu beantworten, Zusammenhänge vorzuschlagen oder Themen zu empfehlen.
 - **Code- und Workflow-Automatisierung:** Nutzen Sie die KI, um Skripte zu generieren, Notizen zu organisieren oder automatisierte Workflows auszulösen.
@@ -71,7 +71,7 @@ Der eigentliche Spaß beginnt mit der **KI-Integration**. Du kannst deinen Deskt
 ```
 - Beginnen Sie, mit Ihren Notizen zu interagieren.
 
-Eine ausführlichere Beschreibung finden Sie im GitHub-Repository: [obsidian-http-mcp](https://github.com/matsch1/obsidian-http-mcp) – und schon heute können Sie mit Ihren Notizen chatten!
+Eine ausführlichere Beschreibung finden Sie im GitHub-Repository: [obsidian-http-mcp](https://github.com/matsch1/obsidian-http-mcp) – und fangen Sie noch heute an, mit Ihren Notizen zu chatten!
 	
 ## TL;DR
 Obsidian HTTP MCP ist ein schlanker Server, der Ihren Obsidian-Vault über HTTP mithilfe des MCP-Protokolls verfügbar macht. Damit können Sie KI-Clients wie Cursor mit Ihren Notizen verbinden, um Suchanfragen in natürlicher Sprache, Zusammenfassungen, Analysen und automatisierte Änderungen durchzuführen. Führen Sie ihn auf einem Remote-Server aus, verbinden Sie Ihren KI-Client und verwandeln Sie Ihren Vault im Handumdrehen in eine interaktive, KI-gestützte Wissensmaschine. Schauen Sie sich das Ganze auf GitHub an [obsidian-http-mcp](https://github.com/matsch1/obsidian-http-mcp)!

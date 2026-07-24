@@ -10,6 +10,7 @@ date: 2025-06-19
 description: Mit dem ganzen Gepaeck fuer die Schwedenreise die Familie in Biffontaine
   besuchen.
 draft: false
+source_lang: de
 tags:
 - bikepacking
 title: Bikepacking Test in Biffontaine

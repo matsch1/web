@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: c03b7aad4b608fc8fcb86cbabdcdc1a6f91bd30fcd06e5d992c068b2b089c781
+base_hash: a1b6ba1e62d0eb97bcc79a5ffcaf4a3d835c374c950826caeae9d340363be61f
 cover:
   alt: ''
   caption: ''
@@ -22,7 +22,7 @@ An hour later, though, I was able to set off in the sunshine. The first part of 
 
 As the coast drew closer, clouds and a cold sea breeze followed. My plan to go for a swim thus became less and less appealing. 
 
-It wasn’t really a big deal, though, because an absolute highlight of this tour was waiting for me. Between Løkken and Blokhus, I was able to ride the entire stretch right along the water’s edge on the beach. Who wants to go swimming or surfing when you can just cruise along the beach on your bike like that? 
+It wasn’t really a big deal, though, because an absolute highlight of this tour was waiting for me. Between Løkken and Blokhus, I was able to ride the entire stretch right along the water’s edge on the beach. Who wants to go swimming or surfing when you can just fly along the beach on your bike like that? 
 
 After this fantastic stretch, I spent the afternoon in and around Blokhus, enjoying the beach and live music, until I rolled the last 15 km to my place to sleep. Just like every evening, I’m letting the day wind down in a relaxed way again today. 
 
@@ -57,6 +57,6 @@ Daily distance: 94 km
 17–25 degrees, sunny 
 
 ### Tour
-Reaching the West Coast Bike Trail 
+Reaching the West Coast Bike Path 
 
 {{< strava-activity-image id="15079345606" image="strava.jpg" >}}

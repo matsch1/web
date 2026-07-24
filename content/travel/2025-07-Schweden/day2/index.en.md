@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 2af63a64e815388f8b8a136c121b92aa8301b23d06360828824684747b52bdf8
+base_hash: da218c303b95f52eeb89032858e248d081d96dd71335419f9b7b5aaa91f74b82
 cover:
   alt: ''
   caption: ''
@@ -22,7 +22,7 @@ On the sun deck, I enjoyed the best view while eating the leftovers from yesterd
 
 Once off the ferry, my good mood was dampened by a 30-km stretch with a nasty headwind. After I’d conquered that, I rewarded myself with a huge pizza and a swim in the Baltic Sea. 
 
-A major storm is forecast for tonight, with 15 l/m². For this reason, I set out early again to find a sheltered place to sleep. Today, too, I found one right away. 
+A major storm is forecast for tonight, with 15 l/m². For this reason, I set out early again to find a sheltered place to sleep. Once again, I found one right away. 
 When the storm hits, a significant drop in temperature is expected.
 
 I’m now going to wind down the evening comfortably, enjoying the lingering warmth of the day. 

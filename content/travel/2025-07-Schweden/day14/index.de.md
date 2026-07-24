@@ -9,6 +9,7 @@ cover:
 date: 2025-07-14
 description: Hauptsach gut gess
 draft: false
+source_lang: de
 tags:
 - bikepacking
 title: "\U0001F1E9\U0001F1F0 Tag 14 - Schwere Beine"

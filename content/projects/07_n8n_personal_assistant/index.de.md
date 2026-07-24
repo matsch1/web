@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 3474426f73cccd2be31b6e1e2466c61c655a4e44e8597fd620ce2b2e8ff7a918
+base_hash: 31c1196081a7e652c63d86e3e63ebe017493de668c182733d379e14876349be6
 cover:
   alt: n8n-ai-assistant
   caption: Personal AI assistant build with n8n
@@ -23,18 +23,18 @@ Der Assistent leistet gute Arbeit und wird nach wie vor täglich genutzt.
 
 ## Einleitung
 {{< figure src="./ai-assistang.png" width="400" alt="AI agent" class="right" >}}
-Wer würde sich nicht einen persönlichen Assistenten wünschen – jemanden, der Termine, Aufgaben, E-Mails und andere administrative Aufgaben übernimmt? Mit den heutigen KI-Fähigkeiten ist dies sogar für Personen möglich geworden, die sich keinen menschlichen Assistenten leisten können.
+Wer würde sich nicht einen persönlichen Assistenten wünschen – jemanden, der Termine, Aufgaben, E-Mails und andere administrative Aufgaben erledigt? Mit den heutigen KI-Fähigkeiten ist dies sogar für Personen möglich geworden, die sich keinen menschlichen Assistenten leisten können.
 In diesem Beitrag zeige ich euch, wie ihr mit n8n einen persönlichen KI-Assistenten erstellen könnt, der auf Telegram-Nachrichten (einschließlich Sprachnotizen) reagiert und euch bei der Verwaltung von Terminen und Aufgaben unterstützt.
 
 ## n8n einrichten
-Bevor wir den Assistenten erstellen, müssen wir n8n einrichten. n8n ist eine No-Code-Plattform zur Workflow-Automatisierung, die eine Vielzahl von Integrationen und Automatisierungen koordinieren kann (vielleicht werde ich in zukünftigen Beiträgen noch weitere Beispiele vorstellen).
+Bevor wir den Assistenten erstellen, müssen wir n8n einrichten. n8n ist eine No-Code-Plattform zur Workflow-Automatisierung, die eine Vielzahl von Integrationen und Automatisierungen koordinieren kann (auf weitere Beispiele werde ich möglicherweise in zukünftigen Beiträgen eingehen).
 
 {{< figure src="https://www.webmaster-vitaliy.de/wp-content/uploads/2025/05/n8n.png" width="300" alt="n8n" link="https://n8n.io/" target="_blank">}}
 
-n8n muss auf einem eigenen Server gehostet werden. Ich empfehle, den Ansatz aus meinem [Coolify VPS setup](https://blog.matschcode.de/en/projects/coolify-vps-setup/) zu befolgen. Wenn bei dir bereits eine Coolify-Instanz läuft, kannst du mit wenigen Klicks einfach eine neue n8n-Ressource hinzufügen.
+n8n muss auf einem Server selbst gehostet werden. Ich empfehle, den Ansatz aus meinem [Coolify VPS setup](https://blog.matschcode.de/en/projects/coolify-vps-setup/) zu befolgen. Wenn bei dir bereits eine Coolify-Instanz läuft, kannst du mit wenigen Klicks einfach eine neue n8n-Ressource hinzufügen.
 
 ## Workflow erstellen
-Der Workflow für meinen persönlichen Assistenten ist nicht vollständig selbst erstellt. Ich habe eine der vielen vorhandenen Vorlagen aus der n8n-Bibliothek als Grundlage verwendet:  
+Der Workflow meines persönlichen Assistenten ist nicht vollständig selbst erstellt. Ich habe eine der vielen vorhandenen Vorlagen aus der n8n-Bibliothek als Grundlage verwendet:  
 [Voice & Text Assistant with Telegram, Gemini AI, Calendar, Gmail & Notion](https://n8n.io/workflows/8648-voice-and-text-assistant-with-telegram-gemini-ai-calendar-gmail-and-notion/).
 
 In den folgenden Kapiteln werde ich die wichtigsten Komponenten dieses Workflows beschreiben und die von mir vorgenommenen Änderungen hervorheben.
@@ -109,7 +109,7 @@ Jedes Tool kapselt ein bestimmtes Verhalten, zum Beispiel:
 - `notes.append`
 
 Diese Tools stellen strukturierte Schnittstellen bereit, die die KI aufrufen kann.  
-Das bedeutet, dass der Agent keinen beliebigen Text erstellt, sondern stattdessen präzise Befehle im JSON-Format zurückgibt, die n8n ausführt.
+Das bedeutet, dass der Agent keinen beliebigen Text erstellt, sondern präzise Befehle im JSON-Format zurückgibt, die n8n ausführt.
 
 Um zusätzliche Funktionen zu integrieren (zum Beispiel Einkaufslisten, Fitnessprotokolle, Gewohnheitsaufzeichnung), musst du lediglich neue Tools hinzufügen und diese in der Agenten-Eingabeaufforderung beschreiben.
 In meinem Fall verwende ich beispielsweise Obsidian anstelle von Notion für Notizen und richte dafür einen zusätzlichen MCP-Server ein ([HTTP Obsidian MCP server](https://blog.matschcode.de/en/projects/obsidian-http-mcp/)), der von meinem KI-Agenten genutzt wird.
@@ -125,12 +125,12 @@ Außerdem empfehle ich, die folgenden von n8n bereitgestellten MCP-Tools hinzuzu
 Eine klare Promptgestaltung verbessert die Zuverlässigkeit des Agenten erheblich.  
 Ich verwende einen strukturierten Prompt, der der KI klare Anweisungen zu folgenden Punkten gibt:
 
-- ihrer Rolle (persönlicher Produktivitätsassistent)
-- zulässigen Aktionen (Termin erstellen, Aufgabe hinzufügen, Notiz speichern usw.)
-- dem erforderlichen Ausgabeformat (JSON-Befehlsobjekte)
+- ihre Rolle (persönlicher Produktivitätsassistent)
+- zulässige Aktionen (Termin erstellen, Aufgabe hinzufügen, Notiz speichern usw.)
+- erforderliches Ausgabeformat (JSON-Befehlsobjekte)
 
 Dies erfolgt im Feld `System Message` des KI-Agenten.
-Je mehr Mühe Sie sich bei der Eingabe der Befehlsvorlage geben, desto besser verhält sich der Agent gemäß Ihren Erwartungen.
+Je mehr Mühe Sie in die Eingabeanweisungen investieren, desto besser verhält sich der Agent gemäß Ihren Erwartungen.
 
 ### Feedback
 Nachdem der Agent eine Aktion abgeschlossen hat, generiert der Workflow eine kurze Bestätigungsmeldung und sendet diese zurück an Telegram.  
@@ -141,7 +141,7 @@ Beispiele:
 - „Dein Termin wurde für Dienstag um 14:00 Uhr hinzugefügt.“
 - „Ich habe eine neue Aufgabe für morgen angelegt.“
 
-Diese Rückmeldeschleife verbessert die Benutzerfreundlichkeit und vermeidet Verwirrung, insbesondere bei sprachgesteuerten Interaktionen, bei denen der Nutzer die Eingabe nicht sehen kann.
+Diese Rückkopplungsschleife verbessert die Benutzerfreundlichkeit und vermeidet Verwirrung, insbesondere bei sprachgesteuerten Interaktionen, bei denen der Nutzer die Eingabe nicht sehen kann.
 
 ## Anwendungsbeispiele
 Im Folgenden finden Sie einige praktische Beispiele, die veranschaulichen, was der Assistent leisten kann.
@@ -171,4 +171,4 @@ Ich kann meinen Assistenten beispielsweise fragen:
 - „Dieses Rezept sieht perfekt aus. Passe es für sechs Personen an und speichere es in meinem Obsidian-Vault.“
 
 In der Systemanweisung habe ich genau definiert, wie meine Rezepte formatiert sein sollen und dass der Agent vorhandene Rezepte als Vorlagen verwenden darf.  
-Das Ergebnis ist ein übersichtlich strukturiertes Rezept, das direkt in meinen Notizen gespeichert wird – komplett mit Zutatenliste – ideal für die Mahlzeitenplanung und den Einkauf.
+Das Ergebnis ist ein übersichtlich strukturiertes Rezept, das direkt in meinen Notizen gespeichert wird – komplett mit Zutatenliste – ideal für die Essensplanung und den Einkauf.

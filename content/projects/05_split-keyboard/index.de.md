@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 372824345bbb078514e354b8931de8cd12b6a3b6e2a2dd9694bc6cb03da7d6de
+base_hash: 411ea0f25a85cd07e2c1496e8c9dba7cd6c072657eae6951db442a2dc0c43a65
 cover:
   alt: split-keyboard-ianmaclarty
   caption: ''
@@ -28,11 +28,11 @@ Die QMK-Software entwickelt sich mit der Zeit weiter.
 
 Wer möchte nicht mühelos cool wirken, während er auf einer Tastatur tippt, die sonst niemand versteht? Ich auf jeden Fall.  
 
-Abgesehen vom reinen Stilfaktor habe ich einige echte Vorteile der Verwendung einer geteilten Tastatur entdeckt. Für mich sind die wichtigsten Vorteile:
+Abgesehen vom reinen Stilfaktor habe ich einige echte Vorteile der Verwendung einer geteilten Tastatur entdeckt. Für mich sind die Hauptvorteile:
 
 - **Weniger Handbewegungen:** Es hat mich immer genervt, meine Hand bewegen zu müssen, um die Pfeiltasten oder Ziffern zu erreichen. Und von den Akrobatikübungen mit Daumen und kleinem Finger, die nötig sind, um Alt, Esc oder Strg zu drücken, will ich gar nicht erst anfangen. Mit einer geteilten Tastatur werden diese Bewegungen auf ein Minimum reduziert.  
 
-- **Bessere Ergonomie:** Bei einem geteilten Layout geht es nicht nur um den Komfort für die Finger. Es ermöglicht mir, die beiden Tastaturhälften natürlicher zu positionieren, was meine gesamte Sitzhaltung am Schreibtisch verbessert und verhindert, dass ich wie eine Garnele dasitze.  
+- **Bessere Ergonomie:** Bei einem geteilten Layout geht es nicht nur um den Komfort für die Finger. Es ermöglicht mir, die Tastaturhälften natürlicher zu positionieren, was meine gesamte Sitzhaltung am Schreibtisch verbessert und verhindert, dass ich wie eine Garnele sitze.  
 
 - **Höhere Tippgeschwindigkeit:** Weniger Handbewegungen bedeuten weniger Zeitverlust, was natürlich zu schnellerem Tippen führt, sobald man sich an das Layout gewöhnt hat.  
 
@@ -41,7 +41,7 @@ Der Umstieg auf eine geteilte Tastatur ist nicht nur eine Stilfrage – es ist e
 ## Ians Tastatur
 
 Für meinen ersten Selbstbau bin ich auf Ian Maclartys GitHub-Projekt gestoßen, das [IK Keyboard](https://github.com/ianmaclarty/ik).  
-Das Konzept ist einfach: Baue dir deine eigene geteilte Tastatur aus Teilen, die du problemlos bei AliExpress besorgen kannst.  
+Das Konzept ist einfach: Baue dir deine eigene geteilte Tastatur aus Teilen, die du problemlos bei AliExpress bekommst.  
 
 Die einzigen anspruchsvollen Teile sind die Leiterplatten und die 3D-gedruckten Gehäuse.  
 Glücklicherweise hatte ein Kollege zwei übrig gebliebene Leiterplatten für mich, und die Gehäuse kann ich mit meinem 3D-Drucker selbst drucken.
@@ -104,7 +104,7 @@ Glücklicherweise stellt Ian alles zur Verfügung, was man für den Einstieg ben
 
 ### Anpassungen
 
-Die Vorlieben für Tastaturlayouts sind sehr individuell.  
+Die Vorlieben für das Tastaturlayout sind sehr individuell.  
 Ich habe meine Tastatur so konfiguriert, dass sie nahtlos mit dem `US International – Alt Gr dead keys`-Layout auf meinem PC zusammenarbeitet.
 
 Unter Windows musst du dieses Layout manuell installieren. Eine zuverlässige Implementierung bietet [thomasfaingnaert](https://github.com/thomasfaingnaert/win-us-intl-altgr).

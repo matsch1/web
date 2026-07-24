@@ -10,6 +10,7 @@ date: 2025-01-07
 description: My learnings during flutter refactoring
 draft: false
 slug: flutter-refactoring
+source_lang: en
 tags:
 - flutter
 title: 7 Ways to Refactor Your Flutter Application

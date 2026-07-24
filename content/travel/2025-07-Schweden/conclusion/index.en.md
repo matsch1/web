@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: adb9664d314643cefe28fee186bf0ed1f9cf9df0260b91b021f8ffc83ce8515e
+base_hash: 87c7ecd1dd407d8b2533a318d8f614ecde4a63806b284ddf14a31b8122a95dc8
 cover:
   alt: ''
   caption: ''
@@ -35,7 +35,7 @@ So Denmark was once again a dream come true. Not only because the country is so 
 Wrapping things up with Jan on the Rhine Cycle Route felt like a real return to civilization. 
 The section we rode is also really beautiful, but it doesn’t really have much to do with nature. 
 Maybe it was because I wasn’t alone anymore, but the day trips also felt more like day trips. 
-I wasn’t a traveler anymore, but simply out on a nice day trip, just like usual.
+I wasn’t a traveler anymore, but simply out on a nice day trip, just like any other time.
 
 ### Pictures
 {{< galleries >}}
@@ -81,7 +81,7 @@ All costs combined total 1,242 euros.
 That’s an average of 60 euros per day.
 
 ## Trip Details
-In total, I cycled from Flensburg to Gothenburg via Copenhagen, and then back to Flensburg via the west coast of Denmark, all in 15 days. During this time, I covered **1,390 km** over 14 days of cycling.
+In total, I cycled from Flensburg to Gothenburg via Copenhagen, and then back to Flensburg along Denmark’s west coast, all within 15 days. During 14 days of cycling, I covered **1,390 km**.
 Including one rest day, that works out to a daily average of about 93 km.
 
 If you add the last 3 days on the Rhine Cycle Route, the total is **1,723 km** over 17 days of cycling. With a total of 3 rest days, that averages out to 86 km per day.

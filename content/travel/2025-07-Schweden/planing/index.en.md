@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: fe788dfbc13880c76b03fc43f6bae2f44a8ae6bfa0ff9497e8ee67afbaa54f86
+base_hash: 967e7202e9056a883c4e9f7e07fbabb680ca9039d4b6d75117a02704fedfad99
 cover:
   alt: ''
   caption: ''
@@ -19,7 +19,7 @@ title: Planning and Preparations
 I’m going to spend a month cycling through Denmark, Sweden, and Norway.
 I plan to camp in the wild and take advantage of the many beautiful shelter sites in the
 Scandinavian countries. 
-I want to keep my luggage as light as possible, while still packing everything I need for a
+I want to keep my luggage as light as possible, but still have everything I need for a
 month-long trip.
 
 ## Route
@@ -43,7 +43,7 @@ is said to be particularly beautiful.
 ### Section 4: Oslo to Hirtshals (Denmark)
 This section is still unclear at this point. It also depends on how much time
 I have left. The shorter route would be to take a ferry to Denmark via Larvik. The
-slightly longer route continues along the Norwegian coast and then from
+slightly longer route continues along the Norwegian coast and then goes from
 Christiansand to Hirtshals in Denmark.
 
 ### Section 5: West Coast Cycle Route (Denmark)
@@ -58,7 +58,7 @@ The goal is to travel as light as possible while still having a good time on the
 The following sections list the items I’m
 bringing with me.
 Unfortunately, I didn’t weigh everything in detail, but I can say that the total
-luggage, including bags and 1.8 liters of water, weighs about 14 kg. 
+luggage, including bags and 1.8 L of water, weighs about 14 kg. 
 
 ### Weight
 - Bike: 3.5 kg
@@ -67,7 +67,7 @@ luggage, including bags and 1.8 liters of water, weighs about 14 kg.
 - Right fork bag: 2.5 kg
 - Left fork bag: 2.5 kg
 - Water: 2 kg
-### Camping 2,500 g
+### Camping 2500g
 -  Tent
 -  Groundsheet
 -  Air mattress 
@@ -79,7 +79,7 @@ luggage, including bags and 1.8 liters of water, weighs about 14 kg.
 -  GPS
 -  Cell phone
 -  Headlamp 
--  Rear light
+-  Taillight
 -  Shockz headphones 
 -  In-ear headphones 
 -  Keyboard 
@@ -142,7 +142,7 @@ luggage, including bags and 1.8 liters of water, weighs about 14 kg.
 -  Bouldering pants 
 -  Shorts 
 -  Sweater 
--  T-shirts (2) 
+-  T-shirt (2) 
 -  Underwear (2) 
 -  Socks (2) 
 -  Swimsuit 
@@ -179,7 +179,7 @@ luggage, including bags and 1.8 liters of water, weighs about 14 kg.
 -  Wallet 
 -  ID 
 ## Bike
-My bike is a Cube Nuroad C:62SL. With its carbon frame and fork, as well as electronic shifting, it’s only somewhat suitable for a tour like this. But I’m just hoping the carbon won’t mind carrying so much luggage.
+My bike is a Cube Nuroad C:62SL. With its carbon frame and fork, as well as electronic shifting, it’s only somewhat suitable for a tour like this. But I’m just hoping the carbon frame can handle all this luggage.
 
 For comfort, I’m leaving the triathlon handlebar extensions on and switching to wide tubeless knobby tires.
 ![Bike](img1.jpg)

@@ -1,5 +1,5 @@
 ---
-base_hash: b1b260b16abbfc342db8e32f204e7e2cb0cf54f91e8aeb3c4d860d5bf9c398d0
+base_hash: c6f2e63f8a8599e8bb1a49305ad0578cbb94b6aa4e4e42565381579eb5c22eb1
 cover:
   alt: bikepacking-sweden-denmark
   caption: ''

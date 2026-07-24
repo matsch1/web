@@ -10,6 +10,7 @@ date: 2025-10-11
 description: Build your own personal telegram assistant using n8n
 draft: false
 slug: n8n-ai-assistant
+source_lang: en
 tags:
 - n8n
 - AI

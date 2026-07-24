@@ -9,6 +9,7 @@ cover:
 date: 2025-07-15
 description: im Regen
 draft: false
+source_lang: de
 tags:
 - bikepacking
 title: "\U0001F1E9\U0001F1F0 Tag 15 - Nach Flensburg"

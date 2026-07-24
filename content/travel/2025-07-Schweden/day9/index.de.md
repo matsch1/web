@@ -9,6 +9,7 @@ cover:
 date: 2025-07-09
 description: Bei Kaiserwetter quatschen
 draft: false
+source_lang: de
 tags:
 - bikepacking
 title: "\U0001F1F8\U0001F1EA Tag 9 - Zu zweit Richtung Göteborg"

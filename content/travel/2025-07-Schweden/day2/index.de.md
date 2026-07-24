@@ -9,6 +9,7 @@ cover:
 date: 2025-07-02
 description: Bei über 30 Grad an der Küste entlang
 draft: false
+source_lang: de
 tags:
 - bikepacking
 title: "\U0001F1E9\U0001F1F0 Tag 2 - Vorm Unwetter schützen"

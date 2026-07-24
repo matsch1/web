@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 548c91bd7d777885f76faf770af9d5320b7fc8616252095c7ba1e80e649fafa3
+base_hash: 4252314707314461c48d7b7f94726a78110eb90d7f17fd1dad28c8b874683615
 cover:
   alt: obsidian-syncthing
   caption: ''
@@ -19,10 +19,10 @@ title: 'Mein Obsidian- und Syncthing-Setup: Eine selbst gehostete Cloud für Not
   Backups und mehr'
 ---
 
-Es gibt zwei Arten von Notizern: diejenigen, die ihre wertvollen Gedanken der Cloud anvertrauen (Hallo, Notion-/Google Drive-/OneNote-Nutzer), und diejenigen, die in den Abgrund starren und sich fragen: *„Was wäre, wenn ich mir dafür meine eigene Infrastruktur aufbauen würde?“*  
+Es gibt zwei Arten von Notizern: diejenigen, die ihre wertvollen Gedanken der Cloud anvertrauen (Hallo, Notion-/Google Drive-/OneNote-Nutzer), und diejenigen, die in den Abgrund starren und sich fragen: *„Was wäre, wenn ich dafür meine eigene Infrastruktur aufbauen würde?“*  
 
 Ich gehöre zur zweiten Gruppe.  
-Hier erfährst du, wie ich aus **Syncthing + Obsidian + einem Webserver** ein Monster gemacht habe, das Notizen synchronisiert, fleißig Backups erstellt und die Cloud ersetzt.  
+Hier erfährst du, wie ich aus **Syncthing + Obsidian + einem Webserver** ein Monster geschaffen habe, das Notizen synchronisiert, fleißig Backups erstellt und die Cloud ersetzt.  
 
 ---
 
@@ -62,7 +62,7 @@ Genau: Ich kann ein Plugin auf meinem Linux-Rechner installieren, und Sekunden s
 
 ## Zusätzliche Funktionen  
 
-Hier wird es erst richtig spannend. Ich habe mich nicht mit „nur dem Synchronisieren von Notizen“ begnügt.  
+Jetzt wird es erst richtig spannend. Ich habe mich nicht mit „nur dem Synchronisieren von Notizen“ begnügt.  
 
 ### GitHub-Backup  
 
@@ -89,7 +89,7 @@ Hier kommt der Clou: Sobald Syncthing auf einem VPS läuft, hast du im Grunde de
 - **DCIM-Backup für das Smartphone**: Mein Android-Gerät speichert neue Fotos direkt auf dem Server, selbst wenn ich im Ausland bin. Sie sind sofort sicher, ohne dass ich jemals „Google Fotos“ anfassen muss. 
   Achte auf den Speicherplatz deines Servers. Bilder benötigen viel mehr Platz als Notizen.
 
-Ich stelle es mir gerne so vor: **Syncthing ist mein Cloud-Betriebssystem, der VPS ist das Rechenzentrum und meine Geräte sind einfach nur Clients.**  
+Ich stelle mir das gerne so vor: **Syncthing ist mein Cloud-Betriebssystem, der VPS ist das Rechenzentrum und meine Geräte sind lediglich Clients.**  
 
 ---
 

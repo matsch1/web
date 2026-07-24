@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: d35ecf6ce827fd49393b3c8eed881b541ed509c551255ccadac5088e0d9a3191
+base_hash: 6438e98e302ceef962798cc4d99f81e5037e56d93f177147314c6b1fa565b679
 cover:
   alt: ''
   caption: ''
@@ -26,7 +26,7 @@ As soon as you move away from the coast, the landscape immediately feels much mo
 
 That turned out to be a good decision, though, since I ran into other bike travelers again at the shelter site. Dinner among like-minded people is just more fun that way. 
 
-I’ve decided to take the ferry back to Denmark the day after tomorrow. For me, the shelter concept just works better than crossing the Swedish wilderness alone. More on that in the next few days. 
+I’ve decided to take the ferry back to Denmark the day after tomorrow. For me, the shelter concept just works better than crossing the Swedish wilderness on my own. More on that in the next few days. 
 
 ### Pictures
 {{< galleries >}}

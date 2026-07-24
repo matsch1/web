@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: ead31e0053daeaed284740a3fe5a45ae95fd8f8f6761f2d02cf42318fb13a2e3
+base_hash: ade78b265c3f55fe987b4f39d7471431ed390534798282b58b7ab04389d481b2
 cover:
   alt: flutter-refactoring
   caption: ''
@@ -22,9 +22,9 @@ In diesem Artikel stellen wir Ihnen sieben praktische Methoden zum Refactoring I
 
 ## 1. Verwenden Sie Parameter in Widgets, um Konsistenz zu gewährleisten
 
-Beim Erstellen von Widgets kann die Festcodierung von Werten wie „padding“ oder „fontSize“ zu Inkonsistenzen führen. Übergeben Sie diese Werte stattdessen als Parameter, um Widgets wiederverwendbar und konsistent zu machen.
+Beim Erstellen von Widgets kann das Festschreiben von Werten wie „padding“ oder „fontSize“ zu Inkonsistenzen führen. Übergeben Sie diese Werte stattdessen als Parameter, um Widgets wiederverwendbar und konsistent zu machen.
 
-### Beispiel: Verwenden Sie Parameter anstelle von festcodierten Werten
+### Beispiel: Verwenden Sie Parameter anstelle von festgeschriebenen Werten
 ```dart
 class GreetingWidget extends StatelessWidget {
   final String name;
@@ -64,7 +64,7 @@ Durch die Definition von `paddingVal` und `fontSize` als interne Parameter läss
 
 Der nächste Schritt nach der Erstellung interner Parameter zur Gewährleistung der Konsistenz ist die Erstellung globaler Parameter.
 Alle Werte, die in Ihrer gesamten App konsistent bleiben sollen, wie Farben, Skalierungsfaktoren oder Schaltflächengrößen, speichern Sie in einer globalen Datei.
-Diese Datei erfordert keine spezielle Formatierung. Sie können sie ganz einfach wie folgt erstellen.
+Diese Datei benötigt keine spezielle Formatierung. Sie können sie ganz einfach wie folgt erstellen.
 
 ### Beispiel: Globale Parameterdatei
 ```dart

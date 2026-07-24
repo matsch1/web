@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: e62a77f18884f3ecea846e86abde739c8eba2065ed1616d3ec0142a717bbb0dd
+base_hash: 70c495633fec3dd1f1c2c0f5bf08c104446725d20916ac79c5b5381088f998e3
 cover:
   alt: hugo-autotranslator
   caption: ''
@@ -27,7 +27,7 @@ Die Idee ist also, diesen Übersetzungsprozess zu automatisieren. Daher sollte
 automatisch erkannt werden, ob der Beitrag auf Deutsch oder Englisch verfasst ist, und er
 in die jeweils andere Sprache übersetzt werden.
 
-Ich möchte Github Actions nutzen, um den Beitrag vor dem Deployment zu übersetzen.
+Ich möchte Github Actions nutzen, um den Beitrag vor der Veröffentlichung zu übersetzen.
 Dafür möchte ich einen kostenlosen Übersetzungsdienst verwenden.
 
 ## Die Übersetzungsmöglichkeiten
@@ -165,8 +165,8 @@ Das Übersetzungsskript besteht aus den folgenden Hauptteilen:
 
 - Markdown-Dateien suchen
 - Prüfen, ob sich Dateien geändert haben (Hash-Prüfung)
-- Sprache der Markdown-Datei identifizieren
-- Code-Blöcke, Shortcodes, URLs usw. durch Platzhalter ersetzen (Maskierung)
+- Sprache der Markdown-Datei ermitteln
+- Codeblöcke, Shortcodes, URLs usw. durch Platzhalter ersetzen (Maskierung)
 - Übersetzung
 - Platzhalter auflösen
 - Übersetzten Text in neuen Dateien speichern

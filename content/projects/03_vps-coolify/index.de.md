@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 1ea5e2c47417bcbac4c3f300d7dcbb47b4b869e0835026579146b33f7b618085
+base_hash: a359aae0f9cef2dc7d82b764fb60ed00c3501e7421087c7f74e88224df779920
 cover:
   alt: coolify-vps-setup
   caption: ''
@@ -29,7 +29,7 @@ Selbsthosting hat sich zu einer hervorragenden Möglichkeit entwickelt, praktisc
 
 Zu den typischen Workloads gehören leichtgewichtige Dienste wie PocketBase für den Backend-Speicher, Unleash für Feature-Flags und Automatisierungstools wie n8n. Außerdem plante ich, den Server im Laufe der Zeit für die Dateisynchronisation über Syncthing und andere Experimente zu nutzen.
 
-Um das Deployment und das App-Lebenszyklusmanagement zu optimieren, entschied ich mich für Coolify, eine Open-Source-PaaS, die die Container-Orchestrierung in einem benutzerfreundlichen Dashboard abstrahiert. Dieser Beitrag dokumentiert die anfängliche VPS-Einrichtung, grundlegende Sicherheitsmaßnahmen, die Tailscale-Integration und das Deployment der ersten Anwendung.
+Um das Deployment und das App-Lebenszyklusmanagement zu optimieren, entschied ich mich für Coolify, eine Open-Source-PaaS, die die Container-Orchestrierung in ein benutzerfreundliches Dashboard abstrahiert. Dieser Beitrag dokumentiert die anfängliche VPS-Einrichtung, grundlegende Sicherheitsmaßnahmen, die Tailscale-Integration und das Deployment der ersten Anwendung.
 
 ## Server-Hosting
 Die Wahl des richtigen Hosting-Anbieters hängt von Budget, Standortnähe, Bandbreite und Support ab. Jeder Anbieter, der eine moderne Linux-Distribution und mindestens 2 GB RAM anbietet, kann Coolify problemlos ausführen. Beachten Sie nach der Bereitstellung der Instanz Folgendes:
@@ -42,7 +42,7 @@ Die Wahl des richtigen Hosting-Anbieters hängt von Budget, Standortnähe, Bandb
 {{< figure src="./netcup_vps.png" width="700" alt="" class="right" >}}
 
 In meinem Fall habe ich mich für einen VPS entschieden, der von [netcup](https://www.netcup.com/de/server/vps) gehostet wird.
-Ich habe das Projekt mit der kleinsten VPS-Option `VPS 250 G11s` begonnen, später jedoch auf die zweite Option `VPS 500 G11s` aufgerüstet.
+Ich habe das Projekt mit der kleinsten VPS-Option `VPS 250 G11s` begonnen, später jedoch auf die zweite Option `VPS 500 G11s` umgestellt.
 Das kostet mich etwa 5 € pro Monat (einschließlich eigener Domain) und bietet genügend Ressourcen für alles, was ich brauche.
 
 ## Serverzugriff
@@ -73,10 +73,10 @@ ssh-keygen -t ed25519 -b 4096 -C "your_email@example.com"
 
 Dabei wird nach dem Namen des Schlüssels, dem Speicherort und der Passphrase gefragt.
 Der Schlüssel sollte unter `/home/$USER/.ssh/<ssh-key>` gespeichert werden. Das Feld für die Passphrase kann leer bleiben.
-Dadurch werden zwei Dateien erstellt: `<ssh-key>` und `<ssh-key.pub>`.
+Dadurch werden zwei Dateien erstellt: <ssh-key> und <ssh-key.pub>.
 
-Um SSH-Zugriff auf den VPS zu erhalten, muss der Inhalt von `<ssh-key.pub>` nach `/home/<server-user>/.ssh/autorized_keys` kopiert werden. Falls die Datei nicht existiert, muss sie angelegt werden.
-Sie können dazu `nano` oder `vi` als Befehlszeilen-Texteditor verwenden.
+Um SSH-Zugriff auf den VPS zu erhalten, muss der Inhalt von <ssh-key.pub> nach `/home/<server-user>/.ssh/autorized_keys` kopiert werden. Falls die Datei nicht existiert, muss sie angelegt werden.
+Sie können dazu `nano` oder `vi` als Texteditor in der Befehlszeile verwenden.
 
 Achten Sie auf die Benutzerrechte dieser Datei.
 ```
@@ -173,14 +173,14 @@ Bevor Sie die Firewall wieder aktivieren, versuchen Sie, sich mit folgendem Befe
 ```
 ssh <server-user>@<tailscale-ip>
 ```
-Wenn diese Anmeldung problemlos funktioniert, kann die Firewall neu gestartet werden.
+Wenn diese Anmeldung einwandfrei funktioniert, kann die Firewall neu gestartet werden.
 ```
 sudo ufw reload
 sudo service ssh restart
 ```
 
 Damit verfügen Sie nun über einen VPS, der ziemlich sicher ist.
-Die Anmeldung funktioniert nur von einem Client im Tailnet mit dem `<server-key>` und dem `<server-user>`.
+Die Anmeldung funktioniert nur von einem Client im Tailnet mit dem <server-key> und dem <server-user>.
 
 ## Coolify installieren
 Der nächste Schritt ist die Installation unserer Plattform [Coolify](https://coolify.io/) mithilfe des offiziellen Skripts:

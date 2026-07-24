@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 3efe82545a731376e80fb6c245654f626505968382db384e67daa13487e894c6
+base_hash: cf2a1eff0c3b5b5dfb9f64fb31c837e15f3ea1946e7d3c36d2a05edf718e5379
 cover:
   alt: bikepacking-test-vogese
   caption: ''
@@ -30,7 +30,7 @@ Over 30 degrees and sunny (very hot)
 {{< open-street-map map_title="Flensburg Bahnhof" geo_link="geo:48.1395,6.8174?z=12" >}}
 
 ## Impressions
-A nice ride through the French countryside to test the setup for the upcoming trip to Sweden. 
+It was nice to ride through the French countryside to test the setup for my upcoming trip to Sweden. 
 Climbing 1,000 hm in extreme temperatures over 30 degrees, carrying about 14 kg of gear.  
 
 The landscape is very idyllic. There’s hardly anyone around. That’s good for

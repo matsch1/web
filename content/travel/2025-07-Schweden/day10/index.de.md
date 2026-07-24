@@ -9,6 +9,7 @@ cover:
 date: 2025-07-10
 description: Gefühlt den ganzen Tag auf dem Schiff
 draft: false
+source_lang: de
 tags:
 - bikepacking
 title: "\U0001F1E9\U0001F1F0 Tag 10 - Göteborg erkunden und Fähre fahren"

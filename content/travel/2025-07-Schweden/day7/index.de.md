@@ -9,6 +9,7 @@ cover:
 date: 2025-07-07
 description: Heftige Regenschauer am Vormittag und Strandspaziergang am Nachmittag
 draft: false
+source_lang: de
 tags:
 - bikepacking
 title: "\U0001F1F8\U0001F1EA Tag 7 - Ruhetag"

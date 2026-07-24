@@ -9,6 +9,7 @@ cover:
 date: 2025-07-18
 description: In 3 Tagen von Köln nach Karlsruhe
 draft: false
+source_lang: de
 tags:
 - bikepacking
 title: "\U0001F1E9\U0001F1EA Tag 18 - 20 - Zurück nach Hause"
