@@ -13,10 +13,13 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn("https://blog.matschcode.de/de/sitemap.xml", sitemap)
         self.assertIn("https://blog.matschcode.de/en/sitemap.xml", sitemap)
 
-    def test_root_redirect_is_german_and_not_indexable(self):
+    def test_root_redirect_is_language_aware_and_not_indexable(self):
         workflow = (ROOT / ".github" / "workflows" / "publish.yml").read_text()
         root_artifacts = (ROOT / "scripts" / "prepare_root_artifacts.py").read_text()
-        self.assertIn("url=de/", root_artifacts)
+        self.assertIn("navigator.languages", root_artifacts)
+        self.assertIn('startsWith(\\\"de\\\")', root_artifacts)
+        self.assertIn('\\\"de/\\\":\\\"en/\\\"', root_artifacts)
+        self.assertNotIn("http-equiv=\\\"refresh\\\"", root_artifacts)
         self.assertIn("noindex,follow", root_artifacts)
         self.assertIn("https://blog.matschcode.de/de/", root_artifacts)
         self.assertIn("python scripts/prepare_root_artifacts.py public", workflow)

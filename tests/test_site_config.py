@@ -29,6 +29,16 @@ class SiteConfigurationTests(unittest.TestCase):
         self.assertNotIn("workflow_run", workflow)
         self.assertIn("contents: write", workflow)
 
+    def test_root_redirect_uses_the_preferred_browser_language(self):
+        from scripts.prepare_root_artifacts import ROOT_REDIRECT
+
+        self.assertIn("navigator.languages", ROOT_REDIRECT)
+        self.assertIn('startsWith("de")', ROOT_REDIRECT)
+        self.assertIn("window.location.replace", ROOT_REDIRECT)
+        self.assertNotIn('http-equiv="refresh"', ROOT_REDIRECT)
+        self.assertIn('href="de/"', ROOT_REDIRECT)
+        self.assertIn('href="en/"', ROOT_REDIRECT)
+
     def test_open_street_map_shortcode_accepts_coordinates_without_zoom(self):
         shortcode = (ROOT / "layouts" / "shortcodes" / "open-street-map.html").read_text()
         self.assertIn("if gt (len $lonParts) 1", shortcode)
