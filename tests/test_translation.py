@@ -38,6 +38,19 @@ class TranslationTests(unittest.TestCase):
                 missing_or_invalid.append(str(path.relative_to(ROOT)))
         self.assertEqual(missing_or_invalid, [])
 
+    def test_every_canonical_content_file_has_de_and_en_variants(self):
+        canonical = [
+            path
+            for path in (ROOT / "content").rglob("*.md")
+            if not path.name.endswith((".de.md", ".en.md"))
+        ]
+        missing_variants = [
+            str(path.relative_to(ROOT))
+            for path in canonical
+            if any(not path.with_name(f"{path.stem}.{language}.md").is_file() for language in ("de", "en"))
+        ]
+        self.assertEqual(missing_variants, [])
+
     def test_translation_failure_does_not_write_partial_language_files(self):
         module = load_module()
         with tempfile.TemporaryDirectory() as tmp:
@@ -54,6 +67,27 @@ class TranslationTests(unittest.TestCase):
                 module.translate_tree(content, FailingClient())
             self.assertFalse((bundle / "index.de.md").exists())
             self.assertFalse((bundle / "index.en.md").exists())
+
+    def test_translation_lock_generates_missing_language_files(self):
+        module = load_module()
+        with tempfile.TemporaryDirectory() as tmp:
+            content = Path(tmp) / "content"
+            bundle = content / "home"
+            bundle.mkdir(parents=True)
+            (bundle / "index.md").write_text(
+                "---\ntitle: Source\nsource_lang: en\ntranslation_lock: true\n---\n\nSource heading",
+                encoding="utf-8",
+            )
+
+            class Client:
+                def translate_text(self, text, **kwargs):
+                    return type("Result", (), {"text": f"DE: {text}"})()
+
+            self.assertEqual(module.translate_tree(content, Client()), 2)
+            self.assertTrue((bundle / "index.en.md").exists())
+            translated = (bundle / "index.de.md").read_text(encoding="utf-8")
+            self.assertIn("title: 'DE: Source'", translated)
+            self.assertIn("DE: Source heading", translated)
 
     def test_translation_lock_preserves_manually_localized_files(self):
         module = load_module()
