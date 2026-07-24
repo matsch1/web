@@ -11,6 +11,7 @@ description: Explanation of how I use Syncthing as a free Obsidian Sync
 draft: false
 img: img1.webp
 slug: free-obsidian-sync-solution
+source_lang: en
 tags:
 - obsidian
 - syncthing

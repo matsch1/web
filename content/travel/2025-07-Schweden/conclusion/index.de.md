@@ -9,6 +9,7 @@ cover:
 date: 2025-07-25
 description: Fazit Tour und Kostenaufstellung
 draft: false
+source_lang: de
 tags:
 - bikepacking
 title: Fazit

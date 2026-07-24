@@ -1,5 +1,5 @@
 ---
-base_hash: f94dcb4652f2897bd40248e477e53c73b0f66ca88b39bffc3c0c47f35b7d54d8
+base_hash: 2e234f9e7494f05428fe7372491d88b021335bfc8a50665b051ddd1b6acc04b3
 cover:
   alt: obsidian-workflow
   caption: ''

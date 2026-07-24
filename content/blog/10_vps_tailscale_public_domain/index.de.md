@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 32b9b516df286b672a8899672dc744c7cb27f85b75a8f44a7bb8f258baf63e77
+base_hash: 04465988b9e212f6715058e79b7f4acb9e9293323b5896fdd6b3b6c5217c56cd
 cover:
   alt: Traffic flow from VPS to Tailscale-protected K3s cluster
   caption: Public traffic routed through a VPS into a private K3s homelab via Tailscale
@@ -62,7 +62,7 @@ Zu diesem Zeitpunkt waren der VPS und mein Homelab bereits Teil desselben Tailne
 Damit dies durchgängig funktionierte, waren zwei Anpassungen erforderlich:
 
 #### 1. Reverse-Proxy-Routing auf dem VPS
-[Traefik](https://traefik.io/traefik) (verwaltet von [Coolify](https://coolify.io/)) musste Anfragen für eine bestimmte Domain über [Tailscale](https://tailscale.com/) an einen Dienst weiterleiten, der in meinem privaten K3S-Cluster läuft.
+[Traefik](https://traefik.io/traefik) (verwaltet von [Coolify](https://coolify.io/)) musste Anfragen für eine bestimmte Domain über [Tailscale](https://tailscale.com/) an einen Dienst weiterleiten, der in meinem privaten K3s-Cluster läuft.
 Dazu muss die Datei `/data/coolify/proxy/dynamic/coolify.yaml` geändert werden:
 ``` yaml
 # add routes
@@ -90,7 +90,7 @@ Dazu muss die Datei `/data/coolify/proxy/dynamic/coolify.yaml` geändert werden:
 ```
 
 #### 2. Bereitstellung des Dienstes innerhalb von Kubernetes
-Anstelle eines Standard-Ingress für Nextcloud bin ich auf einen LoadBalancer-Dienst umgestiegen. Dadurch konnte Traefik auf dem VPS den Datenverkehr über die Tailscale-IP direkt an den Nextcloud-Pod weiterleiten.
+Anstatt einen Standard-Ingress für Nextcloud zu verwenden, bin ich auf einen LoadBalancer-Dienst umgestiegen. Dadurch konnte Traefik auf dem VPS den Datenverkehr über die Tailscale-IP direkt an den Nextcloud-Pod weiterleiten.
 
 ```yaml
 extraManifests:
@@ -121,7 +121,7 @@ Das Smartphone kann über das Internet auf Nextcloud unter meiner privaten Domai
 Von innerhalb des Tailnets ist „paperless-ngx“ weiterhin verfügbar.
 
 {{< alert type="info" title="" >}}
-Keine Portweiterleitung – kein DynDNS – keine öffentliche Freigabe meiner privaten IP-Adresse.
+Keine Portweiterleitung – kein DynDNS – keine öffentliche Offenlegung meiner privaten IP-Adresse.
 {{< /alert >}}
 
 ## Zusammenfassung
@@ -130,5 +130,5 @@ Durch die Nutzung eines VPS als öffentlichen Eingangs-Knotenpunkt und die Kombi
 **Diese Konfiguration bietet:**
 - Eine stabile öffentliche IP-Adresse
 - Sichere private Vernetzung über Tailscale
-- Volle Kontrolle darüber, welche Dienste nach außen zugänglich sind
+- Vollständige Kontrolle darüber, welche Dienste nach außen zugänglich sind
 - Keine eingehenden Verbindungen zu meinem Heimnetzwerk

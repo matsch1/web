@@ -9,6 +9,7 @@ cover:
 date: 2025-07-06
 description: Bei Regenschauern und Sonenschein ins Hostel
 draft: false
+source_lang: de
 tags:
 - bikepacking
 title: "\U0001F1F8\U0001F1EA Tag 6 - Aprilwetter"

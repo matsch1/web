@@ -9,6 +9,7 @@ description: My awesome setup using obsidian with server centric Syncthing on mu
   devices
 draft: true
 slug: obsidian-workflow
+source_lang: en
 tags:
 - obsidian
 title: My awesome Obsidian workflow

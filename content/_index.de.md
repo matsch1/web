@@ -1,5 +1,5 @@
 ---
-base_hash: f2276a662bd2078da6f8f78e68ef291599b6daecb8722bbcf9168e2f7b5a242d
+base_hash: 05e4e189da3ad038cdbd163be35182b8dbf81851f22ae5a0e93c76085452594b
 description: Sammlung verschiedener Dinge
 draft: false
 image: home-logo-600.webp
@@ -14,7 +14,7 @@ Vielen Dank, dass du dir die Zeit genommen hast, meine kleine Ecke im Internet z
 
 Diese Seite dient in erster Linie als Sammlung meiner persönlichen Interessen.
 
-Das erwartet euch hier:
+Das erwartet dich hier:
 
 **🔧 Projekte:** Eine ständig wachsende Liste von Lösungen, Experimenten und Eigenentwicklungen, die meinen bisherigen technischen Werdegang geprägt haben.
 

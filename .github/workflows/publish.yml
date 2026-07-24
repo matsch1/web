@@ -43,7 +43,7 @@ jobs:
           hugo-version: '0.146.0'
           extended: true
       - name: Build
-        run: hugo --gc --minify
+        run: hugo --gc --minify --environment production
       - name: Assemble root-level multilingual artifacts
         run: python scripts/prepare_root_artifacts.py public
       - name: Verify generated SEO artifacts

@@ -11,6 +11,7 @@ description: Route public web traffic through a VPS into a Tailscale-secured K3s
   running in a private homelab.
 draft: false
 slug: expose-k3s-services-via-vps
+source_lang: en
 tags:
 - kubernetes
 - k3s

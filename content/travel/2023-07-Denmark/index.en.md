@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 17fbf1a8b16e56b6082c11b7c87b23e4b7a274c7ea42c9eaf5a83520ea7f73cf
+base_hash: 4c7c0ee1d7204e27b8dd8da3b837957520c1d807437c60c6e58a3cf1978f4184
 cover:
   alt: bikepacking-denmark
   caption: ''
@@ -26,7 +26,7 @@ Elevation gain: 4,110 hm
 
 ## Impressions
 We cycled around Jutland in two weeks, spending most nights in a tent or in shelters at the countless natural campsites. Along the way, we saw a lot of beautiful nature and met an incredible number of friendly people. The weather was rough at times, but it was often sunny and beautiful, so we experienced everything from swimming in the sea to thunderstorms in the tent.
-It was simply an amazing experience. I definitely have to come back and do something similar again. I can’t recommend it highly enough.
+It was simply an amazing experience. I absolutely have to come back and do something similar again. I can’t recommend it highly enough.
 
 
 {{< galleries >}}

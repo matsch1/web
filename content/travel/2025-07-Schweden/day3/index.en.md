@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 327e367cb06ca3264a58349b23b3e708ce6042327596bf870b2b628104f37520
+base_hash: 485961dd151b507b2b122ba57d21dd7a8b4a2ccc8867e602f81d888407f5c066
 cover:
   alt: ''
   caption: ''
@@ -22,11 +22,11 @@ An hour later than yesterday, things were going pretty well again. It was extrem
 
 Shortly after I crossed the huge, old Storstrømsbroen bridge, I ran into Joana and Christian. While chatting, we realized we were heading for almost the same destination for the day, so we decided to ride the remaining 70 km together. 
 
-Today’s route took us over many hills through the countryside. Since the trail wound its way through the terrain, the wind felt like it was coming from all directions. To make up for it, we treated ourselves to a delicious lunch during our break. 
+Today’s route took us over many hills through the countryside. Since the route wound its way through the terrain, the wind felt like it was coming from all directions. To make up for it, we treated ourselves to a delicious lunch during our break. 
 
 In the afternoon, a hissing sound from my rear tire brought me back to reality. There was a large hole visible in the tire. However, with Tubeless Salami, I was able to patch it up very quickly, and we were able to continue the ride. 
 
-Shortly before Køge, our paths parted ways again. The two of them found a place to stay, and I looked for a spot to pitch my tent.
+Shortly before Køge, our paths parted ways again. The two of them found a place to stay, and I looked for a spot to set up my shelter.
 
 ### Pictures
 {{< galleries >}}
@@ -50,7 +50,7 @@ Shortly before Køge, our paths parted ways again. The two of them found a place
 
 {{< open-street-map map_title="Schlafplatz Fyn" geo_link=geo:55.47710,12.05314?z=16" >}}
 
-## Trip details
+## Trip Details
 Daily distance: 120 km
 
 **Total distance: 331 km**

@@ -1,5 +1,5 @@
 ---
-base_hash: 98ae4c82b9c573646d8213c1f91574828c7abc5429b65474d8425709d8c691f8
+base_hash: 13bd355bdc23b77fe6f6cb56dc3e247dd5b10acb188e2422a4b95fbb7258635b
 date: 2025-05-04
 description: ''
 draft: false
@@ -7,7 +7,7 @@ title: Blog
 ---
 
 Willkommen auf meinem Blog!
-Hier teile ich alles, was mich zum Lachen, Weinen oder Nachdenken gebracht hat – Lektionen, die ich auf die harte Tour gelernt habe, damit ihr das nicht auch tun müsst.
+Hier teile ich alles, was mich zum Lachen, Weinen oder Nachdenken gebracht hat – Lektionen, die ich auf die harte Tour gelernt habe, damit ihr das nicht auch noch durchmachen müsst.
 
 
 Diese Seite und die Beiträge wurden ursprünglich auf Englisch verfasst. 

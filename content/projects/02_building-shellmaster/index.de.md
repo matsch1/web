@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 76dce83318a0e92be38951c1112587f3f5e606596a523e927907b45a8ffa4eef
+base_hash: 6a73eb43bd818d03f39d2a3a4544b8856f7e4b60ef931f765b60d675808aa244
 cover:
   alt: shellmaster
   caption: ''
@@ -23,7 +23,7 @@ Die App wurde erneut aus dem Play Store entfernt, da ich das Projekt nicht mehr 
 {{< /alert >}}
 
 Das Erlernen von Linux-Shell-Befehlen kann einschüchternd sein, aber was wäre, wenn es Spaß machen könnte? Das ist die Idee hinter **Shellmaster**, einer Quiz-App, die Nutzern hilft, Shell- und Bash-Befehle durch spannende Quizfragen zu meistern. 
-Schaut euch die App im Google Play Store an: [Shellmaster - Apps on Google Play](https://play.google.com/store/apps/details?id=com.matschcode.shellmaster)
+Schaut sie euch im Google Play Store an: [Shellmaster - Apps on Google Play](https://play.google.com/store/apps/details?id=com.matschcode.shellmaster)
 Bei der Entwicklung von Shellmaster stieß ich auf einige interessante technische Herausforderungen und lernte viel über **Flutter**, **PocketBase**, **Unleash-Feature-Flags** und die **Bereitstellung über die Google Play Console**. In diesem Artikel teile ich einige wichtige Erkenntnisse aus dem Entwicklungsprozess.
 ## Inhaltsverzeichnis
 
@@ -43,7 +43,7 @@ Bei der Entwicklung von Shellmaster stieß ich auf einige interessante technisch
 Shellmaster wurde entwickelt, um das Erlernen von Linux-Befehlen unterhaltsam und interaktiv zu gestalten. Hier sind einige der wichtigsten Funktionen:
 
 - **Verschiedene Quiz-Modi**: Teste dein Wissen in verschiedenen Spielmodi, darunter zeitlich begrenzte Quizze und Übungsrunden.
-- **Schwierigkeitsstufen & Kategorien**: Die Fragen sind in die Stufen „leicht“, „mittel“ und „schwer“ unterteilt und decken wichtige Shell-Befehle, Skripting und Systemadministration ab.
+- **Schwierigkeitsstufen und Kategorien**: Die Fragen sind in die Stufen „leicht“, „mittel“ und „schwer“ unterteilt und decken wichtige Shell-Befehle, Skripting und Systemadministration ab.
 - **Fortschrittsverfolgung**: Behalte deine Leistung im Blick und verbessere dich im Laufe der Zeit.
 - **Individuelle Herausforderungen**: Nutzer können sich eigene Herausforderungen stellen und sich mit Freunden messen.
 - **Offline-Unterstützung**: Spiele Quizze, ohne dass eine Internetverbindung erforderlich ist.
@@ -65,11 +65,11 @@ Ich habe mich für **Flutter** entschieden, weil es einen **schnellen Entwicklun
 
 ---
 
-### PocketBase als schlankes Backend
+### PocketBase als leichtgewichtiges Backend
 
-Für die Verwaltung von Quizdaten, Benutzerfortschritten und der Authentifizierung habe ich mich für **PocketBase** entschieden, ein in Go geschriebenes Open-Source-Backend. Es bietet eine **SQLite-Datenbank, Echtzeit-Abonnements und eine API mit minimalem Einrichtungsaufwand**. Hier sind die Gründe, warum es sich gut für Shellmaster geeignet hat:
+Für die Verwaltung von Quizdaten, Benutzerfortschritten und der Authentifizierung habe ich mich für **PocketBase** entschieden, ein in Go geschriebenes Open-Source-Backend. Es bietet eine **SQLite-Datenbank, Echtzeit-Abonnements und eine API mit minimalem Einrichtungsaufwand**. Hier sind die Gründe, warum es sich gut für Shellmaster bewährt hat:
 
-- **Selbstgehostete Kontrolle**: Da ich PocketBase auf meinem VPS betreibe, habe ich die volle Kontrolle über die Daten.
+- **Selbstgehostete Kontrolle**: Durch den Betrieb von PocketBase auf meinem VPS habe ich die volle Kontrolle über meine Daten.
 - **Einfache Integration**: PocketBase stellt eine REST-API bereit, die das `http`-Paket von Flutter problemlos nutzen kann.
 - **Benutzerauthentifizierung**: Dank der integrierten Authentifizierung konnte ich den Fortschritt der Benutzer geräteübergreifend verwalten. Ich werde in Zukunft die Möglichkeit zur Benutzeranmeldung hinzufügen.
 
@@ -119,7 +119,7 @@ Die Veröffentlichung von Shellmaster im **Google Play Store** umfasste mehrere 
 
 ## Fazit
 
-Die Entwicklung von Shellmaster war eine spannende Reise, bei der **die UI-Fähigkeiten von Flutter, das schlanke Backend von PocketBase, die Feature-Flags von Unleash und die Bereitstellung über die Google Play Console** kombiniert wurden. Das Ergebnis ist eine unterhaltsame und lehrreiche Quiz-App, die Nutzern hilft, ihre Linux-Shell-Kenntnisse interaktiv zu verbessern.
+Die Entwicklung von Shellmaster war eine spannende Reise, bei der **die UI-Fähigkeiten von Flutter, das leichtgewichtige Backend von PocketBase, die Feature-Flags von Unleash und die Bereitstellung über die Google Play Console** kombiniert wurden. Das Ergebnis ist eine unterhaltsame und lehrreiche Quiz-App, die Nutzern hilft, ihre Linux-Shell-Kenntnisse interaktiv zu verbessern.
 
 Wenn ihr interessiert seid, schaut euch **Shellmaster** auf der [Shellmaster - Apps on Google Play](https://play.google.com/store/apps/details?id=com.matschcode.shellmaster) an und teilt mir eure Meinung mit!
 

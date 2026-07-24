@@ -9,6 +9,7 @@ cover:
 date: 2025-07-05
 description: Anstrengende Ankunft in Schweden mit vielen Regenschauern
 draft: false
+source_lang: de
 tags:
 - bikepacking
 title: "\U0001F1F8\U0001F1EA Tag 5 - Auf nach Schweden"

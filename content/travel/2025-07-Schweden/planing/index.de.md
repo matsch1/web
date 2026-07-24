@@ -9,6 +9,7 @@ cover:
 date: 2025-06-24
 description: Grobe Routenplanung und Gepäck
 draft: false
+source_lang: de
 tags:
 - bikepacking
 title: Planung und Vorbereitungen

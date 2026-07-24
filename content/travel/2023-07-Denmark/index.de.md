@@ -9,6 +9,7 @@ cover:
 date: 2023-07-01
 description: Mit Jonas einmal im Uhrzeigersinn um Jütland
 draft: false
+source_lang: de
 tags:
 - bikepacking
 title: Bikepacking Dänemark - Jütland Runde

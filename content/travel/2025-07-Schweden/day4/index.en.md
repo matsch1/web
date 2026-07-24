@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: a4ea73b861cfc761a1c3bfd029bbc0554e88ff94b4e31bde7ed867191a842e62
+base_hash: 905d319a224468859fb4bea6e2b9e07ae946bf9f9680b6cecc901d5546f3c076
 cover:
   alt: ''
   caption: ''
@@ -25,7 +25,7 @@ I rolled leisurely through Copenhagen, checked out a few sights, and had a delic
 Finding a place to sleep was a bit chaotic today. My original plan was to stay with someone from the WarmShowers community. Unfortunately, both of my requests were turned down. At the same time, a Reddit user invited me to stay at their home in Copenhagen. That didn’t really work out, though, since I wanted to get as close as possible to the ferry to Sweden today. For that reason, I ended up back at a shelter near Nivå. 
 Strangely enough, all shelter spots in this part of Denmark either cost money or require a reservation. 
 
-Well, sheltered from the rain, I’m now winding down the evening in my shelter. Unfortunately, the forecast doesn’t look any better for the next few days. But I have to find a place to stay for tomorrow anyway so I can charge my electronic devices and do my laundry. We’ll see how the next few days go. 
+Well, sheltered from the rain, I’m now winding down the evening in my shelter. Unfortunately, the forecast for the next few days doesn’t look any better. But I have to find a place to stay for tomorrow anyway so I can charge my electronic devices and do my laundry. We’ll see how the next few days go. 
 ### Pictures
 {{< galleries >}}
 {{< gallery src="img1.jpg" title="kurz vor Kopenhagen" >}}

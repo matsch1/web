@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 6a361af5ef01e1859d1dbd07579a9e967f44bbd76b93771f67b0b9b420f2ac85
+base_hash: 6fffc7cc807c8a02c8d43713f35efd0f88472bc53d6b3eb3304ac891fc8ab0f3
 cover:
   alt: ''
   caption: ''
@@ -20,7 +20,7 @@ There isn’t much to report today. I started the day with a breakfast buffet an
 
 Once the rain stopped, I took a long walk on the beach. Not much else is happening today. 
 
-With a little luck, tomorrow I’ll continue my journey in perfect weather.
+With a little luck, I’ll continue tomorrow in perfect weather.
 
 
 ### Pictures

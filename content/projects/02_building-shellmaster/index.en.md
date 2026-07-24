@@ -10,6 +10,7 @@ date: 2025-04-06
 description: My path of building a quiz app using flutter, pocketbase and unleash
 draft: false
 slug: building-shellmaster
+source_lang: en
 tags:
 - flutter
 - application

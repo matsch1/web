@@ -10,6 +10,7 @@ date: 2025-05-10
 description: Server hardening and deploy first app with Coolify.
 draft: false
 slug: coolify-vps-setup
+source_lang: en
 tags:
 - server
 - syncthing
@@ -72,7 +73,7 @@ ssh-keygen -t ed25519 -b 4096 -C "your_email@example.com"
 
 This prompts for name of the key, location and passphrase.
 The key should be saved to `/home/$USER/.ssh/<ssh-key>`. The passphrase can stay empty.
-This will create 2 files: <ssh-key> and <ssh-key.pub>.
+This will create 2 files: `<ssh-key>` and `<ssh-key.pub>`.
 
 To get ssh access to the VPS the content of <ssh-key.pub> must be copied to `/home/<server-user>/.ssh/autorized_keys`. If the file does not exist, it has to be created.
 You can use `nano` or `vi` as command line text editor to do that.

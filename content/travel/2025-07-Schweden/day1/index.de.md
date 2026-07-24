@@ -9,6 +9,7 @@ cover:
 date: 2025-07-01
 description: Zum Reinkommen an Tag 1 erstmal die Route umgeplant
 draft: false
+source_lang: de
 tags:
 - bikepacking
 title: "\U0001F1E9\U0001F1F0 Tag 1 - Auf die Insel Fyn/Odense"

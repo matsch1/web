@@ -16,6 +16,7 @@ tags:
   - k3s
   - tailscale
   - vps
+source_lang: en
 ---
 During my last homelabbing session, I ran into a problem that initially felt annoying but eventually turned into a surprisingly elegant solution—one worth sharing.
 

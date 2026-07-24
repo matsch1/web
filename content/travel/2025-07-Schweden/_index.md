@@ -8,6 +8,7 @@ cover:
   alt: "bikepacking-sweden-denmark"
   caption: ""
   relative: true
+source_lang: de
 ---
 
 ## Blog

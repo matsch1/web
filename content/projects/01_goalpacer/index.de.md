@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 5e816669a462b073cfc2684c1df74c821a1279a2de10b3e99a375ccfc923aa2d
+base_hash: 0850163170953ddcaa1a87e56f80ef8c5d280b0c2c7dc83b6da69a9adf925683
 cover:
   alt: goalpacer
   caption: ''
@@ -24,7 +24,7 @@ Die App ist weiterhin im Google Play Store erhältlich.
 Derzeit führe ich nur Wartungsarbeiten durch und arbeite nicht an neuen Funktionen.
 {{< /alert >}}
 
-Ich bin stolz darauf, dass ich meine erste Flutter-App in etwa vier Tagen so weit fertigstellen konnte, dass sie produktionsreif ist.
+Ich bin stolz darauf, dass ich meine erste Flutter-App in etwa vier Tagen mehr oder weniger produktionsreif entwickeln konnte.
 
 Vor diesen Tagen hatte ich keinerlei Erfahrung mit Flutter. Aber mir hat schon immer die Idee gefallen, auf einfache Weise Apps für den persönlichen Gebrauch zu entwickeln. 
 Nach einigen gescheiterten Versuchen in den letzten zwei Jahren, mit Python nützliche persönliche Apps zu entwickeln, hörte ich von Flutter.
@@ -35,7 +35,7 @@ Die App, für die ich mich entschieden habe, ist eine Art Temporechner, den ich 
 Der Entwicklungsprozess beginnt eigentlich einen Tag zu früh. Bei meinem Plan konnte ich es kaum erwarten, loszulegen, und habe am Abend von Tag 0 mithilfe des [Flutter Crash Course](https://youtu.be/j_rCDc_X-k8?si=OqmFujJvhpzCYK5O) von Net Ninja auf YouTube eine Kaffee-Karten-App erstellt.
 Mit den Erkenntnissen aus diesem Tutorial beginne ich am Morgen von Tag 1 mit meiner eigenen Flutter-App namens [Goalpacer - Google Play Store](https://play.google.com/store/apps/details?id=com.matschcode.goalpacer).
 
-In den folgenden 3 Tagen konnte ich diese App mit VSCO auf meinem Linux-Rechner entwickeln. Es ist mir gelungen, 4 Funktionen zu implementieren: 
+In den folgenden 3 Tagen konnte ich diese App mit VSCO auf meinem Linux-Rechner erstellen. Es ist mir gelungen, 4 Funktionen bereitzustellen: 
 
 - Zielzeitrechner: Berechnet die Zielzeit basierend auf deinem Tempo beim Laufen, Schwimmen und Radfahren.
 - Temporechner: Berechnet das erforderliche Tempo für Ihre gewünschte Zielzeit

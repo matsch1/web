@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: e349a6dcf1004aba9a0a619cf9b1f871958e07c4c64db039f3ef9ef8dc8a35ec
+base_hash: 68e2d30cb30bb6148d5a88f968a4fdfbd6fc66e428fd9162fbba591796413082
 cover:
   alt: ''
   caption: ''
@@ -30,7 +30,7 @@ Tomorrow we’re off!
 At Steffen’s  
 
 ## Trip Details
-Distance for the day: 8 km 
+Distance covered today: 8 km 
 
 **Total distance: 8 km**
 

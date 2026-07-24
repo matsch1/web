@@ -10,6 +10,7 @@ date: 2025-12-04
 description: Giscus the Git Discussion based commenting system for Hugo blogs
 draft: false
 slug: giscus-hugo-comments
+source_lang: en
 tags:
 - hugo
 title: Setting up Giscus comments for Hugo blog
@@ -89,7 +90,7 @@ Add the following parameter to your main configuration file to tell your theme t
 
 #### B. Create the Giscus Shortcode
 
-Create a new file at `layouts/partials/comments.html`` and paste the generated Giscus <script> tag inside it.
+Create a new file at `layouts/partials/comments.html` and paste the generated Giscus `<script>` tag inside it.
 That's it! Giscus automatically handles the discussion mapping, keeps all data on GitHub, and requires zero server setup on your end.
 
 

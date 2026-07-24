@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: c495d6ee7ab52b24b5975a7295a8e652a93fdd137d3c08fa1091c5375b6870fe
+base_hash: 47517514c2bb2064c2c21e70b84a199e2622efc88f533fec7e1d0b9f3dccace8
 cover:
   alt: ''
   caption: ''
@@ -22,7 +22,7 @@ Jan joined the tour for the last few kilometers. Since he couldn’t organize ca
 
 Day 1 was very relaxed with perfect weather right along the Rhine. We passed 1,000 other cyclists from the NRW Radtour 2025 and accidentally took more detours than planned. So the originally planned 120 km turned into almost 140 km. But that was quickly forgotten over pizza and cocktails on the banks of the Rhine.
 
-Day 2 started with breakfast from a bakery on the Rhine beach in bright sunshine. Unfortunately, a headwind somehow crept in afterward, which made cycling along the riverbank unnecessarily strenuous. Shortly before Rüdesheim, a cycling detour (“for experienced riders only”) crept into our route, which added an extra 200 hm as we climbed the adjacent hill. After a cup of Rüdesheim coffee, we still had to tackle about 50 km through the vineyards against the headwind. Once we’d put that behind us, we treated ourselves to some relaxation in the hotel pool.
+Day 2 started with breakfast from a bakery on the Rhine beach in bright sunshine. Unfortunately, a headwind somehow crept in afterward, making cycling along the riverbank unnecessarily strenuous. Shortly before Rüdesheim, a cycling detour (“for experienced riders only”) crept into our route, which added an extra 200 hm as we climbed the adjacent hill. After a cup of Rüdesheim coffee, we still had to tackle about 50 km through the vineyards against the headwind. Once we’d put that behind us, we treated ourselves to some relaxation in the hotel pool.
 
 Day 3 started off through the vineyards again. After some thought, I realized that the reason my derailleur suddenly started acting up was yesterday’s fall, which had actually bent my derailleur hanger. Luckily, I had a spare part with me, which was quickly replaced. After a celebratory beer on the Rhine near Germersheim, the last few kilometers were covered in no time.
 

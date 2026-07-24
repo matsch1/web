@@ -9,6 +9,7 @@ cover:
 date: 2025-06-30
 description: Erstmal nach Norden
 draft: false
+source_lang: de
 tags:
 - bikepacking
 title: "\U0001F1E9\U0001F1EA Tag 0 - Anreise Flensburg"

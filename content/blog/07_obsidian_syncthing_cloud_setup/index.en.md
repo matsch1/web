@@ -11,6 +11,7 @@ description: Use syncthing on a server to create a cross-plattform file exchange
   Obsidian notes and more
 draft: false
 slug: obsidian-cloud-sync-setup
+source_lang: en
 tags:
 - obsdian
 - syncthing

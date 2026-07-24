@@ -10,6 +10,7 @@ date: 2018-07-01
 description: Zu 5. mit dem Rad und 30 kg Gepäck durch das Hochland von Island
 draft: true
 img: img1.jpg
+source_lang: de
 tags:
 - bikepacking
 title: Bikepacking Island - Mit dem Hardtail durchs Hochland

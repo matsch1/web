@@ -10,6 +10,7 @@ date: 2025-09-28
 description: Chat with your remote Obsidian vault using http mcp server.
 draft: false
 slug: obsidian-http-mcp
+source_lang: en
 tags:
 - obsidian
 - mcp

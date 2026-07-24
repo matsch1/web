@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: fbb9ecabb69e18627300f190c72c8bede01034924c2263710c200acce0e04cdd
+base_hash: cb8b0f706af380cb3ac1449c064d4ba7aa6a8a25eb5f6e2f3e6eed861e95b877
 cover:
   alt: bikepacking-iceland
   caption: ''
@@ -48,7 +48,7 @@ To make things easier for customs officials—and for yourself—in the event of
 ...
 
 All in all, our luggage for the 10 days weighed about 30 kg—per person!
-To carry it all, I bought two large panniers and a large, waterproof duffel bag. Fully packed, we were ready for our adventure.
+To carry it all, I bought two large panniers and a large, waterproof duffel bag. Fully loaded, we were ready for our adventure.
 
 ## Impressions
 

@@ -13,6 +13,7 @@ cover:
   relative: true
 tags:
   - bikepacking
+source_lang: de
 ---
 Das ist eine nachträgliche Sammlung meiner Eindrücke zur Jütlandumrundung.
 

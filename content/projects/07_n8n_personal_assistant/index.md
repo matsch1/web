@@ -14,6 +14,7 @@ cover:
 tags:
   - n8n
   - AI
+source_lang: en
 ---
 
 {{< alert type="info" title="" >}}

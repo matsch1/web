@@ -10,6 +10,7 @@ date: 2025-06-26
 description: Automatically translate your Hugo website and deploy it to Github Pages
 draft: false
 slug: hugo-autotranslator
+source_lang: en
 tags:
 - hugo
 - github-actions
