@@ -1,30 +1,30 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 74f38cc85b488498039ac9cf74b6d2b29740716f4fef941d82713f3d89373326
+base_hash: c03b7aad4b608fc8fcb86cbabdcdc1a6f91bd30fcd06e5d992c068b2b089c781
 cover:
   alt: ''
   caption: ''
   image: img1.jpg
   relative: true
 date: 2025-07-11
-description: Absolutes Highlight am Strand entlang zu radeln
+description: Cycling along the beach is an absolute highlight
 draft: false
 tags:
 - bikepacking
-title: "\U0001F1E9\U0001F1F0 Day 11 - West coast of Denmark"
+title: "\U0001F1E9\U0001F1F0 Day 11 – Denmark’s West Coast"
 ---
 
 ## Impressions
-When I got up this morning, the whole shelter was covered in fog. Somehow everything was slightly wet. As a result, the meadow was full of slugs and little frogs, which was kind of funny.
+When I got up this morning, the entire shelter area was shrouded in fog. Everything felt slightly damp. Because of that, the meadow was full of slugs and little frogs, which was kind of funny. 
 
-An hour later, I was still able to set off in the sun. The first part of the route through the northern interior of Denmark felt like Sweden all over again.
+An hour later, though, I was able to set off in the sunshine. The first part of the route through northern inland Denmark felt just like being in Sweden again. 
 
-As the coast got closer and closer, clouds and a cold sea breeze came with it. The plan to go for a swim somehow became less and less attractive.
+As the coast drew closer, clouds and a cold sea breeze followed. My plan to go for a swim thus became less and less appealing. 
 
-However, this was not really dramatic, as an absolute highlight of this tour awaited me. Between Løkken and Blokhus, I was able to ride the entire route directly on the water's edge on the beach. Who goes swimming or surfing when you can ride your bike along the beach like this?
+It wasn’t really a big deal, though, because an absolute highlight of this tour was waiting for me. Between Løkken and Blokhus, I was able to ride the entire stretch right along the water’s edge on the beach. Who wants to go swimming or surfing when you can just cruise along the beach on your bike like that? 
 
-After this great passage, I enjoyed the afternoon in and around Blockhus with the beach and live music until I cycled the last 15 km to my sleeping place. Like every evening, I let the day come to a relaxed end.
+After this fantastic stretch, I spent the afternoon in and around Blokhus, enjoying the beach and live music, until I rolled the last 15 km to my place to sleep. Just like every evening, I’m letting the day wind down in a relaxed way again today. 
 
 
 ### Pictures
@@ -37,26 +37,26 @@ After this great passage, I enjoyed the afternoon in and around Blockhus with th
 {{< /galleries >}}
 
 ### Costs
-- 0 Euro ferry
-- 6 Euro breakfast/lunch
-- 8 Euro dinner/breakfast
-- 0 Euro overnight stay
+- 0 euros for the ferry
+- 6 euros for breakfast/lunch 
+- 8 euros for dinner/breakfast 
+- 0 euros for lodging
 
-**14 Euro Tageskosten**
+**14 euros per day**
 
-### Sleeping place
-Sleeping place directly on the cycle path
+### Place to sleep 
+Place to sleep right on the bike path
 {{< open-street-map map_title="Schlafplatz" geo_link="geo:57.16213,9.52497?z=13" >}}
 
-## Tour data
+## Tour Details
 Daily distance: 94 km
 
-**Gesamtstrecke: 923 km**
+**Total distance: 923 km**
 
 ### Weather
-17-25 degrees, sunny
+17–25 degrees, sunny 
 
 ### Tour
-Reach the west coast cycle path
+Reaching the West Coast Bike Trail 
 
 {{< strava-activity-image id="15079345606" image="strava.jpg" >}}

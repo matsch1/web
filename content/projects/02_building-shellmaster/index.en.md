@@ -1,20 +1,20 @@
 ---
-title: " Building Shellmaster: A Fun Way to Learn Linux Shell Commands "
-slug: "building-shellmaster"
-date: 2025-04-06
-description: "My path of building a quiz app using flutter, pocketbase and unleash"
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.webp"
-  alt: "shellmaster"
-  caption: ""
+  alt: shellmaster
+  caption: ''
+  image: img1.webp
   relative: true
+date: 2025-04-06
+description: My path of building a quiz app using flutter, pocketbase and unleash
+draft: false
+slug: building-shellmaster
 tags:
-  - flutter
-  - application
-  - linux
+- flutter
+- application
+- linux
+title: ' Building Shellmaster: A Fun Way to Learn Linux Shell Commands '
 ---
 
 {{< alert type="error" title="Deprecated" >}}
@@ -123,4 +123,3 @@ Building Shellmaster has been an exciting journey, combining **Flutter’s UI ca
 If you're interested, check out **Shellmaster** on the [Shellmaster - Apps on Google Play](https://play.google.com/store/apps/details?id=com.matschcode.shellmaster) and let me know your thoughts!
 
 What are some interesting tech stacks you've used in your apps? Let’s discuss in the comments!
-

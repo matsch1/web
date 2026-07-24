@@ -1,17 +1,17 @@
 ---
-title: 🇩🇰 Tag 10 - Göteborg erkunden und Fähre fahren
-date: 2025-07-10
-description: Gefühlt den ganzen Tag auf dem Schiff
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
+  alt: ''
+  caption: ''
+  image: img1.jpg
   relative: true
+date: 2025-07-10
+description: Gefühlt den ganzen Tag auf dem Schiff
+draft: false
 tags:
-  - bikepacking
+- bikepacking
+title: "\U0001F1E9\U0001F1F0 Tag 10 - Göteborg erkunden und Fähre fahren"
 ---
 
 ## Eindrücke

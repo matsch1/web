@@ -1,46 +1,45 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: d4136ea7850f8a619f421f2f4305da1557951dd768731f28afc306f0b6983e72
+base_hash: 3efe82545a731376e80fb6c245654f626505968382db384e67daa13487e894c6
 cover:
   alt: bikepacking-test-vogese
   caption: ''
   image: img1.jpg
   relative: true
 date: 2025-06-19
-description: Mit dem ganzen Gepaeck fuer die Schwedenreise die Familie in Biffontaine
-  besuchen.
+description: Visiting family in Biffontaine with all the luggage for the trip to Sweden.
 draft: false
 tags:
 - bikepacking
-title: Bikepacking test in Biffontaine
+title: Bikepacking Test in Biffontaine
 ---
 
-## Key data
+## Key Data
 ### Route
-Outward journey: 104 km
+Outbound: 104 km
 +
-way back: 131 km
+Return: 131 km
 
-**Gesamt: 235 km**
+**Total: 235 km**
 
 ### Weather
-over 30 degrees and sun (very hot)
+Over 30 degrees and sunny (very hot)
 
-### Sleeping place
+### Overnight Stay
 {{< open-street-map map_title="Flensburg Bahnhof" geo_link="geo:48.1395,6.8174?z=12" >}}
 
 ## Impressions
-A nice ride through the French countryside to test the setup for the upcoming trip to Sweden.
-In extreme temperatures of over 30 degrees, scrubbing 1000 m with approx. 14 kg of luggage.  
+A nice ride through the French countryside to test the setup for the upcoming trip to Sweden. 
+Climbing 1,000 hm in extreme temperatures over 30 degrees, carrying about 14 kg of gear.  
 
-The landscape is very idyllic. There is hardly anything going on. That's good for
-cycling and bad for eating on the way.
-Nevertheless, everything went well and the setup worked.
+The landscape is very idyllic. There’s hardly anyone around. That’s good for
+cycling but bad for finding something to eat along the way.
+Still, everything went well and the setup works.
 
-The only thing I need to optimize a bit for Sweden is the mounting of the tent and lock.
-optimize a bit for Sweden so that I don't have to put up with annoying rattling and the frame
-the frame.
+The only thing I need to tweak a bit for Sweden is how I set up the tent and lock,
+so I don’t have to put up with annoying rattling and so I don’t
+damage the frame.
 
 {{< galleries >}}
 {{< gallery src="img1.jpg" title="Fahrrad voll beladen" >}}
@@ -49,6 +48,6 @@ the frame.
 {{< gallery src="img4.jpg" title="Bester Schlafplatz mit Aussicht" >}}
 {{< /galleries >}}
 
-## Tour dates
+## Tour Dates
 {{< strava-activity id="14849684801" title="Packtest für Juli (Hinweg)" distance="104.39 km" elevation="959 hm" time="5h 02m" >}}
 {{< strava-activity id="14871288148" title="Packtest für Juli (Rückweg)" distance="131.46" elevation="681 hm" time="5h 50m" >}}

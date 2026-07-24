@@ -1,19 +1,20 @@
 ---
-title: "Bikepacking Island - Mit dem Hardtail durchs Hochland"
-date: 2018-07-01
-img: img1.jpg
-description: "Zu 5. mit dem Rad und 30 kg Gepäck durch das Hochland von Island"
 ShowToc: true
 TocOpen: true
-draft: true
 cover:
-  image: "img1.jpg"
-  alt: "bikepacking-iceland"
-  caption: ""
+  alt: bikepacking-iceland
+  caption: ''
+  image: img1.jpg
   relative: true
+date: 2018-07-01
+description: Zu 5. mit dem Rad und 30 kg Gepäck durch das Hochland von Island
+draft: true
+img: img1.jpg
 tags:
-  - bikepacking
+- bikepacking
+title: Bikepacking Island - Mit dem Hardtail durchs Hochland
 ---
+
 Das ist eine nachträgliche Sammlung meiner Eindrücke zur Jütlandumrundung.
 
 ## Eckdaten
@@ -53,7 +54,3 @@ Um das alles transportieren zu können, habe ich mir 2 große Gepäckträgertasc
 {{< galleries >}}
 {{< gallery src="img1.jpg" title="Route" >}}
 {{< /galleries >}}
-
-
-
-

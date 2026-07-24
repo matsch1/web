@@ -1,30 +1,30 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 2b990d8ecba343e6814e8034ef7d382335e955c0658abac1880771720e3809a3
+base_hash: ead31e0053daeaed284740a3fe5a45ae95fd8f8f6761f2d02cf42318fb13a2e3
 cover:
   alt: flutter-refactoring
   caption: ''
   image: img1.webp
   relative: true
 date: 2025-01-07
-description: My learnings during flutter refactoring
+description: Meine Erkenntnisse beim Refactoring mit Flutter
 draft: false
 slug: flutter-refactoring
-title: 7 Wege zur Refaktorierung Ihrer Flutter-Anwendung
 tags:
-  - flutter
+- flutter
+title: 7 Möglichkeiten, Ihre Flutter-Anwendung zu refaktorisieren
 ---
 
-Refactoring ist ein wichtiger Teil der Wartung und Verbesserung Ihrer Flutter-Anwendung.
-Es stellt sicher, dass Ihre Codebasis sauber, konsistent und effizient bleibt, während Ihre Anwendung wächst.
-In diesem Artikel werden wir sieben praktische Möglichkeiten zum Refactoring Ihrer Flutter-Anwendung vorstellen.
+Refactoring ist ein wesentlicher Bestandteil der Wartung und Verbesserung Ihrer Flutter-Anwendung. 
+Es sorgt dafür, dass Ihr Code auch bei wachsender App übersichtlich, konsistent und effizient bleibt. 
+In diesem Artikel stellen wir Ihnen sieben praktische Methoden zum Refactoring Ihrer Flutter-Anwendung vor.
 
-## 1. Parameter in Widgets für Konsistenz verwenden
+## 1. Verwenden Sie Parameter in Widgets, um Konsistenz zu gewährleisten
 
-Beim Erstellen von Widgets kann das Festcodieren von Werten wie padding oder fontSize zu Inkonsistenzen führen. Übergeben Sie diese Werte stattdessen als Parameter, um Widgets wiederverwendbar und konsistent zu machen.
+Beim Erstellen von Widgets kann die Festcodierung von Werten wie „padding“ oder „fontSize“ zu Inkonsistenzen führen. Übergeben Sie diese Werte stattdessen als Parameter, um Widgets wiederverwendbar und konsistent zu machen.
 
-### Beispiel: Verwendung von Parametern anstelle von fest kodierten Werten
+### Beispiel: Verwenden Sie Parameter anstelle von festcodierten Werten
 ```dart
 class GreetingWidget extends StatelessWidget {
   final String name;
@@ -56,15 +56,15 @@ class GreetingWidget extends StatelessWidget {
   }
 }
 ```
-Indem man `paddingVal` und `fontSize` als interne Parameter definiert, kann das GreetingWidget leicht gewartet werden.
+Durch die Definition von `paddingVal` und `fontSize` als interne Parameter lässt sich das GreetingWidget leicht warten.
 
 ---
 
-## 2. Erstellen einer globalen Parameterdatei
+## 2. Erstellen Sie eine globale Parameterdatei
 
-Der nächste Schritt nach der Erstellung interner Parameter für die Konsistenz ist die Erstellung globaler Parameter für die Konsistenz.
-Alle Werte, die in Ihrer Anwendung konsistent bleiben sollen, wie Farben, Skalierungsfaktoren oder Schaltflächengrößen, speichern Sie in einer globalen Datei.
-Diese Datei braucht keine besondere Formatierung. Sie können sie einfach so erstellen.
+Der nächste Schritt nach der Erstellung interner Parameter zur Gewährleistung der Konsistenz ist die Erstellung globaler Parameter.
+Alle Werte, die in Ihrer gesamten App konsistent bleiben sollen, wie Farben, Skalierungsfaktoren oder Schaltflächengrößen, speichern Sie in einer globalen Datei.
+Diese Datei erfordert keine spezielle Formatierung. Sie können sie ganz einfach wie folgt erstellen.
 
 ### Beispiel: Globale Parameterdatei
 ```dart
@@ -75,7 +75,7 @@ double borderWidth = 3;
 double borderRadius = 10;
 double boxHeaderTextSize = 16;
 ```
-Um diese globalen Parameter in verschiedenen Dateien zu verwenden. Importieren Sie einfach die globale Parameterdatei zu Beginn.
+Um diese globalen Parameter in verschiedenen Dateien zu verwenden, importieren Sie einfach die globale Parameterdatei am Anfang.
 ### Verwendung:
 ```dart
 import 'package:<appName>/common/src/globals.dart';
@@ -85,15 +85,15 @@ Text(
   style: TextStyle(fontSize: boxHeaderTextSize),
 );
 ```
-Dieser Ansatz gewährleistet Konsistenz in der gesamten Anwendung und vereinfacht Aktualisierungen.
+Dieser Ansatz gewährleistet Konsistenz in der gesamten App und vereinfacht Aktualisierungen.
 
 ---
 
 ## 3. Organisieren Sie Ihre Dart-Dateien effektiv
 
-Ein gut strukturiertes `lib`-Verzeichnis verbessert die Lesbarkeit und Wartbarkeit des Codes. Eine gängige Struktur ist die Feature-basierte Organisation:
+Ein gut strukturiertes `lib`-Verzeichnis verbessert die Lesbarkeit und Wartbarkeit des Codes. Eine gängige Struktur ist die funktionsbasierte Organisation:
 
-### Beispiel Dateistruktur
+### Beispiel für eine Dateistruktur
 ```
 lib/
 |-- features/
@@ -108,13 +108,13 @@ lib/
 |   |-- themes.dart
 ```
 
-Unter [Flutter Professional Folder Structure: Feature-first or Layer-first?](https://codingwitht.com/flutter-folder-structure/) finden Sie eine ausführliche Anleitung zur Dateiorganisation.
+Eine ausführliche Anleitung zur Dateiorganisation findest du unter [Flutter Professional Folder Structure: Feature-first or Layer-first?](https://codingwitht.com/flutter-folder-structure/).
 
 ---
 
-## 4. Benutzerdefinierte Widgets für Wiederverwendbarkeit erstellen
+## 4. Erstellen Sie benutzerdefinierte Widgets zur Wiederverwendbarkeit
 
-Wenn Sie feststellen, dass Sie ähnliche Widgets duplizieren, extrahieren Sie sie in benutzerdefinierte Widgets. Dies reduziert die Codeduplizierung und verbessert die Wartbarkeit.
+Wenn Sie feststellen, dass Sie ähnliche Widgets duplizieren, extrahieren Sie diese in benutzerdefinierte Widgets. Dies reduziert Code-Duplikate und verbessert die Wartbarkeit.
 
 ### Beispiel: Extrahieren eines benutzerdefinierten Widgets
 ```dart
@@ -161,16 +161,16 @@ CustomCard(title: 'Flutter', subtitle: 'Custom Widgets');
 
 ---
 
-## 5. Unterscheidung von internen und externen Parametern/Methoden
+## 5. Unterscheiden Sie zwischen internen und externen Parametern/Methoden
 
-Bei der Arbeit mit Flutter ist es wichtig, zwischen internen und externen Parametern oder Methoden zu unterscheiden.
-**Internal parameters or methods** sind privat für das Widget und haben typischerweise einen Unterstrich (`_`) als Präfix,
-während **external parameters or methods** für andere Widgets oder Teile der App zugänglich sind und dieses Präfix fehlt.
+Bei der Arbeit mit Flutter ist es unerlässlich, zwischen internen und externen Parametern oder Methoden zu unterscheiden. 
+**Interne Parameter oder Methoden** sind privat für das Widget und haben in der Regel ein Unterstrich-Präfix (`_`), 
+während **externe Parameter oder Methoden** für andere Widgets oder Teile der App zugänglich sind und dieses Präfix nicht aufweisen.
 
 ### Wann wird ein Unterstrich verwendet?
 
 - Verwenden Sie einen Unterstrich (`_`) für **private** Eigenschaften oder Methoden, auf die außerhalb des Widgets nicht zugegriffen werden soll.
-- Interne Parameter oder Methoden sind nur für die Verwendung innerhalb der Implementierung des Widgets gedacht.
+- Interne Parameter oder Methoden sind ausschließlich für die Verwendung innerhalb der Implementierung des Widgets vorgesehen.
 
 ### Beispiel: Interner Parameter mit Unterstrich
 
@@ -201,11 +201,11 @@ class _CounterWidgetState extends State<CounterWidget> {
 }
 ```
 
-In diesem Beispiel sind `_count` und `_increment` intern und sollten nicht außerhalb von `_CounterWidgetState` aufgerufen werden.
+In diesem Beispiel sind `_count` und `_increment` intern und sollten außerhalb von `_CounterWidgetState` nicht aufgerufen werden.
 
-### Wann sollte ein Unterstrich vermieden werden?
+### Wann man Unterstriche vermeiden sollte
 
-- Vermeiden Sie Unterstriche für **public**-Eigenschaften oder -Methoden, die von übergeordneten Widgets oder anderen Komponenten verwendet werden sollen.
+- Vermeiden Sie Unterstriche bei **öffentlichen** Eigenschaften oder Methoden, die von übergeordneten Widgets oder anderen Komponenten verwendet werden sollen.
 - Externe Parameter oder Methoden definieren die API Ihres Widgets und sollten zugänglich sein.
 
 ### Beispiel: Externe Parameter
@@ -225,18 +225,18 @@ class GreetingWidget extends StatelessWidget {
 
 Hier ist `name` ein externer Parameter, der vom übergeordneten Widget übergeben wird und das Verhalten des Widgets definiert.
 
-### Bewährte Praktiken
+### Best Practices
 
 - Verwenden Sie Unterstriche (`_`) für private/interne Eigenschaften oder Methoden, um Implementierungsdetails zu kapseln.
-- Halten Sie externe Parameter sauber und intuitiv, um eine klare API für Ihre Widgets zu schaffen.
+- Halten Sie externe Parameter übersichtlich und intuitiv, um eine klare API für Ihre Widgets zu schaffen.
 
 ---
 
 ## 6. Widgets anhand der Bildschirmgröße skalieren
 
-Um Ihre Anwendung reaktionsfähig zu machen, skalieren Sie Widgets je nach Bildschirmgröße mit der Klasse `MediaQuery`.
+Um Ihre App responsiv zu gestalten, skalieren Sie Widgets anhand der Bildschirmgröße mithilfe der Klasse `MediaQuery`.
 
-### Beispiel: Reaktionsfähiges Padding
+### Beispiel: Responsives Padding
 
 ```dart
 class ResponsiveBox extends StatelessWidget {
@@ -252,23 +252,23 @@ class ResponsiveBox extends StatelessWidget {
 }
 ```
 
-Dies stellt sicher, dass sich Ihre Benutzeroberfläche an verschiedene Bildschirmgrößen anpasst und verhindert, dass Ihre Anwendung überläuft.
+Dadurch wird sichergestellt, dass sich Ihre Benutzeroberfläche nahtlos an verschiedene Bildschirmgrößen anpasst und ein Überlaufen Ihrer App verhindert wird.
 
 ---
 
-## 7. Verwendung von Providern: Staat effektiv verwalten
+## 7. Verwendung von Providern: Effektives Statusmanagement
 
-Das `provider`-Paket vereinfacht die Zustandsverwaltung, indem es den Widgets erlaubt, auf Änderungen zu hören und sie entsprechend neu zu erstellen.
-Dies ist notwendig, wenn Sie die gleichen Daten in verschiedenen Widgets benötigen (lesen oder schreiben).
-Hier sind zwei beliebte Providertypen, die ich bereits verwendet habe:
+Das `provider`-Paket vereinfacht die Zustandsverwaltung, indem es Widgets ermöglicht, auf Änderungen zu reagieren und sich entsprechend neu aufzubauen. 
+Dies ist notwendig, wenn Sie dieselben Daten in verschiedenen Widgets benötigen (zum Lesen oder Schreiben).
+Hier sind zwei beliebte Provider-Typen, die ich bereits verwendet habe:
 
 ### **ChangeNotifierProvider**
 
-Verwenden Sie `ChangeNotifierProvider` für die Verwaltung veränderlicher Zustände.
-Zum Beispiel eine Quizspiel-App mit einem QuizProvider.
-Wenn ein Widget die Quizdaten mit Hilfe des QuizProviders ändert, wird jeder Verbraucher der Quizdaten nicht berücksichtigt.
+Verwenden Sie `ChangeNotifierProvider` zur Verwaltung veränderbarer Zustände.
+Beispielsweise eine Quiz-App mit einem QuizProvider. 
+Wenn ein Widget die Quizdaten mithilfe des QuizProviders ändert, werden alle Verbraucher der Quizdaten benachrichtigt.
 
-#### Beispiel: Quizspiel-App
+#### Beispiel: Quiz-Spiel-App
 
 ```dart
 import 'package:provider/provider.dart';
@@ -321,11 +321,11 @@ class QuizProvider with ChangeNotifier {
   }
 }
 ```
-Auf die QuizProvider-Daten kann mit ``context.watch<QuizProvider>()`` or manipulated using ``context.read<QuizProvider>().submitAnswer()``
+Auf die Daten des QuizProviders kann über ``context.watch<QuizProvider>()`` or manipulated using ``context.read<QuizProvider>().submitAnswer()``
 
 ### **FutureProvider**
 
-Use `FutureProvider` für Widgets zugegriffen werden, die von asynchronen Daten abhängen.
+Use `FutureProvider` auf die Daten des QuizProviders zugegriffen werden.
 
 #### Beispiel: Abrufen von Benutzerdaten
 
@@ -388,4 +388,4 @@ class UserScreen extends StatelessWidget {
 
 ---
 
-Refactoring muss nicht überwältigend sein. Durch die Anwendung dieser sieben Techniken können Sie die Wartbarkeit, Skalierbarkeit und Gesamtqualität Ihrer Flutter-Anwendung verbessern.
+Refactoring muss nicht unbedingt eine überwältigende Aufgabe sein. Durch die Anwendung dieser sieben Techniken können Sie die Wartbarkeit, Skalierbarkeit und Gesamtqualität Ihrer Flutter-Anwendung verbessern.

@@ -1,54 +1,55 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: ae103845a1a6ccdd19702b010d1fb9234d4e96905e2a4c416bed88c017935e28
+base_hash: 0f03aed834b1e686c766141d0bed72052cc0c5b9a885170e3b9d4cbb6909c61e
 cover:
   alt: obsidian-sync
   caption: ''
   image: img1.webp
   relative: true
 date: 2025-01-02
-description: Explanation of how I use Syncthing as a free Obsidian Sync
+description: Erklärung, wie ich Syncthing als kostenlose Obsidian-Synchronisierung
+  nutze
 draft: false
 img: img1.webp
 slug: free-obsidian-sync-solution
-title: Kostenlose Obsidian PC Android-Synchronisation
 tags:
-  - obsidian
-  - syncthing
+- obsidian
+- syncthing
+title: Kostenlose Obsidian-Synchronisierung zwischen PC und Android
 ---
 
-Obsidian ist ein großartiges Werkzeug zum Sammeln von Ideen.
+Obsidian ist ein großartiges Tool zum Sammeln von Ideen.
 
-Ich benutze es hauptsächlich aus den folgenden Gründen:
+Ich nutze es hauptsächlich aus folgenden Gründen:
 - Recherche
 - Sammeln von Informationen
-- Abspeichern spontaner Ideen
+- Festhalten spontaner Ideen
 
-Je nach Situation benutze ich lieber meinen Laptop oder mein Handy.
-Um immer Zugriff auf meine Daten zu haben, egal welches Gerät ich gerade benutze, muss ich die Daten zwischen meinen Geräten synchronisieren. Zu diesem Zweck bietet Obsidian das Sync Plugin an. Aber für dieses Plugin werden 4$ pro Monat berechnet, die ich nicht ausgeben möchte, wenn es eine andere Möglichkeit gibt.
+Je nach Situation nutze ich lieber meinen Laptop oder mein Smartphone.
+Um unabhängig vom verwendeten Gerät immer Zugriff auf meine „Vaults“ zu haben, muss ich die Daten zwischen meinen Geräten synchronisieren. Zu diesem Zweck bietet Obsidian das Sync-Plugin an. Für dieses Plugin werden jedoch 4 $ pro Monat berechnet, die ich nicht ausgeben möchte, wenn es eine andere Möglichkeit gibt.
 
-## Ich habe eine Lösung gefunden, die meine Anforderungen erfüllt:
+## Ich habe eine Lösung gefunden, die meinen Anforderungen entspricht:
 - Plattformübergreifende Verfügbarkeit: Linux, Windows und Android
-- Keine manuelle Arbeit: keine Downloads, keine Kopien, kein gar nichts
-- kostenlos zu verwenden
+- Kein manueller Aufwand: keine Downloads, keine Kopien, gar nichts
+- Kostenlos nutzbar
 
-## Was ich jetzt benutze:
-- [Syncthing-fork](https://play.google.com/store/apps/details?id=com.github.catfriend1.syncthingandroid) auf meinem Androiden-Handy
+## Was ich derzeit nutze:
+- [Syncthing-fork](https://play.google.com/store/apps/details?id=com.github.catfriend1.syncthingandroid) auf meinem Android-Smartphone
 - [Syncthing](https://github.com/syncthing/syncthing) auf meinem Windows- und Linux-Rechner
-- Shell-Skript zum Sichern der Daten in einem Git-Repository
+- Ein Shell-Skript, um die Daten in einem Git-Repository zu sichern
 
-## Einrichten:
-- Installieren Sie Syncthing auf den Geräten, auf denen Sie Obsidian verwenden wollen
-- Erstellen von Ordnern auf jedem Gerät, um die Obsidian-Dateien lokal zu speichern
-- Verknüpfen der Geräte mit dem QR-Code
-- Teilen Sie die Ordner (auch mit QR-Code)
-- Kopieren Sie Ihren Tresor in das neue Verzeichnis und öffnen Sie ihn in Obsidian
+## Einrichtung:
+- Installiere Syncthing auf den Geräten, auf denen du Obsidian nutzen möchtest
+- Erstelle auf jedem Gerät Ordner, um die Obsidian-Dateien lokal zu speichern
+- Verbinde die Geräte mithilfe des QR-Codes
+- Teile die Ordner (ebenfalls mithilfe des QR-Codes)
+- Kopiere deinen „Vault“ in das neue Verzeichnis und öffne ihn in Obsidian
 - *optional:*
-  - Erstellen Sie ein Git-Repository in Ihrem Obsidian-Verzeichnis und sichern Sie die Dateien in Ihrem Github-Konto
+  - Erstellen Sie ein Git-Repository in Ihrem Obsidian-Verzeichnis und sichern Sie die Dateien auf Ihrem GitHub-Konto
 
 
-## Obsidian Git autobackup
+## Obsidian Git-Autosicherung
 
 ``` bash
 #!/bin/bash

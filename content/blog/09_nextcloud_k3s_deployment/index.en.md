@@ -1,20 +1,20 @@
 ---
-title: "Nextcloud K3S deployment using helm chart"
-slug: "nextcloud-k3s-helm-deployment"
-date: 2025-12-19
-description: "The way I deployed nextcloud on my k3s cluster using helm chart"
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "nextcloud-k3s-helm-deployment.png"
-  alt: "nextcloud-k3s-helm-deployment"
-  caption: "The way I deployed nextcloud on my k3s cluster using helm chart"
+  alt: nextcloud-k3s-helm-deployment
+  caption: The way I deployed nextcloud on my k3s cluster using helm chart
+  image: nextcloud-k3s-helm-deployment.png
   relative: true
+date: 2025-12-19
+description: The way I deployed nextcloud on my k3s cluster using helm chart
+draft: false
+slug: nextcloud-k3s-helm-deployment
 tags:
-  - kubernetes
-  - k3s
-  - nextcloud
+- kubernetes
+- k3s
+- nextcloud
+title: Nextcloud K3S deployment using helm chart
 ---
 
 ## Introduction

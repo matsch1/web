@@ -1,20 +1,23 @@
 ---
-title: "My Obsidian + Syncthing Setup: A Self-Hosted Cloud for Notes, Backups, and More"
-slug: "obsidian-cloud-sync-setup"
-date: 2025-09-22
-description: "Use syncthing on a server to create a cross-plattform file exchange for Obsidian notes and more"
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.png"
-  alt: "obsidian-syncthing"
-  caption: ""
+  alt: obsidian-syncthing
+  caption: ''
+  image: img1.png
   relative: true
+date: 2025-09-22
+description: Use syncthing on a server to create a cross-plattform file exchange for
+  Obsidian notes and more
+draft: false
+slug: obsidian-cloud-sync-setup
 tags:
-  - obsdian
-  - syncthing
+- obsdian
+- syncthing
+title: 'My Obsidian + Syncthing Setup: A Self-Hosted Cloud for Notes, Backups, and
+  More'
 ---
+
 There are two kinds of note-takers: those who trust their precious thoughts to the cloud (hello Notion/Google Drive/OneNote people), and those who stare into the abyss and think: *“what if I built my own infrastructure for this?”*  
 
 I belong to the second group.  
@@ -105,5 +108,4 @@ I like to think of it as: **Syncthing is my cloud OS, the VPS is the data center
 Most people pay for cloud storage. I prefer paying for a VPS and hacking my own.  
 With Syncthing + Obsidian, I get **real-time sync, complete control, no vendor lock-in**, and some extra nerd cred.  
 
-If you’re into self-hosting, data ownership, or just like to tinker with infrastructure, I can’t recommend this combo enough. It’s not just notes — it’s a self-hosted cloud ecosystem.  
-
+If you’re into self-hosting, data ownership, or just like to tinker with infrastructure, I can’t recommend this combo enough. It’s not just notes — it’s a self-hosted cloud ecosystem.

@@ -1,18 +1,20 @@
 ---
-title: "Bikepacking Test in Biffontaine"
-date: 2025-06-19
-description: "Mit dem ganzen Gepaeck fuer die Schwedenreise die Familie in Biffontaine besuchen."
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.jpg"
-  alt: "bikepacking-test-vogese"
-  caption: ""
+  alt: bikepacking-test-vogese
+  caption: ''
+  image: img1.jpg
   relative: true
+date: 2025-06-19
+description: Mit dem ganzen Gepaeck fuer die Schwedenreise die Familie in Biffontaine
+  besuchen.
+draft: false
 tags:
-  - bikepacking
+- bikepacking
+title: Bikepacking Test in Biffontaine
 ---
+
 ## Eckdaten
 ### Strecke
 Hinweg: 104 km
@@ -49,4 +51,3 @@ nicht zu vermacken.
 ## Tourdaten
 {{< strava-activity id="14849684801" title="Packtest für Juli (Hinweg)" distance="104.39 km" elevation="959 hm" time="5h 02m" >}}
 {{< strava-activity id="14871288148" title="Packtest für Juli (Rückweg)" distance="131.46" elevation="681 hm" time="5h 50m" >}}
-

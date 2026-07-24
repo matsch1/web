@@ -1,26 +1,26 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 096cd707e57bd529e990b884e048df74b1344e94c40af2b426f342c482216bc3
+base_hash: e999fbef83045ae396b301e993c1952c29e6aaec6ba5a90192f67711bf7a35d4
 cover:
   alt: ''
   caption: ''
   image: img1.jpg
   relative: true
 date: 2025-07-10
-description: Gefühlt den ganzen Tag auf dem Schiff
+description: It felt like I spent the whole day on the ship
 draft: false
 tags:
 - bikepacking
-title: "\U0001F1E9\U0001F1F0 Day 10 - Exploring Gothenburg and taking the ferry"
+title: "\U0001F1E9\U0001F1F0 Day 10 – Exploring Gothenburg and taking the ferry"
 ---
 
 ## Impressions
-The last few kilometers on the Kattlegattleden to Gothenburg were done quickly. I set off with enough time to spare so as not to miss the ferry due to a breakdown. Arriving without a breakdown, I still had enough time to take in Gothenburg and fill my stomach with cinnamon buns.
+The last few kilometers on the Kattlegattleden to Gothenburg went by quickly. I set off with plenty of time to spare so I wouldn’t miss the ferry because of a breakdown. Since I arrived without any issues, I still had enough time to soak up the atmosphere of Gothenburg and fill up on cinnamon rolls once more. 
 
-Once I arrived at the ferry port, I met several other bikepackers. The 3:30 hour crossing passed quickly with nice conversations and coffee.
+Once I arrived at the ferry terminal, I met several other bike packers. So the 3.5-hour crossing flew by with nice conversations and coffee. 
 
-Back in Denmark, I set off on my own to a nearby shelter. After a quick dip in a surprisingly cold stream, I let the evening come to a relaxed end.
+Back in Denmark, I set off on my own to a nearby shelter. After a quick dip in a surprisingly cold stream, I’m now winding down the evening in a relaxed way. 
 
 
 ### Pictures
@@ -33,26 +33,26 @@ Back in Denmark, I set off on my own to a nearby shelter. After a quick dip in a
 {{< /galleries >}}
 
 ### Costs
-- 55 Euro ferry
-- 8 Euro breakfast
-- 15 Euro dinner/breakfast
-- 0 Euro overnight stay
+- 55 euros for the ferry
+- 8 euros for breakfast 
+- 15 euros for dinner/breakfast 
+- 0 euros for lodging
 
-**78 Euro Tageskosten**
+**78 euros in daily expenses**
 
-### Sleeping place
-Sleeping place with bathing facilities
+### Place to Stay 
+Place to stay with bathing facilities 
 {{< open-street-map map_title="Schlafplatz" geo_link="geo:57.46850,10.46534?z=16" >}}
 
-## Tour data
+## Trip Details
 Daily distance: 48 km
 
-**Gesamtstrecke: 829 km**
+**Total distance: 829 km**
 
 ### Weather
-17-25 degrees, sunny
+17–25 degrees, sunny 
 
 ### Tour
-Coming back to Denmark.
+Return to Denmark.
 
 {{< strava-activity-image id="15069014638" image="strava.jpg" >}}

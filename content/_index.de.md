@@ -1,6 +1,6 @@
 ---
-base_hash: 0479b9cd8054e0418eb2ec9e21c35d65516a431cd93dcc57855a76f02d63cea7
-description: Collection of stuff
+base_hash: f2276a662bd2078da6f8f78e68ef291599b6daecb8722bbcf9168e2f7b5a242d
+description: Sammlung verschiedener Dinge
 draft: false
 image: http://blog.matschcode.de/en/Favicon.png
 title: MatSch Web
@@ -8,22 +8,22 @@ title: MatSch Web
 
 {{< figure src="http://blog.matschcode.de/en/Favicon.png" width="300" alt="matsch web logo" >}}
 
-## Willkommen in meinem Blog
+## Willkommen auf meinem Blog
 
-Danke, dass Sie sich die Zeit genommen haben, meine Ecke des Webs zu besuchen.
+Vielen Dank, dass du dir die Zeit genommen hast, meine kleine Ecke im Internet zu besuchen.
 
-Diese Seite dient in erster Linie als eine Sammlung persönlicher Interessen.
+Diese Seite dient in erster Linie als Sammlung meiner persönlichen Interessen.
 
-Hier ist, was Sie erwarten können zu finden:
+Das erwartet euch hier:
 
-**🔧 Projects:** Eine wachsende Liste von Lösungen, Experimenten und Builds, die meinen bisherigen technischen Weg geprägt haben.
+**🔧 Projekte:** Eine ständig wachsende Liste von Lösungen, Experimenten und Eigenentwicklungen, die meinen bisherigen technischen Werdegang geprägt haben.
 
-**💻 Code Notes:** Artikel mit Beobachtungen, Lösungen und wichtigen Erkenntnissen aus meinem persönlichen Programmierprozess. Mein Ziel ist es, die praktischen Dinge zu teilen, die ich beim Aufbau von Projekten im Zusammenhang mit DevOps, App-Entwicklung und Homelabbing gelernt habe.
+**💻 Code-Notizen:** Artikel über Beobachtungen, Lösungen und wichtige Erkenntnisse aus meinem persönlichen Programmierprozess. Mein Ziel ist es, die praktischen Erkenntnisse weiterzugeben, die ich beim Aufbau von Projekten in den Bereichen DevOps, App-Entwicklung und Homelabbing gewonnen habe.
 
-**🌍 Travel Logs:** Beiträge, in denen ich meine Erfahrungen beschreibe, Reisetipps mitteile und die Orte dokumentiere, an denen ich war.
+**🌍 Reiseberichte:** Beiträge, in denen ich meine Erfahrungen schildere, Reisetipps teile und die Orte dokumentiere, die ich besucht habe.
 
-Es ist ein unkomplizierter Raum, um Informationen zu teilen. Stöbern Sie ruhig in den Themen, die Sie am meisten interessieren.
+Es ist ein übersichtlicher Bereich, der zum Austausch von Informationen gedacht ist. Stöbern Sie gerne in den Themen, die Sie am meisten interessieren.
 
 
-    Diese Seite ist ursprünglich in Englisch geschrieben.
-    Andere Sprachen werden automatisch mit DEEPL api übersetzt.
+Diese Seite wurde ursprünglich auf Englisch verfasst. 
+Andere Sprachen werden automatisch mithilfe der DEEPL-API übersetzt.

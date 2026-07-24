@@ -1,17 +1,17 @@
 ---
-title: 🇩🇰 Tag 13 - Unentschlossen Richtung Süden 
-date: 2025-07-13
-description: Mit Wind, Sonne und Regen
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
+  alt: ''
+  caption: ''
+  image: img1.jpg
   relative: true
+date: 2025-07-13
+description: Mit Wind, Sonne und Regen
+draft: false
 tags:
-  - bikepacking
+- bikepacking
+title: "\U0001F1E9\U0001F1F0 Tag 13 - Unentschlossen Richtung Süden"
 ---
 
 ## Eindrücke

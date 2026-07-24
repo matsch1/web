@@ -1,17 +1,17 @@
 ---
-title: 🇸🇪 Tag 8 - Alles kommt anders als man denkt
-date: 2025-07-08
-description: 
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
+  alt: ''
+  caption: ''
+  image: img1.jpg
   relative: true
+date: 2025-07-08
+description: null
+draft: false
 tags:
-  - bikepacking
+- bikepacking
+title: "\U0001F1F8\U0001F1EA Tag 8 - Alles kommt anders als man denkt"
 ---
 
 ## Eindrücke

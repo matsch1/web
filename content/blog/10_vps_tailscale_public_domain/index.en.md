@@ -1,22 +1,24 @@
 ---
-title: "Expose K3s Services from a Tailscale-Protected Homelab via a VPS"
-slug: "expose-k3s-services-via-vps"
-date: 2025-12-21
-description: "Route public web traffic through a VPS into a Tailscale-secured K3s cluster running in a private homelab."
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "expose-k3s-services-via-vps.png"
-  alt: "Traffic flow from VPS to Tailscale-protected K3s cluster"
-  caption: "Public traffic routed through a VPS into a private K3s homelab via Tailscale"
+  alt: Traffic flow from VPS to Tailscale-protected K3s cluster
+  caption: Public traffic routed through a VPS into a private K3s homelab via Tailscale
+  image: expose-k3s-services-via-vps.png
   relative: true
+date: 2025-12-21
+description: Route public web traffic through a VPS into a Tailscale-secured K3s cluster
+  running in a private homelab.
+draft: false
+slug: expose-k3s-services-via-vps
 tags:
-  - kubernetes
-  - k3s
-  - tailscale
-  - vps
+- kubernetes
+- k3s
+- tailscale
+- vps
+title: Expose K3s Services from a Tailscale-Protected Homelab via a VPS
 ---
+
 During my last homelabbing session, I ran into a problem that initially felt annoying but eventually turned into a surprisingly elegant solution—one worth sharing.
 
 ## The Problem
@@ -129,4 +131,3 @@ By using a VPS as a public ingress point and combining it with Tailscale, I was 
 - Secure private networking via Tailscale
 - Full control over which services are exposed
 - Zero inbound connections to my home network
-

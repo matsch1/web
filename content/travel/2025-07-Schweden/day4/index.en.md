@@ -1,31 +1,31 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 541595bcb3dde98bbd41ffa6fa2b19494e621ba35dcd7132a6c6ab76d5b75bc8
+base_hash: a4ea73b861cfc761a1c3bfd029bbc0554e88ff94b4e31bde7ed867191a842e62
 cover:
   alt: ''
   caption: ''
   image: img1.jpg
   relative: true
 date: 2025-07-04
-description: Kopenhagen anschauen und Pläne für die nächsten Tage machen
+description: Exploring Copenhagen and making plans for the next few days
 draft: false
 tags:
 - bikepacking
-title: "\U0001F1E9\U0001F1F0 Day 4 - Copenhagen"
+title: "\U0001F1E9\U0001F1F0 Day 4 – Copenhagen"
 ---
 
 ## Impressions
-Another slow start this morning. It was cold and the day's destination unclear.
+Got off to a slow start again this morning. It was cold, and I wasn’t sure where I was headed for the day. 
 
-I took lots of breaks and relaxed.
+I took plenty of breaks and just relaxed. 
 
-I rolled through Copenhagen at a leisurely pace, looked at a few things and drank a delicious coffee.
+I rolled leisurely through Copenhagen, checked out a few sights, and had a delicious cup of coffee. 
 
-Finding a place to sleep was a bit chaotic today. My original plan was to stay with someone from the warmshowers community. Unfortunately, both my requests were turned down. At the same time, I was invited by a Reddit user to his home in Copenhagen. However, that didn't really work out, as I wanted to be as close as possible to the ferry to Sweden today. That's why I ended up in a shelter near Nivå again.
-Strangely enough, all the shelters in this part of Denmark are chargeable or have to be booked.
+Finding a place to sleep was a bit chaotic today. My original plan was to stay with someone from the WarmShowers community. Unfortunately, both of my requests were turned down. At the same time, a Reddit user invited me to stay at their home in Copenhagen. That didn’t really work out, though, since I wanted to get as close as possible to the ferry to Sweden today. For that reason, I ended up back at a shelter near Nivå. 
+Strangely enough, all shelter spots in this part of Denmark either cost money or require a reservation. 
 
-Well, protected from the rain, I end the evening in my shelter. Unfortunately, the next few days don't promise any better weather. But I have to find somewhere to charge my electronic devices and do my laundry tomorrow anyway. Let's see how the next few days go.
+Well, sheltered from the rain, I’m now winding down the evening in my shelter. Unfortunately, the forecast doesn’t look any better for the next few days. But I have to find a place to stay for tomorrow anyway so I can charge my electronic devices and do my laundry. We’ll see how the next few days go. 
 ### Pictures
 {{< galleries >}}
 {{< gallery src="img1.jpg" title="kurz vor Kopenhagen" >}}
@@ -36,28 +36,28 @@ Well, protected from the rain, I end the evening in my shelter. Unfortunately, t
 {{< /galleries >}}
 
 ### Costs
-- 0 Euro ferry
-- 8 Euro coffee + croissant
-- 14 Euro purchase dinner/breakfast
-- 0 Euro overnight stay
+- 0 euros for the ferry
+- 8 euros for coffee and a croissant 
+- 14 euros for groceries for dinner and breakfast 
+- 0 euros for lodging 
 
-**22 Euro Tageskosten**
+**22 euros in daily expenses**
 
-### Sleeping place
+### Place to Sleep 
 
 
 {{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:55.94802,12.49485?z=15" >}}
 
-## Tour data
+## Trip Details
 Daily distance: 86 km
 
-**Gesamtstrecke: 417 km**
+**Total distance: 417 km**
 
 ### Weather
-Warm 16-23 degrees and sunny.
+Warm, 16–23 degrees, and sunny.
 
-Westerly wind
+West wind 
 
 ### Tour
-Direction ferry
+Heading toward the ferry
 {{< strava-activity-image id="15004976653" image="strava.jpg" >}}

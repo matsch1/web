@@ -1,37 +1,37 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 07ee3e4f4132288c5e163d471935267d91c64e2ba19ef742992750c126d305e9
+base_hash: 7e52a47254aae7a0042433ecc4be833a22baa6f2ebbb35287064d4d46fb19320
 cover:
   alt: giscus-hugo-comments
   caption: Giscus the Git Discussion based commenting system for Hugo blogs
   image: giscus.png
   relative: true
 date: 2025-12-04
-description: Giscus the Git Discussion based commenting system for Hugo blogs
+description: Giscus – das auf Git-Diskussionen basierende Kommentarsystem für Hugo-Blogs
 draft: false
 slug: giscus-hugo-comments
 tags:
 - hugo
-title: Giscus-Kommentare für Hugo-Blog einrichten
+title: Einrichtung von Giscus-Kommentaren für einen Hugo-Blog
 ---
 
 ## Einleitung: Warum Kommentare hinzufügen?
 
-Ich wollte den Lesern die Möglichkeit geben, auf einfache Weise Kommentare zu meinen Hugo-Blog-Beiträgen abzugeben, und suchte nach einer Lösung, die sowohl **simple for users** als auch **lightweight/easy to maintain** für mich ist.
+Ich wollte meinen Lesern die Möglichkeit geben, meine Hugo-Blogbeiträge einfach zu kommentieren, und suchte nach einer Lösung, die sowohl **für die Nutzer einfach** als auch **unauffällig und leicht zu warten** für mich ist.
 
 Hugo bietet offizielle Unterstützung für die Integration verschiedener kommerzieller und Open-Source-Kommentarsysteme.
 
 ## Auswahl eines Kommentarsystems
 ### Kommerziell vs. Open-Source
 
-Obwohl es mehrere kommerzielle Optionen wie **Disqus** gibt (kostenlos für nicht-kommerzielle Nutzung, aber oft mit Werbung), habe ich mich für eine **open-source**-Lösung entschieden, um die Kontrolle zu behalten und Werbung von Dritten zu vermeiden.
+Zwar gibt es mehrere kommerzielle Optionen wie **Disqus** (kostenlos für nicht-kommerzielle Nutzung, enthält jedoch oft Werbung), doch habe ich mich für eine **Open-Source**-Lösung entschieden, um die Kontrolle zu behalten und Werbung von Drittanbietern zu vermeiden.
 
-Hier sind einige beliebte Optionen in jeder Kategorie:
+Hier sind einige beliebte Optionen aus den jeweiligen Kategorien:
 
 | Kommerzielle Systeme | Open-Source-Systeme |
 | :--- | :--- |
-| Emote | Kaktus Kommentare |
+| Emote | Cactus Comments |
 | Graph Comment | Comentario |
 | Hyvor Talk | **Giscus** |
 | IntenseDebate | Isso |
@@ -39,77 +39,77 @@ Hier sind einige beliebte Optionen in jeder Kategorie:
 
 ### Wartungsfreies Open-Source: Giscus vs. Utterances
 
-Meine ursprüngliche Anforderung war es, einen selbst gehosteten Server zu vermeiden, was mich dazu brachte, mich auf Systeme zu konzentrieren, die ein bestehendes Backend eines Drittanbieters nutzen. Die beiden wichtigsten Open-Source-Optionen, die kein Self-Hosting erfordern, sind:
+Meine ursprüngliche Anforderung war es, das Selbsthosten eines Servers zu vermeiden, weshalb ich mich auf Systeme konzentrierte, die ein bestehendes Backend eines Drittanbieters nutzen. Die beiden wichtigsten Open-Source-Optionen, die kein eigenes Hosting erfordern, sind:
 
-* **Utterances:** Verwendet **GitHub Issues** als Backend.
-* **Giscus:** Verwendet **GitHub Discussions** als Backend.
+* **Utterances:** Nutzt **GitHub Issues** als Backend.
+* **Giscus:** Nutzt **GitHub Discussions** als Backend.
 
-Ich habe mich für **Giscus** entschieden, weil **GitHub Discussions** von Natur aus besser für Unterhaltungen mit Threads geeignet ist und verschachtelte Antworten erlaubt, verglichen mit der flachen Liste von Kommentaren in GitHub Issues. Giscus bietet auch moderne Funktionen wie:
+Ich habe mich für **Giscus** entschieden, da **GitHub Discussions** von Natur aus besser für Thread-basierte Unterhaltungen geeignet ist und verschachtelte Antworten ermöglicht – im Gegensatz zur flachen Liste von Kommentaren in GitHub Issues. Giscus bietet außerdem moderne Funktionen wie:
 
 * Reaktionen auf den Hauptbeitrag.
-* Strenger Seitenabgleich, um Verwechslungen von Kommentaren zu vermeiden.
-* Aktivere Wartung.
+* Strikte Seitenzuordnung, um Verwechslungen bei Kommentaren zu verhindern.
+* Aktivere Pflege.
 
 {{< alert type="warning" title="" >}}
-Dieses System basiert auf GitHub-Diskussionen, was bedeutet, dass Leser ein GitHub-Konto benötigen, um Kommentare zu schreiben.  
+Dieses System basiert auf GitHub Discussions, was bedeutet, dass Leser ein GitHub-Konto benötigen, um Kommentare zu schreiben.  
 {{< /alert >}}
 
-## Giscus Einrichtungsanleitung
-Die Integration von Giscus in Ihren Hugo-Blog erfordert drei einfache Schritte: Vorbereitung Ihres GitHub-Repositorys, Generierung des Einbettungscodes und Erstellung eines Hugo-Shortcodes.
+## Anleitung zur Einrichtung von Giscus
+Die Integration von Giscus in Ihren Hugo-Blog erfolgt in drei einfachen Schritten: Vorbereitung Ihres GitHub-Repositorys, Generierung des Einbettungscodes und Erstellung eines Hugo-Shortcodes.
 
 ### 1. Vorbereitung des Repositorys
 
-Giscus verbindet sich direkt mit dem Quellcode-Repository deines Blogs auf GitHub. Stellen Sie sicher, dass die folgenden Bedingungen erfüllt sind:
+Giscus verbindet sich direkt mit dem Quellcode-Repository Ihres Blogs auf GitHub. Stellen Sie sicher, dass die folgenden Bedingungen erfüllt sind:
 
-- Das Repository muss öffentlich sein
-- Die [Giscus app](https://github.com/apps/giscus) muss installiert sein.
+- Das Repository muss öffentlich sein.
+- Das [Giscus app](https://github.com/apps/giscus) muss installiert sein.
 - Die Diskussionsfunktion muss aktiviert sein ([enabling Discussion feature](https://docs.github.com/en/github/administering-a-repository/managing-repository-settings/enabling-or-disabling-github-discussions-for-a-repository)).
 
-### 2. Erzeugen Sie den Giscus Embed Code
+### 2. Giscus-Einbettungscode generieren
 
-Navigieren Sie zum offiziellen [Giscus app website](https://giscus.app/), um Ihren Einbettungscode zu konfigurieren und zu generieren. Sie müssen ein paar Parameter angeben:
+Rufen Sie die offizielle [Giscus app website](https://giscus.app/) auf, um Ihren Einbettungscode zu konfigurieren und zu generieren. Sie müssen einige Parameter angeben:
 
-* **Repository:** Der Name Ihres öffentlichen Repositorys (z.B. `username/blog-repo`).
-* **Discussion Category:** Die Kategorie in Ihren GitHub-Diskussionen, in der neue Beitragskommentare erstellt werden sollen (z. B. "Blog-Kommentare").
-* **Mapping Strategy:** Wie Giscus einen Blogbeitrag mit einer bestimmten Diskussion verknüpft. Die Verwendung von `pathname` ist die Standardwahl.
-* **Theme:** Das visuelle Thema (hell/dunkel/angepasst) für den Kommentarbereich.
+* **Repository:** Der Name Ihres öffentlichen Repositorys (z. B. `username/blog-repo`).
+* **Diskussionskategorie:** Die Kategorie in Ihren GitHub-Diskussionen, in der neue Beitrags-Kommentare erstellt werden (z. B. „Blog-Kommentare“).
+* **Zuordnungsstrategie:** Wie Giscus einen Blogbeitrag mit einer bestimmten Diskussion verknüpft. Die Verwendung von `pathname` ist die Standardwahl.
+* **Design:** Das visuelle Design (hell/dunkel/benutzerdefiniert) für den Kommentarbereich.
 
-Die Website generiert automatisch ein HTML-Snippet (`<script>...</script>`), das auf den von Ihnen gewählten Einstellungen basiert. **Copy this code.**
+Die Website generiert automatisch einen HTML-Schnipsel (`<script>...</script>`) basierend auf Ihren Auswahlmöglichkeiten. **Kopieren Sie diesen Code.**
 
-### 3. Hugo-Integration (mit PaperMod als Beispiel)
+### 3. Hugo-Integration (am Beispiel von PaperMod)
 
-Ich verwende das populäre [PaperMod Hugo theme](https://github.com/adityatelange/hugo-PaperMod/wiki/Features#comments), das bereits so eingerichtet ist, dass Kommentare problemlos verarbeitet werden können.
+Ich verwende das beliebte [PaperMod Hugo theme](https://github.com/adityatelange/hugo-PaperMod/wiki/Features#comments), das bereits so eingerichtet ist, dass Kommentare problemlos verwaltet werden können.
 
-#### A. Aktivieren Sie Kommentare in `hugo.toml`
-Fügen Sie den folgenden Parameter zu Ihrer Hauptkonfigurationsdatei hinzu, um Ihrem Theme mitzuteilen, dass es einen Kommentarbereich anzeigen soll:
+#### A. Kommentare in `hugo.toml` aktivieren
+Füge den folgenden Parameter zu deiner Hauptkonfigurationsdatei hinzu, um deinem Theme mitzuteilen, dass es einen Kommentarbereich rendern soll:
 
 ```toml
 [params]
   comments = true
 ```
 
-#### B. Erstellen Sie den Giscus Shortcode
+#### B. Den Giscus-Shortcode erstellen
 
-Erstellen Sie eine neue Datei unter `layouts/partials/comments.html`` und fügen Sie den generierten Giscus <script> Tag darin ein.
-Das war's! Giscus kümmert sich automatisch um die Zuordnung der Diskussionen, speichert alle Daten auf GitHub und erfordert keine Servereinrichtung auf Ihrer Seite.
+Erstellen Sie eine neue Datei unter `layouts/partials/comments.html`` und fügen Sie den generierten Giscus-Tag <script> darin ein.
+Das war’s schon! Giscus übernimmt automatisch die Zuordnung der Diskussionen, speichert alle Daten auf GitHub und erfordert keinerlei Server-Einrichtung Ihrerseits.
 
 
-## Überlegung: Selbst-Hosting Optionen
+## Überlegung: Optionen für den Eigenbetrieb
 
-Wenn ein GitHub-Konto für Sie nicht in Frage kommt, sollten Sie eine vollständig selbst gehostete Lösung bevorzugen, die Ihnen die vollständige Kontrolle über Ihre Daten und Ihre Privatsphäre gibt.
+Wenn die Notwendigkeit eines GitHub-Kontos für Sie ein Ausschlusskriterium ist, ziehen Sie vielleicht eine vollständig selbst gehostete Lösung vor, die Ihnen die vollständige Kontrolle über Daten und Datenschutz gewährt.
 
-Zu den starken Optionen in dieser Kategorie gehören:
+Zu den empfehlenswerten Optionen in dieser Kategorie gehören:
 
 - Commento
 - Isso
-- Bemerkung42
+- Remark42
 
-Remark42 ist eine außergewöhnlich funktionsreiche und robuste Wahl. Es bietet moderne Kommentarfunktionen, unterstützt verschiedene Anmeldemethoden (nicht nur GitHub) und wird aktiv gepflegt.
+Von diesen sticht Remark42 als besonders funktionsreiche und robuste Wahl hervor. Es bietet moderne Kommentarfunktionen, unterstützt verschiedene Anmeldemethoden (nicht nur GitHub) und wird aktiv gepflegt.
 
-Während das Selbsthosten die Zuweisung von Serverressourcen und die Wartung erfordert, bieten Systeme wie Remark42 die ultimative Unabhängigkeit und Anpassungsfähigkeit. Für diejenigen, die Wert auf eine serverlose, problemlose Einrichtung legen, ist Giscus jedoch der perfekte Ausgangspunkt.
+Zwar erfordert das Selbsthosting die Bereitstellung von Serverressourcen und die Übernahme der Wartung, doch bieten Systeme wie Remark42 ein Höchstmaß an Unabhängigkeit und Anpassungsmöglichkeiten. Für diejenigen, die Wert auf eine serverlose, unkomplizierte Einrichtung legen, bleibt Giscus jedoch der perfekte Ausgangspunkt.
 
 ## Fazit
 
-Giscus ist eine ausgezeichnete, moderne und quelloffene Lösung für das Hinzufügen von Kommentaren zu einem statischen Hugo-Blog. Es umgeht die Komplexität des Selbst-Hostings, nutzt das überlegene Threading von GitHub Discussions und bietet eine nahtlose Integration.
+Giscus ist eine hervorragende, moderne und quelloffene Lösung, um Kommentare zu einem statischen Hugo-Blog hinzuzufügen. Es umgeht die Komplexität des Selbsthostings, nutzt die überlegene Thread-Struktur von GitHub Discussions und bietet eine nahtlose Integration.
 
-Es ist der ideale Ausgangspunkt für jeden, der die Beteiligung der Leser ohne den Aufwand der Serververwaltung ermöglichen möchte.
+Es ist der ideale Ausgangspunkt für alle, die die Interaktion mit ihren Lesern fördern möchten, ohne sich um die Serververwaltung kümmern zu müssen.

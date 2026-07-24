@@ -1,21 +1,19 @@
 ---
-slug: "obsidian-workflow"
-base_hash: bd95cf0ac8648a04043fd754ef22782efbfa2b27c50b1aeb7ed68cbdcb53352d
+base_hash: f94dcb4652f2897bd40248e477e53c73b0f66ca88b39bffc3c0c47f35b7d54d8
 cover:
   alt: obsidian-workflow
   caption: ''
   image: img1.png
   relative: true
 date: 2025-05-25
-description: My awesome setup using obsidian with server centric Syncthing on multiple
-  devices
+description: Mein tolles Setup mit Obsidian und dem serverbasierten Syncthing auf
+  mehreren Geräten
 draft: true
-params:
-  ShowPostNavLinks: true
-title: Mein genialer Obsidian-Workflow
+slug: obsidian-workflow
 tags:
-  - obsidian
+- obsidian
+title: Mein toller Obsidian-Workflow
 ---
 
-Ich habe mich in die Notizfunktion von Obsidian verliebt und möchte diese auf jedem
-Maschine haben, an der ich gerade arbeite.
+Ich habe mich in das Notieren mit Obsidian verliebt und möchte diese App auf jedem
+Rechner haben, an dem ich derzeit arbeite.

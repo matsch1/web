@@ -1,17 +1,17 @@
 ---
-title: 🇩🇰 Tag 14 - Schwere Beine
-date: 2025-07-14
-description: Hauptsach gut gess
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
+  alt: ''
+  caption: ''
+  image: img1.jpg
   relative: true
+date: 2025-07-14
+description: Hauptsach gut gess
+draft: false
 tags:
-  - bikepacking
+- bikepacking
+title: "\U0001F1E9\U0001F1F0 Tag 14 - Schwere Beine"
 ---
 
 ## Eindrücke

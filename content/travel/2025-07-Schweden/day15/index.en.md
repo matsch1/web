@@ -1,32 +1,32 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: d2951852a2e8efb66150c819dc54ae6474b226f8f37168cb6bca6c93a7836dcb
+base_hash: 98dbc0e1af03a0665ce6ab0b2d9834883dec0f5e5177d7bc6c867b92c26ac7a7
 cover:
   alt: ''
   caption: ''
   image: img1.jpg
   relative: true
 date: 2025-07-15
-description: im Regen
+description: In the rain
 draft: false
 tags:
 - bikepacking
-title: "\U0001F1E9\U0001F1F0 Day 15 - To Flensburg"
+title: "\U0001F1E9\U0001F1F0 Day 15 – To Flensburg"
 ---
 
 ## Impressions
-The day started today in thick fog. Without the sun, it was impossible to even think about getting the tent any kind of sign. So I had to pack everything soaking wet.
+The day started out with thick fog. Without any sun, there was no way the tent would dry out even a little. So I had to pack everything up while it was still soaking wet. 
 
-After 10 km on the bike I reached Ribe, the former capital of Denmark. At 9 a.m., the beautiful old town was still pretty sleepy and unfortunately I couldn't see the inside of the Viking cathedral.
+After 10 km on my bike, I reached Ribe, the former capital of Denmark. At 9 a.m., the beautiful old town was still pretty sleepy, and unfortunately, I wasn’t able to see the inside of the Viking Cathedral. 
 
-From there, it was almost a direct route towards Flensburg. Unfortunately, it started to rain and I felt like I was on the only road in Denmark without a cycle path.
+From there, I headed almost directly toward Flensburg. Unfortunately, it had also started to rain, and I felt like I was riding on the only road in Denmark without a bike path.
 
-So on the last day in Denmark I struggled through the rain on the road. Unfortunately, this was not what I had in mind. But I was also glad that I hadn't been out in such conditions on my previous trip.
+So on my last day in Denmark, I struggled along the road through the rain. Unfortunately, that wasn’t what I’d imagined. But at the same time, I was glad that I hadn’t had to ride in such conditions during the rest of my trip so far.
 
-So I cycled the route relatively quickly to spend the evening with friends in Flensburg. We ended the evening together with 3 delicious fish sandwiches in good company.
+So I covered the distance relatively quickly to spend the evening with friends in Flensburg. We wrapped up the evening together with three delicious fish sandwiches in good company. 
 
-From Flensburg, I'm taking the train to Cologne, where I'll start my journey home on the Rhine Cycle Route after 2 rest days.
+From Flensburg, I’ll take the train to Cologne, where, after two days of rest, I’ll start my journey home along the Rhine Cycle Route. 
 
 ### Pictures
 {{< galleries >}}
@@ -37,25 +37,25 @@ From Flensburg, I'm taking the train to Cologne, where I'll start my journey hom
 {{< /galleries >}}
 
 ### Costs
-- 0 Euro ferry
-- 5 Lunch
-- 50 Euro dinner/breakfast
-- 0 Euro overnight stay
+- 0 euros for the ferry
+- 5 lunches 
+- 50 euros for dinner/breakfast 
+- 0 euros for lodging
 
-**55 Euro Tageskosten**
+**55 euros in daily expenses**
 
-### Sleeping place
-With Steffen and Angelina
+### Place to stay 
+At Steffen and Angelina’s
 
-## Tour data
+## Trip Details
 Daily distance: 115 km
 
-**Gesamtstrecke: 1390 km**
+**Total distance: 1,390 km**
 
 ### Weather
 15 degrees, rain
 
-### Tour
-Coming to Flensburg
+### Trip
+Arriving in Flensburg
 
 {{< strava-activity-image id="15121434583" image="strava.jpg" >}}

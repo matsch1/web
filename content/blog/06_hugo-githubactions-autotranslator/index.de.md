@@ -1,51 +1,52 @@
 ---
-slug: "hugo-autotranslator"
 ShowToc: true
 TocOpen: true
-base_hash: 5a1cb1962f71d8a0a82c58649e8694bf95e1899cc2e106131a6d99da8dd03802
+base_hash: e62a77f18884f3ecea846e86abde739c8eba2065ed1616d3ec0142a717bbb0dd
 cover:
   alt: hugo-autotranslator
   caption: ''
   image: img1.png
   relative: true
 date: 2025-06-26
-description: Automatically translate your Hugo website and deploy it to Github Pages
+description: Übersetze deine Hugo-Website automatisch und stelle sie auf GitHub Pages
+  bereit
 draft: false
-title: Kostenloser Hugo-Autotranslator für Github-Seiten
+slug: hugo-autotranslator
 tags:
-  - hugo
-  - github-actions
+- hugo
+- github-actions
+title: Kostenloser Hugo-Autotranslator für GitHub Pages
 ---
 
 ## Das Problem und die Idee
-Ich möchte einen Blog-Beitrag auf Deutsch oder Englisch schreiben und ihn nicht jedes Mal manuell übersetzen.
-jedes Mal manuell übersetzen. Das ist viel einfacher zu pflegen und natürlich viel weniger
-lästig.
+Ich möchte einen Blogbeitrag auf Englisch oder Deutsch schreiben und ihn nicht
+jedes Mal manuell übersetzen müssen. Das ist viel einfacher zu handhaben und natürlich viel weniger
+lästig. 
 
-Die Idee ist also, diesen Übersetzungsprozess zu automatisieren. Es soll also
-automatisch erkannt werden, ob der Beitrag in Deutsch oder Englisch verfasst ist und
-in die andere Sprache übersetzen.
+Die Idee ist also, diesen Übersetzungsprozess zu automatisieren. Daher sollte
+automatisch erkannt werden, ob der Beitrag auf Deutsch oder Englisch verfasst ist, und er
+in die jeweils andere Sprache übersetzt werden.
 
-Ich möchte Github Actions verwenden, um vor der Bereitstellung zu übersetzen.
-Hierfür möchte ich einen kostenlosen Übersetzungsdienst nutzen.
+Ich möchte Github Actions nutzen, um den Beitrag vor dem Deployment zu übersetzen.
+Dafür möchte ich einen kostenlosen Übersetzungsdienst verwenden.
 
 ## Die Übersetzungsmöglichkeiten
-Es gibt viele Möglichkeiten, Text mit Code zu übersetzen.
-Die meisten von ihnen sind nicht kostenlos oder haben eine begrenzte Länge an Zeichen.
-Zum Beispiel die API-Schnittstelle von bekannten Übersetzungsdiensten wie [DeepL API](https://www.deepl.com/en/pro#developer),
+Es gibt viele Möglichkeiten, Text mithilfe von Code zu übersetzen. 
+Die meisten davon sind nicht kostenlos oder haben eine begrenzte Zeichenanzahl.
+Zum Beispiel die API-Schnittstelle bekannter Übersetzungsdienste wie [DeepL API](https://www.deepl.com/en/pro#developer), 
 oder KI-Dienste wie OpenAI (die einen kostenpflichtigen API-Schlüssel erfordern).
 
 ### Googletrans
-Für den ersten Start möchte ich mit einer kostenlosen Version arbeiten. Zu diesem Zweck habe ich das
-freie Python-Paket googletrans. Es ist eigentlich veraltet, aber es funktioniert noch
-mit Python 3.12. Das ist in meinem Fall in Ordnung, denn ich kann es in Github Actions
-unter Verwendung einer alten Umgebung ausführen kann.
+Für den Anfang möchte ich eine kostenlose Version nutzen. Dazu habe ich das
+kostenlose Python-Paket „googletrans“ gefunden. Es ist zwar eigentlich veraltet, funktioniert aber immer noch
+mit Python 3.12. Das ist in meinem Fall in Ordnung, da ich es in GitHub Actions
+in einer alten Umgebung ausführen.
 
-## Hugo mehrsprachiger Modus
-Um eine mehrsprachige Website zu realisieren, muss Hugo im mehrsprachigen
-Modus vorbereitet werden.
-Die Haupteinstellung wird in der `hugo.toml` vorgenommen.
-In meinem Fall funktioniert es am besten wie folgt:
+## Hugo-Mehrsprachenmodus
+Um eine mehrsprachige Website zu realisieren, muss Hugo für den Mehrsprachenmodus
+konfiguriert werden.
+Die Hauptkonfiguration erfolgt in der Datei `hugo.toml`.
+In meinem Fall funktioniert es am besten so:
 
 ``` toml
 title = 'Website title'
@@ -69,7 +70,7 @@ weight = 2
 contentDir = "content"
 ```
 
-Die Markdown-Dateien werden wie folgt erzeugt:
+Die Markdown-Dateien werden wie folgt generiert:
 
 ```
 content
@@ -83,17 +84,17 @@ content
 -- index.de.md
 ```
 
-## So wird übersetzt
-Realisierung der automatischen Übersetzung mit Github Actions und Python
+## So übersetzt man
+Realisierung der automatischen Übersetzung mit GitHub Actions und Python
 
-### Einrichtung der Übersetzungsumgebung im Github Actions Workflow
-Der erste Teil der Arbeit mit Github Actions besteht darin, eine Python 3.12-Umgebung einzurichten
-und die Installation der erforderlichen Abhängigkeiten.
-Der zweite Teil besteht darin, das eigentliche Übersetzungsskript in Python auszuführen und
-die Übergabe der neuen, generierten Markdown-Dateien.
+### Einrichtung der Übersetzungsumgebung im GitHub-Actions-Workflow
+Der erste Teil des GitHub-Actions-Jobs besteht darin, eine Python-3.12-Umgebung einzurichten
+und die erforderlichen Abhängigkeiten zu installieren.
+Im zweiten Teil wird das eigentliche Übersetzungsskript in Python ausgeführt und
+die neuen, generierten Markdown-Dateien werden committet.
 
-Der zweite Job ist das Deployment in das öffentliche Verzeichnis (in dem sich die
-hugo html-Dateien) in den gh-pages-Zweig, der in Github Pages verwendet werden kann.
+Der zweite Job ist das Deployment in das öffentliche Verzeichnis (das die
+Hugo-HTML-Dateien enthält) in den „gh-pages“-Branch, der in GitHub Pages verwendet werden kann.
 
 ``` yaml
 jobs:
@@ -160,14 +161,14 @@ jobs:
 ```
 
 ### Automatische Übersetzung
-Das Übersetzungsskript besteht aus den folgenden Hauptbestandteilen:
+Das Übersetzungsskript besteht aus den folgenden Hauptteilen:
 
-- Finden von Markdown-Dateien
-- Prüfen, ob Dateien geändert wurden (Hash-Check)
-- Identifizierung der Sprache der Markdown-Datei
-- Ersetzen von Codeblöcken, Shortcodes, Urls, ... durch Platzhalter (Maskierung)
-- Übersetzen
-- Demaskieren von Platzhaltern
+- Markdown-Dateien suchen
+- Prüfen, ob sich Dateien geändert haben (Hash-Prüfung)
+- Sprache der Markdown-Datei identifizieren
+- Code-Blöcke, Shortcodes, URLs usw. durch Platzhalter ersetzen (Maskierung)
+- Übersetzung
+- Platzhalter auflösen
 - Übersetzten Text in neuen Dateien speichern
 
 ``` py
@@ -309,4 +310,4 @@ for md_file in BASE_PATH.rglob("*.md"):
         print(f"✅ Translated and saved {target_file}")
 ```
 
-Nachdem die neuen Dateien commited wurden. Der Push nach Main löst einen neuen Hugo-Build aus.
+Nachdem die neuen Dateien committet wurden, löst der Push in den „main“-Zweig einen neuen Hugo-Build aus.

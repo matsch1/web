@@ -1,19 +1,20 @@
 ---
-title: "7 Ways to Refactor Your Flutter Application"
-slug: "flutter-refactoring"
-date: 2025-01-07
-description: "My learnings during flutter refactoring"
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.webp"
-  alt: "flutter-refactoring"
-  caption: ""
+  alt: flutter-refactoring
+  caption: ''
+  image: img1.webp
   relative: true
+date: 2025-01-07
+description: My learnings during flutter refactoring
+draft: false
+slug: flutter-refactoring
 tags:
-  - flutter
+- flutter
+title: 7 Ways to Refactor Your Flutter Application
 ---
+
 Refactoring is a vital part of maintaining and improving your Flutter application. 
 It ensures your codebase remains clean, consistent, and efficient as your app grows. 
 In this article, we’ll explore seven practical ways to refactor your Flutter application.
@@ -387,5 +388,3 @@ class UserScreen extends StatelessWidget {
 ---
 
 Refactoring doesn’t have to be overwhelming. By applying these seven techniques, you can improve your Flutter application’s maintainability, scalability, and overall quality.
-
-

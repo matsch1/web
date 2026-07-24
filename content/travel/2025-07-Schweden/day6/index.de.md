@@ -1,17 +1,17 @@
 ---
-title: 🇸🇪 Tag 6 - Aprilwetter 
-date: 2025-07-06
-description: Bei Regenschauern und Sonenschein ins Hostel
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
+  alt: ''
+  caption: ''
+  image: img1.jpg
   relative: true
+date: 2025-07-06
+description: Bei Regenschauern und Sonenschein ins Hostel
+draft: false
 tags:
-  - bikepacking
+- bikepacking
+title: "\U0001F1F8\U0001F1EA Tag 6 - Aprilwetter"
 ---
 
 ## Eindrücke

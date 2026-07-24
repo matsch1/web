@@ -1,17 +1,17 @@
 ---
-title: "Planung und Vorbereitungen"
-date: 2025-06-24
-description: "Grobe Routenplanung und Gepäck"
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
+  alt: ''
+  caption: ''
+  image: img1.jpg
   relative: true
+date: 2025-06-24
+description: Grobe Routenplanung und Gepäck
+draft: false
 tags:
-  - bikepacking
+- bikepacking
+title: Planung und Vorbereitungen
 ---
 
 ## Der Plan

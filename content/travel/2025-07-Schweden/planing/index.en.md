@@ -1,185 +1,185 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 328e5d0ceed401c73aff1de84e3251ee9b2709cb2207c37dcfae6fe01eed78eb
+base_hash: fe788dfbc13880c76b03fc43f6bae2f44a8ae6bfa0ff9497e8ee67afbaa54f86
 cover:
   alt: ''
   caption: ''
   image: img1.jpg
   relative: true
 date: 2025-06-24
-description: Grobe Routenplanung und Gepäck
+description: Rough Route Planning and Luggage
 draft: false
 tags:
 - bikepacking
-title: Planning and preparations
+title: Planning and Preparations
 ---
 
-## The plan
-I'm going to cycle through Denmark, Sweden and Norway for a month.
-I want to wild camp and use the many beautiful shelter sites in the
-Scandinavian countries.
-My luggage should be as light as possible, but have everything I need for a month's trip.
-month trip.
+## The Plan
+I’m going to spend a month cycling through Denmark, Sweden, and Norway.
+I plan to camp in the wild and take advantage of the many beautiful shelter sites in the
+Scandinavian countries. 
+I want to keep my luggage as light as possible, while still packing everything I need for a
+month-long trip.
 
 ## Route
-The rough route plan, starting and ending in Flensburg, goes through the following cities:
+The rough route plan, starting and ending in Flensburg, goes through the following cities: 
 Copenhagen, Gothenburg, Oslo, Larvik, Hirtshals, Esbjerg
-I would like to cycle approx. 100 km a day.
+I plan to cycle about 100 km each day.
 {{< komoot src="https://www.komoot.com/de-de/tour/2034498871/embed?share_token=aISPLoFO3KX0E0hxm10fPL7w0dY36uWN4zp8HN4CC7btLetpw7&profile=1" >}}
 
 ### Section 1: Flensburg to Helsingborg (Sweden)
-The first section through Denmark looks like this in the detailed planning:
+The detailed plan for the first section through Denmark looks like this:
 {{< komoot src="https://www.komoot.com/de-de/tour/2307166457/embed?share_token=aQnymAKsMOlxpwS71nFIKouaHoxZYQvpJC6IoyrL7MZERrNPtB&profile=1" >}}
 
 ### Section 2: Helsingborg to Gothenburg (Sweden)
-The journey in Sweden begins with the West Coast Cycle Route (Kattegattleden) to Gothenburg.
+The journey through Sweden begins with the West Coast Cycle Route (Kattegattleden) to Gothenburg.
 {{< komoot src="https://www.komoot.com/de-de/tour/2326365668/embed?share_token=adJEEoXegyhrYhcXAljTmIGpNhE15yd7r8sUpsGnkMEmxXy2Y9&profile=1" >}}
 
 ### Section 3: Gothenburg to Oslo (Norway)
-This section is still unclear. Probably cycle along the coast, as this section is said to be
+This section is still unclear at this point. I’ll likely cycle along the coast, as this section
 is said to be particularly beautiful.
 
 ### Section 4: Oslo to Hirtshals (Denmark)
-This section is still unclear. It also depends on how much time
-I have left. The shortest route would be to cross over to Denmark via Larvik. The
-longer route would be along the Norwegian coast and then from Christiansand to
+This section is still unclear at this point. It also depends on how much time
+I have left. The shorter route would be to take a ferry to Denmark via Larvik. The
+slightly longer route continues along the Norwegian coast and then from
 Christiansand to Hirtshals in Denmark.
 
 ### Section 5: West Coast Cycle Route (Denmark)
-If the wind allows it, I will cycle the last section to Flensburg on the
-West Coast Cycle Route of Denmark.
+If the wind permits, I’ll ride the final section to Flensburg along
+Denmark’s West Coast Cycle Route.
 {{< komoot src="https://www.komoot.com/de-de/tour/2328568896/embed?share_token=a2jdRClFve8Ke3VnS9so3fLnElTb7kVT12ZltQ2zJi82T1QU7d&profile=1" >}}
 
 
 ## Luggage
-The aim is to travel as light as possible and have a good time on the bike.
-on the bike.
-The following chapters contain a list of the items I take with me.
-take with me.
-Unfortunately, I haven't weighed everything in detail, but I can say that all the
-luggage including bags and 1.8 liters of water weighs about 14 kg.
+The goal is to travel as light as possible while still having a good time on the bike
+.
+The following sections list the items I’m
+bringing with me.
+Unfortunately, I didn’t weigh everything in detail, but I can say that the total
+luggage, including bags and 1.8 liters of water, weighs about 14 kg. 
 
 ### Weight
-- Ass rocket: 3.5 kg
+- Bike: 3.5 kg
 - Top tube bag: 0.8 kg
 - Handlebar bag with lock: 3.2 kg
 - Right fork bag: 2.5 kg
 - Left fork bag: 2.5 kg
 - Water: 2 kg
-### Camping 2500g
-- Tent
-- Groundsheet
-- Air mattress
-- Sleeping bag
-- Liner
-- Pillow
+### Camping 2,500 g
+-  Tent
+-  Groundsheet
+-  Air mattress 
+-  Sleeping bag 
+-  Liner 
+-  Pillow
 
 ### Electronics 1000g
-- GPS
-- cell phone
-- Headlamp
-- Rear light
-- Headphones Shockz
-- Headphones InEar
-- Keyboard
-- Chest strap
-- Powerbank
-- Power bank
-- Charging cable Micro-USB
-- Charging cable USB-C
-- Charging cable watch
-- Charging cable Shockz headphones
-- Charger circuit
+-  GPS
+-  Cell phone
+-  Headlamp 
+-  Rear light
+-  Shockz headphones 
+-  In-ear headphones 
+-  Keyboard 
+-  Chest strap 
+-  Power bank 
+-  Power adapter 
+-  Micro-USB charging cable
+-  USB-C charging cable 
+-  Watch charging cable 
+-  Shockz headphone charging cable 
+-  Circuit charger 
 
 ### Hygiene
-- Medipack
-- first-aid kit
-- Sun cream
-- Face cream
-- Bepanthen
-- Chapstick
-- Nobyte
-- Ass cream
-- Toothbrush
-- Toothpaste
-- Dental floss + interdental brush
-- Dental splint
-- Nail clips
-- razor
-- Towel
-- Shower gel 4in1 (shower gel + washing-up liquid + detergent)
-- clothespin
-- Disinfectant wipes
-- Toilet paper
-- speed
-- earplugs
+-  Medipack 
+-  Travel first-aid kit 
+-  Sunscreen 
+-  Face cream 
+-  Bepanthen 
+-  Labello 
+-  Nobyte 
+-  Butt cream 
+-  Toothbrush 
+-  Toothpaste 
+-  Dental floss + interdental brush 
+-  Mouthguard 
+-  Nail clippers 
+-  Razor 
+-  Towel 
+-  4-in-1 shower gel (shower gel + dish soap + laundry detergent)
+-  Clothespin 
+-  Sanitizing wipes 
+-  Toilet paper 
+-  Tissue 
+-  Earplugs 
 
 ### Food
-- Gas cartridge
-- Stove
-- lighter
-- Pot
-- Folding cup
-- Pocket knife
-- Spoon
-- Water bottles
-- Instant coffee
-- tea
-- Dates
+-  Gas cartridge 
+-  Stove 
+-  Lighter 
+-  Pot 
+-  Folding cup 
+-  Pocket knife 
+-  Spoon 
+-  Water bottles 
+-  Instant coffee
+-  Tea 
+-  Dates 
 
-### Clothes
-- Cycling clothes
-	- Pants
-	- undershirt
-	- Short jersey
-	- socks
-- Spare cycling clothes
-	- shorts
-	- Undershirt
-	- Short jersey
-- Buff 2x
-- bouldering pants
-- shorts
-- pullover
-- T-shirt 2x
-- Underpants 2x
-- socks 2x
-- swimming trunks
-- rain jacket
-- overshoes
-- helmet
-- Windbreaker
-- Flip-flops
-- Cycling gloves
+### Clothing
+-  Cycling gear 
+  - Pants 
+  - Undershirt 
+  - Short-sleeve jersey 
+  - Socks
+-  Spare cycling gear 
+  - Pants 
+	- Base layer 
+  - Short-sleeve jersey 
+-  Buff (2) 
+-  Bouldering pants 
+-  Shorts 
+-  Sweater 
+-  T-shirts (2) 
+-  Underwear (2) 
+-  Socks (2) 
+-  Swimsuit 
+-  Rain jacket 
+-  Over-shoes 
+-  Helmet 
+-  Windbreaker 
+-  Flip-flops 
+-  Cycling gloves 
 
 ### Bicycle
-- Bike lock
-- Tire levers
-- Sealant
-- Tubeless salami
-- Multitool
-- Chain wax
-- rag
-- pump
-- Spare parts
-	- inner tube
-	- Cable tie
+-  Lock 
+-  Tire lever 
+-  Puncture sealant 
+-  Tubeless repair kit 
+-  Multitool 
+-  Chain lube 
+-  Rag 
+-  Pump 
+-  Spare parts 
+  - Inner tube
+  - Cable ties
 	- Chain lock
-	- Armored tape
-	- derailleur hanger
+  - Duct tape
+  - Derailleur hanger
 
-### Other
-- Mini backpack
-- book
-- Swimming goggles
-- Terraband
-- Sunglasses with case
-- Reading glasses
-- Wallet
-- ID card
-## Bicycle
-My bike is a Cube Nuroad C:62SL. With its carbon frame and fork, as well as electronic gears, it's only partially suitable for a tour like this. But I just hope that the carbon won't mind so much luggage.
+### Miscellaneous
+-  Mini backpack 
+-  Book 
+-  Swim goggles 
+-  Terraband 
+-  Sunglasses with case 
+-  Reading glasses 
+-  Wallet 
+-  ID 
+## Bike
+My bike is a Cube Nuroad C:62SL. With its carbon frame and fork, as well as electronic shifting, it’s only somewhat suitable for a tour like this. But I’m just hoping the carbon won’t mind carrying so much luggage.
 
-For comfort, I'm leaving the triathlon handlebar attachment on and upgrading to wide tubeless studded tires.
+For comfort, I’m leaving the triathlon handlebar extensions on and switching to wide tubeless knobby tires.
 ![Bike](img1.jpg)

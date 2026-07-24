@@ -1,19 +1,19 @@
 ---
-title: "My first split keyboard build - Ian's keyboard"
-slug: "split-keyboard-ianmaclarty"
-date: 2025-08-04
-description: "Modeling, soldering, 3D printing, assembling, flashing"
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "header.png"
-  alt: "split-keyboard-ianmaclarty"
-  caption: ""
+  alt: split-keyboard-ianmaclarty
+  caption: ''
+  image: header.png
   relative: true
+date: 2025-08-04
+description: Modeling, soldering, 3D printing, assembling, flashing
+draft: false
+slug: split-keyboard-ianmaclarty
 tags:
-  - 3D printing
-  - keyboard
+- 3D printing
+- keyboard
+title: My first split keyboard build - Ian's keyboard
 ---
 
 {{< alert type="info" title="" >}}

@@ -1,30 +1,30 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: a9395e984944cef527689116c8ae10a38b071dbead61a4fa3c9f1c199f9b1851
+base_hash: be12248e02135ecabcea1a2a23a40fa2b34eb6130dbd7f1b516544955d9a48ad
 cover:
   alt: ''
   caption: ''
   image: img1.jpg
   relative: true
 date: 2025-07-06
-description: Bei Regenschauern und Sonenschein ins Hostel
+description: To the hostel through rain showers and sunshine
 draft: false
 tags:
 - bikepacking
-title: "\U0001F1F8\U0001F1EA Day 6 - April weather"
+title: "\U0001F1F8\U0001F1EA Day 6 – April weather"
 ---
 
 ## Impressions
-The evening and night at the campsite went differently than expected. At least I was able to do some laundry and charge my batteries. However, about 100 m away from my tent there was a big country party with music and square dancing. As a result, all the Swedes were partying into the night, dressed as cowboys, not far from my tent.
+The evening and night at the campground didn’t go as expected. At least I was able to do some laundry and charge my batteries. However, about 100 meters away from my tent, there was a much-hyped country party with music and square dancing. Consequently, all the Swedes—dressed as cowboys—partied well into the night not far from my tent. 
 
-Nevertheless, I was quite well rested this morning and was able to dry everything quickly without any problems and then set off on a short day's stage with surprisingly little rain. My tent withstood the heavy rain without any problems.
+Nevertheless, feeling quite well-rested, I was able to dry everything quickly this morning without any problems and then set off on a short day’s ride with surprisingly little rain. My tent withstood the sometimes heavy rain without any problems. 
 
-I have decided to believe the weather forecast that it is supposed to rain up to 30 l/m2 tomorrow. So I spend the next two nights in a hostel 60 km away in Mellbystrand and rest for a day.
+I’ve decided to believe the weather forecast, which says it’s supposed to rain up to 30 l/m² tomorrow. So I’ll be spending the next two nights at a hostel in Mellbystrand, 60 km away, and taking a day to rest.
 
-This gives me a little time to reflect, plan the rest of my trip and fill my stomach.
+This gives me a little time to reflect, plan the rest of the trip, and fill my belly. 
 
-Today, by the way, I have completed the first quarter of my journey. If I keep up the pace (and take one day off per week), then I will need about 4 weeks for the entire trip, as expected.
+By the way, as of today, I’ve successfully completed the first quarter of my journey. If I keep up this pace (and take one rest day per week), I’ll need about 4 weeks for the entire trip, as I expected. 
 
 
 ### Pictures
@@ -37,25 +37,25 @@ Today, by the way, I have completed the first quarter of my journey. If I keep u
 {{< /galleries >}}
 
 ### Costs
-- 0 Euro ferry
-- 6 Euro breakfast/lunch
-- 25 Euro purchase of food and snacks for today and tomorrow
-- 60 Euro Overnight stay (hostel only today)
+- 0 euros for the ferry
+- 6 euros for breakfast/lunch 
+- 25 euros for groceries and snacks for today and tomorrow
+- 60 euros for lodging (hostel just for today)
 
-**91 Euro Tageskosten**
+**91 euros in daily expenses**
 
-### Sleeping place
+### Place to sleep 
 {{< open-street-map map_title="Schlafplatz" geo_link="geo:56.48610,12.94284?z=14" >}}
 
-## Tour data
+## Trip Details
 Daily distance: 62 km
 
-**Gesamtstrecke: 560 km**
+**Total distance: 560 km**
 
 ### Weather
-Cold 17-25 degrees, rain showers + sunshine
+Cold, 17–25 degrees; rain showers and sunshine
 
-Westerly wind
+West wind 
 
 ### Tour
 Off to the hostel

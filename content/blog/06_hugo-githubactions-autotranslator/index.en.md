@@ -1,20 +1,21 @@
 ---
-title: "Free Hugo autotranslator for Github Pages"
-slug: "hugo-autotranslator"
-date: 2025-06-26
-description: "Automatically translate your Hugo website and deploy it to Github Pages"
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.png"
-  alt: "hugo-autotranslator"
-  caption: ""
+  alt: hugo-autotranslator
+  caption: ''
+  image: img1.png
   relative: true
+date: 2025-06-26
+description: Automatically translate your Hugo website and deploy it to Github Pages
+draft: false
+slug: hugo-autotranslator
 tags:
-  - hugo
-  - github-actions
+- hugo
+- github-actions
+title: Free Hugo autotranslator for Github Pages
 ---
+
 ## The problem and the idea
 I want to write a blog post in english or german, and I don't want translate it
 manually every time. This is much easier to maintain and obviously much less

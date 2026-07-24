@@ -1,30 +1,30 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 7661f121e63140eadbce4fde47272df75e54fbfa40baf479e84ad87138ff98f5
+base_hash: c495d6ee7ab52b24b5975a7295a8e652a93fdd137d3c08fa1091c5375b6870fe
 cover:
   alt: ''
   caption: ''
   image: img1.jpg
   relative: true
 date: 2025-07-18
-description: In 3 Tagen von Köln nach Karlsruhe
+description: From Cologne to Karlsruhe in 3 days
 draft: false
 tags:
 - bikepacking
-title: "\U0001F1E9\U0001F1EA Day 18 - 20 - Back home"
+title: "\U0001F1E9\U0001F1EA Days 18–20 – Back Home"
 ---
 
 ## Impressions
-As the weather looked promising, I decided to cycle from Cologne to Karlsruhe. I finished off the trip with another 300 km on the Rhine cycle path.
+Since the weather looked promising, I decided to bike from Cologne to Karlsruhe. I wrapped up the trip with a nice 300-km ride along the Rhine Cycle Route. 
 
-Jan joined the tour for the last few kilometers. As he was unable to organize camping equipment so spontaneously, we decided to spend the last two nights in accommodation. For this reason, I sent my camping equipment home by post the day before and traveled the last few kilometers with a pleasantly light pack.
+Jan joined the tour for the last few kilometers. Since he couldn’t organize camping gear on such short notice, we decided to spend the last two nights in lodging. For this reason, I’d already mailed my camping gear home the day before and traveled the last few kilometers with pleasantly light luggage.
 
-Day 1 was very relaxed with the best weather directly on the Rhine. We overtook 1000 other cyclists from the NRW Cycle Tour 2025 and accidentally took more detours than planned. The originally planned 120 km turned into almost 140 km. But that was quickly forgotten over pizza and cocktails on the banks of the Rhine.
+Day 1 was very relaxed with perfect weather right along the Rhine. We passed 1,000 other cyclists from the NRW Radtour 2025 and accidentally took more detours than planned. So the originally planned 120 km turned into almost 140 km. But that was quickly forgotten over pizza and cocktails on the banks of the Rhine.
 
-Day 2 started with a breakfast from the bakery on the banks of the Rhine in glorious sunshine. Unfortunately, a headwind somehow crept in afterwards, which made cycling along the banks of the river unnecessarily strenuous. Shortly before Rüdesheim, a cycling detour ("only for experienced cyclists") crept in, which meant an extra 200 m of climbing over the adjacent mountain. After a coffee in Rüdesheim, we still had about 50 km to go through the vineyards in a headwind. Once we had completed this, we allowed ourselves to relax in the hotel pool.
+Day 2 started with breakfast from a bakery on the Rhine beach in bright sunshine. Unfortunately, a headwind somehow crept in afterward, which made cycling along the riverbank unnecessarily strenuous. Shortly before Rüdesheim, a cycling detour (“for experienced riders only”) crept into our route, which added an extra 200 hm as we climbed the adjacent hill. After a cup of Rüdesheim coffee, we still had to tackle about 50 km through the vineyards against the headwind. Once we’d put that behind us, we treated ourselves to some relaxation in the hotel pool.
 
-Day 3 started again through the vineyards. After some deliberation, I realized that the reason my gears had suddenly gone haywire was yesterday's accident, which had actually bent my derailleur hanger. Luckily I had a spare part with me, which was quickly replaced. After a final beer on the Rhine near Germersheim, the last few kilometers were quickly done.
+Day 3 started off through the vineyards again. After some thought, I realized that the reason my derailleur suddenly started acting up was yesterday’s fall, which had actually bent my derailleur hanger. Luckily, I had a spare part with me, which was quickly replaced. After a celebratory beer on the Rhine near Germersheim, the last few kilometers were covered in no time.
 
 ### Pictures
 {{< galleries >}}
@@ -35,23 +35,23 @@ Day 3 started again through the vineyards. After some deliberation, I realized t
 {{< /galleries >}}
 
 ### Costs
-- Accommodation day 1: 35 Euro per person
-- Accommodation day 2: 46 Euro per person
-- Food and drink: 145
+- Accommodation Day 1: 35 euros per person
+- Accommodation on Day 2: 46 euros per person
+- Food and drinks: 145
 
 
-**227 Euro Gesamt**
+**Total: 227 euros**
 
-### Sleeping place
-Airbnb in Boppard on day 1.
-Hotel in Gundersheim on day 2.
+### Accommodation 
+Airbnb in Boppard on Day 1.
+Hotel in Gundersheim on Day 2.
 
-## Tour data
-Daily distance day 1: 137 km
-Daily distance day 2: 101 km
-Daily distance day 3: 95 km
+## Tour Details
+Daily distance on Day 1: 137 km
+Daily distance on Day 2: 101 km
+Daily distance on Day 3: 95 km
 
-**Gesamtstrecke: 1723 km**
+**Total distance: 1,723 km**
 
 ### Weather
 25 degrees, wind

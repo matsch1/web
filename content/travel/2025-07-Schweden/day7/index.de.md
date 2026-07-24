@@ -1,17 +1,17 @@
 ---
-title: 🇸🇪 Tag 7 - Ruhetag 
-date: 2025-07-07
-description: Heftige Regenschauer am Vormittag und Strandspaziergang am Nachmittag
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
+  alt: ''
+  caption: ''
+  image: img1.jpg
   relative: true
+date: 2025-07-07
+description: Heftige Regenschauer am Vormittag und Strandspaziergang am Nachmittag
+draft: false
 tags:
-  - bikepacking
+- bikepacking
+title: "\U0001F1F8\U0001F1EA Tag 7 - Ruhetag"
 ---
 
 ## Eindrücke
@@ -47,4 +47,4 @@ Tagesstrecke: 0 km
 ### Wetter
 Kalt 17-25 Grad, Regenschauer + Sonnenschein
 
-Westwind 
+Westwind

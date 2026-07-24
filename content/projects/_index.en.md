@@ -1,8 +1,8 @@
 ---
-title: "Projects"
 date: 2025-11-30
-description: ""
+description: ''
 draft: false
+title: Projects
 ---
 
 Welcome to my projects page!
@@ -12,5 +12,3 @@ I write about what I build, , and the tools and concepts that capture my curiosi
 
     This page and the posts are originally written in english. 
     Other languages are translated automatically using DEEPL api.
-
-

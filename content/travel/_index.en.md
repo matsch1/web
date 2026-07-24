@@ -1,15 +1,15 @@
 ---
-base_hash: 5162aac0b495511dd2cd7ce6b9cc4fd298334630f5454879ffebc36c97fc52bf
+base_hash: 45caf7a22036333444f42ac2e29ee8278a827040b58511dc037f8d4d514d3c31
 date: 2025-05-04
 description: ''
 draft: false
 title: Travel
 ---
 
-Welcome to my travel diary!
+Welcome to my travel journal!
 
-This is where I record where the roads take me - the little moments, the impressions along the way and the thoughts that accumulate while traveling. My little adventures on other roads and in foreign cities.
+Here I record where my travels take me—the little moments, the impressions along the way, and the thoughts that accumulate while traveling. My little adventures on different roads and in foreign cities.
 
 
-    Everything here was originally written in German.
-    Other languages were translated automatically with the DEEPL api.
+    Everything was originally written in German here. 
+ Other languages were automatically translated using the DEEPL API.

@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: d34de8bb2412fa074e12d292685734c2bc78ba7db89c3507c2f22d9329d9e8d0
+base_hash: d35ecf6ce827fd49393b3c8eed881b541ed509c551255ccadac5088e0d9a3191
 cover:
   alt: ''
   caption: ''
@@ -12,21 +12,21 @@ description: null
 draft: false
 tags:
 - bikepacking
-title: "\U0001F1F8\U0001F1EA Day 8 - Everything turns out differently than you think"
+title: "\U0001F1F8\U0001F1EA Day 8 - Things never turn out the way you expect"
 ---
 
 ## Impressions
-This morning I finally set off again in bright sunshine. I cycled along the coast through dunes and forests to Halmstad, where I had breakfast at the harbor.
+This morning, I finally set off again under bright sunshine. I rode along the coast through dunes and forests all the way to Halmstad, where I had breakfast at the harbor. 
 
-After Halmstad, the Kattlegattle unfortunately mainly ran along roads. It wasn't so nice to look at, but it would almost have invited me to do a good stretch. If it hadn't been for the headwind. I don't think I need to mention that in future. It's always windy.
+After Halmstad, the Kattlegattle route unfortunately ran mostly along various roads. It wasn’t the most scenic route, but it almost tempted me to really pick up the pace—if it hadn’t been for the headwind. I don’t think I need to mention that again in the future. It’s always windy. 
 
-I chose a shelter inland as my destination for the day. The coast is far too densely populated to camp in the wild. There are no shelter sites there either and I didn't fancy camping.
+I chose a shelter inland as my destination for the day. The coast is far too densely populated for wild camping. There aren’t any shelter sites there either, and I didn’t feel like staying at a campground. 
 
-As soon as you move away from the coast, the landscape feels much more like Sweden. You drive through many forests and I had to buy my dinner 20 km before my destination, as there are no other supermarkets.
+As soon as you move away from the coast, the landscape immediately feels much more like Sweden. You ride through lots of forests, and I had to buy my dinner 20 km before reaching my destination, since there aren’t any more supermarkets after that. 
 
-However, this turned out to be a good decision, as I once again met other cyclists at the shelter. Having dinner with like-minded people makes it even more fun.
+That turned out to be a good decision, though, since I ran into other bike travelers again at the shelter site. Dinner among like-minded people is just more fun that way. 
 
-I've decided to take the ferry back to Denmark the day after tomorrow. For me, the concept of the shelter sites simply suits me better than crossing the Swedish wilderness on my own.
+I’ve decided to take the ferry back to Denmark the day after tomorrow. For me, the shelter concept just works better than crossing the Swedish wilderness alone. More on that in the next few days. 
 
 ### Pictures
 {{< galleries >}}
@@ -38,28 +38,28 @@ I've decided to take the ferry back to Denmark the day after tomorrow. For me, t
 {{< /galleries >}}
 
 ### Costs
-- 0 Euro ferry
-- 12 Euro lunch
-- 15 Euro dinner/breakfast
-- 0 Euro Overnight stay
+- 0 euros for the ferry
+- 12 euros for lunch 
+- 15 euros for dinner/breakfast 
+- 0 euros for lodging
 
-**27 Euro Tageskosten**
+**27 euros in daily expenses**
 
-### Sleeping place
-Wonderful place to sleep right by the lake
+### Place to Sleep 
+Beautiful place to sleep right by the lake
 {{< open-street-map map_title="Schlafplatz" geo_link=geo:57.05329,12.52974?z=14" >}}
 
-## Tour data
+## Trip Details
 Daily distance: 109 km
 
-**Gesamtstrecke: 669 km**
+**Total distance: 669 km**
 
 ### Weather
-Cold 17-25 degrees, cloudy
+Cold, 17–25 degrees; cloudy 
 
-north wind
+North wind
 
 ### Tour
-Do a route along the coast and test inland
+Ride along the coast and explore the inland areas
 
 {{< strava-activity-image id="15046344170" image="strava.jpg" >}}

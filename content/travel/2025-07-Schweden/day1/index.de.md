@@ -1,17 +1,17 @@
 ---
-title: 🇩🇰 Tag 1 - Auf die Insel Fyn/Odense
-date: 2025-07-01
-description: Zum Reinkommen an Tag 1 erstmal die Route umgeplant
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
+  alt: ''
+  caption: ''
+  image: img1.jpg
   relative: true
+date: 2025-07-01
+description: Zum Reinkommen an Tag 1 erstmal die Route umgeplant
+draft: false
 tags:
-  - bikepacking
+- bikepacking
+title: "\U0001F1E9\U0001F1F0 Tag 1 - Auf die Insel Fyn/Odense"
 ---
 
 ## Eindrücke

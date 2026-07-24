@@ -1,17 +1,17 @@
 ---
-title: 🇩🇪 Tag 18 - 20 - Zurück nach Hause
-date: 2025-07-18
-description: In 3 Tagen von Köln nach Karlsruhe
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
+  alt: ''
+  caption: ''
+  image: img1.jpg
   relative: true
+date: 2025-07-18
+description: In 3 Tagen von Köln nach Karlsruhe
+draft: false
 tags:
-  - bikepacking
+- bikepacking
+title: "\U0001F1E9\U0001F1EA Tag 18 - 20 - Zurück nach Hause"
 ---
 
 ## Eindrücke

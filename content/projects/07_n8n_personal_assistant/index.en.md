@@ -1,19 +1,19 @@
 ---
-title: "My personal n8n AI assistant"
-slug: "n8n-ai-assistant"
-date: 2025-10-11
-description: "Build your own personal telegram assistant using n8n"
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "header.png"
-  alt: "n8n-ai-assistant"
-  caption: "Personal AI assistant build with n8n"
+  alt: n8n-ai-assistant
+  caption: Personal AI assistant build with n8n
+  image: header.png
   relative: true
+date: 2025-10-11
+description: Build your own personal telegram assistant using n8n
+draft: false
+slug: n8n-ai-assistant
 tags:
-  - n8n
-  - AI
+- n8n
+- AI
+title: My personal n8n AI assistant
 ---
 
 {{< alert type="info" title="" >}}

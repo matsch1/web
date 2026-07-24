@@ -1,19 +1,18 @@
 ---
-title: 🇩🇰 Tag 4 - Kopenhagen
-date: 2025-07-04
-description: Kopenhagen anschauen und Pläne für die nächsten Tage machen
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
+  alt: ''
+  caption: ''
+  image: img1.jpg
   relative: true
+date: 2025-07-04
+description: Kopenhagen anschauen und Pläne für die nächsten Tage machen
+draft: false
 tags:
-  - bikepacking
+- bikepacking
+title: "\U0001F1E9\U0001F1F0 Tag 4 - Kopenhagen"
 ---
-
 
 ## Eindrücke
 Heute morgen wieder langsam gestartet. Es war kalt und das Tagesziel unklar. 

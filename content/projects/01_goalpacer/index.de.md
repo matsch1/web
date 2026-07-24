@@ -1,15 +1,15 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: a6c5dfab7870a04711d8feb04cc7e24d2c7daf9458ebc865258113836f454e0c
+base_hash: 5e816669a462b073cfc2684c1df74c821a1279a2de10b3e99a375ccfc923aa2d
 cover:
   alt: goalpacer
   caption: ''
   image: img1.webp
   relative: true
 date: 2024-11-16
-description: Explanation of how I build my first app for martathon training using
-  Flutter
+description: Erläuterung, wie ich meine erste App für das Marathontraining mit Flutter
+  entwickle
 draft: false
 slug: goalpacer-pace-estimator
 tags:
@@ -20,31 +20,31 @@ title: Erste Flutter-App für das Marathontraining
 ---
 
 {{< alert type="warning" title="" >}}
-Die App ist nach wie vor im Google Play Store erhältlich.
-Im Moment mache ich nur Wartungsarbeiten und arbeite nicht an neuen Funktionen.
+Die App ist weiterhin im Google Play Store erhältlich. 
+Derzeit führe ich nur Wartungsarbeiten durch und arbeite nicht an neuen Funktionen.
 {{< /alert >}}
 
-Ich bin stolz darauf, dass ich meine erste Flutter-App in 4 Tagen mehr oder weniger produktionsreif bauen konnte.
+Ich bin stolz darauf, dass ich meine erste Flutter-App in etwa vier Tagen so weit fertigstellen konnte, dass sie produktionsreif ist.
 
-Vor diesen Tagen hatte ich noch keine Erfahrung mit Flutter. Aber ich mochte schon immer die Idee, einfach Apps für den persönlichen Gebrauch zu erstellen.
-Nach einigen fehlgeschlagenen Versuchen, in den letzten zwei Jahren einige nützliche persönliche Apps mit Python zu erstellen, hörte ich von Flutter.
-Diesen Monat hatte ich also etwas freie Zeit und stellte mich der Herausforderung, Flutter zu lernen, eine Android-App zu erstellen und sie innerhalb von 4 Tagen im Google Play Store zu veröffentlichen.
+Vor diesen Tagen hatte ich keinerlei Erfahrung mit Flutter. Aber mir hat schon immer die Idee gefallen, auf einfache Weise Apps für den persönlichen Gebrauch zu entwickeln. 
+Nach einigen gescheiterten Versuchen in den letzten zwei Jahren, mit Python nützliche persönliche Apps zu entwickeln, hörte ich von Flutter.
+Da ich diesen Monat etwas Freizeit hatte, habe ich mir die Herausforderung gestellt, Flutter zu lernen, eine Android-App zu entwickeln und sie IN 4 TAGEN im Google Play Store zu veröffentlichen.
 
-Die App, die ich mir ausgesucht habe, ist eine Art Pacing-Rechner, den ich für das Lauf- und Triathlon-Training verwenden kann. Zu diesem Zweck habe ich bisher ein Google Doc verwendet. Ich brauche nur ein paar einfache Zeichenfolgen und mathematische Operationen auf ein paar Seiten, kein Backend erforderlich. Das scheint mir perfekt für meine erste App zu sein, nicht zu komplex und ich würde es nutzen, um mein Training in Zukunft zu optimieren.
+Die App, für die ich mich entschieden habe, ist eine Art Temporechner, den ich für mein Lauf- und Triathlontraining nutzen kann. Bislang habe ich dafür ein Google Doc verwendet. Ich brauche nur ein paar einfache Zeichenfolgen- und Rechenoperationen auf einigen Seiten, ein Backend ist nicht erforderlich. Das scheint perfekt für meine erste App zu sein – nicht zu komplex und ich würde sie nutzen, um mein Training in Zukunft zu optimieren.
 
-Der Entwicklungsprozess beginnt eigentlich einen Tag zu früh. Mit meinem Plan konnte ich es nicht abwarten und habe am Abend von Tag 0 mit Hilfe der [Flutter Crash Course](https://youtu.be/j_rCDc_X-k8?si=OqmFujJvhpzCYK5O) von Net Ninja auf Youtube eine Kaffeekarten-App gebaut.
+Der Entwicklungsprozess beginnt eigentlich einen Tag zu früh. Bei meinem Plan konnte ich es kaum erwarten, loszulegen, und habe am Abend von Tag 0 mithilfe des [Flutter Crash Course](https://youtu.be/j_rCDc_X-k8?si=OqmFujJvhpzCYK5O) von Net Ninja auf YouTube eine Kaffee-Karten-App erstellt.
 Mit den Erkenntnissen aus diesem Tutorial beginne ich am Morgen von Tag 1 mit meiner eigenen Flutter-App namens [Goalpacer - Google Play Store](https://play.google.com/store/apps/details?id=com.matschcode.goalpacer).
 
-In den nächsten 3 Tagen konnte ich diese App mit VSCO auf meinem Linux-Rechner erstellen. Ich habe es geschafft, 4 Funktionalitäten bereitzustellen:
+In den folgenden 3 Tagen konnte ich diese App mit VSCO auf meinem Linux-Rechner entwickeln. Es ist mir gelungen, 4 Funktionen zu implementieren: 
 
-- Finish Time Calculator: Berechnet die Zielzeit basierend auf der eigenen Geschwindigkeit beim Laufen, Schwimmen und Radfahren.
-- Pace-Rechner: Berechnet die notwendige Pace für Ihre gewünschte Zielzeit
-- Herzfrequenz-Zonen-Rechner: Schätzen Sie Ihre Herzfrequenzbereiche auf der Grundlage Ihrer maximalen Herzfrequenz
-- Pace Converter: Konvertiert die Pace von min/mile in min/km
+- Zielzeitrechner: Berechnet die Zielzeit basierend auf deinem Tempo beim Laufen, Schwimmen und Radfahren.
+- Temporechner: Berechnet das erforderliche Tempo für Ihre gewünschte Zielzeit
+- Herzfrequenzzonen-Rechner: Schätzt Ihre Herzfrequenzzonen basierend auf Ihrer maximalen Herzfrequenz
+- Tempo-Umrechner: Rechnet Tempi von min/Meile in min/km um
 
-Auch wenn das Design ziemlich einfach und alles andere als perfekt ist, bin ich mit dem Ergebnis sehr zufrieden.
+Auch wenn das Design recht einfach und bei weitem nicht perfekt ist, bin ich mit dem Ergebnis sehr zufrieden.
 
-Der letzte Schritt ist die Veröffentlichung der App im Google Play Store. Am Ende ist das komplizierter als ich erwartet habe. Im Moment befinde ich mich in einem Zustand, in dem ich nach Testern für den geschlossenen Kreislauf suche. Als privater Erstentwickler ist es notwendig, einen Closed-Loop-Test mit 20 Personen durchzuführen, bevor man die App im Play Store veröffentlichen kann.
+Der letzte Schritt ist die Veröffentlichung der App im Google Play Store. Letztendlich ist das komplizierter, als ich erwartet hatte. Momentan bin ich auf der Suche nach Testern für den Closed-Loop-Test. Als privater Erstentwickler ist es erforderlich, einen Closed-Loop-Test mit 20 Personen durchzuführen, bevor man die App im Play Store veröffentlichen kann.
 
 {{< galleries >}}
 {{< gallery src="https://play-lh.googleusercontent.com/_gqr1RR1sYASzLR5yPkzHaX3hp704e63VvNj1iWg1COAGxZYk2aUxu0MyK3GN33Mww=w2560-h1440" title="Home Screen">}}

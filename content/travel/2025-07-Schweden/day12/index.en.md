@@ -1,31 +1,31 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 004cfa75319b16abe8363b4e0cb6cc103171fcf3c903551f074c33f6d0a6fcc6
+base_hash: 24ba557d0fe77b0eaf5c2ca1c16d4d86aee3eb6de4731439c92b1fb092b882a4
 cover:
   alt: ''
   caption: ''
   image: img1.jpg
   relative: true
 date: 2025-07-12
-description: Genussradeln am Morgen, Ballern am Nachmittag
+description: Leisurely cycling in the morning, intense workouts in the afternoon
 draft: false
 tags:
 - bikepacking
-title: "\U0001F1E9\U0001F1F0 Day 12 - The day with 2 faces"
+title: "\U0001F1E9\U0001F1F0 Day 12 – A Day of Two Halves"
 ---
 
 ## Impressions
-After ending yesterday evening around a campfire with Danish hikers, I set off this morning in bright sunshine.
+After wrapping up yesterday evening around a campfire with some Danish hikers, I set off this morning under bright sunshine. 
 
-At first I took the wrong route on the satnav and drove 15 km inland. Fortunately, this didn't send me in the completely wrong direction, but only cost me a few kilometers of the West Coast Cycle Route.
+At first, I followed the wrong route on my GPS and ended up riding 15 km inland. Fortunately, that didn’t send me in the completely wrong direction—it just cost me a few kilometers of the West Coast Bike Trail. 
 
-So until the lunch break, the route was mainly on gravel roads through beautiful dunes and forests.
+So, until my lunch break, the route mainly followed gravel roads through beautiful dunes and forests. 
 
-After the lunch break, a tailwind and Limp Bizkit somehow caused me to blow a fuse. From then on, I continued south at full throttle with music in my ears. I drove what felt like the last 70 km at a speed of over 30 km/h until I landed at the ferry port. If there hadn't been a ferry, I would probably still be flying through the dunes.
+After lunch, a tailwind and some Limp Bizkit somehow caused me to lose all restraint. From then on, with music blasting in my ears, I continued full throttle toward the south. It felt like I rode the last 70 km at a speed of over 30 km/h until I reached the ferry terminal. If there hadn’t been a ferry, I’d probably still be flying through the dunes. 
 
-As a result of this long daily distance, I ended up at a campsite that I had already been to 2 years ago with Jonas.
-Here I was able to take a hot shower, do laundry and recharge my batteries. I also got to know Dirk, with whom I spent a nice evening on the beach.
+As a result of this long day’s ride, I ended up at a campground where I’d been with Jonas two years ago.
+Here, I was able to take a hot shower, do my laundry, and recharge my batteries. I also met Dirk, with whom I spent a nice evening on the beach. 
 
 ### Pictures
 {{< galleries >}}
@@ -36,24 +36,24 @@ Here I was able to take a hot shower, do laundry and recharge my batteries. I al
 {{< /galleries >}}
 
 ### Costs
-- 8 Euro ferry
-- 12 Euro breakfast/lunch
-- 12 Euro dinner/breakfast
-- 28 Euro Overnight stay (camping site)
+- 8 euros for the ferry
+- 12 euros for breakfast/lunch 
+- 12 euros for dinner/breakfast 
+- 28 euros for lodging (campground)
 
-**60 Euro Tageskosten**
+**60 euros per day**
 
-### Sleeping place
-Sleeping place at the campsite
+### Place to sleep 
+Place to sleep at the campground 
 {{< open-street-map map_title="Schlafplatz" geo_link="geo:56.68311,8.21520?z=13" >}}
 
-## Tour data
+## Trip Details
 Daily distance: 150 km
 
-**Gesamtstrecke: 1073 km**
+**Total distance: 1,073 km**
 
 ### Weather
-17-25 degrees, sunny
+17–25 degrees, sunny 
 
 ### Tour
 Just let it roll

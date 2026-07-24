@@ -1,18 +1,18 @@
 ---
-title: "Setting up Giscus comments for Hugo blog"
-slug: "giscus-hugo-comments"
-date: 2025-12-04
-description: "Giscus the Git Discussion based commenting system for Hugo blogs"
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "giscus.png"
-  alt: "giscus-hugo-comments"
-  caption: "Giscus the Git Discussion based commenting system for Hugo blogs"
+  alt: giscus-hugo-comments
+  caption: Giscus the Git Discussion based commenting system for Hugo blogs
+  image: giscus.png
   relative: true
+date: 2025-12-04
+description: Giscus the Git Discussion based commenting system for Hugo blogs
+draft: false
+slug: giscus-hugo-comments
 tags:
-  - hugo
+- hugo
+title: Setting up Giscus comments for Hugo blog
 ---
 
 ## Introduction: Why Add Comments?
@@ -112,4 +112,3 @@ While self-hosting requires allocating server resources and handling maintenance
 Giscus is an excellent, modern, and open-source solution for adding comments to a static Hugo blog. It bypasses the complexity of self-hosting, leverages the superior threading of GitHub Discussions, and offers a seamless integration experience.
 
 It's the ideal starting point for anyone looking to enable reader engagement without the hassle of server management.
-

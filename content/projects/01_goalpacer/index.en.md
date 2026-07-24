@@ -1,20 +1,21 @@
 ---
-title: "First Flutter app for marathon training"
-slug: "goalpacer-pace-estimator"
-date: 2024-11-16
-description: "Explanation of how I build my first app for martathon training using Flutter"
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.webp"
-  alt: "goalpacer"
-  caption: ""
+  alt: goalpacer
+  caption: ''
+  image: img1.webp
   relative: true
+date: 2024-11-16
+description: Explanation of how I build my first app for martathon training using
+  Flutter
+draft: false
+slug: goalpacer-pace-estimator
 tags:
-  - flutter
-  - sports
-  - application
+- flutter
+- sports
+- application
+title: First Flutter app for marathon training
 ---
 
 {{< alert type="warning" title="" >}}
@@ -52,4 +53,3 @@ The last step is to publish the app on google play store. In the end this is mor
 {{< gallery src="https://play-lh.googleusercontent.com/L0XSeuoHSrN_Wc6hBoizI4Mx9QojKRFLEwAGzeKMkmu2Ro9jflzqYuoFnDEC_bwCyyc=w2560-h1440" title="Unit Converter" >}}
 {{< gallery src="https://play-lh.googleusercontent.com/xoah8BMs4Z-KymeAH-HoezaqG-cIUWQrhMDQzex3H57MffhljxDa9LLM7d8ezU2_Xw=w2560-h1440" title="Split times" >}}
 {{< /galleries >}}
-

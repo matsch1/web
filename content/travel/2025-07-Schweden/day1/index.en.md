@@ -1,26 +1,26 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: fe776071acbab68548395b8778691b4418895bc061319e3a40a09331759f10a5
+base_hash: 3ba6f3c23b35f1e9826cff09bcee11f7ff07a44fbadcce71ca296ab54a52a168
 cover:
   alt: ''
   caption: ''
   image: img1.jpg
   relative: true
 date: 2025-07-01
-description: Zum Reinkommen an Tag 1 erstmal die Route umgeplant
+description: To get things started on Day 1, I first replanned the route
 draft: false
 tags:
 - bikepacking
-title: "\U0001F1E9\U0001F1F0 Day 1 - To the island of Fyn/Odense"
+title: "\U0001F1E9\U0001F1F0 Day 1 – Off to the island of Fyn/Odense"
 ---
 
 ## Impressions
-Got off quite early today. When it's light from just after 4, it doesn't seem like it. With just a coffee for breakfast, I simply set off. On the way I ate the leftovers from yesterday and then somehow I was at the ferry in no time. The first 70 km went by like nothing.
+I got an early start today. When it’s already light out shortly after 4 a.m., it doesn’t really feel that way. With just a cup of coffee for breakfast, I just hopped on my bike and took off. On the way, I ate the leftovers from yesterday, and before I knew it, I was at the ferry. The first 70 km flew by in no time. 
 
-Just lots of new, beautiful impressions.
+Just lots of new, beautiful sights.
 
-So I finished my cycling day relatively early and went for a swim in the Baltic Sea in great weather.
+So I wrapped up my day of cycling relatively early and went for a swim in the Baltic Sea in perfect weather.
 
 ### Pictures
 {{< galleries >}}
@@ -32,28 +32,28 @@ So I finished my cycling day relatively early and went for a swim in the Baltic 
 {{< /galleries >}}
 
 ### Costs
-- 14 Euro ferry
-- 18 Euro lunch
-- 12 Euro purchase dinner/breakfast
-- 5 Euro overnight stay
+- 14 euros for the ferry 
+- 18 euros for lunch
+- 12 euros for groceries for dinner and breakfast
+- 5 euros for lodging
 
-**49 Euro Tageskosten**
+**49 euros in daily expenses**
 
-### Sleeping place
-On a shelter site with a nice elderly couple in the garden.
-Water, toilet and 300 m to the beach
+### Place to sleep 
+At a shelter spot in the garden of a nice older couple.
+Water, restroom, and 300 m to the beach
 
 {{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:55.04715,10.40324?z=16" >}}
 
-## Tour data
+## Trip Details
 Daily distance: 101 km
 
-**Gesamtstrecke: 109 km**
+**Total distance: 109 km**
 
 ### Weather
-Relaxed 18-30 degrees and sun
+Mild, 18–30 degrees, and sunny
 
 ### Tour
-Spontaneously took the ferry to Fyn instead of Aero. I don't regret anything.
+Spontaneously decided to take the ferry to Fyn instead of Aero due to availability. I don’t regret it.
 
 {{< strava-activity id="14973427243" title="Auf die Insel Fyn" distance="101 km" elevation="750 m" time="5h 15m" >}}

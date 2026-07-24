@@ -1,8 +1,8 @@
 ---
-title: "Blog"
 date: 2025-05-04
-description: ""
+description: ''
 draft: false
+title: Blog
 ---
 
 Welcome to my blog!
@@ -11,4 +11,3 @@ This is where I share everything that made me laugh, cry, or thinkâ€”lessons Iâ€
 
     This page and the posts are originally written in english. 
     Other languages are translated automatically using DEEPL api.
-

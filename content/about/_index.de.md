@@ -1,7 +1,7 @@
 ---
-title: "About me"
-description: ""
+description: ''
 draft: false
+title: About me
 ---
 
 {{< figure src="./me.jpg" width="400" alt="" class="right" >}}

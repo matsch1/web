@@ -1,8 +1,8 @@
 ---
-title: "Travel"
 date: 2025-05-04
-description: ""
+description: ''
 draft: false
+title: Travel
 ---
 
 Willkommen in meinem Reisetagebuch!
@@ -12,4 +12,3 @@ Hier halte ich fest, wohin mich die Wege führen – die kleinen Momente, die Ei
 
     Hier wurde alles ursprünglich in deutscher Sprache verfasst. 
     Andere Sprachen wurden automatisiert mit der DEEPL api übersetzt.
-

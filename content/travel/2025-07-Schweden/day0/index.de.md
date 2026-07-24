@@ -1,19 +1,18 @@
 ---
-title: 🇩🇪 Tag 0 - Anreise Flensburg
-date: 2025-06-30
-description: Erstmal nach Norden
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
+  alt: ''
+  caption: ''
+  image: img1.jpg
   relative: true
+date: 2025-06-30
+description: Erstmal nach Norden
+draft: false
 tags:
-  - bikepacking
+- bikepacking
+title: "\U0001F1E9\U0001F1EA Tag 0 - Anreise Flensburg"
 ---
-
 
 ## Eindrücke
 Heute den ganzen Tag im Zug verbracht. 

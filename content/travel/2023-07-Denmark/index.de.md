@@ -1,18 +1,19 @@
 ---
-title: "Bikepacking Dänemark - Jütland Runde"
-date: 2023-07-01
-description: "Mit Jonas einmal im Uhrzeigersinn um Jütland"
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.jpg"
-  alt: "bikepacking-denmark"
-  caption: ""
+  alt: bikepacking-denmark
+  caption: ''
+  image: img1.jpg
   relative: true
+date: 2023-07-01
+description: Mit Jonas einmal im Uhrzeigersinn um Jütland
+draft: false
 tags:
-  - bikepacking
+- bikepacking
+title: Bikepacking Dänemark - Jütland Runde
 ---
+
 Das ist eine nachträgliche Sammlung meiner Eindrücke zur Jütlandumrundung.
 
 ## Eckdaten
@@ -36,6 +37,3 @@ Es war einfach ein super Erlebnis. Ich muss unbedingt nochmal wieder kommen und 
 {{< gallery src="img6.jpg" title="Standardessen" >}}
 {{< gallery src="img7.jpg" title="Osteeecamping" >}}
 {{< /galleries >}}
-
-
-

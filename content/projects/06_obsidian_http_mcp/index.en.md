@@ -1,19 +1,19 @@
 ---
-title: "Chat With Your Obsidian Notes: Introducing HTTP MCP Server"
-slug: "obsidian-http-mcp"
-date: 2025-09-28
-description: "Chat with your remote Obsidian vault using http mcp server."
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.png"
-  alt: "obsidian-http-mcp"
-  caption: ""
+  alt: obsidian-http-mcp
+  caption: ''
+  image: img1.png
   relative: true
+date: 2025-09-28
+description: Chat with your remote Obsidian vault using http mcp server.
+draft: false
+slug: obsidian-http-mcp
 tags:
-  - obsidian
-  - mcp
+- obsidian
+- mcp
+title: 'Chat With Your Obsidian Notes: Introducing HTTP MCP Server'
 ---
 
 {{< alert type="info" title="" >}}
@@ -74,4 +74,3 @@ For a more detailed description, check out the GitHub repository: [obsidian-http
 	
 ## TL;DR
 Obsidian HTTP MCP is a lightweight server that exposes your Obsidian vault over HTTP using the MCP protocol. It lets you connect AI clients like Cursor to your notes for natural-language search, summaries, analytics, and automated modifications. Run it on a remote server, connect your AI client, and instantly turn your vault into an interactive, AI-powered knowledge engine. Check it out on GitHub [obsidian-http-mcp](https://github.com/matsch1/obsidian-http-mcp)!
-

@@ -1,29 +1,29 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: be0af07b8e325a6ca33235e90f791373b653565c4c5e1df6517a4a7acb9f3cbb
+base_hash: 9e1eedc6749cfaca1574c2c1536cc65434804d11c09ff3cc695d9813200d832c
 cover:
   alt: ''
   caption: ''
   image: img1.jpg
   relative: true
 date: 2025-07-09
-description: Bei Kaiserwetter quatschen
+description: Chatting away in glorious weather
 draft: false
 tags:
 - bikepacking
-title: "\U0001F1F8\U0001F1EA Day 9 - Heading for Gothenburg in pairs"
+title: "\U0001F1F8\U0001F1EA Day 9 – Heading to Gothenburg as a pair"
 ---
 
 ## Impressions
-The day started with sunshine and a coffee on a jetty by the lake at the sleeping area.
+The day started with sunshine as I enjoyed a cup of coffee on a dock by the lake near where I’d spent the night. 
 The night was relaxed and restful.
 
-At the shelter site I met Alex, who was also on his way north. So we decided to cycle together that day. It was a welcome change in many ways. It wasn't just the two of us, we also had sunshine and sometimes even a bit of a tailwind.
+At the shelter site, I met Alex, who’s also heading north. So we decided to cycle together today. It was a welcome change in many ways. Not only were there two of us, but we also had sunshine and sometimes even a bit of a tailwind. 
 
-We had a look around Varberg and just enjoyed our time on the bike. The day went by relatively quickly.
+We checked out Varberg and just enjoyed our time on the bike. So the day went by relatively quickly. 
 
-I'm spending the night tonight in a small Airbnb near Gothenburg. I should be able to get into the city relatively quickly tomorrow to catch my 12:15 ferry. That means I'll be back on Danish soil in Frederikshavn at 15:45.
+Tonight I’m spending the night in a small Airbnb near Gothenburg. That way, I should be able to get into the city relatively quickly tomorrow to catch my 12:15 p.m. ferry. That means starting at 3:45 p.m., I’ll be back on Danish soil in Frederikshavn. 
 
 ### Pictures
 {{< galleries >}}
@@ -35,26 +35,26 @@ I'm spending the night tonight in a small Airbnb near Gothenburg. I should be ab
 {{< /galleries >}}
 
 ### Costs
-- 0 Euro ferry
-- 10 Euro lunch
-- 12 Euro dinner/breakfast
-- 75 Euro Overnight stay
+- 0 euros for the ferry
+- 10 euros for lunch 
+- 12 euros for dinner/breakfast 
+- 75 euros for lodging
 
-**97 Euro Tageskosten**
+**97 euros in daily expenses**
 
-### Sleeping place
-Sleeping place in the Airbnb garden shed
+### Place to Sleep 
+Place to sleep in an Airbnb garden shed
 {{< open-street-map map_title="Schlafplatz" geo_link="geo:57.459388,11.925965?z=18" >}}
 
-## Tour data
+## Trip Details
 Daily distance: 112 km
 
-**Gesamtstrecke: 781 km**
+**Total distance: 781 km**
 
 ### Weather
-17-25 degrees, sunny
+17–25 degrees, sunny 
 
-southwest wind
+Southwesterly wind 
 
 ### Tour
 Get close to the ferry.

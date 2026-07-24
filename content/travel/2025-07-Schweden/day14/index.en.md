@@ -1,30 +1,30 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 5431a9c2d1c0425868198fbc78174cb235f8d4b8dd76141a912c4165bf80a2c6
+base_hash: e20269a66d65b994d1e187300ee4720483eca848e22917cd04b40c75fb01b179
 cover:
   alt: ''
   caption: ''
   image: img1.jpg
   relative: true
 date: 2025-07-14
-description: Hauptsach gut gess
+description: As long as the food's good
 draft: false
 tags:
 - bikepacking
-title: "\U0001F1E9\U0001F1F0 Day 14 - Heavy legs"
+title: "\U0001F1E9\U0001F1F0 Day 14 - Heavy Legs"
 ---
 
 ## Impressions
-A short stage was on the agenda for today. After the last two longer cycling days, I need to relax a bit. My legs told me that in no uncertain terms this morning.
+A short stage was on the agenda for today. After the last two long days of cycling, I needed some rest. My legs made that perfectly clear to me this morning. 
 
-So I set off late at half past ten, after spending the morning having a nice chat at the shelter.
+So I got a late start at 10:30 a.m., after spending the morning chatting with people at the shelter site. 
 
-My first destination for today was the town of Esbjerg, which I reached after a long breakfast break at around 13:30. Once there, I treated myself to a delicious cappuccino.
+My first destination for today was the city of Esbjerg, which I reached around 1:30 p.m. after a leisurely breakfast break. Once there, I treated myself to a delicious cappuccino. 
 
-From Esbjerg it was still about 25 km to the shelter I was aiming for. Here I was able to swim in a small river in the sunshine and relax after work.
+From Esbjerg, it was still about 25 km to my planned shelter site. There, basking in the sunshine, I was able to take a dip in a small river and kick off a relaxing evening. 
 
-Tomorrow is the last stage in Denmark. I have to cross another 100 km inland to Flensburg.
+Tomorrow marks the final leg of my journey in Denmark. I’ll be covering about 100 km through the countryside to Flensburg. 
 
 ### Pictures
 {{< galleries >}}
@@ -36,26 +36,26 @@ Tomorrow is the last stage in Denmark. I have to cross another 100 km inland to 
 {{< /galleries >}}
 
 ### Costs
-- 0 Euro ferry
-- 10 coffee and cake
-- 26 Euro dinner/breakfast
-- 0 Euro Overnight stay
+- 0 euros for the ferry
+- 10 euros for coffee and cake 
+- 26 euros for dinner/breakfast 
+- 0 euros for lodging
 
-**36 Euro Tageskosten**
+**36 euros in daily expenses**
 
-### Sleeping place
-Sleeping place with bathing facilities
+### Place to Sleep 
+Place to sleep with bathing facilities 
 {{< open-street-map map_title="Schlafplatz" geo_link="geo:55.3256,8.6493?z=12" >}}
 
-## Tour data
+## Trip Details
 Daily distance: 73 km
 
-**Gesamtstrecke: 1275 km**
+**Total distance: 1,275 km**
 
 ### Weather
-17-25 degrees, sun and rain
+17–25 degrees, sun and rain
 
 ### Tour
-Relax
+Relaxing 
 
 {{< strava-activity-image id="15110670393" image="strava.jpg" >}}

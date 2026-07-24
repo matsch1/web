@@ -1,21 +1,21 @@
 ---
-title: "Setup Coolify platform on your VPS"
-slug: "coolify-vps-setup"
-date: 2025-05-10
-description: "Server hardening and deploy first app with Coolify."
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "header.png"
-  alt: "coolify-vps-setup"
-  caption: ""
+  alt: coolify-vps-setup
+  caption: ''
+  image: header.png
   relative: true
+date: 2025-05-10
+description: Server hardening and deploy first app with Coolify.
+draft: false
+slug: coolify-vps-setup
 tags:
-  - server
-  - syncthing
-  - coolify
-  - tailscale
+- server
+- syncthing
+- coolify
+- tailscale
+title: Setup Coolify platform on your VPS
 ---
 
 {{< alert type="info" title="" >}}
@@ -241,4 +241,3 @@ Finish the installation by accessing the Coolify web UI on `http://<tailscale-ip
 {{< figure src="./coolify_syncthing_configuration.png" width="900" alt="Syncthing configuration" >}}
 4. Deploy the container.  
 5. Access Syncthing via service url.
-

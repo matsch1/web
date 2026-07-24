@@ -1,8 +1,8 @@
 ---
-title: "MatSch Web"
-description: "Collection of stuff"
-image: "http://blog.matschcode.de/en/Favicon.png"
+description: Collection of stuff
 draft: false
+image: http://blog.matschcode.de/en/Favicon.png
+title: MatSch Web
 ---
 
 {{< figure src="http://blog.matschcode.de/en/Favicon.png" width="300" alt="matsch web logo" >}}
@@ -26,4 +26,3 @@ It's a straightforward space designed to share information. Feel free to browse 
 
     This page is originally written in english. 
     Other languages are translated automatically using DEEPL api.
-

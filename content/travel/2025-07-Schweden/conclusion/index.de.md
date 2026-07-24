@@ -1,17 +1,17 @@
 ---
-title: Fazit
-date: 2025-07-25
-description: Fazit Tour und Kostenaufstellung
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.jpg"
-  alt: ""
-  caption: ""
+  alt: ''
+  caption: ''
+  image: img1.jpg
   relative: true
+date: 2025-07-25
+description: Fazit Tour und Kostenaufstellung
+draft: false
 tags:
-  - bikepacking
+- bikepacking
+title: Fazit
 ---
 
 ## Eindrücke
@@ -84,5 +84,3 @@ Insgesamt bin ich in 15 Tagen von Flensburg, über Kopenhagen, nach Götheborg, 
 Mit einem Pausetag ergibt das einen täglichen Schnitt von ca. 93 km.
 
 Rechnet man die letzten 3 Tage Rheinradweg dazu ergeben sich **1723 km** in 17 Fahrradtagen. Mit dann insgesamt 3 Pausentagen sind das im Schnitt 86 km pro Tag.
-
-

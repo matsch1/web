@@ -1,21 +1,22 @@
 ---
-title: "Free Obsidian PC Android sync"
-slug: "free-obsidian-sync-solution"
-date: 2025-01-02
-img: img1.webp
-description: "Explanation of how I use Syncthing as a free Obsidian Sync"
 ShowToc: true
 TocOpen: true
-draft: false
 cover:
-  image: "img1.webp"
-  alt: "obsidian-sync"
-  caption: ""
+  alt: obsidian-sync
+  caption: ''
+  image: img1.webp
   relative: true
+date: 2025-01-02
+description: Explanation of how I use Syncthing as a free Obsidian Sync
+draft: false
+img: img1.webp
+slug: free-obsidian-sync-solution
 tags:
-  - obsidian
-  - syncthing
+- obsidian
+- syncthing
+title: Free Obsidian PC Android sync
 ---
+
 Obsidian is a great tool for collecting ideas.
 
 I use it mainly for the following reasons:
@@ -90,4 +91,3 @@ git-autopush() {
 
 git-autopush $1
 ```
-
