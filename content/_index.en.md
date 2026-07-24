@@ -24,4 +24,4 @@ Practical insights from my projects that are worth recording. Not finished truth
 
 Travelling takes me away from everyday life. Here I record places, routes, and small observations that make a trip special for me.
 
-> This page was originally written in German. Other languages are translated automatically using the DeepL API.
+_This page was originally written in German. Other languages are translated automatically using the DeepL API._

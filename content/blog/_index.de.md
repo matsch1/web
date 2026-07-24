@@ -10,5 +10,4 @@ Willkommen auf meinem Blog!
 Hier teile ich alles, was mich zum Lachen, Weinen oder Nachdenken gebracht hat – Lektionen, die ich auf die harte Tour gelernt habe, damit ihr das nicht auch noch durchmachen müsst.
 
 
-Diese Seite und die Beiträge wurden ursprünglich auf Englisch verfasst. 
-Andere Sprachen werden automatisch mithilfe der DEEPL-API übersetzt.
+_Diese Seite und die Beiträge wurden ursprünglich auf Englisch verfasst. Andere Sprachen werden automatisch mithilfe der DeepL API übersetzt._

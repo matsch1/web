@@ -11,5 +11,4 @@ Welcome to my travel journal!
 Here I record where my travels take me—the little moments, the impressions along the way, and the thoughts that accumulate while traveling. My little adventures on different roads and in foreign cities.
 
 
-    Everything was originally written in German here. 
- Other languages were automatically translated using the DEEPL API.
+_This page was originally written in German. Other languages are translated automatically using the DeepL API._

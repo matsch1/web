@@ -26,4 +26,4 @@ Praktische Erkenntnisse aus meinen Projekten die es Wert sind festzuhalten. Kein
 Unterwegs zieht es mich raus aus dem Alltag. Hier halte ich Orte, Routen und kleine Beobachtungen fest, die eine Reise für mich besonders machen.
 
 
-> Diese Seite ist im Original auf Deutsch geschrieben. Weitere Sprachen werden automatisch mit der DeepL-API übersetzt.
+_Diese Seite wurde ursprünglich auf Deutsch geschrieben. Andere Sprachen wurden mit der DeepL API übersetzt._

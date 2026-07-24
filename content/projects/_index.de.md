@@ -11,5 +11,4 @@ Hier dokumentiere ich meine Reise durch verschiedene technische Themen und Proje
 Ich schreibe darüber, was ich entwickle, sowie über die Tools und Konzepte, die meine Neugier wecken.
 
 
-Diese Seite und die Beiträge wurden ursprünglich auf Englisch verfasst. 
-Andere Sprachen werden automatisch mithilfe der DEEPL-API übersetzt.
+_Diese Seite und die Beiträge wurden ursprünglich auf Englisch verfasst. Andere Sprachen werden automatisch mithilfe der DeepL API übersetzt._

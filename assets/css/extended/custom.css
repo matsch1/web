@@ -1,3 +1,29 @@
+/* Contact links on about page */
+.post-content .social-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  margin: 0.2rem 0.3rem 0.2rem 0;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--content);
+  font-size: 0.9rem;
+  transition: background 150ms ease, border-color 150ms ease;
+}
+
+.post-content .social-icon:hover {
+  background: var(--border);
+  border-color: var(--tertiary);
+}
+
+.post-content .social-icon img {
+  width: 20px;
+  height: 20px;
+}
+
 /* ========= papermod mods =============*/
 /* Increase the default width of the page. */
 .main {

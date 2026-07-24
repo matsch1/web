@@ -13,11 +13,11 @@ Elektroingenieur mit Erfahrung in der Entwicklung elektrischer Antriebe. Heute e
 
 > Educated as an electrical engineer, shaped as a software developer, driven by a passion for DevOps.
 
-## Woran ich arbeite
+### Woran ich arbeite
 
 Ich verbinde Embedded- und Fahrzeugentwicklung mit moderner Softwareentwicklung und Plattform-Engineering: von Pulswechselrichtern bis zu automatisierten Deployments und Kubernetes.
 
-## Technologien
+### Technologien
 
 - **Sprachen:** Go, Python, Bash, MATLAB
 - **Plattform & DevOps:** Linux, Docker, Kubernetes, Argo CD, Ansible, Jenkins
@@ -26,6 +26,10 @@ Ich verbinde Embedded- und Fahrzeugentwicklung mit moderner Softwareentwicklung 
 
 ## Kontakt
 
-[LinkedIn](https://www.linkedin.com/in/schaefer-matthias) · [GitHub](https://github.com/matsch1) · [Instagram](https://www.instagram.com/matsch_n) · [E-Mail](mailto:matsch1@gmx.net)
+{{< social-icon type="linkedin" url="https://www.linkedin.com/in/schaefer-matthias" >}}
+{{< social-icon type="github" url="https://github.com/matsch1" >}}
+{{< social-icon type="instagram" url="https://www.instagram.com/matsch_n" >}}
+{{< social-icon type="strava" url="https://www.strava.com/athletes/18430548" >}}
+{{< social-icon type="email" email="matsch1@gmx.net" >}}
 
 _Diese Seite wurde ursprünglich auf Deutsch geschrieben. Andere Sprachen wurden mit der DeepL API übersetzt._
