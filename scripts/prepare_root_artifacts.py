@@ -3,7 +3,7 @@ from pathlib import Path
 import sys
 
 
-ROOT_REDIRECT = """<!doctype html><html lang=\"de\"><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,follow\"><link rel=\"canonical\" href=\"https://blog.matschcode.de/de/\"><meta http-equiv=\"refresh\" content=\"0; url=de/\"><title>Weiterleitung…</title></head><body><a href=\"de/\">Zur deutschen Startseite</a></body></html>\n"""
+ROOT_REDIRECT = """<!doctype html><html lang=\"de\"><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,follow\"><link rel=\"canonical\" href=\"https://blog.matschcode.de/de/\"><title>Weiterleitung…</title><script>const language=(navigator.languages&&navigator.languages[0])||navigator.language||\"de\";window.location.replace(language.toLowerCase().startsWith(\"de\")?\"de/\":\"en/\");</script></head><body><p><a href=\"de/\">Deutsch</a> / <a href=\"en/\">English</a></p></body></html>\n"""
 
 
 def main(output="public"):
