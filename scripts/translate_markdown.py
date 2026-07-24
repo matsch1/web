@@ -94,12 +94,16 @@ def translate_tree(content_root, client):
         if source_file.name.endswith((".de.md", ".en.md")):
             continue
         post = frontmatter.load(source_file)
-        if post.get("translation_lock") is True:
-            continue
         source = source_language(post)
         target = "en" if source == "de" else "de"
         source_variant = source_file.with_name(f"{source_file.stem}.{source}.md")
         target_variant = source_file.with_name(f"{source_file.stem}.{target}.md")
+        if post.get("translation_lock") is True:
+            if not source_variant.exists():
+                staged.append((source_variant, frontmatter.dumps(post)))
+            if not target_variant.exists():
+                staged.append((target_variant, frontmatter.dumps(translated_post(client, post, source, target))))
+            continue
         expected_hash = hash_post(post)
         current = frontmatter.load(target_variant) if target_variant.exists() else None
         if current and current.get("base_hash") == expected_hash:
