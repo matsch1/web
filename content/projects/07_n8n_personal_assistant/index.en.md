@@ -56,8 +56,8 @@ This enables my assistant to process not only text but also voice notes and imag
 
 The following screenshots show how the message types are handled:
 {{< galleries >}}
-{{< gallery src="./settings_telegram_switch.png" title="telegram_switch_settings" >}}
-{{< gallery src="telegram_message_voice_image.png" title="telegram_message_voice_image" >}}
+{{< gallery src="./settings_telegram_switch.png" title="Message types in the n8n switch" alt="n8n Switch node in Rules mode with checks for voice.file_id, photo[3].file_id, and message.text; its outputs are named Audio, Image, and Text" >}}
+{{< gallery src="telegram_message_voice_image.png" title="n8n workflow for text, voice, and images" alt="n8n workflow where Telegram Trigger, Account Check, and Switch route messages to audio, image, and text handling with transcription, image analysis, and prompts" >}}
 {{< /galleries >}}
 
 To extract the message content, I use `Get File` nodes with the following file IDs:

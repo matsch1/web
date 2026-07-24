@@ -27,11 +27,11 @@ Tonight I’m staying in a small Airbnb near Gothenburg. That way, I should be a
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Auf dem Fort in Varberg" >}}
-{{< gallery src="img2.jpg" title="Kurz vor Varberg" >}}
-{{< gallery src="img3.jpg" title="Markt in Varberg" >}}
-{{< gallery src="img4.jpg" title="Badeplatz vor Göteburg" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Touring bike on the coast" alt="Loaded black touring bicycle beside a weathered bench on a grassy overlook above a rocky coastline." >}}
+{{< gallery src="img2.jpg" title="Waterfront path near Varberg" alt="Cyclist on a railed waterfront path beside blue water, with a low stone structure, buildings, and clouds in the distance." >}}
+{{< gallery src="img3.jpg" title="Market in Varberg" alt="Busy market on a cobblestone square with white vendor tents, flowering potted plants, and a historic brick building." >}}
+{{< gallery src="img4.jpg" title="Rocky coast" alt="Rocky coast with calm water, small houses, a dock, distant boats, and low islands under an overcast sky." >}}
+{{< gallery src="img5.jpg" title="Small garden cabin" alt="White wooden cabin on a deck, with an open door showing a bed, a window with raised shutter, an outdoor sink, and a hanging bell." >}}
 {{< /galleries >}}
 
 ### Costs

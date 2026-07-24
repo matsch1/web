@@ -28,11 +28,11 @@ Strangely enough, all shelter spots in this part of Denmark either cost money or
 Well, sheltered from the rain, I’m now winding down the evening in my shelter. Unfortunately, the forecast for the next few days doesn’t look any better. But I have to find a place to stay for tomorrow anyway so I can charge my electronic devices and do my laundry. We’ll see how the next few days go. 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="kurz vor Kopenhagen" >}}
-{{< gallery src="img2.jpg" title="Kopenhagen" >}}
-{{< gallery src="img3.jpg" title="Kopenhagen " >}}
-{{< gallery src="img4.jpg" title="Flat White" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Pier by the water" alt="Long wooden pier stretching over calm water beneath a cloudy blue sky." >}}
+{{< gallery src="img2.jpg" title="Bicycles in Copenhagen" alt="Many parked bicycles in front of a city skyline with tall buildings." >}}
+{{< gallery src="img3.jpg" title="Intersection in Copenhagen" alt="Cyclists and pedestrians wait at an intersection in front of red-brick buildings with towers." >}}
+{{< gallery src="img4.jpg" title="Coffee and pastry" alt="Milk coffee with foam art and a pastry on a table." >}}
+{{< gallery src="img5.jpg" title="Forest shelters" alt="Wooden picnic table and two open shelters in a birch forest." >}}
 {{< /galleries >}}
 
 ### Costs

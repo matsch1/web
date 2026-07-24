@@ -32,11 +32,11 @@ Am Schlafplatz angekommen, scheint jetzt wieder die Sonne als wäre nichts gewes
 
 ### Bilder
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Durch die Dünen" >}}
-{{< gallery src="img2.jpg" title="An den Steilküsten" >}}
-{{< gallery src="img3.jpg" title="Badepause" >}}
-{{< gallery src="img4.jpg" title="Mitten im Regen" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Sandweg durch die Dünen" alt="Fahrradlenker und kleines Display im Vordergrund eines sandigen Wegs durch niedrige Küstenvegetation." >}}
+{{< gallery src="img2.jpg" title="Leuchtturm und Pferde" alt="Hoher roter Leuchtturm und rote Gebäude hinter einer eingezäunten Weide mit weißen und grauen Pferden." >}}
+{{< gallery src="img3.jpg" title="Pause am Strand" alt="Bloße Beine liegen auf einem Sandstrand in Richtung Meer; rechts liegen schwarze Sandalen im Sand." >}}
+{{< gallery src="img4.jpg" title="Selfie an der Straße" alt="Lächelnder Radfahrer mit Helm, dunkler Sonnenbrille und hellbrauner Jacke neben einer asphaltierten Straße." >}}
+{{< gallery src="img5.jpg" title="Zelt auf der Wiese" alt="Kleines dunkles Zelt auf einer gemähten Wiese am Rand von Bäumen bei tiefem Sonnenstand." >}}
 {{< /galleries >}}
 
 ### Kosten

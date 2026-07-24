@@ -25,8 +25,8 @@ With a little luck, I’ll continue tomorrow in perfect weather.
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Fast Matze Coke 😀" >}}
-{{< gallery src="img2.jpg" title="Frühstück im Trockenen" >}}
+{{< gallery src="img1.jpg" title="Cola at the beach" alt="A hand holds a Coca-Cola bottle in front of foamy waves on a sandy beach under a gray sky." >}}
+{{< gallery src="img2.jpg" title="Coffee in the rain" alt="View through rain-speckled glass doors onto a wet deck with patio furniture and trees; a hand holds a black mug in the foreground." >}}
 {{< /galleries >}}
 
 ### Expenses

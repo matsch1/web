@@ -29,11 +29,11 @@ Den Abend lasse ich jetzt noch gemütlich mit der Restwärme des Tages ausklinge
 
 ### Bilder
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Eins der vielen bunten Felder" >}}
-{{< gallery src="img2.jpg" title="Brücke von Svendborg" >}}
-{{< gallery src="img3.jpg" title="Ostküstenradweg" >}}
-{{< gallery src="img4.jpg" title="Von Badeplatz zu Badeplatz" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Blumenwiese am Wasser" alt="Blumenreiche Wiese mit rotem Mohn vor Bäumen und einem Blick auf das Wasser." >}}
+{{< gallery src="img2.jpg" title="Blick über die Bucht" alt="Blick über einen grünen Uferpark auf Wasser, Segelboot, Häuser und bewaldete Ufer." >}}
+{{< gallery src="img3.jpg" title="Gebäude am Radweg" alt="Heller Weg führt zu einem historischen Gebäude mit Torbogen und Turm." >}}
+{{< gallery src="img4.jpg" title="Küstenradweg" alt="Heller Schotterweg zwischen Küstenvegetation und ruhigem Wasser unter wolkigem Himmel." >}}
+{{< gallery src="img5.jpg" title="Unterstand am Schlafplatz" alt="Offener Holzunterstand mit roten Picknickbänken neben einem kleinen grünen Gebäude." >}}
 {{< /galleries >}}
 
 ### Kosten

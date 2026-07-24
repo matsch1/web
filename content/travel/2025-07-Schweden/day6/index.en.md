@@ -29,11 +29,11 @@ By the way, as of today, I’ve successfully completed the first quarter of my j
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Doch noch Sonne" >}}
-{{< gallery src="img2.jpg" title="Nur süßes zum Frühstück" >}}
-{{< gallery src="img3.jpg" title="Am Strand entlang" >}}
-{{< gallery src="img4.jpg" title="Strandspaziergang" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Touring bike by the rocky shore" alt="Loaded black touring bicycle with yellow handlebar tape beside a rocky shore, with blue water, small islands, and clouds behind it." >}}
+{{< gallery src="img2.jpg" title="Bakery treats" alt="Bakery display filled with muffins, iced doughnuts, pastries, and bread rolls, with Swedish price and sale signs." >}}
+{{< gallery src="img3.jpg" title="Seaside path" alt="Path with black railings beside a rocky, seaweed-covered shoreline, with calm water and a pier in the distance." >}}
+{{< gallery src="img4.jpg" title="At the beach" alt="Smiling man in sunglasses and a pink-purple jacket taking a selfie on a sandy beach, with waves and clouds behind him." >}}
+{{< gallery src="img5.jpg" title="Room with travel gear" alt="Bright room with a bed, a checkered table piled with bags and outdoor gear, a folding chair, and a window facing trees." >}}
 {{< /galleries >}}
 
 ### Costs

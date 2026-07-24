@@ -27,11 +27,11 @@ Die Nacht verbringe ich heute in einem kleinen Airbnb in der Nähe von Göteburg
 
 ### Bilder
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Auf dem Fort in Varberg" >}}
-{{< gallery src="img2.jpg" title="Kurz vor Varberg" >}}
-{{< gallery src="img3.jpg" title="Markt in Varberg" >}}
-{{< gallery src="img4.jpg" title="Badeplatz vor Göteburg" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Reiserad an der Küste" alt="Beladenes schwarzes Reiserad neben einer verwitterten Bank auf einer grasigen Anhöhe über einer felsigen Küste." >}}
+{{< gallery src="img2.jpg" title="Uferweg bei Varberg" alt="Radfahrer auf einem Uferweg mit Geländer neben blauem Wasser; im Hintergrund eine flache Steinanlage, Gebäude und Wolken." >}}
+{{< gallery src="img3.jpg" title="Markt in Varberg" alt="Belebter Markt auf einem Kopfsteinpflasterplatz mit weißen Verkaufszelten, blühenden Topfpflanzen und historischem Backsteingebäude." >}}
+{{< gallery src="img4.jpg" title="Felsige Küste" alt="Felsige Küste mit ruhigem Wasser, kleinen Häusern, einem Steg, entfernten Booten und flachen Inseln unter bedecktem Himmel." >}}
+{{< gallery src="img5.jpg" title="Kleine Gartenhütte" alt="Weiße Holzhütte auf einer Terrasse mit offener Tür zum Bett, Fenster mit hochgeklapptem Laden, Außenspüle und hängender Glocke." >}}
 {{< /galleries >}}
 
 ### Kosten

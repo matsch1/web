@@ -28,11 +28,11 @@ Tomorrow marks the final leg of my journey in Denmark. I’ll be covering about 
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Børn to Bike" >}}
-{{< gallery src="img2.jpg" title="Frühstück mit Aussicht" >}}
-{{< gallery src="img3.jpg" title="Innenstadt von Esbjerg" >}}
-{{< gallery src="img4.jpg" title="Bärccino" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Bicycle warning with “Børn”" alt="Red triangular bicycle warning sign with a supplementary “Børn” plaque beside a rural road between dry grass and trees." >}}
+{{< gallery src="img2.jpg" title="Bicycle with a view" alt="Bicycle leans against a wooden bench in a shaded area, with green fields and a distant horizon behind it." >}}
+{{< gallery src="img3.jpg" title="Street in Esbjerg" alt="Paved tree-lined pedestrian street with low-rise buildings, shops, outdoor seating, and a cyclist." >}}
+{{< gallery src="img4.jpg" title="Coffee and cake" alt="Foamy coffee in a red-orange cup sits beside a slice of white-topped cake with nuts on a dark table." >}}
+{{< gallery src="img5.jpg" title="Tent beneath storm clouds" alt="Small gray tent on an open grassy area beneath dense dark clouds." >}}
 {{< /galleries >}}
 
 ### Costs

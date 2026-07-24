@@ -29,11 +29,11 @@ I’m now going to wind down the evening comfortably, enjoying the lingering war
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Eins der vielen bunten Felder" >}}
-{{< gallery src="img2.jpg" title="Brücke von Svendborg" >}}
-{{< gallery src="img3.jpg" title="Ostküstenradweg" >}}
-{{< gallery src="img4.jpg" title="Von Badeplatz zu Badeplatz" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Flower meadow by the water" alt="Flower-filled meadow with red poppies, trees, and a view of the water." >}}
+{{< gallery src="img2.jpg" title="View across the bay" alt="View across a green waterfront park toward water, a sailboat, houses, and wooded shores." >}}
+{{< gallery src="img3.jpg" title="Building by the cycle route" alt="A bright path leads to a historic building with an arched gateway and tower." >}}
+{{< gallery src="img4.jpg" title="Coastal cycle path" alt="Light gravel path between coastal vegetation and calm water beneath a cloudy sky." >}}
+{{< gallery src="img5.jpg" title="Shelter at the campsite" alt="Open wooden shelter with red picnic benches beside a small green building." >}}
 {{< /galleries >}}
 
 ### Costs

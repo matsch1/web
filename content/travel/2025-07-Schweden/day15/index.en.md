@@ -30,10 +30,10 @@ From Flensburg, I’ll take the train to Cologne, where, after two days of rest,
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Taschen immer besser gepackt">}}
-{{< gallery src="img2.jpg" title="Durch den Nebel" >}}
-{{< gallery src="img3.jpg" title="Ribe" >}}
-{{< gallery src="img4.jpg" title="Auf dem Weg zum Fischbrötchen" >}}
+{{< gallery src="img1.jpg" title="Loaded bicycle by the bench" alt="Loaded black bicycle with bags and a light-colored bundle stands beside a long wooden bench in tall grass." >}}
+{{< gallery src="img2.jpg" title="Road through the flatlands" alt="Straight narrow asphalt road through a flat landscape with ditches, reeds, fields, and pasture fences under an overcast sky." >}}
+{{< gallery src="img3.jpg" title="Street in Ribe" alt="Cobblestone street between closely spaced houses, with a church spire, other towers, and outdoor tables in the background." >}}
+{{< gallery src="img4.jpg" title="Cyclist cartoon" alt="Four-panel cartoon with a helmeted cyclist, a glass of beer, a hamburger, and the words “HALT!” and “HUFF HUFF.”" >}}
 {{< /galleries >}}
 
 ### Costs

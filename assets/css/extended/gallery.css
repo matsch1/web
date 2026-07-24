@@ -8,9 +8,16 @@
 .image-gallery__item {
     display: grid;
     gap: 0.35rem;
+    margin: 0;
+}
+
+.image-gallery__link {
+    display: block;
+}
+
+.image-gallery__item figcaption {
     color: var(--primary);
     font-size: 0.9rem;
-    text-decoration: none;
 }
 
 .image-gallery__item img {
@@ -27,7 +34,7 @@
     transform: scale(1.02);
 }
 
-.image-gallery__item:focus-visible {
+.image-gallery__link:focus-visible {
     outline: 2px solid var(--primary);
     outline-offset: 3px;
 }

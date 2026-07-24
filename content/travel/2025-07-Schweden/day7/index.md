@@ -25,8 +25,8 @@ Morgen geht es dann mit etwas Glück bei bestem Wetter weiter.
 
 ### Bilder
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Fast Matze Coke 😀" >}}
-{{< gallery src="img2.jpg" title="Frühstück im Trockenen" >}}
+{{< gallery src="img1.jpg" title="Cola am Strand" alt="Hand hält eine Coca-Cola-Flasche vor schäumenden Wellen an einem Sandstrand unter grauem Himmel." >}}
+{{< gallery src="img2.jpg" title="Kaffee bei Regen" alt="Blick durch regentropfenbesetzte Glastüren auf eine nasse Terrasse mit Gartenmöbeln und Bäumen; im Vordergrund eine Hand mit schwarzem Becher." >}}
 {{< /galleries >}}
 
 ### Kosten

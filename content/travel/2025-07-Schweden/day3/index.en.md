@@ -30,11 +30,11 @@ Shortly before Køge, our paths parted ways again. The two of them found a place
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Auf der Brücke Storstrømsbroen" >}}
-{{< gallery src="img2.jpg" title="Vordingborg" >}}
-{{< gallery src="img3.jpg" title="Fish n Chips " >}}
-{{< gallery src="img4.jpg" title="Tubeless Salami rettet" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Cyclists on the bridge" alt="Two cyclists wearing helmets and sunglasses on a bridge above the water." >}}
+{{< gallery src="img2.jpg" title="Harbour near Vordingborg" alt="Reed-lined shore, road, and sailboat masts in front of a harbour under a blue sky." >}}
+{{< gallery src="img3.jpg" title="Fish and chips" alt="Plate of breaded fish, fries, lemon slices, and sauce on a restaurant table." >}}
+{{< gallery src="img4.jpg" title="Tyre puncture" alt="Close-up of a knobbly bicycle tyre with a brown foreign object in its tread." >}}
+{{< gallery src="img5.jpg" title="Rest area in the woods" alt="Loaded bicycle by a wooden bridge in a wooded rest area with picnic tables." >}}
 {{< /galleries >}}
 
 ### Costs

@@ -32,11 +32,11 @@ Now that I’ve arrived at my campsite, the sun is shining again as if nothing h
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Durch die Dünen" >}}
-{{< gallery src="img2.jpg" title="An den Steilküsten" >}}
-{{< gallery src="img3.jpg" title="Badepause" >}}
-{{< gallery src="img4.jpg" title="Mitten im Regen" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Sandy path through the dunes" alt="Bicycle handlebars and a small display in the foreground of a sandy path through low coastal vegetation." >}}
+{{< gallery src="img2.jpg" title="Lighthouse and horses" alt="Tall red lighthouse and red buildings behind a fenced pasture with white and gray horses." >}}
+{{< gallery src="img3.jpg" title="Break on the beach" alt="Bare legs stretch across a sandy beach toward the sea, with black sandals on the sand to the right." >}}
+{{< gallery src="img4.jpg" title="Roadside selfie" alt="Smiling cyclist wearing a helmet, dark sunglasses, and a tan jacket beside a paved road." >}}
+{{< gallery src="img5.jpg" title="Tent in the meadow" alt="Small dark tent on a mown grassy clearing at the edge of trees in low sunlight." >}}
 {{< /galleries >}}
 
 ### Costs

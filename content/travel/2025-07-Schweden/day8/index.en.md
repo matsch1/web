@@ -30,11 +30,11 @@ I’ve decided to take the ferry back to Denmark the day after tomorrow. For me,
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Halmstadt" >}}
-{{< gallery src="img2.jpg" title="Küstenradweg vor Halmstad" >}}
-{{< gallery src="img3.jpg" title="Hafen Halmstad" >}}
-{{< gallery src="img4.jpg" title="Mittagessen" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Arrival in Halmstad" alt="Blue Halmstad flags above a tree-lined plaza with directional signs, stone steps, and a loaded touring bicycle." >}}
+{{< gallery src="img2.jpg" title="Road through the forest" alt="Narrow paved road running through a dense forest of evergreen and deciduous trees." >}}
+{{< gallery src="img3.jpg" title="Halmstad waterfront" alt="Red building with a green-roofed tower and a two-masted sailboat on the far shore of calm water." >}}
+{{< gallery src="img4.jpg" title="Burger and fries" alt="Burger with a sesame bun, greens, onion, and tomato, served with fries and dipping sauce on a plate." >}}
+{{< gallery src="img5.jpg" title="Tent by the lake" alt="Dark dome tent in tall grass beside a tree-lined lake, with small boats near the shore and wooded hills beyond." >}}
 {{< /galleries >}}
 
 ### Costs

@@ -29,10 +29,10 @@ Hier konnte ich heiß duschen, Wäsche waschen und Akkus aufladen. Zusätzlich h
 
 ### Bilder
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Durch die Dünen" >}}
-{{< gallery src="img2.jpg" title="Beste Laune" >}}
-{{< gallery src="img3.webp" title="Vor Hamstholm" >}}
-{{< gallery src="img4.jpg" title="Strand vom Thyborøn" >}}
+{{< gallery src="img1.jpg" title="Fahrrad an den Wegweisern" alt="Dunkles Fahrrad mit gelben Akzenten lehnt neben Wegweisern an einer Straße; dahinter liegen Wiese und dunkle Rinder." >}}
+{{< gallery src="img2.jpg" title="Auf dem Dünenweg" alt="Radfahrer mit schwarzem Helm und Sonnenbrille steht neben einem sandigen Weg durch grasbewachsene Dünen." >}}
+{{< gallery src="img3.webp" title="Sandweg zum Meer" alt="Heller Sandweg führt durch Dünengras zum Meer; links liegen niedrige Dünen, rechts ist die Küste zu sehen." >}}
+{{< gallery src="img4.jpg" title="Am Strand" alt="Mann mit Sonnenbrille und rostorangefarbenem T-Shirt steht an einem Sandstrand vor Meer und tief stehender Sonne." >}}
 {{< /galleries >}}
 
 ### Kosten

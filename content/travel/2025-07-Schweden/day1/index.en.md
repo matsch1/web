@@ -24,11 +24,11 @@ So I wrapped up my day of cycling relatively early and went for a swim in the Ba
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Immer wieder Trails direkt am Meer" >}}
-{{< gallery src="img2.jpg" title="Sonderborg" >}}
-{{< gallery src="img3.jpg" title="Viel Faehre fuer wenig Fahrrad" >}}
-{{< gallery src="img4.jpg" title="Feierabendbier am Strand" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Coastal path by the sea" alt="Curving gravel path through trees beside a narrow beach and blue sea." >}}
+{{< gallery src="img2.jpg" title="View of Sønderborg" alt="View across the water toward Sønderborg's buildings, boats, and church spire." >}}
+{{< gallery src="img3.jpg" title="Ferry vehicle deck" alt="Lit ferry vehicle deck with marked lanes, pipes, and several people." >}}
+{{< gallery src="img4.jpg" title="Beer by the beach" alt="Open beer can held in a hand in front of a rocky beach and calm sea." >}}
+{{< gallery src="img5.jpg" title="Tent in the garden" alt="Small tent and loaded bicycle beside a picnic table on a sunny lawn." >}}
 {{< /galleries >}}
 
 ### Costs

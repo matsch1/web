@@ -30,10 +30,10 @@ Von Flensburg aus geht es für mich mit der Bahn nach Köln, wo ich nach 2 Ruhet
 
 ### Bilder
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Taschen immer besser gepackt">}}
-{{< gallery src="img2.jpg" title="Durch den Nebel" >}}
-{{< gallery src="img3.jpg" title="Ribe" >}}
-{{< gallery src="img4.jpg" title="Auf dem Weg zum Fischbrötchen" >}}
+{{< gallery src="img1.jpg" title="Beladenes Fahrrad an der Bank" alt="Beladenes schwarzes Fahrrad mit Taschen und hellem Bündel steht neben einer langen Holzbank in hohem Gras." >}}
+{{< gallery src="img2.jpg" title="Straße durch die Ebene" alt="Gerade schmale Asphaltstraße durch eine flache Landschaft mit Gräben, Schilf, Feldern und Weidezäunen unter bedecktem Himmel." >}}
+{{< gallery src="img3.jpg" title="Gasse in Ribe" alt="Kopfsteinpflasterstraße zwischen dicht stehenden Häusern; im Hintergrund sind ein Kirchturm, weitere Türme und Außentische zu sehen." >}}
+{{< gallery src="img4.jpg" title="Comic mit Radfahrer" alt="Vierteiliger Comic mit einem behelmten Radfahrer, einem Bierglas, einem Hamburger sowie den Texten „HALT!“ und „HUFF HUFF“." >}}
 {{< /galleries >}}
 
 ### Kosten

@@ -29,10 +29,10 @@ Here, I was able to take a hot shower, do my laundry, and recharge my batteries.
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Durch die Dünen" >}}
-{{< gallery src="img2.jpg" title="Beste Laune" >}}
-{{< gallery src="img3.webp" title="Vor Hamstholm" >}}
-{{< gallery src="img4.jpg" title="Strand vom Thyborøn" >}}
+{{< gallery src="img1.jpg" title="Bicycle by the signs" alt="Dark bicycle with yellow accents leans beside directional signs by a road, with a meadow and dark cattle behind it." >}}
+{{< gallery src="img2.jpg" title="On the dune path" alt="Cyclist wearing a black helmet and sunglasses stands beside a sandy path through grassy dunes." >}}
+{{< gallery src="img3.webp" title="Sandy path to the sea" alt="Pale sandy path runs through dune grass toward the sea, with low dunes on the left and the coast on the right." >}}
+{{< gallery src="img4.jpg" title="At the beach" alt="Man wearing sunglasses and a rust-orange T-shirt stands on a sandy beach with the sea and low sun behind him." >}}
 {{< /galleries >}}
 
 ### Costs

@@ -29,11 +29,11 @@ Im Anschluss an diese tolle Passage habe ich den Nachmittag in und um Blockhus m
 
 ### Bilder
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Auf dem Strand radeln" >}}
-{{< gallery src="img2.jpg" title="Komoot Routenplaner" >}}
-{{< gallery src="img3.jpg" title="Drive-In Museum" >}}
-{{< gallery src="img4.jpg" title="Aero durch den Wind" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Mit dem Rad am Strand" alt="Blick über Fahrradlenker auf einen breiten Sandstrand; rechts liegt das Meer, links sind weit entfernte Menschen zu sehen." >}}
+{{< gallery src="img2.jpg" title="Grasweg durch die Wiese" alt="Schmaler grasbewachsener Weg zwischen Bäumen, Wiese und einem einfachen Pfosten-Draht-Zaun." >}}
+{{< gallery src="img3.jpg" title="Sletteningen Naturbase" alt="Weißes Backsteingebäude mit offenem Eingang sowie Schildern für die Sletteningen Naturbase und eine Tauchausstellung." >}}
+{{< gallery src="img4.jpg" title="Unterwegs auf der Landstraße" alt="Radfahrer mit Helm und Sonnenbrille fährt auf einer asphaltierten Straße durch grasbewachsenes Gelände." >}}
+{{< gallery src="img5.jpg" title="Rastplatz im Grünen" alt="Grasfläche mit Holztisch, kleinen Holzgebäuden und Bäumen unter blauem Himmel." >}}
 {{< /galleries >}}
 
 ### Kosten

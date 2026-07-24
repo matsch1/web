@@ -25,11 +25,11 @@ Back in Denmark, I set off on my own to a nearby shelter. After a quick dip in a
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Göteborg" >}}
-{{< gallery src="img2.jpg" title="Schwedische Küste" >}}
-{{< gallery src="img3.jpg" title="Genussradeln" >}}
-{{< gallery src="img4.jpg" title="Zimtschnecke Nr. 712" >}}
-{{< gallery src="img5.jpg" title="Schlafplatz" >}}
+{{< gallery src="img1.jpg" title="Bikes by a Gothenburg canal" alt="Two loaded bicycles at a flower-lined bridge railing above a canal, with historic buildings and a clock tower behind them." >}}
+{{< gallery src="img2.jpg" title="Coastal inlet with boats" alt="Coastal inlet with calm water, docks, small boats, and white waterfront buildings; tall grass and a road in the foreground." >}}
+{{< gallery src="img3.jpg" title="Cycling along the coast" alt="Smiling man in a bicycle helmet and sunglasses beside a path, with calm water and low land on the horizon." >}}
+{{< gallery src="img4.jpg" title="Sugar-topped pastry" alt="A hand holds a round golden-brown pastry covered with coarse sugar crystals against a blurred background." >}}
+{{< gallery src="img5.jpg" title="Shelter at the forest edge" alt="Sunny grassy clearing at the forest edge with red wooden shelters, a bicycle, and a moss-covered open shelter." >}}
 {{< /galleries >}}
 
 ### Costs
