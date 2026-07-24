@@ -90,7 +90,7 @@ Füge den folgenden Parameter zu deiner Hauptkonfigurationsdatei hinzu, um deine
 
 #### B. Den Giscus-Shortcode erstellen
 
-Erstellen Sie eine neue Datei unter `layouts/partials/comments.html`` und fügen Sie den generierten Giscus-Tag <script> darin ein.
+Erstellen Sie eine neue Datei unter `layouts/partials/comments.html` und fügen Sie den generierten Giscus-Tag `<script>` darin ein.
 Das war’s schon! Giscus übernimmt automatisch die Zuordnung der Diskussionen, speichert alle Daten auf GitHub und erfordert keinerlei Server-Einrichtung Ihrerseits.
 
 

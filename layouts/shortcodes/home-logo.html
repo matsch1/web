@@ -1,0 +1,6 @@
+{{- $small := "home-logo-300.webp" | absLangURL -}}
+{{- $large := "home-logo-600.webp" | absLangURL -}}
+<picture>
+  <source type="image/webp" srcset="{{ $small }} 300w, {{ $large }} 600w" sizes="300px">
+  <img src="{{ $small }}" srcset="{{ $small }} 300w, {{ $large }} 600w" sizes="300px" width="300" height="302" alt="{{ .Get "alt" | default "MatSch Web logo" }}" loading="eager" fetchpriority="high">
+</picture>

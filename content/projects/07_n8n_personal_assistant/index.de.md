@@ -22,7 +22,7 @@ Der Assistent leistet gute Arbeit und wird nach wie vor täglich genutzt.
 {{< /alert >}}
 
 ## Einleitung
-{{< figure src="./ai-assistang.png" width="400" alt="AI agent" class="right" >}}
+{{< figure src="./ai-assistang.webp" width="400" alt="AI agent" class="right" >}}
 Wer würde sich nicht einen persönlichen Assistenten wünschen – jemanden, der Termine, Aufgaben, E-Mails und andere administrative Aufgaben erledigt? Mit den heutigen KI-Fähigkeiten ist dies sogar für Personen möglich geworden, die sich keinen menschlichen Assistenten leisten können.
 In diesem Beitrag zeige ich euch, wie ihr mit n8n einen persönlichen KI-Assistenten erstellen könnt, der auf Telegram-Nachrichten (einschließlich Sprachnotizen) reagiert und euch bei der Verwaltung von Terminen und Aufgaben unterstützt.
 

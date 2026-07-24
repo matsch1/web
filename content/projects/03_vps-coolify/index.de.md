@@ -73,7 +73,7 @@ ssh-keygen -t ed25519 -b 4096 -C "your_email@example.com"
 
 Dabei wird nach dem Namen des Schlüssels, dem Speicherort und der Passphrase gefragt.
 Der Schlüssel sollte unter `/home/$USER/.ssh/<ssh-key>` gespeichert werden. Das Feld für die Passphrase kann leer bleiben.
-Dadurch werden zwei Dateien erstellt: <ssh-key> und <ssh-key.pub>.
+Dadurch werden zwei Dateien erstellt: `<ssh-key>` und `<ssh-key.pub>`.
 
 Um SSH-Zugriff auf den VPS zu erhalten, muss der Inhalt von <ssh-key.pub> nach `/home/<server-user>/.ssh/autorized_keys` kopiert werden. Falls die Datei nicht existiert, muss sie angelegt werden.
 Sie können dazu `nano` oder `vi` als Texteditor in der Befehlszeile verwenden.

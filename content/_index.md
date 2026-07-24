@@ -1,14 +1,14 @@
 ---
-title: "MatSch Web"
+title: Between terminals and trails
 description: "Collection of stuff"
-image: "http://blog.matschcode.de/en/Favicon.png"
+image: "home-logo-600.webp"
 draft: false
 source_lang: en
 ---
 
-{{< figure src="http://blog.matschcode.de/en/Favicon.png" width="300" alt="matsch web logo" >}}
+{{< home-logo alt="MatSch Web logo" >}}
 
-## Welcome to My Blog
+# Projects, rides and lessons learned without the polish
 
 Thanks for taking the time to visit my corner of the web.
 

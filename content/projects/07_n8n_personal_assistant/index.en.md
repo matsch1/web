@@ -22,7 +22,7 @@ The assistant does a good job and is still in daily usage.
 {{< /alert >}}
 
 ## Introduction
-{{< figure src="./ai-assistang.png" width="400" alt="AI agent" class="right" >}}
+{{< figure src="./ai-assistang.webp" width="400" alt="AI agent" class="right" >}}
 Who would not want a personal assistant—someone who handles appointments, tasks, emails, and other administrative work? With current AI capabilities, this has become achievable even for individuals who cannot afford a human assistant.
 In this post, I will show how to use n8n to build a personal AI assistant that responds to Telegram messages (including voice notes) and helps you manage appointments and tasks.
 
