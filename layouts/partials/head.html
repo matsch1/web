@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-{{- if hugo.IsProduction | or (eq site.Params.env "production") | and (ne .Params.robotsNoIndex true) }}
+{{- if and (hugo.IsProduction | or (eq site.Params.env "production")) (ne .Params.robotsNoIndex true) (not (or (eq .Layout "search") (eq .Kind "search"))) }}
 <meta name="robots" content="index, follow">
 {{- else }}
 <meta name="robots" content="noindex, nofollow">
@@ -99,7 +99,7 @@
 <meta name="msapplication-TileColor" content="{{ site.Params.assets.msapplication_TileColor | default "#2e2e33" }}">
 
 <!-- Open Graph image -->
-{{ $defaultOGImage := "https://blog.matschcode.de/de/Favicon.png" }}
+{{ $defaultOGImage := cond (eq site.Language.Lang "de") "https://blog.matschcode.de/social-de.png" "https://blog.matschcode.de/social-en.png" }}
 
 {{ $img := "" }}   {{/* will hold a Resource object when found */}}
 {{ $og := "" }}    {{/* will hold a string URL for external URL or fallback */}}
@@ -120,7 +120,7 @@
 
 {{ if $img }}
   <meta property="og:image" content="{{ $img.Permalink }}">
-  <meta property="og:image:type" content="{{ $img.MediaType.Type }}/{{ $img.MediaType.SubType }}">
+  <meta property="og:image:type" content="{{ $img.MediaType.Type }}">
   <meta property="og:image:width" content="{{ $img.Width }}">
   <meta property="og:image:height" content="{{ $img.Height }}">
 {{ else if $og }}

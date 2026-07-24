@@ -1,0 +1,55 @@
+name: Publish Hugo site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-main
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    env:
+      DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+      HUGO_CACHEDIR: /tmp/hugo_cache
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.2.0
+        with:
+          submodules: true
+          fetch-depth: 0
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+      - name: Translate content atomically
+        run: python scripts/translate_markdown.py
+      - name: Commit finalized translations
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/
+          git diff --cached --quiet || git commit -m "chore: update translations"
+          git push origin HEAD:main
+      - uses: peaceiris/actions-hugo@6b1ee2dcc06c9b6629a5317fa0146473914d05e1 # v3.0.0
+        with:
+          hugo-version: '0.146.0'
+          extended: true
+      - name: Build
+        run: hugo --gc --minify
+      - name: Assemble root-level multilingual artifacts
+        run: python scripts/prepare_root_artifacts.py public
+      - name: Verify generated SEO artifacts
+        run: python scripts/verify_site.py public
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@4a2e02b36f31d8974a0d09d3bb9f3172aa2d0d0d # v3.10.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
