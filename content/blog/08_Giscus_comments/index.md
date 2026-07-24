@@ -13,6 +13,7 @@ cover:
   relative: true
 tags:
   - hugo
+source_lang: en
 ---
 
 ## Introduction: Why Add Comments?

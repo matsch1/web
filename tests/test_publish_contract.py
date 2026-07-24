@@ -61,6 +61,21 @@ class PublishContractTests(unittest.TestCase):
         head = (ROOT / "layouts" / "partials" / "head.html").read_text()
         self.assertIn('or (eq .Layout "search")', head)
 
+    def test_search_pages_are_excluded_from_language_sitemaps(self):
+        for language in ("de", "en"):
+            search = ROOT / "content" / f"search.{language}.md"
+            self.assertIn("sitemap:\n  disable: true", search.read_text())
+
+    def test_raw_html_warning_sources_use_markdown_code_spans(self):
+        expectations = {
+            "content/blog/08_Giscus_comments/index.de.md": "Giscus-Tag `<script>` darin",
+            "content/blog/08_Giscus_comments/index.en.md": "Giscus `<script>` tag inside",
+            "content/projects/03_vps-coolify/index.de.md": "Dateien erstellt: `<ssh-key>` und `<ssh-key.pub>`.",
+            "content/projects/03_vps-coolify/index.en.md": "files: `<ssh-key>` and `<ssh-key.pub>`.",
+        }
+        for relative_path, expected in expectations.items():
+            self.assertIn(expected, (ROOT / relative_path).read_text())
+
     def test_third_party_gallery_assets_are_not_global(self):
         base = (ROOT / "layouts" / "_default" / "baseof.html").read_text()
         gallery = (ROOT / "layouts" / "shortcodes" / "galleries.html").read_text()
@@ -100,6 +115,14 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn('"de/social-de.png"', verifier)
         self.assertIn('"en/social-en.png"', verifier)
         self.assertIn("safari-pinned-tab.svg", verifier)
+
+    def test_artifact_validator_rejects_html_without_required_seo_metadata(self):
+        verifier = self.verifier_module()
+        with tempfile.TemporaryDirectory() as directory:
+            page = Path(directory) / "missing.html"
+            page.write_text("<html><head></head><body></body></html>")
+            with self.assertRaises(SystemExit):
+                verifier.validate_html_page(page, Path(directory), set())
 
     def test_artifact_validator_rejects_wrong_social_card_dimensions(self):
         verifier = self.verifier_module()

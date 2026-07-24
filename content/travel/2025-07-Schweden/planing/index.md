@@ -12,6 +12,7 @@ cover:
   relative: true
 tags:
   - bikepacking
+source_lang: de
 ---
 
 ## Der Plan

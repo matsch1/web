@@ -15,6 +15,7 @@ tags:
   - kubernetes
   - k3s
   - nextcloud
+source_lang: en
 ---
 
 ## Introduction

@@ -3,6 +3,7 @@ title: "Travel"
 date: 2025-05-04
 description: ""
 draft: false
+source_lang: de
 ---
 
 Willkommen in meinem Reisetagebuch!

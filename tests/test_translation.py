@@ -16,6 +16,28 @@ def load_module():
 
 
 class TranslationTests(unittest.TestCase):
+    def test_translation_requires_explicit_source_language(self):
+        module = load_module()
+        post = module.frontmatter.loads("---\ntitle: Hallo\n---\n\nHallo Welt")
+
+        with self.assertRaisesRegex(module.TranslationError, "source_lang"):
+            module.source_language(post)
+
+    def test_every_canonical_content_file_declares_a_valid_source_language(self):
+        module = load_module()
+        canonical = [
+            path
+            for path in (ROOT / "content").rglob("*.md")
+            if not path.name.endswith((".de.md", ".en.md"))
+        ]
+        self.assertTrue(canonical)
+        missing_or_invalid = []
+        for path in canonical:
+            post = module.frontmatter.load(path)
+            if post.get("source_lang") not in {"de", "en"}:
+                missing_or_invalid.append(str(path.relative_to(ROOT)))
+        self.assertEqual(missing_or_invalid, [])
+
     def test_translation_failure_does_not_write_partial_language_files(self):
         module = load_module()
         with tempfile.TemporaryDirectory() as tmp:

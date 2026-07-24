@@ -15,6 +15,7 @@ cover:
 tags:
   - obsidian
   - syncthing
+source_lang: en
 ---
 Obsidian is a great tool for collecting ideas.
 

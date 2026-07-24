@@ -9,7 +9,6 @@ from pathlib import Path
 
 import frontmatter
 from dotenv import load_dotenv
-from langdetect import detect
 
 LANGS = {"de", "en"}
 TRANSLATABLE_METADATA = ("title", "description", "summary")
@@ -72,17 +71,9 @@ def translate_value(client, value, source, target):
 
 def source_language(post):
     explicit = post.get("source_lang")
-    if explicit:
-        if explicit not in LANGS:
-            raise TranslationError(f"unsupported source_lang: {explicit}")
-        return explicit
-    try:
-        language = detect(post.content)
-    except Exception as exc:
-        raise TranslationError(f"could not detect source language: {exc}") from exc
-    if language not in LANGS:
-        raise TranslationError(f"unsupported detected language: {language}")
-    return language
+    if explicit not in LANGS:
+        raise TranslationError("source_lang must be explicitly set to de or en")
+    return explicit
 
 
 def translated_post(client, post, source, target):

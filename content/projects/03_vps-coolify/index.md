@@ -16,6 +16,7 @@ tags:
   - syncthing
   - coolify
   - tailscale
+source_lang: en
 ---
 
 {{< alert type="info" title="" >}}
