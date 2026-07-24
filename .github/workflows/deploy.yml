@@ -1,42 +1,52 @@
-name: Hugo build and push to gh-pages branch
+name: Build and deploy Hugo site
 
 on:
   workflow_run:
-    workflows: ["Translate Markdown and push to staging branch"]
-    types:
-      - completed
-   # Allows you to run this workflow manually from the Actions tab
+    workflows: ["Translate Markdown"]
+    types: [completed]
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
-    runs-on: ubuntu-22.04
+    if: >-
+      (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main') ||
+      (github.event_name == 'workflow_run' &&
+       github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_branch == 'main')
+    runs-on: ubuntu-24.04
     env:
       HUGO_CACHEDIR: /tmp/hugo_cache
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: false
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.2.0
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true
+          fetch-depth: 0
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@6b1ee2dcc06c9b6629a5317fa0146473914d05e1 # v3.0.0
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.146.0'
           extended: true
 
-      - name: Define cache
-        uses: actions/cache@v4
+      - name: Restore Hugo cache
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
         with:
           path: ${{ env.HUGO_CACHEDIR }}
-          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          key: ${{ runner.os }}-hugo-0.146.0-${{ hashFiles('**/go.sum') }}
           restore-keys: |
-            ${{ runner.os }}-hugomod-
+            ${{ runner.os }}-hugo-0.146.0-
 
       - name: Build
         run: hugo --gc --minify
+
+      - name: Publish root robots.txt
+        run: cp ./public/de/robots.txt ./public/robots.txt
 
       - name: Add redirect index.html
         run: |
@@ -45,49 +55,20 @@ jobs:
           <html lang="en">
           <head>
             <meta charset="UTF-8">
-            <meta http-equiv="refresh" content="0; url=en/" />
+            <meta http-equiv="refresh" content="0; url=en/">
             <title>Redirecting…</title>
-            <style>
-              body {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-                background-color: #111827; /* dark background like PaperMod dark mode */
-                color: #f9fafb;           /* light text */
-                text-align: center;
-              }
-              a {
-                color: #3b82f6; /* PaperMod blue accent */
-                text-decoration: none;
-              }
-              a:hover {
-                text-decoration: underline;
-              }
-              h1 {
-                font-weight: 600;
-              }
-            </style>
           </head>
           <body>
-            <div>
-              <h1>Redirecting to blog.matschcode.de …</h1>
-              <p>If the redirect does not work, <a href="en/">click here</a>.</p>
-            </div>
+            <p>If the redirect does not work, <a href="en/">continue to the blog</a>.</p>
           </body>
           </html>
           EOF
 
       - name: Add CNAME
-        run: |
-          cat > ./public/CNAME << 'EOF'
-          blog.matschcode.de
-          EOF
+        run: printf '%s\n' 'blog.matschcode.de' > ./public/CNAME
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@4a2e02b36f31d8974a0d09d3bb9f3172aa2d0d0d # v3.10.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
