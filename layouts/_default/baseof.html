@@ -26,6 +26,9 @@
         {{- block "main" . }}{{ end }}
     </main>
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+    {{ with resources.Get "js/gallery-lightbox.js" }}
+    <script defer src="{{ .RelPermalink }}"></script>
+    {{ end }}
     <script defer src="https://cdn.counter.dev/script.js" data-id="ad3d8a1d-120c-4f64-a5cf-2ae40ee7113b" data-utcoffset="2"></script>
 </body>
 
