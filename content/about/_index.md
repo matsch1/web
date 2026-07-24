@@ -7,25 +7,25 @@ source_lang: de
 
 {{< figure src="./me.jpg" width="400" alt="" class="right" >}}
 
-Ich bin Elektroingenieur und habe viel Zeit damit verbracht, mich in verschiedenste regelungstechnische Themen zu vertiefen. Dieses Know-how konnte ich bei Projekten für elektrische Fahrzeuge unterschiedlicher Hersteller einsetzen – von der Arbeit an Hochvoltkomponenten bis hin zur Mitgestaltung der Software für Elektroantriebe.
+## Hallo, ich bin Matthias
 
-Dabei habe ich etwas anderes entdeckt: meine Leidenschaft für gute Software. Ich liebe es, Prozesse zu automatisieren, Abläufe zu vereinfachen und Features zu entwickeln, die wirklich helfen.
-
+Elektroingenieur mit Erfahrung in der Entwicklung elektrischer Antriebe. Heute entwickle und betreibe ich Software, die Prozesse automatisiert, Systeme zuverlaessig macht und Teams produktiver arbeiten laesst.
 
 > Educated as an electrical engineer, shaped as a software developer, driven by a passion for DevOps.
 
-## Skills
+## Woran ich arbeite
 
-- **Languages**: Bash, Go, Python, MATLAB
-- **Coding Stack**: WezTerm, Zsh, Zellij, Neovim, Yazi, Lazygit, Lazydocker, K9S
-- **DevOps**: Linux, Docker, Kubernetes, Jenkins, ArgoCD, Ansible, Grafana
-- **Modelbased Development**: MATLAB Simulink, ASCET
+Ich verbinde Embedded- und Fahrzeugentwicklung mit moderner Softwareentwicklung und Plattform-Engineering: von Pulswechselrichtern bis zu automatisierten Deployments und Kubernetes.
 
----
+## Technologien
 
-# Kontakt
+- **Sprachen:** Go, Python, Bash, MATLAB
+- **Plattform & DevOps:** Linux, Docker, Kubernetes, Argo CD, Ansible, Jenkins
+- **Engineering:** MATLAB/Simulink, ASCET
+- **Werkzeuge:** Neovim, Zellij, Yazi, Lazygit, Lazydocker, k9s
 
-&nbsp;&nbsp;[![linkedin](/en/share_linkedin.png)](https://www.linkedin.com/in/schaefer-matthias) &nbsp;&nbsp;&nbsp;&nbsp;[![github](/en/share_github.png)](https://github.com/matsch1) &nbsp;&nbsp;&nbsp;&nbsp;[![email](/en/share_instagram.png)](https://www.instagram.com/matsch_n) &nbsp;&nbsp;&nbsp;&nbsp;[![email](/en/share_email.png)](mailto:matsch1@gmx.net)
+## Kontakt
 
-    Diese Seite ist im Original auf deutsch geschrieben.
-    Andere Sprachen wurden mit Hilfe der DEEPL api übersetzt.
+[LinkedIn](https://www.linkedin.com/in/schaefer-matthias) · [GitHub](https://github.com/matsch1) · [Instagram](https://www.instagram.com/matsch_n) · [E-Mail](mailto:matsch1@gmx.net)
+
+_Diese Seite wurde ursprünglich auf Deutsch geschrieben. Andere Sprachen wurden mit der DeepL API übersetzt._
