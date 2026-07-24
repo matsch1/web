@@ -8,7 +8,7 @@ title: Between terminals and trails
 
 {{< home-logo alt="MatSch Web logo" >}}
 
-# Projects, rides and lessons learned without the polish
+# Between terminals and trails
 
 Thanks for taking the time to visit my corner of the web.
 

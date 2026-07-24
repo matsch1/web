@@ -55,6 +55,28 @@ class TranslationTests(unittest.TestCase):
             self.assertFalse((bundle / "index.de.md").exists())
             self.assertFalse((bundle / "index.en.md").exists())
 
+    def test_translation_lock_preserves_manually_localized_files(self):
+        module = load_module()
+        with tempfile.TemporaryDirectory() as tmp:
+            content = Path(tmp) / "content"
+            bundle = content / "home"
+            bundle.mkdir(parents=True)
+            (bundle / "index.md").write_text(
+                "---\ntitle: Source\nsource_lang: en\ntranslation_lock: true\n---\n\nSource heading",
+                encoding="utf-8",
+            )
+            de = bundle / "index.de.md"
+            en = bundle / "index.en.md"
+            de.write_text("---\ntitle: Benutzerdefinierter Titel\n---\n\nBenutzerdefinierte Überschrift", encoding="utf-8")
+            en.write_text("---\ntitle: Source\n---\n\nSource heading", encoding="utf-8")
+
+            class FailingClient:
+                def translate_text(self, *args, **kwargs):
+                    raise AssertionError("locked content must not be sent to DeepL")
+
+            self.assertEqual(module.translate_tree(content, FailingClient()), 0)
+            self.assertIn("Benutzerdefinierter Titel", de.read_text(encoding="utf-8"))
+
     def test_translation_updates_title_and_description_atomically(self):
         module = load_module()
         with tempfile.TemporaryDirectory() as tmp:

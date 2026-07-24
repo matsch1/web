@@ -3,12 +3,12 @@ base_hash: a032c84af5c27925030b8f6fbcc02eda6d18fefbf52c35591b6a767b21031a7b
 description: Sammlung verschiedener Dinge
 draft: false
 image: home-logo-600.webp
-title: Zwischen Terminals und Wanderwegen
+title: Zwischen Terminal und Trampelpfad
 ---
 
 {{< home-logo alt="MatSch Web logo" >}}
 
-# Projekte, Radtouren und gewonnene Erkenntnisse – ganz ohne Schnickschnack
+# Zwischen Terminal und Trampelpfad
 
 Vielen Dank, dass du dir die Zeit genommen hast, meine kleine Ecke im Internet zu besuchen.
 

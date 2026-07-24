@@ -94,6 +94,8 @@ def translate_tree(content_root, client):
         if source_file.name.endswith((".de.md", ".en.md")):
             continue
         post = frontmatter.load(source_file)
+        if post.get("translation_lock") is True:
+            continue
         source = source_language(post)
         target = "en" if source == "de" else "de"
         source_variant = source_file.with_name(f"{source_file.stem}.{source}.md")

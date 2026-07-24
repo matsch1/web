@@ -4,11 +4,12 @@ description: "Collection of stuff"
 image: "home-logo-600.webp"
 draft: false
 source_lang: en
+translation_lock: true
 ---
 
 {{< home-logo alt="MatSch Web logo" >}}
 
-# Projects, rides and lessons learned without the polish
+# Between terminals and trails
 
 Thanks for taking the time to visit my corner of the web.
 
