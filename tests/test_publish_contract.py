@@ -36,8 +36,9 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn("https://blog.matschcode.de/", root_artifacts)
         self.assertIn("og:title", root_artifacts)
         self.assertIn("content=\\\"matschcode\\\"", root_artifacts)
-        self.assertIn("https://blog.matschcode.de/de/home-logo-600.webp", root_artifacts)
+        self.assertIn("https://blog.matschcode.de/masthead.webp", root_artifacts)
         self.assertIn("twitter:image", root_artifacts)
+        self.assertIn('Path("assets/images/masthead.webp")', root_artifacts)
         self.assertIn("python scripts/prepare_root_artifacts.py public", workflow)
 
     def test_publish_is_a_single_atomic_pipeline(self):

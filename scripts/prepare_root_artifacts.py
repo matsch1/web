@@ -13,14 +13,12 @@ ROOT_REDIRECT = """<!doctype html>
 <meta property=\"og:description\" content=\"Zwischen Terminal und Trampelpfad\">
 <meta property=\"og:url\" content=\"https://blog.matschcode.de/\">
 <meta property=\"og:type\" content=\"website\">
-<meta property=\"og:image\" content=\"https://blog.matschcode.de/de/home-logo-600.webp\">
+<meta property=\"og:image\" content=\"https://blog.matschcode.de/masthead.webp\">
 <meta property=\"og:image:type\" content=\"image/webp\">
-<meta property=\"og:image:width\" content=\"600\">
-<meta property=\"og:image:height\" content=\"606\">
 <meta name=\"twitter:card\" content=\"summary_large_image\">
 <meta name=\"twitter:title\" content=\"matschcode\">
 <meta name=\"twitter:description\" content=\"Zwischen Terminal und Trampelpfad\">
-<meta name=\"twitter:image\" content=\"https://blog.matschcode.de/de/home-logo-600.webp\">
+<meta name=\"twitter:image\" content=\"https://blog.matschcode.de/masthead.webp\">
 <title>matschcode</title>
 <script>const language=(navigator.languages&&navigator.languages[0])||navigator.language||\"de\";window.location.replace(language.toLowerCase().startsWith(\"de\")?\"de/\":\"en/\");</script>
 </head><body><p><a href=\"de/\">Deutsch</a> / <a href=\"en/\">English</a></p></body></html>
@@ -36,6 +34,10 @@ def main(output="public"):
         if not source.is_file():
             raise SystemExit(f"missing source artifact: {source}")
         (public / filename).write_bytes(source.read_bytes())
+    masthead = Path("assets/images/masthead.webp")
+    if not masthead.is_file():
+        raise SystemExit(f"missing masthead asset: {masthead}")
+    (public / "masthead.webp").write_bytes(masthead.read_bytes())
     robots = public / "de" / "robots.txt"
     if not robots.is_file():
         raise SystemExit("missing generated German robots.txt")
