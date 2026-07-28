@@ -11,7 +11,7 @@
 {{ $lon := index $lonParts 0 }}
 {{ $zoom := "15" }}
 {{ if gt (len $lonParts) 1 }}
-  {{ $zoom = index $lonParts 1 | replace "z=" "" }}
+  {{ $zoom = replaceRE "^z=" "" (index $lonParts 1) }}
 {{ end }}
 
 {{ $bboxDelta := 0.005 }}
@@ -23,26 +23,29 @@
 {{ $embedURL := printf "https://www.openstreetmap.org/export/embed.html?bbox=%.5f,%.5f,%.5f,%.5f&marker=%.5f,%.5f" $minLon $minLat $maxLon $maxLat (float $lat) (float $lon) }}
 {{ $fullURL := printf "https://www.openstreetmap.org/?mlat=%.5f&mlon=%.5f#map=%s/%.5f/%.5f" (float $lat) (float $lon) $zoom (float $lat) (float $lon) }}
 {{ $activateLabel := "Activate map" }}
-{{ if eq .Page.Lang "de" }}{{ $activateLabel = "Karte aktivieren" }}{{ end }}
+{{ $openMapLabel := "Open in OpenStreetMap" }}
+{{ if eq .Page.Lang "de" }}
+  {{ $activateLabel = "Karte aktivieren" }}
+  {{ $openMapLabel = "In OpenStreetMap öffnen" }}
+{{ end }}
 
 <div class="container my-4 map-embed" id="map-container-{{ .Get "id" }}">
-  <iframe
-    src="{{ $embedURL }}"
-    width="100%"
-    height="450"
-    frameborder="0"
-    style="border: 1px solid #ccc;"
-    allowfullscreen
-    loading="lazy"
-    referrerpolicy="strict-origin-when-cross-origin"
-    title="{{ $title }}">
-  </iframe>
-  <button class="map-embed__activate" type="button">{{ $activateLabel }}</button>
-  <div class="text-center mt-2">
-    <a href="{{ $fullURL }}" target="_blank" rel="noopener noreferrer">
-      View Larger Map
-    </a>
+  <div class="map-embed__viewport">
+    <iframe
+      class="map-embed__frame"
+      src="{{ $embedURL }}"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      title="{{ $title }}">
+    </iframe>
+    <button class="map-embed__activate" type="button">{{ $activateLabel }}</button>
   </div>
+  <noscript>
+    <p class="map-embed__fallback">
+      <a href="{{ $fullURL }}" target="_blank" rel="noopener noreferrer">{{ $openMapLabel }} <span aria-hidden="true">↗</span></a>
+    </p>
+  </noscript>
   <script>
     (() => {
       const map = document.currentScript.closest(".map-embed");

@@ -44,6 +44,8 @@ class SiteConfigurationTests(unittest.TestCase):
         self.assertIn("if gt (len $lonParts) 1", shortcode)
         self.assertIn('$zoom := "15"', shortcode)
         self.assertIn('{{ $geoLink := replace $geoLink "geo:" "" }}', shortcode)
+        self.assertIn('{{ $zoom = replaceRE "^z=" "" (index $lonParts 1) }}', shortcode)
+        self.assertNotIn('$zoom = index $lonParts 1 | replace "z=" ""', shortcode)
 
     def test_open_street_map_requires_explicit_activation_before_interaction(self):
         shortcode = (ROOT / "layouts" / "_shortcodes" / "open-street-map.html").read_text()
@@ -56,6 +58,22 @@ class SiteConfigurationTests(unittest.TestCase):
         self.assertIn('pointer-events: none;', css)
         self.assertIn('.map-embed--active iframe', css)
         self.assertIn('pointer-events: auto;', css)
+
+    def test_open_street_map_hides_the_large_map_link_but_keeps_a_localized_no_js_fallback(self):
+        shortcode = (ROOT / "layouts" / "_shortcodes" / "open-street-map.html").read_text()
+        css = (ROOT / "assets" / "css" / "extended" / "custom.css").read_text()
+
+        self.assertNotIn("View Larger Map", shortcode)
+        self.assertIn('$openMapLabel := "Open in OpenStreetMap"', shortcode)
+        self.assertIn('$openMapLabel = "In OpenStreetMap öffnen"', shortcode)
+        self.assertIn("<noscript>", shortcode)
+        self.assertIn('class="map-embed__fallback"', shortcode)
+        self.assertIn('target="_blank" rel="noopener noreferrer"', shortcode)
+        self.assertIn('class="map-embed__viewport"', shortcode)
+        self.assertIn('class="map-embed__frame"', shortcode)
+        self.assertNotIn('style="border: 1px solid #ccc;"', shortcode)
+        self.assertIn(".map-embed__frame", css)
+        self.assertIn("height: clamp(280px, 55vw, 450px);", css)
 
     def test_single_article_content_uses_papermod_markdown_container(self):
         single = (ROOT / "layouts" / "single.html").read_text()

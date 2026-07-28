@@ -118,8 +118,15 @@ the browser support for :has is not widespread yet.
 }
 
 /* Keep embedded maps passive while reading; enable panning and zooming explicitly. */
-.post-content .map-embed {
+.post-content .map-embed__viewport {
   position: relative;
+}
+
+.post-content .map-embed__frame {
+  display: block;
+  width: 100%;
+  height: clamp(280px, 55vw, 450px);
+  border: 1px solid var(--border);
 }
 
 .post-content .map-embed iframe {
@@ -132,9 +139,9 @@ the browser support for :has is not widespread yet.
 
 .post-content .map-embed__activate {
   position: absolute;
-  inset: 0 0 auto;
+  inset: 0;
   width: 100%;
-  height: 450px;
+  height: 100%;
   border: 0;
   background: transparent;
   color: transparent;
@@ -146,6 +153,11 @@ the browser support for :has is not widespread yet.
   outline-offset: -6px;
   color: var(--primary);
   background: color-mix(in srgb, var(--theme) 75%, transparent);
+}
+
+.post-content .map-embed__fallback {
+  margin: 0.75rem 0 0;
+  text-align: center;
 }
 
 /* Keep tall Strava screenshots readable without letting them dominate an article. */
