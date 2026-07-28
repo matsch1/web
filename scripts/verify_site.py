@@ -98,7 +98,7 @@ class SeoParser(HTMLParser):
 
 def validate_html_page(path, public, sitemap_locations):
     html = path.read_text()
-    if path == public / GOOGLE_SITE_VERIFICATION_FILE:
+    if path.name == GOOGLE_SITE_VERIFICATION_FILE:
         if html != GOOGLE_SITE_VERIFICATION_CONTENT:
             fail(f"invalid Google Search Console verification file: {path}")
         return
@@ -225,6 +225,7 @@ def main(output):
         "CNAME",
         "robots.txt",
         "sitemap.xml",
+        GOOGLE_SITE_VERIFICATION_FILE,
         "de/index.html",
         "en/index.html",
         "de/social-de.png",

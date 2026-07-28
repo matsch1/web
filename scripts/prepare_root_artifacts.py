@@ -10,7 +10,7 @@ def main(output="public"):
     public = Path(output)
     static = Path("static")
     public.mkdir(parents=True, exist_ok=True)
-    for filename in ("CNAME", "sitemap.xml"):
+    for filename in ("CNAME", "sitemap.xml", "google84170ae546b74eba.html"):
         source = static / filename
         if not source.is_file():
             raise SystemExit(f"missing source artifact: {source}")
