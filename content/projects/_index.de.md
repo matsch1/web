@@ -7,8 +7,8 @@ title: Projekte
 ---
 
 Willkommen auf meiner Projektseite!
-Hier dokumentiere ich meine Reise durch verschiedene technische Themen und Projekte. 
-Ich schreibe darüber, was ich entwickle, sowie über die Tools und Konzepte, die meine Neugier wecken.
+Hier findest du praxisnahe Beiträge zu den Dingen, die ich baue, selbst hoste und unterwegs lerne.
+Ich dokumentiere meine Reise durch verschiedene technische Themen und Projekte – einschließlich der Tools und Konzepte, die meine Neugier wecken.
 
 
 _Diese Seite und die Beiträge wurden ursprünglich auf Englisch verfasst. Andere Sprachen werden mithilfe der DeepL-API automatisch übersetzt._
