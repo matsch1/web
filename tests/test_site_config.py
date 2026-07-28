@@ -45,6 +45,18 @@ class SiteConfigurationTests(unittest.TestCase):
         self.assertIn('$zoom := "15"', shortcode)
         self.assertIn('{{ $geoLink := replace $geoLink "geo:" "" }}', shortcode)
 
+    def test_open_street_map_requires_explicit_activation_before_interaction(self):
+        shortcode = (ROOT / "layouts" / "_shortcodes" / "open-street-map.html").read_text()
+        css = (ROOT / "assets" / "css" / "extended" / "custom.css").read_text()
+
+        self.assertIn('class="container my-4 map-embed"', shortcode)
+        self.assertIn('class="map-embed__activate"', shortcode)
+        self.assertIn('map.classList.add("map-embed--active")', shortcode)
+        self.assertIn('.map-embed iframe', css)
+        self.assertIn('pointer-events: none;', css)
+        self.assertIn('.map-embed--active iframe', css)
+        self.assertIn('pointer-events: auto;', css)
+
     def test_single_article_content_uses_papermod_markdown_container(self):
         single = (ROOT / "layouts" / "single.html").read_text()
         self.assertIn('<div class="post-content md-content">', single)

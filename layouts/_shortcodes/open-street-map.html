@@ -22,8 +22,10 @@
 
 {{ $embedURL := printf "https://www.openstreetmap.org/export/embed.html?bbox=%.5f,%.5f,%.5f,%.5f&marker=%.5f,%.5f" $minLon $minLat $maxLon $maxLat (float $lat) (float $lon) }}
 {{ $fullURL := printf "https://www.openstreetmap.org/?mlat=%.5f&mlon=%.5f#map=%s/%.5f/%.5f" (float $lat) (float $lon) $zoom (float $lat) (float $lon) }}
+{{ $activateLabel := "Activate map" }}
+{{ if eq .Page.Lang "de" }}{{ $activateLabel = "Karte aktivieren" }}{{ end }}
 
-<div class="container my-4" id="map-container-{{ .Get "id" }}">
+<div class="container my-4 map-embed" id="map-container-{{ .Get "id" }}">
   <iframe
     src="{{ $embedURL }}"
     width="100%"
@@ -35,9 +37,20 @@
     referrerpolicy="strict-origin-when-cross-origin"
     title="{{ $title }}">
   </iframe>
+  <button class="map-embed__activate" type="button">{{ $activateLabel }}</button>
   <div class="text-center mt-2">
     <a href="{{ $fullURL }}" target="_blank" rel="noopener noreferrer">
       View Larger Map
     </a>
   </div>
+  <script>
+    (() => {
+      const map = document.currentScript.closest(".map-embed");
+      const activate = map.querySelector(".map-embed__activate");
+      activate.addEventListener("click", () => {
+        map.classList.add("map-embed--active");
+        activate.remove();
+      });
+    })();
+  </script>
 </div>

@@ -117,6 +117,37 @@ the browser support for :has is not widespread yet.
   text-align: center;
 }
 
+/* Keep embedded maps passive while reading; enable panning and zooming explicitly. */
+.post-content .map-embed {
+  position: relative;
+}
+
+.post-content .map-embed iframe {
+  pointer-events: none;
+}
+
+.post-content .map-embed--active iframe {
+  pointer-events: auto;
+}
+
+.post-content .map-embed__activate {
+  position: absolute;
+  inset: 0 0 auto;
+  width: 100%;
+  height: 450px;
+  border: 0;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.post-content .map-embed__activate:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: -6px;
+  color: var(--primary);
+  background: color-mix(in srgb, var(--theme) 75%, transparent);
+}
+
 /* Keep tall Strava screenshots readable without letting them dominate an article. */
 .post-content .strava-activity-image {
   display: block;
