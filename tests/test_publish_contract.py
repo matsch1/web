@@ -67,6 +67,14 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn('data-category="{{ $category }}"', listing)
         self.assertIn('entry.hidden = !visible', filters)
 
+    def test_project_list_cards_use_a_uniform_thumbnail_variant(self):
+        listing = (ROOT / "layouts" / "list.html").read_text()
+        thumbnails = (ROOT / "assets" / "css" / "extended" / "thumbnail.css").read_text()
+
+        self.assertIn('$class = "post-entry project-entry"', listing)
+        self.assertIn(".project-entry .entry-cover", thumbnails)
+        self.assertIn("object-fit: cover", thumbnails)
+
     def test_category_filter_includes_the_homepage_first_entry(self):
         filters = (ROOT / "assets" / "js" / "content-filters.js").read_text()
         self.assertIn('document.querySelectorAll("[data-category]")', filters)
