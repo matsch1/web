@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: cb5f9987eeb42d5061febebb281d24dcad20fa0172cd748e8e81c566d42e9855
+base_hash: 409054414b7c502fecb881e7de7bb2c4a958bb90081304f7f4daee4a083e993d
 cover:
   alt: ''
   caption: ''
@@ -57,6 +57,6 @@ Daily distance: 94 km
 17–25 degrees, sunny 
 
 ### Tour
-Reaching the West Coast Bike Path 
+Reaching the West Coast Bike Trail 
 
 {{< strava-activity-image id="15079345606" image="strava.jpg" >}}

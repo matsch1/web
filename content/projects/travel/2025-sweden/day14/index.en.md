@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: b444eb8fa9470dfaada8da1380b388f2bc49ece5e76dea48a8f2fd051cf03254
+base_hash: 78a72aa67c64e26503015bceac5e99e4899d53981d7d385aa8216bf718cdcd9b
 cover:
   alt: ''
   caption: ''
@@ -38,7 +38,7 @@ Tomorrow marks the final leg of my journey in Denmark. I’ll be covering about 
 ### Costs
 - 0 euros for the ferry
 - 10 euros for coffee and cake 
-- 26 euros for dinner/breakfast 
+- 26 euros for dinner and breakfast 
 - 0 euros for lodging
 
 **36 euros in daily expenses**

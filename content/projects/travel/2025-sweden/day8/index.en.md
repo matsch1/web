@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: c7593f75da04a31978fb0a1a041456829035d10c7da469ba3e73dfbd8b88563a
+base_hash: 9e0658355a280b5598d77cb875baa473d1c467bf2cb56958db134fc31d97e4ac
 cover:
   alt: ''
   caption: ''
@@ -18,7 +18,7 @@ title: "\U0001F1F8\U0001F1EA Day 8 - Things never turn out the way you expect"
 ## Impressions
 This morning, I finally set off again under bright sunshine. I rode along the coast through dunes and forests all the way to Halmstad, where I had breakfast at the harbor. 
 
-After Halmstad, the Kattlegattle route unfortunately ran mostly along various roads. It wasn’t the most scenic route, but it almost tempted me to really pick up the pace—if it hadn’t been for the headwind. I don’t think I need to mention that again in the future. It’s always windy. 
+After Halmstad, the Kattlegattle route unfortunately ran mostly along various roads. It wasn’t the most scenic route, but it almost made me want to really pick up the pace. If only it hadn’t been for the headwind. I don’t think I need to mention that again in the future. It’s always windy. 
 
 I chose a shelter inland as my destination for the day. The coast is far too densely populated for wild camping. There aren’t any shelter sites there either, and I didn’t feel like staying at a campground. 
 
