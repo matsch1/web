@@ -44,8 +44,8 @@ In den folgenden Kapiteln werde ich die wichtigsten Komponenten dieses Workflows
 Der Workflow wird durch eine eingehende Telegram-Nachricht ausgelöst.
 Um dies zu ermöglichen, musst du zunächst mithilfe von BotFather einen Telegram-Bot erstellen und die Chat-ID in deinem n8n-Telegram-Knoten konfigurieren.
 
-Für die Einrichtung des Bots kannst du dieser Anleitung folgen:
-{{< youtube RIrIXLAj8bE >}}
+Für die Einrichtung des Bots kannst du dieser Anleitung folgen. Das ursprüngliche Video ist leider nicht mehr verfügbar; dieses Video bietet eine ähnliche Alternative:
+{{< youtube K7aFsGOMayc >}}
 
 Sobald du den API-Token hast, erstelle in n8n die Telegram-Anmeldedaten, und die Verbindung zu deinem Bot wird hergestellt.
 
