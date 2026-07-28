@@ -1,15 +1,15 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 04465988b9e212f6715058e79b7f4acb9e9293323b5896fdd6b3b6c5217c56cd
+base_hash: 8da4d4d37fabc9f798b83868c113d003dc1250f0e329c419dcd3aa769efa6196
 cover:
   alt: Traffic flow from VPS to Tailscale-protected K3s cluster
   caption: Public traffic routed through a VPS into a private K3s homelab via Tailscale
   image: expose-k3s-services-via-vps.png
   relative: true
 date: 2025-12-21
-description: Leitung des öffentlichen Web-Datenverkehrs über einen VPS in einen durch
-  Tailscale gesicherten K3s-Cluster, der in einem privaten Homelab läuft.
+description: Leitung des öffentlichen Web-Traffics über einen VPS in einen durch Tailscale
+  gesicherten K3s-Cluster, der in einem privaten Homelab läuft.
 draft: false
 slug: expose-k3s-services-via-vps
 tags:
@@ -48,7 +48,7 @@ Warum nicht den VPS als öffentlichen Einstiegspunkt nutzen und den Datenverkehr
 Die endgültige Architektur ist einfach, sicher und überraschend robust.
 
 ### Was ich bereits hatte
-- Einen VPS mit einer statischen öffentlichen IP-Adresse (siehe meinen anderen Beitrag über meinen VPS ([Setup Coolify platform on your VPS](https://blog.matschcode.de/de/projects/self-hosting/coolify-vps-setup/))
+- Einen VPS mit einer statischen öffentlichen IP-Adresse (siehe meinen anderen Beitrag über meinen VPS ([Setup Coolify platform on your VPS](https://blog.matschcode.de/en/projects/self-hosting/coolify-vps-setup/))
 - [Coolify](https://coolify.io/) läuft auf dem VPS als PaaS
 - Traefik als Reverse-Proxy, verwaltet von Coolify
 - Eine private Domain, die über A-Einträge auf die IP-Adresse des VPS verweist
@@ -130,5 +130,5 @@ Durch die Nutzung eines VPS als öffentlichen Eingangs-Knotenpunkt und die Kombi
 **Diese Konfiguration bietet:**
 - Eine stabile öffentliche IP-Adresse
 - Sichere private Vernetzung über Tailscale
-- Vollständige Kontrolle darüber, welche Dienste nach außen zugänglich sind
+- Volle Kontrolle darüber, welche Dienste nach außen zugänglich sind
 - Keine eingehenden Verbindungen zu meinem Heimnetzwerk

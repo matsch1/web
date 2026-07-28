@@ -1,4 +1,6 @@
 ---
+cascade:
+  hiddenInProjectList: true
 cover:
   alt: bikepacking-sweden-denmark
   caption: ''
@@ -7,10 +9,8 @@ cover:
 date: 2025-06-20
 description: Dokumentation meiner Bikepacking Reise durch Dänemark und Schweden
 draft: false
-source_lang: de
 listAsProject: true
-cascade:
-  hiddenInProjectList: true
+source_lang: de
 title: Bikepacking Schweden + Dänemark 2025
 ---
 

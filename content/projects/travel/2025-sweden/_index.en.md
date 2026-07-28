@@ -1,5 +1,7 @@
 ---
-base_hash: c6f2e63f8a8599e8bb1a49305ad0578cbb94b6aa4e4e42565381579eb5c22eb1
+base_hash: d10bfcdccc8eebbe477a99bd1028dd05b446b1d0cb2e801625e7f243e4a05b93
+cascade:
+  hiddenInProjectList: true
 cover:
   alt: bikepacking-sweden-denmark
   caption: ''
@@ -9,8 +11,6 @@ date: 2025-06-20
 description: A record of my bikepacking trip through Denmark and Sweden
 draft: false
 listAsProject: true
-cascade:
-  hiddenInProjectList: true
 title: Bikepacking in Sweden and Denmark 2025
 ---
 
