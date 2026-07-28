@@ -56,6 +56,8 @@ class SiteConfigurationTests(unittest.TestCase):
         self.assertIn('site.Params.masthead.image', header)
         self.assertIn('Resize "2400x webp q78"', header)
         self.assertIn('image = "images/masthead.webp"', config)
+        self.assertIn("title = 'Zwischen Terminal und Trampelpfad'", config)
+        self.assertIn("title = 'Between terminals and trails'", config)
         self.assertIn('text = "matschcode"', config)
         self.assertIn('icon = "home-logo-300.webp"', config)
         self.assertIn("iconHeight = 24", config)

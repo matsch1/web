@@ -8,12 +8,14 @@ enableRobotsTXT = true
 [languages]
 
 [languages.de]
+title = 'Zwischen Terminal und Trampelpfad'
 baseURL = 'https://blog.matschcode.de/de'
 label = "Deutsch"
 weight = 1
 contentDir = "content"
 
 [languages.en]
+title = 'Between terminals and trails'
 baseURL = 'https://blog.matschcode.de/en'
 label = "English"
 weight = 2
