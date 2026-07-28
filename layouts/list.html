@@ -40,6 +40,17 @@
 
 {{- $pages := union .RegularPages .Sections }}
 
+{{- if and .IsSection .Parent.IsHome }}
+  {{- if eq .Section "notes" }}
+    {{- $pages = where site.RegularPages "Section" "notes" }}
+  {{- else if eq .Section "projects" }}
+    {{- $pages = where site.RegularPages "Section" "projects" }}
+    {{- $pages = where $pages "Params.hiddenInProjectList" "ne" true }}
+    {{- $travelProjects := where .Site.Pages "Params.listAsProject" true }}
+    {{- $pages = union $pages $travelProjects }}
+  {{- end }}
+{{- end }}
+
 {{- if .IsHome }}
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}

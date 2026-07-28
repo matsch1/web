@@ -8,6 +8,9 @@ cover:
 date: 2025-06-20
 description: A record of my bikepacking trip through Denmark and Sweden
 draft: false
+listAsProject: true
+cascade:
+  hiddenInProjectList: true
 title: Bikepacking in Sweden and Denmark 2025
 ---
 

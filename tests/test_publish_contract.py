@@ -77,10 +77,10 @@ class PublishContractTests(unittest.TestCase):
 
     def test_raw_html_warning_sources_use_markdown_code_spans(self):
         expectations = {
-            "content/blog/08_Giscus_comments/index.de.md": "Giscus-Tag `<script>` darin",
-            "content/blog/08_Giscus_comments/index.en.md": "Giscus `<script>` tag inside",
-            "content/projects/03_vps-coolify/index.de.md": "Dateien erstellt: `<ssh-key>` und `<ssh-key.pub>`.",
-            "content/projects/03_vps-coolify/index.en.md": "files: `<ssh-key>` and `<ssh-key.pub>`.",
+            "content/notes/development/giscus-comments/index.de.md": "Giscus-Tag `<script>` darin",
+            "content/notes/development/giscus-comments/index.en.md": "Giscus `<script>` tag inside",
+            "content/projects/self-hosting/coolify-vps/index.de.md": "Dateien erstellt: `<ssh-key>` und `<ssh-key.pub>`.",
+            "content/projects/self-hosting/coolify-vps/index.en.md": "files: `<ssh-key>` and `<ssh-key.pub>`.",
         }
         for relative_path, expected in expectations.items():
             self.assertIn(expected, (ROOT / relative_path).read_text())
@@ -283,7 +283,7 @@ class PublishContractTests(unittest.TestCase):
         self.assertNotIn("data-ngthumb", gallery)
 
     def test_n8n_gallery_uses_explicit_descriptive_alt_text(self):
-        source = (ROOT / "content" / "projects" / "07_n8n_personal_assistant" / "index.md").read_text()
+        source = (ROOT / "content" / "projects" / "development" / "n8n-personal-assistant" / "index.md").read_text()
         self.assertIn(
             'alt="n8n Switch node in Rules mode with checks for voice.file_id, photo[3].file_id, and message.text; its outputs are named Audio, Image, and Text"',
             source,
@@ -292,7 +292,7 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn("translation_lock: true", source)
 
     def test_swedish_day_one_gallery_has_localized_explicit_alt_text(self):
-        directory = ROOT / "content" / "travel" / "2025-07-Schweden" / "day1"
+        directory = ROOT / "content" / "projects" / "travel" / "2025-sweden" / "day1"
         expected = {
             "index.de.md": 'alt="Geschwungener Kiesweg durch Bäume neben einem schmalen Strand am blauen Meer."',
             "index.en.md": 'alt="Curving gravel path through trees beside a narrow beach and blue sea."',
