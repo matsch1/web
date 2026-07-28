@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: fec459eee2138418a2f56d28acb30568e8f942b3dafff9336f6504797fd2f525
+base_hash: db1e646ed6bf5ebfb81851e92db3c75a9d0d44ce1eecef9ff5ac72ad1252c26e
 cover:
   alt: obsidian-http-mcp
   caption: ''
@@ -18,11 +18,11 @@ title: 'Mit Ihren Obsidian-Notizen chatten: Vorstellung des HTTP-MCP-Servers'
 ---
 
 {{< alert type="warning" title="" >}}
-Leider wird der MCP-Server nicht mehr benötigt, da der gesamte n8n-Agent durch den Hermes-Agenten ersetzt wurde. 
+Leider wird der MCP-Server nicht mehr benötigt, da der gesamte [n8n-KI-Agent](https://blog.matschcode.de/de/projects/development/n8n-ai-assistant/) durch den Hermes-Agenten ersetzt wurde.
 {{< /alert >}}
 
 ## Einleitung
-Wenn ihr meine Obsidian-Konfiguration verfolgt habt, wisst ihr, dass ich es liebe, meine Notizen mit Syncthing ([My Obsidian + Syncthing Setup: A Self-Hosted Cloud for Notes, Backups, and More](https://matsch1.github.io/web/en/coding/07_obsidian_syncthing_cloud_setup/)) geräteübergreifend zu synchronisieren. Aber ich wollte mehr als nur Synchronisierung – ich wollte **intelligent mit meinen Notizen interagieren, überall und jederzeit**.
+Wenn ihr meine Obsidian-Konfiguration verfolgt habt, wisst ihr, dass ich es liebe, meine Notizen mit Syncthing ([Mein Obsidian- und Syncthing-Setup: Eine selbst gehostete Cloud für Notizen, Backups und mehr](https://blog.matschcode.de/de/notes/self-hosting/obsidian-cloud-sync-setup/)) geräteübergreifend zu synchronisieren. Aber ich wollte mehr als nur Synchronisierung – ich wollte **intelligent mit meinen Notizen interagieren, überall und jederzeit**.
 
 ## Warum Obsidian HTTP MCP?
 Deshalb habe ich **Obsidian HTTP MCP** entwickelt, einen auf [FastMCP](https://gofastmcp.com/getting-started/welcome) basierenden, ressourcenschonenden Server, der deinen Obsidian-Vault über HTTP mithilfe des MCP-Protokolls bereitstellt.
