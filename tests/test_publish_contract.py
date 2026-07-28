@@ -50,18 +50,31 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn("hugo --gc --minify", workflow)
         self.assertIn("python scripts/verify_site.py public", workflow)
 
-    def test_homepage_lists_projects_without_a_custom_landing_page(self):
+    def test_homepage_is_the_canonical_projects_listing(self):
         head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
         listing = (ROOT / "layouts" / "list.html").read_text()
         self.assertIn('<title>{{ if and .Title (not .IsHome) }}{{ .Title }} | {{ end }}{{ site.Title }}</title>', head)
         self.assertIn('where site.RegularPages "Section" "projects"', listing)
         self.assertIn('where .Site.Pages "Params.listAsProject" true', listing)
-        self.assertFalse((ROOT / "content" / "_index.md").exists())
+        self.assertIn('$class = "post-entry project-entry"', listing)
 
-    def test_projects_navigation_targets_the_projects_section(self):
+        for language in ("de", "en"):
+            homepage = ROOT / "content" / f"_index.{language}.md"
+            redirect = ROOT / "content" / "projects" / f"_index.{language}.md"
+            self.assertTrue(homepage.is_file())
+            self.assertNotIn("aliases:", homepage.read_text())
+            self.assertTrue(redirect.is_file())
+            self.assertIn("redirect_to: /", redirect.read_text())
+            self.assertIn("sitemap:\n  disable: true", redirect.read_text())
+
+        redirect = ROOT / "content" / "projects" / "_index.md"
+        self.assertTrue(redirect.is_file())
+        self.assertIn("redirect_to: /", redirect.read_text())
+
+    def test_projects_navigation_targets_the_canonical_homepage(self):
         config = (ROOT / "hugo.toml").read_text()
         projects_menu = config.split('identifier = "projects"', 1)[1].split('[[menu.main]]', 1)[0]
-        self.assertIn('url = "/projects/"', projects_menu)
+        self.assertIn('url = "/"', projects_menu)
 
     def test_notes_and_projects_lists_can_be_filtered_by_category(self):
         listing = (ROOT / "layouts" / "list.html").read_text()
@@ -103,7 +116,8 @@ class PublishContractTests(unittest.TestCase):
 
         self.assertIn('partial "translation_disclaimer.html" .', listing)
         self.assertGreater(listing.index('partial "translation_disclaimer.html" .'), listing.index('<footer class="page-footer">'))
-        self.assertIn('slice "projects" "notes" "about"', disclaimer)
+        self.assertIn('or .IsHome', disclaimer)
+        self.assertIn('slice "notes" "about"', disclaimer)
         self.assertIn('i18n "translation_disclaimer"', disclaimer)
 
         for language, expected in (
@@ -113,12 +127,19 @@ class PublishContractTests(unittest.TestCase):
             translations = (ROOT / "i18n" / f"{language}.yaml").read_text()
             self.assertIn("id: translation_disclaimer", translations)
             self.assertIn(expected, translations)
+            self.assertIn("id: redirecting_to_projects", translations)
+            self.assertIn("id: continue_to_projects", translations)
 
-        for section in ("projects", "notes", "about"):
+        for section in ("notes", "about"):
             for language_suffix in ("", ".de", ".en"):
                 content = (ROOT / "content" / section / f"_index{language_suffix}.md").read_text()
                 self.assertNotIn("originally written", content)
                 self.assertNotIn("ursprünglich auf", content)
+
+        for language_suffix in ("", ".de", ".en"):
+            content = (ROOT / "content" / f"_index{language_suffix}.md").read_text()
+            self.assertNotIn("originally written", content)
+            self.assertNotIn("ursprünglich auf", content)
 
     def test_reorganized_content_uses_current_internal_project_urls(self):
         stale_urls = (
@@ -218,6 +239,30 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn('"de/social-de.png"', verifier)
         self.assertIn('"en/social-en.png"', verifier)
         self.assertIn("safari-pinned-tab.svg", verifier)
+
+    def test_artifact_validator_rejects_project_page_without_a_home_redirect(self):
+        verifier = self.verifier_module()
+        with tempfile.TemporaryDirectory() as directory:
+            public = Path(directory)
+            for language in ("de", "en"):
+                page = public / language / "projects" / "index.html"
+                page.parent.mkdir(parents=True, exist_ok=True)
+                page.write_text("<html><head></head><body>Projects</body></html>")
+            with self.assertRaises(SystemExit):
+                verifier.validate_projects_redirects(public)
+
+    def test_artifact_validator_accepts_localized_project_home_redirects(self):
+        verifier = self.verifier_module()
+        with tempfile.TemporaryDirectory() as directory:
+            public = Path(directory)
+            for language in ("de", "en"):
+                page = public / language / "projects" / "index.html"
+                page.parent.mkdir(parents=True, exist_ok=True)
+                page.write_text(
+                    '<meta name="robots" content="noindex,follow">'
+                    f'<script>window.location.replace("/{language}/")</script>'
+                )
+            verifier.validate_projects_redirects(public)
 
     def test_artifact_validator_rejects_html_without_required_seo_metadata(self):
         verifier = self.verifier_module()

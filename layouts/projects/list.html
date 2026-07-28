@@ -1,0 +1,8 @@
+{{- define "main" }}
+{{- $localizedTarget := site.Home.RelPermalink -}}
+<section class="post-content">
+  <p>{{ i18n "redirecting_to_projects" }}</p>
+  <p><a href="{{ $localizedTarget }}">{{ i18n "continue_to_projects" }}</a></p>
+</section>
+<script>window.location.replace("{{ $localizedTarget }}");</script>
+{{- end }}

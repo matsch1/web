@@ -4,7 +4,7 @@
 {{- partial "index_profile.html" . }}
 {{- else }} {{/* if not profileMode */}}
 
-{{- if not .IsHome | and .Title }}
+{{- if .Title }}
 <header class="page-header">
   {{- partial "breadcrumbs.html" . }}
   <h1>
@@ -88,7 +88,7 @@
 {{- $class := "post-entry" }}
 
 {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
-{{- if and $.IsSection (eq $.Section "projects") }}
+{{- if or $.IsHome (and $.IsSection (eq $.Section "projects")) }}
 {{- $class = "post-entry project-entry" }}
 {{- else if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
 {{- $class = "first-entry" }}
