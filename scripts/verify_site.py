@@ -184,6 +184,20 @@ def validate_default_social_metadata(path, expected_url):
     fail(f"missing complete localized social-card metadata in {path}")
 
 
+def validate_projects_redirects(public):
+    for language in ("de", "en"):
+        path = public / language / "projects" / "index.html"
+        if not path.is_file():
+            fail(f"missing {language} projects redirect")
+        html = path.read_text()
+        parser = SeoParser()
+        parser.feed(html)
+        if parser.meta.get("robots") != "noindex,follow":
+            fail(f"projects redirect is indexable: {path}")
+        if f'window.location.replace("/{language}/")' not in html:
+            fail(f"projects redirect does not target the localized homepage: {path}")
+
+
 def validate_gallery(path):
     parser = GalleryParser()
     parser.feed(path.read_text())
@@ -237,6 +251,7 @@ def main(output):
             public / language / "index.html",
             f"https://blog.matschcode.de/{language}/social-{language}.png",
         )
+    validate_projects_redirects(public)
     for page in public.rglob("*.html"):
         validate_html_page(page, public, sitemap_locations)
         if "image-gallery" in page.read_text():

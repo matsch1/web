@@ -24,3 +24,9 @@
 
 - id: translation_disclaimer
   translation: "Diese Website ist auf Deutsch und Englisch verfügbar. Inhalte können automatisiert mithilfe der DeepL API übersetzt sein."
+
+- id: redirecting_to_projects
+  translation: "Weiterleitung zu den Projekten …"
+
+- id: continue_to_projects
+  translation: "Weiter zu den Projekten"

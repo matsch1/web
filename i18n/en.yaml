@@ -24,3 +24,9 @@
 
 - id: translation_disclaimer
   translation: "This website is available in German and English. Content may be translated automatically using the DeepL API."
+
+- id: redirecting_to_projects
+  translation: "Redirecting to projects …"
+
+- id: continue_to_projects
+  translation: "Continue to projects"
