@@ -8,6 +8,3 @@ title: Anmerkungen
 
 Willkommen bei meinen Notizen!
 Hier teile ich alles, was mich zum Lachen, Weinen oder Nachdenken gebracht hat – Lektionen, die ich auf die harte Tour gelernt habe, damit du das nicht tun musst.
-
-
-_Diese Seite und die Beiträge wurden ursprünglich auf Englisch verfasst. Andere Sprachen werden automatisch mithilfe der DeepL-API übersetzt._

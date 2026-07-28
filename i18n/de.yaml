@@ -21,3 +21,6 @@
 
 - id: filter_category_travel
   translation: "Reisen"
+
+- id: translation_disclaimer
+  translation: "Diese Website ist auf Deutsch und Englisch verfügbar. Inhalte können automatisiert mithilfe der DeepL API übersetzt sein."
