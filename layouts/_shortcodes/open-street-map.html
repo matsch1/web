@@ -22,10 +22,17 @@
 
 {{ $embedURL := printf "https://www.openstreetmap.org/export/embed.html?bbox=%.5f,%.5f,%.5f,%.5f&marker=%.5f,%.5f" $minLon $minLat $maxLon $maxLat (float $lat) (float $lon) }}
 {{ $fullURL := printf "https://www.openstreetmap.org/?mlat=%.5f&mlon=%.5f#map=%s/%.5f/%.5f" (float $lat) (float $lon) $zoom (float $lat) (float $lon) }}
+{{ $coordinates := printf "%.5f, %.5f" (float $lat) (float $lon) }}
 {{ $activateLabel := "Activate map" }}
+{{ $copyCoordinatesLabel := "Copy coordinates" }}
+{{ $coordinatesCopiedLabel := "Coordinates copied" }}
+{{ $coordinatesNotCopiedLabel := "Unable to copy coordinates" }}
 {{ $openMapLabel := "Open in OpenStreetMap" }}
 {{ if eq .Page.Lang "de" }}
   {{ $activateLabel = "Karte aktivieren" }}
+  {{ $copyCoordinatesLabel = "Koordinaten kopieren" }}
+  {{ $coordinatesCopiedLabel = "Koordinaten kopiert" }}
+  {{ $coordinatesNotCopiedLabel = "Koordinaten konnten nicht kopiert werden" }}
   {{ $openMapLabel = "In OpenStreetMap öffnen" }}
 {{ end }}
 
@@ -41,6 +48,14 @@
     </iframe>
     <button class="map-embed__activate" type="button">{{ $activateLabel }}</button>
   </div>
+  <div class="map-embed__actions" hidden>
+    <button class="map-embed__copy map-embed__action" type="button" data-coordinates="{{ $coordinates }}" data-copy-label="{{ $copyCoordinatesLabel }}" data-copied-label="{{ $coordinatesCopiedLabel }}" data-not-copied-label="{{ $coordinatesNotCopiedLabel }}" aria-live="polite">
+      <span aria-hidden="true">📍</span> {{ $copyCoordinatesLabel }}
+    </button>
+    <a class="map-embed__open map-embed__action" href="{{ $fullURL }}" target="_blank" rel="noopener noreferrer">
+      <span aria-hidden="true">↗</span> {{ $openMapLabel }}
+    </a>
+  </div>
   <noscript>
     <p class="map-embed__fallback">
       <a href="{{ $fullURL }}" target="_blank" rel="noopener noreferrer">{{ $openMapLabel }} <span aria-hidden="true">↗</span></a>
@@ -50,9 +65,42 @@
     (() => {
       const map = document.currentScript.closest(".map-embed");
       const activate = map.querySelector(".map-embed__activate");
+      const actions = map.querySelector(".map-embed__actions");
+      const copy = map.querySelector(".map-embed__copy");
+
+      actions.hidden = false;
       activate.addEventListener("click", () => {
         map.classList.add("map-embed--active");
         activate.remove();
+      });
+      copy.addEventListener("click", async () => {
+        const originalLabel = copy.dataset.copyLabel;
+        let copied = false;
+        try {
+          await navigator.clipboard.writeText(copy.dataset.coordinates);
+          copied = true;
+        } catch {
+          const textarea = document.createElement("textarea");
+          try {
+            textarea.value = copy.dataset.coordinates;
+            textarea.style.position = "fixed";
+            textarea.style.opacity = "0";
+            document.body.append(textarea);
+            textarea.select();
+            copied = document.execCommand("copy");
+          } catch {
+            copied = false;
+          } finally {
+            textarea.remove();
+            copy.focus();
+          }
+        }
+        copy.innerHTML = copied
+          ? `<span aria-hidden="true">✓</span> ${copy.dataset.copiedLabel}`
+          : copy.dataset.notCopiedLabel;
+        window.setTimeout(() => {
+          copy.innerHTML = `<span aria-hidden="true">📍</span> ${originalLabel}`;
+        }, 1800);
       });
     })();
   </script>

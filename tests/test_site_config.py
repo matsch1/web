@@ -59,21 +59,35 @@ class SiteConfigurationTests(unittest.TestCase):
         self.assertIn('.map-embed--active iframe', css)
         self.assertIn('pointer-events: auto;', css)
 
-    def test_open_street_map_hides_the_large_map_link_but_keeps_a_localized_no_js_fallback(self):
+    def test_open_street_map_exposes_localized_copy_and_open_actions(self):
         shortcode = (ROOT / "layouts" / "_shortcodes" / "open-street-map.html").read_text()
         css = (ROOT / "assets" / "css" / "extended" / "custom.css").read_text()
 
         self.assertNotIn("View Larger Map", shortcode)
+        self.assertIn('$copyCoordinatesLabel := "Copy coordinates"', shortcode)
+        self.assertIn('$copyCoordinatesLabel = "Koordinaten kopieren"', shortcode)
+        self.assertIn('$coordinatesCopiedLabel := "Coordinates copied"', shortcode)
+        self.assertIn('$coordinatesCopiedLabel = "Koordinaten kopiert"', shortcode)
+        self.assertIn('$coordinatesNotCopiedLabel := "Unable to copy coordinates"', shortcode)
+        self.assertIn('$coordinatesNotCopiedLabel = "Koordinaten konnten nicht kopiert werden"', shortcode)
         self.assertIn('$openMapLabel := "Open in OpenStreetMap"', shortcode)
         self.assertIn('$openMapLabel = "In OpenStreetMap öffnen"', shortcode)
+        self.assertIn('class="map-embed__actions"', shortcode)
+        self.assertIn('class="map-embed__copy map-embed__action"', shortcode)
+        self.assertIn('class="map-embed__open map-embed__action"', shortcode)
+        self.assertIn('data-coordinates="{{ $coordinates }}"', shortcode)
+        self.assertIn('navigator.clipboard.writeText', shortcode)
+        self.assertIn('target="_blank" rel="noopener noreferrer"', shortcode)
         self.assertIn("<noscript>", shortcode)
         self.assertIn('class="map-embed__fallback"', shortcode)
-        self.assertIn('target="_blank" rel="noopener noreferrer"', shortcode)
         self.assertIn('class="map-embed__viewport"', shortcode)
         self.assertIn('class="map-embed__frame"', shortcode)
         self.assertNotIn('style="border: 1px solid #ccc;"', shortcode)
         self.assertIn(".map-embed__frame", css)
         self.assertIn("height: clamp(280px, 55vw, 450px);", css)
+        self.assertIn(".map-embed__actions", css)
+        self.assertIn(".map-embed__action", css)
+        self.assertIn("@media screen and (max-width: 520px)", css)
 
     def test_single_article_content_uses_papermod_markdown_container(self):
         single = (ROOT / "layouts" / "single.html").read_text()
