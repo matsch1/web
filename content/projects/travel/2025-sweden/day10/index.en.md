@@ -42,7 +42,7 @@ Back in Denmark, I set off on my own to a nearby shelter. After a quick dip in a
 
 ### Place to Stay 
 Place to stay with bathing facilities 
-{{< open-street-map map_title="Schlafplatz" geo_link="geo:57.46850,10.46534?z=16" >}}
+{{< open-street-map map_title="Schlafplatz" geo_link=geo:57.05329,12.52974?z=14" >}}
 
 ## Trip Details
 Daily distance: 48 km

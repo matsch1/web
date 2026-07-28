@@ -47,7 +47,7 @@ I’ve decided to take the ferry back to Denmark the day after tomorrow. For me,
 
 ### Place to Sleep 
 Beautiful place to sleep right by the lake
-{{< open-street-map map_title="Schlafplatz" geo_link=geo:57.05329,12.52974?z=14" >}}
+{{< open-street-map map_title="Schlafplatz" geo_link=geo:57.062624,12.529832?z=17" >}}
 
 ## Trip Details
 Daily distance: 109 km

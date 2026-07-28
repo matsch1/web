@@ -45,7 +45,7 @@ Für morgen steht die letzte Etappe in Dänemark an. Es gilt nochmal ca. 100 km 
 
 ### Schlafplatz 
 Schlafplatz mit Bademöglichkeit 
-{{< open-street-map map_title="Schlafplatz" geo_link="geo:55.3256,8.6493?z=12" >}}
+{{< open-street-map map_title="Schlafplatz" geo_link="geo:55.38022,8.64830?z=16" >}}
 
 ## Tourdaten
 Tagesstrecke: 73 km

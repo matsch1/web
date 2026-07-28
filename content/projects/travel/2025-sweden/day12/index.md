@@ -45,7 +45,7 @@ Hier konnte ich heiß duschen, Wäsche waschen und Akkus aufladen. Zusätzlich h
 
 ### Schlafplatz 
 Schlafplatz auf dem Campingplatz 
-{{< open-street-map map_title="Schlafplatz" geo_link="geo:56.68311,8.21520?z=13" >}}
+{{< open-street-map map_title="Schlafplatz" geo_link="geo:56.69486,8.20625?z=16" >}}
 
 ## Tourdaten
 Tagesstrecke: 150 km

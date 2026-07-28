@@ -45,7 +45,7 @@ Tomorrow marks the final leg of my journey in Denmark. I’ll be covering about 
 
 ### Place to Sleep 
 Place to sleep with bathing facilities 
-{{< open-street-map map_title="Schlafplatz" geo_link="geo:55.3256,8.6493?z=12" >}}
+{{< open-street-map map_title="Schlafplatz" geo_link="geo:55.38022,8.64830?z=16" >}}
 
 ## Trip Details
 Daily distance: 73 km

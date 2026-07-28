@@ -49,7 +49,7 @@ Am Schlafplatz angekommen, scheint jetzt wieder die Sonne als wäre nichts gewes
 
 ### Schlafplatz 
 Schlafplatz auf einem simplen Zeltplatz 
-{{< open-street-map map_title="Schlafplatz" geo_link="geo:55.7731,8.1958?z=12" >}}
+{{< open-street-map map_title="Schlafplatz" geo_link="geo:55.77018,8.19788?z=16" >}}
 
 ## Tourdaten
 Tagesstrecke: 129 km
