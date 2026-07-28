@@ -32,7 +32,7 @@ Bevor wir den Assistenten erstellen, müssen wir n8n einrichten. n8n ist eine No
 
 {{< figure src="https://www.webmaster-vitaliy.de/wp-content/uploads/2025/05/n8n.png" width="300" alt="n8n" link="https://n8n.io/" target="_blank">}}
 
-n8n muss auf einem eigenen Server gehostet werden. Ich empfehle, den Ansatz aus meinem [Coolify VPS setup](https://blog.matschcode.de/en/projects/coolify-vps-setup/) zu befolgen. Wenn bei dir bereits eine Coolify-Instanz läuft, kannst du mit wenigen Klicks einfach eine neue n8n-Ressource hinzufügen.
+n8n muss auf einem eigenen Server gehostet werden. Ich empfehle, den Ansatz aus meinem [Coolify VPS setup](https://blog.matschcode.de/de/projects/self-hosting/coolify-vps-setup/) zu befolgen. Wenn bei dir bereits eine Coolify-Instanz läuft, kannst du mit wenigen Klicks einfach eine neue n8n-Ressource hinzufügen.
 
 ## Workflow erstellen
 Der Workflow für meinen persönlichen Assistenten ist nicht vollständig selbst erstellt. Ich habe eine der vielen vorhandenen Vorlagen aus der n8n-Bibliothek als Grundlage verwendet:
@@ -113,7 +113,7 @@ Diese Tools stellen strukturierte Schnittstellen bereit, die die KI aufrufen kan
 Das bedeutet, dass der Agent keinen beliebigen Text erstellt, sondern präzise Befehle im JSON-Format zurückgibt, die n8n ausführt.
 
 Um zusätzliche Funktionen zu integrieren (zum Beispiel Einkaufslisten, Fitnessprotokolle, Gewohnheitsaufzeichnung), musst du lediglich neue Tools hinzufügen und diese in der Agenten-Eingabeaufforderung beschreiben.
-In meinem Fall verwende ich beispielsweise Obsidian anstelle von Notion für Notizen und richte dafür einen zusätzlichen MCP-Server ein ([HTTP Obsidian MCP server](https://blog.matschcode.de/en/projects/obsidian-http-mcp/)), der von meinem KI-Agenten genutzt wird.
+In meinem Fall verwende ich beispielsweise Obsidian anstelle von Notion für Notizen und richte dafür einen zusätzlichen MCP-Server ein ([HTTP Obsidian MCP server](https://blog.matschcode.de/de/projects/development/obsidian-http-mcp/)), der von meinem KI-Agenten genutzt wird.
 
 Außerdem empfehle ich, die folgenden von n8n bereitgestellten MCP-Tools hinzuzufügen:
 - SerpAPI, damit der KI-Agent im Internet suchen kann

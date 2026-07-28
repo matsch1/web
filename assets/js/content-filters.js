@@ -1,6 +1,6 @@
 document.querySelectorAll("[data-content-filters]").forEach((filters) => {
   const buttons = filters.querySelectorAll("[data-filter]");
-  const entries = document.querySelectorAll(".post-entry[data-category]");
+  const entries = document.querySelectorAll("[data-category]");
   const emptyState = filters.nextElementSibling;
 
   buttons.forEach((button) => {

@@ -46,7 +46,7 @@ Why not use the VPS as a public entry point and forward traffic securely into my
 The final architecture is simple, secure, and surprisingly robust.
 
 ### What I Already Had
-- A VPS with a static public IP (See my other post about my VPS ([Setup Coolify platform on your VPS](https://blog.matschcode.de/en/projects/coolify-vps-setup/))
+- A VPS with a static public IP (See my other post about my VPS ([Setup Coolify platform on your VPS](https://blog.matschcode.de/en/projects/self-hosting/coolify-vps-setup/))
 - [Coolify](https://coolify.io/) running on the VPS as a PaaS
 - Traefik as the reverse proxy managed by Coolify
 - A private domain pointing to the VPS IP via A records

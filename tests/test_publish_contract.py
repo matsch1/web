@@ -67,6 +67,39 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn('data-category="{{ $category }}"', listing)
         self.assertIn('entry.hidden = !visible', filters)
 
+    def test_category_filter_includes_the_homepage_first_entry(self):
+        filters = (ROOT / "assets" / "js" / "content-filters.js").read_text()
+        self.assertIn('document.querySelectorAll("[data-category]")', filters)
+
+    def test_category_filter_ui_is_localized(self):
+        listing = (ROOT / "layouts" / "list.html").read_text()
+        self.assertIn('i18n "filter_by_category"', listing)
+        self.assertIn('i18n "filter_all"', listing)
+        self.assertIn('i18n "filter_empty"', listing)
+        for language in ("de", "en"):
+            translations = (ROOT / "i18n" / f"{language}.yaml").read_text()
+            self.assertIn("id: filter_by_category", translations)
+            self.assertIn("id: filter_all", translations)
+            self.assertIn("id: filter_empty", translations)
+
+    def test_reorganized_content_uses_current_internal_project_urls(self):
+        stale_urls = (
+            "https://blog.matschcode.de/en/projects/coolify-vps-setup/",
+            "https://blog.matschcode.de/en/projects/obsidian-http-mcp/",
+        )
+        sources = (
+            "content/projects/development/n8n-personal-assistant/index.md",
+            "content/projects/development/n8n-personal-assistant/index.de.md",
+            "content/projects/development/n8n-personal-assistant/index.en.md",
+            "content/notes/self-hosting/tailscale-public-domain/index.md",
+            "content/notes/self-hosting/tailscale-public-domain/index.de.md",
+            "content/notes/self-hosting/tailscale-public-domain/index.en.md",
+        )
+        for source in sources:
+            content = (ROOT / source).read_text()
+            for url in stale_urls:
+                self.assertNotIn(url, content, source)
+
     def test_social_metadata_uses_correct_mime_types_and_localized_cards(self):
         head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
         self.assertIn('{{ $img.MediaType.Type }}', head)

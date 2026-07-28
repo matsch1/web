@@ -1,0 +1,23 @@
+- id: filter_by_category
+  translation: "Nach Kategorie filtern"
+
+- id: filter_all
+  translation: "Alle"
+
+- id: filter_empty
+  translation: "Keine Einträge in dieser Kategorie."
+
+- id: filter_category_development
+  translation: "Entwicklung"
+
+- id: filter_category_self-hosting
+  translation: "Self-Hosting"
+
+- id: filter_category_hardware
+  translation: "Hardware"
+
+- id: filter_category_sports
+  translation: "Sport"
+
+- id: filter_category_travel
+  translation: "Reisen"

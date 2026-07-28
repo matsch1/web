@@ -48,7 +48,7 @@ Warum nicht den VPS als öffentlichen Einstiegspunkt nutzen und den Datenverkehr
 Die endgültige Architektur ist einfach, sicher und überraschend robust.
 
 ### Was ich bereits hatte
-- Einen VPS mit einer statischen öffentlichen IP-Adresse (siehe meinen anderen Beitrag über meinen VPS ([Setup Coolify platform on your VPS](https://blog.matschcode.de/en/projects/coolify-vps-setup/))
+- Einen VPS mit einer statischen öffentlichen IP-Adresse (siehe meinen anderen Beitrag über meinen VPS ([Setup Coolify platform on your VPS](https://blog.matschcode.de/de/projects/self-hosting/coolify-vps-setup/))
 - [Coolify](https://coolify.io/) läuft auf dem VPS als PaaS
 - Traefik als Reverse-Proxy, verwaltet von Coolify
 - Eine private Domain, die über A-Einträge auf die IP-Adresse des VPS verweist

@@ -33,7 +33,7 @@ Before building the assistant, we need to set up n8n. n8n is a no-code workflow 
 
 {{< figure src="https://www.webmaster-vitaliy.de/wp-content/uploads/2025/05/n8n.png" width="300" alt="n8n" link="https://n8n.io/" target="_blank">}}
 
-n8n must be self-hosted on a server. I recommend following the approach from my [Coolify VPS setup](https://blog.matschcode.de/en/projects/coolify-vps-setup/). If you already have a Coolify instance running, you can simply add a new n8n resource with a few clicks.
+n8n must be self-hosted on a server. I recommend following the approach from my [Coolify VPS setup](https://blog.matschcode.de/en/projects/self-hosting/coolify-vps-setup/). If you already have a Coolify instance running, you can simply add a new n8n resource with a few clicks.
 
 ## Create Workflow
 My personal assistant workflow is not entirely self-built. I used one of the many existing templates from the n8n library as a foundation:  
@@ -114,7 +114,7 @@ These tools expose structured interfaces that the AI can call.
 This means the agent does not create arbitrary text, but instead returns precise commands in JSON format, which n8n executes.
 
 To integrate additional capabilities (for example shopping lists, fitness logs, habit tracking), you only need to add new tools and describe them in the agent prompt.
-For example in my case I use Obsidian instead of Notion for notes and build an extra MCP server for that ([HTTP Obsidian MCP server](https://blog.matschcode.de/en/projects/obsidian-http-mcp/)) which is used by my AI agent.
+For example in my case I use Obsidian instead of Notion for notes and build an extra MCP server for that ([HTTP Obsidian MCP server](https://blog.matschcode.de/en/projects/development/obsidian-http-mcp/)) which is used by my AI agent.
 
 I further recommend to add the following MCP tools provided by n8n:
 - SerpAPI that the AI agent is able to search the web

@@ -75,13 +75,13 @@
   {{- else }}
     {{- $categories = slice "development" "self-hosting" "hardware" "travel" }}
   {{- end }}
-  <div class="content-filters" data-content-filters aria-label="Filter by category">
-    <button class="content-filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+  <div class="content-filters" data-content-filters aria-label="{{ i18n "filter_by_category" }}">
+    <button class="content-filter is-active" type="button" data-filter="all" aria-pressed="true">{{ i18n "filter_all" }}</button>
     {{- range $categories }}
-    <button class="content-filter" type="button" data-filter="{{ . }}" aria-pressed="false">{{ humanize . }}</button>
+    <button class="content-filter" type="button" data-filter="{{ . }}" aria-pressed="false">{{ i18n (printf "filter_category_%s" .) }}</button>
     {{- end }}
   </div>
-  <p class="content-filter-empty" hidden>No entries in this category.</p>
+  <p class="content-filter-empty" hidden>{{ i18n "filter_empty" }}</p>
 {{- end }}
 {{- range $index, $page := $paginator.Pages }}
 
