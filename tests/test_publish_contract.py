@@ -167,12 +167,21 @@ class PublishContractTests(unittest.TestCase):
             for url in stale_urls:
                 self.assertNotIn(url, content, source)
 
-    def test_social_metadata_uses_correct_mime_types_and_localized_cards(self):
+    def test_social_metadata_uses_page_image_or_the_site_logo(self):
         head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
         self.assertIn('{{ $img.MediaType.Type }}', head)
         self.assertNotIn('{{ $img.MediaType.Type }}/{{ $img.MediaType.SubType }}', head)
-        self.assertIn('social-de.png', head)
-        self.assertIn('social-en.png', head)
+        self.assertIn('$defaultOGImage := "home-logo-600.webp" | absURL', head)
+        self.assertNotIn('social-de.png', head)
+        self.assertNotIn('social-en.png', head)
+
+    def test_social_metadata_uses_legacy_page_image_when_cover_is_absent(self):
+        head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
+        self.assertIn('$pageImage := .Params.cover.image | default .Params.img', head)
+        self.assertIn('$.Resources.GetMatch $pageImage', head)
+        self.assertIn('<meta name="twitter:image" content="{{ $img.Permalink }}">', head)
+        self.assertNotIn('partial "templates/opengraph.html" .', head)
+        self.assertNotIn('partial "templates/twitter_cards.html" .', head)
 
     def test_search_pages_are_not_indexable(self):
         head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
@@ -216,36 +225,32 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn('event.key === "ArrowLeft"', lightbox)
         self.assertIn('event.key === "ArrowRight"', lightbox)
 
-    def test_default_social_cards_exist_with_declared_png_dimensions(self):
-        for filename in ("social-de.png", "social-en.png"):
-            card = ROOT / "static" / filename
-            self.assertTrue(card.is_file(), f"missing social card: {filename}")
-            header = card.read_bytes()[:24]
-            self.assertEqual(header[:8], b"\x89PNG\r\n\x1a\n")
-            self.assertEqual(struct.unpack(">II", header[16:24]), (1200, 630))
+    def test_default_social_fallback_uses_the_site_logo(self):
+        logo = ROOT / "static" / "home-logo-600.webp"
+        self.assertTrue(logo.is_file(), "missing social fallback logo")
+        self.assertGreater(logo.stat().st_size, 0)
 
-    def test_default_social_card_metadata_is_png(self):
+    def test_default_social_logo_metadata_is_webp(self):
         head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
         self.assertIn(
             '{{ else }}\n  <meta property="og:image" content="{{ $defaultOGImage }}">\n'
-            '  <meta property="og:image:type" content="image/png">',
+            '  <meta property="og:image:type" content="image/webp">',
             head,
         )
 
-    def test_default_social_cards_use_the_active_language_base_url(self):
+    def test_default_social_logo_uses_an_absolute_url(self):
         head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
-        self.assertIn('"social-de.png" "social-en.png"', head)
-        self.assertIn("| absURL", head)
+        self.assertIn('"home-logo-600.webp" | absURL', head)
 
     def test_safari_pinned_tab_icon_exists(self):
         icon = ROOT / "static" / "safari-pinned-tab.svg"
         self.assertTrue(icon.is_file())
         self.assertIn("<svg", icon.read_text())
 
-    def test_artifact_validator_checks_p0_assets(self):
+    def test_artifact_validator_checks_logo_fallback_assets(self):
         verifier = (ROOT / "scripts" / "verify_site.py").read_text()
-        self.assertIn('"de/social-de.png"', verifier)
-        self.assertIn('"en/social-en.png"', verifier)
+        self.assertIn('"de/home-logo-600.webp"', verifier)
+        self.assertIn('"en/home-logo-600.webp"', verifier)
         self.assertIn("safari-pinned-tab.svg", verifier)
 
     def test_artifact_validator_rejects_project_page_without_a_home_redirect(self):
