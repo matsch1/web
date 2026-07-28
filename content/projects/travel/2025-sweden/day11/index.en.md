@@ -46,7 +46,7 @@ After this fantastic stretch, I spent the afternoon in and around Blokhus, enjoy
 
 ### Place to sleep 
 Place to sleep right on the bike path
-{{< open-street-map map_title="Schlafplatz" geo_link="geo:57.16213,9.52497?z=13" >}}
+{{< open-street-map map_title="Schlafplatz" geo_link="geo:57.17959,9.52304?z=16" >}}
 
 ## Tour Details
 Daily distance: 94 km

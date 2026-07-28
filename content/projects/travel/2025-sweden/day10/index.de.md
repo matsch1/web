@@ -42,7 +42,7 @@ Wieder in Dänemark angekommen, habe ich mich alleine auf den Weg zu einem naheg
 
 ### Schlafplatz 
 Schlafplatz mit Bademöglichkeiten 
-{{< open-street-map map_title="Schlafplatz" geo_link="geo:57.46850,10.46534?z=16" >}}
+{{< open-street-map map_title="Schlafplatz" geo_link=geo:57.05329,12.52974?z=14" >}}
 
 ## Tourdaten
 Tagesstrecke: 48 km

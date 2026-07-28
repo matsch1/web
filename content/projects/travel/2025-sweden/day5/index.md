@@ -51,7 +51,7 @@ Ich hoffe auf eine trockene Nacht (mit sauberen Rad Klamotten und voller Powerba
 **53 Euro Tageskosten**
 
 ### Schlafplatz 
-{{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:56.252095,12.835089?z=17" >}}
+{{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:56.253352,12.835293?z=17" >}}
 
 ## Tourdaten
 Tagesstrecke: 81 km

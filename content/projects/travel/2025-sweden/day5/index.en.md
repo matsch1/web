@@ -51,7 +51,7 @@ I’m hoping for a dry night (with clean cycling clothes and a fully charged pow
 **53 euros in daily expenses**
 
 ### Place to sleep 
-{{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:56.252095,12.835089?z=17" >}}
+{{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:56.253352,12.835293?z=17" >}}
 
 ## Trip Details
 Daily distance: 81 km

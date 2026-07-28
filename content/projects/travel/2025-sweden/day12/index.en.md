@@ -45,7 +45,7 @@ Here, I was able to take a hot shower, do my laundry, and recharge my batteries.
 
 ### Place to sleep 
 Place to sleep at the campground 
-{{< open-street-map map_title="Schlafplatz" geo_link="geo:56.68311,8.21520?z=13" >}}
+{{< open-street-map map_title="Schlafplatz" geo_link="geo:56.69486,8.20625?z=16" >}}
 
 ## Trip Details
 Daily distance: 150 km

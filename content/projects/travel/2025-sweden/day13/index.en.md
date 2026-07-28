@@ -49,7 +49,7 @@ Now that I’ve arrived at my campsite, the sun is shining again as if nothing h
 
 ### Place to Sleep 
 Place to sleep at a simple campground 
-{{< open-street-map map_title="Schlafplatz" geo_link="geo:55.7731,8.1958?z=12" >}}
+{{< open-street-map map_title="Schlafplatz" geo_link="geo:55.77018,8.19788?z=16" >}}
 
 ## Trip Details
 Daily distance: 129 km

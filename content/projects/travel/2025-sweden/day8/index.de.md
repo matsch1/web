@@ -47,7 +47,7 @@ Ich habe mich entschieden übermorgen schon wieder die Fähre zurück nach Däne
 
 ### Schlafplatz 
 Wunderschöner Schlafplatz direkt am See
-{{< open-street-map map_title="Schlafplatz" geo_link=geo:57.05329,12.52974?z=14" >}}
+{{< open-street-map map_title="Schlafplatz" geo_link=geo:57.062624,12.529832?z=17" >}}
 
 ## Tourdaten
 Tagesstrecke: 109 km
