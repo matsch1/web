@@ -73,6 +73,12 @@ This decision was made with the explicit intention to migrate later. Once the de
 
 This staged approach allowed me to focus first on Kubernetes-specific concerns, and get familiar with Nextcloud, before introducing database operations and backups into the mix.
 
+### Now migrated to PostgreSQL
+The migration to MariaDB was not as straightforward as expected because the database pod was unstable.
+
+This was frustrating, so I switched to PostgreSQL instead.
+With the help of my hermes-agent, the migration from SQLite to PostgreSQL went very smoothly.
+
 ## Required Modifications
 ### Trusted Domains for Custom Domain Access
 {{< figure src="https://help.nextcloud.com/uploads/default/original/3X/d/b/dbdf5a0e3ed2d78800f42f3612ef88c623e9ad8d.png" width="600" alt="Nextcloud untrusted domain error" >}}
@@ -121,14 +127,20 @@ forward . 1.1.1.1 8.8.8.8
 .
 This change mirrors the effective resolvers configured on the node. After applying it, the App Store loaded correctly and app installation worked as expected.
 
-### DAV Configuration for Contacts and Calendar Access
+
+### DAV Configuration for Android Contacts and Calendar Access
+To integrate calendars and contacts on your smartphone, Nextcloud must provide DAV access.
+
 I followed the guide by Robin to migrate my Google Contacts and Calendar to Nextcloud:
-[Moving Google Contacts and Calendar to NextCloud](https://selfhostedheaven.com/posts/20220116-moving-google-contacts-and-calendar-to-nextcloud/)
-During DAVx⁵ setup process I got stuck on `Grant Access` step.
+"Moving Google Contacts and Calendar to NextCloud." Unfortunately, the blog is no longer online.
+For data migration, I would now use the [migration tool](https://nextcloud.com/blog/easy-migration-to-nextcloud-from-insecure-and-privacy-unfriendly-platforms-now-available/) provided by Nextcloud.
+
+To synchronize with Android, follow the instructions provided by Nextcloud.
+During the [DAVx⁵](https://www.davx5.com/download/) setup process, I got stuck on the `Grant Access` step.
 
 {{< figure src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZPWsy7ripvR1b7OIfdfyon23ykeLuhSVHA&s" width="300" alt="Nextcloud DAV Grant Access issue" link="https://itcamefromtheinternet.com/blog/nextcloud-android-sync/" >}}
 
-To support DAV clients such as DAVx⁵, additional configuration is required. This is solved by injecting a custom configuration file via Helm values and enabling the HTTPS client fix.
+To support DAV clients such as [DAVx⁵](https://www.davx5.com/download/), additional configuration is required. This is solved by injecting a custom configuration file via Helm values and enabling the HTTPS client fix.
 
 ``` yaml
 nextcloud:
@@ -196,4 +208,4 @@ Deploying Nextcloud on a k3s cluster using Helm worked well, but it required mor
 
 For the companion network architecture that makes this Nextcloud service publicly reachable through a VPS without opening the home network, see [Expose K3s Services from a Tailscale-Protected Homelab via a VPS](https://blog.matschcode.de/en/notes/self-hosting/expose-k3s-services-via-vps/).
 
-The next steps for this deployment include migrating to MariaDB, tightening security settings, and adding proper backup and monitoring workflows. Even in its current form, however, this approach provides a solid foundation for running Nextcloud reliably in a homelab Kubernetes environment.
+I am quite happy with the current setup, so no further modifications are planned.
