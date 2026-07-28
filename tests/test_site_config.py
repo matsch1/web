@@ -61,6 +61,14 @@ class SiteConfigurationTests(unittest.TestCase):
         single = (ROOT / "layouts" / "single.html").read_text()
         self.assertIn('<div class="post-content md-content">', single)
 
+    def test_external_markdown_links_open_in_a_new_tab_without_affecting_internal_links(self):
+        render_link = (ROOT / "layouts" / "_markup" / "render-link.html").read_text()
+
+        self.assertIn("urls.Parse", render_link)
+        self.assertIn("site.BaseURL", render_link)
+        self.assertIn('target="_blank"', render_link)
+        self.assertIn('rel="noopener noreferrer"', render_link)
+
     def test_main_content_width_matches_listing_cards_on_desktop(self):
         css = (ROOT / "assets" / "css" / "extended" / "custom.css").read_text()
         aligned_width = "max-width: calc(var(--main-width) + var(--gap) * 10);"
