@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: e1877755c8b8f537f2fc2daa88030288965fa724d99ee8410be2012358cdcbb8
+base_hash: d88cb6653205b991d20c0a79824e3d397670cb9e1f1a79ebd043d63fc6d58317
 cover:
   alt: nextcloud-k3s-helm-deployment
   caption: The way I deployed nextcloud on my k3s cluster using helm chart
@@ -20,13 +20,13 @@ title: Nextcloud-K3S-Bereitstellung mit Helm-Chart
 ---
 
 ## Einleitung
-Nextcloud ist eine selbst gehostete Kollaborationsplattform, die Dateisynchronisierung und -freigabe, Kalender, Kontakte sowie ein wachsendes Ökosystem an Apps bietet. Sie gewährleistet ein hohes Maß an Dateneigentum und deckt dennoch viele Anwendungsfälle ab, die normalerweise von verwalteten Cloud-Diensten abgedeckt werden.
+Nextcloud ist eine selbst gehostete Kollaborationsplattform, die Dateisynchronisierung und -freigabe, Kalender, Kontakte sowie ein wachsendes Ökosystem von Apps bietet. Sie gewährleistet ein hohes Maß an Dateneigentum und deckt dennoch viele Anwendungsfälle ab, die normalerweise von verwalteten Cloud-Diensten abgedeckt werden.
 Mein Ziel ist es daher, Google Drive, Kontakte und Kalender durch eine selbst gehostete Nextcloud-Instanz zu ersetzen.
 
 In meinem Homelab betreibe ich eine leichtgewichtige Kubernetes-Distribution auf Basis von k3s. 
 Um die Bereitstellung reproduzierbar und wartbar zu halten und sie an cloud-native Best Practices anzupassen, habe ich mich entschieden, Nextcloud mithilfe des Helm-Charts bereitzustellen, anstatt auf Ad-hoc-Manifeste oder manuelle Container-Einrichtungen zurückzugreifen. 
 Mit Helm kann ich den gewünschten Zustand deklarativ beschreiben, Upgrades sicherer verwalten und Konfigurationsänderungen versionsverwaltet halten.
-Dies ist der erste Schritt zur Verwaltung meines K3S-Clusters mit Argo CD.
+Dies ist der erste Schritt, um meinen k3s-Cluster mit Argo CD zu verwalten.
 
 Während des Bereitstellungsprozesses stieß ich auf mehrere nicht offensichtliche Herausforderungen und anwendungsspezifische Konfigurationsdetails, die beim Betrieb von Nextcloud auf Kubernetes leicht übersehen werden können. 
 Dieser Artikel dokumentiert meinen Vorgehensweg, die aufgetretenen Probleme und die Lösungen, die in meiner K3S-Umgebung funktioniert haben, mit dem Ziel, anderen, die eine ähnliche Einrichtung versuchen, eine praktische Referenz zu bieten.
@@ -45,7 +45,7 @@ Indem ich das Chart zusammen mit meiner Cluster-Konfiguration aufbewahre, kann i
 ### Struktur der Werte-Datei
 Die mit dem Chart gelieferte Standard-`values.yaml` ist umfassend, aber umfangreich. Eine direkte Bearbeitung wird schnell unübersichtlich, insbesondere beim Vergleich von Änderungen während Upgrades.
 
-Um dem entgegenzuwirken, habe ich die Konfiguration in zwei Dateien aufgeteilt:
+Um dies zu beheben, habe ich die Konfiguration in zwei Dateien aufgeteilt:
 
 - `values-default.yaml`  
   Dies ist die ursprüngliche Datei `values.yaml`. Sie wird nicht manuell bearbeitet und dient als Referenz für Änderungen im Upstream.
@@ -72,12 +72,12 @@ Für die Erstbereitstellung habe ich mich bewusst für SQLite als Datenbank-Back
 
 Diese Entscheidung wurde mit der ausdrücklichen Absicht getroffen, später zu migrieren. Sobald sich die Bereitstellung als stabil erwiesen hätte und die Nutzung zunahm, wäre der Wechsel zu MariaDB mithilfe der Datenbankkonfigurationsoptionen des Helm-Charts unkompliziert gewesen.
 
-Dieser schrittweise Ansatz ermöglichte es mir, mich zunächst auf Kubernetes-spezifische Aspekte zu konzentrieren und mich mit Nextcloud vertraut zu machen, bevor ich Datenbankoperationen und Backups in den Prozess einbezog.
+Dieser schrittweise Ansatz ermöglichte es mir, mich zunächst auf Kubernetes-spezifische Aspekte zu konzentrieren und mich mit Nextcloud vertraut zu machen, bevor ich Datenbankvorgänge und Backups in den Prozess einbezog.
 
 ### Nun auf PostgreSQL migriert
 Die Migration zu MariaDB verlief nicht so reibungslos wie erwartet, da der Datenbank-Pod instabil war.
 
-Das war frustrierend, daher bin ich stattdessen zu PostgreSQL gewechselt.
+Da dies frustrierend war, bin ich stattdessen auf PostgreSQL umgestiegen.
 Mit Hilfe meines hermes-agents verlief die Migration von SQLite zu PostgreSQL sehr reibungslos.
 
 ## Erforderliche Anpassungen
@@ -117,7 +117,7 @@ Dies lässt sich durch Bearbeiten der CoreDNS-ConfigMap beheben:
 kubectl edit configMap coredns -nkube-system
 ```
 
-Ersetzen Sie 
+Ersetze 
 ``` sh
 forward . /etc/resolv.conf
 ``` 
@@ -134,10 +134,10 @@ Um Kalender und Kontakte auf Ihrem Smartphone zu integrieren, muss Nextcloud DAV
 
 Ich habe die Anleitung von Robin befolgt, um meine Google-Kontakte und meinen Google-Kalender zu Nextcloud zu migrieren:
 „Google-Kontakte und -Kalender zu NextCloud verschieben.“ Leider ist der Blog nicht mehr online.
-Für die Datenmigration würde ich nun den von Nextcloud bereitgestellten [migration tool](https://nextcloud.com/blog/easy-migration-to-nextcloud-from-insecure-and-privacy-unfriendly-platforms-now-available/) verwenden.
+Für die Datenmigration würde ich nun die von Nextcloud bereitgestellte [migration tool](https://nextcloud.com/blog/easy-migration-to-nextcloud-from-insecure-and-privacy-unfriendly-platforms-now-available/) verwenden.
 
-Um die Synchronisierung mit Android durchzuführen, befolge die Anweisungen von Nextcloud.
-Während des [DAVx⁵](https://www.davx5.com/download/)-Einrichtungsprozesses bin ich beim Schritt `Grant Access` hängen geblieben.
+Um [synchronize with Android](https://docs.nextcloud.com/server/19/user_manual/pim/sync_android.html) durchzuführen, befolgen Sie die Anweisungen von Nextcloud.
+Während des [DAVx⁵](https://www.davx5.com/download/) Einrichtungsprozesses bin ich beim Schritt `Grant Access` hängen geblieben.
 
 {{< figure src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZPWsy7ripvR1b7OIfdfyon23ykeLuhSVHA&s" width="300" alt="Nextcloud DAV Grant Access issue" link="https://itcamefromtheinternet.com/blog/nextcloud-android-sync/" >}}
 
@@ -169,7 +169,7 @@ Nach dem Anwenden dieser Konfiguration funktionierte der Schritt `Grant Access` 
 ### Zusätzliche Manifeste
 Nicht alles lässt sich nahtlos in Helm-Werte integrieren. Für Komponenten, die zwar mit dem Nextcloud-Chart in Zusammenhang stehen, aber nicht streng genommen Teil davon sind, habe ich auf zusätzliche Manifeste zurückgegriffen.
 
-Diese Manifeste befinden sich neben dem Helm-Deployment und werden im Rahmen desselben Workflows angewendet. Dadurch bleibt das gesamte Deployment zusammenhängend, während die Grenzen des Upstream-Charts weiterhin gewahrt bleiben.
+Diese Manifestdateien befinden sich neben dem Helm-Deployment und werden im Rahmen desselben Workflows angewendet. Dadurch bleibt das gesamte Deployment zusammenhängend, während die Grenzen des Upstream-Charts weiterhin gewahrt bleiben.
 
 In meinem Fall habe ich einen externen `LoadBalancer``-Dienst definiert:
 ``` yaml
@@ -205,7 +205,7 @@ helm install nextcloud ./nextcloud \
 ```
 
 ## Zusammenfassung
-Die Bereitstellung von Nextcloud auf einem k3s-Cluster mit Helm hat gut funktioniert, erforderte jedoch mehr Überlegung als eine einfache „helm install“-Anweisung. Durch eine übersichtliche Strukturierung der Konfiguration, bewusste Designentscheidungen und die Nutzung von Helm-Funktionen wie benutzerdefinierten Konfigurationsdateien und zusätzlichen Manifesten habe ich letztendlich eine Konfiguration erhalten, die sowohl flexibel als auch wartbar ist.
+Die Bereitstellung von Nextcloud auf einem k3s-Cluster mit Helm hat gut funktioniert, erforderte jedoch mehr Überlegung als eine einfache „helm install“-Anweisung. Durch eine übersichtliche Strukturierung der Konfiguration, bewusste Designentscheidungen und die Nutzung von Helm-Funktionen wie benutzerdefinierten Konfigurationsdateien und zusätzlichen Manifesten habe ich letztendlich eine Konfiguration erhalten, die sowohl flexibel als auch wartungsfreundlich ist.
 
 Die dazugehörige Netzwerkarchitektur, die diesen Nextcloud-Dienst über einen VPS öffentlich erreichbar macht, ohne das Heimnetzwerk zu öffnen, finden Sie unter [Expose K3s Services from a Tailscale-Protected Homelab via a VPS](https://blog.matschcode.de/en/notes/self-hosting/expose-k3s-services-via-vps/).
 
