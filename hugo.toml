@@ -30,6 +30,11 @@ home = ["HTML", "RSS", "JSON"] # for search
 
   comments = true
 
+[params.label]
+  text = "matschcode"
+  icon = "home-logo-300.webp"
+  iconHeight = 24
+
 [params.masthead]
   image = "images/masthead.webp"
 
