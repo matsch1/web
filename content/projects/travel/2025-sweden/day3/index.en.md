@@ -46,9 +46,7 @@ Shortly before Køge, our paths parted ways again. The two of them found a place
 **35 euros in daily expenses**
 
 ### Place to sleep 
-
-
-{{< open-street-map map_title="Schlafplatz Fyn" geo_link=geo:55.47710,12.05314?z=16" >}}
+{{< open-street-map map_title="Schlafplatz Fyn" geo_link=geo:55.479407,12.053000?z=17:55.47710,12.05314?z=16" >}}
 
 ## Trip Details
 Daily distance: 120 km

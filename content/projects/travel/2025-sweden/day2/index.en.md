@@ -45,7 +45,7 @@ I’m now going to wind down the evening comfortably, enjoying the lingering war
 **36 euros in daily expenses**
 
 ### Place to Sleep 
-{{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:54.75083,11.44902?z=16" >}}
+{{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:54.753477,11.448875?z=18" >}}
 
 ## Trip Details
 Daily distance: 102 km

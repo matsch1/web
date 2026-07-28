@@ -44,9 +44,7 @@ Well, sheltered from the rain, I’m now winding down the evening in my shelter.
 **22 euros in daily expenses**
 
 ### Place to Sleep 
-
-
-{{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:55.94802,12.49485?z=15" >}}
+{{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:55.945426,12.512138?z=19" >}}
 
 ## Trip Details
 Daily distance: 86 km
