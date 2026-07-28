@@ -8,12 +8,14 @@ enableRobotsTXT = true
 [languages]
 
 [languages.de]
+title = 'Zwischen Terminal und Trampelpfad'
 baseURL = 'https://blog.matschcode.de/de'
 label = "Deutsch"
 weight = 1
 contentDir = "content"
 
 [languages.en]
+title = 'Between terminals and trails'
 baseURL = 'https://blog.matschcode.de/en'
 label = "English"
 weight = 2
@@ -29,6 +31,11 @@ home = ["HTML", "RSS", "JSON"] # for search
   ShowShareButtons = true
 
   comments = true
+
+[params.label]
+  text = "matschcode"
+  icon = "home-logo-300.webp"
+  iconHeight = 24
 
 [params.masthead]
   image = "images/masthead.webp"
