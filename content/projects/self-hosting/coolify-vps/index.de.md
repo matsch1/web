@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: a359aae0f9cef2dc7d82b764fb60ed00c3501e7421087c7f74e88224df779920
+base_hash: 2cae29eacffe80e9b0d599a546a6258b3f7b6d23934df453143494d861384b58
 cover:
   alt: coolify-vps-setup
   caption: ''
@@ -242,3 +242,7 @@ Schließen Sie die Installation ab, indem Sie von innerhalb des Tailnet aus auf 
 {{< figure src="./coolify_syncthing_configuration.png" width="900" alt="Syncthing configuration" >}}
 4. Den Container bereitstellen.  
 5. Über die Service-URL auf Syncthing zugreifen.
+
+## Später: Der VPS als kontrollierter öffentlicher Einstiegspunkt
+
+Später habe ich diese VPS- und Tailscale-Grundlage genutzt, um ausgewählte Dienste eines privaten k3s-Homelabs zu veröffentlichen, ohne mein Heimnetzwerk zu öffnen: [K3s-Dienste aus einem durch Tailscale geschützten Homelab über einen VPS bereitstellen](https://blog.matschcode.de/de/notes/self-hosting/expose-k3s-services-via-vps/).

@@ -29,6 +29,8 @@ For remote access while traveling, I rely on [Tailscale](https://tailscale.com/)
 
 The situation changed when I deployed [Nextcloud](https://nextcloud.com/de/). Unlike my other services, [Nextcloud](https://nextcloud.com/de/)needed to be publicly accessible so I could share files with friends and family.
 
+The Helm-based [Nextcloud deployment on my k3s cluster](https://blog.matschcode.de/en/notes/self-hosting/nextcloud-k3s-helm-deployment/) is documented separately.
+
 The obvious solution would have been:
 - Configure port forwarding on my Fritz!Box
 - Point a domain to my home IP

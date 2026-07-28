@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 8da4d4d37fabc9f798b83868c113d003dc1250f0e329c419dcd3aa769efa6196
+base_hash: 38d6686fc734baddae0357eb55c1b2b95c61be69ea0b80d6724f96541a41f5ca
 cover:
   alt: Traffic flow from VPS to Tailscale-protected K3s cluster
   caption: Public traffic routed through a VPS into a private K3s homelab via Tailscale
@@ -28,6 +28,8 @@ Ich betreibe in meiner Wohnung einen privaten Server, auf dem verschiedene Homel
 Für den Fernzugriff auf Reisen nutze ich [Tailscale](https://tailscale.com/). Dadurch kann ich von meinem Smartphone oder Laptop aus sicher auf Dienste wie [paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) zugreifen, ohne etwas öffentlich preiszugeben. Bislang hat diese Konfiguration einwandfrei funktioniert.
 
 Die Situation änderte sich, als ich [Nextcloud](https://nextcloud.com/de/) einrichtete. Im Gegensatz zu meinen anderen Diensten musste [Nextcloud](https://nextcloud.com/de/) öffentlich zugänglich sein, damit ich Dateien mit Freunden und Familie teilen konnte.
+
+Die Helm-basierte [Nextcloud-Bereitstellung auf meinem k3s-Cluster](https://blog.matschcode.de/de/notes/self-hosting/nextcloud-k3s-helm-deployment/) ist separat dokumentiert.
 
 Die naheliegende Lösung wäre gewesen:
 - Portweiterleitung auf meiner Fritz!Box konfigurieren

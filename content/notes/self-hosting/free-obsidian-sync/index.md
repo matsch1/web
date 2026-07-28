@@ -92,3 +92,7 @@ git-autopush() {
 git-autopush $1
 ```
 
+## Going beyond device-to-device sync
+
+This is the simple, free starting point for synchronizing an Obsidian vault. I later expanded the setup with a server-centred Syncthing hub, backups, and additional self-hosted services: [My Obsidian + Syncthing Setup](https://blog.matschcode.de/en/notes/self-hosting/obsidian-cloud-sync-setup/).
+

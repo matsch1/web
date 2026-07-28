@@ -243,3 +243,7 @@ Finish the installation by accessing the Coolify web UI on `http://<tailscale-ip
 4. Deploy the container.  
 5. Access Syncthing via service url.
 
+## Later: using the VPS as a controlled public ingress
+
+I later used this VPS and Tailscale foundation to publish selected services from a private k3s homelab without opening my home network: [Expose K3s Services from a Tailscale-Protected Homelab via a VPS](https://blog.matschcode.de/en/notes/self-hosting/expose-k3s-services-via-vps/).
+
