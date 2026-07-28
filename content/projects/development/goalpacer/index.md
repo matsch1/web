@@ -32,7 +32,7 @@ So this month I had some free time and set me the challenge to learn flutter, bu
 The app I've chosen is some kind of pacing calculator I can use for running and triathlon training. For this purpose I used a google doc so far. In only need a few simple string and math operations on a few pages, no backend required. This seems to be perfect for my first app, not to complex and I would use to optimize my training in the future.
 
 The development process actually starts one day to early. With my plan I could not wait to start and build a coffee card app in the evening of day 0 using the [Flutter Crash Course](https://youtu.be/j_rCDc_X-k8?si=OqmFujJvhpzCYK5O) of Net Ninja on Youtube.
-With the learnings I get from this tutorial I start at the morning of day 1 with my own flutter app called [Goalpacer - Google Play Store](https://play.google.com/store/apps/details?id=com.matschcode.goalpacer).
+With the learnings I get from this tutorial I start at the morning of day 1 with my own flutter app called "Goalpacer".
 
 In the next 3 days I was able to build this app using VSCO on my Linux machine. I managed to provide 4 functionalities: 
 

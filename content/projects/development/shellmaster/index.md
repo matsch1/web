@@ -1,4 +1,4 @@
----
+- - Google Play Store--
 title: " Building Shellmaster: A Fun Way to Learn Linux Shell Commands "
 slug: "building-shellmaster"
 date: 2025-04-06
@@ -24,7 +24,7 @@ Maintenance was too time-consuming, and I don’t want to put any more effort in
 {{< /alert >}}
 
 Learning Linux shell commands can be daunting, but what if it could be fun? That’s the idea behind **Shellmaster**, a quiz game app that helps users master shell and bash commands through engaging quizzes. 
-Check it out on Google Play Store: [Shellmaster - Apps on Google Play](https://play.google.com/store/apps/details?id=com.matschcode.shellmaster)
+Check it out on Google Play Store: "Shellmaster"
 While building Shellmaster, I encountered several interesting technical challenges and learned a lot about **Flutter**, **PocketBase**, **Unleash feature flags**, and **Google Play Console deployment**. In this article, I’ll share some key takeaways from the development journey.
 ## Table of Contents
 
@@ -55,7 +55,7 @@ Shellmaster is designed to make learning Linux commands fun and interactive. Her
 ## APP Development
 
 The next chapters are about my learning during the development process.
-If you are interested in some nice Flutter stuff keep reading. If you are only here for Linux and Bash check the app out on Google Play Store [Shellmaster - Apps on Google Play](https://play.google.com/store/apps/details?id=com.matschcode.shellmaster).
+If you are interested in some nice Flutter stuff keep reading. If you are only here for Linux and Bash check the app out on Google Play Store "Shellmaster - Apps on Google Play".
 ### Choosing Flutter for a Cross-Platform Quiz App
 
 I chose **Flutter** because of its **fast development cycle, beautiful UI capabilities, and cross-platform support**. With a single codebase, I could target both Android and (potentially) iOS in the future. Some of the key Flutter features I leveraged include:
@@ -121,8 +121,6 @@ Publishing Shellmaster on the **Google Play Store** involved several key steps:
 ## Conclusion
 
 Building Shellmaster has been an exciting journey, combining **Flutter’s UI capabilities, PocketBase’s lightweight backend, Unleash’s feature flags, and Google Play Console deployment**. The result is a fun and educational quiz app that helps users improve their Linux shell skills interactively.
-
-If you're interested, check out **Shellmaster** on the [Shellmaster - Apps on Google Play](https://play.google.com/store/apps/details?id=com.matschcode.shellmaster) and let me know your thoughts!
 
 What are some interesting tech stacks you've used in your apps? Let’s discuss in the comments!
 
