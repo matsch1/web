@@ -45,8 +45,8 @@ In the following chapters, I will describe the most important components of this
 The workflow is triggered by an incoming Telegram message.  
 To enable this, you first need to create a Telegram bot using BotFather and configure the chat ID in your n8n Telegram node.
 
-You can follow this tutorial for the bot setup:  
-{{< youtube RIrIXLAj8bE >}}
+You can follow this tutorial for the bot setup (Unfortunately the original video is not available anymore, but here is a similar alternative.):
+{{< youtube K7aFsGOMayc>}}
 
 Once you have the API token, create Telegram credentials in n8n, and the connection to your bot will be established.
 
