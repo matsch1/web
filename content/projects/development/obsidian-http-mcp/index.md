@@ -18,11 +18,11 @@ source_lang: en
 ---
 
 {{< alert type="warning" title="" >}}
-Unfortunately, the MCP server is no longer required, as the entire n8n agent has been replaced by the hermes agent. 
+Unfortunately, the MCP server is no longer required, as the entire [n8n AI agent](https://blog.matschcode.de/en/projects/development/n8n-ai-assistant/) has been replaced by the hermes agent.
 {{< /alert >}}
 
 ## Introduction
-If you’ve been following my Obsidian setup, you know I love keeping my notes synchronized across devices with Syncthing ([My Obsidian + Syncthing Setup: A Self-Hosted Cloud for Notes, Backups, and More](https://matsch1.github.io/web/en/coding/07_obsidian_syncthing_cloud_setup/)). But I wanted more than just syncing—I wanted to **interact with my notes intelligently, anywhere, anytime**.
+If you’ve been following my Obsidian setup, you know I love keeping my notes synchronized across devices with Syncthing ([My Obsidian + Syncthing Setup: A Self-Hosted Cloud for Notes, Backups, and More](https://blog.matschcode.de/en/notes/self-hosting/obsidian-cloud-sync-setup/)). But I wanted more than just syncing—I wanted to **interact with my notes intelligently, anywhere, anytime**.
 
 ## Why Obsidian HTTP MCP?
 That’s why I developed **Obsidian HTTP MCP**, a lightweight server built on [FastMCP](https://gofastmcp.com/getting-started/welcome) that exposes your Obsidian vault over HTTP using the MCP protocol.

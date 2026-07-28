@@ -194,4 +194,6 @@ helm install nextcloud ./nextcloud \
 ## Summary
 Deploying Nextcloud on a k3s cluster using Helm worked well, but it required more consideration than a simple helm install. By structuring configuration cleanly, making deliberate design decisions, and leveraging Helm features such as custom config files and extra manifests, I ended up with a setup that is both flexible and maintainable.
 
+For the companion network architecture that makes this Nextcloud service publicly reachable through a VPS without opening the home network, see [Expose K3s Services from a Tailscale-Protected Homelab via a VPS](https://blog.matschcode.de/en/notes/self-hosting/expose-k3s-services-via-vps/).
+
 The next steps for this deployment include migrating to MariaDB, tightening security settings, and adding proper backup and monitoring workflows. Even in its current form, however, this approach provides a solid foundation for running Nextcloud reliably in a homelab Kubernetes environment.

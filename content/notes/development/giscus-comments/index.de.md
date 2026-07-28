@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 017d85a989e316c54baa577c1e3d02ff1055b057f4a13abefad17cf48ac1650c
+base_hash: 9abc040f0dbb9c7a5805cea9234e03fb724dd63b76f4bdf230d1da5aefeb8462
 cover:
   alt: giscus-hugo-comments
   caption: Giscus the Git Discussion based commenting system for Hugo blogs
@@ -92,6 +92,8 @@ Füge den folgenden Parameter zu deiner Hauptkonfigurationsdatei hinzu, um deine
 
 Erstellen Sie eine neue Datei unter `layouts/partials/comments.html` und fügen Sie den generierten Giscus-Tag `<script>` darin ein.
 Das war’s schon! Giscus übernimmt automatisch die Zuordnung der Diskussionen, speichert alle Daten auf GitHub und erfordert keinerlei Server-Einrichtung Ihrerseits.
+
+Wenn Sie zusätzlich eine mehrsprachige Hugo-Website mit GitHub Pages betreiben, finden Sie in meinem Leitfaden zum [kostenlosen Hugo-Autotranslator](/de/notes/development/hugo-autotranslator/) die passende Ergänzung.
 
 
 ## Überlegung: Optionen für Selbsthosting

@@ -309,3 +309,5 @@ for md_file in BASE_PATH.rglob("*.md"):
 ```
 
 After the new files are commited. The push to main triggers a new hugo build.
+
+To add a lightweight, GitHub Discussions-based comment section to the published Hugo site, see the [Giscus comments guide](/en/notes/development/giscus-hugo-comments/).

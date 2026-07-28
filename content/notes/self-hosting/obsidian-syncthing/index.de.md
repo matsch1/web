@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 4252314707314461c48d7b7f94726a78110eb90d7f17fd1dad28c8b874683615
+base_hash: 6c2810ba7b11a4bc519d6ebfe6f2cabeedd1659b9e161c21bae10c683aefc5ac
 cover:
   alt: obsidian-syncthing
   caption: ''
@@ -110,3 +110,7 @@ Die meisten Leute zahlen für Cloud-Speicher. Ich ziehe es vor, für einen VPS z
 Mit Syncthing + Obsidian erhalte ich **Echtzeit-Synchronisierung, vollständige Kontrolle, keine Anbieterabhängigkeit** und ein paar Extrapunkte bei den Nerds.  
 
 Wenn du dich für Selbsthosting und Dateneigentum interessierst oder einfach gerne an der Infrastruktur bastelst, kann ich dir diese Kombination nur wärmstens empfehlen. Es geht nicht nur um Notizen – es ist ein selbst gehostetes Cloud-Ökosystem.
+
+## Von der Synchronisierung zu KI-gestützten Notizen
+
+Dieser synchronisierte Vault wurde später zur Grundlage für mein [HTTP-MCP-Experiment](https://blog.matschcode.de/de/projects/development/obsidian-http-mcp/), das die Notizen für KI-Clients zugänglich machte. Dieses Experiment ist heute historisch; es wurde durch den Hermes-Agenten abgelöst.

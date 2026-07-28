@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 70c495633fec3dd1f1c2c0f5bf08c104446725d20916ac79c5b5381088f998e3
+base_hash: e0227c0f5613a3a776968b683ecdf2f28e112186fe8d2ab0bfd42fc8d2a64a41
 cover:
   alt: hugo-autotranslator
   caption: ''
@@ -311,3 +311,5 @@ for md_file in BASE_PATH.rglob("*.md"):
 ```
 
 Nachdem die neuen Dateien committet wurden, löst der Push in den „main“-Zweig einen neuen Hugo-Build aus.
+
+Wenn Sie auf der veröffentlichten Hugo-Website einen schlanken Kommentarbereich auf Basis von GitHub Discussions ergänzen möchten, finden Sie die Anleitung zu [Giscus-Kommentaren](/de/notes/development/giscus-hugo-comments/).

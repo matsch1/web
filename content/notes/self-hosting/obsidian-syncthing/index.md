@@ -106,5 +106,8 @@ I like to think of it as: **Syncthing is my cloud OS, the VPS is the data center
 Most people pay for cloud storage. I prefer paying for a VPS and hacking my own.  
 With Syncthing + Obsidian, I get **real-time sync, complete control, no vendor lock-in**, and some extra nerd cred.  
 
-If you’re into self-hosting, data ownership, or just like to tinker with infrastructure, I can’t recommend this combo enough. It’s not just notes — it’s a self-hosted cloud ecosystem.  
+If you’re into self-hosting, data ownership, or just like to tinker with infrastructure, I can’t recommend this combo enough. It’s not just notes — it’s a self-hosted cloud ecosystem.
 
+## From sync to AI-assisted notes
+
+This synchronized vault later became the foundation for my [HTTP MCP experiment](https://blog.matschcode.de/en/projects/development/obsidian-http-mcp/), which made the notes accessible to AI clients. That experiment is now historical; it has been superseded by Hermes Agent.
