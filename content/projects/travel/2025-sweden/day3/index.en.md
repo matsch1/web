@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: fbbf50f77d81edf9b6de9e56049e57d638e39617cb95cdb61b8ab9559e6173f4
+base_hash: 19f84ef526eb1f4744f8211ef1a76a57df8f40802242da6ae816c1035d903df3
 cover:
   alt: ''
   caption: ''
@@ -26,7 +26,7 @@ Today’s route took us over many hills through the countryside. Since the route
 
 In the afternoon, a hissing sound from my rear tire brought me back to reality. There was a large hole visible in the tire. However, with Tubeless Salami, I was able to patch it up very quickly, and we were able to continue the ride. 
 
-Shortly before Køge, our paths parted ways again. The two of them found a place to stay, and I looked for a spot at a shelter.
+Shortly before Køge, our paths parted ways again. The two of them found a place to stay, and I looked for a spot to set up my shelter.
 
 ### Pictures
 {{< galleries >}}
@@ -46,9 +46,7 @@ Shortly before Køge, our paths parted ways again. The two of them found a place
 **35 euros in daily expenses**
 
 ### Place to sleep 
-
-
-{{< open-street-map map_title="Schlafplatz Fyn" geo_link=geo:55.47710,12.05314?z=16" >}}
+{{< open-street-map map_title="Schlafplatz Fyn" geo_link=geo:55.479407,12.053000?z=17:55.47710,12.05314?z=16" >}}
 
 ## Trip Details
 Daily distance: 120 km

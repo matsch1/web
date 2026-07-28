@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: b767abfcd5f76c2cf3a5ea461066aff2f5f56af2fdd9d5dced5d6c7ee9ade0de
+base_hash: 721a53dc4e0a00a920a44f1caf8d04c02bfb8934f3fc50aba3a2e9e790e31c79
 cover:
   alt: ''
   caption: ''
@@ -45,7 +45,7 @@ I’m now going to wind down the evening comfortably, enjoying the lingering war
 **36 euros in daily expenses**
 
 ### Place to Sleep 
-{{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:54.75083,11.44902?z=16" >}}
+{{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:54.753477,11.448875?z=18" >}}
 
 ## Trip Details
 Daily distance: 102 km

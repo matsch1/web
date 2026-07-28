@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 91b1d2947e833c77e65e82e73b1962d6b338539043814b0addcf27af16299b55
+base_hash: 05a6e33c258f6bb79d1cd6a60dae2ea09ee13f4a4d1031974f83ed01e55aff85
 cover:
   alt: ''
   caption: ''
@@ -44,9 +44,7 @@ Well, sheltered from the rain, I’m now winding down the evening in my shelter.
 **22 euros in daily expenses**
 
 ### Place to Sleep 
-
-
-{{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:55.94802,12.49485?z=15" >}}
+{{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:55.945426,12.512138?z=19" >}}
 
 ## Trip Details
 Daily distance: 86 km

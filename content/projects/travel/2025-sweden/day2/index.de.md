@@ -45,7 +45,7 @@ Den Abend lasse ich jetzt noch gemütlich mit der Restwärme des Tages ausklinge
 **36 Euro Tageskosten**
 
 ### Schlafplatz 
-{{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:54.75083,11.44902?z=16" >}}
+{{< open-street-map map_title="Schlafplatz Fyn" geo_link="geo:54.753477,11.448875?z=18" >}}
 
 ## Tourdaten
 Tagesstrecke: 102 km
