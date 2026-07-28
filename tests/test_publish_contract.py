@@ -58,6 +58,15 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn('where .Site.Pages "Params.listAsProject" true', listing)
         self.assertFalse((ROOT / "content" / "_index.md").exists())
 
+    def test_notes_and_projects_lists_can_be_filtered_by_category(self):
+        listing = (ROOT / "layouts" / "list.html").read_text()
+        filters = (ROOT / "assets" / "js" / "content-filters.js").read_text()
+
+        self.assertIn('slice "development" "self-hosting" "sports"', listing)
+        self.assertIn('slice "development" "self-hosting" "hardware" "travel"', listing)
+        self.assertIn('data-category="{{ $category }}"', listing)
+        self.assertIn('entry.hidden = !visible', filters)
+
     def test_social_metadata_uses_correct_mime_types_and_localized_cards(self):
         head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
         self.assertIn('{{ $img.MediaType.Type }}', head)

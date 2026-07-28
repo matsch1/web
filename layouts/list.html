@@ -67,6 +67,22 @@
 {{- end }}
 
 {{- $term := .Data.Term }}
+{{- $showCategoryFilters := or .IsHome (and .IsSection .Parent.IsHome (or (eq .Section "notes") (eq .Section "projects"))) }}
+{{- $categories := slice }}
+{{- if $showCategoryFilters }}
+  {{- if eq .Section "notes" }}
+    {{- $categories = slice "development" "self-hosting" "sports" }}
+  {{- else }}
+    {{- $categories = slice "development" "self-hosting" "hardware" "travel" }}
+  {{- end }}
+  <div class="content-filters" data-content-filters aria-label="Filter by category">
+    <button class="content-filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+    {{- range $categories }}
+    <button class="content-filter" type="button" data-filter="{{ . }}" aria-pressed="false">{{ humanize . }}</button>
+    {{- end }}
+  </div>
+  <p class="content-filter-empty" hidden>No entries in this category.</p>
+{{- end }}
 {{- range $index, $page := $paginator.Pages }}
 
 {{- $class := "post-entry" }}
@@ -78,7 +94,9 @@
 {{- $class = "post-entry tag-entry" }}
 {{- end }}
 
-<article class="{{ $class }}">
+{{- $pathParts := split .File.Path "/" }}
+{{- $category := index $pathParts 1 }}
+<article class="{{ $class }}"{{ if $showCategoryFilters }} data-category="{{ $category }}"{{ end }}>
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
   <header class="entry-header">

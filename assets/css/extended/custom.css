@@ -41,6 +41,46 @@ the browser support for :has is not widespread yet.
     margin-left: auto;
     margin-right: auto;
 }
+
+.content-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-width: calc(var(--main-width) + var(--gap) * 10);
+    margin: 0 auto 1.5rem;
+}
+
+.content-filter {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--code-bg);
+    color: var(--primary);
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.9rem;
+}
+
+.content-filter:hover,
+.content-filter:focus-visible {
+    border-color: var(--primary);
+}
+
+.content-filter.is-active {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: var(--theme);
+}
+
+.content-filter-empty {
+    max-width: calc(var(--main-width) + var(--gap) * 10);
+    margin: 0 auto 1.5rem;
+    color: var(--secondary);
+}
+
+.post-entry[hidden] {
+    display: none;
+}
 .first-entry {
     max-width: calc(var(--main-width) + var(--gap) * 10);
     margin-left: auto;
