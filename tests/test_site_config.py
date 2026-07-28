@@ -45,6 +45,10 @@ class SiteConfigurationTests(unittest.TestCase):
         self.assertIn('$zoom := "15"', shortcode)
         self.assertIn('{{ $geoLink := replace $geoLink "geo:" "" }}', shortcode)
 
+    def test_single_article_content_uses_papermod_markdown_container(self):
+        single = (ROOT / "layouts" / "single.html").read_text()
+        self.assertIn('<div class="post-content md-content">', single)
+
     def test_masthead_preserves_the_current_papermod_navigation_contract(self):
         header = (ROOT / "layouts" / "_partials" / "header.html").read_text()
         css = (ROOT / "assets" / "css" / "extended" / "custom.css").read_text()
