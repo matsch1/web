@@ -71,6 +71,12 @@ class PublishContractTests(unittest.TestCase):
         self.assertTrue(redirect.is_file())
         self.assertIn("redirect_to: /", redirect.read_text())
 
+    def test_homepage_share_title_uses_the_site_name(self):
+        expected_titles = {"de": "title: matschcode", "en": 'title: "matschcode"'}
+        for language, expected_title in expected_titles.items():
+            homepage = ROOT / "content" / f"_index.{language}.md"
+            self.assertIn(expected_title, homepage.read_text())
+
     def test_only_the_projects_index_uses_the_home_redirect_layout(self):
         for suffix in ("", ".de", ".en"):
             redirect = ROOT / "content" / "projects" / f"_index{suffix}.md"
