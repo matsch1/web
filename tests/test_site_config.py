@@ -57,6 +57,15 @@ class SiteConfigurationTests(unittest.TestCase):
         self.assertIn(".post-entry {\n    " + aligned_width, css)
         self.assertNotIn("max-width: calc(var(--main-width) + var(--gap) * 30);", css)
 
+    def test_strava_activity_images_are_compact_but_remain_responsive(self):
+        shortcode = (ROOT / "layouts" / "_shortcodes" / "strava-activity-image.html").read_text()
+        css = (ROOT / "assets" / "css" / "extended" / "custom.css").read_text()
+
+        self.assertIn('class="strava-activity-image"', shortcode)
+        self.assertIn(".strava-activity-image", css)
+        self.assertIn("width: min(100%, 320px);", css)
+        self.assertIn("display: block;", css)
+
     def test_masthead_preserves_the_current_papermod_navigation_contract(self):
         header = (ROOT / "layouts" / "_partials" / "header.html").read_text()
         css = (ROOT / "assets" / "css" / "extended" / "custom.css").read_text()
