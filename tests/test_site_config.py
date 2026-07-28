@@ -49,6 +49,14 @@ class SiteConfigurationTests(unittest.TestCase):
         single = (ROOT / "layouts" / "single.html").read_text()
         self.assertIn('<div class="post-content md-content">', single)
 
+    def test_main_content_width_matches_listing_cards_on_desktop(self):
+        css = (ROOT / "assets" / "css" / "extended" / "custom.css").read_text()
+        aligned_width = "max-width: calc(var(--main-width) + var(--gap) * 10);"
+
+        self.assertIn(".main {\n    " + aligned_width, css)
+        self.assertIn(".post-entry {\n    " + aligned_width, css)
+        self.assertNotIn("max-width: calc(var(--main-width) + var(--gap) * 30);", css)
+
     def test_masthead_preserves_the_current_papermod_navigation_contract(self):
         header = (ROOT / "layouts" / "_partials" / "header.html").read_text()
         css = (ROOT / "assets" / "css" / "extended" / "custom.css").read_text()
