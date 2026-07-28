@@ -3,7 +3,28 @@ from pathlib import Path
 import sys
 
 
-ROOT_REDIRECT = """<!doctype html><html lang=\"de\"><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,follow\"><link rel=\"canonical\" href=\"https://blog.matschcode.de/de/\"><title>Weiterleitung…</title><script>const language=(navigator.languages&&navigator.languages[0])||navigator.language||\"de\";window.location.replace(language.toLowerCase().startsWith(\"de\")?\"de/\":\"en/\");</script></head><body><p><a href=\"de/\">Deutsch</a> / <a href=\"en/\">English</a></p></body></html>\n"""
+ROOT_REDIRECT = """<!doctype html>
+<html lang=\"de\"><head>
+<meta charset=\"utf-8\">
+<meta name=\"robots\" content=\"noindex,follow\">
+<meta name=\"description\" content=\"matschcode — Zwischen Terminal und Trampelpfad\">
+<link rel=\"canonical\" href=\"https://blog.matschcode.de/\">
+<meta property=\"og:title\" content=\"matschcode\">
+<meta property=\"og:description\" content=\"Zwischen Terminal und Trampelpfad\">
+<meta property=\"og:url\" content=\"https://blog.matschcode.de/\">
+<meta property=\"og:type\" content=\"website\">
+<meta property=\"og:image\" content=\"https://blog.matschcode.de/de/home-logo-600.webp\">
+<meta property=\"og:image:type\" content=\"image/webp\">
+<meta property=\"og:image:width\" content=\"600\">
+<meta property=\"og:image:height\" content=\"606\">
+<meta name=\"twitter:card\" content=\"summary_large_image\">
+<meta name=\"twitter:title\" content=\"matschcode\">
+<meta name=\"twitter:description\" content=\"Zwischen Terminal und Trampelpfad\">
+<meta name=\"twitter:image\" content=\"https://blog.matschcode.de/de/home-logo-600.webp\">
+<title>matschcode</title>
+<script>const language=(navigator.languages&&navigator.languages[0])||navigator.language||\"de\";window.location.replace(language.toLowerCase().startsWith(\"de\")?\"de/\":\"en/\");</script>
+</head><body><p><a href=\"de/\">Deutsch</a> / <a href=\"en/\">English</a></p></body></html>
+"""
 
 
 def main(output="public"):

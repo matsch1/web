@@ -106,7 +106,7 @@ def validate_html_page(path, public, sitemap_locations):
         return
     parser = SeoParser()
     parser.feed(html)
-    if path in {public / "index.html", public / "de" / "404.html", public / "en" / "404.html"}:
+    if path in {public / "de" / "404.html", public / "en" / "404.html"}:
         return
     canonical = [link.get("href", "") for link in parser.links if link.get("rel") == "canonical"]
     if len(canonical) != 1 or not canonical[0].startswith("https://blog.matschcode.de/"):
