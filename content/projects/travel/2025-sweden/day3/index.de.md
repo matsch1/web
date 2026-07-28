@@ -46,7 +46,7 @@ Kurz vor Køge haben sich dann unsere Wege wieder getrennt. Die beiden sind im e
 **35 Euro Tageskosten**
 
 ### Schlafplatz 
-{{< open-street-map map_title="Schlafplatz Fyn" geo_link=geo:55.945426,12.512138?z=19" >}}
+{{< open-street-map map_title="Schlafplatz Fyn" geo_link=geo:55.479407,12.053000?z=17:55.47710,12.05314?z=16" >}}
 
 ## Tourdaten
 Tagesstrecke: 120 km
