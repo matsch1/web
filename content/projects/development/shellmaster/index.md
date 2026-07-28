@@ -1,4 +1,4 @@
-- - Google Play Store--
+---
 title: " Building Shellmaster: A Fun Way to Learn Linux Shell Commands "
 slug: "building-shellmaster"
 date: 2025-04-06
