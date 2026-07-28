@@ -9,6 +9,8 @@ PNG_SIGNATURE = b"\x89PNG\r\n\x1a\n"
 SOCIAL_CARD_DIMENSIONS = (1200, 630)
 SVG_ROOT_TAG = "{http://www.w3.org/2000/svg}svg"
 VOID_ELEMENTS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
+GOOGLE_SITE_VERIFICATION_FILE = "google84170ae546b74eba.html"
+GOOGLE_SITE_VERIFICATION_CONTENT = f"google-site-verification: {GOOGLE_SITE_VERIFICATION_FILE}"
 
 
 class MetadataParser(HTMLParser):
@@ -96,6 +98,10 @@ class SeoParser(HTMLParser):
 
 def validate_html_page(path, public, sitemap_locations):
     html = path.read_text()
+    if path == public / GOOGLE_SITE_VERIFICATION_FILE:
+        if html != GOOGLE_SITE_VERIFICATION_CONTENT:
+            fail(f"invalid Google Search Console verification file: {path}")
+        return
     if "http-equiv=refresh" in html:
         return
     parser = SeoParser()
