@@ -1,14 +1,14 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: dc4a80ce9823dd4c15aa67d9ed303b86d522fffbddc819cabd0fe339b7e1f189
+base_hash: 2da3f8c048840d2cb2ea44133d3c820334055eed61cff1547230c77888f04780
 cover:
   alt: ''
   caption: ''
   image: img1.jpg
   relative: true
 date: 2025-07-05
-description: A grueling arrival in Sweden with lots of rain showers
+description: A challenging arrival in Sweden with lots of rain showers
 draft: false
 tags:
 - bikepacking
@@ -16,7 +16,7 @@ title: "\U0001F1F8\U0001F1EA Day 5 – Off to Sweden"
 ---
 
 ## Impressions
-I woke up this morning to pouring rain. Luckily, everything stayed dry inside my shelter. 
+Woke up this morning to pouring rain. Luckily, everything stayed dry inside my shelter. 
 
 After the rain let up, I set off around 10 a.m. and was at the ferry to Helsingborg in no time. 
 

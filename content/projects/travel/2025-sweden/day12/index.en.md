@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 3cfd58a1ab337d269826faec7177881623cf8b8d16e33ccedb82bee3ca27699e
+base_hash: f519f87fecad4e6f0abe4d06e033881e1493e1ebb27f980958244845080c0317
 cover:
   alt: ''
   caption: ''
@@ -22,7 +22,7 @@ At first, I followed the wrong route on my GPS and ended up riding 15 km inland.
 
 So, until my lunch break, the route mainly followed gravel roads through beautiful dunes and forests. 
 
-After lunch, a tailwind and some Limp Bizkit somehow caused me to lose all inhibitions. From there on, with music blasting in my ears, I continued full throttle toward the south. It felt like I rode the last 70 km at a speed of over 30 km/h until I reached the ferry terminal. If there hadn’t been a ferry, I’d probably still be flying through the dunes. 
+After lunch, a tailwind and some Limp Bizkit somehow caused me to lose all restraint. From then on, with music blasting in my ears, I continued full throttle toward the south. It felt like I rode the last 70 km at a speed of over 30 km/h until I reached the ferry terminal. If there hadn’t been a ferry, I’d probably still be flying through the dunes. 
 
 As a result of this long day’s ride, I ended up at a campground where I’d been with Jonas two years ago.
 Here, I was able to take a hot shower, do my laundry, and recharge my batteries. I also met Dirk, with whom I spent a nice evening on the beach. 
@@ -43,7 +43,7 @@ Here, I was able to take a hot shower, do my laundry, and recharge my batteries.
 
 **60 euros per day**
 
-### Place to sleep 
+### Place to Sleep 
 Place to sleep at the campground 
 {{< open-street-map map_title="Schlafplatz" geo_link="geo:56.69486,8.20625?z=16" >}}
 
