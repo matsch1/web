@@ -50,14 +50,13 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn("hugo --gc --minify", workflow)
         self.assertIn("python scripts/verify_site.py public", workflow)
 
-    def test_homepage_identity_is_visible_in_title_and_heading(self):
+    def test_homepage_lists_projects_without_a_custom_landing_page(self):
         head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
-        de_home = (ROOT / "content" / "_index.md").read_text()
-        self.assertIn('<title>{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}</title>', head)
-        self.assertIn('title: Zwischen Terminal und Trampelpfad', de_home)
-        self.assertIn('source_lang: de', de_home)
-        self.assertIn('translation_lock: true', de_home)
-        self.assertNotIn('ohne Schnickschnack', de_home)
+        listing = (ROOT / "layouts" / "list.html").read_text()
+        self.assertIn('<title>{{ if and .Title (not .IsHome) }}{{ .Title }} | {{ end }}{{ site.Title }}</title>', head)
+        self.assertIn('where site.RegularPages "Section" "projects"', listing)
+        self.assertIn('where .Site.Pages "Params.listAsProject" true', listing)
+        self.assertFalse((ROOT / "content" / "_index.md").exists())
 
     def test_social_metadata_uses_correct_mime_types_and_localized_cards(self):
         head = (ROOT / "layouts" / "_partials" / "head.html").read_text()

@@ -52,8 +52,10 @@
 {{- end }}
 
 {{- if .IsHome }}
-{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
+{{- $pages = where site.RegularPages "Section" "projects" }}
+{{- $pages = where $pages "Params.hiddenInProjectList" "ne" true }}
+{{- $travelProjects := where .Site.Pages "Params.listAsProject" true }}
+{{- $pages = union $pages $travelProjects }}
 {{- end }}
 
 {{- $pages = sort $pages "Date" "desc" }}
