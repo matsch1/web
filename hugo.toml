@@ -54,15 +54,10 @@ home = ["HTML", "RSS", "JSON"] # for search
   url = "/projects/"
   weight = 10
 [[menu.main]]
-  identifier = "blog"
-  name = "Blog"
-  url = "/blog/"
+  identifier = "notes"
+  name = "Notes"
+  url = "/notes/"
   weight = 20
-[[menu.main]]
-  identifier = "travel"
-  name = "Travel"
-  url = "/travel/"
-  weight = 30
 [[menu.main]]
   identifier = "about"
   name = "About"
