@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 50152891b57dd65a301dc800adb187935e0c1542b34107c7468b16bec08441d0
+base_hash: 3f1b809877b326352f92ab8e1d1469ce7a4140d2ea6e0290af7d6a581bb20967
 cover:
   alt: ''
   caption: ''
@@ -29,7 +29,7 @@ I plan to cycle about 100 km each day.
 
 ***Update***
 I changed the route along the way and didn’t continue all the way up to Oslo; instead, I took the ferry back to Denmark from Gothenburg.
-{{< komoot src="https://www.komoot.com/de-de/tour/3150011774?share_token=aN6aHQII42bdIyojYZPsm4MGl7x4h3pM7zDylVRGxKk1xb3Wv4&ref=wtd&t_s=referral&t_cid=route_share&t_ref_username=676973736341" >}}
+{{< komoot src="https://www.komoot.com/tour/3150011774/embed?share_token=aN6aHQII42bdIyojYZPsm4MGl7x4h3pM7zDylVRGxKk1xb3Wv4&hl=de&layout=classic&profile=1" >}}
 
 ## Luggage
 The goal is to travel as light as possible while still having a good time on the bike
