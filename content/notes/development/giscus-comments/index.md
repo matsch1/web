@@ -90,8 +90,10 @@ Add the following parameter to your main configuration file to tell your theme t
 
 #### B. Create the Giscus Shortcode
 
-Create a new file at `layouts/partials/comments.html`` and paste the generated Giscus <script> tag inside it.
+Create a new file at `layouts/partials/comments.html` and paste the generated Giscus `<script>` tag inside it.
 That's it! Giscus automatically handles the discussion mapping, keeps all data on GitHub, and requires zero server setup on your end.
+
+If you are also building a multilingual Hugo site that is deployed with GitHub Pages, see my guide to a [free Hugo autotranslator](/en/notes/development/hugo-autotranslator/).
 
 
 ## Consideration: Self-Hosting Options
