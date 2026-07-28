@@ -21,6 +21,20 @@
     grid-row: span 3;
 }
 
+/* Project covers have inconsistent source aspect ratios; keep project cards uniform. */
+.project-entry .entry-cover {
+    width: 100%;
+    height: 152px;
+    max-width: none;
+    overflow: hidden;
+}
+
+.project-entry .entry-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .post-entry .entry-header {
     align-self: center;
 }

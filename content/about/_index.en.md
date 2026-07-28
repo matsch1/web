@@ -31,5 +31,3 @@ I combine embedded and automotive development with modern software development a
 {{< social-icon type="instagram" url="https://www.instagram.com/matsch_n" >}}
 {{< social-icon type="strava" url="https://www.strava.com/athletes/18430548" >}}
 {{< social-icon type="email" email="matsch1@gmx.net" >}}
-
-_This page was originally written in German. Other languages were translated using the DeepL API._

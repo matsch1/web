@@ -31,5 +31,3 @@ Ich verbinde Embedded- und Fahrzeugentwicklung mit moderner Softwareentwicklung 
 {{< social-icon type="instagram" url="https://www.instagram.com/matsch_n" >}}
 {{< social-icon type="strava" url="https://www.strava.com/athletes/18430548" >}}
 {{< social-icon type="email" email="matsch1@gmx.net" >}}
-
-_Diese Seite wurde ursprünglich auf Deutsch geschrieben. Andere Sprachen wurden mit der DeepL API übersetzt._

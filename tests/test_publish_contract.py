@@ -67,6 +67,14 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn('data-category="{{ $category }}"', listing)
         self.assertIn('entry.hidden = !visible', filters)
 
+    def test_project_list_cards_use_a_uniform_thumbnail_variant(self):
+        listing = (ROOT / "layouts" / "list.html").read_text()
+        thumbnails = (ROOT / "assets" / "css" / "extended" / "thumbnail.css").read_text()
+
+        self.assertIn('$class = "post-entry project-entry"', listing)
+        self.assertIn(".project-entry .entry-cover", thumbnails)
+        self.assertIn("object-fit: cover", thumbnails)
+
     def test_category_filter_includes_the_homepage_first_entry(self):
         filters = (ROOT / "assets" / "js" / "content-filters.js").read_text()
         self.assertIn('document.querySelectorAll("[data-category]")', filters)
@@ -81,6 +89,31 @@ class PublishContractTests(unittest.TestCase):
             self.assertIn("id: filter_by_category", translations)
             self.assertIn("id: filter_all", translations)
             self.assertIn("id: filter_empty", translations)
+
+    def test_section_translation_disclaimer_is_localized_and_rendered_after_listings(self):
+        listing = (ROOT / "layouts" / "list.html").read_text()
+        disclaimer_path = ROOT / "layouts" / "_partials" / "translation_disclaimer.html"
+        self.assertTrue(disclaimer_path.exists())
+        disclaimer = disclaimer_path.read_text()
+
+        self.assertIn('partial "translation_disclaimer.html" .', listing)
+        self.assertGreater(listing.index('partial "translation_disclaimer.html" .'), listing.index('<footer class="page-footer">'))
+        self.assertIn('slice "projects" "notes" "about"', disclaimer)
+        self.assertIn('i18n "translation_disclaimer"', disclaimer)
+
+        for language, expected in (
+            ("de", "Diese Website ist auf Deutsch und Englisch verfügbar."),
+            ("en", "This website is available in German and English."),
+        ):
+            translations = (ROOT / "i18n" / f"{language}.yaml").read_text()
+            self.assertIn("id: translation_disclaimer", translations)
+            self.assertIn(expected, translations)
+
+        for section in ("projects", "notes", "about"):
+            for language_suffix in ("", ".de", ".en"):
+                content = (ROOT / "content" / section / f"_index{language_suffix}.md").read_text()
+                self.assertNotIn("originally written", content)
+                self.assertNotIn("ursprünglich auf", content)
 
     def test_reorganized_content_uses_current_internal_project_urls(self):
         stale_urls = (
