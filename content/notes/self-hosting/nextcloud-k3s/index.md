@@ -135,7 +135,7 @@ I followed the guide by Robin to migrate my Google Contacts and Calendar to Next
 "Moving Google Contacts and Calendar to NextCloud." Unfortunately, the blog is no longer online.
 For data migration, I would now use the [migration tool](https://nextcloud.com/blog/easy-migration-to-nextcloud-from-insecure-and-privacy-unfriendly-platforms-now-available/) provided by Nextcloud.
 
-To synchronize with Android, follow the instructions provided by Nextcloud.
+To [synchronize with Android](https://docs.nextcloud.com/server/19/user_manual/pim/sync_android.html), follow the instructions provided by Nextcloud.
 During the [DAVx⁵](https://www.davx5.com/download/) setup process, I got stuck on the `Grant Access` step.
 
 {{< figure src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZPWsy7ripvR1b7OIfdfyon23ykeLuhSVHA&s" width="300" alt="Nextcloud DAV Grant Access issue" link="https://itcamefromtheinternet.com/blog/nextcloud-android-sync/" >}}
