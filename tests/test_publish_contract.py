@@ -71,6 +71,14 @@ class PublishContractTests(unittest.TestCase):
         self.assertTrue(redirect.is_file())
         self.assertIn("redirect_to: /", redirect.read_text())
 
+    def test_only_the_projects_index_uses_the_home_redirect_layout(self):
+        for suffix in ("", ".de", ".en"):
+            redirect = ROOT / "content" / "projects" / f"_index{suffix}.md"
+            self.assertIn("layout: redirect", redirect.read_text())
+
+        self.assertTrue((ROOT / "layouts" / "_default" / "redirect.html").is_file())
+        self.assertFalse((ROOT / "layouts" / "projects" / "list.html").exists())
+
     def test_projects_navigation_targets_the_canonical_homepage(self):
         config = (ROOT / "hugo.toml").read_text()
         projects_menu = config.split('identifier = "projects"', 1)[1].split('[[menu.main]]', 1)[0]
