@@ -58,6 +58,11 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn('where .Site.Pages "Params.listAsProject" true', listing)
         self.assertFalse((ROOT / "content" / "_index.md").exists())
 
+    def test_projects_navigation_targets_the_projects_section(self):
+        config = (ROOT / "hugo.toml").read_text()
+        projects_menu = config.split('identifier = "projects"', 1)[1].split('[[menu.main]]', 1)[0]
+        self.assertIn('url = "/projects/"', projects_menu)
+
     def test_notes_and_projects_lists_can_be_filtered_by_category(self):
         listing = (ROOT / "layouts" / "list.html").read_text()
         filters = (ROOT / "assets" / "js" / "content-filters.js").read_text()
