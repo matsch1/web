@@ -29,7 +29,7 @@ Dabei möchte ich täglich ca. 100 km radeln.
 
 ***Update***
 Ich habe die Route unterwegs geändert und bin nicht mehr hoch bis nach Oslo gefahren, sondern in Göteborg wieder nach Dänemark übergesetzt.
-{{< komoot src="https://www.komoot.com/de-de/tour/3150011774?share_token=aN6aHQII42bdIyojYZPsm4MGl7x4h3pM7zDylVRGxKk1xb3Wv4&ref=wtd&t_s=referral&t_cid=route_share&t_ref_username=676973736341" >}}
+{{< komoot src="https://www.komoot.com/tour/3150011774/embed?share_token=aN6aHQII42bdIyojYZPsm4MGl7x4h3pM7zDylVRGxKk1xb3Wv4&hl=de&layout=classic&profile=1" >}}
 
 ## Gepäck
 Das Ziel ist es möglichst leicht zu reisen und dabei eine gute Zeit auf dem Rad

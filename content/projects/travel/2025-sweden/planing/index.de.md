@@ -26,31 +26,10 @@ Monat Reise bieten.
 Die grobe Routenplanung geht, mit Start und Ende in Flensburg, durch folgende Städte: 
 Kopenhagen, Göteborg, Oslo, Larvik, Hirtshals, Esbjerg
 Dabei möchte ich täglich ca. 100 km radeln.
-{{< komoot src="https://www.komoot.com/de-de/tour/2034498871/embed?share_token=aISPLoFO3KX0E0hxm10fPL7w0dY36uWN4zp8HN4CC7btLetpw7&profile=1" >}}
 
-### Abschnitt 1: Flensburg bis Helsingborg (Schweden)
-Der erste Abschnitt durch Dänemark sieht in der Detailplanung so aus:
-{{< komoot src="https://www.komoot.com/de-de/tour/2307166457/embed?share_token=aQnymAKsMOlxpwS71nFIKouaHoxZYQvpJC6IoyrL7MZERrNPtB&profile=1" >}}
-
-### Abschnitt 2: Helsingborg bis Göteborg (Schweden)
-Die Reise in Schweden beginnt mit dem Westküstenradweg (Kattegattleden) bis Göteborg.
-{{< komoot src="https://www.komoot.com/de-de/tour/2326365668/embed?share_token=adJEEoXegyhrYhcXAljTmIGpNhE15yd7r8sUpsGnkMEmxXy2Y9&profile=1" >}}
-
-### Abschnitt 3: Göteborg bis Oslo (Norwegen)
-Dies Abschnitt ist bis jetzt noch unklar. Wahrscheinlich an der Küste entlang radeln, da dieser Abschnitt
-besonders schön sein soll.
-
-### Abschnitt 4: Oslo bis Hirtshals (Dänemark)
-Dies Abschnitt ist bis jetzt noch unklar. Das hängt auch davon ab wie viel Zeit
-mir noch bleibt. Der kurze Weg wäre über Larvik nach Dänemark überzusetzen. Der
-etwas längere Weg geht noch an der norwegischen Küste entlag und dann von
-Christiansand nach Hirtshals in Dänemark.
-
-### Abschnitt 5: Westküstenradweg (Dänemark)
-Wenn es der Wind zulässt, werde ich den letzten Abschnitt bis Flensburg, auf dem
-Westküstenradweg Dänemarks, rollen.
-{{< komoot src="https://www.komoot.com/de-de/tour/2328568896/embed?share_token=a2jdRClFve8Ke3VnS9so3fLnElTb7kVT12ZltQ2zJi82T1QU7d&profile=1" >}}
-
+***Update***
+Ich habe die Route unterwegs geändert und bin nicht mehr hoch bis nach Oslo gefahren, sondern in Göteborg wieder nach Dänemark übergesetzt.
+{{< komoot src="https://www.komoot.com/tour/3150011774/embed?share_token=aN6aHQII42bdIyojYZPsm4MGl7x4h3pM7zDylVRGxKk1xb3Wv4&hl=de&layout=classic&profile=1" >}}
 
 ## Gepäck
 Das Ziel ist es möglichst leicht zu reisen und dabei eine gute Zeit auf dem Rad
@@ -178,6 +157,7 @@ Gepäck inkl. Taschen und 1,8 l Wasser ca. 14 kg wiegt.
 -  Lesebrille 
 -  Geldbeutel 
 -  Ausweis 
+
 ## Fahrrad
 Mein Rad ist ein Cube Nuroad C:62SL. Das ist mit Carbon Rahmen und Gabel, sowie elektronische Schaltung nur bedingt für so eine Tour geeignet. Aber ich hoffe einfach, dass das Carbon nichts gegen so viel Gepäck einzuwenden hat.
 

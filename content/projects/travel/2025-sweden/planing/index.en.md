@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 967e7202e9056a883c4e9f7e07fbabb680ca9039d4b6d75117a02704fedfad99
+base_hash: 3f1b809877b326352f92ab8e1d1469ce7a4140d2ea6e0290af7d6a581bb20967
 cover:
   alt: ''
   caption: ''
@@ -19,45 +19,24 @@ title: Planning and Preparations
 I’m going to spend a month cycling through Denmark, Sweden, and Norway.
 I plan to camp in the wild and take advantage of the many beautiful shelter sites in the
 Scandinavian countries. 
-I want to keep my luggage as light as possible, but still have everything I need for a
+I want to keep my luggage as light as possible, while still packing everything I need for a
 month-long trip.
 
 ## Route
 The rough route plan, starting and ending in Flensburg, goes through the following cities: 
 Copenhagen, Gothenburg, Oslo, Larvik, Hirtshals, Esbjerg
 I plan to cycle about 100 km each day.
-{{< komoot src="https://www.komoot.com/de-de/tour/2034498871/embed?share_token=aISPLoFO3KX0E0hxm10fPL7w0dY36uWN4zp8HN4CC7btLetpw7&profile=1" >}}
 
-### Section 1: Flensburg to Helsingborg (Sweden)
-The detailed plan for the first section through Denmark looks like this:
-{{< komoot src="https://www.komoot.com/de-de/tour/2307166457/embed?share_token=aQnymAKsMOlxpwS71nFIKouaHoxZYQvpJC6IoyrL7MZERrNPtB&profile=1" >}}
-
-### Section 2: Helsingborg to Gothenburg (Sweden)
-The journey through Sweden begins with the West Coast Cycle Route (Kattegattleden) to Gothenburg.
-{{< komoot src="https://www.komoot.com/de-de/tour/2326365668/embed?share_token=adJEEoXegyhrYhcXAljTmIGpNhE15yd7r8sUpsGnkMEmxXy2Y9&profile=1" >}}
-
-### Section 3: Gothenburg to Oslo (Norway)
-This section is still unclear at this point. I’ll likely cycle along the coast, as this section
-is said to be particularly beautiful.
-
-### Section 4: Oslo to Hirtshals (Denmark)
-This section is still unclear at this point. It also depends on how much time
-I have left. The shorter route would be to take a ferry to Denmark via Larvik. The
-slightly longer route continues along the Norwegian coast and then goes from
-Christiansand to Hirtshals in Denmark.
-
-### Section 5: West Coast Cycle Route (Denmark)
-If the wind permits, I’ll ride the final section to Flensburg along
-Denmark’s West Coast Cycle Route.
-{{< komoot src="https://www.komoot.com/de-de/tour/2328568896/embed?share_token=a2jdRClFve8Ke3VnS9so3fLnElTb7kVT12ZltQ2zJi82T1QU7d&profile=1" >}}
-
+***Update***
+I changed the route along the way and didn’t continue all the way up to Oslo; instead, I took the ferry back to Denmark from Gothenburg.
+{{< komoot src="https://www.komoot.com/tour/3150011774/embed?share_token=aN6aHQII42bdIyojYZPsm4MGl7x4h3pM7zDylVRGxKk1xb3Wv4&hl=de&layout=classic&profile=1" >}}
 
 ## Luggage
 The goal is to travel as light as possible while still having a good time on the bike
 .
 The following sections list the items I’m
-bringing with me.
-Unfortunately, I didn’t weigh everything in detail, but I can say that the total
+taking with me.
+Unfortunately, I didn’t weigh everything in detail, but I can say that my total
 luggage, including bags and 1.8 L of water, weighs about 14 kg. 
 
 ### Weight
@@ -79,7 +58,7 @@ luggage, including bags and 1.8 L of water, weighs about 14 kg.
 -  GPS
 -  Cell phone
 -  Headlamp 
--  Taillight
+-  Rear light
 -  Shockz headphones 
 -  In-ear headphones 
 -  Keyboard 
@@ -93,7 +72,7 @@ luggage, including bags and 1.8 L of water, weighs about 14 kg.
 -  Circuit charger 
 
 ### Hygiene
--  Medipack 
+-  First-aid kit 
 -  Travel first-aid kit 
 -  Sunscreen 
 -  Face cream 
@@ -142,7 +121,7 @@ luggage, including bags and 1.8 L of water, weighs about 14 kg.
 -  Bouldering pants 
 -  Shorts 
 -  Sweater 
--  T-shirt (2) 
+-  T-shirts (2) 
 -  Underwear (2) 
 -  Socks (2) 
 -  Swimsuit 
@@ -156,17 +135,17 @@ luggage, including bags and 1.8 L of water, weighs about 14 kg.
 ### Bicycle
 -  Lock 
 -  Tire lever 
--  Puncture sealant 
+-  Sealant 
 -  Tubeless repair kit 
 -  Multitool 
 -  Chain lube 
--  Rag 
+-  Rags 
 -  Pump 
 -  Spare parts 
   - Inner tube
   - Cable ties
-	- Chain lock
-  - Duct tape
+  - Chain lock
+	- Duct tape
   - Derailleur hanger
 
 ### Miscellaneous
@@ -178,8 +157,9 @@ luggage, including bags and 1.8 L of water, weighs about 14 kg.
 -  Reading glasses 
 -  Wallet 
 -  ID 
+
 ## Bike
-My bike is a Cube Nuroad C:62SL. With its carbon frame and fork, as well as electronic shifting, it’s only somewhat suitable for a tour like this. But I’m just hoping the carbon frame can handle all this luggage.
+My bike is a Cube Nuroad C:62SL. With its carbon frame and fork, as well as electronic shifting, it’s only somewhat suitable for a tour like this. But I’m just hoping the carbon won’t mind carrying so much gear.
 
 For comfort, I’m leaving the triathlon handlebar extensions on and switching to wide tubeless knobby tires.
 ![Bike](img1.jpg)
