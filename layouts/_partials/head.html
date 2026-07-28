@@ -102,20 +102,17 @@
 <meta name="msapplication-TileColor" content="{{ site.Params.assets.msapplication_TileColor | default "#2e2e33" }}">
 
 <!-- Open Graph image -->
-{{ $defaultOGImageName := cond (eq site.Language.Lang "de") "social-de.png" "social-en.png" }}
-{{ $defaultOGImage := $defaultOGImageName | absURL }}
+{{ $defaultOGImage := "home-logo-600.webp" | absURL }}
 
-{{ $img := "" }}   {{/* will hold a Resource object when found */}}
-{{ $og := "" }}    {{/* will hold a string URL for external URL or fallback */}}
+{{ $img := "" }}   {{/* Resource for a page-bundle image */}}
+{{ $og := "" }}    {{/* URL for an external image */}}
+{{ $pageImage := .Params.cover.image | default .Params.img }}
 
-{{ with .Params.cover.image }}
-  {{/* inside this block, `.` is the cover.image string */}}
+{{ with $pageImage }}
   {{ if strings.HasPrefix . "http" }}
-    {{/* external URL — treat as final og image URL */}}
     {{ $og = . }}
   {{ else }}
-    {{/* try to resolve inside page bundle resources */}}
-    {{ $res := $.Resources.GetMatch . }}
+    {{ $res := $.Resources.GetMatch $pageImage }}
     {{ if $res }}
       {{ $img = $res }}
     {{ end }}
@@ -127,16 +124,16 @@
   <meta property="og:image:type" content="{{ $img.MediaType.Type }}">
   <meta property="og:image:width" content="{{ $img.Width }}">
   <meta property="og:image:height" content="{{ $img.Height }}">
+  <meta name="twitter:image" content="{{ $img.Permalink }}">
 {{ else if $og }}
   <meta property="og:image" content="{{ $og }}">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta name="twitter:image" content="{{ $og }}">
 {{ else }}
   <meta property="og:image" content="{{ $defaultOGImage }}">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="606">
+  <meta name="twitter:image" content="{{ $defaultOGImage }}">
 {{ end }}
 
 {{- /* RSS */}}
@@ -240,7 +237,5 @@
 {{- /* Misc */}}
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
 {{- partial "google_analytics.html" . }}
-{{- partial "templates/opengraph.html" . }}
-{{- partial "templates/twitter_cards.html" . }}
 {{- partial "templates/schema_json.html" . }}
 {{- end -}}
