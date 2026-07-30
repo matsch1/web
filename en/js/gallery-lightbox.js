@@ -52,7 +52,8 @@
   const open = (event, item) => {
     event.preventDefault();
     const gallery = item.closest(".image-gallery");
-    items = Array.from(gallery.querySelectorAll(".image-gallery__link"));
+    const cover = item.closest(".post-cover-lightbox");
+    items = gallery ? Array.from(gallery.querySelectorAll(".image-gallery__link")) : [cover];
     trigger = item;
     show(items.indexOf(item));
     dialog.showModal();
@@ -60,7 +61,9 @@
   };
 
   document.addEventListener("click", (event) => {
-    const item = event.target.closest(".image-gallery__link");
+    const galleryItem = event.target.closest(".image-gallery__link");
+    const coverItem = event.target.closest(".post-cover-lightbox");
+    const item = galleryItem || coverItem;
     if (item) {
       open(event, item);
     }
