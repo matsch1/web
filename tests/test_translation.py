@@ -111,6 +111,32 @@ class TranslationTests(unittest.TestCase):
             self.assertEqual(module.translate_tree(content, FailingClient()), 0)
             self.assertIn("Benutzerdefinierter Titel", de.read_text(encoding="utf-8"))
 
+    def test_gallery_title_and_alt_are_translated_while_its_source_is_preserved(self):
+        module = load_module()
+        with tempfile.TemporaryDirectory() as tmp:
+            content = Path(tmp) / "content"
+            bundle = content / "post"
+            bundle.mkdir(parents=True)
+            (bundle / "index.md").write_text(
+                "---\ntitle: Bergtour\nsource_lang: de\n---\n\n{{< gallery src=\"bergsee.jpg\" title=\"Bergsee am Pass\" alt=\"Beladenes Fahrrad am Bergsee\" >}}",
+                encoding="utf-8",
+            )
+
+            class Client:
+                inputs = []
+
+                def translate_text(self, text, **kwargs):
+                    self.inputs.append(text)
+                    return type("Result", (), {"text": f"EN: {text}"})()
+
+            client = Client()
+            module.translate_tree(content, client)
+            translated = (bundle / "index.en.md").read_text(encoding="utf-8")
+            self.assertFalse(any("bergsee.jpg" in text for text in client.inputs))
+            self.assertIn('src="bergsee.jpg"', translated)
+            self.assertIn('title="EN: Bergsee am Pass"', translated)
+            self.assertIn('alt="EN: Beladenes Fahrrad am Bergsee"', translated)
+
     def test_translation_updates_title_and_description_atomically(self):
         module = load_module()
         with tempfile.TemporaryDirectory() as tmp:

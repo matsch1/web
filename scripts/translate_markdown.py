@@ -13,6 +13,9 @@ from dotenv import load_dotenv
 LANGS = {"de", "en"}
 TRANSLATABLE_METADATA = ("title", "description", "summary")
 PLACEHOLDER_RE = re.compile(r"\[\[000001100000\d+\]\]")
+SHORTCODE_RE = re.compile(r"\{\{\s*[<%].*?[>%]\s*\}\}", re.DOTALL)
+GALLERY_SHORTCODE_RE = re.compile(r"\{\{\s*[<%]\s*gallery\b.*?[>%]\s*\}\}", re.IGNORECASE | re.DOTALL)
+GALLERY_TRANSLATABLE_ATTRIBUTE_RE = re.compile(r"(\b(?:title|alt)\s*=\s*)([\"'])(.*?)(\2)", re.IGNORECASE | re.DOTALL)
 
 
 class TranslationError(RuntimeError):
@@ -37,10 +40,10 @@ def mask_placeholders(text):
         (r"`[^`]+`", 0),
         (r"!\[[^\]]*\]\([^)]+\)", 0),
         (r"\[[^\]]+\]\([^)]+\)", 0),
-        (r"\{\{\s*[<%].*?[>%]\s*\}\}", re.DOTALL),
     ]
     for pattern, flags in patterns:
         text = re.sub(pattern, replace, text, flags=flags)
+    text = SHORTCODE_RE.sub(replace, text)
     return text, placeholders
 
 
@@ -59,8 +62,21 @@ def translate_text(client, text, source, target):
     return result.text
 
 
+def translate_gallery_attributes(client, text, source, target):
+    """Translate reader-facing gallery captions without exposing shortcode syntax."""
+    def translate_shortcode(shortcode_match):
+        def translate_attribute(attribute_match):
+            translated = translate_text(client, attribute_match.group(3), source, target)
+            return f"{attribute_match.group(1)}{attribute_match.group(2)}{translated}{attribute_match.group(4)}"
+
+        return GALLERY_TRANSLATABLE_ATTRIBUTE_RE.sub(translate_attribute, shortcode_match.group(0))
+
+    return GALLERY_SHORTCODE_RE.sub(translate_shortcode, text)
+
+
 def translate_value(client, value, source, target):
-    masked, placeholders = mask_placeholders(str(value))
+    translated_galleries = translate_gallery_attributes(client, str(value), source, target)
+    masked, placeholders = mask_placeholders(translated_galleries)
     translated = translate_text(client, masked, source, target)
     for token, original in placeholders.items():
         translated = translated.replace(token, original)
