@@ -11,8 +11,13 @@
     margin: 0;
 }
 
-.image-gallery__link {
+.image-gallery__link,
+.post-cover-lightbox {
     display: block;
+}
+
+.post-cover-lightbox {
+    cursor: zoom-in;
 }
 
 .image-gallery__item figcaption {
@@ -34,7 +39,8 @@
     transform: scale(1.02);
 }
 
-.image-gallery__link:focus-visible {
+.image-gallery__link:focus-visible,
+.post-cover-lightbox:focus-visible {
     outline: 2px solid var(--primary);
     outline-offset: 3px;
 }

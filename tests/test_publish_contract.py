@@ -236,6 +236,14 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn('event.key === "ArrowLeft"', lightbox)
         self.assertIn('event.key === "ArrowRight"', lightbox)
 
+    def test_single_post_cover_opens_in_the_native_lightbox(self):
+        cover = (ROOT / "layouts" / "_partials" / "cover.html").read_text()
+        lightbox = (ROOT / "assets" / "js" / "gallery-lightbox.js").read_text()
+
+        self.assertIn('class="post-cover-lightbox"', cover)
+        self.assertIn('const cover = item.closest(".post-cover-lightbox")', lightbox)
+        self.assertIn('event.target.closest(".post-cover-lightbox")', lightbox)
+
     def test_default_social_fallback_uses_the_site_logo(self):
         logo = ROOT / "static" / "home-logo-600.webp"
         self.assertTrue(logo.is_file(), "missing social fallback logo")
