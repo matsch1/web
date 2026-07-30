@@ -10,6 +10,7 @@ cover:
 date: 2025-07-02
 description: Along the coast, with temperatures over 30 degrees
 draft: false
+gallery_translation_version: 1
 tags:
 - bikepacking
 title: "\U0001F1E9\U0001F1F0 Day 2 - Protecting Against Storms"
@@ -18,7 +19,7 @@ title: "\U0001F1E9\U0001F1F0 Day 2 - Protecting Against Storms"
 ## Impressions
 Last night in the tent was surprisingly good. After a coffee, I set off at a leisurely pace and then powered through the first 50 km to the ferry to Lolland. 
 
-On the sun deck, I enjoyed the best view while eating the leftovers from yesterday’s breakfast. 
+On the sun deck, I was able to enjoy the rest of my breakfast from yesterday while taking in the fantastic view. 
 
 Once off the ferry, my good mood was dampened by a 30-km stretch with a nasty headwind. After I’d conquered that, I rewarded myself with a huge pizza and a swim in the Baltic Sea. 
 
@@ -29,11 +30,11 @@ I’m now going to wind down the evening comfortably, enjoying the lingering war
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Blumenwiese am Wasser" alt="Blumenreiche Wiese mit rotem Mohn vor Bäumen und einem Blick auf das Wasser." >}}
-{{< gallery src="img2.jpg" title="Blick über die Bucht" alt="Blick über einen grünen Uferpark auf Wasser, Segelboot, Häuser und bewaldete Ufer." >}}
-{{< gallery src="img3.jpg" title="Gebäude am Radweg" alt="Heller Weg führt zu einem historischen Gebäude mit Torbogen und Turm." >}}
-{{< gallery src="img4.jpg" title="Küstenradweg" alt="Heller Schotterweg zwischen Küstenvegetation und ruhigem Wasser unter wolkigem Himmel." >}}
-{{< gallery src="img5.jpg" title="Unterstand am Schlafplatz" alt="Offener Holzunterstand mit roten Picknickbänken neben einem kleinen grünen Gebäude." >}}
+{{< gallery src="img1.jpg" title="Flower meadow by the water" alt="A flower-filled meadow with red poppies in front of trees and a view of the water." >}}
+{{< gallery src="img2.jpg" title="View across the bay" alt="A view across a green riverside park toward the water, a sailboat, houses, and wooded banks." >}}
+{{< gallery src="img3.jpg" title="Buildings along the bike path" alt="A bright path leads to a historic building with an archway and a tower." >}}
+{{< gallery src="img4.jpg" title="Coastal Bike Trail" alt="A bright gravel path between coastal vegetation and calm water under a cloudy sky." >}}
+{{< gallery src="img5.jpg" title="Shelter at the sleeping spot" alt="An open wooden shelter with red picnic benches next to a small green building." >}}
 {{< /galleries >}}
 
 ### Costs

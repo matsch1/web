@@ -10,6 +10,7 @@ cover:
 date: 2025-07-06
 description: To the hostel through rain showers and sunshine
 draft: false
+gallery_translation_version: 1
 tags:
 - bikepacking
 title: "\U0001F1F8\U0001F1EA Day 6 – April weather"
@@ -29,11 +30,11 @@ By the way, as of today, I’ve successfully completed the first quarter of my j
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Reiserad an der Felsküste" alt="Beladenes schwarzes Reiserad mit gelbem Lenkerband an einer felsigen Küste; dahinter blaues Wasser, kleine Inseln und Wolken." >}}
-{{< gallery src="img2.jpg" title="Süßes aus der Bäckerei" alt="Auslage einer Bäckerei mit Muffins, glasierten Donuts, Gebäck und Brötchen; davor schwedische Preis- und Aktionsschilder." >}}
-{{< gallery src="img3.jpg" title="Uferweg am Meer" alt="Weg mit schwarzem Geländer an einer steinigen, von Algen bedeckten Uferlinie; im Hintergrund ruhiges Wasser und ein Steg." >}}
-{{< gallery src="img4.jpg" title="Am Strand" alt="Lächelnder Mann mit Sonnenbrille und pink-violetter Jacke bei einem Selfie am Sandstrand; dahinter Wellen und Wolken." >}}
-{{< gallery src="img5.jpg" title="Zimmer mit Reiseausrüstung" alt="Helles Zimmer mit Bett, einem karierten Tisch voller Taschen und Outdoor-Ausrüstung, Klappstuhl und Fenster mit Blick auf Bäume." >}}
+{{< gallery src="img1.jpg" title="Travel bike on the rocky coast" alt="A fully loaded black touring bike with yellow handlebar tape on a rocky coastline; behind it, blue water, small islands, and clouds." >}}
+{{< gallery src="img2.jpg" title="Sweets from the bakery" alt="A bakery display featuring muffins, glazed donuts, pastries, and rolls; in front of it are Swedish price and promotional signs." >}}
+{{< gallery src="img3.jpg" title="Seaside Path" alt="A path with a black railing along a rocky, algae-covered shoreline; in the background, calm water and a dock." >}}
+{{< gallery src="img4.jpg" title="At the beach" alt="A smiling man wearing sunglasses and a pink-and-purple jacket taking a selfie on a sandy beach; waves and clouds in the background." >}}
+{{< gallery src="img5.jpg" title="Room with Travel Gear" alt="A bright room with a bed, a checkered table full of bags and outdoor gear, a folding chair, and a window overlooking trees." >}}
 {{< /galleries >}}
 
 ### Costs

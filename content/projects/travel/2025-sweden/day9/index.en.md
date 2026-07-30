@@ -10,6 +10,7 @@ cover:
 date: 2025-07-09
 description: Chatting away in glorious weather
 draft: false
+gallery_translation_version: 1
 tags:
 - bikepacking
 title: "\U0001F1F8\U0001F1EA Day 9 – Heading to Gothenburg as a pair"
@@ -21,17 +22,17 @@ The night was relaxed and restful.
 
 At the shelter site, I met Alex, who is also heading north. So we decided to cycle together today. It was a welcome change in many ways. Not only were there just the two of us, but we also had sunshine and sometimes even a bit of a tailwind. 
 
-We checked out Varberg and just enjoyed our time on the bikes. So the day went by relatively quickly. 
+We checked out Varberg and just enjoyed our time on the bike. So the day went by relatively quickly. 
 
-Tonight I’m spending the night in a small Airbnb near Gothenburg. That way, I should be able to get into the city relatively quickly tomorrow to catch my 12:15 p.m. ferry. That means starting at 3:45 p.m., I’ll be back on Danish soil in Frederikshavn. 
+Tonight I’m staying in a small Airbnb near Gothenburg. That way, I should be able to get into the city relatively quickly tomorrow to catch my 12:15 p.m. ferry. That means starting at 3:45 p.m., I’ll be back on Danish soil in Frederikshavn. 
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Reiserad an der Küste" alt="Beladenes schwarzes Reiserad neben einer verwitterten Bank auf einer grasigen Anhöhe über einer felsigen Küste." >}}
-{{< gallery src="img2.jpg" title="Uferweg bei Varberg" alt="Radfahrer auf einem Uferweg mit Geländer neben blauem Wasser; im Hintergrund eine flache Steinanlage, Gebäude und Wolken." >}}
-{{< gallery src="img3.jpg" title="Markt in Varberg" alt="Belebter Markt auf einem Kopfsteinpflasterplatz mit weißen Verkaufszelten, blühenden Topfpflanzen und historischem Backsteingebäude." >}}
-{{< gallery src="img4.jpg" title="Felsige Küste" alt="Felsige Küste mit ruhigem Wasser, kleinen Häusern, einem Steg, entfernten Booten und flachen Inseln unter bedecktem Himmel." >}}
-{{< gallery src="img5.jpg" title="Kleine Gartenhütte" alt="Weiße Holzhütte auf einer Terrasse mit offener Tür zum Bett, Fenster mit hochgeklapptem Laden, Außenspüle und hängender Glocke." >}}
+{{< gallery src="img1.jpg" title="Travel bike on the coast" alt="A heavily loaded black touring bike next to a weathered bench on a grassy hill overlooking a rocky coastline." >}}
+{{< gallery src="img2.jpg" title="Coastal Path near Varberg" alt="A cyclist on a lakeside path with a railing next to blue water; in the background, a flat stone structure, buildings, and clouds." >}}
+{{< gallery src="img3.jpg" title="Market in Varberg" alt="A bustling market on a cobblestone square with white market tents, flowering potted plants, and a historic brick building." >}}
+{{< gallery src="img4.jpg" title="Rocky Coast" alt="A rocky coastline with calm waters, small houses, a pier, boats in the distance, and flat islands under an overcast sky." >}}
+{{< gallery src="img5.jpg" title="Small Garden Shed" alt="A white wooden cabin on a terrace with an open door leading to the bed, a window with a shutter flipped up, an outdoor sink, and a hanging bell." >}}
 {{< /galleries >}}
 
 ### Costs

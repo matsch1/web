@@ -10,6 +10,7 @@ cover:
 date: 2025-07-04
 description: Exploring Copenhagen and making plans for the next few days
 draft: false
+gallery_translation_version: 1
 tags:
 - bikepacking
 title: "\U0001F1E9\U0001F1F0 Day 4 – Copenhagen"
@@ -28,11 +29,11 @@ Strangely enough, all shelter spots in this part of Denmark either cost money or
 Well, sheltered from the rain, I’m now winding down the evening in my shelter. Unfortunately, the forecast for the next few days doesn’t look any better. But I have to find a place to stay for tomorrow anyway so I can charge my electronic devices and do my laundry. We’ll see how the next few days go. 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Steg am Wasser" alt="Langer Holzsteg führt über ruhiges Wasser unter einem wolkigen blauen Himmel." >}}
-{{< gallery src="img2.jpg" title="Fahrräder in Kopenhagen" alt="Viele abgestellte Fahrräder vor der Skyline einer Stadt mit hohen Gebäuden." >}}
-{{< gallery src="img3.jpg" title="Kreuzung in Kopenhagen" alt="Radfahrer und Fußgänger warten an einer Kreuzung vor roten Backsteingebäuden mit Türmen." >}}
-{{< gallery src="img4.jpg" title="Kaffee und Gebäck" alt="Milchkaffee mit Schaumherz und Gebäck auf einem Tisch." >}}
-{{< gallery src="img5.jpg" title="Schutzhütten im Wald" alt="Hölzerne Picknickbank und zwei offene Schutzhütten in einem Birkenwald." >}}
+{{< gallery src="img1.jpg" title="Boardwalk by the Water" alt="A long wooden boardwalk stretches across calm waters beneath a cloudy blue sky." >}}
+{{< gallery src="img2.jpg" title="Bicycles in Copenhagen" alt="Many parked bicycles in front of a city skyline with tall buildings." >}}
+{{< gallery src="img3.jpg" title="Intersection in Copenhagen" alt="Cyclists and pedestrians wait at an intersection in front of red brick buildings with towers." >}}
+{{< gallery src="img4.jpg" title="Coffee and pastries" alt="A latte with a foam heart and pastries on a table." >}}
+{{< gallery src="img5.jpg" title="Forest Shelters" alt="A wooden picnic bench and two open shelters in a birch forest." >}}
 {{< /galleries >}}
 
 ### Costs

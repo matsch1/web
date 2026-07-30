@@ -10,6 +10,7 @@ cover:
 date: 2025-06-30
 description: Heading north for now
 draft: false
+gallery_translation_version: 1
 tags:
 - bikepacking
 title: "\U0001F1E9\U0001F1EA Day 0 – Arrival in Flensburg"
@@ -23,7 +24,7 @@ Tomorrow we’re off!
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Noch in Karlsruhe" >}}
+{{< gallery src="img1.jpg" title="Still in Karlsruhe" >}}
 {{< /galleries >}}
 
 ### Place to Sleep 

@@ -10,6 +10,7 @@ cover:
 date: 2025-07-15
 description: In the rain
 draft: false
+gallery_translation_version: 1
 tags:
 - bikepacking
 title: "\U0001F1E9\U0001F1F0 Day 15 – To Flensburg"
@@ -20,9 +21,9 @@ The day started out with thick fog. Without any sun, there was no way the tent w
 
 After 10 km on my bike, I reached Ribe, the former capital of Denmark. At 9 a.m., the beautiful old town was still pretty sleepy, and unfortunately, I wasn’t able to see the inside of the Viking Cathedral. 
 
-From there, I headed almost directly toward Flensburg. Unfortunately, it had also started to rain, and I felt like I was riding on the only road in Denmark without a bike path.
+From there, I headed almost directly toward Flensburg. Unfortunately, it had also started to rain, and it felt like I was riding on the only road in Denmark without a bike path.
 
-So on my last day in Denmark, I struggled along the road through the rain. Unfortunately, that wasn’t what I’d imagined. But at the same time, I was glad that I hadn’t had to ride in such conditions during the rest of my trip so far.
+So, on my last day in Denmark, I struggled along the road through the rain. Unfortunately, that wasn’t what I’d imagined. But at the same time, I was glad that I hadn’t had to ride in such conditions during the rest of my trip so far.
 
 So I covered the distance relatively quickly to spend the evening with friends in Flensburg. We wrapped up the evening together with three delicious fish sandwiches in good company. 
 
@@ -30,10 +31,10 @@ From Flensburg, I’ll take the train to Cologne, where, after two days of rest,
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Beladenes Fahrrad an der Bank" alt="Beladenes schwarzes Fahrrad mit Taschen und hellem Bündel steht neben einer langen Holzbank in hohem Gras." >}}
-{{< gallery src="img2.jpg" title="Straße durch die Ebene" alt="Gerade schmale Asphaltstraße durch eine flache Landschaft mit Gräben, Schilf, Feldern und Weidezäunen unter bedecktem Himmel." >}}
-{{< gallery src="img3.jpg" title="Gasse in Ribe" alt="Kopfsteinpflasterstraße zwischen dicht stehenden Häusern; im Hintergrund sind ein Kirchturm, weitere Türme und Außentische zu sehen." >}}
-{{< gallery src="img4.jpg" title="Comic mit Radfahrer" alt="Vierteiliger Comic mit einem behelmten Radfahrer, einem Bierglas, einem Hamburger sowie den Texten „HALT!“ und „HUFF HUFF“." >}}
+{{< gallery src="img1.jpg" title="A loaded bike by the bench" alt="A black bicycle loaded with bags and a light-colored bundle stands next to a long wooden bench in tall grass." >}}
+{{< gallery src="img2.jpg" title="Road Through the Plain" alt="A straight, narrow asphalt road through a flat landscape with ditches, reeds, fields, and pasture fences under overcast skies." >}}
+{{< gallery src="img3.jpg" title="Alley in Ribe" alt="A cobblestone street between closely spaced houses; in the background, you can see a church tower, other towers, and outdoor tables." >}}
+{{< gallery src="img4.jpg" title="Comic featuring a cyclist" alt="A four-part comic featuring a cyclist wearing a helmet, a beer glass, a hamburger, and the text “STOP!” and “HUFF HUFF.”" >}}
 {{< /galleries >}}
 
 ### Costs

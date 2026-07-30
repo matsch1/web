@@ -10,6 +10,7 @@ cover:
 date: 2025-07-07
 description: Heavy rain showers in the morning and a walk on the beach in the afternoon
 draft: false
+gallery_translation_version: 1
 tags:
 - bikepacking
 title: "\U0001F1F8\U0001F1EA Day 7 – Rest Day"
@@ -25,8 +26,8 @@ With a little luck, I’ll continue tomorrow in perfect weather.
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Cola am Strand" alt="Hand hält eine Coca-Cola-Flasche vor schäumenden Wellen an einem Sandstrand unter grauem Himmel." >}}
-{{< gallery src="img2.jpg" title="Kaffee bei Regen" alt="Blick durch regentropfenbesetzte Glastüren auf eine nasse Terrasse mit Gartenmöbeln und Bäumen; im Vordergrund eine Hand mit schwarzem Becher." >}}
+{{< gallery src="img1.jpg" title="Coke on the Beach" alt="A hand holds a Coca-Cola bottle in front of foaming waves on a sandy beach under a gray sky." >}}
+{{< gallery src="img2.jpg" title="Coffee in the Rain" alt="A view through glass doors speckled with raindrops onto a wet patio with patio furniture and trees; in the foreground, a hand holding a black mug." >}}
 {{< /galleries >}}
 
 ### Expenses

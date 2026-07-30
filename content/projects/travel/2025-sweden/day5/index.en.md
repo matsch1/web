@@ -10,13 +10,14 @@ cover:
 date: 2025-07-05
 description: A challenging arrival in Sweden with lots of rain showers
 draft: false
+gallery_translation_version: 1
 tags:
 - bikepacking
 title: "\U0001F1F8\U0001F1EA Day 5 – Off to Sweden"
 ---
 
 ## Impressions
-Woke up this morning to pouring rain. Luckily, everything stayed dry inside my shelter. 
+I woke up this morning to pouring rain. Luckily, everything stayed dry inside my shelter. 
 
 After the rain let up, I set off around 10 a.m. and was at the ferry to Helsingborg in no time. 
 
@@ -34,11 +35,11 @@ I’m hoping for a dry night (with clean cycling clothes and a fully charged pow
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Kattegattleden am Meer" alt="Wellen am steinigen Ufer neben einem Wegweiser für den Kattegattleden unter grauem Himmel." >}}
-{{< gallery src="img2.jpg" title="Auf der Fähre" alt="Person in Regenjacke auf dem Fahrzeugdeck einer Fähre vor Autos und Bussen." >}}
-{{< gallery src="img3.jpg" title="Helsingborg im Regen" alt="Hafenstadt mit Booten, historischen Gebäuden und einem hohen Backsteinturm am Wasser bei Regen." >}}
-{{< gallery src="img4.jpg" title="Weg an der Küste" alt="Kiesweg entlang eines steinigen Ufers mit hohem Gras und ruhigem Wasser unter grauem Himmel." >}}
-{{< gallery src="img5.jpg" title="Campingplatz im Regen" alt="Zelt auf einer nassen Campingwiese vor Wohnwagen, Wohnmobilen und einem Sanitärgebäude." >}}
+{{< gallery src="img1.jpg" title="Kattegattleden by the Sea" alt="Waves crashing against the rocky shore next to a signpost for the Kattegattleden trail under a gray sky." >}}
+{{< gallery src="img2.jpg" title="On the ferry" alt="A person wearing a rain jacket on the vehicle deck of a ferry, in front of cars and buses." >}}
+{{< gallery src="img3.jpg" title="Helsingborg in the Rain" alt="A port city with boats, historic buildings, and a tall brick tower by the water in the rain." >}}
+{{< gallery src="img4.jpg" title="Coastal Trail" alt="A gravel path along a rocky shore with tall grass and calm water under a gray sky." >}}
+{{< gallery src="img5.jpg" title="Campground in the Rain" alt="A tent on a wet campground field in front of trailers, RVs, and a restroom building." >}}
 {{< /galleries >}}
 
 ### Costs

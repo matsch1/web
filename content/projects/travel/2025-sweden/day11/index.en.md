@@ -10,6 +10,7 @@ cover:
 date: 2025-07-11
 description: Cycling along the beach is an absolute highlight
 draft: false
+gallery_translation_version: 1
 tags:
 - bikepacking
 title: "\U0001F1E9\U0001F1F0 Day 11 – Denmark’s West Coast"
@@ -20,7 +21,7 @@ When I got up this morning, the entire shelter area was shrouded in fog. Everyth
 
 An hour later, though, I was able to set off in the sunshine. The first part of the route through northern inland Denmark felt just like being in Sweden again. 
 
-As the coast drew closer, clouds and a cold sea breeze followed. My plan to go for a swim thus became less and less appealing. 
+As the coast drew closer, clouds and a cold sea breeze followed. So the idea of going for a swim became less and less appealing. 
 
 It wasn’t really a big deal, though, because an absolute highlight of this tour was waiting for me. Between Løkken and Blokhus, I was able to ride the entire stretch right along the water’s edge on the beach. Who wants to go swimming or surfing when you can just fly along the beach on your bike like that? 
 
@@ -29,11 +30,11 @@ After this fantastic stretch, I spent the afternoon in and around Blokhus, enjoy
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Mit dem Rad am Strand" alt="Blick über Fahrradlenker auf einen breiten Sandstrand; rechts liegt das Meer, links sind weit entfernte Menschen zu sehen." >}}
-{{< gallery src="img2.jpg" title="Grasweg durch die Wiese" alt="Schmaler grasbewachsener Weg zwischen Bäumen, Wiese und einem einfachen Pfosten-Draht-Zaun." >}}
-{{< gallery src="img3.jpg" title="Sletteningen Naturbase" alt="Weißes Backsteingebäude mit offenem Eingang sowie Schildern für die Sletteningen Naturbase und eine Tauchausstellung." >}}
-{{< gallery src="img4.jpg" title="Unterwegs auf der Landstraße" alt="Radfahrer mit Helm und Sonnenbrille fährt auf einer asphaltierten Straße durch grasbewachsenes Gelände." >}}
-{{< gallery src="img5.jpg" title="Rastplatz im Grünen" alt="Grasfläche mit Holztisch, kleinen Holzgebäuden und Bäumen unter blauem Himmel." >}}
+{{< gallery src="img1.jpg" title="Cycling on the Beach" alt="A view over the handlebars of a bicycle onto a wide sandy beach; the ocean is on the right, and people can be seen in the distance on the left." >}}
+{{< gallery src="img2.jpg" title="Grass path through the meadow" alt="A narrow, grassy path between trees, a meadow, and a simple post-and-wire fence." >}}
+{{< gallery src="img3.jpg" title="Sletteningen Nature Base" alt="A white brick building with an open entrance and signs for the Sletteningen Nature Base and a diving exhibition." >}}
+{{< gallery src="img4.jpg" title="Out on the Country Road" alt="A cyclist wearing a helmet and sunglasses rides along a paved road through grassy terrain." >}}
+{{< gallery src="img5.jpg" title="Rest Area in the Countryside" alt="A grassy area with a wooden table, small wooden structures, and trees under a blue sky." >}}
 {{< /galleries >}}
 
 ### Costs

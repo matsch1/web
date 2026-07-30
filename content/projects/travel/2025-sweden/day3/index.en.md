@@ -10,6 +10,7 @@ cover:
 date: 2025-07-03
 description: Sun, Wind, and a Breakdown with New Friends
 draft: false
+gallery_translation_version: 1
 tags:
 - bikepacking
 title: "\U0001F1E9\U0001F1F0 Day 3 – First Breakdown"
@@ -30,11 +31,11 @@ Shortly before Køge, our paths parted ways again. The two of them found a place
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Radfahrer auf der Brücke" alt="Zwei Radfahrer mit Helmen und Sonnenbrillen auf einer Brücke über dem Wasser." >}}
-{{< gallery src="img2.jpg" title="Hafen bei Vordingborg" alt="Schilfbewachsenes Ufer, Straße und Segelbootmasten vor einem Hafen unter blauem Himmel." >}}
-{{< gallery src="img3.jpg" title="Fisch mit Pommes" alt="Teller mit paniertem Fisch, Pommes, Zitronenscheiben und Sauce auf einem Restauranttisch." >}}
-{{< gallery src="img4.jpg" title="Reifenpanne" alt="Nahaufnahme eines grobstolligen Fahrradreifens mit einem braunen Fremdkörper im Profil." >}}
-{{< gallery src="img5.jpg" title="Rastplatz im Wald" alt="Beladenes Fahrrad an einer Holzbrücke in einer bewaldeten Raststelle mit Picknicktischen." >}}
+{{< gallery src="img1.jpg" title="Cyclists on the bridge" alt="Two cyclists wearing helmets and sunglasses on a bridge over the water." >}}
+{{< gallery src="img2.jpg" title="Port near Vordingborg" alt="A reed-covered shore, a road, and sailboat masts in front of a harbor under a blue sky." >}}
+{{< gallery src="img3.jpg" title="Fish and fries" alt="A plate with breaded fish, french fries, lemon slices, and sauce on a restaurant table." >}}
+{{< gallery src="img4.jpg" title="Flat tire" alt="Close-up of a deep-tread bicycle tire with a brown foreign object embedded in the tread." >}}
+{{< gallery src="img5.jpg" title="Rest stop in the woods" alt="A loaded bicycle at a wooden bridge in a wooded rest area with picnic tables." >}}
 {{< /galleries >}}
 
 ### Costs

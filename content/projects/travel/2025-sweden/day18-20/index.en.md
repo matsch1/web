@@ -10,6 +10,7 @@ cover:
 date: 2025-07-18
 description: From Cologne to Karlsruhe in 3 days
 draft: false
+gallery_translation_version: 1
 tags:
 - bikepacking
 title: "\U0001F1E9\U0001F1EA Days 18–20 – Back Home"
@@ -28,10 +29,10 @@ Day 3 started off through the vineyards again. After some thought, I realized th
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Niederwalddenkmal">}}
-{{< gallery src="img2.jpg" title="Durch die alten Dörfer" >}}
-{{< gallery src="img3.jpg" title="Abend in Boppard" >}}
-{{< gallery src="img4.jpg" title="Abschluss am Rhein" >}}
+{{< gallery src="img1.jpg" title="Niederwald Monument">}}
+{{< gallery src="img2.jpg" title="Through the Old Villages" >}}
+{{< gallery src="img3.jpg" title="Evening in Boppard" >}}
+{{< gallery src="img4.jpg" title="Graduation on the Rhine" >}}
 {{< /galleries >}}
 
 ### Costs

@@ -10,6 +10,7 @@ cover:
 date: 2025-08-04
 description: Modellbau, Löten, 3D-Druck, Zusammenbau, Flashen
 draft: false
+gallery_translation_version: 1
 slug: split-keyboard-ianmaclarty
 tags:
 - 3D printing
@@ -28,11 +29,11 @@ Die QMK-Software entwickelt sich mit der Zeit weiter.
 
 Wer möchte nicht mühelos cool wirken, während er auf einer Tastatur tippt, die sonst niemand versteht? Ich auf jeden Fall.  
 
-Abgesehen vom reinen Stilfaktor habe ich einige echte Vorteile der Verwendung einer geteilten Tastatur entdeckt. Für mich sind die Hauptvorteile:
+Abgesehen vom reinen Stilfaktor habe ich einige echte Vorteile der Verwendung einer geteilten Tastatur entdeckt. Für mich sind die wichtigsten Vorteile:
 
-- **Weniger Handbewegungen:** Es hat mich immer genervt, meine Hand bewegen zu müssen, um die Pfeiltasten oder Ziffern zu erreichen. Und von den Akrobatikübungen mit Daumen und kleinem Finger, die nötig sind, um Alt, Esc oder Strg zu drücken, will ich gar nicht erst anfangen. Mit einer geteilten Tastatur werden diese Bewegungen auf ein Minimum reduziert.  
+- **Weniger Handbewegungen:** Es hat mich immer genervt, meine Hand bewegen zu müssen, um die Pfeiltasten oder Ziffern zu erreichen. Und von den Akrobatikübungen mit Daumen und kleinen Finger, die nötig sind, um Alt, Esc oder Strg zu drücken, will ich gar nicht erst anfangen. Mit einer geteilten Tastatur werden diese Bewegungen auf ein Minimum reduziert.  
 
-- **Bessere Ergonomie:** Bei einem geteilten Layout geht es nicht nur um den Komfort für die Finger. Es ermöglicht mir, die Tastaturhälften natürlicher zu positionieren, was meine gesamte Sitzhaltung am Schreibtisch verbessert und verhindert, dass ich wie eine Garnele sitze.  
+- **Bessere Ergonomie:** Bei einem geteilten Layout geht es nicht nur um den Komfort für die Finger. Es ermöglicht mir, die beiden Tastaturhälften natürlicher zu positionieren, was meine gesamte Sitzhaltung am Schreibtisch verbessert und verhindert, dass ich wie eine Garnele dasitze.  
 
 - **Höhere Tippgeschwindigkeit:** Weniger Handbewegungen bedeuten weniger Zeitverlust, was natürlich zu schnellerem Tippen führt, sobald man sich an das Layout gewöhnt hat.  
 
@@ -41,7 +42,7 @@ Der Umstieg auf eine geteilte Tastatur ist nicht nur eine Stilfrage – es ist e
 ## Ians Tastatur
 
 Für meinen ersten Selbstbau bin ich auf Ian Maclartys GitHub-Projekt gestoßen, das [IK Keyboard](https://github.com/ianmaclarty/ik).  
-Das Konzept ist einfach: Baue dir deine eigene geteilte Tastatur aus Teilen, die du problemlos bei AliExpress bekommst.  
+Das Konzept ist einfach: Baue dir deine eigene geteilte Tastatur aus Teilen, die du problemlos bei AliExpress beschaffen kannst.  
 
 Die einzigen anspruchsvollen Teile sind die Leiterplatten und die 3D-gedruckten Gehäuse.  
 Glücklicherweise hatte ein Kollege zwei übrig gebliebene Leiterplatten für mich, und die Gehäuse kann ich mit meinem 3D-Drucker selbst drucken.
@@ -83,12 +84,12 @@ Für alles andere halte dich an die Anleitung im Original
 [README](https://github.com/ianmaclarty/ik/blob/main/README.md).
 
 {{< alert type="warning" title="" >}}
-Wenn du die Originalgehäuse verwendest, musst du das vordere Gehäuse **vor** dem Löten der Schalter anbringen.
+Wenn ihr die Originalgehäuse verwendet, müsst ihr das vordere Gehäuse **vor** dem Löten der Schalter anbringen.
 {{< /alert >}}
 
 {{< galleries >}}
-{{< gallery src="./pcb_soldering_top.jpg" title="PCB Top" >}}
-{{< gallery src="./pcb_soldering_bottom.jpg" title="PCB Bottom" >}}
+{{< gallery src="./pcb_soldering_top.jpg" title="PCB-Oberfläche" >}}
+{{< gallery src="./pcb_soldering_bottom.jpg" title="PCB-Unterseite" >}}
 {{< /galleries >}}
 
 ### Alles zusammenbauen
@@ -104,7 +105,7 @@ Glücklicherweise stellt Ian alles zur Verfügung, was man für den Einstieg ben
 
 ### Anpassungen
 
-Die Vorlieben für das Tastaturlayout sind sehr individuell.  
+Die Vorlieben hinsichtlich des Tastaturlayouts sind sehr individuell.  
 Ich habe meine Tastatur so konfiguriert, dass sie nahtlos mit dem `US International – Alt Gr dead keys`-Layout auf meinem PC zusammenarbeitet.
 
 Unter Windows musst du dieses Layout manuell installieren. Eine zuverlässige Implementierung bietet [thomasfaingnaert](https://github.com/thomasfaingnaert/win-us-intl-altgr).

@@ -10,6 +10,7 @@ cover:
 date: 2025-07-13
 description: With Wind, Sun, and Rain
 draft: false
+gallery_translation_version: 1
 tags:
 - bikepacking
 title: "\U0001F1E9\U0001F1F0 Day 13 – Indecisively Heading South"
@@ -18,7 +19,7 @@ title: "\U0001F1E9\U0001F1F0 Day 13 – Indecisively Heading South"
 ## Impressions
 Today started off leisurely. First, I rode in the wrong direction, hoping to see some seals. Unfortunately, I didn’t get to see any again.
 
-So I headed south without having achieved anything. The start of today’s stage turned out to be pretty tough. Luckily, I had a bit of a tailwind. So, with the sun out and a light drizzle, I managed to push through until lunch break.
+So, having come up empty-handed, I headed south. The start of today’s stage turned out to be pretty tough. Luckily, I had a bit of a tailwind. So, with the sun out and a light drizzle, I managed to push through until my lunch break.
 
 As a reward, I treated myself to a big burger and fries, and it took me a while to get going again. 
 
@@ -32,11 +33,11 @@ Now that I’ve arrived at my campsite, the sun is shining again as if nothing h
 
 ### Pictures
 {{< galleries >}}
-{{< gallery src="img1.jpg" title="Sandweg durch die Dünen" alt="Fahrradlenker und kleines Display im Vordergrund eines sandigen Wegs durch niedrige Küstenvegetation." >}}
-{{< gallery src="img2.jpg" title="Leuchtturm und Pferde" alt="Hoher roter Leuchtturm und rote Gebäude hinter einer eingezäunten Weide mit weißen und grauen Pferden." >}}
-{{< gallery src="img3.jpg" title="Pause am Strand" alt="Bloße Beine liegen auf einem Sandstrand in Richtung Meer; rechts liegen schwarze Sandalen im Sand." >}}
-{{< gallery src="img4.jpg" title="Selfie an der Straße" alt="Lächelnder Radfahrer mit Helm, dunkler Sonnenbrille und hellbrauner Jacke neben einer asphaltierten Straße." >}}
-{{< gallery src="img5.jpg" title="Zelt auf der Wiese" alt="Kleines dunkles Zelt auf einer gemähten Wiese am Rand von Bäumen bei tiefem Sonnenstand." >}}
+{{< gallery src="img1.jpg" title="A sandy path through the dunes" alt="A bicycle handlebar and a small display in the foreground of a sandy path through low coastal vegetation." >}}
+{{< gallery src="img2.jpg" title="Lighthouse and Horses" alt="A tall red lighthouse and red buildings behind a fenced pasture with white and gray horses." >}}
+{{< gallery src="img3.jpg" title="A Break on the Beach" alt="Bare legs are stretched out on a sandy beach facing the ocean; black sandals lie in the sand to the right." >}}
+{{< gallery src="img4.jpg" title="Selfie by the Road" alt="A smiling cyclist wearing a helmet, dark sunglasses, and a light brown jacket standing next to a paved road." >}}
+{{< gallery src="img5.jpg" title="Tent on the Meadow" alt="A small, dark tent on a mowed meadow at the edge of a grove of trees as the sun sets." >}}
 {{< /galleries >}}
 
 ### Costs

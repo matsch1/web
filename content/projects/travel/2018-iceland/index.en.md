@@ -11,6 +11,7 @@ date: 2018-07-01
 description: '400 kilometers, 3,700 meters of elevation gain, and 30 kilograms of
   gear: a bikepacking tour through Iceland’s highlands.'
 draft: false
+gallery_translation_version: 1
 tags:
 - bikepacking
 - radreise
@@ -21,11 +22,11 @@ title: Cycling Through Iceland's Highlands on a Hardtail
 Ten days in Iceland, five bikes, an old hardtail, and way too much luggage. After finishing college, we didn’t want to dive straight back into everyday life—we wanted to get out there one more time: across the highlands, to where the road ends and a trip turns into a little adventure.
 I’m writing this article in retrospect because I still love thinking back on it today.
 
-In the end, we clocked about 400 kilometers and roughly 3,700 meters of elevation gain. But more important than the numbers are the memories that have stayed with us: headwinds that felt like a wall. Rain that eventually just became part of the day. Hot springs in the middle of a cold, rocky desert. And a flat tire in a place where the nearest bike shop was very far away.
+In the end, we clocked about 400 kilometers and roughly 3,700 meters of elevation gain. But more important than the numbers are the memories that have stayed with us: headwinds that felt like a wall. Rain that eventually just became part of the day. Hot springs in the middle of a cold, rocky desert. And a flat tire in a place where the nearest bike shop was a long way off.
 
 ## The Idea: Across the Highlands
 
-The idea came from my buddy Jonas. His uncle had already done a similar tour and was planning another one through the Highlands that summer. After finishing college, it sounded like just the right mix of saying goodbye, freedom, and a touch of megalomania. We booked flights to Keflavík—bike transport included—and before we knew it, that vague idea had suddenly turned into departure day.
+The idea came from my buddy Jonas. His uncle had already done a similar tour and was planning another one through the Highlands that summer. After finishing college, it sounded like just the right mix of saying goodbye, freedom, and a touch of grandiosity. We booked flights to Keflavík—bike transport included—and before we knew it, that vague idea had suddenly turned into departure day.
 
 My old hardtail got new tires and a rack. It hadn’t been my favorite bike for trail rides for a long time, but it was just right for Iceland: sturdy, repairable, and not too good to be ruined by gravel, rain, and fords.
 
@@ -49,20 +50,20 @@ When it came to tools and spare parts, we deliberately opted for redundancy, wit
 - Spare brake and derailleur cables
 - Duct tape, zip ties, and an assortment of small screws
 
-Looking back, that was the right decision. In the highlands, it doesn’t matter whether your gear looks sleek. What matters is whether it gets you back on the road after a breakdown.
+Looking back, that was the right decision. In the highlands, it doesn’t matter whether your gear looks sleek. What matters is whether it gets you going again after a breakdown.
 
 ## Arrival in Keflavík: First Fix, Then Ride
 
 At the end of July, we landed in Keflavík in perfect weather. At the Bike Pit at the airport, we reassembled our bikes, stowed our luggage, and checked one last time to make sure everything was still working.
 Our bikes had been wrapped in bubble wrap for the flight, which was inexpensive and worked surprisingly well.
 
-The first leg began late in the evening and took us about 42 kilometers to Hafnarfjörður. We’d bought gas for the stoves along the way—which turned out to be unnecessary. At the campground, we got gas canisters from fellow cyclists who were on their way back and couldn’t take them on the plane.
+The first leg started late in the evening and took us about 42 kilometers to Hafnarfjörður. We’d bought gas for the stoves along the way—which turned out to be unnecessary. At the campground, we got gas cartridges from fellow bike travelers who were on their way back and couldn’t take them on the plane.
 
 The first night was also our first “Iceland moment”: Around 10:30 p.m., we were still sitting outside; it was still light enough, and somehow time began to lose its usual rhythm.
 
 {{< galleries >}}
-{{< gallery src="img3.jpg" title="Bike Pit am Flughafen" alt="Mehrere Radreisende packen Fahrräder und Ausrüstung vor dem Bike Pit am Flughafen Keflavík." >}}
-{{< gallery src="img4.jpg" title="Ausblick in Hafnarfjörður um 22:30 Uhr" alt="Blick über Hafnarfjörður mit Häusern, Küste und Bergen in der hellen Sommerdämmerung." >}}
+{{< gallery src="img3.jpg" title="Bike Pit at the Airport" alt="Several cyclists are packing their bikes and gear in front of the Bike Pit at Keflavík Airport." >}}
+{{< gallery src="img4.jpg" title="View in Hafnarfjörður at 10:30 p.m." alt="A view of Hafnarfjörður with houses, the coast, and mountains in the bright summer twilight." >}}
 {{< /galleries >}}
 
 
@@ -78,10 +79,10 @@ If I’d had a choice, I would have switched right back to the steady rain from 
 Next to the famous—and now mostly dormant—Geysir, Strokkur reliably spouts water into the sky. We watched this impressive natural spectacle and continued on toward the highlands.
 
 {{< galleries >}}
-{{< gallery src="img5.jpg" title="Auf dem Weg nach Þingvellir" alt="Beladener Radfahrer auf einer nassen Straße durch die offene Landschaft nahe Þingvellir." >}}
-{{< gallery src="img6.jpg" title="Freude, dass der Regen endlich aufgehört hat" alt="Mehrere Radreisende mit voll beladenen Fahrrädern machen eine Pause an einer Straße in bergiger Landschaft." >}}
-{{< gallery src="img7.jpg" title="Voll beladen einen traumhaften Anstieg hoch" alt="Radfahrer mit Gepäck fährt auf nasser Straße vor grünen Bergen bergauf." >}}
-{{< gallery src="img8.jpg" title="Dampfender Geysir" alt="Dampf steigt aus heißen Quellen im Geothermalgebiet Haukadalur auf." >}}
+{{< gallery src="img5.jpg" title="On the way to Þingvellir" alt="A cyclist carrying a heavy load on a wet road through the open countryside near Þingvellir." >}}
+{{< gallery src="img6.jpg" title="So glad the rain has finally stopped" alt="Several cyclists with fully loaded bikes take a break on a road in a mountainous landscape." >}}
+{{< gallery src="img7.jpg" title="Climbing a fantastic hill with a full load" alt="A cyclist carrying luggage rides uphill on a wet road against a backdrop of green mountains." >}}
+{{< gallery src="img8.jpg" title="Steaming Geyser" alt="Steam rises from hot springs in the Haukadalur geothermal area." >}}
 {{< /galleries >}}
 
 ## The Highlands Begin at Gullfoss
@@ -93,31 +94,31 @@ Beyond the waterfall, the area quickly became deserted. A sign made it clear tha
 The landscape changed over an astonishingly short distance. First, lakes and green meadows in front of the glaciers; then, a barren stone desert, wide valleys, and a backdrop that looked more like the moon than Europe. The drive to Árbúðir—about 60 kilometers with 650 meters of elevation gain—wasn’t the toughest leg of the journey, but it was one of the most impressive. For dinner, we had spaghetti with tuna—not a culinary revelation, but just right for the moment.
 
 {{< galleries >}}
-{{< gallery src="img9.jpg" title="Gullfoss Wasserfall" alt="Der breite Gullfoss-Wasserfall stürzt unter aufsteigender Gischt in eine Schlucht." >}}
-{{< gallery src="img10.jpg" title="Start der Allrad-Hochlandpiste" alt="Voll beladene Fahrräder stehen neben einem Schild am Beginn der Hochlandpiste." >}}
-{{< gallery src="img11.jpg" title="Traumhafte Hochlandroute" alt="Radfahrer blickt über ein weites Hochlandtal mit Fluss und schneebedeckten Bergen." >}}
-{{< gallery src="img12.jpg" title="Zeltplatz im Hochland" alt="Grünes Zelt auf einem Campingplatz vor Bergen im isländischen Hochland." >}}
+{{< gallery src="img9.jpg" title="Gullfoss Waterfall" alt="The wide Gullfoss waterfall plunges into a gorge amid rising spray." >}}
+{{< gallery src="img10.jpg" title="Start of the four-wheel-drive highland trail" alt="Fully loaded bicycles are parked next to a sign at the start of the highland trail." >}}
+{{< gallery src="img11.jpg" title="A Fantastic Highland Route" alt="A cyclist looks out over a wide highland valley with a river and snow-capped mountains." >}}
+{{< gallery src="img12.jpg" title="Campground in the Highlands" alt="A green tent at a campground near Bergen in the Icelandic highlands." >}}
 {{< /galleries >}}
 
 ## Kerlingarfjöll: The Climb, Disappointment, Hot Water
 
-The next day had two clear goals: the Kerlingarfjöll Mountain Resort and a natural pool in the valley. Plus, a rumor had spread that the lodge served french fries. After several days of eating out of bags, that was a surprisingly strong motivator.
+The next day had two clear goals: the Kerlingarfjöll Mountain Resort and a natural pool in the valley. Plus, a rumor had taken hold that the lodge served french fries. After several days of eating out of bags, that was a surprisingly strong motivator.
 
-The last few kilometers to Kerlingarfjöll were almost entirely uphill. When we arrived, the matter of the fries was quickly settled: Apparently, they’d never been served there. So, back to instant rice.
+The last few kilometers to Kerlingarfjöll were almost entirely uphill. When we arrived, the matter of the fries was quickly settled: Apparently, they’d never been available there. So, back to instant rice.
 
-The real reason for staying there lay a short distance outside the camp anyway. Wearing swim trunks and carrying whiskey, we hiked down into the valley to a stone-lined pool next to a mountain river. Cold glacier water flowed in from one side, while hot spring water came out of pipes. Looking back, after several cold and long days, that was pretty close to perfection.
+The real reason for staying there lay a short distance outside the camp anyway. Wearing swim trunks and carrying whiskey, we hiked down into the valley to a stone-built pool next to a mountain river. Cold glacier water flowed in from one side, while hot spring water came out of pipes. Looking back, after several cold and long days, that experience was pretty close to perfection.
 
 The next morning, we left our bikes behind for a while and hiked through the surrounding area. Snowfields, the smell of sulfur, steaming crevasses, and the glacier: a landscape that feels both surreal and very real at the same time. Afterward, we continued by bike to Hveravellir—just 41 kilometers and about 150 meters of elevation gain, but with the second hot bath of the trip as a reward.
 
 What we learned along the way: Don’t sit too long right next to the hot inlet. Your circulation will eventually make itself known. Very clearly.
 
 {{< galleries >}}
-{{< gallery src="img13.jpg" title="Heiße Quelle am Fuß des Gletschers" alt="Mehrere Menschen baden in einem Naturpool neben einem Holzsteg im Kerlingarfjöll." >}}
-{{< gallery src="img14.jpg" title="Auf dem Weg zum Gletscher" alt="Radreisende und ihre Fahrräder machen vor einem schneebedeckten Berg Pause." >}}
-{{< gallery src="img15.jpg" title="Dampfende Berge im Kerlingarfjöll" alt="Dampf steigt aus einem geothermalen Feld zwischen den Bergen im Kerlingarfjöll auf." >}}
-{{< gallery src="img16.jpg" title="Wanderung um die heißen Quellen" alt="Wanderer folgt einem Pfad durch die farbige, dampfende Landschaft im Kerlingarfjöll." >}}
-{{< gallery src="img17.jpg" title="Hochlandfeeling" alt="Voll beladenes Fahrrad steht in einer offenen, steinigen Hochlandlandschaft." >}}
-{{< gallery src="img18.jpg" title="Nächste heiße Quelle zum Baden" alt="Dampfende Thermalquelle in Hveravellir." >}}
+{{< gallery src="img13.jpg" title="Hot spring at the foot of the glacier" alt="Several people are swimming in a natural pool next to a wooden dock in Kerlingarfjöll." >}}
+{{< gallery src="img14.jpg" title="On the Way to the Glacier" alt="Cyclists and their bikes take a break in front of a snow-capped mountain." >}}
+{{< gallery src="img15.jpg" title="Steaming Mountains in Kerlingarfjöll" alt="Steam rises from a geothermal field nestled among the mountains in Kerlingarfjöll." >}}
+{{< gallery src="img16.jpg" title="Hike Around the Hot Springs" alt="A hiker follows a trail through the colorful, misty landscape of Kerlingarfjöll." >}}
+{{< gallery src="img17.jpg" title="Highland Vibes" alt="A fully loaded bicycle stands in an open, rocky highland landscape." >}}
+{{< gallery src="img18.jpg" title="Next hot spring for bathing" alt="A steaming hot spring in Hveravellir." >}}
 {{< /galleries >}}
 
 ## Breakdown in the Middle of Nowhere
@@ -131,8 +132,8 @@ When the rain stopped, the breakdown spot turned into a pretty good campsite in 
 It did. The next day, we distributed Jonas’s luggage among the other bikes and rode the last 50 kilometers to Blönduós, taking as much care as possible not to wear out our gear. After a week in the highlands, the green coastal landscape felt almost like the Allgäu—only with more wind and fewer bakeries.
 
 {{< galleries >}}
-{{< gallery src="img19.jpg" title="Pannendienst" alt="Zwei Radreisende reparieren ein Fahrrad am Straßenrand." >}}
-{{< gallery src="img20.jpg" title="Geflickter Reifen" alt="Nahaufnahme des provisorisch mit Panzertape reparierten Fahrrads nach der Reifenpanne." >}}
+{{< gallery src="img19.jpg" title="Roadside Assistance" alt="Two cyclists are repairing a bike on the side of the road." >}}
+{{< gallery src="img20.jpg" title="Patch-Repaired Tire" alt="Close-up of the bike, provisionally repaired with duct tape after a flat tire." >}}
 {{< /galleries >}}
 
 ## The Final Kilometers and a Different View of Reykjavík
@@ -144,11 +145,11 @@ After the past few days, Reykjavík felt strangely urban: modern architecture, s
 For the final leg, we rode about 50 kilometers along the coast back to the airport. Sure enough, the hidden bubble wrap was still waiting for us there. That night, we repacked the bikes for the flight and eventually drifted off to a very brief sleep somewhere between the tent, the boxes, and the departure lounge.
 
 {{< galleries >}}
-{{< gallery src="img21.jpg" title="Blönduós" alt="Weite Landschaft bei Blönduós unter dramatischen Wolken." >}}
-{{< gallery src="img22.jpg" title="Fluss in Blönduós" alt="Ein Fluss schlängelt sich durch die grüne Landschaft bei Blönduós." >}}
-{{< gallery src="img23.jpg" title="Auf dem Weg nach Reykjavík" alt="Mehrere Fahrräder sind für die Fahrt nach Reykjavík auf einem Bus-Gepäckträger befestigt." >}}
-{{< gallery src="img24.jpg" title="Sólfar (Sun Voyager) in Reykjavík" alt="Die Stahlskulptur Sólfar an der Uferpromenade von Reykjavík mit Blick über die Bucht zu den Bergen." >}}
-{{< gallery src="img25.jpg" title="Harpa-Konzerthaus in Reykjavík" alt="Detail der modernen gläsernen Fassade des Harpa-Konzerthauses in Reykjavík." >}}
+{{< gallery src="img21.jpg" title="Blönduós" alt="A vast landscape near Blönduós beneath dramatic clouds." >}}
+{{< gallery src="img22.jpg" title="River in Blönduós" alt="A river winds its way through the green countryside near Blönduós." >}}
+{{< gallery src="img23.jpg" title="On the Way to Reykjavík" alt="Several bicycles are secured to a bus luggage rack for the trip to Reykjavík." >}}
+{{< gallery src="img24.jpg" title="Sólfar (Sun Voyager) in Reykjavík" alt="The steel sculpture Sólfar on the Reykjavík waterfront, overlooking the bay toward the mountains." >}}
+{{< gallery src="img25.jpg" title="Harpa Concert Hall in Reykjavík" alt="A close-up of the modern glass facade of the Harpa Concert Hall in Reykjavík." >}}
 {{< /galleries >}}
 
 ## What Remains
