@@ -137,6 +137,32 @@ class TranslationTests(unittest.TestCase):
             self.assertIn('title="EN: Bergsee am Pass"', translated)
             self.assertIn('alt="EN: Beladenes Fahrrad am Bergsee"', translated)
 
+    def test_existing_gallery_translation_is_refreshed_after_caption_translation_is_enabled(self):
+        module = load_module()
+        with tempfile.TemporaryDirectory() as tmp:
+            content = Path(tmp) / "content"
+            bundle = content / "post"
+            bundle.mkdir(parents=True)
+            source = bundle / "index.md"
+            source.write_text(
+                "---\ntitle: Bergtour\nsource_lang: de\n---\n\n{{< gallery src=\"bergsee.jpg\" title=\"Bergsee am Pass\" alt=\"Beladenes Fahrrad am Bergsee\" >}}",
+                encoding="utf-8",
+            )
+            source_post = module.frontmatter.load(source)
+            (bundle / "index.en.md").write_text(
+                "---\nbase_hash: {}\ntitle: Mountain tour\n---\n\n{{< gallery src=\"bergsee.jpg\" title=\"Bergsee am Pass\" alt=\"Beladenes Fahrrad am Bergsee\" >}}".format(module.hash_post(source_post)),
+                encoding="utf-8",
+            )
+
+            class Client:
+                def translate_text(self, text, **kwargs):
+                    return type("Result", (), {"text": f"EN: {text}"})()
+
+            self.assertEqual(module.translate_tree(content, Client()), 2)
+            translated = (bundle / "index.en.md").read_text(encoding="utf-8")
+            self.assertIn('title="EN: Bergsee am Pass"', translated)
+            self.assertIn('alt="EN: Beladenes Fahrrad am Bergsee"', translated)
+
     def test_translation_updates_title_and_description_atomically(self):
         module = load_module()
         with tempfile.TemporaryDirectory() as tmp:
