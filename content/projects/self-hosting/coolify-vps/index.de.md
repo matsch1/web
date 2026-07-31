@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 01ee5fc3bf5ce9998932d2dedb4ce5beeded75711a7f6f6e1f96d7e46f832dfc
+base_hash: 180adb904f21efe3e6e8d8cc061798f3c37812d2f665b805e9e7c48d86fcd2af
 cover:
   alt: coolify-vps-setup
   caption: ''
@@ -46,7 +46,7 @@ Die Wahl des richtigen Hosting-Anbieters hängt von Budget, Standortnähe, Bandb
 {{< figure src="./netcup_vps.png" width="700" alt="" class="right" >}}
 
 In meinem Fall habe ich mich für einen VPS entschieden, der von [netcup](https://www.netcup.com/de/server/vps) gehostet wird.
-Ich habe das Projekt mit der kleinsten VPS-Option `VPS 250 G11s` begonnen, später jedoch auf die zweite Option `VPS 500 G11s` umgestellt.
+Ich habe das Projekt mit der kleinsten VPS-Option `VPS 250 G11s` begonnen, bin aber später auf die zweite Option `VPS 500 G11s` umgestiegen.
 Das kostet mich etwa 5 € pro Monat (einschließlich eigener Domain) und bietet genügend Ressourcen für alles, was ich brauche.
 
 ## Zugriff auf den Server
@@ -75,20 +75,20 @@ Dazu muss auf dem Client-Rechner ein SSH-Schlüssel generiert werden.
 ssh-keygen -t ed25519 -b 4096 -C "your_email@example.com"
 ```
 
-Dabei wird nach dem Namen des Schlüssels, dem Speicherort und der Passphrase gefragt.
-Der Schlüssel sollte unter `/home/$USER/.ssh/<ssh-key>` gespeichert werden. Das Feld für die Passphrase kann leer bleiben.
+Sie werden zur Eingabe des Namens des Schlüssels, des Speicherorts und der Passphrase aufgefordert.
+Der Schlüssel sollte unter `/home/$USER/.ssh/<ssh-key>` gespeichert werden. Die Passphrase kann leer bleiben.
 Dadurch werden zwei Dateien erstellt: `<ssh-key>` und `<ssh-key.pub>`.
 
-Um SSH-Zugriff auf den VPS zu erhalten, muss der Inhalt von `<ssh-key.pub>` nach `/home/<server-user>/.ssh/autorized_keys` kopiert werden. Falls die Datei nicht existiert, muss sie angelegt werden.
-Sie können dazu `nano` oder `vi` als Befehlszeilen-Texteditor verwenden.
+Um SSH-Zugriff auf den VPS zu erhalten, muss der Inhalt von `<ssh-key.pub>` in `/home/<server-user>/.ssh/autorized_keys` kopiert werden. Falls die Datei nicht existiert, muss sie angelegt werden.
+Dazu kannst du `nano` oder `vi` als Texteditor in der Befehlszeile verwenden.
 
-Achten Sie auf die Benutzerrechte dieser Datei.
+Achten Sie dabei auf die Benutzerrechte dieser Datei.
 ```
 sudo chmod 600 /home/<server-user>/.ssh/authorized_keys
 sudo chown <server-user>:<server-user> /home/<server-user>/.ssh/authorized_keys
 ```
 
-Nach dieser SSH-Einrichtung kann vom Client aus über folgenden Befehl auf den VPS zugegriffen werden:
+Nach dieser SSH-Konfiguration kann vom Client aus über folgenden Befehl auf den VPS zugegriffen werden:
 ```
 ssh <server-user>@<server-ip>
 ```
@@ -101,10 +101,10 @@ Um sicherzustellen, dass sich in Zukunft nur noch Sie auf dem Server anmelden k�
 Achtung! Die folgenden Einstellungen können den Zugriff auf Ihren Server unterbrechen!
 {{< /alert >}}
 
-##### Ausschließlich SSH-Zugriff
-Die Anmeldung per Passwort wird untersagt. 
+##### Nur SSH-Zugriff
+Die Anmeldung mit Passwort wird untersagt. 
 {{< alert type="warning" title="Danger" >}}
-Stellen Sie sicher, dass die SSH-Anmeldung einwandfrei funktioniert!
+Achten Sie darauf, dass die SSH-Anmeldung einwandfrei funktioniert!
 {{< /alert >}}
 Passwortauthentifizierung deaktivieren (bearbeite `/etc/ssh/sshd_config`):
 
@@ -193,7 +193,7 @@ curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
 ```
 
 Bevor wir fortfahren, müssen wir die Netzwerkkommunikation von Coolify in der Firewall zulassen.
-Dazu müssen wir die Netzwerke der Docker-Bridge und von Coolify überprüfen, indem wir folgende Befehle ausführen:
+Dazu müssen wir die Netzwerke der Docker-Bridge und von Coolify mit den folgenden Befehlen überprüfen:
 ```
 sudo docker network inspect bridge
 sudo docker network inspect coolify
@@ -224,7 +224,7 @@ Die Ausgabe sollte in etwa so aussehen:
 .
 .
 ```
-Notieren Sie sich die Werte `Subnet` der `IPAM -> Config` der Bridge und von Coolify.
+Notieren Sie sich die Werte `Subnet` der Bridge und `IPAM -> Config` von Coolify.
 Beachten Sie den Wert `Gateway` der Bridge im Vergleich zu `IPAM -> Config`.
 Mit diesen drei Werten können die neuen Firewall-Regeln hinzugefügt werden:
 ``` shell
@@ -234,7 +234,7 @@ sudo ufw reload
 sudo service ssh restart
 ```
 
-Schließen Sie die Installation ab, indem Sie von innerhalb des Tailnet aus auf die Coolify-Weboberfläche unter `http://<tailscale-ip>:8000` zugreifen und den Anweisungen folgen.
+Schließen Sie die Installation ab, indem Sie von innerhalb des Tailnets auf die Coolify-Weboberfläche unter `http://<tailscale-ip>:8000` zugreifen und den Anweisungen folgen.
 
 
 ## Syncthing-Bereitstellung in Coolify
