@@ -77,9 +77,9 @@ ssh-keygen -t ed25519 -b 4096 -C "your_email@example.com"
 
 Dabei wird nach dem Namen des Schlüssels, dem Speicherort und der Passphrase gefragt.
 Der Schlüssel sollte unter `/home/$USER/.ssh/<ssh-key>` gespeichert werden. Das Feld für die Passphrase kann leer bleiben.
-Dadurch werden zwei Dateien erstellt: <ssh-key> und <ssh-key.pub>.
+Dadurch werden zwei Dateien erstellt: `<ssh-key>` und `<ssh-key.pub>`.
 
-Um SSH-Zugriff auf den VPS zu erhalten, muss der Inhalt von <ssh-key.pub> nach `/home/<server-user>/.ssh/autorized_keys` kopiert werden. Falls die Datei nicht existiert, muss sie angelegt werden.
+Um SSH-Zugriff auf den VPS zu erhalten, muss der Inhalt von `<ssh-key.pub>` nach `/home/<server-user>/.ssh/autorized_keys` kopiert werden. Falls die Datei nicht existiert, muss sie angelegt werden.
 Sie können dazu `nano` oder `vi` als Befehlszeilen-Texteditor verwenden.
 
 Achten Sie auf die Benutzerrechte dieser Datei.
@@ -184,7 +184,7 @@ sudo service ssh restart
 ```
 
 Damit verfügen Sie nun über einen VPS, der ziemlich sicher ist.
-Die Anmeldung funktioniert nur von einem Client im Tailnet mit dem <server-key> und dem <server-user>.
+Die Anmeldung funktioniert nur von einem Client im Tailnet mit dem `<server-key>` und dem `<server-user>`.
 
 ## Coolify installieren
 Der nächste Schritt ist die Installation unserer Plattform [Coolify](https://coolify.io/) mithilfe des offiziellen Skripts:
