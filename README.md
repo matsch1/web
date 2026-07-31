@@ -97,7 +97,7 @@ The the gallery can be generated like this:
 {{< gallery src="img3.jpg" title="Vogesen" alt="Reiserad vor bewaldeten Hügeln in den Vogesen" >}}
 {{< gallery src="img4.jpg" title="Bester Schlafplatz mit Aussicht" alt="Zeltplatz mit Blick über die Landschaft" >}}
 {{< /galleries >}}
-Add the image name, a short caption (`title`) shown in the lightbox, and a descriptive `alt` text that explains the image context rather than repeating the filename.
+Add the image name, a short caption (`title`) shown in the lightbox, and a descriptive `alt` text that explains the image context rather than repeating the filename. The first image is the dominant featured image; all following images fill a fixed two-row, horizontally scrollable grid.
 
 ---
 
