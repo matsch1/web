@@ -61,6 +61,9 @@
 - id: project_status_label
   translation: "Project status"
 
+- id: project_status_active
+  translation: "Active"
+
 - id: project_status_completed
   translation: "Completed"
 

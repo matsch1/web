@@ -120,7 +120,9 @@ class PublishContractTests(unittest.TestCase):
         styles = (ROOT / "assets" / "css" / "extended" / "thumbnail.css").read_text()
 
         self.assertIn('Param "project.status"', status_partial)
-        self.assertIn('"completed" "paused" "discontinued"', status_partial)
+        self.assertIn('"active" "completed" "paused" "discontinued"', status_partial)
+        self.assertIn('$activeLifecycleProjects := where $projectPages "Params.project.status" "active"', homepage)
+        self.assertLess(homepage.index('data-home-section="active"'), homepage.index('data-home-section="featured"'))
         self.assertIn('Param "project.statusNote"', status_partial)
         self.assertIn('Param "project.successor"', status_partial)
         self.assertIn('project-status__icon', status_partial)
@@ -139,7 +141,7 @@ class PublishContractTests(unittest.TestCase):
 
         for language in ("de", "en"):
             translations = (ROOT / "i18n" / f"{language}.yaml").read_text()
-            for status in ("completed", "paused", "discontinued"):
+            for status in ("active", "completed", "paused", "discontinued"):
                 self.assertIn(f"id: project_status_{status}", translations)
             self.assertIn("id: project_status_successor_link", translations)
 

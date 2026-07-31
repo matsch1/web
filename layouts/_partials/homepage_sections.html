@@ -4,8 +4,10 @@
 {{- $projectPages = union $projectPages $travelProjects }}
 {{- $projectPages = sort $projectPages "Date" "desc" }}
 
-{{- $explicitArchiveProjects := where $projectPages "Params.homepage.state" "archive" }}
-{{- $nonArchivedProjects := where $projectPages "Params.homepage.state" "ne" "archive" }}
+{{- $activeLifecycleProjects := where $projectPages "Params.project.status" "active" }}
+{{- $otherProjects := where $projectPages "Params.project.status" "ne" "active" }}
+{{- $explicitArchiveProjects := where $otherProjects "Params.homepage.state" "archive" }}
+{{- $nonArchivedProjects := where $otherProjects "Params.homepage.state" "ne" "archive" }}
 {{- $activeProjects := where $nonArchivedProjects "Params.homepage.state" "active" }}
 {{- $nonActiveProjects := where $nonArchivedProjects "Params.homepage.state" "ne" "active" }}
 
@@ -23,6 +25,20 @@
 {{- $engineeringProjects = where $engineeringProjects "Params.homepage.featured" "ne" true }}
 {{- $outdoorProjects := where $homepageProjects "Params.homepage.section" "outdoors" }}
 {{- $outdoorProjects = where $outdoorProjects "Params.homepage.featured" "ne" true }}
+
+{{- with $activeLifecycleProjects }}
+<section class="homepage-section" data-home-section="active">
+  <header class="homepage-section__header">
+    <h2>{{ i18n "home_active_projects_title" }}</h2>
+    <p>{{ i18n "home_active_projects_intro" }}</p>
+  </header>
+  <div class="homepage-cards">
+    {{- range . }}
+      {{- partial "homepage_project_card.html" . }}
+    {{- end }}
+  </div>
+</section>
+{{- end }}
 
 {{- with $featuredProjects }}
 <section class="homepage-section" data-home-section="featured">

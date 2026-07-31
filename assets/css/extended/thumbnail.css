@@ -111,6 +111,10 @@
     --project-status-color: #25864a;
 }
 
+.project-status--active {
+    --project-status-color: #2463b6;
+}
+
 .project-status--paused {
     --project-status-color: #ad7000;
 }
