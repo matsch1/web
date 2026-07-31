@@ -17,6 +17,10 @@ tags:
 - coolify
 - tailscale
 title: Setup Coolify platform on your VPS
+homepage:
+  section: engineering
+  state: evergreen
+  featured: false
 ---
 
 {{< alert type="info" title="" >}}

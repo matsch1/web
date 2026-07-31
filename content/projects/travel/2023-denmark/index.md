@@ -13,6 +13,10 @@ cover:
 tags:
   - bikepacking
 source_lang: de
+homepage:
+  section: outdoors
+  state: evergreen
+  featured: false
 ---
 Das ist eine nachträgliche Sammlung meiner Eindrücke zur Jütlandumrundung.
 

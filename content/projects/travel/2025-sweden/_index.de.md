@@ -12,6 +12,10 @@ draft: false
 listAsProject: true
 source_lang: de
 title: Bikepacking Schweden + Dänemark 2025
+homepage:
+  section: outdoors
+  state: evergreen
+  featured: true
 ---
 
 ## Blog

@@ -12,6 +12,10 @@ description: A record of my bikepacking trip through Denmark and Sweden
 draft: false
 listAsProject: true
 title: Bikepacking in Sweden and Denmark 2025
+homepage:
+  section: outdoors
+  state: evergreen
+  featured: true
 ---
 
 ## Blog

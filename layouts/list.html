@@ -38,6 +38,9 @@
 </div>
 {{- end }}
 
+{{- if .IsHome }}
+  {{- partial "homepage_sections.html" . }}
+{{- else }}
 {{- $pages := union .RegularPages .Sections }}
 
 {{- if and .IsSection .Parent.IsHome }}
@@ -150,6 +153,8 @@
   </nav>
 </footer>
 {{- end }}
+
+{{- end }}{{/* end homepage or standard listing */}}
 
 {{- partial "translation_disclaimer.html" . }}
 

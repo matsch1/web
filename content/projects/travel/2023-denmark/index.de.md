@@ -13,6 +13,10 @@ source_lang: de
 tags:
 - bikepacking
 title: Bikepacking Dänemark - Jütland Runde
+homepage:
+  section: outdoors
+  state: evergreen
+  featured: false
 ---
 
 Das ist eine nachträgliche Sammlung meiner Eindrücke zur Jütlandumrundung.

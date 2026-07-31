@@ -16,6 +16,10 @@ tags:
   - AI
 source_lang: en
 translation_lock: true
+homepage:
+  section: engineering
+  state: archive
+  featured: false
 ---
 
 {{< alert type="info" title="" >}}

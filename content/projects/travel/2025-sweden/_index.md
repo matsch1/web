@@ -12,6 +12,10 @@ source_lang: de
 listAsProject: true
 cascade:
   hiddenInProjectList: true
+homepage:
+  section: outdoors
+  state: evergreen
+  featured: true
 ---
 
 ## Blog

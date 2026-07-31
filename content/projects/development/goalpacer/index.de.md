@@ -18,6 +18,10 @@ tags:
 - sports
 - application
 title: Erste Flutter-App für das Marathontraining
+homepage:
+  section: engineering
+  state: archive
+  featured: false
 ---
 
 {{< alert type="warning" title="" >}}

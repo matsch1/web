@@ -17,6 +17,10 @@ tags:
 - radreise
 - island
 title: Cycling Through Iceland's Highlands on a Hardtail
+homepage:
+  section: outdoors
+  state: evergreen
+  featured: false
 ---
 
 Ten days in Iceland, five bikes, an old hardtail, and way too much luggage. After finishing college, we didn’t want to dive straight back into everyday life—we wanted to get out there one more time: across the highlands, to where the road ends and a trip turns into a little adventure.

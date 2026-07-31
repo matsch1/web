@@ -30,3 +30,30 @@
 
 - id: continue_to_projects
   translation: "Weiter zu den Projekten"
+
+- id: home_featured_title
+  translation: "Aktuell & empfohlen"
+
+- id: home_featured_intro
+  translation: "Eine kuratierte Auswahl aus Technik und unterwegs."
+
+- id: home_engineering_title
+  translation: "Engineering & Homelab"
+
+- id: home_engineering_intro
+  translation: "Projekte rund um Software, Hardware und selbst betriebene Infrastruktur."
+
+- id: home_outdoors_title
+  translation: "Unterwegs"
+
+- id: home_outdoors_intro
+  translation: "Bikepacking- und Reiseprojekte, die mich nach draußen gebracht haben."
+
+- id: home_archive_title
+  translation: "Aus dem Projektarchiv"
+
+- id: home_archive_intro
+  translation: "Ältere Projekte und Dokumentationen, die weiterhin lesenswert sind."
+
+- id: home_archive_link
+  translation: "Alle Projekte ansehen"

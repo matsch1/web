@@ -1,0 +1,73 @@
+{{- $projectPages := where site.RegularPages "Section" "projects" }}
+{{- $projectPages = where $projectPages "Params.hiddenInProjectList" "ne" true }}
+{{- $travelProjects := where site.Pages "Params.listAsProject" true }}
+{{- $projectPages = union $projectPages $travelProjects }}
+{{- $projectPages = sort $projectPages "Date" "desc" }}
+
+{{- $publicProjects := where $projectPages "Params.homepage.state" "ne" "archive" }}
+{{- $featuredProjects := where $publicProjects "Params.homepage.featured" true }}
+{{- $engineeringProjects := where $publicProjects "Params.homepage.section" "engineering" }}
+{{- $engineeringProjects = where $engineeringProjects "Params.homepage.featured" "ne" true }}
+{{- $outdoorProjects := where $publicProjects "Params.homepage.section" "outdoors" }}
+{{- $outdoorProjects = where $outdoorProjects "Params.homepage.featured" "ne" true }}
+{{- $archiveProjects := where $projectPages "Params.homepage.state" "archive" }}
+
+{{- with $featuredProjects }}
+<section class="homepage-section" data-home-section="featured">
+  <header class="homepage-section__header">
+    <h2>{{ i18n "home_featured_title" }}</h2>
+    <p>{{ i18n "home_featured_intro" }}</p>
+  </header>
+  <div class="homepage-cards">
+    {{- range first 3 . }}
+      {{- partial "homepage_project_card.html" . }}
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+{{- with $engineeringProjects }}
+<section class="homepage-section" data-home-section="engineering">
+  <header class="homepage-section__header">
+    <h2>{{ i18n "home_engineering_title" }}</h2>
+    <p>{{ i18n "home_engineering_intro" }}</p>
+  </header>
+  <div class="homepage-cards">
+    {{- range first 3 . }}
+      {{- partial "homepage_project_card.html" . }}
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+{{- with $outdoorProjects }}
+<section class="homepage-section" data-home-section="outdoors">
+  <header class="homepage-section__header">
+    <h2>{{ i18n "home_outdoors_title" }}</h2>
+    <p>{{ i18n "home_outdoors_intro" }}</p>
+  </header>
+  <div class="homepage-cards">
+    {{- range first 3 . }}
+      {{- partial "homepage_project_card.html" . }}
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+{{- with $archiveProjects }}
+<section class="homepage-archive" data-home-section="archive">
+  <header class="homepage-section__header">
+    <h2>{{ i18n "home_archive_title" }}</h2>
+    <p>{{ i18n "home_archive_intro" }}</p>
+  </header>
+  <ul class="homepage-archive__list">
+    {{- range first 3 . }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006" }}</time>
+    </li>
+    {{- end }}
+  </ul>
+  <a class="homepage-archive__link" href="{{ relref $ "/projects/" }}">{{ i18n "home_archive_link" }} →</a>
+</section>
+{{- end }}

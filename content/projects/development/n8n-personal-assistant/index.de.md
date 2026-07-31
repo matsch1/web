@@ -15,6 +15,10 @@ tags:
 - n8n
 - AI
 title: Mein persönlicher n8n-KI-Assistent
+homepage:
+  section: engineering
+  state: archive
+  featured: false
 ---
 
 {{< alert type="info" title="" >}}

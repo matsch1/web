@@ -16,6 +16,10 @@ tags:
 - application
 - linux
 title: ' Shellmaster erstellen: Eine unterhaltsame Art, Linux-Shell-Befehle zu lernen '
+homepage:
+  section: engineering
+  state: archive
+  featured: false
 ---
 
 {{< alert type="warning" title="" >}}

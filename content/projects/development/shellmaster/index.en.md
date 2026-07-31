@@ -16,6 +16,10 @@ tags:
 - application
 - linux
 title: ' Building Shellmaster: A Fun Way to Learn Linux Shell Commands '
+homepage:
+  section: engineering
+  state: archive
+  featured: false
 ---
 
 {{< alert type="warning" title="" >}}

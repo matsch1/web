@@ -15,6 +15,10 @@ tags:
 - obsidian
 - mcp
 title: 'Chat With Your Obsidian Notes: Introducing HTTP MCP Server'
+homepage:
+  section: engineering
+  state: archive
+  featured: false
 ---
 
 {{< alert type="warning" title="" >}}

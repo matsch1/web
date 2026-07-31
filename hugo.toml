@@ -56,7 +56,7 @@ home = ["HTML", "RSS", "JSON"] # for search
 [[menu.main]]
   identifier = "projects"
   name = "Projects"
-  url = "/"
+  url = "/projects/"
   weight = 10
 [[menu.main]]
   identifier = "notes"

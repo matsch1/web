@@ -2,6 +2,7 @@ import sys
 import zlib
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urlparse
 from xml.etree import ElementTree
 
 
@@ -80,6 +81,7 @@ class SeoParser(HTMLParser):
         super().__init__()
         self.meta = {}
         self.links = []
+        self.anchors = []
         self.assets = []
 
     def handle_starttag(self, tag, attrs):
@@ -90,6 +92,8 @@ class SeoParser(HTMLParser):
                 self.meta.setdefault(key, attributes.get("content", ""))
         if tag == "link":
             self.links.append(attributes)
+        if tag == "a":
+            self.anchors.append(attributes.get("href", ""))
         if tag in {"img", "script", "source"}:
             self.assets.append(attributes.get("src", ""))
         if tag == "link":
@@ -190,18 +194,24 @@ def validate_default_social_metadata(path, expected_url):
     fail(f"missing complete localized social-card metadata in {path}")
 
 
-def validate_projects_redirects(public):
+def validate_projects_pages(public):
     for language in ("de", "en"):
         path = public / language / "projects" / "index.html"
         if not path.is_file():
-            fail(f"missing {language} projects redirect")
+            fail(f"missing {language} projects archive")
         html = path.read_text()
         parser = SeoParser()
         parser.feed(html)
-        if parser.meta.get("robots") != "noindex,follow":
-            fail(f"projects redirect is indexable: {path}")
-        if f'window.location.replace("/{language}/")' not in html:
-            fail(f"projects redirect does not target the localized homepage: {path}")
+        if parser.meta.get("robots") == "noindex,follow":
+            fail(f"projects archive is not indexable: {path}")
+        if "window.location.replace" in html:
+            fail(f"projects archive redirects instead of rendering its listing: {path}")
+        project_prefix = f"/{language}/projects/"
+        if not any(
+            urlparse(href).path.startswith(project_prefix) and urlparse(href).path != project_prefix
+            for href in parser.anchors
+        ):
+            fail(f"projects archive contains no project entries: {path}")
 
 
 def validate_gallery(path):
@@ -257,7 +267,7 @@ def main(output):
             public / language / "index.html",
             f"https://blog.matschcode.de/{language}/home-logo-600.webp",
         )
-    validate_projects_redirects(public)
+    validate_projects_pages(public)
     for page in public.rglob("*.html"):
         validate_html_page(page, public, sitemap_locations)
         if "image-gallery" in page.read_text():

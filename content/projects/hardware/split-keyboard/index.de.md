@@ -16,6 +16,10 @@ tags:
 - 3D printing
 - keyboard
 title: Mein erster Selbstbau einer geteilten Tastatur – Ians Tastatur
+homepage:
+  section: engineering
+  state: evergreen
+  featured: true
 ---
 
 {{< alert type="info" title="" >}}

@@ -15,6 +15,10 @@ tags:
 - 3D printing
 - keyboard
 title: My first split keyboard build - Ian's keyboard
+homepage:
+  section: engineering
+  state: evergreen
+  featured: true
 ---
 
 {{< alert type="info" title="" >}}

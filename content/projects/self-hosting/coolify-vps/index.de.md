@@ -17,6 +17,10 @@ tags:
 - coolify
 - tailscale
 title: Richte die Coolify-Plattform auf deinem VPS ein
+homepage:
+  section: engineering
+  state: evergreen
+  featured: false
 ---
 
 {{< alert type="info" title="" >}}

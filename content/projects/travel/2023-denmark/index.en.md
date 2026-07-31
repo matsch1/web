@@ -14,6 +14,10 @@ gallery_translation_version: 1
 tags:
 - bikepacking
 title: Bikepacking in Denmark – The Jutland Loop
+homepage:
+  section: outdoors
+  state: evergreen
+  featured: false
 ---
 
 This is a retrospective collection of my impressions from cycling around Jutland.

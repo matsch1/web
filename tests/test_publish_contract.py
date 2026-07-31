@@ -55,26 +55,54 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn("hugo --gc --minify", workflow)
         self.assertIn("python scripts/verify_site.py public", workflow)
 
-    def test_homepage_is_the_canonical_projects_listing(self):
+    def test_homepage_is_a_curated_project_entrypoint(self):
         head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
         listing = (ROOT / "layouts" / "list.html").read_text()
+        homepage_sections = ROOT / "layouts" / "_partials" / "homepage_sections.html"
+
         self.assertIn('<title>{{ if and .Title (not .IsHome) }}{{ .Title }} | {{ end }}{{ site.Title }}</title>', head)
-        self.assertIn('where site.RegularPages "Section" "projects"', listing)
-        self.assertIn('where .Site.Pages "Params.listAsProject" true', listing)
-        self.assertIn('$class = "post-entry project-entry"', listing)
+        self.assertIn('partial "homepage_sections.html" .', listing)
+        self.assertTrue(homepage_sections.is_file())
+        rendered = homepage_sections.read_text()
+        for section in ("featured", "engineering", "outdoors", "archive"):
+            self.assertIn(f'data-home-section="{section}"', rendered)
+        self.assertIn('Params.homepage.state', rendered)
+        self.assertIn('Params.homepage.section', rendered)
+        self.assertIn('Params.homepage.featured', rendered)
+        self.assertIn('relref $ "/projects/"', rendered)
 
         for language in ("de", "en"):
             homepage = ROOT / "content" / f"_index.{language}.md"
-            redirect = ROOT / "content" / "projects" / f"_index.{language}.md"
+            projects = ROOT / "content" / "projects" / f"_index.{language}.md"
             self.assertTrue(homepage.is_file())
-            self.assertNotIn("aliases:", homepage.read_text())
-            self.assertTrue(redirect.is_file())
-            self.assertIn("redirect_to: /", redirect.read_text())
-            self.assertIn("sitemap:\n  disable: true", redirect.read_text())
+            self.assertTrue(projects.is_file())
+            self.assertNotIn("redirect_to:", projects.read_text())
+            self.assertNotIn("layout: redirect", projects.read_text())
+            self.assertNotIn("sitemap:\n  disable: true", projects.read_text())
 
-        redirect = ROOT / "content" / "projects" / "_index.md"
-        self.assertTrue(redirect.is_file())
-        self.assertIn("redirect_to: /", redirect.read_text())
+        projects = ROOT / "content" / "projects" / "_index.md"
+        self.assertNotIn("redirect_to:", projects.read_text())
+        self.assertNotIn("layout: redirect", projects.read_text())
+
+    def test_project_homepage_metadata_classifies_the_curated_and_archive_entries(self):
+        expected = {
+            "content/projects/development/n8n-personal-assistant": ("engineering", "archive", False),
+            "content/projects/hardware/split-keyboard": ("engineering", "evergreen", True),
+            "content/projects/self-hosting/coolify-vps": ("engineering", "evergreen", False),
+            "content/projects/travel/2025-sweden/_index": ("outdoors", "evergreen", True),
+            "content/projects/travel/2018-iceland": ("outdoors", "evergreen", False),
+            "content/projects/travel/2023-denmark": ("outdoors", "evergreen", False),
+            "content/projects/development/obsidian-http-mcp": ("engineering", "archive", False),
+            "content/projects/development/shellmaster": ("engineering", "archive", False),
+            "content/projects/development/goalpacer": ("engineering", "archive", False),
+        }
+        for base, (section, state, featured) in expected.items():
+            for suffix in ("", ".de", ".en"):
+                path = ROOT / f"{base}/index{suffix}.md" if not base.endswith("_index") else ROOT / f"{base}{suffix}.md"
+                content = path.read_text()
+                self.assertIn(f"section: {section}", content, path)
+                self.assertIn(f"state: {state}", content, path)
+                self.assertIn(f"featured: {str(featured).lower()}", content, path)
 
     def test_homepage_share_title_uses_the_site_name(self):
         expected_titles = {"de": "title: matschcode", "en": 'title: "matschcode"'}
@@ -82,18 +110,17 @@ class PublishContractTests(unittest.TestCase):
             homepage = ROOT / "content" / f"_index.{language}.md"
             self.assertIn(expected_title, homepage.read_text())
 
-    def test_only_the_projects_index_uses_the_home_redirect_layout(self):
+    def test_projects_is_a_real_list_page_and_its_navigation_targets_it(self):
         for suffix in ("", ".de", ".en"):
-            redirect = ROOT / "content" / "projects" / f"_index{suffix}.md"
-            self.assertIn("layout: redirect", redirect.read_text())
+            projects = ROOT / "content" / "projects" / f"_index{suffix}.md"
+            self.assertNotIn("layout: redirect", projects.read_text())
+            self.assertNotIn("redirect_to:", projects.read_text())
 
-        self.assertTrue((ROOT / "layouts" / "_default" / "redirect.html").is_file())
         self.assertFalse((ROOT / "layouts" / "projects" / "list.html").exists())
 
-    def test_projects_navigation_targets_the_canonical_homepage(self):
         config = (ROOT / "hugo.toml").read_text()
         projects_menu = config.split('identifier = "projects"', 1)[1].split('[[menu.main]]', 1)[0]
-        self.assertIn('url = "/"', projects_menu)
+        self.assertIn('url = "/projects/"', projects_menu)
 
     def test_notes_and_projects_lists_can_be_filtered_by_category(self):
         listing = (ROOT / "layouts" / "list.html").read_text()
@@ -272,18 +299,25 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn('"en/home-logo-600.webp"', verifier)
         self.assertIn("safari-pinned-tab.svg", verifier)
 
-    def test_artifact_validator_rejects_project_page_without_a_home_redirect(self):
+    def test_artifact_validator_rejects_missing_project_archive_page(self):
+        verifier = self.verifier_module()
+        with tempfile.TemporaryDirectory() as directory:
+            public = Path(directory)
+            with self.assertRaises(SystemExit):
+                verifier.validate_projects_pages(public)
+
+    def test_artifact_validator_rejects_project_archive_without_project_entries(self):
         verifier = self.verifier_module()
         with tempfile.TemporaryDirectory() as directory:
             public = Path(directory)
             for language in ("de", "en"):
                 page = public / language / "projects" / "index.html"
                 page.parent.mkdir(parents=True, exist_ok=True)
-                page.write_text("<html><head></head><body>Projects</body></html>")
+                page.write_text("<html><head></head><body><h1>Projects</h1></body></html>")
             with self.assertRaises(SystemExit):
-                verifier.validate_projects_redirects(public)
+                verifier.validate_projects_pages(public)
 
-    def test_artifact_validator_accepts_localized_project_home_redirects(self):
+    def test_artifact_validator_accepts_indexable_localized_project_archive_pages(self):
         verifier = self.verifier_module()
         with tempfile.TemporaryDirectory() as directory:
             public = Path(directory)
@@ -291,10 +325,10 @@ class PublishContractTests(unittest.TestCase):
                 page = public / language / "projects" / "index.html"
                 page.parent.mkdir(parents=True, exist_ok=True)
                 page.write_text(
-                    '<meta name="robots" content="noindex,follow">'
-                    f'<script>window.location.replace("/{language}/")</script>'
+                    f'<html><head><link rel="canonical" href="https://blog.matschcode.de/{language}/projects/"></head>'
+                    f'<body><h1>Projects</h1><a href="/{language}/projects/example/">Example</a></body></html>'
                 )
-            verifier.validate_projects_redirects(public)
+            verifier.validate_projects_pages(public)
 
     def test_artifact_validator_rejects_html_without_required_seo_metadata(self):
         verifier = self.verifier_module()

@@ -15,6 +15,10 @@ tags:
 - obsidian
 - mcp
 title: 'Mit Ihren Obsidian-Notizen chatten: Vorstellung des HTTP-MCP-Servers'
+homepage:
+  section: engineering
+  state: archive
+  featured: false
 ---
 
 {{< alert type="warning" title="" >}}

@@ -15,6 +15,10 @@ tags:
   - radreise
   - island
 source_lang: de
+homepage:
+  section: outdoors
+  state: evergreen
+  featured: false
 ---
 
 Zehn Tage Island, fünf Fahrräder, ein altes Hardtail und viel zu viel Gepäck. Nach dem Studium wollten wir nicht direkt in den Alltag starten, sondern noch einmal raus: quer durch das Hochland, dorthin, wo die Straße aufhört und aus einer Reise ein kleines Abenteuer wird.

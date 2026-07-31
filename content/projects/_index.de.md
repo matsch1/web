@@ -1,9 +1,6 @@
 ---
 title: Projekte
-layout: redirect
+description: "Eine chronologische Sammlung meiner Software-, Homelab- und Outdoor-Projekte."
 draft: false
 translation_lock: true
-redirect_to: /
-sitemap:
-  disable: true
 ---

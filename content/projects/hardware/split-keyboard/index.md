@@ -15,6 +15,10 @@ tags:
   - 3D printing
   - keyboard
 source_lang: en
+homepage:
+  section: engineering
+  state: evergreen
+  featured: true
 ---
 
 {{< alert type="info" title="" >}}

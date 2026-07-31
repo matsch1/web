@@ -16,6 +16,10 @@ tags:
   - application
   - linux
 source_lang: en
+homepage:
+  section: engineering
+  state: archive
+  featured: false
 ---
 
 {{< alert type="warning" title="" >}}
