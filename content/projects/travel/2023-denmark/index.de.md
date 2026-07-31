@@ -12,7 +12,7 @@ draft: false
 homepage:
   featured: false
   section: outdoors
-  state: archive
+  state: active
 project:
   status: completed
 source_lang: de

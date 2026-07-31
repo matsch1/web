@@ -97,7 +97,7 @@ class PublishContractTests(unittest.TestCase):
             "content/projects/self-hosting/coolify-vps": ("engineering", "evergreen", False, "paused"),
             "content/projects/travel/2025-sweden/_index": ("outdoors", "evergreen", True, "completed"),
             "content/projects/travel/2018-iceland": ("outdoors", "evergreen", False, "completed"),
-            "content/projects/travel/2023-denmark": ("outdoors", "archive", False, "completed"),
+            "content/projects/travel/2023-denmark": ("outdoors", "active", False, "completed"),
             "content/projects/development/obsidian-http-mcp": ("engineering", "archive", False, "discontinued"),
             "content/projects/development/shellmaster": ("engineering", "archive", False, "discontinued"),
             "content/projects/development/goalpacer": ("engineering", "archive", False, "discontinued"),
@@ -123,11 +123,15 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn('"completed" "paused" "discontinued"', status_partial)
         self.assertIn('Param "project.statusNote"', status_partial)
         self.assertIn('Param "project.successor"', status_partial)
+        self.assertIn('project-status__icon', status_partial)
+        self.assertIn('project_status_successor_link', status_partial)
         self.assertIn('partial "project_status.html" (dict "page" . "variant" "badge")', card)
         self.assertIn('partial "project_status.html" (dict "page" . "variant" "badge")', listing)
         self.assertIn('or (eq .Section "projects") (.Param "listAsProject")', listing)
         self.assertIn('partial "project_status.html" (dict "page" . "variant" "badge")', homepage)
         self.assertIn('partial "project_status.html" (dict "page" . "variant" "banner")', single)
+        self.assertIn('--project-status-color', styles)
+        self.assertIn('.project-status__icon svg', styles)
         self.assertIn(".project-status--badge", styles)
         self.assertIn(".project-status--banner", styles)
 

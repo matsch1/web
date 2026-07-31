@@ -14,7 +14,7 @@ gallery_translation_version: 1
 homepage:
   featured: false
   section: outdoors
-  state: archive
+  state: active
 project:
   status: completed
 tags:

@@ -79,7 +79,7 @@
 }
 
 .project-status--badge {
-    color: var(--secondary);
+    color: var(--project-status-color, var(--secondary));
     display: inline-block;
     font-size: 0.82rem;
     font-weight: 600;
@@ -92,29 +92,70 @@
     margin-right: 0.35rem;
 }
 
-.project-status--paused,
-.project-status--discontinued {
-    color: var(--secondary);
-}
-
 .project-status--banner {
-    background: var(--code-bg);
-    border-left: 3px solid var(--border);
-    color: var(--secondary);
+    align-items: flex-start;
+    background: color-mix(in srgb, var(--project-status-color) 11%, var(--code-bg));
+    border: 1px solid color-mix(in srgb, var(--project-status-color) 38%, var(--border));
+    border-left: 4px solid var(--project-status-color);
+    border-radius: 0.5rem;
+    color: var(--primary);
+    display: flex;
     font-size: 0.95rem;
+    gap: 0.75rem;
     line-height: 1.55;
     margin: 1.25rem 0;
     padding: 0.85rem 1rem;
 }
 
+.project-status--completed {
+    --project-status-color: #25864a;
+}
+
+.project-status--paused {
+    --project-status-color: #ad7000;
+}
+
+.project-status--discontinued {
+    --project-status-color: #bd3b3b;
+}
+
+.project-status__icon {
+    align-items: center;
+    background: var(--project-status-color);
+    border-radius: 999px;
+    color: white;
+    display: inline-flex;
+    flex: 0 0 auto;
+    height: 1.5rem;
+    justify-content: center;
+    margin-top: 0.05rem;
+    width: 1.5rem;
+}
+
+.project-status__icon svg {
+    fill: none;
+    height: 0.9rem;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2.5;
+    width: 0.9rem;
+}
+
+.project-status__content {
+    min-width: 0;
+}
+
 .project-status--banner strong {
-    color: var(--primary);
+    color: var(--project-status-color);
 }
 
 .project-status--banner a {
     display: inline-block;
     font-weight: 600;
     margin-left: 0.5rem;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.15em;
 }
 
 .homepage-archive {

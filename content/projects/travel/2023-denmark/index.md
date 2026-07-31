@@ -15,7 +15,7 @@ tags:
 source_lang: de
 homepage:
   section: outdoors
-  state: archive
+  state: active
   featured: false
 project:
   status: completed

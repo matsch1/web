@@ -5,11 +5,22 @@
   {{- $label := i18n (printf "project_status_%s" $status) -}}
   {{- if eq $variant "banner" -}}
     <aside class="project-status project-status--banner project-status--{{ $status }}" aria-label="{{ i18n "project_status_label" }}">
-      <strong>{{ $label }}</strong>
-      {{- with $page.Param "project.statusNote" }}<span> — {{ . }}</span>{{ end -}}
-      {{- with $page.Param "project.successor" }}
-        <a href="{{ . | relLangURL }}">{{ i18n "project_status_successor_link" }}</a>
-      {{- end }}
+      <span class="project-status__icon" aria-hidden="true">
+        {{- if eq $status "completed" -}}
+          <svg viewBox="0 0 24 24" focusable="false"><path d="m5 12 4.5 4.5L19 7" /></svg>
+        {{- else if eq $status "paused" -}}
+          <svg viewBox="0 0 24 24" focusable="false"><path d="M8 6v12M16 6v12" /></svg>
+        {{- else -}}
+          <svg viewBox="0 0 24 24" focusable="false"><path d="M6 6l12 12M18 6 6 18" /></svg>
+        {{- end -}}
+      </span>
+      <span class="project-status__content">
+        <strong>{{ $label }}</strong>
+        {{- with $page.Param "project.statusNote" }}<span> — {{ . }}</span>{{ end -}}
+        {{- with $page.Param "project.successor" }}
+          <a href="{{ . | relLangURL }}">{{ i18n "project_status_successor_link" }} <span aria-hidden="true">→</span></a>
+        {{- end }}
+      </span>
     </aside>
   {{- else -}}
     <span class="project-status project-status--badge project-status--{{ $status }}">{{ $label }}</span>
