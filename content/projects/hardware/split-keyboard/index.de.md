@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 411ea0f25a85cd07e2c1496e8c9dba7cd6c072657eae6951db442a2dc0c43a65
+base_hash: 8dbd72fa3752e24880f2e824e13576a86c949c9fc395e4ec59bd50ff90622e91
 cover:
   alt: split-keyboard-ianmaclarty
   caption: ''
@@ -11,15 +11,15 @@ date: 2025-08-04
 description: Modellbau, Löten, 3D-Druck, Zusammenbau, Flashen
 draft: false
 gallery_translation_version: 1
+homepage:
+  featured: true
+  section: engineering
+  state: evergreen
 slug: split-keyboard-ianmaclarty
 tags:
 - 3D printing
 - keyboard
 title: Mein erster Selbstbau einer geteilten Tastatur – Ians Tastatur
-homepage:
-  section: engineering
-  state: evergreen
-  featured: true
 ---
 
 {{< alert type="info" title="" >}}
@@ -31,13 +31,13 @@ Die QMK-Software entwickelt sich mit der Zeit weiter.
 
 {{< figure src="./split-keyboard-guy.png" width="700" alt="Guy typing on split keyboard" class="right" >}}
 
-Wer möchte nicht mühelos cool wirken, während er auf einer Tastatur tippt, die sonst niemand versteht? Ich auf jeden Fall.  
+Wer möchte nicht mühelos cool wirken, während er auf einer Tastatur tippt, die sonst niemand versteht? Ich jedenfalls schon.  
 
 Abgesehen vom reinen Stilfaktor habe ich einige echte Vorteile der Verwendung einer geteilten Tastatur entdeckt. Für mich sind die wichtigsten Vorteile:
 
-- **Weniger Handbewegungen:** Es hat mich immer genervt, meine Hand bewegen zu müssen, um die Pfeiltasten oder Ziffern zu erreichen. Und von den Akrobatikübungen mit Daumen und kleinen Finger, die nötig sind, um Alt, Esc oder Strg zu drücken, will ich gar nicht erst anfangen. Mit einer geteilten Tastatur werden diese Bewegungen auf ein Minimum reduziert.  
+- **Weniger Handbewegungen:** Es hat mich immer genervt, meine Hand bewegen zu müssen, um die Pfeiltasten oder Ziffern zu erreichen. Und von den Akrobatikübungen mit Daumen und kleinem Finger, die nötig sind, um Alt, Esc oder Strg zu drücken, will ich gar nicht erst anfangen. Mit einer geteilten Tastatur werden diese Bewegungen auf ein Minimum reduziert.  
 
-- **Bessere Ergonomie:** Bei einem geteilten Layout geht es nicht nur um den Komfort für die Finger. Es ermöglicht mir, die beiden Tastaturhälften natürlicher zu positionieren, was meine gesamte Sitzhaltung am Schreibtisch verbessert und verhindert, dass ich wie eine Garnele dasitze.  
+- **Bessere Ergonomie:** Bei einem geteilten Layout geht es nicht nur um den Komfort für die Finger. Es ermöglicht mir, die Tastaturhälften natürlicher zu positionieren, was meine gesamte Sitzhaltung am Schreibtisch verbessert und verhindert, dass ich wie eine Garnele dasitze.  
 
 - **Höhere Tippgeschwindigkeit:** Weniger Handbewegungen bedeuten weniger Zeitverlust, was natürlich zu schnellerem Tippen führt, sobald man sich an das Layout gewöhnt hat.  
 
@@ -49,7 +49,7 @@ Für meinen ersten Selbstbau bin ich auf Ian Maclartys GitHub-Projekt gestoßen,
 Das Konzept ist einfach: Baue dir deine eigene geteilte Tastatur aus Teilen, die du problemlos bei AliExpress beschaffen kannst.  
 
 Die einzigen anspruchsvollen Teile sind die Leiterplatten und die 3D-gedruckten Gehäuse.  
-Glücklicherweise hatte ein Kollege zwei übrig gebliebene Leiterplatten für mich, und die Gehäuse kann ich mit meinem 3D-Drucker selbst drucken.
+Glücklicherweise hatte ein Kollege zwei Ersatz-Leiterplatten für mich, und die Gehäuse kann ich mit meinem 3D-Drucker selbst drucken.
 
 Für alles andere kannst du einfach der Anleitung im [README](https://github.com/ianmaclarty/ik/blob/main/README.md) des Projekts folgen.
 
@@ -61,7 +61,7 @@ Die Leiterplatten, die ich erhalten habe, wurden leicht modifiziert, sodass dies
 Dies ist eine erhebliche Verbesserung, da Leiterplattenhersteller in der Regel eine Mindestbestellmenge von fünf Stück pro Gerber-Datei verlangen.  
 Durch die Neugestaltung muss nur noch ein Typ bestellt werden, was die Kosten senkt.  
 Beispielsweise lassen sich fünf identische Leiterplatten bei Anbietern wie [pcbway.com](https://www.pcbway.com/) für etwa 30 € herstellen.
-Leider verfüge ich nicht über die modifizierten Versionen der Gerber-Dateien.
+Leider liegen mir die modifizierten Versionen der Gerber-Dateien nicht vor.
 
 ## 3D-Modellierung und Druck des Rahmens
 
@@ -88,7 +88,7 @@ Für alles andere halte dich an die Anleitung im Original
 [README](https://github.com/ianmaclarty/ik/blob/main/README.md).
 
 {{< alert type="warning" title="" >}}
-Wenn ihr die Originalgehäuse verwendet, müsst ihr das vordere Gehäuse **vor** dem Löten der Schalter anbringen.
+Wenn du die Originalgehäuse verwendest, musst du das vordere Gehäuse **vor** dem Löten der Schalter anbringen.
 {{< /alert >}}
 
 {{< galleries >}}

@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 4c7c0ee1d7204e27b8dd8da3b837957520c1d807437c60c6e58a3cf1978f4184
+base_hash: 2b1bae1873ea24a6698352a7b5e66d93438d77b1bda8658d7fe33b516fae8918
 cover:
   alt: bikepacking-denmark
   caption: ''
@@ -11,13 +11,13 @@ date: 2023-07-01
 description: Cycling clockwise around Jutland with Jonas
 draft: false
 gallery_translation_version: 1
+homepage:
+  featured: false
+  section: outdoors
+  state: evergreen
 tags:
 - bikepacking
 title: Bikepacking in Denmark – The Jutland Loop
-homepage:
-  section: outdoors
-  state: evergreen
-  featured: false
 ---
 
 This is a retrospective collection of my impressions from cycling around Jutland.

@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: ed721eb1d35afe7d259b841a8270a6bbc7f0e628b4cc09806bbca43d8a4c7aef
+base_hash: 23c6cb2905522db2ea161e6951db7c9c4d9913792a34c8370780e46c19c9bdb8
 cover:
   alt: shellmaster
   caption: ''
@@ -10,16 +10,16 @@ cover:
 date: 2025-04-06
 description: Mein Weg zur Entwicklung einer Quiz-App mit Flutter, Pocketbase und Unleash
 draft: false
+homepage:
+  featured: false
+  section: engineering
+  state: archive
 slug: building-shellmaster
 tags:
 - flutter
 - application
 - linux
 title: ' Shellmaster erstellen: Eine unterhaltsame Art, Linux-Shell-Befehle zu lernen '
-homepage:
-  section: engineering
-  state: archive
-  featured: false
 ---
 
 {{< alert type="warning" title="" >}}
@@ -47,7 +47,7 @@ Bei der Entwicklung von Shellmaster stieß ich auf einige interessante technisch
 
 Shellmaster wurde entwickelt, um das Erlernen von Linux-Befehlen unterhaltsam und interaktiv zu gestalten. Hier sind einige der wichtigsten Funktionen:
 
-- **Verschiedene Quizmodi**: Teste dein Wissen in verschiedenen Spielmodi, darunter zeitlich begrenzte Quizze und Übungsrunden.
+- **Verschiedene Quiz-Modi**: Teste dein Wissen in verschiedenen Spielmodi, darunter zeitlich begrenzte Quizze und Übungsrunden.
 - **Schwierigkeitsstufen und Kategorien**: Die Fragen sind in die Stufen „leicht“, „mittel“ und „schwer“ unterteilt und decken wichtige Shell-Befehle, Skripting und Systemadministration ab.
 - **Fortschrittsverfolgung**: Behalte deine Leistung im Blick und verbessere dich im Laufe der Zeit.
 - **Individuelle Herausforderungen**: Nutzer können sich eigene Herausforderungen stellen und sich mit Freunden messen.
@@ -59,7 +59,7 @@ Shellmaster wurde entwickelt, um das Erlernen von Linux-Befehlen unterhaltsam un
 ## App-Entwicklung
 
 In den nächsten Kapiteln geht es um meine Erfahrungen während des Entwicklungsprozesses.
-Wenn du an interessanten Flutter-Inhalten interessiert bist, lies weiter. Wenn du nur wegen Linux und Bash hier bist, schau dir die App im Google Play Store an: „Shellmaster – Apps auf Google Play“.
+Wenn du an interessanten Flutter-Themen interessiert bist, lies weiter. Wenn du nur wegen Linux und Bash hier bist, schau dir die App im Google Play Store an: „Shellmaster – Apps auf Google Play“.
 ### Die Wahl von Flutter für eine plattformübergreifende Quiz-App
 
 Ich habe mich für **Flutter** entschieden, weil es einen **schnellen Entwicklungszyklus, ansprechende UI-Funktionen und plattformübergreifende Unterstützung** bietet. Mit einer einzigen Codebasis konnte ich sowohl Android als auch (möglicherweise) iOS in Zukunft ansprechen. Zu den wichtigsten Flutter-Funktionen, die ich genutzt habe, gehören:
@@ -72,7 +72,7 @@ Ich habe mich für **Flutter** entschieden, weil es einen **schnellen Entwicklun
 
 ### PocketBase als schlankes Backend
 
-Zur Verwaltung von Quizdaten, Benutzerfortschritten und der Authentifizierung habe ich mich für **PocketBase** entschieden, ein in Go geschriebenes Open-Source-Backend. Es bietet eine **SQLite-Datenbank, Echtzeit-Abonnements und eine API mit minimalem Einrichtungsaufwand**. Hier sind die Gründe, warum es sich gut für Shellmaster bewährt hat:
+Zur Verwaltung von Quizdaten, Benutzerfortschritten und der Authentifizierung habe ich mich für **PocketBase** entschieden, ein in Go geschriebenes Open-Source-Backend. Es bietet eine **SQLite-Datenbank, Echtzeit-Abonnements und eine API mit minimalem Einrichtungsaufwand**. Hier sind die Gründe, warum es sich gut für Shellmaster geeignet hat:
 
 - **Selbstgehostete Kontrolle**: Durch den Betrieb von PocketBase auf meinem VPS habe ich die volle Kontrolle über die Daten.
 - **Einfache Integration**: PocketBase stellt eine REST-API bereit, die das `http`-Paket von Flutter problemlos nutzen kann.
@@ -92,7 +92,7 @@ Future<List<Question>> fetchQuestions() async {
 
 ### Einsatz von Unleash für Feature-Flags
 
-Um **schrittweise Feature-Einführungen und A/B-Tests** zu ermöglichen, habe ich **Unleash** integriert, ein Open-Source-Feature-Flag-System. Dadurch konnte ich **Features dynamisch aktivieren und deaktivieren**, ohne ein neues App-Update veröffentlichen zu müssen.
+Um **schrittweise Feature-Einführungen und A/B-Tests** zu ermöglichen, habe ich **Unleash** integriert, ein Open-Source-Feature-Flag-System. Dadurch konnte ich **Features dynamisch aktivieren oder deaktivieren**, ohne ein neues App-Update veröffentlichen zu müssen.
 
 #### Warum Feature-Flags verwenden?
 
@@ -126,4 +126,4 @@ Die Veröffentlichung von Shellmaster im **Google Play Store** umfasste mehrere 
 
 Die Entwicklung von Shellmaster war eine spannende Reise, bei der **die UI-Fähigkeiten von Flutter, das leichtgewichtige Backend von PocketBase, die Feature-Flags von Unleash und die Bereitstellung über die Google Play Console** kombiniert wurden. Das Ergebnis ist eine unterhaltsame und lehrreiche Quiz-App, die Nutzern hilft, ihre Linux-Shell-Kenntnisse interaktiv zu verbessern.
 
-Welche interessanten Tech-Stacks habt ihr in euren Apps verwendet? Lasst uns in den Kommentaren darüber diskutieren!
+Welche interessanten Tech-Stacks habt ihr in euren Apps verwendet? Lasst uns das in den Kommentaren diskutieren!

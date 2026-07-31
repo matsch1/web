@@ -9,16 +9,16 @@ cover:
 date: 2025-09-28
 description: Chat with your remote Obsidian vault using http mcp server.
 draft: false
+homepage:
+  featured: false
+  section: engineering
+  state: archive
 slug: obsidian-http-mcp
 source_lang: en
 tags:
 - obsidian
 - mcp
 title: 'Chat With Your Obsidian Notes: Introducing HTTP MCP Server'
-homepage:
-  section: engineering
-  state: archive
-  featured: false
 ---
 
 {{< alert type="warning" title="" >}}

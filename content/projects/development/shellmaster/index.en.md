@@ -9,6 +9,10 @@ cover:
 date: 2025-04-06
 description: My path of building a quiz app using flutter, pocketbase and unleash
 draft: false
+homepage:
+  featured: false
+  section: engineering
+  state: archive
 slug: building-shellmaster
 source_lang: en
 tags:
@@ -16,10 +20,6 @@ tags:
 - application
 - linux
 title: ' Building Shellmaster: A Fun Way to Learn Linux Shell Commands '
-homepage:
-  section: engineering
-  state: archive
-  featured: false
 ---
 
 {{< alert type="warning" title="" >}}

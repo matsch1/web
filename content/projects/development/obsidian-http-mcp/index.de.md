@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: db1e646ed6bf5ebfb81851e92db3c75a9d0d44ce1eecef9ff5ac72ad1252c26e
+base_hash: 9dbd51ea6da7151dd60c862955a4187e9984388d2a2bef18fc5b9c77739dfdca
 cover:
   alt: obsidian-http-mcp
   caption: ''
@@ -10,29 +10,29 @@ cover:
 date: 2025-09-28
 description: Kommuniziere mit deinem Remote-Obsidian-Vault über den HTTP-MCP-Server.
 draft: false
+homepage:
+  featured: false
+  section: engineering
+  state: archive
 slug: obsidian-http-mcp
 tags:
 - obsidian
 - mcp
 title: 'Mit Ihren Obsidian-Notizen chatten: Vorstellung des HTTP-MCP-Servers'
-homepage:
-  section: engineering
-  state: archive
-  featured: false
 ---
 
 {{< alert type="warning" title="" >}}
-Leider wird der MCP-Server nicht mehr benötigt, da der gesamte [n8n-KI-Agent](https://blog.matschcode.de/de/projects/development/n8n-ai-assistant/) durch den Hermes-Agenten ersetzt wurde.
+Leider wird der MCP-Server nicht mehr benötigt, da das gesamte [n8n AI agent](https://blog.matschcode.de/en/projects/development/n8n-ai-assistant/) durch den Hermes-Agenten ersetzt wurde.
 {{< /alert >}}
 
 ## Einleitung
-Wenn ihr meine Obsidian-Konfiguration verfolgt habt, wisst ihr, dass ich es liebe, meine Notizen mit Syncthing ([Mein Obsidian- und Syncthing-Setup: Eine selbst gehostete Cloud für Notizen, Backups und mehr](https://blog.matschcode.de/de/notes/self-hosting/obsidian-cloud-sync-setup/)) geräteübergreifend zu synchronisieren. Aber ich wollte mehr als nur Synchronisierung – ich wollte **intelligent mit meinen Notizen interagieren, überall und jederzeit**.
+Wenn ihr meine Obsidian-Konfiguration verfolgt habt, wisst ihr, dass ich es liebe, meine Notizen mit Syncthing ([My Obsidian + Syncthing Setup: A Self-Hosted Cloud for Notes, Backups, and More](https://blog.matschcode.de/en/notes/self-hosting/obsidian-cloud-sync-setup/)) geräteübergreifend zu synchronisieren. Aber ich wollte mehr als nur Synchronisierung – ich wollte **intelligent mit meinen Notizen interagieren, überall und jederzeit**.
 
 ## Warum Obsidian HTTP MCP?
 Deshalb habe ich **Obsidian HTTP MCP** entwickelt, einen auf [FastMCP](https://gofastmcp.com/getting-started/welcome) basierenden, ressourcenschonenden Server, der deinen Obsidian-Vault über HTTP mithilfe des MCP-Protokolls bereitstellt.
 
 Mit diesem Server kannst du:
-- **KI-Clients** wie Cursor direkt mit deinem Vault verbinden und so die Suche in natürlicher Sprache, Analysen und sogar automatisierte Notizänderungen ermöglichen.
+- **KI-Clients** wie Cursor direkt mit deinem Vault verbinden und so die Suche in natürlicher Sprache, Analysen und sogar automatisierte Notizbearbeitungen ermöglichen.
 - **Ihre Notizen bei Bedarf abfragen** – über Skripte, Dashboards oder jedes Gerät, das HTTP unterstützt.
 - **Den Server schlank und schnell halten** dank der FastMCP-Basis.
 
@@ -48,11 +48,11 @@ Der eigentliche Spaß beginnt mit der **KI-Integration**. Du kannst deinen Deskt
 - **Geräteübergreifender Zugriff:** Kommunizieren Sie mit Ihrem Archiv über Skripte, mobile Apps oder Web-Tools.
 - **Minimaler Aufwand:** Zustandslos und effizient, perfekt für schlanke Setups.
 - **Hackbar:** Erstelle Bots, Dashboards oder Automatisierungen rund um deine Notizen.
-- **Sicher:** Läuft hinter deiner bestehenden Sicherheitsinfrastruktur, ohne dass Cloud-Dienste erforderlich sind.
+- **Sicher:** Läuft hinter deiner bestehenden Sicherheitsinfrastruktur, ohne Cloud-Dienste zu benötigen.
 
 ### Beispiele für coole KI-Interaktionen
 - **Suche und Zusammenfassungen in natürlicher Sprache:** Bitten Sie Ihre KI, Notizen in einfachem Englisch zu finden oder zusammenzufassen.
-- **Automatisierte Aktualisierung und Erstellung von Notizen:** Lassen Sie die KI Notizen erstellen oder bearbeiten, Besprechungsprotokolle entwerfen oder Lernkarten generieren.
+- **Automatisierte Aktualisierung und Erstellung von Notizen:** Lassen Sie die KI Notizen erstellen oder bearbeiten, Sitzungsprotokolle entwerfen oder Lernkarten generieren.
 - **Vault-Analysen & Erkenntnisse:** Verfolgen Sie Trends, Lücken und wiederkehrende Themen in Ihren Notizen.
 - **Persönlicher Wissensassistent:** Chatten Sie mit Ihrem Vault, um Fragen zu beantworten, Zusammenhänge vorzuschlagen oder Themen zu empfehlen.
 - **Code- und Workflow-Automatisierung:** Nutzen Sie die KI, um Skripte zu generieren, Notizen zu organisieren oder automatisierte Workflows auszulösen.

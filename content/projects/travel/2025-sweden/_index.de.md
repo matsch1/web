@@ -9,13 +9,13 @@ cover:
 date: 2025-06-20
 description: Dokumentation meiner Bikepacking Reise durch Dänemark und Schweden
 draft: false
+homepage:
+  featured: true
+  section: outdoors
+  state: evergreen
 listAsProject: true
 source_lang: de
 title: Bikepacking Schweden + Dänemark 2025
-homepage:
-  section: outdoors
-  state: evergreen
-  featured: true
 ---
 
 ## Blog

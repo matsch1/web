@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 2cae29eacffe80e9b0d599a546a6258b3f7b6d23934df453143494d861384b58
+base_hash: 01ee5fc3bf5ce9998932d2dedb4ce5beeded75711a7f6f6e1f96d7e46f832dfc
 cover:
   alt: coolify-vps-setup
   caption: ''
@@ -10,6 +10,10 @@ cover:
 date: 2025-05-10
 description: Server-Absicherung und Bereitstellung der ersten App mit Coolify.
 draft: false
+homepage:
+  featured: false
+  section: engineering
+  state: evergreen
 slug: coolify-vps-setup
 tags:
 - server
@@ -17,10 +21,6 @@ tags:
 - coolify
 - tailscale
 title: Richte die Coolify-Plattform auf deinem VPS ein
-homepage:
-  section: engineering
-  state: evergreen
-  featured: false
 ---
 
 {{< alert type="info" title="" >}}
@@ -33,7 +33,7 @@ Selbsthosting hat sich zu einer hervorragenden Möglichkeit entwickelt, praktisc
 
 Zu den typischen Workloads gehören leichtgewichtige Dienste wie PocketBase für den Backend-Speicher, Unleash für Feature-Flags und Automatisierungstools wie n8n. Außerdem plante ich, den Server im Laufe der Zeit für die Dateisynchronisation über Syncthing und andere Experimente zu nutzen.
 
-Um das Deployment und das App-Lebenszyklusmanagement zu optimieren, entschied ich mich für Coolify, eine Open-Source-PaaS, die die Container-Orchestrierung in ein benutzerfreundliches Dashboard abstrahiert. Dieser Beitrag dokumentiert die anfängliche VPS-Einrichtung, grundlegende Sicherheitsmaßnahmen, die Tailscale-Integration und das Deployment der ersten Anwendung.
+Um das Deployment und das App-Lebenszyklusmanagement zu optimieren, entschied ich mich für Coolify, eine Open-Source-PaaS, die die Container-Orchestrierung in einem benutzerfreundlichen Dashboard abstrahiert. Dieser Beitrag dokumentiert die anfängliche VPS-Einrichtung, grundlegende Sicherheitsmaßnahmen, die Tailscale-Integration und das Deployment der ersten Anwendung.
 
 ## Server-Hosting
 Die Wahl des richtigen Hosting-Anbieters hängt von Budget, Standortnähe, Bandbreite und Support ab. Jeder Anbieter, der eine moderne Linux-Distribution und mindestens 2 GB RAM anbietet, kann Coolify problemlos ausführen. Beachten Sie nach der Bereitstellung der Instanz Folgendes:
@@ -49,7 +49,7 @@ In meinem Fall habe ich mich für einen VPS entschieden, der von [netcup](https:
 Ich habe das Projekt mit der kleinsten VPS-Option `VPS 250 G11s` begonnen, später jedoch auf die zweite Option `VPS 500 G11s` umgestellt.
 Das kostet mich etwa 5 € pro Monat (einschließlich eigener Domain) und bietet genügend Ressourcen für alles, was ich brauche.
 
-## Serverzugriff
+## Zugriff auf den Server
 ### SCP
 Für den ersten Zugriff kann man sich über das von netcup bereitgestellte Server-Control-Panel mit dem Server verbinden.
 Beim ersten Mal meldet man sich als Root-Benutzer beim VPS an, daher muss als Erstes ein anderer Benutzer eingerichtet werden.
@@ -77,10 +77,10 @@ ssh-keygen -t ed25519 -b 4096 -C "your_email@example.com"
 
 Dabei wird nach dem Namen des Schlüssels, dem Speicherort und der Passphrase gefragt.
 Der Schlüssel sollte unter `/home/$USER/.ssh/<ssh-key>` gespeichert werden. Das Feld für die Passphrase kann leer bleiben.
-Dadurch werden zwei Dateien erstellt: `<ssh-key>` und `<ssh-key.pub>`.
+Dadurch werden zwei Dateien erstellt: <ssh-key> und <ssh-key.pub>.
 
 Um SSH-Zugriff auf den VPS zu erhalten, muss der Inhalt von <ssh-key.pub> nach `/home/<server-user>/.ssh/autorized_keys` kopiert werden. Falls die Datei nicht existiert, muss sie angelegt werden.
-Sie können dazu `nano` oder `vi` als Texteditor in der Befehlszeile verwenden.
+Sie können dazu `nano` oder `vi` als Befehlszeilen-Texteditor verwenden.
 
 Achten Sie auf die Benutzerrechte dieser Datei.
 ```
@@ -101,10 +101,10 @@ Um sicherzustellen, dass sich in Zukunft nur noch Sie auf dem Server anmelden k�
 Achtung! Die folgenden Einstellungen können den Zugriff auf Ihren Server unterbrechen!
 {{< /alert >}}
 
-##### Nur SSH-Zugriff
+##### Ausschließlich SSH-Zugriff
 Die Anmeldung per Passwort wird untersagt. 
 {{< alert type="warning" title="Danger" >}}
-Achten Sie darauf, dass die SSH-Anmeldung einwandfrei funktioniert!
+Stellen Sie sicher, dass die SSH-Anmeldung einwandfrei funktioniert!
 {{< /alert >}}
 Passwortauthentifizierung deaktivieren (bearbeite `/etc/ssh/sshd_config`):
 
@@ -122,7 +122,7 @@ Root-Anmeldung deaktivieren (bearbeiten `/etc/ssh/sshd_config`):
 
 #### Firewall
 Aus Sicherheitsgründen möchten wir alle Ports blockieren, die wir nicht benötigen.
-Zu diesem Zweck verwenden wir die unkomplizierte Firewall ([UFW](https://wiki.ubuntu.com/UncomplicatedFirewall)).
+Dazu verwenden wir die unkomplizierte Firewall ([UFW](https://wiki.ubuntu.com/UncomplicatedFirewall)).
 
 {{< alert type="warning" title="Danger" >}}
 Bevor du die Firewall aktivierst, überprüfe, ob die SSH-Anmeldung einwandfrei funktioniert!
@@ -177,7 +177,7 @@ Bevor Sie die Firewall wieder aktivieren, versuchen Sie, sich mit folgendem Befe
 ```
 ssh <server-user>@<tailscale-ip>
 ```
-Wenn diese Anmeldung einwandfrei funktioniert, kann die Firewall neu gestartet werden.
+Wenn diese Anmeldung problemlos funktioniert, kann die Firewall neu gestartet werden.
 ```
 sudo ufw reload
 sudo service ssh restart
@@ -247,6 +247,6 @@ Schließen Sie die Installation ab, indem Sie von innerhalb des Tailnet aus auf 
 4. Den Container bereitstellen.  
 5. Über die Service-URL auf Syncthing zugreifen.
 
-## Später: Der VPS als kontrollierter öffentlicher Einstiegspunkt
+## Später: Nutzung des VPS als kontrollierten öffentlichen Ingress
 
-Später habe ich diese VPS- und Tailscale-Grundlage genutzt, um ausgewählte Dienste eines privaten k3s-Homelabs zu veröffentlichen, ohne mein Heimnetzwerk zu öffnen: [K3s-Dienste aus einem durch Tailscale geschützten Homelab über einen VPS bereitstellen](https://blog.matschcode.de/de/notes/self-hosting/expose-k3s-services-via-vps/).
+Später habe ich diesen VPS und die Tailscale-Foundation genutzt, um ausgewählte Dienste aus einem privaten k3s-Homelab zu veröffentlichen, ohne mein Heimnetzwerk zu öffnen: [Expose K3s Services from a Tailscale-Protected Homelab via a VPS](https://blog.matschcode.de/en/notes/self-hosting/expose-k3s-services-via-vps/).

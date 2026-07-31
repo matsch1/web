@@ -10,6 +10,10 @@ date: 2024-11-16
 description: Explanation of how I build my first app for martathon training using
   Flutter
 draft: false
+homepage:
+  featured: false
+  section: engineering
+  state: archive
 slug: goalpacer-pace-estimator
 source_lang: en
 tags:
@@ -17,10 +21,6 @@ tags:
 - sports
 - application
 title: First Flutter app for marathon training
-homepage:
-  section: engineering
-  state: archive
-  featured: false
 ---
 
 {{< alert type="warning" title="" >}}

@@ -9,16 +9,16 @@ cover:
 date: 2025-08-04
 description: Modeling, soldering, 3D printing, assembling, flashing
 draft: false
+homepage:
+  featured: true
+  section: engineering
+  state: evergreen
 slug: split-keyboard-ianmaclarty
 source_lang: en
 tags:
 - 3D printing
 - keyboard
 title: My first split keyboard build - Ian's keyboard
-homepage:
-  section: engineering
-  state: evergreen
-  featured: true
 ---
 
 {{< alert type="info" title="" >}}
