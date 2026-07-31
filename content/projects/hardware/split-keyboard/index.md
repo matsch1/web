@@ -19,6 +19,8 @@ homepage:
   section: engineering
   state: evergreen
   featured: true
+project:
+  status: completed
 ---
 
 {{< alert type="info" title="" >}}

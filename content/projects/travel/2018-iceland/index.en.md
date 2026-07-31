@@ -16,6 +16,8 @@ homepage:
   featured: false
   section: outdoors
   state: evergreen
+project:
+  status: completed
 tags:
 - bikepacking
 - radreise

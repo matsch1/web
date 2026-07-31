@@ -21,6 +21,8 @@ homepage:
   section: engineering
   state: evergreen
   featured: false
+project:
+  status: paused
 ---
 
 {{< alert type="info" title="" >}}

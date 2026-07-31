@@ -13,6 +13,8 @@ homepage:
   featured: false
   section: engineering
   state: evergreen
+project:
+  status: paused
 slug: coolify-vps-setup
 source_lang: en
 tags:

@@ -13,6 +13,8 @@ homepage:
   featured: true
   section: engineering
   state: evergreen
+project:
+  status: completed
 slug: split-keyboard-ianmaclarty
 source_lang: en
 tags:

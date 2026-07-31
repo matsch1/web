@@ -14,6 +14,8 @@ homepage:
   featured: false
   section: engineering
   state: evergreen
+project:
+  status: paused
 slug: coolify-vps-setup
 tags:
 - server

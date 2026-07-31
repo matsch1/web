@@ -14,6 +14,8 @@ homepage:
   featured: true
   section: outdoors
   state: evergreen
+project:
+  status: completed
 listAsProject: true
 title: Bikepacking in Sweden and Denmark 2025
 ---

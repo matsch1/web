@@ -16,6 +16,8 @@ homepage:
   featured: false
   section: engineering
   state: archive
+project:
+  status: discontinued
 slug: goalpacer-pace-estimator
 tags:
 - flutter

@@ -14,7 +14,9 @@ gallery_translation_version: 1
 homepage:
   featured: false
   section: outdoors
-  state: evergreen
+  state: archive
+project:
+  status: completed
 tags:
 - bikepacking
 title: Bikepacking in Denmark – The Jutland Loop

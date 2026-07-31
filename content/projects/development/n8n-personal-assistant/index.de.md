@@ -19,6 +19,8 @@ homepage:
   section: engineering
   state: archive
   featured: false
+project:
+  status: discontinued
 ---
 
 {{< alert type="info" title="" >}}

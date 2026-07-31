@@ -90,25 +90,26 @@ class PublishContractTests(unittest.TestCase):
         self.assertNotIn("redirect_to:", projects.read_text())
         self.assertNotIn("layout: redirect", projects.read_text())
 
-    def test_project_homepage_metadata_classifies_the_curated_and_archive_entries(self):
+    def test_project_metadata_classifies_homepage_and_lifecycle_statuses(self):
         expected = {
-            "content/projects/development/n8n-personal-assistant": ("engineering", "archive", False),
-            "content/projects/hardware/split-keyboard": ("engineering", "evergreen", True),
-            "content/projects/self-hosting/coolify-vps": ("engineering", "evergreen", False),
-            "content/projects/travel/2025-sweden/_index": ("outdoors", "evergreen", True),
-            "content/projects/travel/2018-iceland": ("outdoors", "evergreen", False),
-            "content/projects/travel/2023-denmark": ("outdoors", "evergreen", False),
-            "content/projects/development/obsidian-http-mcp": ("engineering", "archive", False),
-            "content/projects/development/shellmaster": ("engineering", "archive", False),
-            "content/projects/development/goalpacer": ("engineering", "archive", False),
+            "content/projects/development/n8n-personal-assistant": ("engineering", "archive", False, "discontinued"),
+            "content/projects/hardware/split-keyboard": ("engineering", "evergreen", True, "completed"),
+            "content/projects/self-hosting/coolify-vps": ("engineering", "evergreen", False, "paused"),
+            "content/projects/travel/2025-sweden/_index": ("outdoors", "evergreen", True, "completed"),
+            "content/projects/travel/2018-iceland": ("outdoors", "evergreen", False, "completed"),
+            "content/projects/travel/2023-denmark": ("outdoors", "archive", False, "completed"),
+            "content/projects/development/obsidian-http-mcp": ("engineering", "archive", False, "discontinued"),
+            "content/projects/development/shellmaster": ("engineering", "archive", False, "discontinued"),
+            "content/projects/development/goalpacer": ("engineering", "archive", False, "discontinued"),
         }
-        for base, (section, state, featured) in expected.items():
+        for base, (section, state, featured, status) in expected.items():
             for suffix in ("", ".de", ".en"):
                 path = ROOT / f"{base}/index{suffix}.md" if not base.endswith("_index") else ROOT / f"{base}{suffix}.md"
                 content = path.read_text()
                 self.assertIn(f"section: {section}", content, path)
                 self.assertIn(f"state: {state}", content, path)
                 self.assertIn(f"featured: {str(featured).lower()}", content, path)
+                self.assertIn(f"project:\n  status: {status}", content, path)
 
     def test_project_status_is_optional_and_has_localized_rendering(self):
         status_partial = (ROOT / "layouts" / "_partials" / "project_status.html").read_text()

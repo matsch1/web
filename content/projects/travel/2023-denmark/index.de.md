@@ -12,7 +12,9 @@ draft: false
 homepage:
   featured: false
   section: outdoors
-  state: evergreen
+  state: archive
+project:
+  status: completed
 source_lang: de
 tags:
 - bikepacking

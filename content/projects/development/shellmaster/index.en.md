@@ -13,6 +13,8 @@ homepage:
   featured: false
   section: engineering
   state: archive
+project:
+  status: discontinued
 slug: building-shellmaster
 source_lang: en
 tags:

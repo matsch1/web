@@ -14,6 +14,8 @@ homepage:
   featured: false
   section: engineering
   state: archive
+project:
+  status: discontinued
 slug: goalpacer-pace-estimator
 source_lang: en
 tags:

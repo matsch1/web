@@ -14,6 +14,8 @@ homepage:
   featured: false
   section: outdoors
   state: evergreen
+project:
+  status: completed
 source_lang: de
 tags:
 - bikepacking

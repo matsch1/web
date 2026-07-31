@@ -15,8 +15,10 @@ tags:
 source_lang: de
 homepage:
   section: outdoors
-  state: evergreen
+  state: archive
   featured: false
+project:
+  status: completed
 ---
 Das ist eine nachträgliche Sammlung meiner Eindrücke zur Jütlandumrundung.
 

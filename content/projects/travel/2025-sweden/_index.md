@@ -16,6 +16,8 @@ homepage:
   section: outdoors
   state: evergreen
   featured: true
+project:
+  status: completed
 ---
 
 ## Blog
