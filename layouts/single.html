@@ -27,8 +27,8 @@
       {{- partial "post_canonical.html" . -}}
     </div>
     {{- end }}
+    {{- partial "project_status.html" (dict "page" . "variant" "banner") }}
   </header>
-  {{- partial "project_status.html" (dict "page" . "variant" "banner") }}
   {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
   {{- if (.Param "ShowToc") }}

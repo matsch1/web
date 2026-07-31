@@ -129,7 +129,9 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn('partial "project_status.html" (dict "page" . "variant" "badge")', listing)
         self.assertIn('or (eq .Section "projects") (.Param "listAsProject")', listing)
         self.assertIn('partial "project_status.html" (dict "page" . "variant" "badge")', homepage)
-        self.assertIn('partial "project_status.html" (dict "page" . "variant" "banner")', single)
+        banner_call = 'partial "project_status.html" (dict "page" . "variant" "banner")'
+        self.assertIn(banner_call, single)
+        self.assertLess(single.index(banner_call), single.index('</header>'))
         self.assertIn('--project-status-color', styles)
         self.assertIn('.project-status__icon svg', styles)
         self.assertIn(".project-status--badge", styles)
