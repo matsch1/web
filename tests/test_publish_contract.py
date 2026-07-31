@@ -90,6 +90,15 @@ class PublishContractTests(unittest.TestCase):
         self.assertNotIn("redirect_to:", projects.read_text())
         self.assertNotIn("layout: redirect", projects.read_text())
 
+    def test_header_exposes_the_language_local_rss_feed(self):
+        header = (ROOT / "layouts" / "_partials" / "header.html").read_text()
+        config = (ROOT / "hugo.toml").read_text()
+
+        self.assertIn('home = ["HTML", "RSS", "JSON"]', config)
+        self.assertIn('site.Home.OutputFormats.Get "RSS"', header)
+        self.assertIn('class="rss-feed-link"', header)
+        self.assertIn('href="{{ .RelPermalink }}"', header)
+
     def test_project_metadata_classifies_homepage_and_lifecycle_statuses(self):
         expected = {
             "content/projects/development/n8n-personal-assistant": ("engineering", "archive", False, "discontinued"),
