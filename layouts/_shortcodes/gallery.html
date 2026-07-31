@@ -1,5 +1,4 @@
 {{- $alt := .Get "alt" | default (.Get "title") -}}
-<!-- image-gallery-item -->
 <figure class="image-gallery__item">
   <a class="image-gallery__link" href="{{ .Get "src" }}">
     <img loading="lazy" src="{{ .Get "src" }}" alt="{{ $alt }}">
