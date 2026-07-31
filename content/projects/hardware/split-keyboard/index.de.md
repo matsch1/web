@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 8dbd72fa3752e24880f2e824e13576a86c949c9fc395e4ec59bd50ff90622e91
+base_hash: c26c79280c2673f35e68efdf2bc13c613bab8856fb960d1c86929ab92d411e6d
 cover:
   alt: split-keyboard-ianmaclarty
   caption: ''
@@ -39,7 +39,7 @@ Abgesehen vom reinen Stilfaktor habe ich einige echte Vorteile der Verwendung ei
 
 - **Weniger Handbewegungen:** Es hat mich immer genervt, meine Hand bewegen zu müssen, um die Pfeiltasten oder Ziffern zu erreichen. Und von den Akrobatikübungen mit Daumen und kleinem Finger, die nötig sind, um Alt, Esc oder Strg zu drücken, will ich gar nicht erst anfangen. Mit einer geteilten Tastatur werden diese Bewegungen auf ein Minimum reduziert.  
 
-- **Bessere Ergonomie:** Bei einem geteilten Layout geht es nicht nur um den Komfort für die Finger. Es ermöglicht mir, die Tastaturhälften natürlicher zu positionieren, was meine gesamte Sitzhaltung am Schreibtisch verbessert und verhindert, dass ich wie eine Garnele dasitze.  
+- **Bessere Ergonomie:** Bei einem geteilten Layout geht es nicht nur um den Komfort für die Finger. Es ermöglicht mir, die beiden Tastaturhälften natürlicher zu positionieren, was meine gesamte Sitzhaltung am Schreibtisch verbessert und verhindert, dass ich wie eine Garnele dasitze.  
 
 - **Höhere Tippgeschwindigkeit:** Weniger Handbewegungen bedeuten weniger Zeitverlust, was natürlich zu schnellerem Tippen führt, sobald man sich an das Layout gewöhnt hat.  
 
@@ -63,7 +63,7 @@ Die Leiterplatten, die ich erhalten habe, wurden leicht modifiziert, sodass dies
 Dies ist eine erhebliche Verbesserung, da Leiterplattenhersteller in der Regel eine Mindestbestellmenge von fünf Stück pro Gerber-Datei verlangen.  
 Durch die Neugestaltung muss nur noch ein Typ bestellt werden, was die Kosten senkt.  
 Beispielsweise lassen sich fünf identische Leiterplatten bei Anbietern wie [pcbway.com](https://www.pcbway.com/) für etwa 30 € herstellen.
-Leider liegen mir die modifizierten Versionen der Gerber-Dateien nicht vor.
+Leider verfüge ich nicht über die modifizierten Versionen der Gerber-Dateien.
 
 ## 3D-Modellierung und Druck des Rahmens
 
@@ -82,7 +82,7 @@ Der Zusammenbau besteht aus zwei Kernaufgaben:
 ### Löten
 
 Um die beiden Hälften miteinander zu verbinden, habe ich PJ328-Kopfhörerbuchsen verwendet, da ich noch einige davon vorrätig hatte.  
-Das Gehäuse weicht geringfügig ab, um diese aufzunehmen, aber solange man sauber lötet, funktioniert es gut.
+Das Gehäuse weicht geringfügig ab, um diese unterzubringen, aber solange man sauber lötet, funktioniert es gut.
 
 Für die Mikrocontroller empfehle ich, benachbarte Bauteile mit Nagellack abzudecken, um Kurzschlüsse beim Löten zu vermeiden.
 
@@ -90,7 +90,7 @@ Für alles andere halte dich an die Anleitung im Original
 [README](https://github.com/ianmaclarty/ik/blob/main/README.md).
 
 {{< alert type="warning" title="" >}}
-Wenn du die Originalgehäuse verwendest, musst du das vordere Gehäuse **vor** dem Löten der Schalter anbringen.
+Wenn ihr die Originalgehäuse verwendet, müsst ihr das vordere Gehäuse **vor** dem Löten der Schalter anbringen.
 {{< /alert >}}
 
 {{< galleries >}}

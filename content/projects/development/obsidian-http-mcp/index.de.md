@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 9dbd51ea6da7151dd60c862955a4187e9984388d2a2bef18fc5b9c77739dfdca
+base_hash: 9cd50c47db3ecf2fd3374e009d0287325154928bad4ec97bf656a56307abde94
 cover:
   alt: obsidian-http-mcp
   caption: ''
@@ -31,10 +31,10 @@ Leider wird der MCP-Server nicht mehr benötigt, da das gesamte [n8n AI agent](h
 Wenn ihr meine Obsidian-Konfiguration verfolgt habt, wisst ihr, dass ich es liebe, meine Notizen mit Syncthing ([My Obsidian + Syncthing Setup: A Self-Hosted Cloud for Notes, Backups, and More](https://blog.matschcode.de/en/notes/self-hosting/obsidian-cloud-sync-setup/)) geräteübergreifend zu synchronisieren. Aber ich wollte mehr als nur Synchronisierung – ich wollte **intelligent mit meinen Notizen interagieren, überall und jederzeit**.
 
 ## Warum Obsidian HTTP MCP?
-Deshalb habe ich **Obsidian HTTP MCP** entwickelt, einen auf [FastMCP](https://gofastmcp.com/getting-started/welcome) basierenden, ressourcenschonenden Server, der deinen Obsidian-Vault über HTTP mithilfe des MCP-Protokolls bereitstellt.
+Deshalb habe ich **Obsidian HTTP MCP** entwickelt, einen auf [FastMCP](https://gofastmcp.com/getting-started/welcome) basierenden, ressourcenschonenden Server, der deinen Obsidian-Vault über HTTP mithilfe des MCP-Protokolls zugänglich macht.
 
 Mit diesem Server kannst du:
-- **KI-Clients** wie Cursor direkt mit deinem Vault verbinden und so die Suche in natürlicher Sprache, Analysen und sogar automatisierte Notizbearbeitungen ermöglichen.
+- **KI-Clients** wie Cursor direkt mit deinem Vault verbinden und so die Suche in natürlicher Sprache, Analysen und sogar automatisierte Notizänderungen ermöglichen.
 - **Ihre Notizen bei Bedarf abfragen** – über Skripte, Dashboards oder jedes Gerät, das HTTP unterstützt.
 - **Den Server schlank und schnell halten** dank der FastMCP-Basis.
 
@@ -45,7 +45,7 @@ Jede Notiz in Ihrem Vault wird als MCP-„Paket“ behandelt. Der Server stellt 
 
 Der eigentliche Spaß beginnt mit der **KI-Integration**. Du kannst deinen Desktop-KI-Assistenten bitten, Notizen zusammenzufassen, relevante Informationen zu finden oder sogar Inhalte auf Basis deines Vaults zu generieren – und das alles durch ganz normales Chatten. Es ist, als würdest du deinen Notizen ein eigenes Gehirn geben.
 
-## Was es zu einem „Nerdy-Perks“-Würdigen macht
+## Was es für „Nerdy Perks“ wert macht
 - **KI-gestützte Workflows:** Chatten Sie mit Ihrem Archiv, analysieren Sie Inhalte oder bearbeiten Sie Notizen programmgesteuert.
 - **Geräteübergreifender Zugriff:** Kommunizieren Sie mit Ihrem Archiv über Skripte, mobile Apps oder Web-Tools.
 - **Minimaler Aufwand:** Zustandslos und effizient, perfekt für schlanke Setups.
@@ -61,7 +61,7 @@ Der eigentliche Spaß beginnt mit der **KI-Integration**. Du kannst deinen Deskt
 
 ## Einrichtung
 - Starten Sie den MCP-Server auf Ihrem Remote-Server in einem Docker-Container mit einem einzigen Befehl.
-- Fügen Sie die Client-Konfiguration zu Ihrem Desktop-KI-Client (z. B. Cursor) hinzu:
+- Fügen Sie die Client-Konfiguration zu Ihrem Desktop-KI-Client hinzu (z. B. Cursor):
 ```json
 {
  "mcpServers": {
@@ -77,7 +77,7 @@ Der eigentliche Spaß beginnt mit der **KI-Integration**. Du kannst deinen Deskt
 ```
 - Beginnen Sie, mit Ihren Notizen zu interagieren.
 
-Eine ausführlichere Beschreibung finden Sie im GitHub-Repository: [obsidian-http-mcp](https://github.com/matsch1/obsidian-http-mcp) – und schon heute können Sie mit Ihren Notizen chatten!
+Eine ausführlichere Beschreibung finden Sie im GitHub-Repository: [obsidian-http-mcp](https://github.com/matsch1/obsidian-http-mcp) – und fangen Sie noch heute an, mit Ihren Notizen zu chatten!
 	
 ## TL;DR
 Obsidian HTTP MCP ist ein schlanker Server, der Ihren Obsidian-Vault über HTTP mithilfe des MCP-Protokolls verfügbar macht. Damit können Sie KI-Clients wie Cursor mit Ihren Notizen verbinden, um Suchanfragen in natürlicher Sprache, Zusammenfassungen, Analysen und automatisierte Änderungen durchzuführen. Führen Sie ihn auf einem Remote-Server aus, verbinden Sie Ihren KI-Client und verwandeln Sie Ihren Vault im Handumdrehen in eine interaktive, KI-gestützte Wissensmaschine. Schauen Sie sich das Ganze auf GitHub an [obsidian-http-mcp](https://github.com/matsch1/obsidian-http-mcp)!

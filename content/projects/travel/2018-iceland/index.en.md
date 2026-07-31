@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 9865b1df300cd456f3c50193d8208a631a12000e4aa3b883dbd1d77d51f4f63f
+base_hash: 9ef13f3f48a23fac6a01011446cb850557a93fe4b91d26a77f95c0ee8f87ae0d
 cover:
   alt: Beladenes Hardtail im isländischen Hochland
   caption: ''
@@ -28,13 +28,13 @@ title: Cycling Through Iceland's Highlands on a Hardtail
 Ten days in Iceland, five bikes, an old hardtail, and way too much luggage. After finishing college, we didn’t want to dive straight back into everyday life—we wanted to get out there one more time: across the highlands, to where the road ends and a trip turns into a little adventure.
 I’m writing this article in retrospect because I still love thinking back on it today.
 
-In the end, we clocked about 400 kilometers and roughly 3,700 meters of elevation gain. But more important than the numbers are the memories that have stayed with us: headwinds that felt like a wall. Rain that eventually just became part of the day. Hot springs in the middle of a cold, rocky desert. And a flat tire in a place where the nearest bike shop was very far away.
+In the end, we clocked about 400 kilometers and roughly 3,700 meters of elevation gain. But more important than the numbers are the memories that have stayed with us: headwinds that felt like a wall. Rain that eventually just became part of the day. Hot springs in the middle of a cold, rocky desert. And a flat tire in a place where the nearest bike shop was a long way off.
 
 ## The Idea: Across the Highlands
 
 The idea came from my buddy Jonas. His uncle had already done a similar tour and was planning another one through the Highlands that summer. After finishing college, it sounded like just the right mix of saying goodbye, freedom, and a touch of grandiosity. We booked flights to Keflavík—bike transport included—and before we knew it, that vague idea had suddenly turned into departure day.
 
-My old hardtail got new tires and a rack. It hadn’t been my favorite bike for trail rides for a long time, but it was just right for Iceland: sturdy, repairable, and not too good to get dirty on gravel, in the rain, or through fords.
+My old hardtail got new tires and a rack. It hadn’t been my favorite bike for trail rides for a long time, but it was just right for Iceland: sturdy, repairable, and not too good to handle gravel, rain, and fords.
 
 ## Preparation: Weight Becomes a Reality on the Road
 
@@ -56,7 +56,7 @@ When it came to tools and spare parts, we deliberately opted for redundancy, wit
 - Spare brake and derailleur cables
 - Duct tape, zip ties, and an assortment of small screws
 
-Looking back, that was the right decision. In the highlands, it doesn’t matter whether your gear looks sleek. What matters is whether it gets you back on the road after a breakdown.
+Looking back, that was the right decision. In the highlands, it doesn’t matter whether your gear looks sleek. What matters is whether it gets you going again after a breakdown.
 
 ## Arrival in Keflavík: First Fix, Then Ride
 
@@ -77,17 +77,17 @@ The first night was also our first “Iceland moment”: Around 10:30 p.m., we w
 
 On the second day, we rode via Nesjavellir to Þingvellir. About 75 kilometers and 800 meters of elevation gain, with rain almost the entire way. It was a day that threw Iceland’s harsh weather right in our faces: rain gear on, head down, keep riding.
 
-The next morning, Þingvellir stood in stark contrast to the solitude of the bike ride. The Almannagjá Gorge is impressive, but as part of the Golden Circle, it’s understandably crowded. We still took our time exploring the area before continuing on toward Haukadalur and Geysir.
+The next morning, Þingvellir stood in stark contrast to the solitude of the bike ride. The Almannagjá Gorge is impressive, but as part of the Golden Circle, it was understandably crowded. We still took our time exploring the area before continuing on toward Haukadalur and Geysir.
 
 There, instead of rain, we encountered wind. Not just a bit of headwind, but that relentless Icelandic gust that makes even the lowest gears feel too high. Over about 65 kilometers and 400 meters of elevation gain, it felt like we’d ridden much farther than the odometer showed.
 If I’d had a choice, I would have switched right back to the steady rain from the day before.
 
-Next to the famous—and now mostly dormant—Geysir, Strokkur reliably spouts water into the sky. We watched this impressive natural spectacle and continued on toward the highlands.
+Next to the famous—and now mostly dormant—Geysir, Strokkur spouts water reliably into the sky. We watched this impressive natural spectacle and continued on toward the highlands.
 
 {{< galleries >}}
 {{< gallery src="img5.jpg" title="On the way to Þingvellir" alt="A cyclist carrying a heavy load on a wet road through the open countryside near Þingvellir." >}}
 {{< gallery src="img6.jpg" title="So glad the rain has finally stopped" alt="Several cyclists with fully loaded bikes take a break on a road in a mountainous landscape." >}}
-{{< gallery src="img7.jpg" title="Climbing a fantastic hill with a full load" alt="A cyclist carrying luggage rides uphill on a wet road in front of green mountains." >}}
+{{< gallery src="img7.jpg" title="Climbing a fantastic hill with a full load" alt="A cyclist carrying luggage rides uphill on a wet road against a backdrop of green mountains." >}}
 {{< gallery src="img8.jpg" title="Steaming Geyser" alt="Steam rises from hot springs in the Haukadalur geothermal area." >}}
 {{< /galleries >}}
 
@@ -97,7 +97,7 @@ Gullfoss was the last major stop on the Golden Circle. Massive volumes of water,
 
 Beyond the waterfall, the area quickly became deserted. A sign made it clear that four-wheel drive was recommended from here on. For us, that meant: less traffic, more gravel, and our first real kilometers through the highlands.
 
-The landscape changed over an astonishingly short distance. First, lakes and green meadows in front of the glaciers; then, a barren rocky wasteland, wide valleys, and a backdrop that looked more like the moon than Europe. The drive to Árbúðir—about 60 kilometers with 650 meters of elevation gain—wasn’t the toughest leg of the journey, but it was one of the most impressive. For dinner, we had spaghetti with tuna—not a culinary revelation, but just right for the moment.
+The landscape changed over an astonishingly short distance. First, lakes and green meadows in front of the glaciers; then, a barren stone desert, wide valleys, and a backdrop that looked more like the moon than Europe. The drive to Árbúðir—about 60 kilometers with 650 meters of elevation gain—wasn’t the toughest leg of the journey, but it was one of the most impressive. For dinner, we had spaghetti with tuna—not a culinary revelation, but just right for the moment.
 
 {{< galleries >}}
 {{< gallery src="img9.jpg" title="Gullfoss Waterfall" alt="The wide Gullfoss waterfall plunges into a gorge amid rising spray." >}}
@@ -108,13 +108,13 @@ The landscape changed over an astonishingly short distance. First, lakes and gre
 
 ## Kerlingarfjöll: The Climb, Disappointment, Hot Water
 
-The next day had two clear goals: the Kerlingarfjöll Mountain Resort and a natural pool in the valley. Plus, a rumor had spread that the lodge served french fries. After several days of eating out of bags, that was a surprisingly strong motivator.
+The next day had two clear goals: the Kerlingarfjöll Mountain Resort and a natural pool in the valley. Plus, a rumor had taken hold that the lodge served french fries. After several days of eating out of bags, that was a surprisingly strong motivator.
 
 The last few kilometers to Kerlingarfjöll were almost entirely uphill. When we arrived, the matter of the fries was quickly settled: Apparently, they’d never been served there. So, back to instant rice.
 
-The real reason for staying there lay a short distance outside the camp anyway. Wearing swim trunks and carrying whiskey, we hiked down into the valley to a stone-built pool next to a mountain stream. Cold glacier water flowed in from one side, while hot spring water came out of pipes. Looking back, after several cold and long days, that was pretty close to perfection.
+The real reason for staying there lay a short distance outside the camp anyway. Wearing swim trunks and carrying whiskey, we hiked down into the valley to a stone-built pool next to a mountain river. Cold glacial water flowed in from one side, while hot spring water came out of pipes. Looking back, after several cold and long days, that was pretty close to perfection.
 
-The next morning, we left our bikes behind for a while and hiked through the surrounding area. Snowfields, the smell of sulfur, steaming crevasses, and the glacier: a landscape that’s both surreal and very real. Afterward, we continued by bike to Hveravellir—just 41 kilometers and about 150 meters of elevation gain, but with the second hot bath of the trip as a reward.
+The next morning, we left our bikes behind for a while and hiked through the surrounding area. Snowfields, the smell of sulfur, steaming crevasses, and the glacier: a landscape that feels both surreal and very real at the same time. Afterward, we continued by bike to Hveravellir—just 41 kilometers and about 150 meters of elevation gain, but with the second hot bath of the trip as a reward.
 
 What we learned along the way: Don’t sit too long right next to the hot inlet. Your circulation will eventually make itself known. Very clearly.
 
@@ -154,7 +154,7 @@ For the final leg, we rode about 50 kilometers along the coast back to the airpo
 {{< gallery src="img21.jpg" title="Blönduós" alt="A vast landscape near Blönduós beneath dramatic clouds." >}}
 {{< gallery src="img22.jpg" title="River in Blönduós" alt="A river winds its way through the green countryside near Blönduós." >}}
 {{< gallery src="img23.jpg" title="On the Way to Reykjavík" alt="Several bicycles are secured to a bus luggage rack for the trip to Reykjavík." >}}
-{{< gallery src="img24.jpg" title="Sólfar (Sun Voyager) in Reykjavík" alt="The steel sculpture Sólfar on the waterfront promenade in Reykjavík, overlooking the bay toward the mountains." >}}
+{{< gallery src="img24.jpg" title="Sólfar (Sun Voyager) in Reykjavík" alt="The steel sculpture Sólfar on the Reykjavík waterfront, overlooking the bay toward the mountains." >}}
 {{< gallery src="img25.jpg" title="Harpa Concert Hall in Reykjavík" alt="A close-up of the modern glass facade of the Harpa Concert Hall in Reykjavík." >}}
 {{< /galleries >}}
 

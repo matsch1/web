@@ -1,5 +1,5 @@
 ---
-base_hash: 66ac552552c0c20aefc7c82cbf5a88df24cbc4ef1495db1b9d43acccfb01a6ec
+base_hash: a15dfedaa08becbb02a019b9eb4af800f2967a4201348d73a5181c59b14c17aa
 cascade:
   hiddenInProjectList: true
 cover:
@@ -14,9 +14,9 @@ homepage:
   featured: true
   section: outdoors
   state: evergreen
+listAsProject: true
 project:
   status: completed
-listAsProject: true
 title: Bikepacking in Sweden and Denmark 2025
 ---
 

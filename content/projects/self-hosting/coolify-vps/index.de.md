@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 180adb904f21efe3e6e8d8cc061798f3c37812d2f665b805e9e7c48d86fcd2af
+base_hash: a1007340698619244a25a95b0c12ed6b271540a17f1e667702f65893823b077e
 cover:
   alt: coolify-vps-setup
   caption: ''
@@ -48,7 +48,7 @@ Die Wahl des richtigen Hosting-Anbieters hängt von Budget, Standortnähe, Bandb
 {{< figure src="./netcup_vps.png" width="700" alt="" class="right" >}}
 
 In meinem Fall habe ich mich für einen VPS entschieden, der von [netcup](https://www.netcup.com/de/server/vps) gehostet wird.
-Ich habe das Projekt mit der kleinsten VPS-Option `VPS 250 G11s` begonnen, bin aber später auf die zweite Option `VPS 500 G11s` umgestiegen.
+Ich habe das Projekt mit der kleinsten VPS-Option `VPS 250 G11s` begonnen, später jedoch auf die zweite Option `VPS 500 G11s` umgestellt.
 Das kostet mich etwa 5 € pro Monat (einschließlich eigener Domain) und bietet genügend Ressourcen für alles, was ich brauche.
 
 ## Zugriff auf den Server
@@ -78,7 +78,7 @@ ssh-keygen -t ed25519 -b 4096 -C "your_email@example.com"
 ```
 
 Sie werden zur Eingabe des Namens des Schlüssels, des Speicherorts und der Passphrase aufgefordert.
-Der Schlüssel sollte unter `/home/$USER/.ssh/<ssh-key>` gespeichert werden. Die Passphrase kann leer bleiben.
+Der Schlüssel sollte unter `/home/$USER/.ssh/<ssh-key>` gespeichert werden. Das Feld für die Passphrase kann leer bleiben.
 Dadurch werden zwei Dateien erstellt: `<ssh-key>` und `<ssh-key.pub>`.
 
 Um SSH-Zugriff auf den VPS zu erhalten, muss der Inhalt von `<ssh-key.pub>` in `/home/<server-user>/.ssh/autorized_keys` kopiert werden. Falls die Datei nicht existiert, muss sie angelegt werden.
@@ -103,7 +103,7 @@ Um sicherzustellen, dass sich in Zukunft nur noch Sie auf dem Server anmelden k�
 Achtung! Die folgenden Einstellungen können den Zugriff auf Ihren Server unterbrechen!
 {{< /alert >}}
 
-##### Nur SSH-Zugriff
+##### Ausschließlich SSH-Zugriff
 Die Anmeldung mit Passwort wird untersagt. 
 {{< alert type="warning" title="Danger" >}}
 Achten Sie darauf, dass die SSH-Anmeldung einwandfrei funktioniert!
@@ -186,7 +186,7 @@ sudo service ssh restart
 ```
 
 Damit verfügen Sie nun über einen VPS, der ziemlich sicher ist.
-Die Anmeldung funktioniert nur von einem Client im Tailnet mit dem `<server-key>` und dem `<server-user>`.
+Die Anmeldung funktioniert nur von einem Client im Tailnet mit den Adressen `<server-key>` und `<server-user>`.
 
 ## Coolify installieren
 Der nächste Schritt ist die Installation unserer Plattform [Coolify](https://coolify.io/) mithilfe des offiziellen Skripts:
@@ -195,7 +195,7 @@ curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
 ```
 
 Bevor wir fortfahren, müssen wir die Netzwerkkommunikation von Coolify in der Firewall zulassen.
-Dazu müssen wir die Netzwerke der Docker-Bridge und von Coolify mit den folgenden Befehlen überprüfen:
+Dazu müssen wir die Netzwerke der Docker-Bridge und von Coolify überprüfen, indem wir folgende Befehle ausführen:
 ```
 sudo docker network inspect bridge
 sudo docker network inspect coolify
@@ -226,7 +226,7 @@ Die Ausgabe sollte in etwa so aussehen:
 .
 .
 ```
-Notieren Sie sich die Werte `Subnet` der Bridge und `IPAM -> Config` von Coolify.
+Notieren Sie sich die Werte `Subnet` der `IPAM -> Config` der Bridge und von Coolify.
 Beachten Sie den Wert `Gateway` der Bridge im Vergleich zu `IPAM -> Config`.
 Mit diesen drei Werten können die neuen Firewall-Regeln hinzugefügt werden:
 ``` shell

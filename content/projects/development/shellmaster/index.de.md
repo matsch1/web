@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 23c6cb2905522db2ea161e6951db7c9c4d9913792a34c8370780e46c19c9bdb8
+base_hash: 8cb7d60e55facfcd6f1b558ba454eb11240f86d02abb686f52cab5d9aeddbfdf
 cover:
   alt: shellmaster
   caption: ''
@@ -49,19 +49,19 @@ Bei der Entwicklung von Shellmaster stieß ich auf einige interessante technisch
 
 Shellmaster wurde entwickelt, um das Erlernen von Linux-Befehlen unterhaltsam und interaktiv zu gestalten. Hier sind einige der wichtigsten Funktionen:
 
-- **Verschiedene Quiz-Modi**: Teste dein Wissen in verschiedenen Spielmodi, darunter zeitlich begrenzte Quizze und Übungsrunden.
-- **Schwierigkeitsstufen und Kategorien**: Die Fragen sind in die Stufen „leicht“, „mittel“ und „schwer“ unterteilt und decken wichtige Shell-Befehle, Skripting und Systemadministration ab.
+- **Verschiedene Quizmodi**: Teste dein Wissen in verschiedenen Spielmodi, darunter zeitlich begrenzte Quizze und Übungsrunden.
+- **Schwierigkeitsstufen & Kategorien**: Die Fragen sind in die Stufen „leicht“, „mittel“ und „schwer“ unterteilt und decken wichtige Shell-Befehle, Skripting und Systemadministration ab.
 - **Fortschrittsverfolgung**: Behalte deine Leistung im Blick und verbessere dich im Laufe der Zeit.
 - **Individuelle Herausforderungen**: Nutzer können sich eigene Herausforderungen stellen und sich mit Freunden messen.
 - **Offline-Unterstützung**: Spiele Quizze, ohne dass eine Internetverbindung erforderlich ist.
-- **Dunkler Modus**: Genieße einen eleganten dunklen Modus für bessere Lesbarkeit.
+- **Dunkelmodus**: Genieße einen eleganten Dunkelmodus für bessere Lesbarkeit.
 
 ---
 
 ## App-Entwicklung
 
 In den nächsten Kapiteln geht es um meine Erfahrungen während des Entwicklungsprozesses.
-Wenn du an interessanten Flutter-Themen interessiert bist, lies weiter. Wenn du nur wegen Linux und Bash hier bist, schau dir die App im Google Play Store an: „Shellmaster – Apps auf Google Play“.
+Wenn du an interessanten Flutter-Inhalten interessiert bist, lies weiter. Wenn du nur wegen Linux und Bash hier bist, schau dir die App im Google Play Store an: „Shellmaster – Apps auf Google Play“.
 ### Die Wahl von Flutter für eine plattformübergreifende Quiz-App
 
 Ich habe mich für **Flutter** entschieden, weil es einen **schnellen Entwicklungszyklus, ansprechende UI-Funktionen und plattformübergreifende Unterstützung** bietet. Mit einer einzigen Codebasis konnte ich sowohl Android als auch (möglicherweise) iOS in Zukunft ansprechen. Zu den wichtigsten Flutter-Funktionen, die ich genutzt habe, gehören:
@@ -94,13 +94,13 @@ Future<List<Question>> fetchQuestions() async {
 
 ### Einsatz von Unleash für Feature-Flags
 
-Um **schrittweise Feature-Einführungen und A/B-Tests** zu ermöglichen, habe ich **Unleash** integriert, ein Open-Source-Feature-Flag-System. Dadurch konnte ich **Features dynamisch aktivieren oder deaktivieren**, ohne ein neues App-Update veröffentlichen zu müssen.
+Um **schrittweise Feature-Einführungen und A/B-Tests** zu ermöglichen, habe ich **Unleash** integriert, ein Open-Source-Feature-Flag-System. Dadurch konnte ich **Features dynamisch aktivieren und deaktivieren**, ohne ein neues App-Update veröffentlichen zu müssen.
 
 #### Warum Feature-Flags verwenden?
 
 - **Mit neuen Funktionen experimentieren** (z. B. ein „Hardcore-Modus“ für erfahrene Nutzer)
 - **Funktionen aus der Ferne aktivieren/deaktivieren**, ohne dass ein App-Update erforderlich ist
-- **Schrittweise Einführungen** zum Testen bei einer Teilgruppe von Nutzern
+- **Schrittweise Einführung** zum Testen bei einer Teilgruppe von Nutzern
 
 #### Implementierung von Feature-Flags in Flutter
 
