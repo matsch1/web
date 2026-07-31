@@ -70,6 +70,12 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn('Params.homepage.section', rendered)
         self.assertIn('Params.homepage.featured', rendered)
         self.assertIn('relref $ "/projects/"', rendered)
+        self.assertIn('$activeEngineeringProjects', rendered)
+        self.assertIn('$activeOutdoorProjects', rendered)
+        self.assertIn('after 3 $activeEngineeringProjects', rendered)
+        self.assertIn('after 3 $activeOutdoorProjects', rendered)
+        self.assertIn('$staleActiveProjects', rendered)
+        self.assertIn('$homepageProjects', rendered)
 
         for language in ("de", "en"):
             homepage = ROOT / "content" / f"_index.{language}.md"

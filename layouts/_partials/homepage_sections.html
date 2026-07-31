@@ -4,13 +4,25 @@
 {{- $projectPages = union $projectPages $travelProjects }}
 {{- $projectPages = sort $projectPages "Date" "desc" }}
 
-{{- $publicProjects := where $projectPages "Params.homepage.state" "ne" "archive" }}
-{{- $featuredProjects := where $publicProjects "Params.homepage.featured" true }}
-{{- $engineeringProjects := where $publicProjects "Params.homepage.section" "engineering" }}
+{{- $explicitArchiveProjects := where $projectPages "Params.homepage.state" "archive" }}
+{{- $nonArchivedProjects := where $projectPages "Params.homepage.state" "ne" "archive" }}
+{{- $activeProjects := where $nonArchivedProjects "Params.homepage.state" "active" }}
+{{- $nonActiveProjects := where $nonArchivedProjects "Params.homepage.state" "ne" "active" }}
+
+{{- $activeEngineeringProjects := where $activeProjects "Params.homepage.section" "engineering" }}
+{{- $activeOutdoorProjects := where $activeProjects "Params.homepage.section" "outdoors" }}
+{{- $currentActiveProjects := union (first 3 $activeEngineeringProjects) (first 3 $activeOutdoorProjects) }}
+{{- $staleActiveProjects := union (after 3 $activeEngineeringProjects) (after 3 $activeOutdoorProjects) }}
+{{- $homepageProjects := union $nonActiveProjects $currentActiveProjects }}
+{{- $homepageProjects = sort $homepageProjects "Date" "desc" }}
+{{- $archiveProjects := union $explicitArchiveProjects $staleActiveProjects }}
+{{- $archiveProjects = sort $archiveProjects "Date" "desc" }}
+
+{{- $featuredProjects := where $homepageProjects "Params.homepage.featured" true }}
+{{- $engineeringProjects := where $homepageProjects "Params.homepage.section" "engineering" }}
 {{- $engineeringProjects = where $engineeringProjects "Params.homepage.featured" "ne" true }}
-{{- $outdoorProjects := where $publicProjects "Params.homepage.section" "outdoors" }}
+{{- $outdoorProjects := where $homepageProjects "Params.homepage.section" "outdoors" }}
 {{- $outdoorProjects = where $outdoorProjects "Params.homepage.featured" "ne" true }}
-{{- $archiveProjects := where $projectPages "Params.homepage.state" "archive" }}
 
 {{- with $featuredProjects }}
 <section class="homepage-section" data-home-section="featured">
