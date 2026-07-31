@@ -110,6 +110,32 @@ class PublishContractTests(unittest.TestCase):
                 self.assertIn(f"state: {state}", content, path)
                 self.assertIn(f"featured: {str(featured).lower()}", content, path)
 
+    def test_project_status_is_optional_and_has_localized_rendering(self):
+        status_partial = (ROOT / "layouts" / "_partials" / "project_status.html").read_text()
+        card = (ROOT / "layouts" / "_partials" / "homepage_project_card.html").read_text()
+        listing = (ROOT / "layouts" / "list.html").read_text()
+        homepage = (ROOT / "layouts" / "_partials" / "homepage_sections.html").read_text()
+        single = (ROOT / "layouts" / "single.html").read_text()
+        styles = (ROOT / "assets" / "css" / "extended" / "thumbnail.css").read_text()
+
+        self.assertIn('Param "project.status"', status_partial)
+        self.assertIn('"completed" "paused" "discontinued"', status_partial)
+        self.assertIn('Param "project.statusNote"', status_partial)
+        self.assertIn('Param "project.successor"', status_partial)
+        self.assertIn('partial "project_status.html" (dict "page" . "variant" "badge")', card)
+        self.assertIn('partial "project_status.html" (dict "page" . "variant" "badge")', listing)
+        self.assertIn('or (eq .Section "projects") (.Param "listAsProject")', listing)
+        self.assertIn('partial "project_status.html" (dict "page" . "variant" "badge")', homepage)
+        self.assertIn('partial "project_status.html" (dict "page" . "variant" "banner")', single)
+        self.assertIn(".project-status--badge", styles)
+        self.assertIn(".project-status--banner", styles)
+
+        for language in ("de", "en"):
+            translations = (ROOT / "i18n" / f"{language}.yaml").read_text()
+            for status in ("completed", "paused", "discontinued"):
+                self.assertIn(f"id: project_status_{status}", translations)
+            self.assertIn("id: project_status_successor_link", translations)
+
     def test_homepage_share_title_uses_the_site_name(self):
         expected_titles = {"de": "title: matschcode", "en": 'title: "matschcode"'}
         for language, expected_title in expected_titles.items():

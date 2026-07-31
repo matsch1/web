@@ -1,0 +1,17 @@
+{{- $page := .page -}}
+{{- $variant := .variant | default "badge" -}}
+{{- $status := $page.Param "project.status" -}}
+{{- if in (slice "completed" "paused" "discontinued") $status -}}
+  {{- $label := i18n (printf "project_status_%s" $status) -}}
+  {{- if eq $variant "banner" -}}
+    <aside class="project-status project-status--banner project-status--{{ $status }}" aria-label="{{ i18n "project_status_label" }}">
+      <strong>{{ $label }}</strong>
+      {{- with $page.Param "project.statusNote" }}<span> — {{ . }}</span>{{ end -}}
+      {{- with $page.Param "project.successor" }}
+        <a href="{{ . | relLangURL }}">{{ i18n "project_status_successor_link" }}</a>
+      {{- end }}
+    </aside>
+  {{- else -}}
+    <span class="project-status project-status--badge project-status--{{ $status }}">{{ $label }}</span>
+  {{- end -}}
+{{- end -}}

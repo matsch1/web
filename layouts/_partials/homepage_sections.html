@@ -76,7 +76,10 @@
     {{- range first 3 . }}
     <li>
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006" }}</time>
+      <span class="homepage-archive__meta">
+        {{- partial "project_status.html" (dict "page" . "variant" "badge") }}
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006" }}</time>
+      </span>
     </li>
     {{- end }}
   </ul>

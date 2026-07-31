@@ -116,6 +116,9 @@
       </span>
       {{- end }}
     </h2>
+    {{- if or (eq .Section "projects") (.Param "listAsProject") }}
+      {{- partial "project_status.html" (dict "page" . "variant" "badge") }}
+    {{- end }}
   </header>
   {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">

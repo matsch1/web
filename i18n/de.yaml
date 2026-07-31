@@ -57,3 +57,18 @@
 
 - id: home_archive_link
   translation: "Alle Projekte ansehen"
+
+- id: project_status_label
+  translation: "Projektstatus"
+
+- id: project_status_completed
+  translation: "Abgeschlossen"
+
+- id: project_status_paused
+  translation: "Pausiert"
+
+- id: project_status_discontinued
+  translation: "Eingestellt"
+
+- id: project_status_successor_link
+  translation: "Zum Nachfolgeprojekt"
