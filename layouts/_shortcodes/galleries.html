@@ -1,3 +1,15 @@
+{{- $items := after 1 (split .Inner "<!-- image-gallery-item -->") -}}
+{{- if gt (len $items) 0 -}}
 <div class="image-gallery">
-  {{ .Inner }}
+  <div class="image-gallery__hero">
+    {{ index $items 0 | safeHTML }}
+  </div>
+  {{- if gt (len $items) 1 -}}
+  <div class="image-gallery__strip">
+    {{- range after 1 $items -}}
+      {{ . | safeHTML }}
+    {{- end -}}
+  </div>
+  {{- end -}}
 </div>
+{{- end -}}
