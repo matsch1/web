@@ -49,6 +49,7 @@ Am Schlafplatz angekommen, scheint jetzt wieder die Sonne als wäre nichts gewes
 
 ### Schlafplatz 
 Schlafplatz auf einem simplen Zeltplatz 
+Hier war ich schonmal auf meiner [Jütland Umrundung 2023 ](https://blog.matschcode.de/de/projects/travel/2023-denmark/).
 {{< open-street-map map_title="Schlafplatz" geo_link="geo:55.77018,8.19788?z=16" >}}
 
 ## Tourdaten
