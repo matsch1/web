@@ -45,6 +45,7 @@ Für morgen steht die letzte Etappe in Dänemark an. Es gilt nochmal ca. 100 km 
 
 ### Schlafplatz 
 Schlafplatz mit Bademöglichkeit 
+Hier war ich schonmal auf meiner [Jütland Umrundung 2023 ](https://blog.matschcode.de/de/projects/travel/2023-denmark/).
 {{< open-street-map map_title="Schlafplatz" geo_link="geo:55.38022,8.64830?z=16" >}}
 
 ## Tourdaten
