@@ -21,9 +21,9 @@ project:
 
 > Draft — this project page is not published yet.
 
-My first personal AI assistant was an n8n workflow: Telegram message in, a model decides, a few MCP tools handle calendar entries, tasks, or notes. It was a useful experiment. The workflow had clear edges, was easy to inspect, and showed me which things I actually wanted to automate.
+My first personal AI assistant was an n8n workflow: a Telegram message came in, a model decided, and a few MCP tools handled calendar entries, tasks, or notes. It was a useful first experiment. At the time, Hermes and comparable agent systems were not on my radar. n8n showed me which things I actually wanted to automate.
 
-In everyday use, though, that shape became the limitation. A workflow is strong when the sequence and data model are known in advance. My questions rarely are. One day I am debugging a K3s cluster, the next I am comparing two bike setups, looking for a note in my Obsidian vault, or planning the coming training week. I did not want to build another flow, prompt, and node graph for every new use case.
+In everyday use, though, that shape became the limitation. Every new task needed its own configuration, and small deviations from the expected input regularly broke the flow. I also found the block-builder interface frustrating; in my use case, writing a small piece of code was often clearer. My questions rarely fit a fixed sequence anyway. One day I am debugging a K3s cluster, the next I am comparing two bike setups, looking for a note in my Obsidian vault, or planning the coming training week. I did not want to build another flow, prompt, and node graph for every new use case.
 
 That is why I now run [Hermes Agent](https://hermes-agent.nousresearch.com/docs) as a personal agent system in my homelab. It is not an autonomous butler making arbitrary changes in the background. It is a technical and sporting sparring partner with tools, boundaries, and a memory I control.
 
@@ -42,9 +42,9 @@ An agent can research first, read files and logs, compare options, and then sugg
 
 ## What Hermes Agent is for me
 
-Hermes is the chat interface across two areas that do not obviously belong together: engineering and endurance sports. In both, a generic "you can do it" is not useful. I need a system that places context correctly and does not guess when it is uncertain.
+Hermes is a locally hosted, chat-first interface across two areas that do not obviously belong together: engineering and endurance sports. I use it mainly through Discord, with separate channels for different topics; Telegram is another available entry point. Text, voice messages, and images all end up in the same working context. In both domains, a generic "you can do it" is not useful. I need a system that places context correctly and does not guess when it is uncertain.
 
-On the technical side, the agent is a sparring partner for coding, DevOps, Docker, Kubernetes, homelab operations, debugging, and architecture. Its working style is deliberately sober: clarify the target, risks, and trade-offs; inspect logs and status; form hypotheses; test deliberately; change only after that. An answer should not merely give me a command. It should explain why that step makes sense and how to reverse it.
+On the technical side, the agent supports DevOps, Docker, Kubernetes, homelab operations, debugging, architecture, and the blog itself: updating dependencies, improving SEO, building shortcodes, and tightening GitHub Actions workflows. I do not use Hermes as my primary coding environment. For focused implementation work, I use the same model through Codex with an OpenCode integration in Neovim. Hermes is the system around that work: it investigates, structures, and helps turn a rough GitOps deployment into a usable baseline. Its working style is deliberately sober: clarify the target, risks, and trade-offs; inspect logs and status; form hypotheses; test deliberately; change only after that. An answer should not merely give me a command. It should explain why that step makes sense and how to reverse it.
 
 In sport, the same agent works with a different set of questions: How does actual training load compare with the plan? Where is recovery missing? What do the last few weeks say about readiness for an event? Which equipment solves a real problem, and which purchase is only an expensive upgrade? I do not treat training as separate from the rest of life. Sleep, mobility, yoga, strength work, and available time belong in the same view.
 
@@ -52,7 +52,7 @@ The shared foundation is not a magic prompt. It is clear roles, rules, and data 
 
 ## Architecture: an agent with clear boundaries
 
-The system runs in Docker. That is not a security guarantee, but it is an important boundary between the agent and the host. The agent does not receive blanket access. It only gets the access it needs for a defined task. Integrations and credentials remain separate from the conversation; secrets do not belong in replies or Git repositories.
+The system runs in Docker with a Tailscale sidecar. That is not a security guarantee, but it is an important boundary between the agent and the host. Important local directories, including the Obsidian vault, are mounted deliberately as volumes. Keys and secrets are passed as environment variables and never belong in replies or Git repositories. The agent does not receive blanket access; it only gets the access it needs for a defined task.
 
 That separation matters because the agent does more than summarize text. When appropriate, it can read files, inspect logs, run scripts, or query defined services. Every capability therefore needs a clear frame.
 
@@ -67,7 +67,7 @@ That sounds conservative because it is. An agent that runs `prune` or `delete` i
 
 ## Obsidian is a knowledge source, not a playground
 
-My Obsidian vault is the system's long-term memory. It contains technical notes, project context, training and health logs, research, and personal routines. The agent may read it and extend relevant existing notes, but it should not "improve" the vault by renaming files, moving them around, or inventing a new folder structure.
+My Obsidian vault is the system's long-term memory. It contains technical notes, project context, training and health logs, research, and personal routines. It is mounted into the agent environment and synchronised to my other devices with Syncthing. The agent may read it and extend relevant existing notes, but it should not "improve" the vault by renaming files, moving them around, or inventing a new folder structure.
 
 The writing rule is simple:
 
@@ -88,7 +88,7 @@ For architecture questions, it compares options by maintainability, complexity, 
 
 ### Training and health
 
-For sport, I use training history, plan, zones, and load as a starting point. A useful review does not compare one ride with a target number. It looks across several weeks: volume, intensity, longest sessions, rest days, fitness development, and fatigue.
+For sport, I use training history, plan, zones, and load as a starting point. Intervals.icu is the main source, with Garmin data and limited Strava data used where useful. A useful review does not compare one ride with a target number. It looks across several weeks: volume, intensity, longest sessions, rest days, fitness development, and fatigue.
 
 The gap between sensors and reality matters. Heart-rate load does not tell the whole story. A strength session can create little systemic load while still leaving the back, shoulders, or core too tired for the next hard ride. Subjective feeling, soreness, pain, and unfamiliar load therefore belong in the assessment as well.
 
@@ -115,8 +115,8 @@ Its answers also need to remain verifiable. For current tools, versions, prices,
 
 ## The current state
 
-This is not a finished "life OS" kit. It is a growing work environment shaped around my actual projects: homelab operations, software development, Obsidian, running, and cycling. Some integrations are already practical. Others still need better interfaces or more reliable data.
+This is not a finished "life OS" kit. It is a growing work environment shaped around my actual projects: homelab operations, software development, Obsidian, running, and cycling. The strongest everyday uses are documenting training feedback, producing a training review, helping with the homelab, and answering the simple but frequent question: "What do I already have about this in my notes?" Some integrations are already practical. Others still need better interfaces or more reliable data.
 
-The important change is already here: separate chat requests and n8n flows have become a system that can retain context over time, takes risk seriously, and considers maintainability and recovery alongside speed.
+The important change is already here: separate chat requests and n8n flows have become a system that can retain context over time, takes risk seriously, and considers maintainability and recovery alongside speed. It still needs human judgement. Architecture decisions remain mine, research quality varies, and generated training plans often need a second pass. That is not a disappointment; it is the boundary that makes the system useful.
 
 That is the interesting part of personal agents for me. Not another bot that promises to do everything, but a tool that works reliably within a clear boundary.

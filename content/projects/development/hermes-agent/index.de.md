@@ -21,9 +21,9 @@ project:
 
 > Entwurf — diese Projektseite ist noch nicht veröffentlicht.
 
-Mein erster persönlicher KI-Assistent war ein n8n-Workflow: Telegram rein, Modell entscheidet, ein paar MCP-Tools erledigen Kalender, Aufgaben oder Notizen. Das war ein gutes Experiment. Der Workflow hatte klare Kanten, ließ sich nachvollziehen und hat mir gezeigt, welche Dinge ich wirklich automatisieren will.
+Mein erster persönlicher KI-Assistent war ein n8n-Workflow: Telegram rein, Modell entscheidet, ein paar MCP-Tools erledigen Kalender, Aufgaben oder Notizen. Das war ein gutes erstes Experiment. Hermes und vergleichbare Agentensysteme hatte ich damals noch nicht auf dem Radar; n8n hat mir gezeigt, welche Dinge ich wirklich automatisieren will.
 
-Im Alltag wurde aber genau diese Form zum Limit. Ein Workflow ist stark, wenn Ablauf und Datenmodell vorher feststehen. Meine Fragen tun das selten. Mal geht es um einen Fehler im K3s-Cluster, mal um einen Vergleich zweier Fahrrad-Setups, mal um eine Notiz aus dem Obsidian-Vault oder um die Planung der nächsten Trainingswoche. Dafür wollte ich nicht pro Anwendungsfall wieder einen eigenen Flow, Prompt und Satz von Knoten bauen.
+Im Alltag wurde aber genau diese Form zum Limit. Jede neue Aufgabe brauchte eine eigene Konfiguration, kleine Abweichungen vom erwarteten Input machten den Flow fragil, und der Block-Builder war für meinen Anwendungsfall oft umständlicher als ein kleines Stück Code. Meine Fragen passen ohnehin selten in einen festen Ablauf. Mal geht es um einen Fehler im K3s-Cluster, mal um einen Vergleich zweier Fahrrad-Setups, mal um eine Notiz aus dem Obsidian-Vault oder um die Planung der nächsten Trainingswoche. Dafür wollte ich nicht pro Anwendungsfall wieder einen eigenen Flow, Prompt und Satz von Knoten bauen.
 
 Deshalb läuft heute [Hermes Agent](https://hermes-agent.nousresearch.com/docs) als persönliches Agentensystem in meinem Homelab. Nicht als autonomer Butler, der im Hintergrund beliebige Dinge verändert. Eher als technischer und sportlicher Sparringspartner mit Werkzeugen, Grenzen und einem Gedächtnis, das ich selbst kontrolliere.
 
@@ -42,9 +42,9 @@ Ein Agent kann erst recherchieren, Dateien und Logs lesen, Optionen gegeneinande
 
 ## Was Hermes Agent für mich ist
 
-Hermes ist die Chat-Oberfläche über zwei Bereiche, die auf den ersten Blick wenig miteinander zu tun haben: Engineering und Ausdauersport. In beiden Fällen hilft mir kein allgemeines "Du schaffst das", sondern ein System, das Kontext sauber einordnet und bei Unsicherheit nicht rät.
+Hermes ist eine lokal gehostete, Chat-first-Oberfläche über zwei Bereiche, die auf den ersten Blick wenig miteinander zu tun haben: Engineering und Ausdauersport. Ich nutze ihn hauptsächlich über Discord, mit getrennten Channels je Thema; Telegram ist ein weiterer Einstiegspunkt. Text, Sprachnachrichten und Bilder landen im selben Arbeitskontext. In beiden Fällen hilft mir kein allgemeines "Du schaffst das", sondern ein System, das Kontext sauber einordnet und bei Unsicherheit nicht rät.
 
-Im technischen Bereich ist der Agent ein Sparringspartner für Coding, DevOps, Docker, Kubernetes, Homelab-Betrieb, Debugging und Architektur. Die gewünschte Arbeitsweise ist bewusst nüchtern: zuerst Zielbild, Risiken und Trade-offs klären; dann Logs und Status ansehen; Hypothesen bilden; gezielt testen; erst danach ändern. Eine Antwort sollte nicht nur einen Befehl liefern, sondern auch erklären, warum dieser Schritt sinnvoll ist und wie man ihn wieder zurückdreht.
+Im technischen Bereich unterstützt der Agent DevOps, Docker, Kubernetes, Homelab-Betrieb, Debugging, Architektur und den Blog selbst: Abhängigkeiten aktualisieren, SEO verbessern, Shortcodes bauen und GitHub-Actions-Workflows schärfen. Für fokussierte Implementierungsarbeit nutze ich Hermes nicht als primäre Coding-Umgebung, sondern Codex über eine OpenCode-Integration in Neovim. Hermes ist das System darum herum: Es recherchiert, strukturiert und hilft dabei, aus einem groben GitOps-Deployment eine brauchbare Basis zu machen. Die gewünschte Arbeitsweise ist bewusst nüchtern: zuerst Zielbild, Risiken und Trade-offs klären; dann Logs und Status ansehen; Hypothesen bilden; gezielt testen; erst danach ändern.
 
 Im Sportbereich arbeitet derselbe Agent mit einem anderen Satz von Fragen: Wie passt die tatsächliche Belastung zur Planung? Wo fehlt Erholung? Was sagt die Entwicklung der letzten Wochen über die Vorbereitung auf ein Event? Welche Ausrüstung löst ein echtes Problem und welche ist nur ein teures Upgrade? Training ist für mich dabei nicht vom Rest des Alltags getrennt. Schlaf, Mobility, Yoga, Krafttraining und verfügbare Zeit gehören in dieselbe Betrachtung.
 
@@ -52,7 +52,7 @@ Der gemeinsame Nenner ist kein magischer Prompt. Es sind klare Rollen, Regeln un
 
 ## Architektur: ein Agent mit klaren Grenzen
 
-Der Betrieb ist Docker-basiert. Das ist keine Sicherheitsgarantie, aber eine wichtige Grenze zwischen Agent und Host. Der Agent bekommt nicht pauschal alles, sondern nur die Zugriffe, die für seine Aufgaben nötig sind. Integrationen und Zugangsdaten bleiben getrennt von der Unterhaltung; Secrets gehören weder in Antworten noch in Git-Repositories.
+Der Betrieb ist Docker-basiert, mit einem Tailscale-Sidecar. Das ist keine Sicherheitsgarantie, aber eine wichtige Grenze zwischen Agent und Host. Wichtige lokale Verzeichnisse, darunter der Obsidian-Vault, sind bewusst als Volumes eingebunden. Keys und Secrets werden als Umgebungsvariablen übergeben und gehören weder in Antworten noch in Git-Repositories. Der Agent bekommt nicht pauschal alles, sondern nur die Zugriffe, die für seine Aufgaben nötig sind.
 
 Diese Trennung ist besonders relevant, weil der Agent nicht nur Texte zusammenfasst. Er kann bei Bedarf Dateien lesen, Logs prüfen, Skripte ausführen oder definierte Dienste abfragen. Genau deshalb braucht jede Fähigkeit einen klaren Rahmen.
 
@@ -67,7 +67,7 @@ Das klingt konservativ, ist aber der Punkt. Ein Agent, der bei einem falsch vers
 
 ## Obsidian ist Wissensquelle, nicht Spielwiese
 
-Mein Obsidian-Vault ist das langfristige Gedächtnis des Systems. Dort liegen technische Notizen, Projektkontext, Trainings- und Gesundheitslogs, Rechercheergebnisse und persönliche Routinen. Der Agent darf daraus lesen und bestehende passende Notizen ergänzen, aber er soll den Vault nicht "optimieren", indem er Dateien umbenennt, verschiebt oder eine neue Ordnerstruktur erfindet.
+Mein Obsidian-Vault ist das langfristige Gedächtnis des Systems. Dort liegen technische Notizen, Projektkontext, Trainings- und Gesundheitslogs, Rechercheergebnisse und persönliche Routinen. Er ist als Volume eingebunden und wird mit Syncthing auf andere Geräte synchronisiert. Der Agent darf daraus lesen und bestehende passende Notizen ergänzen, aber er soll den Vault nicht "optimieren", indem er Dateien umbenennt, verschiebt oder eine neue Ordnerstruktur erfindet.
 
 Die Schreibregel ist deshalb einfach:
 
@@ -88,7 +88,7 @@ Bei Architekturfragen vergleicht er Optionen nach Wartbarkeit, Komplexität, Sic
 
 ### Training und Gesundheit
 
-Für den Sport nutze ich Trainingshistorie, Plan, Zonen und Belastung als Ausgangspunkt. Ein sinnvoller Review vergleicht nicht nur eine einzelne Fahrt mit einer Zielzahl, sondern schaut auf mehrere Wochen: Umfang, Intensität, längste Einheiten, Ruhetage, Entwicklung von Fitness und Ermüdung.
+Für den Sport nutze ich Trainingshistorie, Plan, Zonen und Belastung als Ausgangspunkt. Intervals.icu ist dabei die Hauptquelle, ergänzt durch Garmin-Daten und begrenzt nutzbare Strava-Daten. Ein sinnvoller Review vergleicht nicht nur eine einzelne Fahrt mit einer Zielzahl, sondern schaut auf mehrere Wochen: Umfang, Intensität, längste Einheiten, Ruhetage, Entwicklung von Fitness und Ermüdung.
 
 Wichtig ist die Lücke zwischen Sensorik und Realität. Herzfrequenzlast sagt nicht alles. Ein Krafttraining kann das System wenig belasten und trotzdem Rücken, Schultern oder Rumpf für die nächste harte Radeinheit müde machen. Deshalb gehören auch subjektives Gefühl, Muskelkater, Schmerz und ungewohnte Belastungen in die Bewertung.
 
@@ -115,8 +115,8 @@ Auch seine Antworten müssen überprüfbar bleiben. Bei aktuellen Tools, Version
 
 ## Der aktuelle Stand
 
-Das System ist kein fertiger "Life OS"-Baukasten. Es ist eine wachsende Arbeitsumgebung, die sich an meinen tatsächlichen Projekten orientiert: Homelab-Betrieb, Softwareentwicklung, Obsidian, Laufen und Radfahren. Manche Integrationen sind schon praktisch, andere brauchen noch bessere Schnittstellen oder mehr zuverlässige Daten.
+Das System ist kein fertiger "Life OS"-Baukasten. Es ist eine wachsende Arbeitsumgebung, die sich an meinen tatsächlichen Projekten orientiert: Homelab-Betrieb, Softwareentwicklung, Obsidian, Laufen und Radfahren. Die stärksten Alltagsanwendungen sind Trainingsfeedback dokumentieren, einen Trainingsreview erstellen, beim Homelab helfen und die einfache, häufige Frage beantworten: "Was habe ich dazu schon in meinen Notizen?" Manche Integrationen sind schon praktisch, andere brauchen noch bessere Schnittstellen oder mehr zuverlässige Daten.
 
-Der wichtigste Fortschritt ist trotzdem bereits da: Aus einzelnen Chat-Anfragen und separaten n8n-Flows ist ein System geworden, das Kontext über längere Zeit halten kann, Risiken ernst nimmt und bei der Umsetzung nicht nur Tempo, sondern auch Wartbarkeit und Erholung berücksichtigt.
+Der wichtigste Fortschritt ist trotzdem bereits da: Aus einzelnen Chat-Anfragen und separaten n8n-Flows ist ein System geworden, das Kontext über längere Zeit halten kann, Risiken ernst nimmt und bei der Umsetzung nicht nur Tempo, sondern auch Wartbarkeit und Erholung berücksichtigt. Menschliches Urteil bleibt nötig: Architekturentscheidungen treffe ich selbst, Recherchequalität schwankt und Trainingspläne brauchen oft noch eine zweite Überarbeitung. Das ist keine Enttäuschung, sondern eine Grenze, die das System erst nützlich macht.
 
 Das ist für mich die interessante Seite persönlicher Agenten. Nicht ein weiterer Bot, der möglichst viel verspricht, sondern ein Werkzeug, das in einem klaren Rahmen zuverlässig mitarbeitet.
