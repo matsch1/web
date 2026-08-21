@@ -2,7 +2,7 @@
 title: "Vom n8n-Workflow zum persönlichen Agentensystem"
 slug: "hermes-agent"
 date: 2026-07-31
-description: "Ein selbstgehosteter KI-Assistent für Engineering, Ausdauersport und persönliche Wissens-Workflows."
+description: "Warum ich meinen n8n-Assistenten durch ein selbstgehostetes Agentensystem für Engineering, Ausdauersport und persönliche Wissensarbeit ersetzt habe."
 ShowToc: true
 TocOpen: true
 draft: true
@@ -21,44 +21,102 @@ project:
 
 > Entwurf — diese Projektseite ist noch nicht veröffentlicht.
 
-## Das Problem
+Mein erster persönlicher KI-Assistent war ein n8n-Workflow: Telegram rein, Modell entscheidet, ein paar MCP-Tools erledigen Kalender, Aufgaben oder Notizen. Das war ein gutes Experiment. Der Workflow hatte klare Kanten, ließ sich nachvollziehen und hat mir gezeigt, welche Dinge ich wirklich automatisieren will.
 
-- Warum ein persönlicher, selbstgehosteter Assistent statt einzelner Automationen?
-- n8n ist nur kurzer Kontext für den Wechsel, nicht das Thema des Beitrags.
+Im Alltag wurde aber genau diese Form zum Limit. Ein Workflow ist stark, wenn Ablauf und Datenmodell vorher feststehen. Meine Fragen tun das selten. Mal geht es um einen Fehler im K3s-Cluster, mal um einen Vergleich zweier Fahrrad-Setups, mal um eine Notiz aus dem Obsidian-Vault oder um die Planung der nächsten Trainingswoche. Dafür wollte ich nicht pro Anwendungsfall wieder einen eigenen Flow, Prompt und Satz von Knoten bauen.
 
-## Was ist Hermes Agent?
+Deshalb läuft heute [Hermes Agent](https://hermes-agent.nousresearch.com/docs) als persönliches Agentensystem in meinem Homelab. Nicht als autonomer Butler, der im Hintergrund beliebige Dinge verändert. Eher als technischer und sportlicher Sparringspartner mit Werkzeugen, Grenzen und einem Gedächtnis, das ich selbst kontrolliere.
 
-- Ein praxisnaher Assistent für Engineering, Homelab-Betrieb, Training und persönliche Wissensarbeit.
-- Eine Chat-first-Oberfläche mit kontrolliertem Zugriff auf Tools, Dateien und ausgewählte Dienste.
+## Warum nicht einfach bei n8n bleiben?
 
-## Systemdesign
+n8n bleibt ein gutes Werkzeug für deterministische Automatisierungen: Webhooks verarbeiten, Daten zwischen Diensten schieben, Erinnerungen verschicken, regelmäßig einen Job ausführen. Dort ist ein sichtbarer Workflow ein Vorteil.
 
-- Docker-basierter Betrieb und die Grenze zwischen Agent und Host.
-- Obsidian als langlebige Wissensquelle mit konservativen Schreibregeln.
-- Integrationen für technische Betriebsabläufe und Ausdauertraining.
+Die Arbeit mit einem persönlichen Assistenten beginnt jedoch oft vor der Automatisierung. Ich will zunächst verstehen, was überhaupt los ist:
 
-## So nutze ich ihn
+- Welche Hypothese erklärt diesen Fehler am besten?
+- Welche Informationen fehlen für eine Infrastrukturentscheidung?
+- Ist die Trainingswoche ambitioniert oder einfach zu viel?
+- Gibt es zu einem Thema schon eine brauchbare Notiz oder baue ich gerade ein Duplikat?
 
-- Engineering: Debugging, Architekturentscheidungen, Automatisierung und Homelab-Betrieb.
-- Sport: Trainingsreview, Planung, Belastbarkeit und Event-Vorbereitung.
-- Wöchentliche Reviews, die offene Arbeit, Trainingsbelastung und Prioritäten verbinden.
+Ein Agent kann erst recherchieren, Dateien und Logs lesen, Optionen gegeneinander abwägen und dann einen konkreten nächsten Schritt vorschlagen. Falls aus dem Ergebnis ein stabiler, wiederholbarer Ablauf entsteht, kann daraus immer noch eine klassische Automatisierung werden. Das ist für mich die richtige Reihenfolge: erst Denken und Prüfen, dann automatisieren.
 
-### Noch zu ergänzende Belege
+## Was Hermes Agent für mich ist
 
-- Ein anonymisierter Vorher-/Nachher-Chat-Ausschnitt.
-- Zwei kompakte Ablaufdiagramme: Wissensarbeit und Wochenreview.
+Hermes ist die Chat-Oberfläche über zwei Bereiche, die auf den ersten Blick wenig miteinander zu tun haben: Engineering und Ausdauersport. In beiden Fällen hilft mir kein allgemeines "Du schaffst das", sondern ein System, das Kontext sauber einordnet und bei Unsicherheit nicht rät.
 
-## Sicherheit und Kontrolle
+Im technischen Bereich ist der Agent ein Sparringspartner für Coding, DevOps, Docker, Kubernetes, Homelab-Betrieb, Debugging und Architektur. Die gewünschte Arbeitsweise ist bewusst nüchtern: zuerst Zielbild, Risiken und Trade-offs klären; dann Logs und Status ansehen; Hypothesen bilden; gezielt testen; erst danach ändern. Eine Antwort sollte nicht nur einen Befehl liefern, sondern auch erklären, warum dieser Schritt sinnvoll ist und wie man ihn wieder zurückdreht.
 
-- Read-only-Prüfungen vor Änderungen, explizite Freigabe für destruktive Aktionen und Rollback-Denken.
-- Secrets, Zugangsdaten und Infrastrukturgrenzen.
-- Wann der Agent stoppen und nachfragen soll, statt zu handeln.
+Im Sportbereich arbeitet derselbe Agent mit einem anderen Satz von Fragen: Wie passt die tatsächliche Belastung zur Planung? Wo fehlt Erholung? Was sagt die Entwicklung der letzten Wochen über die Vorbereitung auf ein Event? Welche Ausrüstung löst ein echtes Problem und welche ist nur ein teures Upgrade? Training ist für mich dabei nicht vom Rest des Alltags getrennt. Schlaf, Mobility, Yoga, Krafttraining und verfügbare Zeit gehören in dieselbe Betrachtung.
 
-## Erkenntnisse und aktuelle Grenzen
+Der gemeinsame Nenner ist kein magischer Prompt. Es sind klare Rollen, Regeln und Datenquellen.
 
-- Was im Alltag bereits nützlich ist.
-- Was weiterhin menschliches Urteil oder bessere Integrationen braucht.
+## Architektur: ein Agent mit klaren Grenzen
 
-## Nächste Schritte
+Der Betrieb ist Docker-basiert. Das ist keine Sicherheitsgarantie, aber eine wichtige Grenze zwischen Agent und Host. Der Agent bekommt nicht pauschal alles, sondern nur die Zugriffe, die für seine Aufgaben nötig sind. Integrationen und Zugangsdaten bleiben getrennt von der Unterhaltung; Secrets gehören weder in Antworten noch in Git-Repositories.
 
-- Offene Fragen und geplante Verbesserungen.
+Diese Trennung ist besonders relevant, weil der Agent nicht nur Texte zusammenfasst. Er kann bei Bedarf Dateien lesen, Logs prüfen, Skripte ausführen oder definierte Dienste abfragen. Genau deshalb braucht jede Fähigkeit einen klaren Rahmen.
+
+Für Infrastrukturarbeit bedeutet das zum Beispiel:
+
+1. Zuerst read-only prüfen: Status, Logs, Konfiguration und Abhängigkeiten.
+2. Änderungen so klein und reversibel wie möglich halten.
+3. Bei Migrationen, Volumes, Datenbanken, Löschoperationen oder unklaren Folgen vorher anhalten.
+4. Dry-runs, Backups und einen möglichen Rollback prüfen, bevor etwas Produktives verändert wird.
+
+Das klingt konservativ, ist aber der Punkt. Ein Agent, der bei einem falsch verstandenen Satz sofort `prune` oder `delete` ausführt, ist kein hilfreicher Operator.
+
+## Obsidian ist Wissensquelle, nicht Spielwiese
+
+Mein Obsidian-Vault ist das langfristige Gedächtnis des Systems. Dort liegen technische Notizen, Projektkontext, Trainings- und Gesundheitslogs, Rechercheergebnisse und persönliche Routinen. Der Agent darf daraus lesen und bestehende passende Notizen ergänzen, aber er soll den Vault nicht "optimieren", indem er Dateien umbenennt, verschiebt oder eine neue Ordnerstruktur erfindet.
+
+Die Schreibregel ist deshalb einfach:
+
+- Zuerst nach einer passenden bestehenden Notiz suchen.
+- Wenn sie existiert, gezielt ergänzen statt eine Parallelnotiz anzulegen.
+- Wenn der Zielort unklar ist, nachfragen.
+- Aufgaben nicht ungefragt in den Vault kippen.
+
+Das schützt vor einem sehr typischen KI-Problem: viel formal korrekter, aber unbrauchbar verstreuter Output. Ein Vault wird nicht besser, weil darin mehr Markdown liegt. Er wird besser, wenn Informationen an der Stelle landen, an der ich sie später wiederfinde.
+
+## Wie ich ihn tatsächlich nutze
+
+### Engineering und Homelab
+
+Der größte Nutzen entsteht nicht durch das Generieren von Boilerplate. Der Agent hilft vor allem dabei, Fehler und Entscheidungen zu strukturieren. Bei einem Problem im Homelab beginnt er mit der Frage, was beobachtbar ist: Welche Komponente ist betroffen? Was sagen Logs, Netzwerkpfad und aktueller Zustand? Welche Annahme lässt sich mit einem kleinen, ungefährlichen Test widerlegen?
+
+Bei Architekturfragen vergleicht er Optionen nach Wartbarkeit, Komplexität, Sicherheitsfläche, Betrieb und Reversibilität. Das bremst Aktionismus. Nicht jede Aufgabe braucht Kubernetes, Terraform oder noch einen Service. Wenn Docker Compose sauber genug ist, soll die Empfehlung auch so aussehen.
+
+### Training und Gesundheit
+
+Für den Sport nutze ich Trainingshistorie, Plan, Zonen und Belastung als Ausgangspunkt. Ein sinnvoller Review vergleicht nicht nur eine einzelne Fahrt mit einer Zielzahl, sondern schaut auf mehrere Wochen: Umfang, Intensität, längste Einheiten, Ruhetage, Entwicklung von Fitness und Ermüdung.
+
+Wichtig ist die Lücke zwischen Sensorik und Realität. Herzfrequenzlast sagt nicht alles. Ein Krafttraining kann das System wenig belasten und trotzdem Rücken, Schultern oder Rumpf für die nächste harte Radeinheit müde machen. Deshalb gehören auch subjektives Gefühl, Muskelkater, Schmerz und ungewohnte Belastungen in die Bewertung.
+
+Bei Schmerzen, Warnzeichen oder einer sich verschlechternden Beschwerde bleibt der Agent absichtlich konservativ. Er kann keine Diagnose stellen. Seine Aufgabe ist dann, Belastung zu reduzieren, Warnzeichen klar zu benennen und bei anhaltenden Problemen Arzt oder Physio zu empfehlen.
+
+### Wochenreview statt Themenchaos
+
+Der Agent verbindet die beiden Domänen nicht künstlich, aber er hilft beim Priorisieren. Ein Wochenreview beantwortet wenige Fragen:
+
+- Was lief gut?
+- Was ist offen oder blockiert?
+- Welche Entscheidung steht an?
+- Was sind die nächsten ein bis drei sinnvollen Schritte?
+
+Das ist nützlicher als eine endlose To-do-Liste. Auch im Sport verhindert es, dass jede freie Stunde sofort mit Training gefüllt wird. Fortschritt entsteht durch belastbare Routinen, nicht durch maximale Auslastung.
+
+## Was ich bewusst nicht automatisiere
+
+Der Agent darf Vorschläge machen und kleine, reversible Dinge erledigen. Er soll aber nicht ungefragt wichtige Dateien überschreiben, den Obsidian-Vault umbauen, Infrastruktur umstellen oder Gesundheitsentscheidungen treffen.
+
+Diese Grenze ist nicht bloß eine Sicherheitsmaßnahme. Sie hält Verantwortung dort, wo sie hingehört. Ich entscheide über Ziele, Risiko und Prioritäten. Der Agent hilft mir, die Entscheidung mit besserer Information und weniger Reibung zu treffen.
+
+Auch seine Antworten müssen überprüfbar bleiben. Bei aktuellen Tools, Versionen, Preisen, Produkten, Events oder Gesundheitsthemen recherchiert er zuerst und nennt Quellen. Wenn keine belastbare Quelle vorhanden ist, soll er das sagen statt eine plausible Antwort zu erfinden.
+
+## Der aktuelle Stand
+
+Das System ist kein fertiger "Life OS"-Baukasten. Es ist eine wachsende Arbeitsumgebung, die sich an meinen tatsächlichen Projekten orientiert: Homelab-Betrieb, Softwareentwicklung, Obsidian, Laufen und Radfahren. Manche Integrationen sind schon praktisch, andere brauchen noch bessere Schnittstellen oder mehr zuverlässige Daten.
+
+Der wichtigste Fortschritt ist trotzdem bereits da: Aus einzelnen Chat-Anfragen und separaten n8n-Flows ist ein System geworden, das Kontext über längere Zeit halten kann, Risiken ernst nimmt und bei der Umsetzung nicht nur Tempo, sondern auch Wartbarkeit und Erholung berücksichtigt.
+
+Das ist für mich die interessante Seite persönlicher Agenten. Nicht ein weiterer Bot, der möglichst viel verspricht, sondern ein Werkzeug, das in einem klaren Rahmen zuverlässig mitarbeitet.
