@@ -19,11 +19,11 @@ jobs:
           python-version: '3.12'
           cache: pip
       - run: pip install -r requirements.txt
-      - run: python -m unittest discover -s tests -v
       - uses: peaceiris/actions-hugo@6b1ee2dcc06c9b6629a5317fa0146473914d05e1 # v3.0.0
         with:
-          hugo-version: '0.164.0'
+          hugo-version: '0.168.0'
           extended: true
+      - run: HUGO_BIN=$(command -v hugo) python -m unittest discover -s tests -v
       - run: hugo --gc --minify --environment production
       - run: python scripts/prepare_root_artifacts.py public
       - run: python scripts/verify_site.py public
