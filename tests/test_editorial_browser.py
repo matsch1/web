@@ -39,6 +39,38 @@ class EditorialBrowser(unittest.TestCase):
                 finally:
                     page.close()
 
+    def test_about_portrait_preserves_natural_aspect_ratio(self):
+        for lang in ('de', 'en'):
+            for width in (320, 390, 768, 1280):
+                with self.subTest(lang=lang, width=width):
+                    page = self.browser.new_page(viewport={'width': width, 'height': 900})
+                    try:
+                        page.goto(BASE_URL + '/' + lang + '/about/', wait_until='domcontentloaded')
+                        image = page.locator('.post-content figure.right img').first
+                        image.scroll_into_view_if_needed()
+                        image.evaluate('(e) => e.decode()')
+                        ratio_error = image.evaluate('(e) => Math.abs((e.getBoundingClientRect().width / e.getBoundingClientRect().height) / (e.naturalWidth / e.naturalHeight) - 1)')
+                        self.assertLess(ratio_error, 0.01, 'Portrait must scale its height with its responsive width')
+                    finally:
+                        page.close()
+
+    def test_standard_project_cards_have_substantial_image_area(self):
+        for width in (320, 390, 768, 1280):
+            with self.subTest(width=width):
+                page = self.browser.new_page(viewport={'width': width, 'height': 900})
+                try:
+                    page.goto(BASE_URL + '/de/', wait_until='networkidle')
+                    cards = page.locator('.homepage-project-card[data-content-kind="project"]:not(.editorial-lead)')
+                    self.assertGreater(cards.count(), 0)
+                    for card in cards.all():
+                        cover = card.locator('.entry-cover')
+                        self.assertGreater(cover.bounding_box()['width'] / card.bounding_box()['width'], .85 if width < 700 else .35)
+                        if width < 700:
+                            image_box = cover.bounding_box()
+                            self.assertGreaterEqual(card.locator('.entry-header').bounding_box()['y'], image_box['y'] + image_box['height'])
+                finally:
+                    page.close()
+
     def test_localized_layouts_have_no_overflow_and_fonts_load(self):
         routes = ('/', '/projects/', '/notes/', '/projects/travel/2023-denmark/')
         for lang in ('de', 'en'):
