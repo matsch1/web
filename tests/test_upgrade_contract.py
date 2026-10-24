@@ -58,4 +58,3 @@ class RenderedUpgradeContract(unittest.TestCase):
                     urls = [a['content'] for t, a in nodes if t == 'meta' and a.get('property') == 'og:url']
                     self.assertEqual(urls, [f'https://blog.matschcode.de/{lang}/'])
                     self.assertTrue((Path(directory) / lang / 'index.json').stat().st_size)
-
