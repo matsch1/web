@@ -54,13 +54,13 @@ class EditorialBrowser(unittest.TestCase):
                     finally:
                         page.close()
 
-    def test_standard_project_cards_have_substantial_image_area(self):
+    def test_standard_homepage_cards_have_substantial_image_area(self):
         for width in (320, 390, 768, 1280):
             with self.subTest(width=width):
                 page = self.browser.new_page(viewport={'width': width, 'height': 900})
                 try:
                     page.goto(BASE_URL + '/de/', wait_until='networkidle')
-                    cards = page.locator('.homepage-project-card[data-content-kind="project"]:not(.editorial-lead)')
+                    cards = page.locator('.homepage-project-card:not(.editorial-lead):has(.entry-cover)')
                     self.assertGreater(cards.count(), 0)
                     for card in cards.all():
                         cover = card.locator('.entry-cover')
