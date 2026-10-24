@@ -138,9 +138,11 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn('project_status_successor_link', status_partial)
         self.assertIn('partial "project_status.html" (dict "page" . "variant" "badge")', card)
         self.assertIn('partial "project_status.html" (dict "page" . "variant" "badge")', listing)
-        self.assertIn('or (eq .Section "projects") (.Param "listAsProject")', listing)
+        # Type checks are shared so hidden project child posts stay articles.
+        self.assertIn('partial "is_project.html" .', listing)
         self.assertIn('partial "project_status.html" (dict "page" . "variant" "badge")', homepage)
-        banner_call = 'partial "project_status.html" (dict "page" . "variant" "banner")'
+        # The approved editorial design replaces the large banner with metadata.
+        banner_call = 'partial "project_status.html" (dict "page" . "variant" "metadata")'
         self.assertIn(banner_call, single)
         self.assertLess(single.index(banner_call), single.index('</header>'))
         self.assertIn('--project-status-color', styles)

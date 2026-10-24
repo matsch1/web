@@ -21,10 +21,12 @@
 {{- $archiveProjects = sort $archiveProjects "Date" "desc" }}
 
 {{- $featuredProjects := where $homepageProjects "Params.homepage.featured" true }}
+{{- $leadProjects := first 1 $featuredProjects }}
 {{- $engineeringProjects := where $homepageProjects "Params.homepage.section" "engineering" }}
-{{- $engineeringProjects = where $engineeringProjects "Params.homepage.featured" "ne" true }}
+{{- $engineeringProjects = $engineeringProjects | complement $leadProjects }}
 {{- $outdoorProjects := where $homepageProjects "Params.homepage.section" "outdoors" }}
-{{- $outdoorProjects = where $outdoorProjects "Params.homepage.featured" "ne" true }}
+{{- $outdoorProjects = $outdoorProjects | complement $leadProjects }}
+{{- $articles := sort (where site.RegularPages "Section" "notes") "Date" "desc" }}
 
 {{- with $activeLifecycleProjects }}
 <section class="homepage-section" data-home-section="active">
@@ -34,21 +36,21 @@
   </header>
   <div class="homepage-cards">
     {{- range . }}
-      {{- partial "homepage_project_card.html" . }}
+      {{- partial "homepage_project_card.html" (dict "page" .) }}
     {{- end }}
   </div>
 </section>
 {{- end }}
 
-{{- with $featuredProjects }}
+{{- with $leadProjects }}
 <section class="homepage-section" data-home-section="featured">
   <header class="homepage-section__header">
     <h2>{{ i18n "home_featured_title" }}</h2>
     <p>{{ i18n "home_featured_intro" }}</p>
   </header>
   <div class="homepage-cards">
-    {{- range first 3 . }}
-      {{- partial "homepage_project_card.html" . }}
+    {{- range . }}
+      {{- partial "homepage_project_card.html" (dict "page" . "lead" true) }}
     {{- end }}
   </div>
 </section>
@@ -61,8 +63,8 @@
     <p>{{ i18n "home_engineering_intro" }}</p>
   </header>
   <div class="homepage-cards">
-    {{- range first 3 . }}
-      {{- partial "homepage_project_card.html" . }}
+    {{- range first 2 . }}
+      {{- partial "homepage_project_card.html" (dict "page" .) }}
     {{- end }}
   </div>
 </section>
@@ -75,8 +77,22 @@
     <p>{{ i18n "home_outdoors_intro" }}</p>
   </header>
   <div class="homepage-cards">
+    {{- range first 2 . }}
+      {{- partial "homepage_project_card.html" (dict "page" .) }}
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+{{- with $articles }}
+<section class="homepage-section" data-home-section="articles">
+  <header class="homepage-section__header">
+    <h2>{{ i18n "home_articles_title" }}</h2>
+    <a href="{{ "notes/" | relLangURL }}">{{ i18n "home_articles_link" }} →</a>
+  </header>
+  <div class="homepage-cards">
     {{- range first 3 . }}
-      {{- partial "homepage_project_card.html" . }}
+      {{- partial "homepage_project_card.html" (dict "page" .) }}
     {{- end }}
   </div>
 </section>

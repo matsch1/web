@@ -1,19 +1,25 @@
-<article class="post-entry project-entry homepage-project-card">
+{{- $page := .page -}}
+{{- $lead := .lead | default false -}}
+{{- with $page -}}
+{{- $title := .Param "homepage.title" | default .Title -}}
+{{- $teaser := .Param "homepage.teaser" | default .Description | default (.Summary | plainify | htmlUnescape) -}}
+{{- $graphic := or (eq (.Param "homepage.section") "engineering") (eq .Section "notes") -}}
+{{- $sizes := "(min-width: 960px) 215px, (min-width: 700px) 24vw, 24vw" -}}
+{{- if $lead }}{{ $sizes = "(min-width: 960px) 510px, (min-width: 700px) 56vw, calc(100vw - 62px)" }}{{ end -}}
+<article class="post-entry project-entry homepage-project-card{{ if $lead }} editorial-lead{{ end }}{{ if $graphic }} homepage-project-card--graphic{{ end }}" data-content-kind="{{ if partial "is_project.html" . }}project{{ else }}article{{ end }}">
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
-  {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+  {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden "sizes" $sizes) }}
   <header class="entry-header">
-    <h3>{{ .Title }}</h3>
+    {{- partial "content_kind.html" . }}
+    <h3>{{ $title }}</h3>
     {{- partial "project_status.html" (dict "page" . "variant" "badge") }}
   </header>
   {{- if ne (.Param "hideSummary") true }}
-  <div class="entry-content">
-    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-  </div>
+  <div class="entry-content"><p>{{ $teaser }}</p></div>
   {{- end }}
   {{- if not (.Param "hideMeta") }}
-  <footer class="entry-footer">
-    {{- partial "post_meta.html" . }}
-  </footer>
+  <footer class="entry-footer">{{- partial "post_meta.html" . }}</footer>
   {{- end }}
-  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .RelPermalink }}"></a>
+  <a class="entry-link" aria-label="{{ $title | plainify }}" href="{{ .RelPermalink }}"></a>
 </article>
+{{- end -}}

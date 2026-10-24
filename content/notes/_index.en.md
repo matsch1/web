@@ -1,10 +1,10 @@
 ---
+title: "Articles"
 date: 2025-05-04
-description: ''
+description: "Experiences, guides and individual chapters from my projects."
 draft: false
 source_lang: en
-title: Notes
+translation_lock: true
 ---
 
-Welcome to my notes!
-This is where I share everything that made me laugh, cry, or think—lessons I’ve painfully learned so you don’t have to.
+Experiences, guides and individual chapters from my projects. Self-contained articles to read and try – independent of the overall project status.

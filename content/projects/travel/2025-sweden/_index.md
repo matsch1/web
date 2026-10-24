@@ -12,7 +12,10 @@ source_lang: de
 listAsProject: true
 cascade:
   hiddenInProjectList: true
+translation_lock: true
 homepage:
+  title: "Bikepacking durch Schweden und Dänemark"
+  teaser: "Mit Rad und Zelt durch Skandinavien: Planung, Etappen und Bilder meiner Reise 2025."
   section: outdoors
   state: evergreen
   featured: true

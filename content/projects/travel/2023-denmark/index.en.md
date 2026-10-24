@@ -12,7 +12,10 @@ description: '1,101 kilometers, 5,012 meters of elevation gain, and 13 days in t
   saddle: a clockwise tour of Jutland.'
 draft: false
 gallery_translation_version: 1
+translation_lock: true
 homepage:
+  title: "Denmark: the Jutland Loop"
+  teaser: "A cycling journey around Jutland, with the route, impressions, and photographs from the road."
   featured: false
   section: outdoors
   state: active

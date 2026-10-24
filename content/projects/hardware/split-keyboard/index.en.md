@@ -9,7 +9,10 @@ cover:
 date: 2025-08-04
 description: Modeling, soldering, 3D printing, assembling, flashing
 draft: false
+translation_lock: true
 homepage:
+  title: "My first split keyboard"
+  teaser: "From kit to daily keyboard: building Ian’s split keyboard and sharing the first lessons."
   featured: true
   section: engineering
   state: evergreen

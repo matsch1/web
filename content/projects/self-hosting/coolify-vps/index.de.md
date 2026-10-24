@@ -10,7 +10,10 @@ cover:
 date: 2025-05-10
 description: Server-Absicherung und Bereitstellung der ersten App mit Coolify.
 draft: false
+translation_lock: true
 homepage:
+  title: "Coolify auf dem eigenen VPS"
+  teaser: "Einen VPS absichern und die erste App mit Coolify bereitstellen – Erfahrungen aus meinem Setup."
   featured: false
   section: engineering
   state: evergreen

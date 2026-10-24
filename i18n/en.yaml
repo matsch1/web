@@ -32,10 +32,27 @@
   translation: "Continue to projects"
 
 - id: home_featured_title
-  translation: "Current & recommended"
+  translation: "In focus"
+
+- id: nav_projects
+  translation: "Projects"
+- id: nav_notes
+  translation: "Articles"
+- id: nav_about
+  translation: "About"
+- id: nav_search
+  translation: "Search"
+- id: content_kind_project
+  translation: "Project"
+- id: content_kind_article
+  translation: "Article"
+- id: home_articles_title
+  translation: "From the articles"
+- id: home_articles_link
+  translation: "All articles"
 
 - id: home_featured_intro
-  translation: "A curated selection from technology and the outdoors."
+  translation: "One project to start exploring."
 
 - id: home_engineering_title
   translation: "Engineering & homelab"

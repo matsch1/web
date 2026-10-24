@@ -32,10 +32,27 @@
   translation: "Weiter zu den Projekten"
 
 - id: home_featured_title
-  translation: "Aktuell & empfohlen"
+  translation: "Im Fokus"
+
+- id: nav_projects
+  translation: "Projekte"
+- id: nav_notes
+  translation: "Beiträge"
+- id: nav_about
+  translation: "Über mich"
+- id: nav_search
+  translation: "Suche"
+- id: content_kind_project
+  translation: "Projekt"
+- id: content_kind_article
+  translation: "Beitrag"
+- id: home_articles_title
+  translation: "Aus den Beiträgen"
+- id: home_articles_link
+  translation: "Alle Beiträge"
 
 - id: home_featured_intro
-  translation: "Eine kuratierte Auswahl aus Technik und unterwegs."
+  translation: "Ein Projekt zum Einsteigen."
 
 - id: home_engineering_title
   translation: "Engineering & Homelab"

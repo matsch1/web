@@ -10,7 +10,10 @@ date: 2023-07-01
 description: '1.101 Kilometer, 5.012 Höhenmeter und 13 Tage im Sattel: im Uhrzeigersinn
   um Jütland.'
 draft: false
+translation_lock: true
 homepage:
+  title: "Dänemark: die Jütland-Runde"
+  teaser: "Eine Radreise rund um Jütland – mit Route, Eindrücken und Bildern von unterwegs."
   featured: false
   section: outdoors
   state: active

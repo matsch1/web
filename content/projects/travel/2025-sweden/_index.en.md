@@ -10,7 +10,10 @@ cover:
 date: 2025-06-20
 description: A record of my bikepacking trip through Denmark and Sweden
 draft: false
+translation_lock: true
 homepage:
+  title: "Bikepacking through Sweden and Denmark"
+  teaser: "Through Scandinavia with a bike and tent: plans, daily stages, and photographs from my 2025 trip."
   featured: true
   section: outdoors
   state: evergreen

@@ -14,7 +14,10 @@ tags:
   - bikepacking
   - dänemark
 source_lang: de
+translation_lock: true
 homepage:
+  title: "Dänemark: die Jütland-Runde"
+  teaser: "Eine Radreise rund um Jütland – mit Route, Eindrücken und Bildern von unterwegs."
   section: outdoors
   state: active
   featured: false

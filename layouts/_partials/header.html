@@ -1,6 +1,8 @@
-<header class="header site-masthead">
-    {{- partial "masthead_image.html" . }}
-    <div class="site-masthead__overlay" aria-hidden="true"></div>
+<header class="header site-masthead{{ if not .IsHome }} site-masthead--compact{{ end }}">
+    {{- if .IsHome }}
+      {{- partial "masthead_image.html" . }}
+      <div class="site-masthead__overlay" aria-hidden="true"></div>
+    {{- end }}
     <nav class="header-nav site-masthead__nav">
         <div class="logo">
             {{- $label_text := (site.Params.label.text | default site.Title) }}
@@ -96,21 +98,22 @@
                 {{- end }}
             </div>
         </div>
-        {{- with site.Title }}
+        {{- if .IsHome }}{{- with site.Title }}
         <p class="site-masthead__tagline">{{ . }}</p>
-        {{- end }}
+        {{- end }}{{- end }}
         {{- $currentPage := . }}
         <ul id="menu" class="menu">
             {{- range site.Menus.main }}
+            {{- $menuLabel := i18n (printf "nav_%s" .Identifier) | default .Name }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
             {{- $page_url:= $currentPage.Permalink | absLangURL }}
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
             <li>
-                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
+                <a href="{{ .URL | absLangURL }}" title="{{ $menuLabel }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
                 {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
                     <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
                         {{- .Pre }}
-                        {{- .Name -}}
+                        {{- $menuLabel -}}
                         {{ .Post -}}
                     </span>
                     {{- if (findRE "://" .URL) }}&nbsp;

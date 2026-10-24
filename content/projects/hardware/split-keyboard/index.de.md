@@ -11,7 +11,10 @@ date: 2025-08-04
 description: Modellbau, Löten, 3D-Druck, Zusammenbau, Flashen
 draft: false
 gallery_translation_version: 1
+translation_lock: true
 homepage:
+  title: "Mein erstes Split-Keyboard"
+  teaser: "Vom Bausatz zur eigenen Tastatur: Aufbau und erste Erfahrungen mit Ian’s Split-Keyboard."
   featured: true
   section: engineering
   state: evergreen
