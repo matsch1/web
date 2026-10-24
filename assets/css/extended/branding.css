@@ -1,0 +1,22 @@
+/* Inline paths preserve exact Manrope weights, without loading a webfont. */
+.site-masthead .logo .brand-wordmark {
+  display: block;
+  width: 232px;
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 0;
+  color: inherit;
+}
+
+@media screen and (max-width: 520px) {
+  .site-masthead .logo .brand-wordmark {
+    width: 196px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .site-masthead .logo .brand-wordmark {
+    width: 164px;
+  }
+}

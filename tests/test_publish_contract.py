@@ -259,7 +259,7 @@ class PublishContractTests(unittest.TestCase):
         head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
         self.assertIn('{{ $img.MediaType.Type }}', head)
         self.assertNotIn('{{ $img.MediaType.Type }}/{{ $img.MediaType.SubType }}', head)
-        self.assertIn('$defaultOGImage := "home-logo-600.webp" | absURL', head)
+        self.assertIn('$defaultOGImage := (site.Params.brandSocialImage | default "home-logo-600.webp") | absURL', head)
         self.assertNotIn('social-de.png', head)
         self.assertNotIn('social-en.png', head)
 
@@ -336,7 +336,7 @@ class PublishContractTests(unittest.TestCase):
 
     def test_default_social_logo_uses_an_absolute_url(self):
         head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
-        self.assertIn('"home-logo-600.webp" | absURL', head)
+        self.assertIn('(site.Params.brandSocialImage | default "home-logo-600.webp") | absURL', head)
 
     def test_safari_pinned_tab_icon_exists(self):
         icon = ROOT / "static" / "safari-pinned-tab.svg"

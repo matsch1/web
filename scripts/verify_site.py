@@ -185,8 +185,8 @@ def validate_default_social_metadata(path, expected_url):
     expected_metadata = [
         ("og:image", expected_url),
         ("og:image:type", "image/webp"),
-        ("og:image:width", "600"),
-        ("og:image:height", "606"),
+        ("og:image:width", "1200"),
+        ("og:image:height", "630"),
     ]
     for index in range(len(parser.opengraph) - len(expected_metadata) + 1):
         if parser.opengraph[index : index + len(expected_metadata)] == expected_metadata:
@@ -240,6 +240,10 @@ def main(output):
         "en/index.html",
         "de/home-logo-600.webp",
         "en/home-logo-600.webp",
+        "de/branding/matschcode-jutland-social.webp",
+        "en/branding/matschcode-jutland-social.webp",
+        "de/branding/jutland-favicon.svg",
+        "en/branding/jutland-favicon.svg",
         "de/safari-pinned-tab.svg",
         "en/safari-pinned-tab.svg",
     ]
@@ -265,7 +269,7 @@ def main(output):
         validate_svg(public / language / "safari-pinned-tab.svg")
         validate_default_social_metadata(
             public / language / "index.html",
-            f"https://blog.matschcode.de/{language}/home-logo-600.webp",
+            f"https://blog.matschcode.de/{language}/branding/matschcode-jutland-social.webp",
         )
     validate_projects_pages(public)
     for page in public.rglob("*.html"):
