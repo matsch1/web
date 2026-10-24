@@ -1,7 +1,26 @@
 {{- $alt := .Get "alt" | default (.Get "title") -}}
+{{- $src := .Get "src" -}}
+{{- $image := .Page.Resources.Get (strings.TrimPrefix "./" $src) -}}
+{{- $widths := slice 160 240 360 480 640 960 -}}
+{{- $max := 960 -}}
+{{- $fallback := 360 -}}
+{{- $sizes := "(scripting: none) min(451px, calc(100vw - 28px)), (min-width: 1440px) 256px, (min-width: 880px) 17.78vw, 157px" -}}
+{{- if and $image (in (slice "jpeg" "png" "webp" "tiff" "bmp") $image.MediaType.SubType) -}}
+  {{- $ratio := div (float $image.Width) (float $image.Height) -}}
+  {{- /* Thumbnail width follows uncropped aspect ratio and CSS's 88–144px height.
+       The scripting:none branch keeps the existing multi-column fallback sharp. */ -}}
+  {{- $sizes = printf "(scripting: none) min(451px, calc(100vw - 28px)), (min-width: 1440px) %.0fpx, (min-width: 880px) %.2fvw, %.0fpx" (mul 144.0 $ratio) (mul 10.0 $ratio) (mul 88.0 $ratio) -}}
+{{- end -}}
+{{- if eq .Ordinal 0 -}}
+  {{- $widths = slice 360 480 720 1080 1500 -}}
+  {{- $max = 1500 -}}
+  {{- $fallback = 720 -}}
+  {{- $sizes = "(min-width: 960px) 912px, (min-width: 769px) calc(100vw - 48px), calc(100vw - 28px)" -}}
+{{- end -}}
+{{- $delivery := partial "responsive_image_data.html" (dict "image" $image "src" $src "widths" $widths "max" $max "fallback" $fallback) -}}
 <figure class="image-gallery__item">
   <a class="image-gallery__link" href="{{ .Get "src" }}">
-    <img loading="lazy" src="{{ .Get "src" }}" alt="{{ $alt }}">
+    <img loading="lazy" decoding="async" src="{{ $delivery.src }}" alt="{{ $alt }}"{{ with $delivery.srcset }} srcset="{{ . }}" sizes="{{ $sizes }}"{{ end }}{{ if $delivery.width }} width="{{ $delivery.width }}" height="{{ $delivery.height }}"{{ end }}>
   </a>
   <figcaption>{{ .Get "title" }}</figcaption>
 </figure>

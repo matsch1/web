@@ -1,0 +1,31 @@
+{{- $src := .Get "src" -}}
+{{- $url := urls.Parse $src -}}
+{{- $image := false -}}
+{{- if not $url.IsAbs -}}
+  {{- $image = or (.Page.Resources.Get (strings.TrimPrefix "./" $url.Path)) (resources.Get $url.Path) -}}
+{{- end -}}
+{{- $delivery := partial "responsive_image_data.html" (dict "image" $image "src" $src) -}}
+{{- $sizes := "(min-width: 960px) 912px, (min-width: 769px) calc(100vw - 48px), calc(100vw - 28px)" -}}
+{{- if in (slice (.Get "class")) "right" -}}
+  {{- $sizes = "(min-width: 960px) 365px, (min-width: 769px) calc(40vw - 20px), calc(40vw - 12px)" -}}
+{{- else if .Get "width" -}}
+  {{- $sizes = printf "(min-width: 960px) %spx, calc(100vw - 28px)" (.Get "width") -}}
+{{- end -}}
+{{- $width := .Get "width" | default $delivery.width -}}
+{{- $height := .Get "height" -}}
+{{- if and (not $height) $delivery.width -}}
+  {{- $height = math.Round (mul (float $width) (div (float $delivery.height) (float $delivery.width))) | int -}}
+{{- end -}}
+<figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+  {{- with .Get "link" -}}
+    <a href="{{ . }}"{{ with $.Get "target" }} target="{{ . }}"{{ end }} rel="{{ $.Get "rel" | default "noopener noreferrer" }}">
+  {{- end -}}
+  <img src="{{ $delivery.src }}"{{ with $delivery.srcset }} srcset="{{ . }}" sizes="{{ $.Get "sizes" | default $sizes }}"{{ end }} alt="{{ .Get "alt" | default (.Get "caption" | markdownify | plainify) }}" loading="{{ .Get "loading" | default "lazy" }}" decoding="async"{{ if $width }} width="{{ $width }}"{{ end }}{{ if $height }} height="{{ $height }}"{{ end }}>
+  {{- if .Get "link" }}</a>{{ end -}}
+  {{- if or (.Get "title") (.Get "caption") (.Get "attr") -}}
+  <figcaption>
+    {{ with .Get "title" }}<h4>{{ . }}</h4>{{ end }}
+    {{ if or (.Get "caption") (.Get "attr") }}<p>{{ .Get "caption" | markdownify }}{{ with .Get "attrlink" }}<a href="{{ . }}">{{ end }}{{ .Get "attr" | markdownify }}{{ if .Get "attrlink" }}</a>{{ end }}</p>{{ end }}
+  </figcaption>
+  {{- end }}
+</figure>

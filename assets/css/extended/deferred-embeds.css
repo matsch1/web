@@ -1,0 +1,26 @@
+.deferred-embed {
+  margin-block: 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--entry);
+}
+.deferred-embed--komoot { padding: 0; overflow: hidden; }
+.deferred-embed__controls { padding: 1rem; }
+.deferred-embed button {
+  padding: .6rem 1rem;
+  margin: .5rem .75rem .5rem 0;
+  border: 1px solid currentColor;
+  border-radius: .3rem;
+  color: var(--theme);
+  background: var(--primary);
+  font: inherit;
+  cursor: pointer;
+}
+.deferred-embed button[hidden] { display: none; }
+.deferred-embed button:focus-visible,
+.deferred-embed a:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+.deferred-embed button:disabled { opacity: .65; cursor: wait; }
+.deferred-embed iframe { display: block; width: 100%; border: 0; }
+.deferred-embed--giscus [data-embed-target] { min-height: 150px; }
+.deferred-embed [data-embed-status]:empty { display: none; }

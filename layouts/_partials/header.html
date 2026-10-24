@@ -1,10 +1,5 @@
 <header class="header site-masthead">
-    {{- with site.Params.masthead.image }}
-        {{- with resources.Get . }}
-        {{- $masthead := .Resize "2400x webp q78" }}
-        <img class="site-masthead__image" src="{{ $masthead.RelPermalink }}" alt="" aria-hidden="true">
-        {{- end }}
-    {{- end }}
+    {{- partial "masthead_image.html" . }}
     <div class="site-masthead__overlay" aria-hidden="true"></div>
     <nav class="header-nav site-masthead__nav">
         <div class="logo">

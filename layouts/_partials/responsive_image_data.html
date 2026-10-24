@@ -1,0 +1,23 @@
+{{- /* Delivery derivatives only; never change the source or the lightbox target.
+     SVG/GIF/external images fall back unchanged. All widths are capped at source size. */ -}}
+{{- $image := .image -}}
+{{- $result := dict "src" .src "srcset" "" "width" 0 "height" 0 -}}
+{{- if $image -}}
+  {{- $result = dict "src" $image.RelPermalink "srcset" "" "width" 0 "height" 0 -}}
+  {{- if in (slice "jpeg" "png" "webp" "tiff" "bmp") $image.MediaType.SubType -}}
+    {{- $max := math.Min $image.Width (.max | default 1500) | int -}}
+    {{- $widths := slice $max -}}
+    {{- range (.widths | default (slice 360 480 720 1080 1500)) -}}
+      {{- if lt . $max }}{{ $widths = $widths | append . }}{{ end -}}
+    {{- end -}}
+    {{- $sources := slice -}}
+    {{- range ($widths | uniq | sort) -}}
+      {{- $variant := $image.Resize (printf "%dx webp q78" .) -}}
+      {{- $sources = $sources | append (printf "%s %dw" $variant.RelPermalink $variant.Width) -}}
+    {{- end -}}
+    {{- $fallbackWidth := math.Min $max (.fallback | default 720) | int -}}
+    {{- $fallback := $image.Resize (printf "%dx webp q78" $fallbackWidth) -}}
+    {{- $result = dict "src" $fallback.RelPermalink "srcset" (delimit $sources ", ") "width" $fallback.Width "height" $fallback.Height -}}
+  {{- end -}}
+{{- end -}}
+{{- return $result -}}
