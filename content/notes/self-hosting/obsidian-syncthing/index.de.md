@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 6c2810ba7b11a4bc519d6ebfe6f2cabeedd1659b9e161c21bae10c683aefc5ac
+base_hash: 1a7b73660611de53c936da491c12815a27cda331b62c6bf9f1bbb696f893c20a
 cover:
   alt: obsidian-syncthing
   caption: ''
@@ -17,6 +17,11 @@ tags:
 - syncthing
 title: 'Mein Obsidian- und Syncthing-Setup: Eine selbst gehostete Cloud für Notizen,
   Backups und mehr'
+homepage:
+  teaser: 'Ein VPS als zentraler Sync-Knoten: So verbinde ich Obsidian-Notizen auf
+    Linux, Windows und Android mit Backups auf dem Server.'
+  title: Obsidian und Syncthing mit eigenem Server
+translation_lock: true
 ---
 
 Es gibt zwei Arten von Notizern: diejenigen, die ihre wertvollen Gedanken der Cloud anvertrauen (Hallo, Notion-/Google Drive-/OneNote-Nutzer), und diejenigen, die in den Abgrund starren und sich fragen: *„Was wäre, wenn ich dafür meine eigene Infrastruktur aufbauen würde?“*  

@@ -5,6 +5,7 @@ description: ''
 draft: false
 translation_lock: true
 homepageTitle: "Bauen, erkunden, weitergeben."
+base_hash: 1e19560b0c0ebda6b83325b384e8326ea8129121f5a516a564712a0fb9fb1184
 ---
 
-Software ausprobieren, ein Homelab selbst betreiben und mit dem Rad unterwegs sein: Projekte und Beiträge übers Bauen, Lernen und Reisen.
+Software, Homelab und Radreisen: Hier teile ich Projekte und praktische Erfahrungen vom Bildschirm bis zum Bikepacking.

@@ -8,4 +8,4 @@ translation_lock: true
 homepageTitle: "Build, explore, share."
 ---
 
-Experiments in software, a self-hosted homelab, and journeys by bike: projects and articles from building, learning, and cycling.
+Experiments in software, homelab and cycling: practical projects and experiences from the keyboard to bikepacking trips.

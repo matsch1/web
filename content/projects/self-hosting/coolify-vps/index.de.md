@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: a1007340698619244a25a95b0c12ed6b271540a17f1e667702f65893823b077e
+base_hash: 1f1507e9f2da07f592548e3f7ef700647bf651831b61dd9c28fec8f269b58b2a
 cover:
   alt: coolify-vps-setup
   caption: ''

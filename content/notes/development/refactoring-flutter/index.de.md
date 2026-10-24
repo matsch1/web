@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: ade78b265c3f55fe987b4f39d7471431ed390534798282b58b7ab04389d481b2
+base_hash: c5a7d76f50d56ffca5419231b8f7d621a51596b78776f772676c89057f286046
 cover:
   alt: flutter-refactoring
   caption: ''
@@ -14,6 +14,11 @@ slug: flutter-refactoring
 tags:
 - flutter
 title: 7 Möglichkeiten, Ihre Flutter-Anwendung zu refaktorisieren
+homepage:
+  teaser: 'Widgets vereinfachen, Werte wiederverwenden und Code strukturieren: praktische
+    Beispiele aus meinem Flutter-Refactoring.'
+  title: Sieben Ansätze fürs Flutter-Refactoring
+translation_lock: true
 ---
 
 Refactoring ist ein wesentlicher Bestandteil der Wartung und Verbesserung Ihrer Flutter-Anwendung. 

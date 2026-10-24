@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 0930fddd6d28777e3e2647cc7707662be1ce6e3494c29970c7eee1785b0f2343
+base_hash: 3fc8690e0fdc4a56ccf356c4aba10b54edc4d5286e777a123df9797832c20a34
 cover:
   alt: obsidian-sync
   caption: ''
@@ -17,6 +17,11 @@ tags:
 - obsidian
 - syncthing
 title: Kostenlose Obsidian-Synchronisierung zwischen PC und Android
+homepage:
+  teaser: 'Mein Einstieg in den Obsidian-Abgleich zwischen PC und Android: Syncthing
+    einrichten und Notizen ohne Abo synchronisieren.'
+  title: Obsidian kostenlos mit Syncthing synchronisieren
+translation_lock: true
 ---
 
 Obsidian ist ein großartiges Tool zum Sammeln von Ideen.

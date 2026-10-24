@@ -16,6 +16,11 @@ tags:
 - obsidian
 - syncthing
 title: Free Obsidian PC Android sync
+homepage:
+  teaser: 'My first Obsidian sync setup for PC and Android: configuring Syncthing
+    to keep notes in sync without a subscription.'
+  title: Free Obsidian sync with Syncthing
+translation_lock: true
 ---
 
 Obsidian is a great tool for collecting ideas.

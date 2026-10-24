@@ -1,8 +1,9 @@
 ---
-base_hash: 9e9d812b294b149bfdad0d681d9e25353400e0f689365885decdc1d053b670f3
+base_hash: 9fc723bc3610ef26d766cbd2c811fd8fc542b29e5b1efafde2796699647dad51
 description: ''
 draft: false
-title: About Me
+title: About me
+translation_lock: true
 ---
 
 {{< figure src="./me.jpg" width="400" alt="" class="right" >}}
@@ -11,7 +12,7 @@ title: About Me
 
 I’m an electrical engineer with experience in developing electric drives. Today, I develop and maintain software that automates processes, ensures system reliability, and helps teams work more productively.
 
-> Trained as an electrical engineer, shaped as a software developer, driven by a passion for DevOps.
+Away from the screen, I enjoy cycling, including longer bikepacking trips. This blog has room for both engineering projects and experiences outdoors.
 
 ### What I’m Working On
 

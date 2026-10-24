@@ -17,9 +17,12 @@ tags:
 source_lang: en
 translation_lock: true
 homepage:
+  featured: false
   section: engineering
   state: archive
-  featured: false
+  teaser: 'A Telegram assistant for appointments and tasks: setup and lessons from
+    n8n, since replaced by Hermes.'
+  title: My AI assistant with n8n
 project:
   status: discontinued
 ---

@@ -14,6 +14,11 @@ cover:
 tags:
   - flutter
 source_lang: en
+homepage:
+  teaser: 'Simplifying widgets, reusing values and structuring code: practical examples
+    from refactoring my Flutter application.'
+  title: Seven ways to refactor a Flutter app
+translation_lock: true
 ---
 Refactoring is a vital part of maintaining and improving your Flutter application. 
 It ensures your codebase remains clean, consistent, and efficient as your app grows. 

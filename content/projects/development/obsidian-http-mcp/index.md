@@ -16,11 +16,15 @@ tags:
   - mcp
 source_lang: en
 homepage:
+  featured: false
   section: engineering
   state: archive
-  featured: false
+  teaser: An HTTP MCP server connects an Obsidian vault to AI clients. A look back
+    at the now-discontinued project.
+  title: Accessing Obsidian notes through MCP
 project:
   status: discontinued
+translation_lock: true
 ---
 
 {{< alert type="warning" title="" >}}

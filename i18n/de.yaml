@@ -1,3 +1,20 @@
+- id: search_field_label
+  translation: "Website durchsuchen"
+- id: search_results_label
+  translation: "Suchergebnisse"
+- id: search_instructions
+  translation: "Suchbegriff eingeben, um Projekte und Beiträge zu finden."
+- id: search_no_results
+  translation: "Keine Ergebnisse. Versuche einen anderen Suchbegriff."
+- id: search_result_one
+  translation: "1 Ergebnis"
+- id: search_result_many
+  translation: "{count} Ergebnisse"
+- id: search_error
+  translation: "Die Suche konnte nicht geladen werden. Bitte lade die Seite erneut."
+- id: listing_read_entry
+  translation: "{{ .Title }} lesen"
+
 - id: filter_by_category
   translation: "Nach Kategorie filtern"
 

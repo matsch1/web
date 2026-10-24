@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 9ef13f3f48a23fac6a01011446cb850557a93fe4b91d26a77f95c0ee8f87ae0d
+base_hash: 5c08ce2eef57a607741cb2d9470c0e09607060bcfbe81895dbe3474c5dbe9c24
 cover:
   alt: Beladenes Hardtail im isländischen Hochland
   caption: ''
@@ -16,6 +16,9 @@ homepage:
   featured: false
   section: outdoors
   state: evergreen
+  teaser: 'Bikepacking through Iceland’s highlands with heavy bags: headwinds, hot
+    springs and a torn tyre along the way.'
+  title: Across Iceland’s highlands on a hardtail
 project:
   status: completed
 tags:
@@ -23,6 +26,7 @@ tags:
 - radreise
 - island
 title: Cycling Through Iceland's Highlands on a Hardtail
+translation_lock: true
 ---
 
 Ten days in Iceland, five bikes, an old hardtail, and way too much luggage. After finishing college, we didn’t want to dive straight back into everyday life—we wanted to get out there one more time: across the highlands, to where the road ends and a trip turns into a little adventure.

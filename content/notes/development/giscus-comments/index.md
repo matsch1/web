@@ -14,6 +14,11 @@ cover:
 tags:
   - hugo
 source_lang: en
+homepage:
+  teaser: 'Comments without running a comment server: why I chose Giscus and how I
+    integrated GitHub Discussions into Hugo.'
+  title: Setting up Giscus comments for Hugo
+translation_lock: true
 ---
 
 ## Introduction: Why Add Comments?

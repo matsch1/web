@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: d88cb6653205b991d20c0a79824e3d397670cb9e1f1a79ebd043d63fc6d58317
+base_hash: 40c23c121ccd26234a3053fbe0daef2673cf0b9b4e2fdfc3e25998fc9c0d71a4
 cover:
   alt: nextcloud-k3s-helm-deployment
   caption: The way I deployed nextcloud on my k3s cluster using helm chart
@@ -17,6 +17,11 @@ tags:
 - k3s
 - nextcloud
 title: Nextcloud-K3S-Bereitstellung mit Helm-Chart
+homepage:
+  teaser: 'Mein Weg zur selbst gehosteten Nextcloud: das Helm-Deployment im K3s-Homelab
+    und die Stolpersteine bei der Einrichtung.'
+  title: Nextcloud auf K3s mit Helm betreiben
+translation_lock: true
 ---
 
 ## Einleitung

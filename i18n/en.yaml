@@ -1,3 +1,20 @@
+- id: search_field_label
+  translation: "Search this site"
+- id: search_results_label
+  translation: "Search results"
+- id: search_instructions
+  translation: "Enter a search term to find projects and articles."
+- id: search_no_results
+  translation: "No results. Try another search term."
+- id: search_result_one
+  translation: "1 result"
+- id: search_result_many
+  translation: "{count} results"
+- id: search_error
+  translation: "Search could not be loaded. Please reload the page."
+- id: listing_read_entry
+  translation: "Read {{ .Title }}"
+
 - id: filter_by_category
   translation: "Filter by category"
 

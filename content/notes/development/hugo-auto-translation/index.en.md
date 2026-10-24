@@ -15,6 +15,11 @@ tags:
 - hugo
 - github-actions
 title: Free Hugo autotranslator for Github Pages
+homepage:
+  teaser: My original approach to automatic German/English translations with googletrans
+    and publishing through GitHub Actions.
+  title: Automatically translating Hugo posts
+translation_lock: true
 ---
 
 ## The problem and the idea

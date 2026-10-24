@@ -7,4 +7,4 @@ source_lang: en
 translation_lock: true
 ---
 
-Experiences, guides and individual chapters from my projects. Self-contained articles to read and try – independent of the overall project status.
+Self-contained articles to read and try – independent of the overall project status.

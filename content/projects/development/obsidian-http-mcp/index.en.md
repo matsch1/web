@@ -13,6 +13,9 @@ homepage:
   featured: false
   section: engineering
   state: archive
+  teaser: An HTTP MCP server connects an Obsidian vault to AI clients. A look back
+    at the now-discontinued project.
+  title: Accessing Obsidian notes through MCP
 project:
   status: discontinued
 slug: obsidian-http-mcp
@@ -21,6 +24,7 @@ tags:
 - obsidian
 - mcp
 title: 'Chat With Your Obsidian Notes: Introducing HTTP MCP Server'
+translation_lock: true
 ---
 
 {{< alert type="warning" title="" >}}
