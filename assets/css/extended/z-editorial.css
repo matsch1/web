@@ -66,8 +66,11 @@ h1, h2, h3, h4, h5, h6, .site-masthead__tagline {
   object-fit: cover;
 }
 /* Technical artwork keeps its full content without artificial letterboxing. */
-.homepage-project-card--graphic .entry-cover { aspect-ratio: auto; background: var(--code-bg); }
-.homepage-project-card--graphic .entry-cover img { height: auto; object-fit: contain; }
+.homepage-project-card--graphic .entry-cover,
+.post-entry--graphic .entry-cover { aspect-ratio: auto; background: var(--code-bg); }
+.post-entry--graphic .entry-cover { align-self: start; }
+.homepage-project-card--graphic .entry-cover img,
+.post-entry--graphic .entry-cover img { height: auto; object-fit: contain; }
 .content-kind {
   display: inline-block;
   color: var(--accent);

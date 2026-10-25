@@ -106,6 +106,8 @@
 
 {{- $pathParts := split .File.Path "/" }}
 {{- $category := index $pathParts 1 }}
+{{- $graphic := or (eq (.Param "homepage.section") "engineering") (eq .Section "notes") (and (eq .Section "projects") (in (slice "development" "hardware" "self-hosting") $category)) }}
+{{- if $graphic }}{{ $class = printf "%s post-entry--graphic" $class }}{{ end }}
 {{- $cardTitle := .Params.homepage.title | default .Title }}
 {{- $cardTeaser := .Params.homepage.teaser | default .Description }}
 <article class="{{ $class }}"{{ if $showCategoryFilters }} data-category="{{ $category }}"{{ end }}>
