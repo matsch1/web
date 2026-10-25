@@ -128,15 +128,20 @@ class EditorialDesign(unittest.TestCase):
             self.assertIn('.homepage-project-card--graphic .entry-cover img', css)
             self.assertIn('object-fit: contain', css)
 
-    def test_inner_header_is_compact_home_keeps_landscape(self):
+    def test_all_page_types_keep_landscape_header(self):
         for lang in ['de', 'en']:
-            home = self.page(lang).select('header', 'site-masthead')[0]
-            inner = self.page(f'{lang}/projects').select('header', 'site-masthead')[0]
-            self.assertTrue(home.select('img', 'site-masthead__image'))
-            self.assertTrue(home.select(cls='site-masthead__tagline'))
-            self.assertIn('site-masthead--compact', inner.attrs['class'])
-            self.assertFalse(inner.select('img', 'site-masthead__image'))
-            self.assertFalse(inner.select(cls='site-masthead__tagline'))
+            routes = [lang, f'{lang}/projects', f'{lang}/notes',
+                      f'{lang}/about', f'{lang}/search']
+            articles = sorted((self.public / lang / 'notes').rglob('*/index.html'))
+            self.assertTrue(articles)
+            routes.append(str(articles[0].parent.relative_to(self.public)))
+            for route in routes:
+                with self.subTest(route=route):
+                    header = self.page(route).select('header', 'site-masthead')[0]
+                    self.assertTrue(header.select('img', 'site-masthead__image'))
+                    self.assertTrue(header.select(cls='site-masthead__overlay'))
+                    self.assertTrue(header.select(cls='site-masthead__tagline'))
+                    self.assertNotIn('site-masthead--compact', header.attrs['class'])
 
     def test_active_priority_and_single_status_semantics_with_real_fixture(self):
         assert HUGO is not None

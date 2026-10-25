@@ -1,8 +1,6 @@
-<header class="header site-masthead{{ if not .IsHome }} site-masthead--compact{{ end }}">
-    {{- if .IsHome }}
-      {{- partial "masthead_image.html" . }}
-      <div class="site-masthead__overlay" aria-hidden="true"></div>
-    {{- end }}
+<header class="header site-masthead">
+    {{- partial "masthead_image.html" . }}
+    <div class="site-masthead__overlay" aria-hidden="true"></div>
     <nav class="header-nav site-masthead__nav">
         <div class="logo">
             {{- $label_text := (site.Params.label.text | default site.Title) }}
@@ -98,9 +96,9 @@
                 {{- end }}
             </div>
         </div>
-        {{- if .IsHome }}{{- with site.Title }}
+        {{- with site.Title }}
         <p class="site-masthead__tagline">{{ . }}</p>
-        {{- end }}{{- end }}
+        {{- end }}
         {{- $currentPage := . }}
         <ul id="menu" class="menu">
             {{- range site.Menus.main }}
