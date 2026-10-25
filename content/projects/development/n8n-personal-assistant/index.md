@@ -7,7 +7,7 @@ ShowToc: true
 TocOpen: true
 draft: false
 cover:
-  image: "header.png"
+  image: "editorial-cover.webp"
   alt: "n8n-ai-assistant"
   caption: "Personal AI assistant build with n8n"
   relative: true

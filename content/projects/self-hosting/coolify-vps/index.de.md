@@ -5,7 +5,7 @@ base_hash: 1f1507e9f2da07f592548e3f7ef700647bf651831b61dd9c28fec8f269b58b2a
 cover:
   alt: coolify-vps-setup
   caption: ''
-  image: header.png
+  image: "editorial-cover.webp"
   relative: true
 date: 2025-05-10
 description: Server-Absicherung und Bereitstellung der ersten App mit Coolify.

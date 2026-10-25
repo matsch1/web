@@ -4,7 +4,7 @@ TocOpen: true
 cover:
   alt: goalpacer
   caption: ''
-  image: img1.webp
+  image: "editorial-cover.webp"
   relative: true
 date: 2024-11-16
 description: Explanation of how I build my first app for martathon training using

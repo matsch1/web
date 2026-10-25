@@ -7,7 +7,7 @@ ShowToc: true
 TocOpen: true
 draft: false
 cover:
-  image: "img1.webp"
+  image: "editorial-cover.webp"
   alt: "goalpacer"
   caption: ""
   relative: true

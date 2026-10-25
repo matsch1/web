@@ -5,7 +5,7 @@ base_hash: 1dcaaa01cddf1dd991f251fa5c36ee5f1360a78cdab4ecebf6ea821a193330f5
 cover:
   alt: obsidian-http-mcp
   caption: ''
-  image: img1.png
+  image: "editorial-cover.webp"
   relative: true
 date: 2025-09-28
 description: Kommuniziere mit deinem Remote-Obsidian-Vault über den HTTP-MCP-Server.

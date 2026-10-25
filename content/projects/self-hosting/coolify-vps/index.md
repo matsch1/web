@@ -7,7 +7,7 @@ ShowToc: true
 TocOpen: true
 draft: false
 cover:
-  image: "header.png"
+  image: "editorial-cover.webp"
   alt: "coolify-vps-setup"
   caption: ""
   relative: true

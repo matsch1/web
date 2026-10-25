@@ -5,7 +5,7 @@ base_hash: b7224051217bc89fe93a8b94e18c8e913426940b7d7c598fe3b27bc202130d8d
 cover:
   alt: goalpacer
   caption: ''
-  image: img1.webp
+  image: "editorial-cover.webp"
   relative: true
 date: 2024-11-16
 description: Erläuterung, wie ich meine erste App für das Marathontraining mit Flutter

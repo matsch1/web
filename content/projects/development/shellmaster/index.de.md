@@ -5,7 +5,7 @@ base_hash: 8ce6a3c7f572356e5da5cd902f7b9874b30f82f62f83de33d440b98616ec7961
 cover:
   alt: shellmaster
   caption: ''
-  image: img1.webp
+  image: "editorial-cover.webp"
   relative: true
 date: 2025-04-06
 description: Mein Weg zur Entwicklung einer Quiz-App mit Flutter, Pocketbase und Unleash

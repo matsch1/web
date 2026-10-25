@@ -4,7 +4,7 @@ TocOpen: true
 cover:
   alt: obsidian-http-mcp
   caption: ''
-  image: img1.png
+  image: "editorial-cover.webp"
   relative: true
 date: 2025-09-28
 description: Chat with your remote Obsidian vault using http mcp server.

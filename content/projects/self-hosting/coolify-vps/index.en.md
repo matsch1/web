@@ -4,7 +4,7 @@ TocOpen: true
 cover:
   alt: coolify-vps-setup
   caption: ''
-  image: header.png
+  image: "editorial-cover.webp"
   relative: true
 date: 2025-05-10
 description: Server hardening and deploy first app with Coolify.

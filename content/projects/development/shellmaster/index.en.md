@@ -4,7 +4,7 @@ TocOpen: true
 cover:
   alt: shellmaster
   caption: ''
-  image: img1.webp
+  image: "editorial-cover.webp"
   relative: true
 date: 2025-04-06
 description: My path of building a quiz app using flutter, pocketbase and unleash
