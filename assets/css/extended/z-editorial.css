@@ -157,11 +157,21 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .site-masthead .logo .brand-wordmark { width: 196px; }
   .site-masthead .menu { gap: 1rem; }
   .homepage-project-card { grid-template-columns: minmax(0, 1fr); gap: .3rem; }
-  .homepage-project-card .entry-cover {
+  /* All overview cards: title, centered natural-ratio image, teaser, metadata. */
+  .post-entry .entry-header { order: 0; }
+  .post-entry .entry-cover {
+    order: 1;
     grid-row: auto;
     align-self: start;
-    margin-bottom: .5rem;
+    justify-self: center;
+    width: 70%;
+    height: auto;
+    aspect-ratio: auto;
+    margin: 0 0 .5rem;
   }
+  .post-entry .entry-cover img { height: auto; object-fit: contain; }
+  .post-entry .entry-content { order: 2; }
+  .post-entry .entry-footer { order: 3; }
   .homepage-project-card .entry-header h3 { font-size: 1.15rem; }
   .homepage-project-card .entry-content { font-size: .9375rem; }
   .editorial-lead .entry-header h3 { font-size: 1.3rem; }

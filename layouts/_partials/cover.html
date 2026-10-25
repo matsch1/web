@@ -26,7 +26,7 @@
             {{- $delivery := partial "responsive_image_data.html" (dict "image" $cover "src" $imgdl) }}
             {{- $defaultSizes := "(min-width: 960px) 912px, (min-width: 769px) calc(100vw - 48px), calc(100vw - 28px)" }}
             {{- if not $.IsSingle }}
-                {{- $defaultSizes = "(min-width: 960px) 341px, (min-width: 769px) calc(40vw - 43px), (min-width: 700px) calc(40vw - 32px), calc(100vw - 58px)" }}
+                {{- $defaultSizes = "(min-width: 960px) 341px, (min-width: 769px) calc(40vw - 43px), (min-width: 700px) calc(40vw - 32px), calc(70vw - 40.6px)" }}
             {{- end }}
             <img loading="{{ $loading }}" decoding="async"
                 src="{{ $delivery.src }}"

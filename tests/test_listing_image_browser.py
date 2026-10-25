@@ -69,8 +69,12 @@ class ListingImageBrowser(unittest.TestCase):
                                         self.assertAlmostEqual(metrics['coverWidth'], metrics['width'], delta=1)
                                     elif category == 'travel':
                                         travel += 1
-                                        self.assertAlmostEqual(metrics['coverRatio'], 1.5, delta=.01)
-                                        self.assertEqual(metrics['fit'], 'cover')
+                                        if width < 700:
+                                            self.assertAlmostEqual(metrics['ratio'] / metrics['natural'], 1, delta=.01)
+                                            self.assertEqual(metrics['fit'], 'contain')
+                                        else:
+                                            self.assertAlmostEqual(metrics['coverRatio'], 1.5, delta=.01)
+                                            self.assertEqual(metrics['fit'], 'cover')
                                 screenshots = os.environ.get('LISTING_SCREENSHOT_DIR')
                                 if screenshots and width in (390, 1280) and (identity.endswith('/n8n-ai-assistant/') or identity.endswith('/expose-k3s-services-via-vps/')):
                                     destination = Path(screenshots)

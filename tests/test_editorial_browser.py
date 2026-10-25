@@ -64,10 +64,11 @@ class EditorialBrowser(unittest.TestCase):
                     self.assertGreater(cards.count(), 0)
                     for card in cards.all():
                         cover = card.locator('.entry-cover')
-                        self.assertGreater(cover.bounding_box()['width'] / card.bounding_box()['width'], .85 if width < 700 else .35)
+                        self.assertGreater(cover.bounding_box()['width'] / card.bounding_box()['width'], .55 if width < 700 else .35)
                         if width < 700:
                             image_box = cover.bounding_box()
-                            self.assertGreaterEqual(card.locator('.entry-header').bounding_box()['y'], image_box['y'] + image_box['height'])
+                            header = card.locator('.entry-header').bounding_box()
+                            self.assertGreaterEqual(image_box['y'], header['y'] + header['height'])
                 finally:
                     page.close()
 
