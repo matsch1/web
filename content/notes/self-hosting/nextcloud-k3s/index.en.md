@@ -4,7 +4,7 @@ TocOpen: true
 cover:
   alt: nextcloud-k3s-helm-deployment
   caption: The way I deployed nextcloud on my k3s cluster using helm chart
-  image: nextcloud-k3s-helm-deployment.webp
+  image: nextcloud-k3s-cover.webp
   relative: true
 date: 2025-12-19
 description: The way I deployed nextcloud on my k3s cluster using helm chart

@@ -5,7 +5,7 @@ base_hash: 40c23c121ccd26234a3053fbe0daef2673cf0b9b4e2fdfc3e25998fc9c0d71a4
 cover:
   alt: nextcloud-k3s-helm-deployment
   caption: The way I deployed nextcloud on my k3s cluster using helm chart
-  image: nextcloud-k3s-helm-deployment.webp
+  image: nextcloud-k3s-cover.webp
   relative: true
 date: 2025-12-19
 description: So habe ich Nextcloud mithilfe eines Helm-Charts auf meinem k3s-Cluster
