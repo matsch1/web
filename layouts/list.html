@@ -68,24 +68,6 @@
 
 {{- $pages = sort $pages "Date" "desc" }}
 
-{{/* Lifecycle takes precedence over homepage prominence; retain every page. */}}
-{{- if and .IsSection .Parent.IsHome (eq .Section "projects") }}
-  {{- $active := slice }}
-  {{- $current := slice }}
-  {{- $archive := slice }}
-  {{- range $pages }}
-    {{- $status := .Params.project.status | default "" }}
-    {{- if eq $status "active" }}
-      {{- $active = $active | append . }}
-    {{- else if or (eq (.Params.homepage.state | default "") "archive") (in (slice "paused" "discontinued") $status) }}
-      {{- $archive = $archive | append . }}
-    {{- else }}
-      {{- $current = $current | append . }}
-    {{- end }}
-  {{- end }}
-  {{- $pages = $active | append $current | append $archive }}
-{{- end }}
-
 {{- $paginator := .Paginate $pages }}
 
 {{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
