@@ -7,7 +7,7 @@ ShowToc: true
 TocOpen: true
 draft: false
 cover:
-  image: "img1.png"
+  image: editorial-cover.webp
   alt: "hugo-autotranslator"
   caption: ""
   relative: true

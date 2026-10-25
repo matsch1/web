@@ -4,7 +4,7 @@ TocOpen: true
 cover:
   alt: obsidian-syncthing
   caption: ''
-  image: img1.png
+  image: editorial-cover.webp
   relative: true
 date: 2025-09-22
 description: Use syncthing on a server to create a cross-plattform file exchange for

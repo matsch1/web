@@ -4,7 +4,7 @@ TocOpen: true
 cover:
   alt: giscus-hugo-comments
   caption: Giscus the Git Discussion based commenting system for Hugo blogs
-  image: giscus.png
+  image: editorial-cover.webp
   relative: true
 date: 2025-12-04
 description: Giscus the Git Discussion based commenting system for Hugo blogs

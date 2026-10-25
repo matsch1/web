@@ -4,7 +4,7 @@ TocOpen: true
 cover:
   alt: hugo-autotranslator
   caption: ''
-  image: img1.png
+  image: editorial-cover.webp
   relative: true
 date: 2025-06-26
 description: Automatically translate your Hugo website and deploy it to Github Pages

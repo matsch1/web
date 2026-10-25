@@ -4,7 +4,7 @@ TocOpen: true
 cover:
   alt: obsidian-sync
   caption: ''
-  image: img1.webp
+  image: editorial-cover.webp
   relative: true
 date: 2025-01-02
 description: Explanation of how I use Syncthing as a free Obsidian Sync

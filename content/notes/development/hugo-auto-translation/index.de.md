@@ -5,7 +5,7 @@ base_hash: f3d257187325c52311af475642afc6d809a9286c9215d067b19f0c17c81381be
 cover:
   alt: hugo-autotranslator
   caption: ''
-  image: img1.png
+  image: editorial-cover.webp
   relative: true
 date: 2025-06-26
 description: Übersetze deine Hugo-Website automatisch und stelle sie auf GitHub Pages

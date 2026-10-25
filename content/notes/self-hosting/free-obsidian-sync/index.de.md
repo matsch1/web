@@ -5,7 +5,7 @@ base_hash: 3fc8690e0fdc4a56ccf356c4aba10b54edc4d5286e777a123df9797832c20a34
 cover:
   alt: obsidian-sync
   caption: ''
-  image: img1.webp
+  image: editorial-cover.webp
   relative: true
 date: 2025-01-02
 description: Erklärung, wie ich Syncthing als kostenlose Obsidian-Synchronisierung

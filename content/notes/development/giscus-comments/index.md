@@ -7,7 +7,7 @@ ShowToc: true
 TocOpen: true
 draft: false
 cover:
-  image: "giscus.png"
+  image: editorial-cover.webp
   alt: "giscus-hugo-comments"
   caption: "Giscus the Git Discussion based commenting system for Hugo blogs"
   relative: true

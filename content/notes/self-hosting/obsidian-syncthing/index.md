@@ -7,7 +7,7 @@ ShowToc: true
 TocOpen: true
 draft: false
 cover:
-  image: "img1.png"
+  image: editorial-cover.webp
   alt: "obsidian-syncthing"
   caption: ""
   relative: true

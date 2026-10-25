@@ -7,7 +7,7 @@ ShowToc: true
 TocOpen: true
 draft: false
 cover:
-  image: "expose-k3s-services-via-vps.png"
+  image: editorial-cover.webp
   alt: "Traffic flow from VPS to Tailscale-protected K3s cluster"
   caption: "Public traffic routed through a VPS into a private K3s homelab via Tailscale"
   relative: true

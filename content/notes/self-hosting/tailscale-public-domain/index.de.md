@@ -5,7 +5,7 @@ base_hash: b26cfe4e66da5219a561adc89b9932d1a5907c599a66a297f6b3eb60d1693c3f
 cover:
   alt: Traffic flow from VPS to Tailscale-protected K3s cluster
   caption: Public traffic routed through a VPS into a private K3s homelab via Tailscale
-  image: expose-k3s-services-via-vps.png
+  image: editorial-cover.webp
   relative: true
 date: 2025-12-21
 description: Leitung des öffentlichen Web-Traffics über einen VPS in einen durch Tailscale

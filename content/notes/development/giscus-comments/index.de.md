@@ -5,7 +5,7 @@ base_hash: 1d0ad5d9addbc9e266ec187c88539849a61b851b702d42f591bd4dc0f4ba3bae
 cover:
   alt: giscus-hugo-comments
   caption: Giscus the Git Discussion based commenting system for Hugo blogs
-  image: giscus.png
+  image: editorial-cover.webp
   relative: true
 date: 2025-12-04
 description: Giscus – das auf Git-Diskussionen basierende Kommentarsystem für Hugo-Blogs

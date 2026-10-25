@@ -4,7 +4,7 @@ TocOpen: true
 cover:
   alt: flutter-refactoring
   caption: ''
-  image: img1.webp
+  image: editorial-cover.webp
   relative: true
 date: 2025-01-07
 description: My learnings during flutter refactoring

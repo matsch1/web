@@ -5,7 +5,7 @@ base_hash: c5a7d76f50d56ffca5419231b8f7d621a51596b78776f772676c89057f286046
 cover:
   alt: flutter-refactoring
   caption: ''
-  image: img1.webp
+  image: editorial-cover.webp
   relative: true
 date: 2025-01-07
 description: Meine Erkenntnisse beim Refactoring mit Flutter

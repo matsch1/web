@@ -5,7 +5,7 @@ base_hash: 1a7b73660611de53c936da491c12815a27cda331b62c6bf9f1bbb696f893c20a
 cover:
   alt: obsidian-syncthing
   caption: ''
-  image: img1.png
+  image: editorial-cover.webp
   relative: true
 date: 2025-09-22
 description: Verwende Syncthing auf einem Server, um einen plattformübergreifenden
