@@ -140,7 +140,7 @@ class EditorialDesign(unittest.TestCase):
                     header = self.page(route).select('header', 'site-masthead')[0]
                     self.assertTrue(header.select('img', 'site-masthead__image'))
                     self.assertTrue(header.select(cls='site-masthead__overlay'))
-                    self.assertTrue(header.select(cls='site-masthead__tagline'))
+                    self.assertFalse(header.select(cls='site-masthead__tagline'))
                     self.assertNotIn('site-masthead--compact', header.attrs['class'])
 
     def test_active_priority_and_single_status_semantics_with_real_fixture(self):

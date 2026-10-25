@@ -91,7 +91,9 @@ h1, h2, h3, h4, h5, h6, .site-masthead__tagline {
 .homepage-archive { margin-top: 2.5rem; padding-top: 1.5rem; }
 /* Keep the photographic identity and direct navigation, not a tall hero. */
 .site-masthead:not(.site-masthead--compact) .site-masthead__nav {
-  min-height: 224px;
+  grid-template-rows: auto auto;
+  align-content: space-between;
+  min-height: 144px;
   padding-top: .75rem;
   padding-bottom: .75rem;
 }
@@ -147,7 +149,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .homepage-intro p { font-size: 1rem; line-height: 1.5; }
   .homepage-section { margin: 1.25rem 0; }
   .site-masthead:not(.site-masthead--compact) .site-masthead__nav {
-    min-height: 180px;
+    min-height: 128px;
     padding-top: .5rem;
     padding-bottom: .5rem;
   }
