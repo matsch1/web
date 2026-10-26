@@ -2,7 +2,7 @@
 title: "From an n8n Workflow to a Personal Agent System"
 slug: "hermes-agent"
 date: 2026-07-31
-description: "Why I replaced my n8n assistant with a self-hosted agent system for engineering, endurance sports, and personal knowledge work."
+description: "Why I replaced my n8n assistant with a self-hosted agent system for engineering, training, and personal knowledge work."
 ShowToc: true
 TocOpen: true
 cover:
@@ -11,6 +11,7 @@ cover:
   image: editorial-cover.webp
   relative: true
 draft: false
+translation_lock: true
 tags:
   - AI
   - Automation
@@ -20,6 +21,8 @@ homepage:
   section: engineering
   state: active
   featured: false
+  title: "A personal system with Hermes Agent"
+  teaser: "A self-hosted agent for engineering, training, and knowledge work—built around tools, context, and guarded actions."
 project:
   status: active
 ---
