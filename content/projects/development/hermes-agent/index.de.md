@@ -21,7 +21,7 @@ homepage:
   section: engineering
   state: active
   featured: true
-  title: "Mein persönliches System mit Hermes Agent"
+  title: "Mein persönlicher Assisten mit Hermes Agent"
   teaser: "Ein selbstgehosteter Agent für Engineering, Training und Wissensarbeit – mit Tools, Kontext und kontrollierten Aktionen."
 project:
   status: active
