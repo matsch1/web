@@ -36,6 +36,40 @@ class BrandingTests(unittest.TestCase):
         self.assertTrue(all(path.get('d', '').startswith('M') for path in paths))
         self.assertFalse(any('Z' in path.get('d', '') for path in paths))
 
+    def test_wordmark_route_moves_four_pixels_at_desktop_header_size(self):
+        root = ET.parse(self.directory / 'matschcode-jutland.svg').getroot()
+        route = root.find(f'{SVG}g')
+        self.assertEqual(route.get('transform'), 'translate(13.724 0)')
+
+    def test_standalone_route_is_centered_in_its_viewbox(self):
+        root = ET.parse(self.directory / 'jutland-route.svg').getroot()
+        self.assertEqual(root.find(f'{SVG}g').get('transform'),
+                         'translate(16.113 -0.7025)')
+
+    def test_square_icon_svg_centers_the_visible_route(self):
+        root = ET.parse(self.directory / 'jutland-favicon.svg').getroot()
+        self.assertEqual(root.find(f'{SVG}g').get('transform'),
+                         'translate(48.113 17.2975)')
+
+    def test_raster_icon_visible_bounds_are_centered(self):
+        try:
+            from PIL import Image
+        except ImportError:
+            self.skipTest('Pillow is required for raster geometry checks')
+        for size in [16, 32, 48, 180, 192]:
+            with self.subTest(size=size):
+                image = Image.open(self.directory / f'jutland-icon-{size}.png').convert('RGB')
+                # Select the green route, not antialiased warm background edges.
+                pixels = image.load()
+                points = [(x, y) for y in range(size) for x in range(size)
+                          if pixels[x, y][0] < 170 and
+                          pixels[x, y][1] - pixels[x, y][0] > 10]
+                self.assertTrue(points)
+                for axis in [0, 1]:
+                    center = (min(p[axis] for p in points) +
+                              max(p[axis] for p in points) + 1) / 2
+                    self.assertLessEqual(abs(center - size / 2), 0.5)
+
     def test_accessible_link_uses_brand_name_without_duplicate_visible_label(self):
         header = (ROOT / 'layouts/_partials/header.html').read_text()
         self.assertIn('aria-label="{{ $label_text }}"', header)
