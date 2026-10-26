@@ -5,7 +5,12 @@ date: 2026-07-31
 description: "Why I replaced my n8n assistant with a self-hosted agent system for engineering, endurance sports, and personal knowledge work."
 ShowToc: true
 TocOpen: true
-draft: true
+cover:
+  alt: "Diagram: Hermes Agent links engineering and training with Obsidian and Git"
+  caption: ""
+  image: editorial-cover.webp
+  relative: true
+draft: false
 tags:
   - AI
   - Automation
@@ -18,8 +23,6 @@ homepage:
 project:
   status: active
 ---
-
-> Draft — this project page is not published yet.
 
 My first personal AI assistant was an n8n workflow: a Telegram message came in, a model decided, and a few MCP tools handled calendar entries, tasks, or notes. It was a useful first experiment. At the time, Hermes and comparable agent systems were not on my radar. n8n showed me which things I actually wanted to automate.
 

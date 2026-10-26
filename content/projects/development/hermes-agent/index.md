@@ -5,7 +5,12 @@ date: 2026-10-26
 description: "Why I replaced my n8n assistant with a self-hosted agent system for engineering, training, and personal knowledge work."
 ShowToc: true
 TocOpen: true
-draft: true
+cover:
+  alt: "Diagram: Hermes Agent links engineering and training with Obsidian and Git"
+  caption: ""
+  image: editorial-cover.webp
+  relative: true
+draft: false
 tags:
   - AI
   - Automation
