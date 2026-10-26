@@ -4,7 +4,7 @@ TocOpen: true
 cover:
   alt: nextcloud-k3s-helm-deployment
   caption: The way I deployed nextcloud on my k3s cluster using helm chart
-  image: nextcloud-k3s-helm-deployment.webp
+  image: editorial-cover.webp
   relative: true
 date: 2025-12-19
 description: The way I deployed nextcloud on my k3s cluster using helm chart
@@ -16,6 +16,11 @@ tags:
 - k3s
 - nextcloud
 title: Nextcloud K3S deployment using helm chart
+homepage:
+  teaser: 'My route to a self-hosted Nextcloud: deploying its Helm chart in a K3s
+    homelab and working through setup pitfalls.'
+  title: Running Nextcloud on K3s with Helm
+translation_lock: true
 ---
 
 ## Introduction

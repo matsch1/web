@@ -1,8 +1,20 @@
-<iframe 
-    src="{{ .Get "src" }}" 
-    width="100%" 
-    height="{{ .Get "height" | default "700" }}" 
-    frameborder="0" 
-    scrolling="no">
-</iframe>
-
+{{- $src := .Get "src" | default "" -}}
+{{- /* Exact HTTPS provider/path allowlist, not a prefix match on the host. */ -}}
+{{- $valid := findRE `^https://(www\.)?komoot\.(com|de)/([a-z]{2}-[a-z]{2}/)?tour/[0-9]+/embed(\?[^#[:space:]]*)?$` $src -}}
+{{- $height := string (.Get "height" | default "700") -}}
+{{- if not (findRE `^[1-9][0-9]{0,4}$` $height) -}}{{- $height = "700" -}}{{- end -}}
+{{- $de := eq .Page.Language.Lang "de" -}}
+{{- if $valid -}}
+<div class="deferred-embed deferred-embed--komoot" data-deferred-embed="komoot" data-src="{{ $src }}" data-height="{{ $height }}" data-title="{{ if $de }}Komoot-Tourkarte{{ else }}Komoot tour map{{ end }}" data-error="{{ if $de }}Die Karte konnte nicht geladen werden. Bitte den Link verwenden.{{ else }}The map could not be loaded. Please use the link.{{ end }}" style="min-height: {{ $height }}px">
+  <div class="deferred-embed__controls">
+    <p>{{ if $de }}Die Karte wird erst nach einem Klick von Komoot geladen. Dabei werden Daten an Komoot übertragen.{{ else }}The map loads from Komoot only after you click. This transfers data to Komoot.{{ end }}</p>
+    <button type="button" data-embed-load hidden>{{ if $de }}Karte laden{{ else }}Load map{{ end }}</button>
+    <a href="{{ $src }}" rel="external noopener noreferrer">{{ if $de }}Tour auf Komoot öffnen{{ else }}Open tour on Komoot{{ end }}</a>
+    <p data-embed-status role="status" aria-live="polite"></p>
+  </div>
+  <div data-embed-target></div>
+</div>
+{{ partial "deferred_embed_script.html" .Page }}
+{{- else -}}
+<p>{{ if $de }}Ungültige Komoot-Adresse.{{ else }}Invalid Komoot URL.{{ end }}</p>
+{{- end -}}

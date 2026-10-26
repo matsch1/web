@@ -7,7 +7,7 @@ ShowToc: true
 TocOpen: true
 draft: false
 cover:
-  image: "img1.webp"
+  image: "editorial-cover.webp"
   alt: "shellmaster"
   caption: ""
   relative: true
@@ -17,11 +17,15 @@ tags:
   - linux
 source_lang: en
 homepage:
+  featured: false
   section: engineering
   state: archive
-  featured: false
+  teaser: 'A Linux quiz built with Flutter, PocketBase and feature flags: lessons
+    from developing the now-discontinued app.'
+  title: 'Shellmaster: learning Linux commands through play'
 project:
   status: discontinued
+translation_lock: true
 ---
 
 {{< alert type="warning" title="" >}}

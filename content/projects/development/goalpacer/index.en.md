@@ -4,7 +4,7 @@ TocOpen: true
 cover:
   alt: goalpacer
   caption: ''
-  image: img1.webp
+  image: "editorial-cover.webp"
   relative: true
 date: 2024-11-16
 description: Explanation of how I build my first app for martathon training using
@@ -14,6 +14,9 @@ homepage:
   featured: false
   section: engineering
   state: archive
+  teaser: 'My first Flutter app: building and publishing a running pace calculator
+    in four days.'
+  title: 'Goalpacer: marathon training with Flutter'
 project:
   status: discontinued
 slug: goalpacer-pace-estimator
@@ -23,6 +26,7 @@ tags:
 - sports
 - application
 title: First Flutter app for marathon training
+translation_lock: true
 ---
 
 {{< alert type="warning" title="" >}}

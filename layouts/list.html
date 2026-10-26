@@ -4,7 +4,12 @@
 {{- partial "index_profile.html" . }}
 {{- else }} {{/* if not profileMode */}}
 
-{{- if .Title }}
+{{- if .IsHome }}
+<header class="homepage-intro">
+  <h1>{{ .Param "homepageTitle" }}</h1>
+  {{ .Content }}
+</header>
+{{- else if .Title }}
 <header class="page-header">
   {{- partial "breadcrumbs.html" . }}
   <h1>
@@ -30,7 +35,7 @@
 </header>
 {{- end }}
 
-{{- if .Content }}
+{{- if and .Content (not .IsHome) }}
 <div class="post-content md-content">
   {{- if not (.Param "disableAnchoredHeadings") }}
   {{- partial "anchored_headings.html" .Content -}}
@@ -101,12 +106,17 @@
 
 {{- $pathParts := split .File.Path "/" }}
 {{- $category := index $pathParts 1 }}
-<article class="{{ $class }}"{{ if $showCategoryFilters }} data-category="{{ $category }}"{{ end }}>
+{{- $graphic := or (eq (.Param "homepage.section") "engineering") (eq .Section "notes") (and (eq .Section "projects") (in (slice "development" "hardware" "self-hosting") $category)) }}
+{{- if $graphic }}{{ $class = printf "%s post-entry--graphic" $class }}{{ end }}
+{{- $cardTitle := .Params.homepage.title | default .Title }}
+{{- $cardTeaser := .Params.homepage.teaser | default .Description }}
+<article class="{{ $class }}"{{ if $showCategoryFilters }} data-category="{{ $category }}" data-categories="{{ delimit (union (slice $category) (.Params.filter_categories | default slice)) " " }}"{{ end }}>
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
   <header class="entry-header">
+    {{- partial "content_kind.html" . }}
     <h2 class="entry-hint-parent">
-      {{- .Title }}
+      {{- $cardTitle }}
       {{- if .Draft }}
       <span class="entry-hint" title="Draft">
         <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
@@ -116,13 +126,13 @@
       </span>
       {{- end }}
     </h2>
-    {{- if or (eq .Section "projects") (.Param "listAsProject") }}
+    {{- if partial "is_project.html" . }}
       {{- partial "project_status.html" (dict "page" . "variant" "badge") }}
     {{- end }}
   </header>
   {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">
-    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    <p>{{ with $cardTeaser }}{{ . | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}…{{ end }}{{ end }}</p>
   </div>
   {{- end }}
   {{- if not (.Param "hideMeta") }}
@@ -130,7 +140,7 @@
     {{- partial "post_meta.html" . -}}
   </footer>
   {{- end }}
-  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  <a class="entry-link" aria-label="{{ i18n "listing_read_entry" (dict "Title" ($cardTitle | plainify)) }}" href="{{ .Permalink }}"></a>
 </article>
 {{- end }}
 

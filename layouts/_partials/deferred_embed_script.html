@@ -1,0 +1,6 @@
+{{- /* Called only by deferred embeds; one fingerprinted controller per page. */ -}}
+{{- if not (.Store.Get "deferredEmbedScript") -}}
+  {{- .Store.Set "deferredEmbedScript" true -}}
+  {{- $script := resources.Get "js/deferred-embeds.js" | resources.Minify | fingerprint -}}
+<script defer src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" crossorigin="anonymous"></script>
+{{- end -}}

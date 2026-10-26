@@ -4,7 +4,7 @@ TocOpen: true
 cover:
   alt: shellmaster
   caption: ''
-  image: img1.webp
+  image: "editorial-cover.webp"
   relative: true
 date: 2025-04-06
 description: My path of building a quiz app using flutter, pocketbase and unleash
@@ -13,6 +13,9 @@ homepage:
   featured: false
   section: engineering
   state: archive
+  teaser: 'A Linux quiz built with Flutter, PocketBase and feature flags: lessons
+    from developing the now-discontinued app.'
+  title: 'Shellmaster: learning Linux commands through play'
 project:
   status: discontinued
 slug: building-shellmaster
@@ -22,6 +25,7 @@ tags:
 - application
 - linux
 title: ' Building Shellmaster: A Fun Way to Learn Linux Shell Commands '
+translation_lock: true
 ---
 
 {{< alert type="warning" title="" >}}

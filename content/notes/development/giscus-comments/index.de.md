@@ -1,11 +1,11 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 9abc040f0dbb9c7a5805cea9234e03fb724dd63b76f4bdf230d1da5aefeb8462
+base_hash: 1d0ad5d9addbc9e266ec187c88539849a61b851b702d42f591bd4dc0f4ba3bae
 cover:
   alt: giscus-hugo-comments
   caption: Giscus the Git Discussion based commenting system for Hugo blogs
-  image: giscus.png
+  image: editorial-cover.webp
   relative: true
 date: 2025-12-04
 description: Giscus – das auf Git-Diskussionen basierende Kommentarsystem für Hugo-Blogs
@@ -14,6 +14,11 @@ slug: giscus-hugo-comments
 tags:
 - hugo
 title: Einrichtung von Giscus-Kommentaren für einen Hugo-Blog
+homepage:
+  teaser: 'Kommentare ohne eigenen Kommentarserver: Warum ich Giscus gewählt habe
+    und wie ich GitHub Discussions in Hugo einbinde.'
+  title: Giscus-Kommentare für Hugo einrichten
+translation_lock: true
 ---
 
 ## Einleitung: Warum Kommentare hinzufügen?

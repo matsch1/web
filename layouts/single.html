@@ -27,7 +27,11 @@
       {{- partial "post_canonical.html" . -}}
     </div>
     {{- end }}
-    {{- partial "project_status.html" (dict "page" . "variant" "banner") }}
+    {{- if partial "is_project.html" . }}
+    <div class="project-metadata">
+      {{- partial "project_status.html" (dict "page" . "variant" "metadata") }}
+    </div>
+    {{- end }}
   </header>
   {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}

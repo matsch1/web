@@ -15,7 +15,10 @@ tags:
   - 3D printing
   - keyboard
 source_lang: en
+translation_lock: true
 homepage:
+  title: "My first split keyboard"
+  teaser: "From kit to daily keyboard: building Ian’s split keyboard and sharing the first lessons."
   section: engineering
   state: evergreen
   featured: true

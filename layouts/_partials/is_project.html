@@ -1,0 +1,2 @@
+{{- /* Child travel posts remain articles even though they live under projects/. */ -}}
+{{- return (or (.Param "listAsProject") (and .IsPage (eq .Section "projects") (ne (.Param "hiddenInProjectList") true))) -}}

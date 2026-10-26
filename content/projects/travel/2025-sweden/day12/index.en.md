@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: f519f87fecad4e6f0abe4d06e033881e1493e1ebb27f980958244845080c0317
+base_hash: b7666533cabc7f43da8eef6745c72d0417aa82bb5a6bb06b52277c51ac04158a
 cover:
   alt: ''
   caption: ''
@@ -23,7 +23,7 @@ At first, I followed the wrong route on my GPS and ended up riding 15 km inland.
 
 So, until my lunch break, the route mainly followed gravel roads through beautiful dunes and forests. 
 
-After lunch, a tailwind and some Limp Bizkit somehow caused me to lose all restraint. From there on, with music blasting in my ears, I continued full throttle toward the south. It felt like I rode the last 70 km at a speed of over 30 km/h until I reached the ferry terminal. If there hadn’t been a ferry, I’d probably still be flying through the dunes. 
+After lunch, a tailwind and some Limp Bizkit somehow caused me to lose all restraint. From then on, with music blasting in my ears, I continued full throttle toward the south. It felt like I rode the last 70 km at a speed of over 30 km/h until I reached the ferry terminal. If there hadn’t been a ferry, I’d probably still be flying through the dunes. 
 
 As a result of this long day’s ride, I ended up at a campground where I’d been with Jonas two years ago.
 Here, I was able to take a hot shower, do my laundry, and recharge my batteries. I also met Dirk, with whom I spent a nice evening on the beach. 
@@ -40,12 +40,13 @@ Here, I was able to take a hot shower, do my laundry, and recharge my batteries.
 - 8 euros for the ferry
 - 12 euros for breakfast/lunch 
 - 12 euros for dinner/breakfast 
-- 28 euros for lodging (campground)
+- 28 euros for overnight stay (campground)
 
-**60 euros per day**
+**60 euros in daily expenses**
 
-### Place to sleep 
-Place to sleep at the campground 
+### Place to Sleep 
+Campsite 
+I’ve been here before on my [Jütland Umrundung 2023 ](https://blog.matschcode.de/de/projects/travel/2023-denmark/).
 {{< open-street-map map_title="Schlafplatz" geo_link="geo:56.69486,8.20625?z=16" >}}
 
 ## Trip Details

@@ -7,7 +7,7 @@ ShowToc: true
 TocOpen: true
 draft: false
 cover:
-  image: "header.png"
+  image: "editorial-cover.webp"
   alt: "n8n-ai-assistant"
   caption: "Personal AI assistant build with n8n"
   relative: true
@@ -16,10 +16,15 @@ tags:
   - AI
 source_lang: en
 translation_lock: true
+filter_categories:
+  - self-hosting
 homepage:
+  featured: false
   section: engineering
   state: archive
-  featured: false
+  teaser: 'A Telegram assistant for appointments and tasks: setup and lessons from
+    n8n, since replaced by Hermes.'
+  title: My AI assistant with n8n
 project:
   status: discontinued
 ---

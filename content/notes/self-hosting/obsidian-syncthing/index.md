@@ -7,7 +7,7 @@ ShowToc: true
 TocOpen: true
 draft: false
 cover:
-  image: "img1.png"
+  image: editorial-cover.webp
   alt: "obsidian-syncthing"
   caption: ""
   relative: true
@@ -15,6 +15,11 @@ tags:
   - obsdian
   - syncthing
 source_lang: en
+homepage:
+  teaser: 'A VPS as a central sync hub: connecting Obsidian notes across Linux, Windows
+    and Android with backups on the server.'
+  title: Obsidian and Syncthing with my own server
+translation_lock: true
 ---
 There are two kinds of note-takers: those who trust their precious thoughts to the cloud (hello Notion/Google Drive/OneNote people), and those who stare into the abyss and think: *“what if I built my own infrastructure for this?”*  
 

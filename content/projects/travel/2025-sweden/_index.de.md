@@ -9,7 +9,10 @@ cover:
 date: 2025-06-20
 description: Dokumentation meiner Bikepacking Reise durch Dänemark und Schweden
 draft: false
+translation_lock: true
 homepage:
+  title: "Bikepacking durch Schweden und Dänemark"
+  teaser: "Mit Rad und Zelt durch Skandinavien: Planung, Etappen und Bilder meiner Reise 2025."
   featured: true
   section: outdoors
   state: evergreen

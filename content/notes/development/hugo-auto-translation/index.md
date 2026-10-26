@@ -7,7 +7,7 @@ ShowToc: true
 TocOpen: true
 draft: false
 cover:
-  image: "img1.png"
+  image: editorial-cover.webp
   alt: "hugo-autotranslator"
   caption: ""
   relative: true
@@ -15,6 +15,11 @@ tags:
   - hugo
   - github-actions
 source_lang: en
+homepage:
+  teaser: My original approach to automatic German/English translations with googletrans
+    and publishing through GitHub Actions.
+  title: Automatically translating Hugo posts
+translation_lock: true
 ---
 ## The problem and the idea
 I want to write a blog post in english or german, and I don't want translate it

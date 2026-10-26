@@ -90,6 +90,15 @@ class PublishContractTests(unittest.TestCase):
         self.assertNotIn("redirect_to:", projects.read_text())
         self.assertNotIn("layout: redirect", projects.read_text())
 
+    def test_header_exposes_the_language_local_rss_feed(self):
+        header = (ROOT / "layouts" / "_partials" / "header.html").read_text()
+        config = (ROOT / "hugo.toml").read_text()
+
+        self.assertIn('home = ["HTML", "RSS", "JSON"]', config)
+        self.assertIn('site.Home.OutputFormats.Get "RSS"', header)
+        self.assertIn('class="rss-feed-link"', header)
+        self.assertIn('href="{{ .RelPermalink }}"', header)
+
     def test_project_metadata_classifies_homepage_and_lifecycle_statuses(self):
         expected = {
             "content/projects/development/n8n-personal-assistant": ("engineering", "archive", False, "discontinued"),
@@ -129,9 +138,11 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn('project_status_successor_link', status_partial)
         self.assertIn('partial "project_status.html" (dict "page" . "variant" "badge")', card)
         self.assertIn('partial "project_status.html" (dict "page" . "variant" "badge")', listing)
-        self.assertIn('or (eq .Section "projects") (.Param "listAsProject")', listing)
+        # Type checks are shared so hidden project child posts stay articles.
+        self.assertIn('partial "is_project.html" .', listing)
         self.assertIn('partial "project_status.html" (dict "page" . "variant" "badge")', homepage)
-        banner_call = 'partial "project_status.html" (dict "page" . "variant" "banner")'
+        # The approved editorial design replaces the large banner with metadata.
+        banner_call = 'partial "project_status.html" (dict "page" . "variant" "metadata")'
         self.assertIn(banner_call, single)
         self.assertLess(single.index(banner_call), single.index('</header>'))
         self.assertIn('--project-status-color', styles)
@@ -250,7 +261,7 @@ class PublishContractTests(unittest.TestCase):
         head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
         self.assertIn('{{ $img.MediaType.Type }}', head)
         self.assertNotIn('{{ $img.MediaType.Type }}/{{ $img.MediaType.SubType }}', head)
-        self.assertIn('$defaultOGImage := "home-logo-600.webp" | absURL', head)
+        self.assertIn('$defaultOGImage := (site.Params.brandSocialImage | default "home-logo-600.webp") | absURL', head)
         self.assertNotIn('social-de.png', head)
         self.assertNotIn('social-en.png', head)
 
@@ -327,7 +338,7 @@ class PublishContractTests(unittest.TestCase):
 
     def test_default_social_logo_uses_an_absolute_url(self):
         head = (ROOT / "layouts" / "_partials" / "head.html").read_text()
-        self.assertIn('"home-logo-600.webp" | absURL', head)
+        self.assertIn('(site.Params.brandSocialImage | default "home-logo-600.webp") | absURL', head)
 
     def test_safari_pinned_tab_icon_exists(self):
         icon = ROOT / "static" / "safari-pinned-tab.svg"
@@ -506,7 +517,14 @@ class PublishContractTests(unittest.TestCase):
     def test_gallery_shortcodes_render_images_without_javascript(self):
         galleries = (ROOT / "layouts" / "_shortcodes" / "galleries.html").read_text()
         gallery = (ROOT / "layouts" / "_shortcodes" / "gallery.html").read_text()
+        lightbox = (ROOT / "assets" / "js" / "gallery-lightbox.js").read_text()
         self.assertIn('class="image-gallery"', galleries)
+        self.assertIn("{{ .Inner }}", galleries)
+        self.assertNotIn("image-gallery-item", galleries)
+        self.assertNotIn("image-gallery-item", gallery)
+        self.assertIn("enhanceGalleries", lightbox)
+        self.assertIn("image-gallery__hero", lightbox)
+        self.assertIn("image-gallery__strip", lightbox)
         self.assertIn('<figure', gallery)
         self.assertIn('<figcaption>', gallery)
         self.assertIn('Get "alt"', gallery)

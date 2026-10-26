@@ -1,0 +1,21 @@
+{{- define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- with .Description }}<div class="post-description">{{ . }}</div>{{ end }}
+  {{- if not (.Param "hideMeta") }}
+  <div class="post-meta">{{ partial "translation_list.html" . }}</div>
+  {{- end }}
+</header>
+<div id="searchbox" class="searchbox">
+  <input id="searchInput" disabled placeholder="{{ .Params.placeholder | default (i18n "search_field_label") }}"
+    aria-label="{{ i18n "search_field_label" }}" aria-describedby="searchStatus"
+    type="search" autocomplete="off" maxlength="64">
+  <p id="searchStatus" role="status" aria-live="polite" aria-atomic="true"
+    data-instructions="{{ i18n "search_instructions" }}"
+    data-no-results="{{ i18n "search_no_results" }}"
+    data-result-one="{{ i18n "search_result_one" }}"
+    data-result-many="{{ i18n "search_result_many" }}"
+    data-error="{{ i18n "search_error" }}">{{ i18n "search_instructions" }}</p>
+  <ul id="searchResults" class="searchResults" aria-label="{{ i18n "search_results_label" }}"></ul>
+</div>
+{{- end }}

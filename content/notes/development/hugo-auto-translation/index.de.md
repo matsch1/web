@@ -1,11 +1,11 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: e0227c0f5613a3a776968b683ecdf2f28e112186fe8d2ab0bfd42fc8d2a64a41
+base_hash: f3d257187325c52311af475642afc6d809a9286c9215d067b19f0c17c81381be
 cover:
   alt: hugo-autotranslator
   caption: ''
-  image: img1.png
+  image: editorial-cover.webp
   relative: true
 date: 2025-06-26
 description: Übersetze deine Hugo-Website automatisch und stelle sie auf GitHub Pages
@@ -16,6 +16,11 @@ tags:
 - hugo
 - github-actions
 title: Kostenloser Hugo-Autotranslator für GitHub Pages
+homepage:
+  teaser: Mein ursprünglicher Ansatz für automatische DE/EN-Übersetzungen mit googletrans
+    und Veröffentlichung über GitHub Actions.
+  title: Hugo-Beiträge automatisch übersetzen
+translation_lock: true
 ---
 
 ## Das Problem und die Idee

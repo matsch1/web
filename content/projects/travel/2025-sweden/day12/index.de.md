@@ -45,6 +45,7 @@ Hier konnte ich heiß duschen, Wäsche waschen und Akkus aufladen. Zusätzlich h
 
 ### Schlafplatz 
 Schlafplatz auf dem Campingplatz 
+Hier war ich schonmal auf meiner [Jütland Umrundung 2023 ](https://blog.matschcode.de/de/projects/travel/2023-denmark/).
 {{< open-street-map map_title="Schlafplatz" geo_link="geo:56.69486,8.20625?z=16" >}}
 
 ## Tourdaten

@@ -1,17 +1,18 @@
 ---
-title: "About me"
+title: Über mich
 description: ""
 draft: false
 source_lang: de
+translation_lock: true
 ---
 
 {{< figure src="./me.jpg" width="400" alt="" class="right" >}}
 
 ## Hallo, ich bin Matthias
 
-Elektroingenieur mit Erfahrung in der Entwicklung elektrischer Antriebe. Heute entwickle und betreibe ich Software, die Prozesse automatisiert, Systeme zuverlaessig macht und Teams produktiver arbeiten laesst.
+Elektroingenieur mit Erfahrung in der Entwicklung elektrischer Antriebe. Heute entwickle und betreibe ich Software, die Prozesse automatisiert, Systeme zuverlässig macht und Teams produktiver arbeiten lässt.
 
-> Educated as an electrical engineer, shaped as a software developer, driven by a passion for DevOps.
+Abseits des Bildschirms bin ich gern mit dem Rad unterwegs, auch auf längeren Bikepacking-Touren. Hier haben Technikprojekte und Erlebnisse draußen ihren Platz.
 
 ### Woran ich arbeite
 

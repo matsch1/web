@@ -4,7 +4,7 @@ TocOpen: true
 cover:
   alt: giscus-hugo-comments
   caption: Giscus the Git Discussion based commenting system for Hugo blogs
-  image: giscus.png
+  image: editorial-cover.webp
   relative: true
 date: 2025-12-04
 description: Giscus the Git Discussion based commenting system for Hugo blogs
@@ -14,6 +14,11 @@ source_lang: en
 tags:
 - hugo
 title: Setting up Giscus comments for Hugo blog
+homepage:
+  teaser: 'Comments without running a comment server: why I chose Giscus and how I
+    integrated GitHub Discussions into Hugo.'
+  title: Setting up Giscus comments for Hugo
+translation_lock: true
 ---
 
 ## Introduction: Why Add Comments?

@@ -31,16 +31,23 @@ home = ["HTML", "RSS", "JSON"] # for search
   ShowShareButtons = true
 
   comments = true
+  brandSocialImage = "branding/matschcode-jutland-social.webp"
+  brandSocialImageWidth = 1200
+  brandSocialImageHeight = 630
 
 [params.label]
   text = "matschcode"
-  icon = "home-logo-300.webp"
-  iconHeight = 24
+  wordmark = "branding/matschcode-jutland.svg"
 
 [params.masthead]
   image = "images/masthead.webp"
 
 [params.assets]
+  favicon = "branding/jutland-favicon.svg"
+  favicon16x16 = "branding/jutland-icon-16.png"
+  favicon32x32 = "branding/jutland-icon-32.png"
+  apple_touch_icon = "branding/jutland-icon-180.png"
+  safari_pinned_tab = "branding/jutland-route.svg"
   css = [
     "css/extended/custom.css",
     "css/extended/sidetoc.css",

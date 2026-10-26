@@ -1,6 +1,30 @@
 (() => {
   "use strict";
 
+  const enhanceGalleries = () => {
+    document.querySelectorAll(".image-gallery").forEach((gallery) => {
+      if (gallery.querySelector(":scope > .image-gallery__hero")) return;
+
+      const items = Array.from(gallery.children).filter((child) =>
+        child.classList.contains("image-gallery__item"),
+      );
+      if (items.length === 0) return;
+
+      const hero = document.createElement("div");
+      hero.className = "image-gallery__hero";
+      hero.append(items[0]);
+
+      const strip = document.createElement("div");
+      strip.className = "image-gallery__strip";
+      items.slice(1).forEach((item) => strip.append(item));
+
+      gallery.replaceChildren(hero);
+      if (strip.childElementCount > 0) gallery.append(strip);
+    });
+  };
+
+  enhanceGalleries();
+
   if (!window.HTMLDialogElement) {
     return;
   }

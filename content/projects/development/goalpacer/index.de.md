@@ -1,11 +1,11 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 23edb6c31a397026bdcd00656544dba4beb67f30491b728b1dae9511e78afca3
+base_hash: b7224051217bc89fe93a8b94e18c8e913426940b7d7c598fe3b27bc202130d8d
 cover:
   alt: goalpacer
   caption: ''
-  image: img1.webp
+  image: "editorial-cover.webp"
   relative: true
 date: 2024-11-16
 description: Erläuterung, wie ich meine erste App für das Marathontraining mit Flutter
@@ -16,6 +16,9 @@ homepage:
   featured: false
   section: engineering
   state: archive
+  teaser: 'Meine erste Flutter-App: In vier Tagen einen Temporechner fürs Lauftraining
+    entwickeln und veröffentlichen.'
+  title: 'Goalpacer: Marathontraining mit Flutter'
 project:
   status: discontinued
 slug: goalpacer-pace-estimator
@@ -24,6 +27,7 @@ tags:
 - sports
 - application
 title: Erste Flutter-App für das Marathontraining
+translation_lock: true
 ---
 
 {{< alert type="warning" title="" >}}

@@ -1,14 +1,93 @@
 .image-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 0.75rem;
-    margin: 1rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.6rem;
+    margin: 1.5rem 0;
 }
 
-.image-gallery__item {
-    display: grid;
-    gap: 0.35rem;
+/* Server-rendered fallback: every gallery remains readable without JavaScript. */
+.image-gallery > .image-gallery__item {
     margin: 0;
+    overflow: hidden;
+    border-radius: var(--radius);
+}
+
+.image-gallery > .image-gallery__item img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.image-gallery__hero,
+.image-gallery__strip {
+    grid-column: 1 / -1;
+}
+
+.image-gallery__hero {
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    border-radius: var(--radius);
+}
+
+.image-gallery__hero .image-gallery__item {
+    margin: 0;
+}
+
+.image-gallery__hero .image-gallery__item,
+.image-gallery__hero .image-gallery__link,
+.image-gallery__hero img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Only the lead image is cropped to the editorial hero ratio. */
+.image-gallery__hero img {
+    object-fit: cover;
+}
+
+.image-gallery__strip {
+    display: flex;
+    gap: 0.6rem;
+    padding-bottom: 0.25rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.image-gallery__strip .image-gallery__item {
+    flex: 0 0 auto;
+    height: clamp(5.5rem, 10vw, 9rem);
+    margin: 0;
+    overflow: hidden;
+    border-radius: var(--radius);
+    scroll-snap-align: start;
+}
+
+/* Strip thumbnails retain their original aspect ratio and are never cropped. */
+.image-gallery__strip .image-gallery__link,
+.image-gallery__strip img {
+    display: block;
+    width: auto;
+    height: 100%;
+    max-width: none;
+}
+
+.image-gallery__strip img {
+    object-fit: contain;
+}
+
+/* Captions remain available to screen readers and the lightbox, without turning
+   every thumbnail into an individual card. */
+.image-gallery__item figcaption {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 .image-gallery__link,
@@ -20,16 +99,7 @@
     cursor: zoom-in;
 }
 
-.image-gallery__item figcaption {
-    color: var(--primary);
-    font-size: 0.9rem;
-}
-
 .image-gallery__item img {
-    aspect-ratio: 4 / 3;
-    width: 100%;
-    object-fit: cover;
-    border-radius: var(--radius);
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 

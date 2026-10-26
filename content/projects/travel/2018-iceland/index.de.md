@@ -14,6 +14,9 @@ homepage:
   featured: false
   section: outdoors
   state: evergreen
+  teaser: 'Mit schwerem Gepäck durchs isländische Hochland: eine Bikepacking-Reise
+    zwischen Gegenwind, heißen Quellen und Reifenpanne.'
+  title: Mit dem Hardtail durch Islands Hochland
 project:
   status: completed
 source_lang: de
@@ -22,6 +25,7 @@ tags:
 - radreise
 - island
 title: Mit dem Hardtail durchs Hochland Islands
+translation_lock: true
 ---
 
 Zehn Tage Island, fünf Fahrräder, ein altes Hardtail und viel zu viel Gepäck. Nach dem Studium wollten wir nicht direkt in den Alltag starten, sondern noch einmal raus: quer durch das Hochland, dorthin, wo die Straße aufhört und aus einer Reise ein kleines Abenteuer wird.

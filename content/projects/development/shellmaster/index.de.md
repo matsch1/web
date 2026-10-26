@@ -1,11 +1,11 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 8cb7d60e55facfcd6f1b558ba454eb11240f86d02abb686f52cab5d9aeddbfdf
+base_hash: 8ce6a3c7f572356e5da5cd902f7b9874b30f82f62f83de33d440b98616ec7961
 cover:
   alt: shellmaster
   caption: ''
-  image: img1.webp
+  image: "editorial-cover.webp"
   relative: true
 date: 2025-04-06
 description: Mein Weg zur Entwicklung einer Quiz-App mit Flutter, Pocketbase und Unleash
@@ -14,6 +14,9 @@ homepage:
   featured: false
   section: engineering
   state: archive
+  teaser: 'Ein Linux-Quiz mit Flutter, PocketBase und Feature Flags: Erfahrungen aus
+    der Entwicklung der inzwischen eingestellten App.'
+  title: 'Shellmaster: Linux-Befehle spielerisch lernen'
 project:
   status: discontinued
 slug: building-shellmaster
@@ -22,6 +25,7 @@ tags:
 - application
 - linux
 title: ' Shellmaster erstellen: Eine unterhaltsame Art, Linux-Shell-Befehle zu lernen '
+translation_lock: true
 ---
 
 {{< alert type="warning" title="" >}}

@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 5b3fc7a0f6a30a974cca4be57d78873a096807815a1c596afbe67ec287b152d2
+base_hash: cc7ae30afc0ae698dc4d993ec28054c5983c91fdfd7bfcf983ac4760b8e8010d
 cover:
   alt: ''
   caption: ''
@@ -19,9 +19,9 @@ title: "\U0001F1E9\U0001F1F0 Day 13 – Indecisively Heading South"
 ## Impressions
 Today started off leisurely. First, I rode in the wrong direction, hoping to see some seals. Unfortunately, I didn’t get to see any again.
 
-So, having come up empty-handed, I headed south. The start of today’s stage turned out to be pretty tough. Luckily, I had a bit of a tailwind. So, with the sun out and a light drizzle, I managed to push through until my lunch break.
+So I headed south without having achieved anything. The start of today’s stage turned out to be pretty tough. Luckily, I still had a bit of a tailwind. So, with the sun out and a light drizzle, I managed to push through until my lunch break.
 
-As a reward, I treated myself to a big burger and fries, and it took me a while to get going again. 
+As a reward, I treated myself to a big burger with fries and had a hard time getting back on the road. 
 
 After another 15 km, I stopped again for a dip in the North Sea. 
 
@@ -37,7 +37,7 @@ Now that I’ve arrived at my campsite, the sun is shining again as if nothing h
 {{< gallery src="img2.jpg" title="Lighthouse and Horses" alt="A tall red lighthouse and red buildings behind a fenced pasture with white and gray horses." >}}
 {{< gallery src="img3.jpg" title="A Break on the Beach" alt="Bare legs are stretched out on a sandy beach facing the ocean; black sandals lie in the sand to the right." >}}
 {{< gallery src="img4.jpg" title="Selfie by the Road" alt="A smiling cyclist wearing a helmet, dark sunglasses, and a light brown jacket standing next to a paved road." >}}
-{{< gallery src="img5.jpg" title="Tent on the Meadow" alt="A small, dark tent on a mowed meadow at the edge of a grove of trees as the sun sets." >}}
+{{< gallery src="img5.jpg" title="Tent on the meadow" alt="A small, dark tent on a mowed meadow at the edge of a grove of trees as the sun sinks low in the sky." >}}
 {{< /galleries >}}
 
 ### Costs
@@ -50,6 +50,7 @@ Now that I’ve arrived at my campsite, the sun is shining again as if nothing h
 
 ### Place to Sleep 
 Place to sleep at a simple campground 
+I’ve been here before on my [Jütland Umrundung 2023 ](https://blog.matschcode.de/de/projects/travel/2023-denmark/).
 {{< open-street-map map_title="Schlafplatz" geo_link="geo:55.77018,8.19788?z=16" >}}
 
 ## Trip Details

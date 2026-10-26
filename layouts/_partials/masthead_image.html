@@ -1,0 +1,18 @@
+{{- with site.Params.masthead.image -}}
+  {{- with resources.Get . -}}
+    {{- $image := . -}}
+    {{- $desktop := partial "responsive_image_data.html" (dict "image" $image "src" $image.RelPermalink "widths" (slice 960 1440 1920 2400) "max" 2400 "fallback" 1440) -}}
+    {{- $mobile := slice -}}
+    {{- /* Match the existing centered object-fit crop, without downloading its hidden sides. */ -}}
+    {{- range (slice 480 768 960) -}}
+      {{- $width := math.Min . $image.Width | int -}}
+      {{- $height := math.Round (mul $width (div 244.0 412.0)) | int -}}
+      {{- $variant := $image.Fill (printf "%dx%d center webp q78" $width $height) -}}
+      {{- $mobile = $mobile | append (printf "%s %dw" $variant.RelPermalink $variant.Width) -}}
+    {{- end -}}
+    <picture>
+      <source media="(max-width: 768px)" type="image/webp" srcset="{{ delimit $mobile ", " }}" sizes="100vw">
+      <img class="site-masthead__image" src="{{ $desktop.src }}" srcset="{{ $desktop.srcset }}" sizes="100vw" width="{{ $desktop.width }}" height="{{ $desktop.height }}" loading="eager" fetchpriority="high" decoding="async" alt="" aria-hidden="true">
+    </picture>
+  {{- end -}}
+{{- end -}}

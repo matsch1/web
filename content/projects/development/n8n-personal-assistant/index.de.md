@@ -1,11 +1,11 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: be42d23e906da803939775ed35666f37a1c87280e2dcc22c5f827e8decaed235
+base_hash: 0135af512b05c8ba6bd2e0884c5a4fdd1507a1be9176df9efbf5aa75f3de3e7f
 cover:
   alt: n8n-ai-assistant
   caption: Personal AI assistant build with n8n
-  image: header.png
+  image: "editorial-cover.webp"
   relative: true
 date: 2025-10-11
 description: Erstelle deinen eigenen persönlichen Telegram-Assistenten mit n8n
@@ -16,11 +16,17 @@ tags:
 - AI
 title: Mein persönlicher n8n-KI-Assistent
 homepage:
+  featured: false
   section: engineering
   state: archive
-  featured: false
+  teaser: 'Ein Telegram-Assistent für Termine und Aufgaben: Aufbau und Erfahrungen
+    mit n8n, inzwischen durch Hermes ersetzt.'
+  title: Mein KI-Assistent mit n8n
 project:
   status: discontinued
+translation_lock: true
+filter_categories:
+  - self-hosting
 ---
 
 {{< alert type="info" title="" >}}

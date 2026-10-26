@@ -4,12 +4,15 @@ TocOpen: true
 cover:
   alt: coolify-vps-setup
   caption: ''
-  image: header.png
+  image: "editorial-cover.webp"
   relative: true
 date: 2025-05-10
 description: Server hardening and deploy first app with Coolify.
 draft: false
+translation_lock: true
 homepage:
+  title: "Coolify on my own VPS"
+  teaser: "Hardening a VPS and deploying a first app with Coolify: practical lessons from my setup."
   featured: false
   section: engineering
   state: evergreen

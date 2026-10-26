@@ -7,7 +7,7 @@ ShowToc: true
 TocOpen: true
 draft: false
 cover:
-  image: "header.png"
+  image: "editorial-cover.webp"
   alt: "coolify-vps-setup"
   caption: ""
   relative: true
@@ -17,7 +17,10 @@ tags:
   - coolify
   - tailscale
 source_lang: en
+translation_lock: true
 homepage:
+  title: "Coolify on my own VPS"
+  teaser: "Hardening a VPS and deploying a first app with Coolify: practical lessons from my setup."
   section: engineering
   state: evergreen
   featured: false

@@ -1,11 +1,11 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 38d6686fc734baddae0357eb55c1b2b95c61be69ea0b80d6724f96541a41f5ca
+base_hash: b26cfe4e66da5219a561adc89b9932d1a5907c599a66a297f6b3eb60d1693c3f
 cover:
   alt: Traffic flow from VPS to Tailscale-protected K3s cluster
   caption: Public traffic routed through a VPS into a private K3s homelab via Tailscale
-  image: expose-k3s-services-via-vps.png
+  image: editorial-cover.webp
   relative: true
 date: 2025-12-21
 description: Leitung des öffentlichen Web-Traffics über einen VPS in einen durch Tailscale
@@ -18,6 +18,11 @@ tags:
 - tailscale
 - vps
 title: K3s-Dienste aus einem durch Tailscale geschützten Homelab über einen VPS bereitstellen
+homepage:
+  teaser: 'Öffentlicher Zugriff auf ausgewählte Homelab-Dienste: Ein VPS leitet Webanfragen
+    über Tailscale ins private K3s-Cluster.'
+  title: K3s-Dienste über VPS und Tailscale veröffentlichen
+translation_lock: true
 ---
 
 Bei meiner letzten Homelab-Sitzung stieß ich auf ein Problem, das mir zunächst lästig erschien, sich aber schließlich in eine überraschend elegante Lösung verwandelte – eine, die es wert ist, geteilt zu werden.

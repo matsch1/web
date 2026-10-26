@@ -1,16 +1,19 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: a1007340698619244a25a95b0c12ed6b271540a17f1e667702f65893823b077e
+base_hash: 1f1507e9f2da07f592548e3f7ef700647bf651831b61dd9c28fec8f269b58b2a
 cover:
   alt: coolify-vps-setup
   caption: ''
-  image: header.png
+  image: "editorial-cover.webp"
   relative: true
 date: 2025-05-10
 description: Server-Absicherung und Bereitstellung der ersten App mit Coolify.
 draft: false
+translation_lock: true
 homepage:
+  title: "Coolify auf dem eigenen VPS"
+  teaser: "Einen VPS absichern und die erste App mit Coolify bereitstellen – Erfahrungen aus meinem Setup."
   featured: false
   section: engineering
   state: evergreen
