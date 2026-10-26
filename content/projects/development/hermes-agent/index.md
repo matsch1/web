@@ -21,8 +21,8 @@ translation_lock: true
 homepage:
   section: engineering
   state: active
-  featured: true
-  title: "A personal system with Hermes Agent"
+  featured: false
+  title: "A personal assistant with Hermes Agent"
   teaser: "A self-hosted agent for engineering, training, and knowledge work—built around tools, context, and guarded actions."
 project:
   status: active
