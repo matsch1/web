@@ -5,7 +5,7 @@ date: 2026-07-31
 description: "Warum ich meinen n8n-Assistenten durch ein selbstgehostetes Agentensystem für Engineering, Ausdauersport und persönliche Wissensarbeit ersetzt habe."
 ShowToc: true
 TocOpen: true
-base_hash: d9952c7c2b857562e083f693800219a092f16c03f01a267f5ec3c7ed600fe28c
+base_hash: 76a9838e9596e5f34364a4615cc4a09905544fa277eb4a1b418dbec83f929532
 cover:
   alt: "Diagramm: Hermes Agent verbindet Engineering und Training mit Obsidian und Git"
   caption: ""
@@ -20,7 +20,7 @@ tags:
 homepage:
   section: engineering
   state: active
-  featured: false
+  featured: true
   title: "Mein persönliches System mit Hermes Agent"
   teaser: "Ein selbstgehosteter Agent für Engineering, Training und Wissensarbeit – mit Tools, Kontext und kontrollierten Aktionen."
 project:

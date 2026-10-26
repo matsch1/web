@@ -1,5 +1,5 @@
 ---
-base_hash: 942565721870ad4604fe6847bc923b23046e64d62df74ee16d15fe25e389af6a
+base_hash: 6a7ae7c4ec4af4b16ece26ae04647cc4eebc90eb40c101e2c98ce1e883f21247
 cascade:
   hiddenInProjectList: true
 cover:
@@ -14,7 +14,7 @@ translation_lock: true
 homepage:
   title: "Bikepacking through Sweden and Denmark"
   teaser: "Through Scandinavia with a bike and tent: plans, daily stages, and photographs from my 2025 trip."
-  featured: true
+  featured: false
   section: outdoors
   state: evergreen
 listAsProject: true

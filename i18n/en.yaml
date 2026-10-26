@@ -51,6 +51,9 @@
 - id: home_featured_title
   translation: "In focus"
 
+- id: home_active_projects_title
+  translation: "Active projects"
+
 - id: nav_projects
   translation: "Projects"
 - id: nav_notes

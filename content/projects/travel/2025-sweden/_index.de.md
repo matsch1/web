@@ -13,7 +13,7 @@ translation_lock: true
 homepage:
   title: "Bikepacking durch Schweden und Dänemark"
   teaser: "Mit Rad und Zelt durch Skandinavien: Planung, Etappen und Bilder meiner Reise 2025."
-  featured: true
+  featured: false
   section: outdoors
   state: evergreen
 listAsProject: true

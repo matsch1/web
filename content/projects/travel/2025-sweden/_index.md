@@ -18,7 +18,7 @@ homepage:
   teaser: "Mit Rad und Zelt durch Skandinavien: Planung, Etappen und Bilder meiner Reise 2025."
   section: outdoors
   state: evergreen
-  featured: true
+  featured: false
 project:
   status: completed
 ---

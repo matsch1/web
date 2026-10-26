@@ -20,8 +20,10 @@
 {{- $archiveProjects := union $explicitArchiveProjects $staleActiveProjects }}
 {{- $archiveProjects = sort $archiveProjects "Date" "desc" }}
 
-{{- $featuredProjects := where $homepageProjects "Params.homepage.featured" true }}
+{{- $featuredCandidates := union $homepageProjects $activeLifecycleProjects }}
+{{- $featuredProjects := where $featuredCandidates "Params.homepage.featured" true }}
 {{- $leadProjects := first 1 $featuredProjects }}
+{{- $activeLifecycleProjects = $activeLifecycleProjects | complement $leadProjects }}
 {{- $engineeringProjects := where $homepageProjects "Params.homepage.section" "engineering" }}
 {{- $engineeringProjects = $engineeringProjects | complement $leadProjects }}
 {{- $outdoorProjects := where $homepageProjects "Params.homepage.section" "outdoors" }}

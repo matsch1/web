@@ -21,7 +21,7 @@ homepage:
   teaser: "From kit to daily keyboard: building Ian’s split keyboard and sharing the first lessons."
   section: engineering
   state: evergreen
-  featured: true
+  featured: false
 project:
   status: completed
 ---
