@@ -9,7 +9,8 @@ document.querySelectorAll("[data-content-filters]").forEach((filters) => {
       let visibleEntries = 0;
 
       entries.forEach((entry) => {
-        const visible = category === "all" || entry.dataset.category === category;
+        const categories = (entry.dataset.categories || entry.dataset.category || "").split(/\s+/);
+        const visible = category === "all" || categories.includes(category);
         entry.hidden = !visible;
         visibleEntries += Number(visible);
       });

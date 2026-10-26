@@ -25,6 +25,8 @@ homepage:
 project:
   status: discontinued
 translation_lock: true
+filter_categories:
+  - self-hosting
 ---
 
 {{< alert type="info" title="" >}}

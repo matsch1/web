@@ -16,6 +16,8 @@ tags:
   - AI
 source_lang: en
 translation_lock: true
+filter_categories:
+  - self-hosting
 homepage:
   featured: false
   section: engineering

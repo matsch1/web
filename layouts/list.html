@@ -110,7 +110,7 @@
 {{- if $graphic }}{{ $class = printf "%s post-entry--graphic" $class }}{{ end }}
 {{- $cardTitle := .Params.homepage.title | default .Title }}
 {{- $cardTeaser := .Params.homepage.teaser | default .Description }}
-<article class="{{ $class }}"{{ if $showCategoryFilters }} data-category="{{ $category }}"{{ end }}>
+<article class="{{ $class }}"{{ if $showCategoryFilters }} data-category="{{ $category }}" data-categories="{{ delimit (union (slice $category) (.Params.filter_categories | default slice)) " " }}"{{ end }}>
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
   <header class="entry-header">
