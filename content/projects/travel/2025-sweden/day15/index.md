@@ -1,7 +1,7 @@
 ---
 title: 🇩🇰 Tag 15 - Nach Flensburg 
 date: 2025-07-15
-description: im Regen
+description: "Im Regen weiter nach Flensburg: Tag 15 meiner Bikepacking-Reise durch Schweden und Dänemark führt zurück nach Deutschland."
 ShowToc: true
 TocOpen: true
 draft: false
@@ -13,6 +13,7 @@ cover:
 tags:
   - bikepacking
 source_lang: de
+translation_lock: true
 ---
 
 ## Eindrücke

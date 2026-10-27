@@ -7,12 +7,13 @@ cover:
   image: img1.jpg
   relative: true
 date: 2025-07-15
-description: im Regen
+description: "Im Regen weiter nach Flensburg: Tag 15 meiner Bikepacking-Reise durch Schweden und Dänemark führt zurück nach Deutschland."
 draft: false
 source_lang: de
 tags:
 - bikepacking
 title: "\U0001F1E9\U0001F1F0 Tag 15 - Nach Flensburg"
+translation_lock: true
 ---
 
 ## Eindrücke

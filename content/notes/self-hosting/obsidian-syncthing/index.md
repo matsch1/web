@@ -12,7 +12,7 @@ cover:
   caption: ""
   relative: true
 tags:
-  - obsdian
+  - obsidian
   - syncthing
 source_lang: en
 homepage:

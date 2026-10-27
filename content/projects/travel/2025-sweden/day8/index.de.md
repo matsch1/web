@@ -7,12 +7,13 @@ cover:
   image: img1.jpg
   relative: true
 date: 2025-07-08
-description: null
+description: "Von Halmstad ins schwedische Landesinnere: Gegenwind an der Küste, ein Shelter am See und ein Abend mit anderen Radreisenden."
 draft: false
 source_lang: de
 tags:
 - bikepacking
 title: "\U0001F1F8\U0001F1EA Tag 8 - Alles kommt anders als man denkt"
+translation_lock: true
 ---
 
 ## Eindrücke

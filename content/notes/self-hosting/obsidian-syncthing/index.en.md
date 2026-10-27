@@ -13,7 +13,7 @@ draft: false
 slug: obsidian-cloud-sync-setup
 source_lang: en
 tags:
-- obsdian
+- obsidian
 - syncthing
 title: 'My Obsidian + Syncthing Setup: A Self-Hosted Cloud for Notes, Backups, and
   More'

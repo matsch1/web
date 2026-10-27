@@ -1,6 +1,6 @@
 ---
-base_hash: 9fc723bc3610ef26d766cbd2c811fd8fc542b29e5b1efafde2796699647dad51
-description: ''
+base_hash: 1a5e4264f80ea75e4b7c19db9ead092b3d116a484d6d018589f82eb09b2a2e55
+description: "I’m Matthias, an electrical engineer and software developer sharing practical experiences with software, homelab projects and bikepacking."
 draft: false
 title: About me
 translation_lock: true

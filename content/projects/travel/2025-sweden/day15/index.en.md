@@ -1,19 +1,20 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 2f9323f35aae6384e1e6f833e602133e502f1c2e99f9ac3278561779a0bcc023
+base_hash: 787248c11c35ec17468f8adde94da2b646a75c391155665f9961f0cab52e1e3e
 cover:
   alt: ''
   caption: ''
   image: img1.jpg
   relative: true
 date: 2025-07-15
-description: In the rain
+description: "Riding through the rain to Flensburg: day 15 of my bikepacking trip through Sweden and Denmark takes me back to Germany."
 draft: false
 gallery_translation_version: 1
 tags:
 - bikepacking
 title: "\U0001F1E9\U0001F1F0 Day 15 – To Flensburg"
+translation_lock: true
 ---
 
 ## Impressions

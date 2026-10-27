@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 40c23c121ccd26234a3053fbe0daef2673cf0b9b4e2fdfc3e25998fc9c0d71a4
+base_hash: d388cb556dee2c7337232cee5b3b2f95ea5078139646379bc02c4c310557c7f0
 cover:
   alt: nextcloud-k3s-helm-deployment
   caption: The way I deployed nextcloud on my k3s cluster using helm chart
@@ -16,7 +16,7 @@ tags:
 - kubernetes
 - k3s
 - nextcloud
-title: Nextcloud-K3S-Bereitstellung mit Helm-Chart
+title: Nextcloud auf K3s mit Helm betreiben
 homepage:
   teaser: 'Mein Weg zur selbst gehosteten Nextcloud: das Helm-Deployment im K3s-Homelab
     und die Stolpersteine bei der Einrichtung.'
@@ -99,7 +99,7 @@ Alle internen Dienstnamen, die zum Testen oder Debuggen verwendet werden
 
 Ohne diese Konfiguration kann Nextcloud Verbindungen ablehnen oder Nutzer unerwartet umleiten. Die Verwaltung vertrauenswürdiger Domänen über Helm-Werte stellt sicher, dass die Konfiguration auch bei Pod-Neustarts und Upgrades erhalten bleibt.
 
-Fügen Sie den folgenden Abschnitt zu Ihrer `values.yaml`-Datei hinzu:
+Füge den folgenden Abschnitt zu deiner `values.yaml`-Datei hinzu:
 ``` yaml
 nextcloud:
   trustedDomains: [localhost, <yourdomain.com>]
@@ -135,13 +135,13 @@ Diese Änderung spiegelt die tatsächlich auf dem Knoten konfigurierten Resolver
 
 
 ### DAV-Konfiguration für den Zugriff auf Android-Kontakte und -Kalender
-Um Kalender und Kontakte auf Ihrem Smartphone zu integrieren, muss Nextcloud DAV-Zugriff bereitstellen.
+Um Kalender und Kontakte auf deinem Smartphone zu integrieren, muss Nextcloud DAV-Zugriff bereitstellen.
 
 Ich habe die Anleitung von Robin befolgt, um meine Google-Kontakte und meinen Google-Kalender zu Nextcloud zu migrieren:
 „Google-Kontakte und -Kalender zu NextCloud verschieben.“ Leider ist der Blog nicht mehr online.
 Für die Datenmigration würde ich nun die von Nextcloud bereitgestellte [migration tool](https://nextcloud.com/blog/easy-migration-to-nextcloud-from-insecure-and-privacy-unfriendly-platforms-now-available/) verwenden.
 
-Um [synchronize with Android](https://docs.nextcloud.com/server/19/user_manual/pim/sync_android.html) durchzuführen, befolgen Sie die Anweisungen von Nextcloud.
+Um [mit Android zu synchronisieren](https://docs.nextcloud.com/server/19/user_manual/pim/sync_android.html), befolge die Anweisungen von Nextcloud.
 Während des [DAVx⁵](https://www.davx5.com/download/) Einrichtungsprozesses bin ich beim Schritt `Grant Access` hängen geblieben.
 
 {{< figure src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZPWsy7ripvR1b7OIfdfyon23ykeLuhSVHA&s" width="300" alt="Nextcloud DAV Grant Access issue" link="https://itcamefromtheinternet.com/blog/nextcloud-android-sync/" >}}
@@ -212,6 +212,6 @@ helm install nextcloud ./nextcloud \
 ## Zusammenfassung
 Die Bereitstellung von Nextcloud auf einem k3s-Cluster mit Helm hat gut funktioniert, erforderte jedoch mehr Überlegung als eine einfache „helm install“-Anweisung. Durch eine übersichtliche Strukturierung der Konfiguration, bewusste Designentscheidungen und die Nutzung von Helm-Funktionen wie benutzerdefinierten Konfigurationsdateien und zusätzlichen Manifesten habe ich letztendlich eine Konfiguration erhalten, die sowohl flexibel als auch wartungsfreundlich ist.
 
-Die dazugehörige Netzwerkarchitektur, die diesen Nextcloud-Dienst über einen VPS öffentlich erreichbar macht, ohne das Heimnetzwerk zu öffnen, finden Sie unter [Expose K3s Services from a Tailscale-Protected Homelab via a VPS](https://blog.matschcode.de/en/notes/self-hosting/expose-k3s-services-via-vps/).
+Die dazugehörige Netzwerkarchitektur, die diesen Nextcloud-Dienst über einen VPS öffentlich erreichbar macht, ohne das Heimnetzwerk zu öffnen, findest du unter [Expose K3s Services from a Tailscale-Protected Homelab via a VPS](https://blog.matschcode.de/en/notes/self-hosting/expose-k3s-services-via-vps/).
 
 Ich bin mit der aktuellen Konfiguration sehr zufrieden, daher sind keine weiteren Änderungen geplant.

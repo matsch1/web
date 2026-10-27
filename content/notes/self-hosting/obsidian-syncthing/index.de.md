@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 1a7b73660611de53c936da491c12815a27cda331b62c6bf9f1bbb696f893c20a
+base_hash: a986b1a198c8275952637a181cad1d1c265ab22e3e4cc3ffb4ae1d1a4d49f72a
 cover:
   alt: obsidian-syncthing
   caption: ''
@@ -13,7 +13,7 @@ description: Verwende Syncthing auf einem Server, um einen plattformübergreifen
 draft: false
 slug: obsidian-cloud-sync-setup
 tags:
-- obsdian
+- obsidian
 - syncthing
 title: 'Mein Obsidian- und Syncthing-Setup: Eine selbst gehostete Cloud für Notizen,
   Backups und mehr'

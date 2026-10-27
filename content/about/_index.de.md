@@ -1,5 +1,5 @@
 ---
-description: ''
+description: "Ich bin Matthias: Elektroingenieur und Softwareentwickler. Hier teile ich meine Erfahrungen mit Software, Homelab und Bikepacking."
 draft: false
 source_lang: de
 title: Über mich

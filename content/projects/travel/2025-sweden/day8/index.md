@@ -1,7 +1,7 @@
 ---
 title: 🇸🇪 Tag 8 - Alles kommt anders als man denkt
 date: 2025-07-08
-description: 
+description: "Von Halmstad ins schwedische Landesinnere: Gegenwind an der Küste, ein Shelter am See und ein Abend mit anderen Radreisenden."
 ShowToc: true
 TocOpen: true
 draft: false
@@ -13,6 +13,7 @@ cover:
 tags:
   - bikepacking
 source_lang: de
+translation_lock: true
 ---
 
 ## Eindrücke

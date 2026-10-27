@@ -1,19 +1,20 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 9e0658355a280b5598d77cb875baa473d1c467bf2cb56958db134fc31d97e4ac
+base_hash: 61e1498cdc37a57e286ddc41a235c6f18a21db0db217417afaf150cca140edb4
 cover:
   alt: ''
   caption: ''
   image: img1.jpg
   relative: true
 date: 2025-07-08
-description: null
+description: "From Halmstad into inland Sweden: coastal headwinds, a lakeside shelter and an evening with fellow bike travelers."
 draft: false
 gallery_translation_version: 1
 tags:
 - bikepacking
 title: "\U0001F1F8\U0001F1EA Day 8 - Things Never Turn Out the Way You Expect"
+translation_lock: true
 ---
 
 ## Impressions
