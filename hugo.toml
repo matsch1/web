@@ -35,6 +35,14 @@ home = ["HTML", "RSS", "JSON"] # for search
   brandSocialImageWidth = 1200
   brandSocialImageHeight = 630
 
+# Public tracking configuration; emitted only for production builds.
+# Keep deployment blocked until the public script and collection endpoint are ready.
+[params.analytics.umami]
+  enabled = true
+  scriptURL = "https://analytics.matschcode.de/script.js"
+  websiteID = "1736536a-5b2c-4200-9491-c95f339ca4b2"
+  domains = "blog.matschcode.de"
+
 [params.label]
   text = "matschcode"
   wordmark = "branding/matschcode-jutland.svg"
