@@ -1,4 +1,4 @@
-/* No provider request is made until explicit map activation or comment proximity. */
+/* Maps require explicit activation; comments start after the page finishes loading. */
 (() => {
   'use strict';
   const giscusAttributes = ['repo', 'repo-id', 'category', 'category-id', 'mapping',
@@ -22,7 +22,6 @@
       const status = embed.querySelector('[data-embed-status]');
       const target = embed.querySelector('[data-embed-target]');
       let state = 'idle';
-      let observer;
       let timeout;
       button.hidden = false;
 
@@ -36,7 +35,6 @@
         state = 'loading';
         button.disabled = true;
         status.textContent = embed.dataset.loading || '';
-        if (observer) observer.unobserve(embed);
         const node = document.createElement(isMap ? 'iframe' : 'script');
         let settled = false;
         function fail() {
@@ -80,11 +78,9 @@
       }
 
       button.addEventListener('click', activate);
-      if (embed.dataset.deferredEmbed === 'giscus' && typeof IntersectionObserver !== 'undefined') {
-        observer = new IntersectionObserver((entries) => {
-          if (entries.some((entry) => entry.target === embed && entry.isIntersecting)) activate();
-        }, { rootMargin: '200px 0px' });
-        observer.observe(embed);
+      if (embed.dataset.deferredEmbed === 'giscus') {
+        if (document.readyState === 'complete') activate();
+        else window.addEventListener('load', activate, { once: true });
       }
     });
   }

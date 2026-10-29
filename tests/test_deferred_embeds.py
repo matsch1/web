@@ -73,6 +73,10 @@ class RenderTests(unittest.TestCase):
         en = next(a for _, a in Tags(self.page('en/embed')).tags if a.get('data-deferred-embed') == 'giscus')
         self.assertEqual(en['data-lang'], 'en')
 
+    def test_giscus_explains_automatic_loading_after_page_load_in_both_languages(self):
+        self.assertIn('Kommentare werden nach dem vollständigen Laden der Seite automatisch von Giscus geladen.', self.page('embed'))
+        self.assertIn('Comments load automatically from Giscus after the page has finished loading.', self.page('en/embed'))
+
     def test_script_fingerprinted_deduplicated_and_only_when_needed(self):
         scripts = [a for t, a in Tags(self.page('embed')).tags if t == 'script']
         self.assertEqual(len(scripts), 1)
@@ -89,11 +93,29 @@ class RenderTests(unittest.TestCase):
 
 
 class BehaviorTests(unittest.TestCase):
-    def test_activation_observation_retry_and_url_validation(self):
+    def check_behavior(self, scenario):
         script = ROOT / 'assets/js/deferred-embeds.js'
         self.assertTrue(script.exists(), 'deferred embed controller missing')
-        result = subprocess.run(['node', '-e', NODE_TEST, str(script)], capture_output=True, text=True)
+        result = subprocess.run(['node', '-e', NODE_TEST, str(script), scenario], capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_giscus_waits_for_window_load_without_scrolling(self):
+        self.check_behavior('load')
+
+    def test_giscus_starts_immediately_when_document_complete(self):
+        self.check_behavior('complete')
+
+    def test_giscus_loads_without_intersection_observer(self):
+        self.check_behavior('no-observer')
+
+    def test_dom_content_loaded_still_waits_for_window_load(self):
+        self.check_behavior('dom')
+
+    def test_manual_activation_retry_and_url_validation(self):
+        self.check_behavior('manual')
+
+    def test_komoot_remains_click_only_after_window_load(self):
+        self.check_behavior('komoot')
 
 
 NODE_TEST = r'''
@@ -111,32 +133,66 @@ class Element {
   click() { if(!this.disabled) this.listeners.click?.(); }
 }
 function box(type, extra={}) { const el=new Element('section',{deferredEmbed:type,src:'https://www.komoot.com/tour/123/embed?share_token=x&profile=1',height:'480',title:'Map',loading:'Loading',error:'Failed',retry:'Retry',...extra}); el.button=new Element('button'); el.status=new Element(); el.target=new Element(); return el; }
-function run(observer=true) {
+function events(target={}) {
+ const listeners={};
+ target.addEventListener=(type,fn,options={}) => (listeners[type] ??= []).push({fn,once:options.once});
+ target.dispatch=(type) => {
+   for(const listener of [...(listeners[type] || [])]) {
+     if(listener.once) listeners[type]=listeners[type].filter(item=>item!==listener);
+     listener.fn();
+   }
+ };
+ return target;
+}
+function run(readyState='interactive', observer=true) {
  const map=box('komoot'), comments=box('giscus',{repo:'matsch1/web',lang:'de'}), bad=box('komoot',{src:'https://www.komoot.com.evil.test/tour/123/embed'});
  const observers=[];
- const document={readyState:'complete',querySelectorAll:()=>[map,comments,bad],createElement:t=>new Element(t)};
- const context={document, URL, setTimeout:()=>1,clearTimeout:()=>{},window:{}};
+ const document=events({readyState,querySelectorAll:()=>[map,comments,bad],createElement:t=>new Element(t)});
+ const window=events();
+ const context={document, URL, setTimeout:()=>1,clearTimeout:()=>{},window};
  if(observer) context.IntersectionObserver=class { constructor(cb,options){ this.cb=cb; this.options=options; observers.push(this); } observe(el){this.el=el;} unobserve(el){this.unobserved=el;} };
  vm.runInNewContext(fs.readFileSync(process.argv[1],'utf8'),context);
- return {map,comments,bad,observers};
+ return {map,comments,bad,observers,document,window};
 }
-let {map,comments,bad,observers}=run();
-assert.equal(map.target.children.length,0); assert.equal(comments.target.children.length,0);
-assert.equal(observers.length,1); assert.equal(observers[0].el,comments);
-map.button.click(); map.button.click();
-assert.equal(map.target.children.length,1);
-assert.equal(map.target.children[0].src,map.dataset.src);
-assert.equal(map.target.children[0].height,'480');
-bad.button.click(); assert.equal(bad.target.children.length,0);
-observers[0].cb([{isIntersecting:false,target:comments}]); assert.equal(comments.target.children.length,0);
-observers[0].cb([{isIntersecting:true,target:comments}]);
-assert.equal(comments.target.children.length,1);
-let script=comments.target.children[0]; assert.equal(script.src,'https://giscus.app/client.js');
-assert.equal(script.attrs['data-repo'],'matsch1/web'); assert.equal(script.attrs['data-lang'],'de');
-comments.button.click(); assert.equal(comments.target.children.length,1);
-script.onerror(); assert.equal(comments.button.disabled,false); assert.equal(comments.button.hidden,false); assert.equal(comments.status.textContent,'Failed');
-comments.button.click(); assert.equal(comments.target.children.length,2); assert.equal(script.removed,true);
-comments.target.children[1].onload(); assert.equal(comments.button.hidden,true);
-let fallback=run(false); assert.equal(fallback.comments.target.children.length,0); fallback.comments.button.click(); assert.equal(fallback.comments.target.children.length,1);
-console.log('Deferred embed behavior OK');
+const scenario=process.argv[2];
+const env=run(scenario==='complete'?'complete':scenario==='dom'?'loading':'interactive', scenario!=='no-observer');
+const {map,comments,bad,document,window,observers}=env;
+if(scenario==='complete') {
+ assert.equal(comments.target.children.length,1,'Already-complete document must start comments immediately');
+} else {
+ assert.equal(comments.target.children.length,0,'No automatic comments before window load');
+ if(scenario==='dom') {
+   document.readyState='interactive';
+   document.dispatch('DOMContentLoaded');
+   assert.equal(comments.target.children.length,0,'DOMContentLoaded alone must not start comments');
+ }
+ if(scenario==='manual') {
+   comments.button.click();
+   assert.equal(comments.target.children.length,1,'Manual activation works before window load');
+ }
+ document.readyState='complete';
+ window.dispatch('load');
+ if(scenario!=='komoot') assert.equal(comments.target.children.length,1,'Window load must start comments without scrolling or intersection');
+}
+assert.equal(map.target.children.length,0,'Komoot must remain click-only after window load');
+assert.equal(bad.target.children.length,0);
+if(scenario==='komoot') {
+ map.button.click(); map.button.click();
+ assert.equal(map.target.children.length,1);
+ assert.equal(map.target.children[0].src,map.dataset.src);
+ assert.equal(map.target.children[0].height,'480');
+ bad.button.click(); assert.equal(bad.target.children.length,0);
+} else {
+ assert.equal(observers.length,0,'Comment loading must not depend on IntersectionObserver');
+ const script=comments.target.children[0];
+ assert.equal(script.src,'https://giscus.app/client.js');
+ assert.equal(script.attrs['data-repo'],'matsch1/web'); assert.equal(script.attrs['data-lang'],'de');
+ assert.equal(script.async,true); assert.equal(script.crossOrigin,'anonymous');
+ comments.button.click(); window.dispatch('load'); assert.equal(comments.target.children.length,1);
+ script.onerror(); assert.equal(comments.button.disabled,false); assert.equal(comments.button.hidden,false); assert.equal(comments.status.textContent,'Failed');
+ window.dispatch('load'); assert.equal(comments.target.children.length,1,'Load listener must be one-shot, including after failure');
+ comments.button.click(); assert.equal(comments.target.children.length,2); assert.equal(script.removed,true);
+ comments.target.children[1].onload(); assert.equal(comments.button.hidden,true);
+}
+console.log('Deferred embed behavior OK: '+scenario);
 '''

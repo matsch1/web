@@ -9,7 +9,7 @@
   data-error="{{ if $de }}Kommentare konnten nicht geladen werden. Bitte erneut versuchen oder GitHub öffnen.{{ else }}Comments could not be loaded. Please retry or open GitHub.{{ end }}"
   data-retry="{{ if $de }}Erneut versuchen{{ else }}Retry{{ end }}">
   <h2>{{ if $de }}Kommentare{{ else }}Comments{{ end }}</h2>
-  <p>{{ if $de }}Kommentare werden in der Nähe dieses Bereichs von Giscus geladen. Dabei werden Daten an Giscus und GitHub übertragen.{{ else }}Comments load from Giscus when you approach this section. This transfers data to Giscus and GitHub.{{ end }}</p>
+  <p>{{ if $de }}Kommentare werden nach dem vollständigen Laden der Seite automatisch von Giscus geladen. Dabei werden Daten an Giscus und GitHub übertragen.{{ else }}Comments load automatically from Giscus after the page has finished loading. This transfers data to Giscus and GitHub.{{ end }}</p>
   <button type="button" data-embed-load hidden>{{ if $de }}Kommentare laden{{ else }}Load comments{{ end }}</button>
   <a href="https://github.com/matsch1/web/discussions" rel="external noopener noreferrer">{{ if $de }}Diskussionen auf GitHub öffnen{{ else }}Open discussions on GitHub{{ end }}</a>
   <p data-embed-status role="status" aria-live="polite"></p>
