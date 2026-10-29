@@ -58,7 +58,10 @@
     {{- partial "post_nav_links.html" . }}
     {{- end }}
     {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
-    {{- partial "share_icons.html" . -}}
+    <p class="share-buttons-label" id="share-buttons-label">{{ i18n "share_this_post" }}</p>
+    <div role="group" aria-labelledby="share-buttons-label">
+      {{- partial "share_icons.html" . -}}
+    </div>
     {{- end }}
   </footer>
 

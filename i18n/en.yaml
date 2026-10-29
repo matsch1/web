@@ -1,3 +1,6 @@
+- id: share_this_post
+  translation: "Share this post"
+
 - id: search_field_label
   translation: "Search this site"
 - id: search_results_label

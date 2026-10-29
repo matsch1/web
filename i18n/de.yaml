@@ -1,3 +1,6 @@
+- id: share_this_post
+  translation: "Beitrag teilen"
+
 - id: search_field_label
   translation: "Website durchsuchen"
 - id: search_results_label
