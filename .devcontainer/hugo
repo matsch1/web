@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+set -eu
+
+# Use container-friendly defaults only for the development server. The regular
+# `hugo` build command still uses the production baseURL from hugo.toml.
+if [ "${1:-}" = "server" ]; then
+  shift
+  exec /usr/local/libexec/hugo server --bind 0.0.0.0 --baseURL http://localhost:1313 "$@"
+fi
+
+exec /usr/local/libexec/hugo "$@"

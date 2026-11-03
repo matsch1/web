@@ -49,6 +49,66 @@ The topics I am currently working on are:
 ### Travel
 Mainly for sharing impressions of my solo travels with friends and family.
 
+## Local development (Dev Container)
+
+The project can be edited in a Docker-based Dev Container. It includes Hugo,
+Neovim (using the host's `~/.config/nvim` configuration), LazyGit, OpenCode,
+Python, and the tools required by this repository.
+
+### Start the container
+
+Docker and the [Dev Containers CLI](https://github.com/devcontainers/cli) are
+required. From the repository root, build and start the container:
+
+```sh
+devcontainer up --workspace-folder .
+```
+
+To rebuild it after changes to `.devcontainer/`:
+
+```sh
+devcontainer up --workspace-folder . --remove-existing-container
+```
+
+Open an interactive shell in the running container:
+
+```sh
+devcontainer exec --workspace-folder . bash
+```
+
+### Commands inside the container
+
+After opening the interactive shell above, run the commands directly:
+
+```sh
+# Start the local preview server
+hugo server
+
+# Create the static production build in public/
+hugo --gc --minify
+
+# Edit the project with the mounted Neovim configuration
+nvim .
+
+# Open Git's terminal UI
+lazygit
+
+# Start OpenCode (first run prompts for authentication)
+opencode
+```
+
+It is available at [http://localhost:1313/](http://localhost:1313/).
+The Dev Container supplies `--bind 0.0.0.0` and the local base URL
+automatically for `hugo server`.
+The first build can take several minutes while Hugo processes images; wait
+until Hugo reports that the web server is available before opening the URL.
+
+To run the preview server from the host without opening an interactive shell:
+
+```sh
+devcontainer exec --workspace-folder . hugo server
+```
+
 
 ---
 

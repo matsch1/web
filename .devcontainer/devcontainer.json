@@ -1,0 +1,19 @@
+{
+  "name": "Web (Hugo + Neovim)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "vscode",
+  "mounts": [
+    "source=${localEnv:HOME}/.config/nvim,target=/home/vscode/.config/nvim,type=bind,readonly"
+  ],
+  "appPort": ["1313:1313"],
+  "forwardPorts": [1313],
+  "portsAttributes": {
+    "1313": {
+      "label": "Hugo development server",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "git submodule update --init --recursive && python3 -m venv /home/vscode/.venv && /home/vscode/.venv/bin/pip install -r requirements.txt"
+}
