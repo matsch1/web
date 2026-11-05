@@ -1,7 +1,7 @@
 ---
 title: "Homelab Infrastruktur"
 slug: "homelab-infrastructure"
-date: 2026-11-03
+date: 2026-11-05
 description: "Eine Übersicht meiner Homelab Infrastruktur"
 ShowToc: true
 TocOpen: true
@@ -64,19 +64,23 @@ Die VMs trennen Kubernetes und NAS logisch voneinander.
 ## Hypervisor
 Der Hypervisor ist die Virtualisierungsschicht im Cluster. Sie ist dazu da die Grundsysteme logisch sauber voneinander zu trennne. Da beide VMs auf einem einzigen physischen Host laufen, führt dessen Ausfall zum Ausfall aller darauf betriebenen Dienste. Eine Hochverfügbarkeit des Gesamtsystems ist daher nicht gegeben. Im Rahmen eines Homelabs nehme ich das vorerst in Kauf.
 
-Als Virtualisierungsplattform nutze ich Proxmox VE, das auf Debian basiert und direkt auf dem Host installiert ist. Die virtuellen Maschinen werden mit KVM/QEMU betrieben.
+Als Virtualisierungsplattform nutze ich [Proxmox VE](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview), das auf Debian basiert und direkt auf dem Host installiert ist. Die virtuellen Maschinen werden mit KVM/QEMU betrieben.
 
-Mittels Ansible und Terraform beschreibe ich die Infrastruktur und dessen Setup in Konfigurationsdateien, was es mir erlaubt nach Infrastructure-As-Code Prinzipien die Cluster Infrastruktur zu managen.
+Mittels [Ansible](https://docs.ansible.com/) und [Terraform](https://developer.hashicorp.com/terraform) beschreibe ich die Infrastruktur und dessen Setup in Konfigurationsdateien, was es mir erlaubt nach Infrastructure-As-Code Prinzipien die Cluster Infrastruktur zu managen.
 
 
 ## Kubernetes
-Um meine Services zu deployen habe ich mich für ein K3s cluster entschieden, welches im Single-Node-Betrieb auf einer VM läuft.
+Um meine Services zu deployen habe ich mich für ein [K3s](https://k3s.io/) cluster entschieden, welches im Single-Node-Betrieb auf einer VM läuft.
 Das erlaubt mir mein Setup flexibel zu konfigurieren und dabei verschiedene Kubernetes Themen zu lernen und auszuprobieren.
 
-Die Services selbst werden mit Argo CD nach dem GitOps-Prinzip bereitgestellt. Der gewünschte Zustand meiner Anwendungen liegt dabei in Git; Argo CD gleicht ihn mit dem Zustand im Cluster ab. Für die Konfiguration meiner Anwendungen nutze ich Helm-Charts, die Argo CD ebenfalls unterstützt.
+Die Services selbst werden mit [Argo CD](https://argo-cd.readthedocs.io/en/stable/) nach dem GitOps-Prinzip bereitgestellt. Der gewünschte Zustand meiner Anwendungen liegt dabei in Git; Argo CD gleicht ihn mit dem Zustand im Cluster ab. Für die Konfiguration meiner Anwendungen nutze ich [Helm-Charts](https://helm.sh/docs/), die Argo CD ebenfalls unterstützt.
+
+Wie ich das konkret umsetze, beschreibe ich in meinem Beitrag zum [Nextcloud-Deployment mit Helm auf K3s](/de/notes/self-hosting/nextcloud-k3s-helm-deployment/).
+
+Wie ich ausgewählte Dienste öffentlich erreichbar mache, beschreibe ich im Beitrag zum [Zugriff über VPS und Tailscale](/de/notes/self-hosting/expose-k3s-services-via-vps/).
 
 ## NAS
-Die zweite VM ist eine reine NAS-VM. Mit TrueNAS als Betriebssystem verwalte ich einen ZFS-Storage-Pool, der aus einem RAIDZ1-VDEV mit vier HDDs besteht. Die einfache Parität ermöglicht es, den Ausfall einer einzelnen HDD ohne Datenverlust zu überstehen. Diese Redundanz ersetzt jedoch kein separates Backup: Sie schützt beispielsweise nicht vor versehentlichem Löschen, Schadsoftware oder dem Verlust des gesamten Servers.
+Die zweite VM ist eine reine NAS-VM. Mit [TrueNAS](https://www.truenas.com/) als Betriebssystem verwalte ich einen ZFS-Storage-Pool, der aus einem RAIDZ1-VDEV mit vier HDDs besteht. Die einfache Parität ermöglicht es, den Ausfall einer einzelnen HDD ohne Datenverlust zu überstehen. Diese Redundanz ersetzt jedoch kein separates Backup: Sie schützt beispielsweise nicht vor versehentlichem Löschen, Schadsoftware oder dem Verlust des gesamten Servers.
 
 Bei TrueNAS als VM ist auch die Anbindung der Festplatten wichtig. Ein per PCI-Passthrough durchgereichter SATA- oder HBA-Controller ermöglicht TrueNAS direkten Zugriff auf die angeschlossenen HDDs und ist die bevorzugte Variante, sofern Hardware und IOMMU-Gruppen dies erlauben. Virtuelle Datenträger sind damit nicht gleichzusetzen.
 
