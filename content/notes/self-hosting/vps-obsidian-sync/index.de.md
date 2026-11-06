@@ -5,6 +5,7 @@ cover:
   caption: ''
   image: img1.png
   relative: true
+cover_translation_version: 1
 date: 2025-05-25
 description: Mein tolles Setup mit Obsidian und dem serverbasierten Syncthing auf
   mehreren Geräten
