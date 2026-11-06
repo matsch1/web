@@ -122,7 +122,7 @@ class EditorialDesign(unittest.TestCase):
         for lang in ['de', 'en']:
             main = self.page(lang).select('main')[0]
             lead = main.select('article', 'editorial-lead')[0]
-            self.assertIn('510px', lead.select('img')[0].attrs.get('sizes', ''))
+            self.assertIn('580px', lead.select('img')[0].attrs.get('sizes', ''))
             self.assertIn('homepage-project-card--graphic', lead.attrs.get('class', ''))
             css = (ROOT / 'assets/css/extended/z-editorial.css').read_text()
             self.assertIn('.homepage-project-card--graphic .entry-cover img', css)
@@ -168,8 +168,9 @@ class EditorialDesign(unittest.TestCase):
             for lang in ['de', 'en']:
                 main = DOM((site / f'public/{lang}/index.html').read_text()).root.select('main')[0]
                 sections = main.select('section')
-                self.assertEqual(sections[0].attrs.get('data-home-section'), 'active')
-                self.assertIn('Active project', sections[0].text)
+                self.assertEqual(sections[0].attrs.get('data-home-section'), 'articles')
+                self.assertNotIn('Active project', main.text)
+                self.assertIn('Lead', sections[1].text)
                 self.assertNotIn('Child article', main.text)
                 header = DOM((site / f'public/{lang}/projects/lead/index.html').read_text()).root.select('header', 'post-header')[0]
                 self.assertEqual(len(header.select(cls='project-status')), 1)

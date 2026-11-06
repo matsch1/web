@@ -1,11 +1,16 @@
 {{- $page := .page -}}
 {{- $lead := .lead | default false -}}
+{{- $news := .news | default false -}}
 {{- with $page -}}
 {{- $title := .Param "homepage.title" | default .Title -}}
 {{- $teaser := .Param "homepage.teaser" | default .Description | default (.Summary | plainify | htmlUnescape) -}}
 {{- $graphic := or (eq (.Param "homepage.section") "engineering") (eq .Section "notes") -}}
 {{- $sizes := "(min-width: 960px) 344px, (min-width: 700px) 38vw, calc(70vw - 43.4px)" -}}
 {{- if $lead }}{{ $sizes = "(min-width: 960px) 510px, (min-width: 700px) 56vw, calc(70vw - 43.4px)" }}{{ end -}}
+{{- if $news }}
+  {{- $sizes = "(min-width: 960px) 150px, (min-width: 700px) 38vw, calc(70vw - 43.4px)" }}
+  {{- if $lead }}{{ $sizes = "(min-width: 960px) 580px, (min-width: 700px) 56vw, calc(70vw - 43.4px)" }}{{ end }}
+{{- end -}}
 <article class="post-entry project-entry homepage-project-card{{ if $lead }} editorial-lead{{ end }}{{ if $graphic }} homepage-project-card--graphic{{ end }}" data-content-kind="{{ if partial "is_project.html" . }}project{{ else }}article{{ end }}">
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden "sizes" $sizes) }}

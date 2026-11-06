@@ -70,7 +70,7 @@
 - id: content_kind_article
   translation: "Article"
 - id: home_articles_title
-  translation: "From the articles"
+  translation: "New on the blog"
 - id: home_articles_link
   translation: "All articles"
 

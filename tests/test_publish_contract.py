@@ -64,18 +64,13 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn('partial "homepage_sections.html" .', listing)
         self.assertTrue(homepage_sections.is_file())
         rendered = homepage_sections.read_text()
-        for section in ("featured", "engineering", "outdoors", "archive"):
+        for section in ("articles", "featured"):
             self.assertIn(f'data-home-section="{section}"', rendered)
-        self.assertIn('Params.homepage.state', rendered)
-        self.assertIn('Params.homepage.section', rendered)
+        for section in ("active", "engineering", "outdoors", "archive"):
+            self.assertNotIn(f'data-home-section="{section}"', rendered)
         self.assertIn('Params.homepage.featured', rendered)
-        self.assertIn('relref $ "/projects/"', rendered)
-        self.assertIn('$activeEngineeringProjects', rendered)
-        self.assertIn('$activeOutdoorProjects', rendered)
-        self.assertIn('after 3 $activeEngineeringProjects', rendered)
-        self.assertIn('after 3 $activeOutdoorProjects', rendered)
-        self.assertIn('$staleActiveProjects', rendered)
-        self.assertIn('$homepageProjects', rendered)
+        self.assertIn('"projects/" | relLangURL', rendered)
+        self.assertLess(rendered.index('data-home-section="articles"'), rendered.index('data-home-section="featured"'))
 
         for language in ("de", "en"):
             homepage = ROOT / "content" / f"_index.{language}.md"
@@ -130,8 +125,8 @@ class PublishContractTests(unittest.TestCase):
 
         self.assertIn('Param "project.status"', status_partial)
         self.assertIn('"active" "completed" "paused" "discontinued"', status_partial)
-        self.assertIn('$activeLifecycleProjects := where $projectPages "Params.project.status" "active"', homepage)
-        self.assertLess(homepage.index('data-home-section="active"'), homepage.index('data-home-section="featured"'))
+        self.assertNotIn('data-home-section="active"', homepage)
+        self.assertLess(homepage.index('data-home-section="articles"'), homepage.index('data-home-section="featured"'))
         self.assertIn('Param "project.statusNote"', status_partial)
         self.assertIn('Param "project.successor"', status_partial)
         self.assertIn('project-status__icon', status_partial)
@@ -140,7 +135,7 @@ class PublishContractTests(unittest.TestCase):
         self.assertIn('partial "project_status.html" (dict "page" . "variant" "badge")', listing)
         # Type checks are shared so hidden project child posts stay articles.
         self.assertIn('partial "is_project.html" .', listing)
-        self.assertIn('partial "project_status.html" (dict "page" . "variant" "badge")', homepage)
+        self.assertIn('partial "homepage_project_card.html"', homepage)
         # The approved editorial design replaces the large banner with metadata.
         banner_call = 'partial "project_status.html" (dict "page" . "variant" "metadata")'
         self.assertIn(banner_call, single)

@@ -15,11 +15,11 @@ class HomepageStructure(unittest.TestCase):
     def test_sections_keep_discovery_hooks_without_redundant_intros(self):
         template = (ROOT / 'layouts/_partials/homepage_sections.html').read_text()
         self.assertNotIn('<p>', template)
-        for section in ('active', 'featured', 'engineering', 'outdoors', 'articles', 'archive'):
+        for section in ('articles', 'featured'):
             self.assertIn(f'data-home-section="{section}"', template)
-        self.assertLess(template.index('data-home-section="active"'),
+        self.assertLess(template.index('data-home-section="articles"'),
                         template.index('data-home-section="featured"'))
-        self.assertIn('relref $ "/projects/"', template)
+        self.assertIn('"projects/" | relLangURL', template)
         self.assertIn('"notes/" | relLangURL', template)
 
 
@@ -50,11 +50,10 @@ class UsabilityLayout(unittest.TestCase):
                             page.evaluate('document.fonts.ready')
                             self.assertFalse(page.evaluate('document.documentElement.scrollWidth > innerWidth'))
                             self.assertEqual(page.locator('.homepage-section__header p').count(), 0)
-                            if page.locator('[data-home-section="active"]').count():
-                                self.assertEqual(page.locator('[data-home-section]').first.get_attribute('data-home-section'), 'active')
+                            self.assertEqual(page.locator('[data-home-section]').first.get_attribute('data-home-section'), 'articles')
                             self.assertEqual(page.locator('.editorial-lead').count(), 1)
                             if width == 390:
-                                title_y = page.locator('.homepage-project-card[data-content-kind="project"] .entry-header h3').first.bounding_box()['y']
+                                title_y = page.locator('.homepage-project-card[data-content-kind="article"] .entry-header h3').first.bounding_box()['y']
                                 self.assertLessEqual(title_y, 650, f'First project title at {title_y}px')
                             controls = page.locator('.logo-switches .theme-toggle, .logo-switches .rss-feed-link, .logo-switches .lang-menu a')
                             for control in controls.all():
@@ -77,9 +76,16 @@ class UsabilityLayout(unittest.TestCase):
                                     if not cover.count():
                                         continue
                                     image_box, card_box = cover.bounding_box(), card.bounding_box()
-                                    self.assertGreater(image_box['width'] / card_box['width'], .85 if width < 700 else .35)
                                     if width < 700:
-                                        self.assertGreaterEqual(card.locator('.entry-header').bounding_box()['y'], image_box['y'] + image_box['height'])
+                                        # Approved centered cover: 70% of the inner card width.
+                                        inner_width = card.evaluate('(e) => e.clientWidth - parseFloat(getComputedStyle(e).paddingLeft) - parseFloat(getComputedStyle(e).paddingRight)')
+                                        self.assertAlmostEqual(image_box['width'] / inner_width, .70, delta=.02)
+                                    else:
+                                        self.assertGreater(image_box['width'] / card_box['width'], .35)
+                                    if width < 700:
+                                        header_box = card.locator('.entry-header').bounding_box()
+                                        self.assertLessEqual(header_box['y'] + header_box['height'], image_box['y'] + 1)
+                                        self.assertGreaterEqual(card.locator('.entry-content').bounding_box()['y'] + 1, image_box['y'] + image_box['height'])
                                     if 'homepage-project-card--graphic' in card.get_attribute('class'):
                                         image = cover.locator('img')
                                         self.assertEqual(image.evaluate('(e) => getComputedStyle(e).objectFit'), 'contain')

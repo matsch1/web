@@ -70,7 +70,7 @@
 - id: content_kind_article
   translation: "Beitrag"
 - id: home_articles_title
-  translation: "Aus den Beiträgen"
+  translation: "Neu im Blog"
 - id: home_articles_link
   translation: "Alle Beiträge"
 

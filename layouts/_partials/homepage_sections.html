@@ -1,117 +1,33 @@
+{{- $articles := sort (where site.RegularPages "Section" "notes") "Date" "desc" }}
 {{- $projectPages := where site.RegularPages "Section" "projects" }}
 {{- $projectPages = where $projectPages "Params.hiddenInProjectList" "ne" true }}
-{{- $travelProjects := where site.Pages "Params.listAsProject" true }}
-{{- $projectPages = union $projectPages $travelProjects }}
-{{- $projectPages = sort $projectPages "Date" "desc" }}
+{{- $projectPages = union $projectPages (where site.Pages "Params.listAsProject" true) }}
+{{- $featuredProjects := where (sort $projectPages "Date" "desc") "Params.homepage.featured" true }}
 
-{{- $activeLifecycleProjects := where $projectPages "Params.project.status" "active" }}
-{{- $otherProjects := where $projectPages "Params.project.status" "ne" "active" }}
-{{- $explicitArchiveProjects := where $otherProjects "Params.homepage.state" "archive" }}
-{{- $nonArchivedProjects := where $otherProjects "Params.homepage.state" "ne" "archive" }}
-{{- $activeProjects := where $nonArchivedProjects "Params.homepage.state" "active" }}
-{{- $nonActiveProjects := where $nonArchivedProjects "Params.homepage.state" "ne" "active" }}
-
-{{- $activeEngineeringProjects := where $activeProjects "Params.homepage.section" "engineering" }}
-{{- $activeOutdoorProjects := where $activeProjects "Params.homepage.section" "outdoors" }}
-{{- $currentActiveProjects := union (first 3 $activeEngineeringProjects) (first 3 $activeOutdoorProjects) }}
-{{- $staleActiveProjects := union (after 3 $activeEngineeringProjects) (after 3 $activeOutdoorProjects) }}
-{{- $homepageProjects := union $nonActiveProjects $currentActiveProjects }}
-{{- $homepageProjects = sort $homepageProjects "Date" "desc" }}
-{{- $archiveProjects := union $explicitArchiveProjects $staleActiveProjects }}
-{{- $archiveProjects = sort $archiveProjects "Date" "desc" }}
-
-{{- $featuredCandidates := union $homepageProjects $activeLifecycleProjects }}
-{{- $featuredProjects := where $featuredCandidates "Params.homepage.featured" true }}
-{{- $leadProjects := first 1 $featuredProjects }}
-{{- $activeLifecycleProjects = $activeLifecycleProjects | complement $leadProjects }}
-{{- $engineeringProjects := where $homepageProjects "Params.homepage.section" "engineering" }}
-{{- $engineeringProjects = $engineeringProjects | complement $leadProjects }}
-{{- $outdoorProjects := where $homepageProjects "Params.homepage.section" "outdoors" }}
-{{- $outdoorProjects = $outdoorProjects | complement $leadProjects }}
-{{- $articles := sort (where site.RegularPages "Section" "notes") "Date" "desc" }}
-
-{{- with $activeLifecycleProjects }}
-<section class="homepage-section" data-home-section="active">
-  <header class="homepage-section__header">
-    <h2>{{ i18n "home_active_projects_title" }}</h2>
-  </header>
-  <div class="homepage-cards">
-    {{- range . }}
-      {{- partial "homepage_project_card.html" (dict "page" .) }}
-    {{- end }}
-  </div>
-</section>
-{{- end }}
-
-{{- with $leadProjects }}
-<section class="homepage-section" data-home-section="featured">
-  <header class="homepage-section__header">
-    <h2>{{ i18n "home_featured_title" }}</h2>
-  </header>
-  <div class="homepage-cards">
-    {{- range . }}
-      {{- partial "homepage_project_card.html" (dict "page" . "lead" true) }}
-    {{- end }}
-  </div>
-</section>
-{{- end }}
-
-{{- with $engineeringProjects }}
-<section class="homepage-section" data-home-section="engineering">
-  <header class="homepage-section__header">
-    <h2>{{ i18n "home_engineering_title" }}</h2>
-  </header>
-  <div class="homepage-cards">
-    {{- range first 2 . }}
-      {{- partial "homepage_project_card.html" (dict "page" .) }}
-    {{- end }}
-  </div>
-</section>
-{{- end }}
-
-{{- with $outdoorProjects }}
-<section class="homepage-section" data-home-section="outdoors">
-  <header class="homepage-section__header">
-    <h2>{{ i18n "home_outdoors_title" }}</h2>
-  </header>
-  <div class="homepage-cards">
-    {{- range first 2 . }}
-      {{- partial "homepage_project_card.html" (dict "page" .) }}
-    {{- end }}
-  </div>
-</section>
-{{- end }}
-
-{{- with $articles }}
+{{- with first 3 $articles }}
 <section class="homepage-section" data-home-section="articles">
   <header class="homepage-section__header">
     <h2>{{ i18n "home_articles_title" }}</h2>
     <a href="{{ "notes/" | relLangURL }}">{{ i18n "home_articles_link" }} →</a>
   </header>
-  <div class="homepage-cards">
-    {{- range first 3 . }}
-      {{- partial "homepage_project_card.html" (dict "page" .) }}
+  <div class="homepage-news-grid">
+    {{- range $index, $article := . }}
+      {{- partial "homepage_project_card.html" (dict "page" $article "lead" (eq $index 0) "news" true) }}
     {{- end }}
   </div>
 </section>
 {{- end }}
 
-{{- with $archiveProjects }}
-<section class="homepage-archive" data-home-section="archive">
+{{- with first 1 $featuredProjects }}
+<section class="homepage-section" data-home-section="featured">
   <header class="homepage-section__header">
-    <h2>{{ i18n "home_archive_title" }}</h2>
+    <h2>{{ i18n "home_featured_title" }}</h2>
+    <a href="{{ "projects/" | relLangURL }}">{{ i18n "home_archive_link" }} →</a>
   </header>
-  <ul class="homepage-archive__list">
-    {{- range first 3 . }}
-    <li>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      <span class="homepage-archive__meta">
-        {{- partial "project_status.html" (dict "page" . "variant" "badge") }}
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006" }}</time>
-      </span>
-    </li>
+  <div class="homepage-cards">
+    {{- range . }}
+      {{- partial "homepage_project_card.html" (dict "page" .) }}
     {{- end }}
-  </ul>
-  <a class="homepage-archive__link" href="{{ relref $ "/projects/" }}">{{ i18n "home_archive_link" }} →</a>
+  </div>
 </section>
 {{- end }}
