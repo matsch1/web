@@ -3,7 +3,7 @@ ShowToc: true
 TocOpen: true
 base_hash: 5c08ce2eef57a607741cb2d9470c0e09607060bcfbe81895dbe3474c5dbe9c24
 cover:
-  alt: Beladenes Hardtail im isländischen Hochland
+  alt: Loaded hardtail in the Icelandic Highlands
   caption: ''
   image: img1.jpg
   relative: true

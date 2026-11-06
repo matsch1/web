@@ -4,7 +4,7 @@ TocOpen: true
 base_hash: 0135af512b05c8ba6bd2e0884c5a4fdd1507a1be9176df9efbf5aa75f3de3e7f
 cover:
   alt: n8n-ai-assistant
-  caption: Personal AI assistant build with n8n
+  caption: Persönlicher KI-Assistent mit n8n
   image: "editorial-cover.webp"
   relative: true
 date: 2025-10-11

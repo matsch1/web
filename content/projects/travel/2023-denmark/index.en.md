@@ -3,7 +3,7 @@ ShowToc: true
 TocOpen: true
 base_hash: d75feae1fae55397adecab0d04e22d42fb88da12767b2b58468a15c9b145d800
 cover:
-  alt: Beladenes Bikepacking-Rad an einem Shelterplatz an der jütländischen Westküste
+  alt: Loaded bikepacking bike at a shelter on Jutland's west coast
   caption: ''
   image: img2.jpg
   relative: true

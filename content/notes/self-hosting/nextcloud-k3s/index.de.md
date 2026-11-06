@@ -4,7 +4,7 @@ TocOpen: true
 base_hash: d388cb556dee2c7337232cee5b3b2f95ea5078139646379bc02c4c310557c7f0
 cover:
   alt: nextcloud-k3s-helm-deployment
-  caption: The way I deployed nextcloud on my k3s cluster using helm chart
+  caption: So habe ich Nextcloud per Helm-Chart auf meinem K3s-Cluster bereitgestellt
   image: editorial-cover.webp
   relative: true
 date: 2025-12-19

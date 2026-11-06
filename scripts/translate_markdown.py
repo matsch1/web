@@ -12,6 +12,8 @@ from dotenv import load_dotenv
 
 LANGS = {"de", "en"}
 TRANSLATABLE_METADATA = ("title", "description", "summary")
+COVER_TRANSLATABLE_METADATA = ("caption", "alt")
+COVER_TRANSLATION_VERSION = 1
 PLACEHOLDER_RE = re.compile(r"\[\[000001100000\d+\]\]")
 GALLERY_TRANSLATION_VERSION = 1
 SHORTCODE_RE = re.compile(r"\{\{\s*[<%].*?[>%]\s*\}\}", re.DOTALL)
@@ -100,6 +102,14 @@ def translated_post(client, post, source, target):
     for key in TRANSLATABLE_METADATA:
         if metadata.get(key):
             metadata[key] = translate_value(client, metadata[key], source, target)
+    if isinstance(metadata.get("cover"), dict):
+        cover = dict(metadata["cover"])
+        for key in COVER_TRANSLATABLE_METADATA:
+            if cover.get(key):
+                cover[key] = translate_value(client, cover[key], source, target)
+        metadata["cover"] = cover
+        if any(cover.get(key) for key in COVER_TRANSLATABLE_METADATA):
+            metadata["cover_translation_version"] = COVER_TRANSLATION_VERSION
     metadata["base_hash"] = hash_post(post)
     if GALLERY_SHORTCODE_RE.search(post.content):
         metadata["gallery_translation_version"] = GALLERY_TRANSLATION_VERSION
@@ -110,6 +120,15 @@ def gallery_translation_is_current(post, localized_post):
     return (
         not GALLERY_SHORTCODE_RE.search(post.content)
         or localized_post.get("gallery_translation_version") == GALLERY_TRANSLATION_VERSION
+    )
+
+
+def cover_translation_is_current(post, localized_post):
+    cover = post.get("cover")
+    return (
+        not isinstance(cover, dict)
+        or not any(cover.get(key) for key in COVER_TRANSLATABLE_METADATA)
+        or localized_post.get("cover_translation_version") == COVER_TRANSLATION_VERSION
     )
 
 
@@ -132,7 +151,12 @@ def translate_tree(content_root, client):
             continue
         expected_hash = hash_post(post)
         current = frontmatter.load(target_variant) if target_variant.exists() else None
-        if current and current.get("base_hash") == expected_hash and gallery_translation_is_current(post, current):
+        if (
+            current
+            and current.get("base_hash") == expected_hash
+            and gallery_translation_is_current(post, current)
+            and cover_translation_is_current(post, current)
+        ):
             if not source_variant.exists():
                 staged.append((source_variant, frontmatter.dumps(post)))
             continue

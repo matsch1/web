@@ -3,8 +3,8 @@ ShowToc: true
 TocOpen: true
 base_hash: b26cfe4e66da5219a561adc89b9932d1a5907c599a66a297f6b3eb60d1693c3f
 cover:
-  alt: Traffic flow from VPS to Tailscale-protected K3s cluster
-  caption: Public traffic routed through a VPS into a private K3s homelab via Tailscale
+  alt: Datenfluss vom VPS zum durch Tailscale geschützten K3s-Cluster
+  caption: Öffentlicher Datenverkehr über einen VPS und Tailscale in ein privates K3s-Homelab
   image: editorial-cover.webp
   relative: true
 date: 2025-12-21

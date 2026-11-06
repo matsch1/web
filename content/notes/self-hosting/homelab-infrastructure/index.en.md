@@ -4,7 +4,7 @@ TocOpen: true
 base_hash: f7d103e6f6e64f530d6bd6413cb48e56a1aea7fc159a5489277cace020910563
 cover:
   alt: homelab-infrastructure
-  caption: Meine Homelab Infrastruktur
+  caption: My Home Lab Infrastructure
   image: editorial-cover.webp
   relative: true
 date: 2026-11-05
