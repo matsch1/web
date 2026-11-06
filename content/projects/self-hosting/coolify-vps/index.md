@@ -17,7 +17,7 @@ tags:
   - coolify
   - tailscale
 source_lang: en
-translation_lock: true
+translation_lock: false
 homepage:
   title: "Coolify on my own VPS"
   teaser: "Hardening a VPS and deploying a first app with Coolify: practical lessons from my setup."
