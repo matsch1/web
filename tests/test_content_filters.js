@@ -15,11 +15,15 @@ const hosting = { dataset: { category: 'self-hosting', categories: 'self-hosting
 const entries = [n8n, legacy, hosting];
 const empty = {};
 const filters = { querySelectorAll: () => buttons, nextElementSibling: empty };
-const document = { querySelectorAll: selector => selector === '[data-content-filters]' ? [filters] : entries };
+const engineering = { querySelectorAll: () => entries };
+const outdoors = { querySelectorAll: () => [] };
+const document = { querySelectorAll: selector => selector === '[data-content-filters]' ? [filters] : selector === '[data-project-group]' ? [engineering, outdoors] : entries };
 vm.runInNewContext(fs.readFileSync('assets/js/content-filters.js', 'utf8'), { document });
 buttons[2].click();
 assert.deepEqual(entries.map(entry => entry.hidden), [false, true, false]);
 assert.equal(empty.hidden, true);
+assert.equal(engineering.hidden, false);
+assert.equal(outdoors.hidden, true);
 assert.equal(buttons[2]['aria-pressed'], 'true');
 buttons[1].click();
 assert.deepEqual(entries.map(entry => entry.hidden), [false, false, true]);

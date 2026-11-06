@@ -15,6 +15,10 @@ document.querySelectorAll("[data-content-filters]").forEach((filters) => {
         visibleEntries += Number(visible);
       });
 
+      document.querySelectorAll("[data-project-group]").forEach((group) => {
+        group.hidden = !Array.from(group.querySelectorAll("[data-category]")).some((entry) => !entry.hidden);
+      });
+
       buttons.forEach((item) => {
         const active = item === button;
         item.classList.toggle("is-active", active);

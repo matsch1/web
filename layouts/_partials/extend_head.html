@@ -3,3 +3,7 @@
 <script defer src="{{ .scriptURL }}" data-website-id="{{ .websiteID }}"{{ with .domains }} data-domains="{{ . }}"{{ end }}></script>
   {{- end -}}
 {{- end -}}
+{{- if and .IsSection .Parent.IsHome (eq .Section "projects") -}}
+  {{- $styles := resources.Get "css/projects.css" | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+{{- end -}}

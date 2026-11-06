@@ -68,7 +68,25 @@
 
 {{- $pages = sort $pages "Date" "desc" }}
 
-{{- $paginator := .Paginate $pages }}
+{{- $groupProjects := and .IsSection .Parent.IsHome (eq .Section "projects") }}
+{{- $paginator := dict "Pages" $pages "PageNumber" 1 "TotalPages" 1 }}
+{{- if not $groupProjects }}
+  {{- $paginator = .Paginate $pages }}
+{{- end }}
+{{- $groups := slice (dict "id" "" "pages" $paginator.Pages) }}
+{{- if $groupProjects }}
+  {{- $engineering := slice }}
+  {{- $outdoors := slice }}
+  {{- range $pages }}
+    {{- $category := index (split .File.Path "/") 1 }}
+    {{- if in (slice "travel" "sports") $category }}
+      {{- $outdoors = $outdoors | append . }}
+    {{- else }}
+      {{- $engineering = $engineering | append . }}
+    {{- end }}
+  {{- end }}
+  {{- $groups = slice (dict "id" "engineering" "pages" $engineering) (dict "id" "outdoors" "pages" $outdoors) }}
+{{- end }}
 
 {{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
 {{- partial "home_info.html" . }}
@@ -82,6 +100,13 @@
     {{- $categories = slice "development" "self-hosting" "sports" }}
   {{- else }}
     {{- $categories = slice "development" "self-hosting" "hardware" "travel" }}
+    {{- if $groupProjects }}
+      {{- range $pages }}
+        {{- if eq (index (split .File.Path "/") 1) "sports" }}
+          {{- $categories = union $categories (slice "sports") }}
+        {{- end }}
+      {{- end }}
+    {{- end }}
   {{- end }}
   <div class="content-filters" data-content-filters aria-label="{{ i18n "filter_by_category" }}">
     <button class="content-filter is-active" type="button" data-filter="all" aria-pressed="true">{{ i18n "filter_all" }}</button>
@@ -91,7 +116,12 @@
   </div>
   <p class="content-filter-empty" hidden>{{ i18n "filter_empty" }}</p>
 {{- end }}
-{{- range $index, $page := $paginator.Pages }}
+{{- range $groups }}
+{{- if $groupProjects }}
+<section class="project-group" data-project-group="{{ .id }}" aria-labelledby="projects-{{ .id }}">
+  <h2 id="projects-{{ .id }}">{{ i18n (printf "projects_group_%s" .id) }}</h2>
+{{- end }}
+{{- range $index, $page := .pages }}
 
 {{- $class := "post-entry" }}
 
@@ -115,7 +145,7 @@
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
   <header class="entry-header">
     {{- partial "content_kind.html" . }}
-    <h2 class="entry-hint-parent">
+    {{ if $groupProjects }}<h3 class="entry-hint-parent">{{ else }}<h2 class="entry-hint-parent">{{ end }}
       {{- $cardTitle }}
       {{- if .Draft }}
       <span class="entry-hint" title="Draft">
@@ -125,7 +155,7 @@
         </svg>
       </span>
       {{- end }}
-    </h2>
+    {{ if $groupProjects }}</h3>{{ else }}</h2>{{ end }}
     {{- if partial "is_project.html" . }}
       {{- partial "project_status.html" (dict "page" . "variant" "badge") }}
     {{- end }}
@@ -142,6 +172,8 @@
   {{- end }}
   <a class="entry-link" aria-label="{{ i18n "listing_read_entry" (dict "Title" ($cardTitle | plainify)) }}" href="{{ .Permalink }}"></a>
 </article>
+{{- end }}
+{{- if $groupProjects }}</section>{{ end }}
 {{- end }}
 
 {{- if gt $paginator.TotalPages 1 }}

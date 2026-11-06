@@ -27,7 +27,7 @@ class UsabilityNavigation(unittest.TestCase):
         for directory in ('layouts', 'assets', 'i18n', 'themes', 'static'):
             (cls.source / directory).symlink_to(ROOT / directory, target_is_directory=True)
         (cls.source / 'hugo.toml').write_text((ROOT / 'hugo.toml').read_text() + '\n[pagination]\npagerSize = 3\n')
-        # Dates must win over lifecycle status across pagination, including
+        # Dates must win over lifecycle status within each group, including
         # old active and newer completed, paused and discontinued projects.
         cls.fixtures = [
             ('active-old', 2010, 'active'),
@@ -72,32 +72,29 @@ class UsabilityNavigation(unittest.TestCase):
     def page(self, route):
         return DOM((self.public / route / 'index.html').read_text()).root
 
-    def test_project_dates_preserve_every_item_pagination_and_filters(self):
+    def test_project_dates_preserve_every_item_groups_and_filters(self):
         for lang in ('de', 'en'):
-            cards = []
-            for route in (f'{lang}/projects', f'{lang}/projects/page/2', f'{lang}/projects/page/3'):
-                page = self.page(route)
-                self.assertEqual(len(page.select(cls='content-filters')), 1)
-                entries = page.select('article', 'post-entry')
-                self.assertTrue(all(c.attrs.get('data-category') in ('development', 'travel') for c in entries))
-                cards.extend(entries)
+            page = self.page(f'{lang}/projects')
+            self.assertEqual(len(page.select(cls='content-filters')), 1)
+            cards = page.select('article', 'post-entry')
+            self.assertTrue(all(c.attrs.get('data-category') in ('development', 'travel') for c in cards))
             slugs = [c.select('a', 'entry-link')[0].attrs['href'].rstrip('/').split('/')[-1] for c in cards]
-            self.assertEqual(slugs, ['archived', 'paused', 'discontinued', 'completed', 'unclassified', 'trip', 'active-new', 'active-old'])
+            self.assertEqual(slugs, ['archived', 'paused', 'discontinued', 'completed', 'unclassified', 'active-new', 'active-old', 'trip'])
             self.assertEqual(len(set(slugs)), len(self.fixtures) + 1)
-            self.assertEqual(len(self.page(f'{lang}/projects').select('a', 'next')), 1)
+            self.assertFalse(page.select(cls='pagination'))
+            self.assertFalse((self.public / lang / 'projects/page/2/index.html').exists())
 
     def test_cards_prefer_curated_copy_then_explicit_description_and_localized_link(self):
         for lang in ('de', 'en'):
-            cards = [card for route in (f'{lang}/projects', f'{lang}/projects/page/2', f'{lang}/projects/page/3')
-                     for card in self.page(route).select('article', 'post-entry')]
+            cards = self.page(f'{lang}/projects').select('article', 'post-entry')
             old = next(c for c in cards if c.select('a', 'entry-link')[0].attrs['href'].endswith('/active-old/'))
-            self.assertEqual(old.select('h2')[0].text.strip(), 'Curated title')
+            self.assertEqual(old.select('h3')[0].text.strip(), 'Curated title')
             self.assertEqual(old.select(cls='entry-content')[0].text.strip(), 'Clean teaser')
             for card in cards:
                 self.assertNotIn('Noisy automatic', card.text)
                 self.assertNotIn('post link to', card.select('a', 'entry-link')[0].attrs['aria-label'])
             self.assertIn('Explicit description archived', cards[0].text)
-            fallback = self.page(f'{lang}/projects/page/2').select('article', 'post-entry')[1]
+            fallback = next(c for c in cards if c.select('a', 'entry-link')[0].attrs['href'].endswith('/unclassified/'))
             self.assertEqual(fallback.select(cls='entry-content')[0].text.strip(), 'Clean summary fallback')
 
     def test_search_has_localized_label_instructions_and_live_region(self):
@@ -163,9 +160,9 @@ class UsabilityNavigation(unittest.TestCase):
                         page.wait_for_url('**/safe-two/')
                         page.goto(f'http://127.0.0.1:{server.server_port}/{lang}/projects/', wait_until='networkidle')
                         page.locator('[data-filter="travel"]').click()
-                        self.assertEqual(page.locator('article.post-entry:visible').count(), 0)
+                        self.assertEqual(page.locator('article.post-entry:visible').count(), 1)
                         page.locator('[data-filter="all"]').click()
-                        self.assertEqual(page.locator('article.post-entry:visible').count(), 3)
+                        self.assertEqual(page.locator('article.post-entry:visible').count(), 8)
                         page.close()
                 finally:
                     browser.close()

@@ -1,0 +1,5 @@
+/* Loaded only by the top-level Projects overview, never by the homepage. */
+.project-group { margin: 1.5rem 0 2.5rem; }
+.project-group > h2 { font-size: 1.5rem; margin-bottom: 1rem; }
+.project-group .entry-header h3 { font-size: 24px; line-height: 1.3; }
+.project-group[hidden] { display: none; }
