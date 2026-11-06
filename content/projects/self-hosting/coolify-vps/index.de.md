@@ -1,45 +1,56 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 1f1507e9f2da07f592548e3f7ef700647bf651831b61dd9c28fec8f269b58b2a
+base_hash: 21dc38279befd2862b6e97ec886686dd8e665e5b46e37bab841a8dbeb81b0775
 cover:
   alt: coolify-vps-setup
   caption: ''
-  image: "editorial-cover.webp"
+  image: editorial-cover.webp
   relative: true
+cover_translation_version: 1
 date: 2025-05-10
 description: Server-Absicherung und Bereitstellung der ersten App mit Coolify.
 draft: false
-translation_lock: true
 homepage:
-  title: "Coolify auf dem eigenen VPS"
-  teaser: "Einen VPS absichern und die erste App mit Coolify bereitstellen – Erfahrungen aus meinem Setup."
   section: engineering
+  teaser: 'Hardening a VPS and deploying a first app with Coolify: practical lessons
+    from my setup.'
+  title: Coolify on my own VPS
 project:
-  status: paused
+  status: active
 slug: coolify-vps-setup
 tags:
 - server
 - syncthing
 - coolify
 - tailscale
-title: Richte die Coolify-Plattform auf deinem VPS ein
+title: Richten Sie die Coolify-Plattform auf Ihrem VPS ein
+translation_lock: false
 ---
 
 {{< alert type="info" title="" >}}
-Der VPS läuft hervorragend, aber das Projekt ist noch nicht abgeschlossen.
-Die auf diesem Server ausgeführten Anwendungen ändern sich im Laufe der Zeit.
+Der VPS läuft immer noch, obwohl sich die meisten seiner Dienste seit der Ersteinrichtung geändert haben.
 {{< /alert >}}
 
+## UPDATE NOVEMBER 2026
+Der VPS läuft immer noch, obwohl er mittlerweile andere Dienste hostet als ursprünglich eingerichtet.
+Coolify hat sich als zuverlässig erwiesen und erfordert kaum bis gar keinen Wartungsaufwand.
+Der Server dient derzeit drei Hauptzwecken:
+- Hosting von Syncthing, dem einzigen Dienst, der unverändert geblieben ist.
+- Das Hosten meines Hermes-Agenten.
+- Das Funktionieren als Reverse-Proxy für mein Homelab über Tailscale.
+
 ## Einleitung
-Selbsthosting hat sich zu einer hervorragenden Möglichkeit entwickelt, praktische Erfahrungen mit Serveradministration, DevOps-Tools und modernen Bereitstellungsplattformen zu sammeln. Mein Ziel war es, einen Virtual Private Server (VPS) einzurichten, ihn ordnungsgemäß abzusichern und ihn als kleine, aber flexible Plattform für die Bereitstellung von Backend-Komponenten zu nutzen, die meinen App-Entwicklungs-Workflow unterstützen.
+Selbsthosting hat sich als hervorragende Möglichkeit erwiesen, praktische Erfahrungen mit Serveradministration, DevOps-Tools und modernen Bereitstellungsplattformen zu sammeln. Mein Ziel war es, einen Virtual Private Server (VPS) einzurichten, ihn ordnungsgemäß abzusichern und als kleine, aber flexible Plattform für die Bereitstellung von Backend-Komponenten zu nutzen, die meinen App-Entwicklungs-Workflow unterstützen.
 
 Zu den typischen Workloads gehören leichtgewichtige Dienste wie PocketBase für den Backend-Speicher, Unleash für Feature-Flags und Automatisierungstools wie n8n. Außerdem plante ich, den Server im Laufe der Zeit für die Dateisynchronisation über Syncthing und andere Experimente zu nutzen.
 
-Um das Deployment und das App-Lebenszyklusmanagement zu optimieren, entschied ich mich für Coolify, eine Open-Source-PaaS, die die Container-Orchestrierung in einem benutzerfreundlichen Dashboard abstrahiert. Dieser Beitrag dokumentiert die anfängliche VPS-Einrichtung, grundlegende Sicherheitsmaßnahmen, die Tailscale-Integration und das Deployment der ersten Anwendung.
+Um das Deployment und das Management des Anwendungslebenszyklus zu optimieren, entschied ich mich für Coolify, eine Open-Source-PaaS, die die Container-Orchestrierung in einem benutzerfreundlichen Dashboard abstrahiert. Dieser Beitrag dokumentiert die anfängliche VPS-Einrichtung, grundlegende Maßnahmen zur Absicherung, die Tailscale-Integration sowie das Deployment der ersten Anwendung.
+
+Dies ist ein persönlicher Erfahrungsbericht und kein vollständiger oder gepflegter Leitfaden zur Sicherheitshärtung. Die Befehle veranschaulichen die Einrichtung; Details können je nach Betriebssystem und Coolify-Version variieren.
 
 ## Server-Hosting
-Die Wahl des richtigen Hosting-Anbieters hängt von Budget, Standortnähe, Bandbreite und Support ab. Jeder Anbieter, der eine moderne Linux-Distribution und mindestens 2 GB RAM anbietet, kann Coolify problemlos ausführen. Beachten Sie nach der Bereitstellung der Instanz Folgendes:
+Die Wahl des richtigen Hosting-Anbieters hängt von Budget, Standort, Bandbreite und Support ab. Coolify gibt Mindestanforderungen von 2 CPU-Kernen, 2 GB RAM und 10 GB freiem Speicherplatz auf einer unterstützten Linux-Distribution an. Anwendungen und Builds benötigen zusätzliche Ressourcen. Beachten Sie nach der Bereitstellung der Instanz Folgendes:
 
 - Serverstandort und Tarif  
 - Betriebssystem-Image (z. B. Ubuntu 22.04 LTS)  
@@ -49,7 +60,7 @@ Die Wahl des richtigen Hosting-Anbieters hängt von Budget, Standortnähe, Bandb
 {{< figure src="./netcup_vps.png" width="700" alt="" class="right" >}}
 
 In meinem Fall habe ich mich für einen VPS entschieden, der von [netcup](https://www.netcup.com/de/server/vps) gehostet wird.
-Ich habe das Projekt mit der kleinsten VPS-Option `VPS 250 G11s` begonnen, später jedoch auf die zweite Option `VPS 500 G11s` umgestellt.
+Ich habe das Projekt mit der kleinsten VPS-Option `VPS 250 G11s` begonnen, bin aber später auf die zweite Option `VPS 500 G11s` umgestiegen.
 Das kostet mich etwa 5 € pro Monat (einschließlich eigener Domain) und bietet genügend Ressourcen für alles, was ich brauche.
 
 ## Zugriff auf den Server
@@ -75,17 +86,22 @@ sudo su - <server-user>
 Dazu muss auf dem Client-Rechner ein SSH-Schlüssel generiert werden.
 
 ```
-ssh-keygen -t ed25519 -b 4096 -C "your_email@example.com"
+ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
-Sie werden zur Eingabe des Namens des Schlüssels, des Speicherorts und der Passphrase aufgefordert.
-Der Schlüssel sollte unter `/home/$USER/.ssh/<ssh-key>` gespeichert werden. Das Feld für die Passphrase kann leer bleiben.
+Sie werden zur Eingabe des Schlüsselnamens, des Speicherorts und der Passphrase aufgefordert.
+Der Schlüssel kann unter `~/.ssh/<ssh-key>` gespeichert werden. Für einen persönlichen Admin-Schlüssel wird eine Passphrase empfohlen.
 Dadurch werden zwei Dateien erstellt: `<ssh-key>` und `<ssh-key.pub>`.
 
-Um SSH-Zugriff auf den VPS zu erhalten, muss der Inhalt von `<ssh-key.pub>` in `/home/<server-user>/.ssh/autorized_keys` kopiert werden. Falls die Datei nicht existiert, muss sie angelegt werden.
-Dazu kannst du `nano` oder `vi` als Texteditor in der Befehlszeile verwenden.
+Um SSH-Zugriff auf den VPS zu erhalten, erstellen Sie bei Bedarf das SSH-Verzeichnis auf dem Server:
+```
+sudo install -d -m 700 -o <server-user> -g <server-user> /home/<server-user>/.ssh
+```
 
-Achten Sie dabei auf die Benutzerrechte dieser Datei.
+Kopieren Sie den Inhalt von `<ssh-key.pub>` in `/home/<server-user>/.ssh/authorized_keys`. Falls die Datei nicht existiert, erstellen Sie sie; andernfalls fügen Sie den Schlüssel an, ohne vorhandene Einträge zu überschreiben.
+Sie können dazu `nano` oder `vi` als Texteditor in der Befehlszeile verwenden.
+
+Achten Sie auf die Benutzerrechte dieser Datei.
 ```
 sudo chmod 600 /home/<server-user>/.ssh/authorized_keys
 sudo chown <server-user>:<server-user> /home/<server-user>/.ssh/authorized_keys
@@ -93,11 +109,11 @@ sudo chown <server-user>:<server-user> /home/<server-user>/.ssh/authorized_keys
 
 Nach dieser SSH-Konfiguration kann vom Client aus über folgenden Befehl auf den VPS zugegriffen werden:
 ```
-ssh <server-user>@<server-ip>
+ssh -i ~/.ssh/<ssh-key> <server-user>@<server-ip>
 ```
 
 ### Server-Absicherung
-Um sicherzustellen, dass sich in Zukunft nur noch Sie auf dem Server anmelden können, sichern wir den Server mithilfe von zwei Maßnahmen ab.
+Um unbefugten Zugriff zu reduzieren, habe ich mich auf die SSH-Authentifizierung und die Firewall-Regeln konzentriert.
 
 #### Anmeldebeschränkungen
 {{< alert type="warning" title="Danger" >}}
@@ -105,30 +121,42 @@ Achtung! Die folgenden Einstellungen können den Zugriff auf Ihren Server unterb
 {{< /alert >}}
 
 ##### Ausschließlich SSH-Zugriff
-Die Anmeldung mit Passwort wird untersagt. 
+Die Anmeldung per Passwort wird untersagt. 
 {{< alert type="warning" title="Danger" >}}
-Achten Sie darauf, dass die SSH-Anmeldung einwandfrei funktioniert!
+Stellen Sie sicher, dass die SSH-Anmeldung einwandfrei funktioniert!
 {{< /alert >}}
 Passwortauthentifizierung deaktivieren (bearbeite `/etc/ssh/sshd_config`):
 
  PasswordAuthentication no
+    KbdInteractiveAuthentication no
 
-##### Keine Anmeldung als Root
-Eine Anmeldung als Root-Benutzer ist nicht möglich.
+##### Root-Zugriff und Coolify
+Die vollständige Deaktivierung der Root-SSH-Anmeldung ist eine gängige Sicherheitsmaßnahme, steht jedoch im Widerspruch zur Standardkonfiguration von Coolify: Coolify nutzt SSH als `root` zur Verwaltung des lokalen Servers. Erlauben Sie für diese Konfiguration die schlüsselbasierte Root-Anmeldung und deaktivieren Sie gleichzeitig die passwortbasierte Root-Anmeldung:
+
+ PermitRootLogin prohibit-password
+
+Eine Alternative ist eine unterstützte Coolify-Konfiguration ohne Root-Zugriff, die jedoch zusätzliche Einstellungen erfordert und hier nicht behandelt wird. Der Root-Schlüsselzugriff sollte auf die erforderlichen Verwaltungspfade beschränkt werden.
+
 {{< alert type="warning" title="Danger" >}}
-Achte darauf, dass die Anmeldung mit deinem Server-Benutzer einwandfrei funktioniert!
+Halten Sie die aktuelle Sitzung offen und stellen Sie sicher, dass der Konsolenzugriff verfügbar ist, bevor Sie die SSH-Einstellungen ändern.
 {{< /alert >}}
-Root-Anmeldung deaktivieren (bearbeiten `/etc/ssh/sshd_config`):
 
- PermitRootLogin no
+Überprüfen Sie alle enthaltenen Konfigurationsdateien in `/etc/ssh/sshd_config.d/` auf widersprüchliche Einstellungen. Überprüfen Sie die Konfiguration und laden Sie sie unter Debian/Ubuntu neu:
 
+```sh
+sudo sshd -t
+# Only reload if validation succeeds:
+sudo systemctl reload ssh
+```
+
+Testen Sie eine neue schlüsselbasierte Verbindung in einem zweiten Terminal, bevor Sie die ursprüngliche Sitzung schließen.
 
 #### Firewall
 Aus Sicherheitsgründen möchten wir alle Ports blockieren, die wir nicht benötigen.
-Dazu verwenden wir die unkomplizierte Firewall ([UFW](https://wiki.ubuntu.com/UncomplicatedFirewall)).
+Zu diesem Zweck verwenden wir die unkomplizierte Firewall ([UFW](https://wiki.ubuntu.com/UncomplicatedFirewall)).
 
 {{< alert type="warning" title="Danger" >}}
-Bevor du die Firewall aktivierst, überprüfe, ob die SSH-Anmeldung einwandfrei funktioniert!
+Bevor Sie die Firewall aktivieren, überprüfen Sie, ob die SSH-Anmeldung einwandfrei funktioniert!
 {{< /alert >}}
 
 ```
@@ -145,7 +173,7 @@ sudo ufw enable
 ```
 
 ### Tailscale
-Der nächste Schritt auf unserem Weg zu einem absolut sicheren VPS-Server ist die Einrichtung eines virtuellen privaten Netzwerks (VPN). Dadurch wird sichergestellt, dass nur Personen in diesem Netzwerk auf den VPS zugreifen können.
+Der nächste Schritt war das Einrichten eines virtuellen privaten Netzwerks (VPN) für den privaten Verwaltungszugriff. Tailscale stellt dieses Netzwerk bereit, doch durch die Installation wird der öffentliche Zugriff nicht deaktiviert: Die oben genannten Firewall-Regeln lassen weiterhin SSH, HTTP und HTTPS aus dem Internet zu.
 
 Ein sehr einfach einzurichtendes und benutzerfreundliches VPN ist [Tailscale](https://tailscale.com/). Es nutzt im Hintergrund WireGuard, um verschlüsselte Punkt-zu-Punkt-Verbindungen zwischen Ihren Geräten herzustellen.
 
@@ -153,12 +181,12 @@ Ein sehr einfach einzurichtendes und benutzerfreundliches VPN ist [Tailscale](ht
 
 
 #### Einrichtung
-Vor der Einrichtung von Tailscale wird empfohlen, die Firewall zu deaktivieren, um nicht aus dem VPS ausgesperrt zu werden.
+Die Ersteinrichtung umfasste die vorübergehende Deaktivierung von UFW. Dies ist für Tailscale normalerweise nicht erforderlich und lässt die Host-Dienste während der Deaktivierung ohne UFW-Schutz. Halten Sie eine aktive SSH-Sitzung und den Zugriff auf die Provider-Konsole bereit:
 ```
 sudo ufw disable
 ```
 
-Auf Debian-Systemen führen Sie einfach diesen Befehl auf Ihrem VPS aus, um Tailscale zu installieren:
+Auf Debian-Systemen können Sie Tailscale ganz einfach mit diesem Befehl auf Ihrem VPS installieren:
 ```
 curl -fsSL https://tailscale.com/install.sh | sh
 ```
@@ -171,7 +199,9 @@ tailscale ip
 
 Starten Sie Tailscale und melden Sie sich bei Tailnet an. Der zweite Befehl gibt die Tailscale-IP Ihres Servers aus.
 
-Nun müssen die Tailscale-Ports zur UFW hinzugefügt werden:
+Das Flag `--ssh` aktiviert Tailscale-SSH, das die Authentifizierung über Tailnet-Identitäten und SSH-Richtlinien anstelle des oben konfigurierten persönlichen SSH-Schlüssels vornimmt. Die Zugriffsregeln unterscheiden sich von denen von OpenSSH `sshd_config`, einschließlich der Einschränkungen für die Root-Anmeldung. Für herkömmliches schlüsselbasiertes OpenSSH über Tailscale lassen Sie stattdessen `--ssh` weg (oder deaktivieren Sie es mit `sudo tailscale set --ssh=false`, falls es bereits aktiviert ist).
+
+Die folgende Regel erlaubt eingehenden Host-Datenverkehr auf der Tailscale-Schnittstelle, vorbehaltlich der Tailnet-Zugriffsrichtlinien; sie öffnet keinen bestimmten Tailscale-Port:
 ```
 sudo ufw allow in on tailscale0
 ```
@@ -180,23 +210,23 @@ Bevor Sie die Firewall wieder aktivieren, versuchen Sie, sich mit folgendem Befe
 ```
 ssh <server-user>@<tailscale-ip>
 ```
-Wenn diese Anmeldung problemlos funktioniert, kann die Firewall neu gestartet werden.
+Bei herkömmlichem OpenSSH fügen Sie diesem Befehl `-i ~/.ssh/<ssh-key>` hinzu, wenn Sie einen benutzerdefinierten Schlüssel-Dateinamen verwenden.
+
+Wenn diese Anmeldung funktioniert, aktivieren Sie UFW erneut und überprüfen Sie dessen Status. `ufw reload` allein aktiviert eine deaktivierte Firewall nicht wieder:
 ```
-sudo ufw reload
-sudo service ssh restart
+sudo ufw enable
+sudo ufw status verbose
 ```
 
-Damit verfügen Sie nun über einen VPS, der ziemlich sicher ist.
-Die Anmeldung funktioniert nur von einem Client im Tailnet mit den Adressen `<server-key>` und `<server-user>`.
+Dies stellt einen privaten Verwaltungspfad bereit, ist jedoch keine Garantie dafür, dass der VPS ausschließlich über das Tailnet erreichbar ist. Um SSH ausschließlich über das Tailnet zu ermöglichen, überprüfen Sie zunächst nach der Aktivierung von UFW eine neue Verbindung, entfernen Sie dann die öffentliche SSH-Regel mit `sudo ufw delete allow 22/tcp` und prüfen Sie, ob noch andere öffentliche SSH-Zugriffe bestehen, einschließlich IPv6. Behalten Sie den von Coolify benötigten SSH-Zugriff vom Container zum Host bei. Der öffentliche HTTP/HTTPS-Zugriff kann für bewusst veröffentlichte Dienste weiterhin verfügbar bleiben.
 
-## Coolify installieren
+## Installation von Coolify
 Der nächste Schritt ist die Installation unserer Plattform [Coolify](https://coolify.io/) mithilfe des offiziellen Skripts:
 ```
-curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
+curl -fsSL https://cdn.coollabs.io/coolify/install.sh | sudo bash
 ```
 
-Bevor wir fortfahren, müssen wir die Netzwerkkommunikation von Coolify in der Firewall zulassen.
-Dazu müssen wir die Netzwerke der Docker-Bridge und von Coolify überprüfen, indem wir folgende Befehle ausführen:
+Coolify muss außerdem vom Container aus auf den SSH-Dienst des Hosts zugreifen können. Überprüfen Sie die Docker-Netzwerke, um die relevanten Subnetze und die Gateway-Adresse des Hosts zu ermitteln:
 ```
 sudo docker network inspect bridge
 sudo docker network inspect coolify
@@ -227,17 +257,19 @@ Die Ausgabe sollte in etwa so aussehen:
 .
 .
 ```
-Notieren Sie sich die Werte `Subnet` der `IPAM -> Config` der Bridge und von Coolify.
-Beachten Sie den Wert `Gateway` der Bridge im Vergleich zu `IPAM -> Config`.
-Mit diesen drei Werten können die neuen Firewall-Regeln hinzugefügt werden:
+Notieren Sie sich die `Subnet` der `IPAM -> Config` der Bridge und von Coolify.
+Beachten Sie den Wert `Gateway` des `IPAM -> Config` der Bridge.
+Für die SSH-Verbindung vom Container zum Host können die Regeln auf den TCP-Port 22 beschränkt werden, anstatt jeden Port am Host-Gateway zuzulassen. Passen Sie diese Beispiele an die tatsächlichen Quellnetzwerke und die von Coolify verwendete Host-Adresse an:
 ``` shell
-sudo ufw allow from <subnet-bridge> to <gateway-bridge>
-sudo ufw allow from <subnet-coolify> to <gateway-bridge>
-sudo ufw reload
-sudo service ssh restart
+sudo ufw allow proto tcp from <subnet-bridge> to <gateway-bridge> port 22
+sudo ufw allow proto tcp from <subnet-coolify> to <gateway-bridge> port 22
 ```
 
-Schließen Sie die Installation ab, indem Sie von innerhalb des Tailnets auf die Coolify-Weboberfläche unter `http://<tailscale-ip>:8000` zugreifen und den Anweisungen folgen.
+{{< alert type="warning" title="Docker ports and UFW" >}}
+Von Docker veröffentlichte Ports können die normalen eingehenden Regeln von UFW umgehen. Diese Gateway-Regeln erlauben SSH-Verbindungen vom Container zum Host; sie schützen das Coolify-Dashboard oder andere veröffentlichte Container-Ports nicht vor öffentlichem Zugriff. Bevor Sie die Installation nach außen freigeben, beschränken Sie die Verwaltungsports mithilfe einer Provider-Firewall, verifizierter, ausschließlich privater Docker-Port-Bindungen oder Docker-kompatibler Firewall-Regeln. Überprüfen Sie sowohl die IPv4- als auch die IPv6-Erreichbarkeit von außerhalb des Tailnets. Siehe [Docker's firewall documentation](https://docs.docker.com/engine/network/packet-filtering-firewalls/#docker-and-ufw).
+{{< /alert >}}
+
+Sobald der Zugriff auf das Dashboard eingeschränkt ist, schließen Sie die Installation ab, indem Sie von innerhalb des Tailnets auf die Coolify-Weboberfläche unter `http://<tailscale-ip>:8000` zugreifen. Erstellen Sie umgehend das Admin-Konto: Wer zuerst die erste Registrierungsseite aufruft, kann die Instanz beanspruchen. Überprüfen Sie anschließend die Verbindung zum Localhost-Server von Coolify.
 
 
 ## Syncthing-Bereitstellung in Coolify
@@ -245,11 +277,13 @@ Schließen Sie die Installation ab, indem Sie von innerhalb des Tailnets auf die
 1. Erstellen Sie in Coolify ein neues Projekt (z. B. `VPS production`).
 2. Fügen Sie Ressourcen hinzu (z. B. `Syncthing`) 
 {{< figure src="./coolify_new_resource.png" width="900" alt="Add Coolify resource" >}}
-3. Konfiguration > Allgemein > Servicenamen und Service-URL festlegen.
+3. Konfiguration > Allgemein > Legen Sie den Servicenamen und die Service-URL fest.
 {{< figure src="./coolify_syncthing_configuration.png" width="900" alt="Syncthing configuration" >}}
-4. Den Container bereitstellen.  
-5. Über die Service-URL auf Syncthing zugreifen.
+4. Stellen Sie den Container bereit.  
+5. Greifen Sie über die Dienst-URL auf Syncthing zu.
 
-## Später: Nutzung des VPS als kontrollierten öffentlichen Ingress
+Diese Schritte beschreiben die Bereitstellung und den Zugriff auf die Web-Benutzeroberfläche, nicht die vollständige Synchronisationskonfiguration. Die HTTP-Dienst-URL unterstützt das Syncthing-Synchronisationsprotokoll nicht. Die direkte Synchronisation verwendet in der Regel `22000/TCP` und `22000/UDP` mit geeigneten Docker-Portzuordnungen und Firewall-Regeln für das jeweilige Netzwerk oder stützt sich auf eine Relay-Verbindung. Für die Konfiguration und die synchronisierten Daten werden persistente Volumes benötigt; schützen Sie die Admin-Benutzeroberfläche durch Authentifizierung und Zugriffsbeschränkungen.
 
-Später habe ich diesen VPS und die Tailscale-Foundation genutzt, um ausgewählte Dienste aus einem privaten k3s-Homelab zu veröffentlichen, ohne mein Heimnetzwerk zu öffnen: [Expose K3s Services from a Tailscale-Protected Homelab via a VPS](https://blog.matschcode.de/en/notes/self-hosting/expose-k3s-services-via-vps/).
+## Später: Nutzung des VPS als kontrollierter öffentlicher Ingress
+
+Später nutzte ich diesen VPS und die Tailscale-Foundation, um ausgewählte Dienste aus einem privaten k3s-Homelab zu veröffentlichen, ohne mein Heimnetzwerk zu öffnen: [Expose K3s Services from a Tailscale-Protected Homelab via a VPS](https://blog.matschcode.de/en/notes/self-hosting/expose-k3s-services-via-vps/).
