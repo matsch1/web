@@ -11,9 +11,7 @@ description: '400 Kilometer, 3.700 Höhenmeter und 30 Kilo Gepäck: eine Bikepac
   durch Islands Hochland.'
 draft: false
 homepage:
-  featured: false
   section: outdoors
-  state: evergreen
   teaser: 'Mit schwerem Gepäck durchs isländische Hochland: eine Bikepacking-Reise
     zwischen Gegenwind, heißen Quellen und Reifenpanne.'
   title: Mit dem Hardtail durch Islands Hochland

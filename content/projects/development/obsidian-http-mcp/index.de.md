@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 1d8110e16aa57ebd7e50254006d0e09af59d7db67ae562e33a70c427db95f608
+base_hash: 3ce63d5a976330f4f64c716cfed5dd79e6263d4e1f78e54dbfebfd381925344c
 cover:
   alt: obsidian-http-mcp
   caption: ''
@@ -11,9 +11,7 @@ date: 2025-09-28
 description: Kommuniziere mit deinem Remote-Obsidian-Vault über den HTTP-MCP-Server.
 draft: false
 homepage:
-  featured: false
   section: engineering
-  state: archive
   teaser: Ein HTTP-MCP-Server macht den Obsidian-Vault für KI-Clients zugänglich.
     Ein Rückblick auf das inzwischen eingestellte Projekt.
   title: Obsidian-Notizen per MCP nutzen

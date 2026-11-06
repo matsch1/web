@@ -14,9 +14,7 @@ translation_lock: true
 homepage:
   title: "Dänemark: die Jütland-Runde"
   teaser: "Eine Radreise rund um Jütland – mit Route, Eindrücken und Bildern von unterwegs."
-  featured: false
   section: outdoors
-  state: active
 project:
   status: completed
 source_lang: de

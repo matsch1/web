@@ -4,10 +4,11 @@ The blog remains Hugo + PaperMod. No theme update, URL migration, external font 
 
 ## Components and content
 
-- Homepage: authentic photographic masthead, one concise introduction, active lifecycle projects first, a single feature card, compact engineering/outdoor recommendations, recent articles and a small archive.
-- Interior pages: compact masthead; existing reading width, galleries, maps and original article bodies remain unchanged.
+- Homepage: photographic masthead and concise introduction, then the latest three articles by publication date (one prominent lead), followed by all projects with `project.status: active`. No project count cap, thematic discovery blocks or archive block.
+- Interior pages retain the global photographic masthead; existing reading width, galleries, maps and original article bodies remain unchanged.
 - Explicit `Projekt` / `Beitrag` (`Project` / `Article`) labels. A page is a project when it is a project section overview or has canonical project metadata; being stored below `/projects/` alone does not make a travel chapter a project.
-- `project.status` remains the lifecycle source. `homepage.state` remains editorial curation, not a lifecycle status. Article cards and article headers do not display project statuses.
+- `project.status` is the lifecycle source and controls homepage project inclusion. Obsolete homepage prominence and featured flags have been removed. Article cards and article headers do not display project statuses.
+- `homepage.section` is retained as an image-presentation hint: `engineering` selects full, uncropped technical artwork in homepage and listing cards. `outdoors` currently does not trigger a separate positive rule; ordinary photographic cover behavior applies. It no longer groups projects into homepage sections or controls inclusion, ordering or category filters.
 - Navigation and the existing `/notes/` landing page say `Beiträge` / `Articles`. Paths remain unchanged; no new Notes content type is introduced.
 - Optional `homepage.title` and `homepage.teaser` provide localized card copy without rewriting article titles or bodies. Manually reviewed localized editorial copy uses the repository's existing `translation_lock` support.
 - Headings use locally hosted Manrope; the font license is shipped under `static/fonts/OFL.txt`. Warm light surfaces, forest/charcoal dark surfaces, restrained green accents, reduced-motion handling and visible focus styles are in `assets/css/extended/z-editorial.css`.

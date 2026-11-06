@@ -17,9 +17,7 @@ tags:
   - application
 source_lang: en
 homepage:
-  featured: false
   section: engineering
-  state: archive
   teaser: 'My first Flutter app: building and publishing a running pace calculator
     in four days.'
   title: 'Goalpacer: marathon training with Flutter'

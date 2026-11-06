@@ -11,9 +11,7 @@ date: 2025-04-06
 description: Mein Weg zur Entwicklung einer Quiz-App mit Flutter, Pocketbase und Unleash
 draft: false
 homepage:
-  featured: false
   section: engineering
-  state: archive
   teaser: 'Ein Linux-Quiz mit Flutter, PocketBase und Feature Flags: Erfahrungen aus
     der Entwicklung der inzwischen eingestellten App.'
   title: 'Shellmaster: Linux-Befehle spielerisch lernen'

@@ -13,9 +13,7 @@ translation_lock: true
 homepage:
   title: "Coolify on my own VPS"
   teaser: "Hardening a VPS and deploying a first app with Coolify: practical lessons from my setup."
-  featured: false
   section: engineering
-  state: evergreen
 project:
   status: paused
 slug: coolify-vps-setup

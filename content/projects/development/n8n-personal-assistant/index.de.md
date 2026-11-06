@@ -16,9 +16,7 @@ tags:
 - AI
 title: Mein persönlicher n8n-KI-Assistent
 homepage:
-  featured: false
   section: engineering
-  state: archive
   teaser: 'Ein Telegram-Assistent für Termine und Aufgaben: Aufbau und Erfahrungen
     mit n8n, inzwischen durch Hermes ersetzt.'
   title: Mein KI-Assistent mit n8n

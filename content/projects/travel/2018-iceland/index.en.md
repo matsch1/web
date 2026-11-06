@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 5c08ce2eef57a607741cb2d9470c0e09607060bcfbe81895dbe3474c5dbe9c24
+base_hash: fcc063dd512b251d6f4e2c210362c60f6e09fbce718954a5845dff78cbaf53da
 cover:
   alt: Loaded hardtail in the Icelandic Highlands
   caption: ''
@@ -13,9 +13,7 @@ description: '400 kilometers, 3,700 meters of elevation gain, and 30 kilograms o
 draft: false
 gallery_translation_version: 1
 homepage:
-  featured: false
   section: outdoors
-  state: evergreen
   teaser: 'Bikepacking through Iceland’s highlands with heavy bags: headwinds, hot
     springs and a torn tyre along the way.'
   title: Across Iceland’s highlands on a hardtail

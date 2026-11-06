@@ -20,8 +20,6 @@ homepage:
   title: "My first split keyboard"
   teaser: "From kit to daily keyboard: building Ian’s split keyboard and sharing the first lessons."
   section: engineering
-  state: evergreen
-  featured: false
 project:
   status: completed
 ---

@@ -27,16 +27,16 @@ class UsabilityNavigation(unittest.TestCase):
         for directory in ('layouts', 'assets', 'i18n', 'themes', 'static'):
             (cls.source / directory).symlink_to(ROOT / directory, target_is_directory=True)
         (cls.source / 'hugo.toml').write_text((ROOT / 'hugo.toml').read_text() + '\n[pagination]\npagerSize = 3\n')
-        # Dates must win over lifecycle status and homepage prominence, including
-        # archived, paused, and discontinued projects across pagination.
+        # Dates must win over lifecycle status across pagination, including
+        # old active and newer completed, paused and discontinued projects.
         cls.fixtures = [
-            ('active-old', 2010, 'active', 'archive'),
-            ('active-new', 2012, 'active', 'active'),
-            ('completed', 2020, 'completed', 'active'),
-            ('unclassified', 2019, '', ''),
-            ('archived', 2024, 'completed', 'archive'),
-            ('paused', 2023, 'paused', 'active'),
-            ('discontinued', 2022, 'discontinued', 'active'),
+            ('active-old', 2010, 'active'),
+            ('active-new', 2012, 'active'),
+            ('completed', 2020, 'completed'),
+            ('unclassified', 2019, ''),
+            ('archived', 2024, 'completed'),
+            ('paused', 2023, 'paused'),
+            ('discontinued', 2022, 'discontinued'),
         ]
         for lang in ('de', 'en'):
             content = cls.source / 'content'
@@ -45,11 +45,11 @@ class UsabilityNavigation(unittest.TestCase):
             section = content / 'projects'
             section.mkdir(exist_ok=True)
             (section / f'_index.{lang}.md').write_text('---\ntitle: Projects\n---\n')
-            for slug, year, status, state in cls.fixtures:
+            for slug, year, status in cls.fixtures:
                 directory = section / 'development' / slug
                 directory.mkdir(parents=True, exist_ok=True)
-                extra = ('homepage:\n  title: Curated title\n  teaser: Clean teaser\n  state: archive\n'
-                         if slug == 'active-old' else f'homepage:\n  state: "{state}"\n')
+                extra = ('homepage:\n  title: Curated title\n  teaser: Clean teaser\n'
+                         if slug == 'active-old' else '')
                 (directory / f'index.{lang}.md').write_text(
                     f'---\ntitle: {slug}\ndate: {year}-01-01\n'
                     + ('summary: Clean summary fallback\n' if slug == 'unclassified' else f'description: Explicit description {slug}\n') +

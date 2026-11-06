@@ -13,9 +13,7 @@ translation_lock: true
 homepage:
   title: "My first split keyboard"
   teaser: "From kit to daily keyboard: building Ian’s split keyboard and sharing the first lessons."
-  featured: false
   section: engineering
-  state: evergreen
 project:
   status: completed
 slug: split-keyboard-ianmaclarty

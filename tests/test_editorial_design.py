@@ -154,8 +154,8 @@ class EditorialDesign(unittest.TestCase):
                 sources = {
                     f'_index.{lang}.md': 'title: Home',
                     f'projects/_index.{lang}.md': 'title: Projects',
-                    f'projects/active/index.{lang}.md': 'title: Active project\ndate: 2001-01-01\nhomepage:\n  state: archive\nproject:\n  status: active',
-                    f'projects/lead/index.{lang}.md': 'title: Lead\ndate: 2025-01-01\nhomepage:\n  featured: true\n  section: engineering\n  state: evergreen\nproject:\n  status: discontinued\n  statusNote: Reviewed status note\n  successor: /projects/active/',
+                    f'projects/active/index.{lang}.md': 'title: Active project\ndate: 2001-01-01\nproject:\n  status: active',
+                    f'projects/lead/index.{lang}.md': 'title: Lead\ndate: 2025-01-01\nhomepage:\n  section: engineering\nproject:\n  status: discontinued\n  statusNote: Reviewed status note\n  successor: /projects/active/',
                     f'projects/lead/child/index.{lang}.md': 'title: Child article\nhiddenInProjectList: true\nproject:\n  status: completed',
                     f'notes/article/index.{lang}.md': 'title: Article\ndate: 2025-01-01\nproject:\n  status: completed',
                 }
@@ -169,8 +169,8 @@ class EditorialDesign(unittest.TestCase):
                 main = DOM((site / f'public/{lang}/index.html').read_text()).root.select('main')[0]
                 sections = main.select('section')
                 self.assertEqual(sections[0].attrs.get('data-home-section'), 'articles')
-                self.assertNotIn('Active project', main.text)
-                self.assertIn('Lead', sections[1].text)
+                self.assertIn('Active project', sections[1].text)
+                self.assertNotIn('Lead', main.text)
                 self.assertNotIn('Child article', main.text)
                 header = DOM((site / f'public/{lang}/projects/lead/index.html').read_text()).root.select('header', 'post-header')[0]
                 self.assertEqual(len(header.select(cls='project-status')), 1)

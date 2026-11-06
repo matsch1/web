@@ -11,9 +11,7 @@ description: Explanation of how I build my first app for martathon training usin
   Flutter
 draft: false
 homepage:
-  featured: false
   section: engineering
-  state: archive
   teaser: 'My first Flutter app: building and publishing a running pace calculator
     in four days.'
   title: 'Goalpacer: marathon training with Flutter'

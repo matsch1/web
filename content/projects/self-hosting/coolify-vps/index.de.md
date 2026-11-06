@@ -14,9 +14,7 @@ translation_lock: true
 homepage:
   title: "Coolify auf dem eigenen VPS"
   teaser: "Einen VPS absichern und die erste App mit Coolify bereitstellen – Erfahrungen aus meinem Setup."
-  featured: false
   section: engineering
-  state: evergreen
 project:
   status: paused
 slug: coolify-vps-setup

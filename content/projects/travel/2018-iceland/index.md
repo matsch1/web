@@ -16,9 +16,7 @@ tags:
   - island
 source_lang: de
 homepage:
-  featured: false
   section: outdoors
-  state: evergreen
   teaser: 'Mit schwerem Gepäck durchs isländische Hochland: eine Bikepacking-Reise
     zwischen Gegenwind, heißen Quellen und Reifenpanne.'
   title: Mit dem Hardtail durch Islands Hochland

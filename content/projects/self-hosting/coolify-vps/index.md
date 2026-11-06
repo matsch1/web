@@ -22,8 +22,6 @@ homepage:
   title: "Coolify on my own VPS"
   teaser: "Hardening a VPS and deploying a first app with Coolify: practical lessons from my setup."
   section: engineering
-  state: evergreen
-  featured: false
 project:
   status: paused
 ---

@@ -15,9 +15,7 @@ translation_lock: true
 homepage:
   title: "Mein erstes Split-Keyboard"
   teaser: "Vom Bausatz zur eigenen Tastatur: Aufbau und erste Erfahrungen mit Ian’s Split-Keyboard."
-  featured: false
   section: engineering
-  state: evergreen
 project:
   status: completed
 slug: split-keyboard-ianmaclarty

@@ -13,9 +13,7 @@ description: Erläuterung, wie ich meine erste App für das Marathontraining mit
 draft: false
 gallery_translation_version: 1
 homepage:
-  featured: false
   section: engineering
-  state: archive
   teaser: 'Meine erste Flutter-App: In vier Tagen einen Temporechner fürs Lauftraining
     entwickeln und veröffentlichen.'
   title: 'Goalpacer: Marathontraining mit Flutter'

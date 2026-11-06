@@ -10,9 +10,7 @@ date: 2025-04-06
 description: My path of building a quiz app using flutter, pocketbase and unleash
 draft: false
 homepage:
-  featured: false
   section: engineering
-  state: archive
   teaser: 'A Linux quiz built with Flutter, PocketBase and feature flags: lessons
     from developing the now-discontinued app.'
   title: 'Shellmaster: learning Linux commands through play'

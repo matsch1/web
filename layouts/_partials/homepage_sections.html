@@ -2,7 +2,7 @@
 {{- $projectPages := where site.RegularPages "Section" "projects" }}
 {{- $projectPages = where $projectPages "Params.hiddenInProjectList" "ne" true }}
 {{- $projectPages = union $projectPages (where site.Pages "Params.listAsProject" true) }}
-{{- $featuredProjects := where (sort $projectPages "Date" "desc") "Params.homepage.featured" true }}
+{{- $activeProjects := where (sort $projectPages "Date" "desc") "Params.project.status" "active" }}
 
 {{- with first 3 $articles }}
 <section class="homepage-section" data-home-section="articles">
@@ -18,7 +18,7 @@
 </section>
 {{- end }}
 
-{{- with first 1 $featuredProjects }}
+{{- with $activeProjects }}
 <section class="homepage-section" data-home-section="featured">
   <header class="homepage-section__header">
     <h2>{{ i18n "home_featured_title" }}</h2>
