@@ -35,9 +35,9 @@ The VPS is still running, although most of its services have changed since the i
 The VPS is still running, although it now hosts different services than those initially set up.
 Coolify has proven reliable, requiring little to no maintenance.
 The server currently serves three main purposes:
-- Hosting Syncthing, the only service that has remained unchanged.
-- Hosting my Hermes Agent.
-- Acting as a reverse proxy for my homelab via Tailscale.
+- Hosting Syncthing, the only service that has remained unchanged. I describe my synchronization setup in [Obsidian cloud sync]({{< relref "/notes/self-hosting/obsidian-syncthing" >}}).
+- Hosting my [personal assistant with Hermes Agent]({{< relref "/projects/development/hermes-agent" >}}).
+- Acting as a reverse proxy for my homelab via Tailscale. The [VPS ingress article]({{< relref "/notes/self-hosting/tailscale-public-domain" >}}) explains this connection; [my homelab infrastructure]({{< relref "/notes/self-hosting/homelab-infrastructure" >}}) provides the wider context.
 
 ## Introduction
 Self-hosting has become an excellent way to gain hands-on experience with server administration, DevOps tooling, and modern deployment platforms. My goal was to provision a virtual private server (VPS), secure it properly, and use it as a small but flexible platform for deploying backend components that support my app development workflow.

@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 TocOpen: true
-base_hash: 21dc38279befd2862b6e97ec886686dd8e665e5b46e37bab841a8dbeb81b0775
+base_hash: 8b1284c3df8e304a606a17d05c19b4256e06866341ca2cdf0d9f0e7125ef2f30
 cover:
   alt: coolify-vps-setup
   caption: ''
@@ -36,9 +36,9 @@ Der VPS läuft immer noch, obwohl sich die meisten seiner Dienste seit der Erste
 Der VPS läuft immer noch, obwohl er mittlerweile andere Dienste hostet als ursprünglich eingerichtet.
 Coolify hat sich als zuverlässig erwiesen und erfordert kaum bis gar keinen Wartungsaufwand.
 Der Server dient derzeit drei Hauptzwecken:
-- Hosting von Syncthing, dem einzigen Dienst, der unverändert geblieben ist.
-- Das Hosten meines Hermes-Agenten.
-- Das Funktionieren als Reverse-Proxy für mein Homelab über Tailscale.
+- Hosting von Syncthing, dem einzigen Dienst, der unverändert geblieben ist. Mein Synchronisationssetup beschreibe ich im Beitrag zur [Obsidian-Cloud-Synchronisation]({{< relref "/notes/self-hosting/obsidian-syncthing" >}}).
+- Hosting meines [persönlichen Assistenten mit Hermes Agent]({{< relref "/projects/development/hermes-agent" >}}).
+- Reverse-Proxy für mein Homelab über Tailscale. Der Beitrag [K3s-Dienste über VPS und Tailscale veröffentlichen]({{< relref "/notes/self-hosting/tailscale-public-domain" >}}) erklärt diese Verbindung; [meine Homelab-Infrastruktur]({{< relref "/notes/self-hosting/homelab-infrastructure" >}}) liefert den Gesamtüberblick.
 
 ## Einleitung
 Selbsthosting hat sich als hervorragende Möglichkeit erwiesen, praktische Erfahrungen mit Serveradministration, DevOps-Tools und modernen Bereitstellungsplattformen zu sammeln. Mein Ziel war es, einen Virtual Private Server (VPS) einzurichten, ihn ordnungsgemäß abzusichern und als kleine, aber flexible Plattform für die Bereitstellung von Backend-Komponenten zu nutzen, die meinen App-Entwicklungs-Workflow unterstützen.
